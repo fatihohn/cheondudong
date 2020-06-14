@@ -12,7 +12,7 @@
             <div id="header_btn">
                 <a>
                     
-                    <div class="menu_btn">
+                    <div id="menu_btn">
                         <img src="/static/img/menu_btn.png" alt="메뉴">
                         <!-- <h2 class="menu_o">
                             ○
