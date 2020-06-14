@@ -5,7 +5,7 @@
             <div id="header_title">
                 <a>
                     <h1 class="gg-batang">
-                        천두동
+                        천두동두천
                     </h1>
                 </a>
             </div>
