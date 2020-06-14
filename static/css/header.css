@@ -10,11 +10,13 @@
     max-width: 768px;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
 
 #header_wrap #header_box #header_title {
     margin: 0 auto;
     width: 300px;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 
