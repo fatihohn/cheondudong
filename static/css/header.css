@@ -52,6 +52,7 @@
 #header_wrap #header_box #header_box_area {
     width: 100%;
     max-width: 768px;
+    margin: 0 auto;
 }
 #header_wrap #header_box #header_box_area #header_title {
     margin: 0 auto;
