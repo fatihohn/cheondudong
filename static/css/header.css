@@ -78,8 +78,8 @@
 }
 
 #header_wrap #header_box #header_box_area #header_btn a .menu_btn img{
-    width: 60px;
-    top: -5px;
+    width: 50px;
+    top: 10px;
     position: relative;
 }
 #header_wrap #header_box #header_box_area #header_btn a .menu_btn .menu_o{
