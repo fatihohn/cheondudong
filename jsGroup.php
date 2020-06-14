@@ -56,14 +56,14 @@
             if(menuWrap.style.display == "none") {
                 headerWrap.style.display = "initial";
                 frontWrap.style.display = "none";
-                detailWrap.style.display = "none";
+                // detailWrap.style.display = "none";
                 mapWrap.style.display = "none";
                 menuWrap.style.display = "initial";
                 footerWrap.style.display = "initial";
             } else {
                 headerWrap.style.display = "initial";
                 frontWrap.style.display = "none";
-                detailWrap.style.display = "none";
+                // detailWrap.style.display = "none";
                 mapWrap.style.display = "initial";
                 menuWrap.style.display = "none";
                 footerWrap.style.display = "none";
