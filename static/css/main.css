@@ -1,0 +1,15 @@
+/*front*/
+.front_wrap {
+    width: 100%;
+    height: 100vh;
+}
+.front_wrap .front_box {
+    width: 500px;
+    height: 800px;
+}
+.front_wrap .front_box .front_title div {
+    -ms-transform: rotate(30deg); /* IE 9 */
+  transform: rotate(30deg);
+}
+/*detail*/
+/*map*/
