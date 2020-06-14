@@ -1,9 +1,11 @@
 <div id="header_wrap">
     <div id="header_box">
         <div id="header_title">
+            <a href="/index.php">
             <h1>
                 천두동
             </h1>
+        </a>
         </div>
         <div id="header_btn">
             <a>
