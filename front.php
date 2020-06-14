@@ -40,7 +40,7 @@
             detailWrap.style.display = "none";
             mapWrap.style.display = "initial";
             menuWrap.style.display = "none";
-            footerWrap.style.display = "none";
+            footerWrap.style.display = "initial";
         }
         frontTitle.addEventListener("click", hideFront);
     }
