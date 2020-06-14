@@ -1,7 +1,7 @@
 /*header*/
 #header_wrap {
     width: 100%;
-    height: 70px;
+    height: 80px;
     display: none;
 }
 #header_wrap #header_box {
@@ -32,6 +32,12 @@
 #header_wrap #header_box #header_btn a .menu_btn{
     width: 60px;
     margin: auto 0;
+    
+}
+
+#header_wrap #header_box #header_btn a .menu_btn .menu_o{
+    font-size: 4.5rem;
+    position: relative;
     background-color: rgb(180, 180, 180);
     color: transparent;
     text-shadow: 2px 2px 3px rgba(255,255,255,0.6);
@@ -39,14 +45,15 @@
        -moz-background-clip: text;
             background-clip: text;
 }
-
-#header_wrap #header_box #header_btn a .menu_btn .menu_o{
-    font-size: 1rem;
-    position: relative;
-}
 #header_wrap #header_box #header_btn a .menu_btn .menu_m{
-    font-size: 0.8rem;
+    font-size: 3rem;
     position: relative;
+    background-color: rgb(180, 180, 180);
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.6);
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+            background-clip: text;
 }
 
 
