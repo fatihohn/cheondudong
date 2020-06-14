@@ -43,13 +43,21 @@
 /*detail*/
 #detail_wrap {
     width: 100%;
-    height: 100%;
-    background-color: #555;
+    height: calc(100vh - 70px);
+    position: absolute;
+    top: 70px;
+    background-color: #999;
+    left: 0;
+    z-index: -5;
 }
 
 /*map*/
 #map_wrap {
     width: 100%;
-    height: 100%;
-    background-color: #333;
+    height: calc(100vh - 70px);
+    position: absolute;
+    top: 70px;
+    background-color: #999;
+    left: 0;
+    z-index: -5;
 }
