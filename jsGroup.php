@@ -33,7 +33,7 @@
             let footerWrap = document.getElementById("footer_wrap");
             headerWrap.style.display = "initial";
             frontWrap.style.display = "none";
-            detailWrap.style.display = "none";
+            // detailWrap.style.display = "none";
             mapWrap.style.display = "initial";
             menuWrap.style.display = "none";
             footerWrap.style.display = "none";
