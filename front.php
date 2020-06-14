@@ -9,7 +9,7 @@
                 <!-- <p>천</p>
                 <p>두</p>
                 <p>동</p> -->
-                <h1 class="gg-bold">천<br>
+                <h1 class="gg-batang">천<br>
                    두<br>
                    동</h1>
             </div>
@@ -21,7 +21,7 @@
                 <!-- <p>동</p>
                 <p>두</p>
                 <p>천</p> -->
-                <h1 class="gg-bold">동<br>
+                <h1 class="gg-batang">동<br>
                    두<br>
                    천</h1>
 
