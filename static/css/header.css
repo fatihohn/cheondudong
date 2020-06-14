@@ -62,7 +62,7 @@
 }
 
 
-#header_wrap #header_box #header_box_area #header_btn a .menu_btn{
+#header_wrap #header_box #header_box_area #header_btn a #menu_btn{
     width: 60px;
     margin: auto 0;
     top: -50px;
@@ -70,12 +70,12 @@
     position: relative;
 }
 
-#header_wrap #header_box #header_box_area #header_btn a .menu_btn img{
+#header_wrap #header_box #header_box_area #header_btn a #menu_btn img{
     width: 50px;
     top: 10px;
     position: relative;
 }
-#header_wrap #header_box #header_box_area #header_btn a .menu_btn .menu_o{
+#header_wrap #header_box #header_box_area #header_btn a #menu_btn .menu_o{
     font-size: 4.5rem;
     position: absolute;
     background-color: rgb(180, 180, 180);
@@ -85,7 +85,7 @@
             -moz-background-clip: text;
     background-clip: text;
 }
-#header_wrap #header_box #header_box_area #header_btn a .menu_btn .menu_m{
+#header_wrap #header_box #header_box_area #header_btn a #menu_btn .menu_m{
     font-size: 3rem;
     position: relative;
     background-color: rgb(180, 180, 180);
