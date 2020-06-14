@@ -16,8 +16,10 @@
 #header_wrap #header_box #header_title {
     margin: 0 auto;
     width: 300px;
+    padding-top: 15px;
     font-size: 1.2rem;
     cursor: pointer;
+    text-align: center;
 }
 
 #header_wrap #header_box #header_title h1{
@@ -37,13 +39,13 @@
 
 #header_wrap #header_box #header_btn a .menu_btn .menu_o{
     font-size: 4.5rem;
-    position: relative;
+    position: absolute;
     background-color: rgb(180, 180, 180);
     color: transparent;
     text-shadow: 2px 2px 3px rgba(255,255,255,0.6);
-    -webkit-background-clip: text;
-       -moz-background-clip: text;
-            background-clip: text;
+        -webkit-background-clip: text;
+            -moz-background-clip: text;
+    background-clip: text;
 }
 #header_wrap #header_box #header_btn a .menu_btn .menu_m{
     font-size: 3rem;
@@ -52,8 +54,10 @@
     color: transparent;
     text-shadow: 2px 2px 3px rgba(255,255,255,0.6);
     -webkit-background-clip: text;
-       -moz-background-clip: text;
+        -moz-background-clip: text;
             background-clip: text;
+    top: 13px;
+    left: 11px;
 }
 
 
