@@ -6,10 +6,11 @@
 .front_wrap .front_box {
     width: 500px;
     height: 800px;
+    margin: 0 auto;
 }
 .front_wrap .front_box .front_title div {
-    -ms-transform: rotate(30deg); /* IE 9 */
-  transform: rotate(30deg);
+    -ms-transform: rotate(-30deg); /* IE 9 */
+  transform: rotate(-30deg);
 }
 /*detail*/
 /*map*/
