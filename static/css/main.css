@@ -1,16 +1,34 @@
 /*front*/
-.front_wrap {
+#front_wrap {
     width: 100%;
     height: 100vh;
 }
-.front_wrap .front_box {
+#front_wrap #front_box {
     width: 500px;
     height: 800px;
     margin: 0 auto;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 3rem;
+    line-height: 0.5;
+    font-weight: bolder;
+    color: #ffffff;
 }
-.front_wrap .front_box .front_title div {
+#front_wrap #front_box #front_title div {
     -ms-transform: rotate(-30deg); /* IE 9 */
   transform: rotate(-30deg);
 }
+#front_wrap #front_box #front_title div p {
+    background-color: rgb(240, 240, 240);
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+            background-clip: text;
+}
+
+
+
+
 /*detail*/
 /*map*/
