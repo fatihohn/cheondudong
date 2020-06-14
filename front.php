@@ -24,7 +24,7 @@
     </div>
 </div>
 
-<script>
+<!-- <script>
     function frontTitleClick() {
 
         let frontTitle = document.getElementById("front_title");
@@ -45,5 +45,5 @@
         frontTitle.addEventListener("click", hideFront);
     }
     frontTitleClick();
-</script>
+</script> -->
 

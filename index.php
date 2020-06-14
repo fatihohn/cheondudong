@@ -33,6 +33,8 @@
         <!-- footer: detail, menu 화면 아래에서 저작권 정보 보여줌. -->
             <?php include "footer.php"; ?>
         </footer>
-
+        
+        
+        <?php include "jsGroup.php"; ?>
     </body>
 </html>
