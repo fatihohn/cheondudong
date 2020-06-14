@@ -1,15 +1,14 @@
 /*front*/
 #front_wrap {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 #front_wrap #front_box {
-    width: 500px;
-    height: 800px;
+    width: 400px;
+    height: 600px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 150px;
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 1.2;
     font-weight: bolder;
     /* color: #ffffff; */
@@ -17,6 +16,17 @@
 #front_wrap #front_box #front_title div {
     -ms-transform: rotate(-30deg); /* IE 9 */
   transform: rotate(-30deg);
+  position: relative;
+  width: 100px;
+  margin: 0 auto;
+
+}
+#front_wrap #front_box #front_title #title_cdd {
+    top: 0px;
+    left: -35px;
+}
+#front_wrap #front_box #front_title #title_ddc {
+    top: -180px;
 }
 #front_wrap #front_box #front_title div h1 {
     background-color: rgb(180, 180, 180);
