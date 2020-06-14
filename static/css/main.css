@@ -49,6 +49,7 @@
     background-color: #999;
     left: 0;
     z-index: -5;
+    display: none;
 }
 
 /*map*/
@@ -60,4 +61,5 @@
     background-color: #999;
     left: 0;
     z-index: -5;
+    display: none;
 }
