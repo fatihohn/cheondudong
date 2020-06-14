@@ -12,16 +12,16 @@
     font-size: 3rem;
     line-height: 0.5;
     font-weight: bolder;
-    color: #ffffff;
+    /* color: #ffffff; */
 }
 #front_wrap #front_box #front_title div {
     -ms-transform: rotate(-30deg); /* IE 9 */
   transform: rotate(-30deg);
 }
-#front_wrap #front_box #front_title div p {
-    background-color: rgb(240, 240, 240);
+#front_wrap #front_box #front_title div h1 {
+    background-color: rgb(180, 180, 180);
     color: transparent;
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.7);
     -webkit-background-clip: text;
        -moz-background-clip: text;
             background-clip: text;
