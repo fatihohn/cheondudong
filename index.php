@@ -7,6 +7,8 @@
 
     </head>
     <body>
-        hello world!
+        <header>
+            <?php include "cdd_header.php"; ?>
+        </header>
     </body>
 </html>
