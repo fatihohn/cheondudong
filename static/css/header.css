@@ -77,6 +77,11 @@
     position: relative;
 }
 
+#header_wrap #header_box #header_box_area #header_btn a .menu_btn img{
+    width: 60px;
+    top: -5px;
+    position: relative;
+}
 #header_wrap #header_box #header_box_area #header_btn a .menu_btn .menu_o{
     font-size: 4.5rem;
     position: absolute;
