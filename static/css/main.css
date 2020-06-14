@@ -15,11 +15,11 @@
 }
 #front_wrap #front_box #front_title div {
     -ms-transform: rotate(-30deg); /* IE 9 */
-  transform: rotate(-30deg);
-  position: relative;
-  width: 100px;
-  margin: 0 auto;
-
+    transform: rotate(-30deg);
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+    cursor: pointer;
 }
 #front_wrap #front_box #front_title #title_cdd {
     top: 0px;
