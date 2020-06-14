@@ -29,11 +29,19 @@
     background-clip: text;
 }
 
-#header_wrap #header_box #header_btn a img{
+#header_wrap #header_box #header_btn a .menu_btn{
     width: 60px;
     margin: auto 0;
 }
 
+#header_wrap #header_box #header_btn a .menu_btn .menu_o{
+    font-size: 1rem;
+    position: relative;
+}
+#header_wrap #header_box #header_btn a .menu_btn .menu_m{
+    font-size: 0.8rem;
+    position: relative;
+}
 
 
 
