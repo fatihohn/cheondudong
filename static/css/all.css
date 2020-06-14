@@ -48,13 +48,13 @@
 body {
     width: 100%;
     position: relative;
-    /* font-size: 1rem;
+    /* font-size: 1rem; */
     font-family: '경기천년바탕', 'Noto Serif SC', 'Noto Serif TC', sans-serif;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none; */
+    user-select: none;
     background-color: rgb(240, 240, 240);
     margin: 0;
 }
