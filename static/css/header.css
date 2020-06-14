@@ -62,13 +62,20 @@
 }
 
 
-#header_wrap #header_box #header_box_area #header_btn a #menu_btn{
+#header_wrap #header_box #header_box_area #header_btn{
     width: 60px;
     margin: auto 0;
     top: -50px;
     left: 700px;
     position: relative;
 }
+/* #header_wrap #header_box #header_box_area #header_btn a #menu_btn{
+    width: 60px;
+    margin: auto 0;
+    top: -50px;
+    left: 700px;
+    position: relative;
+} */
 
 #header_wrap #header_box #header_box_area #header_btn a #menu_btn img{
     width: 50px;

@@ -33,7 +33,7 @@
 function headerTitleClick() {
 
 let headerTitle = document.getElementById("header_title");
-function initMap() {
+function showMap() {
     let headerWrap = document.getElementById("header_wrap");
     let frontWrap = document.getElementById("front_wrap");
     let detailWrap = document.getElementById("detail_wrap");
@@ -47,7 +47,7 @@ function initMap() {
     menuWrap.style.display = "none";
     footerWrap.style.display = "none";
 }
-headerTitle.addEventListener("click", initMap);
+headerTitle.addEventListener("click", showMap);
 }
 headerTitleClick();
 
