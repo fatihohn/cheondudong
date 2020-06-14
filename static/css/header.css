@@ -109,4 +109,5 @@
     height: 100%;
     z-index: 1;
     background-color: rgb(240, 240, 240);
+    display: none;
 }
