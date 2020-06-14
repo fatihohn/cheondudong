@@ -30,7 +30,7 @@
             let frWrap = document.getElementById("front_wrap");
             frWrap.style.display = "none";
         }
-        document.frTitle.addEventListener("click", hideFront);
+        frTitle.addEventListener("click", hideFront);
     }
     frTitleClick();
 </script>
