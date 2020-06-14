@@ -1,7 +1,7 @@
 <div id="front_wrap">
     <div id="front_box">
         <div id="front_title">
-            <div id="title_cdd gg-batang">
+            <div id="title_cdd" class="gg-batang">
      
                 <!-- <h1 class="gg-batang"> -->
                 <h1 >
