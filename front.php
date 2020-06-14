@@ -10,7 +10,7 @@
                     동
                 </h1>
             </div>
-            <div id="title_ddc">
+            <div id="title_ddc" class="gg-batang">
            
                 <!-- <h1 class="gg-batang"> -->
                 <h1>
