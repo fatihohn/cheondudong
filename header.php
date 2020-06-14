@@ -34,12 +34,12 @@ function headerTitleClick() {
 
 let headerTitle = document.getElementById("header_title");
 function showMap() {
-    let headerWrap = document.getElementById("header_wrap");
-    let frontWrap = document.getElementById("front_wrap");
-    let detailWrap = document.getElementById("detail_wrap");
-    let mapWrap = document.getElementById("map_wrap");
-    let menuWrap = document.getElementById("menu_wrap");
-    let footerWrap = document.getElementById("footer_wrap");
+    // let headerWrap = document.getElementById("header_wrap");
+    // let frontWrap = document.getElementById("front_wrap");
+    // let detailWrap = document.getElementById("detail_wrap");
+    // let mapWrap = document.getElementById("map_wrap");
+    // let menuWrap = document.getElementById("menu_wrap");
+    // let footerWrap = document.getElementById("footer_wrap");
     headerWrap.style.display = "initial";
     frontWrap.style.display = "none";
     detailWrap.style.display = "none";
