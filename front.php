@@ -23,15 +23,23 @@
 </div>
 
 <script>
-    function frTitleClick() {
+    function frontTitleClick() {
 
-        let frTitle = document.getElementById("front_title");
+        let frontTitle = document.getElementById("front_title");
         function hideFront() {
-            let frWrap = document.getElementById("front_wrap");
-            frWrap.style.display = "none";
+            let frontWrap = document.getElementById("front_wrap");
+            let headerWrap = document.getElementById("header_wrap");
+            let mapWrap = document.getElementById("map_wrap");
+            let detailWrap = document.getElementById("detail_wrap");
+            let menuWrap = document.getElementById("menu_wrap");
+            frontWrap.style.display = "none";
+            headerWrap.style.display = "initial";
+            mapWrap.style.display = "initial";
+            detailWrap.style.display = "none";
+            menuWrap.style.display = "none";
         }
-        frTitle.addEventListener("click", hideFront);
+        frontTitle.addEventListener("click", hideFront);
     }
-    frTitleClick();
+    frontTitleClick();
 </script>
 
