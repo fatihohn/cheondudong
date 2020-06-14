@@ -53,7 +53,7 @@ headerTitleClick();
 
 function headerMenuClick() {
 
-let headerMenu = document.getElementById("header_btn");
+let headerMenu = document.getElementById("menu_btn");
 function showMenu() {
     let headerWrap = document.getElementById("header_wrap");
     let frontWrap = document.getElementById("front_wrap");
