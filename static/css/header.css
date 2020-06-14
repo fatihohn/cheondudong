@@ -24,17 +24,29 @@
     border-image-source: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(240, 240, 240, 0));
 }
 
-#header_wrap #header_box:after {
+/* #header_wrap #header_box:after {
     
         content:"";
         background: -webkit-linear-gradient(left, rgba(92, 7, 52, 1) 0%, rgba(134, 29, 84, 1) 12%, rgba(255, 93, 177, 1) 47%, rgba(83, 0, 30, 1) 100%);
         display: block;
         height:10px;
-        /* width: 500px; */
+        width: 500px;
         position: absolute;
         bottom: 0;
-    
+} */
+#header_wrap #header_box:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(180deg, rgba(255,229,110,1) 0%, rgba(255,229,110,0.001) 100%);
+    z-index: -1;
+    pointer-events: none;
+    transition: 0.2s opacity;
 }
+
 #header_wrap #header_box #header_title {
     margin: 0 auto;
     width: 300px;
