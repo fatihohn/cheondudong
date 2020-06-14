@@ -22,3 +22,16 @@
     </div>
 </div>
 
+<script>
+    function frTitleClick() {
+
+        let frTitle = document.getElementById("front_title");
+        function hideFront() {
+            let frWrap = document.getElementById("front_wrap");
+            frWrap.style.display = "none";
+        }
+        document.frTitle.addEventListener("click", hideFront);
+    }
+    frTitleClick();
+</script>
+
