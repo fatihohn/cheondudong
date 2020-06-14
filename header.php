@@ -12,14 +12,14 @@
             <div id="header_btn">
                 <a>
                     
-                    <!-- <img src="/static/img/menu_btn.png" alt="메뉴"> -->
                     <div class="menu_btn">
-                        <h2 class="menu_o">
+                        <img src="/static/img/menu_btn.png" alt="메뉴">
+                        <!-- <h2 class="menu_o">
                             ○
                         </h2>
                         <h2 class="menu_m">
                             ≡
-                        </h2>
+                        </h2> -->
                     </div>
                 </a>
             </div>
