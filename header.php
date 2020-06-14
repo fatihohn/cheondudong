@@ -4,7 +4,7 @@
 
             <div id="header_title">
                 <a href="/index.php">
-                    <h1>
+                    <h1 class="gg-batang">
                         천두동
                     </h1>
                 </a>
