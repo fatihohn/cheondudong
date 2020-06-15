@@ -165,5 +165,16 @@
 }
 
 
-
+/*menu_intro*/
+#intro_cont_wrap {
+    display: none;
+}
+/*menu_place*/
+#place_cont_wrap {
+    display: none;
+}
+/*menu_people*/
+#people_cont_wrap {
+    display: none;
+}
 
