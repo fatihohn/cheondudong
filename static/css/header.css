@@ -26,18 +26,18 @@
     
 }
 
-/* #header_wrap #header_box:before {
+#header_wrap #header_box:before {
     content: "";
     position: absolute;
     top: 70px;
     width: 100%;
     margin: 0 auto;
     height: 30px;
-    background: linear-gradient(180deg,rgba(0,0,0,0.2) 0%,rgba(240, 240, 240, 0) 60%);
+    background: linear-gradient(180deg,rgba(240,240,240,1) 0%,rgba(0, 0, 0, 0) 60%);
     z-index: -1;
     pointer-events: none;
     transition: 0.2s opacity;
-} */
+}
 
 #header_wrap #header_box #header_box_area {
     width: 100%;
