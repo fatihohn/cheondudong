@@ -80,7 +80,7 @@
     padding-bottom: 40px;
 }
 #detail_wrap #detail_box #detail_title h3 {
-    font-size: 1.4rem;
+    font-size: 2rem;
 }
 
 #detail_wrap #detail_box #detail_point {
@@ -121,6 +121,13 @@
     min-height: 80px;
     margin: 0 auto;
     padding-bottom: 20px;
+}
+#detail_wrap #detail_box #detail_work, 
+#detail_wrap #detail_box #detail_ref, 
+#detail_wrap #detail_box #detail_work li.work_list, 
+#detail_wrap #detail_box #detail_ref li.ref_list {
+    font-size: 0.9rem;
+    /* font-weight: 600; */
 }
 #detail_wrap #detail_box #detail_work p.work_title, 
 #detail_wrap #detail_box #detail_ref p.ref_title {
