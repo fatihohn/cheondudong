@@ -88,7 +88,7 @@ function menuIntroClick() {
             introWrap.style.display = "none";
         }
     }
-    menuIntro.addEventListener("click", showIntro);
+    menuIntro.addEventListener("click", showIntro());
 }
 menuIntroClick();
 
