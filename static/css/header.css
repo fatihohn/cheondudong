@@ -177,7 +177,7 @@
 
 
 /*menu_intro*/
-#intro_cont_wrap {
+#menu_wrap #menu_box #menu_list .menu_list_item #intro_cont_wrap {
     display: none;
 }
 #intro_cont_wrap #intro_cont {
@@ -185,7 +185,7 @@
     color: rgba(0, 0, 0, 0.8);
 }
 /*menu_place*/
-#place_cont_wrap {
+#menu_wrap #menu_box #menu_list .menu_list_item #place_cont_wrap {
     display: none;
 }
 
