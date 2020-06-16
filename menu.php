@@ -5,7 +5,7 @@
                 <li id="menu_intro" class="menu_list_item">
                     <a >
                         <h2 class="gg-batang">
-                            천두동 소개
+                            천두동·동두천 소개
                         </h2>
                     </a>
                     <div id="intro_cont_wrap">

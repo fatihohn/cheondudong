@@ -20,10 +20,14 @@
     border-image-source: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(240, 240, 240, 0)); */
     z-index: 100;
 
-    border-bottom: 20px solid;
+    /*형압 보더*/
+    /* border-bottom: 20px solid;
     border-image-source: linear-gradient(180deg, rgba(240, 240, 240, 0) 0%, rgba(240, 240, 240, 0) 99%, rgba(0, 0, 0, 0.01) 98.5%, rgb(255,255,255) 99.3%, rgba(0,0,0, 0.08) 99.9%, rgba(0,0,0, 0) 100%);
-    border-image-slice: 1;
+    border-image-slice: 1; */
     
+    border-bottom: 20px solid;
+    border-image: url(../img/intaglio_line.png);
+    border-image-slice: 30;
 }
 
 #header_wrap #header_box:before {
