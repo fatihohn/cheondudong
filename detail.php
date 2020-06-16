@@ -19,7 +19,7 @@ $detailRef = "임시 참고자료 == 리스트 == 입력 시 리스트로 변환
                 <img src="<?php echo $detailMarker;?>" alt="<?php echo $detailTitle;?>">
             </div>
             <div id="detail_title">
-                <h3>
+                <h3 class="tooling">
                     <?php echo $detailTitle;?>
                 </h3>
             </div>
