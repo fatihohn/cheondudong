@@ -13,7 +13,8 @@
             headerWrap.style.display = "initial";
             frontWrap.style.display = "none";
             detailWrap.style.display = "none";
-            mapWrap.style.display = "initial";
+            // mapWrap.style.display = "initial";
+            mapWrap.style.visibility = "visible";
             menuWrap.style.display = "none";
             footerWrap.style.display = "initial";
         }
@@ -34,7 +35,8 @@
             headerWrap.style.display = "initial";
             frontWrap.style.display = "none";
             detailWrap.style.display = "none";
-            mapWrap.style.display = "initial";
+            // mapWrap.style.display = "initial";
+            mapWrap.style.visibility = "visible";
             menuWrap.style.display = "none";
             footerWrap.style.display = "none";
         }
@@ -57,14 +59,16 @@
                 headerWrap.style.display = "initial";
                 frontWrap.style.display = "none";
                 detailWrap.style.display = "none";
-                mapWrap.style.display = "none";
+                // mapWrap.style.display = "none";
+                mapWrap.style.visibility = "hidden";
                 menuWrap.style.display = "initial";
                 footerWrap.style.display = "initial";
             } else {
                 headerWrap.style.display = "initial";
                 frontWrap.style.display = "none";
                 detailWrap.style.display = "none";
-                mapWrap.style.display = "initial";
+                // mapWrap.style.display = "initial";
+                mapWrap.style.visibility = "visible";
                 menuWrap.style.display = "none";
                 footerWrap.style.display = "none";
             }
@@ -98,7 +102,7 @@
         let menuPlace = document.getElementById("menu_place_btn");
         function showPlace() {
             let placeWrap = document.getElementById("place_cont_wrap");
-            
+
             if(placeWrap.style.display == "none") {
                 placeWrap.style.display = "initial";
             } else {
