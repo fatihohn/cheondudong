@@ -79,3 +79,9 @@
     height: 100%;
     left: 0;
 }
+#map .mapboxgl-ctrl {
+    display: none;
+}
+#map .mapboxgl-ctrl.mapboxgl-ctrl-attrib {
+    display: none;
+}
