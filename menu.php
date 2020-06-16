@@ -54,10 +54,10 @@
 let menuIntro = document.getElementById("menu_intro_btn");
 function showIntro() {
     let introWrap = document.getElementById("intro_cont_wrap");
-    if(introWrap.style.display == "none") {
-        introWrap.style.display = "initial";
-    } else {
+    if(introWrap.style.display !== "none") {
         introWrap.style.display = "none";
+    } else {
+        introWrap.style.display = "initial";
     }
 }
 menuIntro.addEventListener("click", showIntro);
@@ -70,10 +70,10 @@ let menuPlace = document.getElementById("menu_place_btn");
 function showPlace() {
     let placeWrap = document.getElementById("place_cont_wrap");
     
-    if(placeWrap.style.display == "none") {
-        placeWrap.style.display = "initial";
-    } else {
+    if(placeWrap.style.display !== "none") {
         placeWrap.style.display = "none";
+    } else {
+        placeWrap.style.display = "initial";
     }
     
 }
