@@ -16,10 +16,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="아이콘 제작 후 입력">
     <link rel="icon" type="image/png" sizes="16x16" href="아이콘 제작 후 입력">
 
+    
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+    
     <link rel="stylesheet" href="static/css/all.css?after" type="text/css">
     <link rel="stylesheet" href="static/css/header.css?after" type="text/css">
     <link rel="stylesheet" href="static/css/main.css?after" type="text/css">
-
-    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
-    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
 
