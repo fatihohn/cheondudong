@@ -43,9 +43,11 @@
 let menuIntro = document.getElementById("menu_intro_btn");
 function showIntro() {
     let introWrap = document.getElementById("intro_cont_wrap");
-    
-    introWrap.style.display = "initial";
-    
+    if(introWrap.style.display == "none") {
+        introWrap.style.display = "initial";
+    } else {
+        introWrap.style.display = "initial";
+    }
 }
 menuIntro.addEventListener("click", showIntro);
 }
@@ -57,7 +59,11 @@ let menuPlace = document.getElementById("menu_place_btn");
 function showPlace() {
     let placeWrap = document.getElementById("place_cont_wrap");
     
-    placeWrap.style.display = "initial";
+    if(placeWrap.style.display == "none") {
+        placeWrap.style.display = "initial";
+    } else {
+        placeWrap.style.display = "none";
+    }
     
 }
 menuPlace.addEventListener("click", showPlace);
@@ -70,7 +76,11 @@ let menuPeople = document.getElementById("menu_people_btn");
 function showPeople() {
     let peopleWrap = document.getElementById("people_cont_wrap");
     
-    peopleWrap.style.display = "initial";
+    if(peopleWrap.style.display = "none") {
+        peopleWrap.style.display = "initial";
+    } else {
+        peopleWrap.style.display = "none";
+    }
     
 }
 menuPeople.addEventListener("click", showPeople);
