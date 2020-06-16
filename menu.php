@@ -9,7 +9,10 @@
                         </h2>
                     </a>
                     <div id="intro_cont_wrap">
-                        hello intro
+                        <div id="intro_cont">
+                            hello intro
+
+                        </div>
                     </div>
                 </li>
                 <li id="menu_place" class="menu_list_item">
@@ -19,10 +22,18 @@
                         </h2>
                     </a>
                     <div id="place_cont_wrap">
-                        hello place
+                        <div id="place_cont">
+                            <ul id="place_ul">
+                                <li>
+                                    hello place
+                                </li>    
+                                
+                            </ul>
+
+                        </div>
                     </div>
                 </li>
-                <li id="menu_people" class="menu_list_item">
+                <!-- <li id="menu_people" class="menu_list_item">
                     <a id="menu_people_btn">
                         <h2 class="gg-batang">
                             천두동 사람들
@@ -31,7 +42,7 @@
                     <div id="people_cont_wrap">
                         hello people
                     </div>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>
@@ -70,20 +81,20 @@ menuPlace.addEventListener("click", showPlace);
 }
 menuPlaceClick();
 
- function menuPeopleClick() {
+//  function menuPeopleClick() {
 
-let menuPeople = document.getElementById("menu_people_btn");
-function showPeople() {
-    let peopleWrap = document.getElementById("people_cont_wrap");
+// let menuPeople = document.getElementById("menu_people_btn");
+// function showPeople() {
+//     let peopleWrap = document.getElementById("people_cont_wrap");
     
-    if(peopleWrap.style.display = "none") {
-        peopleWrap.style.display = "initial";
-    } else {
-        peopleWrap.style.display = "none";
-    }
+//     if(peopleWrap.style.display = "none") {
+//         peopleWrap.style.display = "initial";
+//     } else {
+//         peopleWrap.style.display = "none";
+//     }
     
-}
-menuPeople.addEventListener("click", showPeople);
-}
-menuPeopleClick();
+// }
+// menuPeople.addEventListener("click", showPeople);
+// }
+// menuPeopleClick();
 </script>

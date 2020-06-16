@@ -133,7 +133,7 @@
     max-width: 768px;
     margin: 0 auto;
     position: relative;
-    top: 180px;
+    top: 140px;
 }
 
 #menu_wrap #menu_box #menu_list .menu_list_item{
@@ -180,12 +180,21 @@
 #intro_cont_wrap {
     display: none;
 }
+#intro_cont_wrap #intro_cont {
+    text-indent: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+}
 /*menu_place*/
 #place_cont_wrap {
     display: none;
 }
-/*menu_people*/
-#people_cont_wrap {
-    display: none;
+#place_cont_wrap #place_cont #place_ul {
+    
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
 }
+
+
 
