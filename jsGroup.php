@@ -1,5 +1,6 @@
 
 <script>
+//****대문****//
     function frontTitleClick() {
 
         let frontTitle = document.getElementById("front_title");
@@ -22,6 +23,7 @@
     }
     frontTitleClick();
 
+//***헤더***//
     function headerTitleClick() {
 
         let headerTitle = document.getElementById("header_title");
@@ -80,7 +82,7 @@
 
 
 
-
+//***메뉴***//
     function menuIntroClick() {
 
         let menuIntro = document.getElementById("menu_intro_btn");
@@ -115,21 +117,31 @@
     }
     menuPlaceClick();
 
-//  function menuPeopleClick() {
+    function menuDetailClick() {
 
-// let menuPeople = document.getElementById("menu_people_btn");
-// function showPeople() {
-//     let peopleWrap = document.getElementById("people_cont_wrap");
-    
-//     if(peopleWrap.style.display = "none") {
-//         peopleWrap.style.display = "initial";
-//     } else {
-//         peopleWrap.style.display = "none";
-//     }
-    
-// }
-// menuPeople.addEventListener("click", showPeople);
-// }
-// menuPeopleClick();
+        let menuDetail = document.getElementById("menu_detail_btn");
+            let detailWrap = document.getElementById("detail_wrap");
+        function showDetail() {
+            let headerWrap = document.getElementById("header_wrap");
+            let frontWrap = document.getElementById("front_wrap");
+            let detailWrap = document.getElementById("detail_wrap");
+            let mapWrap = document.getElementById("map_wrap");
+            let menuWrap = document.getElementById("menu_wrap");
+            let footerWrap = document.getElementById("footer_wrap");
+
+            headerWrap.style.display = "initial";
+            frontWrap.style.display = "none";
+            detailWrap.style.display = "initial";
+            // mapWrap.style.display = "none";
+            mapWrap.style.visibility = "hidden";
+            menuWrap.style.display = "none";
+            footerWrap.style.display = "initial";
+            
+        }
+                detailWrap.style.display = "none";
+        menuDetail.addEventListener("click", showDetail);
+    }
+    menuDetailClick();
+
 
 </script>

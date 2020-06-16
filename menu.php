@@ -33,6 +33,15 @@
                         </div>
                     </div>
                 </li>
+                <li id="menu_detail" class="menu_list_item">
+                    <a id="menu_detail_btn">
+                        <h2 class="gg-batang">
+                            장소 세부 임시버튼
+                        </h2>
+                    </a>
+                    
+                    </div>
+                </li>
                 <!-- <li id="menu_people" class="menu_list_item">
                     <a id="menu_people_btn">
                         <h2 class="gg-batang">
