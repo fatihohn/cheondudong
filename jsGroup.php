@@ -77,38 +77,38 @@
 
 
 
-function menuIntroClick() {
+    function menuIntroClick() {
 
-    let menuIntro = document.getElementById("menu_intro_btn");
-        let introWrap = document.getElementById("intro_cont_wrap");
-    function showIntro() {
-        if(introWrap.style.display == "none") {
-            introWrap.style.display = "initial";
-        } else {
-            introWrap.style.display = "none";
+        let menuIntro = document.getElementById("menu_intro_btn");
+        function showIntro() {
+            let introWrap = document.getElementById("intro_cont_wrap");
+            if(introWrap.style.display == "none") {
+                introWrap.style.display = "initial";
+            } else {
+                introWrap.style.display = "none";
+            }
         }
+                // introWrap.style.display = "none";
+        menuIntro.addEventListener("click", showIntro);
     }
-            introWrap.style.display = "none";
-    menuIntro.addEventListener("click", showIntro);
-}
-menuIntroClick();
+    menuIntroClick();
 
-function menuPlaceClick() {
+    function menuPlaceClick() {
 
-    let menuPlace = document.getElementById("menu_place_btn");
-        let placeWrap = document.getElementById("place_cont_wrap");
-    function showPlace() {
-        
-        if(placeWrap.style.display == "none") {
-            placeWrap.style.display = "initial";
-        } else {
-            placeWrap.style.display = "none";
+        let menuPlace = document.getElementById("menu_place_btn");
+        function showPlace() {
+            let placeWrap = document.getElementById("place_cont_wrap");
+            
+            if(placeWrap.style.display == "none") {
+                placeWrap.style.display = "initial";
+            } else {
+                placeWrap.style.display = "none";
+            }
         }
+                // placeWrap.style.display = "none";
+        menuPlace.addEventListener("click", showPlace);
     }
-            placeWrap.style.display = "none";
-    menuPlace.addEventListener("click", showPlace);
-}
-menuPlaceClick();
+    menuPlaceClick();
 
 //  function menuPeopleClick() {
 
