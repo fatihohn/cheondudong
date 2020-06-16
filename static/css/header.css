@@ -177,17 +177,17 @@
 
 
 /*menu_intro*/
-#intro_cont_wrap {
+/* #intro_cont_wrap {
     display: none;
-}
+} */
 #intro_cont_wrap #intro_cont {
     text-indent: 1rem;
     color: rgba(0, 0, 0, 0.8);
 }
 /*menu_place*/
-#place_cont_wrap {
+/* #place_cont_wrap {
     display: none;
-}
+} */
 
 #place_cont_wrap #place_cont {
     /* text-indent: 1rem; */

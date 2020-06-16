@@ -84,8 +84,8 @@
     function menuIntroClick() {
 
         let menuIntro = document.getElementById("menu_intro_btn");
-        function showIntro() {
             let introWrap = document.getElementById("intro_cont_wrap");
+        function showIntro() {
 
             if(introWrap.style.display == "none") {
                 introWrap.style.display = "initial";
@@ -93,15 +93,16 @@
                 introWrap.style.display = "none";
             }
         }
-        menuIntro.addEventListener("click", showIntro());
+                introWrap.style.display = "none";
+        menuIntro.addEventListener("click", showIntro);
     }
     menuIntroClick();
 
     function menuPlaceClick() {
 
         let menuPlace = document.getElementById("menu_place_btn");
-        function showPlace() {
             let placeWrap = document.getElementById("place_cont_wrap");
+        function showPlace() {
 
             if(placeWrap.style.display == "none") {
                 placeWrap.style.display = "initial";
@@ -109,7 +110,8 @@
                 placeWrap.style.display = "none";
             }
         }
-        menuPlace.addEventListener("click", showPlace());
+                placeWrap.style.display = "none";
+        menuPlace.addEventListener("click", showPlace);
     }
     menuPlaceClick();
 
