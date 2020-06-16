@@ -1,3 +1,11 @@
+<?php
+
+$introCont = "임시 사이트 소개";
+$placeTitle = "임시 장소 제목"
+?>
+
+
+
 <div id="menu_wrap">
     <div id="menu_box">
         <div id="menu_box_area">
@@ -10,7 +18,8 @@
                     </a>
                     <div id="intro_cont_wrap">
                         <div id="intro_cont">
-                            hello intro
+                            
+                            <?php echo $introCont;?>
 
                         </div>
                     </div>
@@ -23,13 +32,18 @@
                     </a>
                     <div id="place_cont_wrap">
                         <div id="place_cont">
+                            
                             <ul id="place_ul">
-                                <li class="place_li">
-                                    hello place
-                                </li>    
-                                
+                                <?php
+                                if(isset($result blahblah)) {
+                                    while(num_rows blahblah) {
+                                        echo "<li class='place_li'>";
+                                        echo $placeTitle;
+                                        echo "</li>";    
+                                    }
+                                }
+                                ?>
                             </ul>
-
                         </div>
                     </div>
                 </li>
