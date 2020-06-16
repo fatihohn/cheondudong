@@ -30,6 +30,8 @@
     -moz-border-image: url(../img/intaglio_line.png);
     border-image: url(../img/intaglio_line.png);
     border-image-slice: 30;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
 }
 
 /* #header_wrap #header_box:before {
