@@ -24,7 +24,7 @@
                     <div id="place_cont_wrap">
                         <div id="place_cont">
                             <ul id="place_ul">
-                                <li>
+                                <li class="place_li">
                                     hello place
                                 </li>    
                                 
@@ -57,7 +57,7 @@ function showIntro() {
     if(introWrap.style.display == "none") {
         introWrap.style.display = "initial";
     } else {
-        introWrap.style.display = "initial";
+        introWrap.style.display = "none";
     }
 }
 menuIntro.addEventListener("click", showIntro);
