@@ -79,7 +79,7 @@
     height: 100%;
     left: 0;
 }
-#map .mapboxgl-ctrl {
+#map .mapboxgl-ctrl a.mapboxgl-ctrl-logo {
     display: none;
 }
 #map .mapboxgl-ctrl.mapboxgl-ctrl-attrib {
