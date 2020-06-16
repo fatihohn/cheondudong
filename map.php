@@ -11,8 +11,8 @@
     // style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
     style: 'mapbox://styles/suricity/ckbg1kxyd3jjo1is4ro4nkpb5', // stylesheet location
     // center: [192, 37], // starting position [lng, lat]
-    center: [127.057193, 37.914048], // starting position [lng, lat]
-    zoom: 13 // starting zoom
+    center: [127.084241, 37.896623], // starting position [lng, lat]
+    zoom: 12.5 // starting zoom
     });
 
     // document.querySelector(".mapboxgl-canvas").style.width = "100%";
