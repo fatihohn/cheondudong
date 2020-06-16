@@ -183,7 +183,7 @@
 } */
 #intro_cont_wrap #intro_cont {
     text-indent: 1rem;
-    color: #999;
+    color: #555;
 }
 /*menu_place*/
 /* #place_cont_wrap {
@@ -192,7 +192,7 @@
 
 #place_cont_wrap #place_cont {
     /* text-indent: 1rem; */
-    color: #999;
+    color: #555;
 }
 
 #place_cont_wrap #place_cont #place_ul {
