@@ -93,7 +93,7 @@
                 introWrap.style.display = "none";
             }
         }
-        menuIntro.addEventListener("click", showIntro);
+        menuIntro.addEventListener("click", showIntro());
     }
     menuIntroClick();
 
@@ -109,7 +109,7 @@
                 placeWrap.style.display = "none";
             }
         }
-        menuPlace.addEventListener("click", showPlace);
+        menuPlace.addEventListener("click", showPlace());
     }
     menuPlaceClick();
 
