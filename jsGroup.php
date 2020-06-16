@@ -82,13 +82,13 @@ function menuIntroClick() {
     let menuIntro = document.getElementById("menu_intro_btn");
     function showIntro() {
         let introWrap = document.getElementById("intro_cont_wrap");
+            introWrap.style.display = "none";
         if(introWrap.style.display == "none") {
             introWrap.style.display = "initial";
         } else {
             introWrap.style.display = "none";
         }
     }
-            introWrap.style.display = "none";
     menuIntro.addEventListener("click", showIntro);
 }
 menuIntroClick();
@@ -99,13 +99,13 @@ function menuPlaceClick() {
     function showPlace() {
         let placeWrap = document.getElementById("place_cont_wrap");
         
+            placeWrap.style.display = "none";
         if(placeWrap.style.display == "none") {
             placeWrap.style.display = "initial";
         } else {
             placeWrap.style.display = "none";
         }
     }
-            placeWrap.style.display = "none";
     menuPlace.addEventListener("click", showPlace);
 }
 menuPlaceClick();
