@@ -27,7 +27,7 @@
     
     border-bottom: 20px solid;
     border-image: url(../img/intaglio_line.png);
-    border-image-slice: 30;
+    border-image-slice: 24;
 }
 
 #header_wrap #header_box:before {
