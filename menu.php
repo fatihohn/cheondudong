@@ -34,14 +34,15 @@ $placeTitle = "임시 장소 제목"
                         <div id="place_cont">
                             
                             <ul id="place_ul">
+                                <?php echo $placeTitle;?>
                                 <?php
-                                if(isset($result blahblah)) {
-                                    while(num_rows blahblah) {
-                                        echo "<li class='place_li'>";
-                                        echo $placeTitle;
-                                        echo "</li>";    
-                                    }
-                                }
+                                // if(isset($result blahblah)) {
+                                //     while(num_rows blahblah) {
+                                //         echo "<li class='place_li'>";
+                                //         echo $placeTitle;
+                                //         echo "</li>";    
+                                //     }
+                                // }
                                 ?>
                             </ul>
                         </div>
