@@ -74,10 +74,10 @@
 #detail_wrap #detail_box #detail_title {
     width: 100%;
     max-width: 768px;
-    min-height: 100px;
+    /* min-height: 100px; */
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 #detail_wrap #detail_box #detail_title h3 {
     font-size: 2rem;
