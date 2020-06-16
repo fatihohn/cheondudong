@@ -10,10 +10,10 @@
     container: 'map',
     // style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
     style: 'mapbox://styles/suricity/ckbg1kxyd3jjo1is4ro4nkpb5', // stylesheet location
-    center: [-74.5, 40], // starting position [lng, lat]
+    center: [192, 37], // starting position [lng, lat]
     zoom: 9 // starting zoom
     });
 
-    document.querySelector(".mapboxgl-canvas").style.width = "100%";
-    document.querySelector(".mapboxgl-canvas").style.height = "100%";
+    // document.querySelector(".mapboxgl-canvas").style.width = "100%";
+    // document.querySelector(".mapboxgl-canvas").style.height = "100%";
     </script>
