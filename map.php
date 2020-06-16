@@ -10,7 +10,8 @@
     container: 'map',
     // style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
     style: 'mapbox://styles/suricity/ckbg1kxyd3jjo1is4ro4nkpb5', // stylesheet location
-    center: [192, 37], // starting position [lng, lat]
+    // center: [192, 37], // starting position [lng, lat]
+    center: [37.896957, 127.054362], // starting position [lng, lat]
     zoom: 9 // starting zoom
     });
 
