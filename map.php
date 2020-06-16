@@ -13,4 +13,7 @@
     center: [-74.5, 40], // starting position [lng, lat]
     zoom: 9 // starting zoom
     });
+
+    document.querySelector(".mapboxgl-canvas").style.width = "100%";
+    document.querySelector(".mapboxgl-canvas").style.height = "100%";
     </script>
