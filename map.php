@@ -9,7 +9,8 @@
     var map = new mapboxgl.Map({
     container: 'map',
     // style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
-    style: 'mapbox://styles/suricity/ckbg1kxyd3jjo1is4ro4nkpb5', // stylesheet location
+    // style: 'mapbox://styles/suricity/ckbg1kxyd3jjo1is4ro4nkpb5', // stylesheet location
+    style: 'mapbox://styles/suricity/ckbhx3huo0xb11ip5hywb59rx', // stylesheet location
     // center: [192, 37], // starting position [lng, lat]
     center: [127.060444, 37.911627], // starting position [lng, lat]
     zoom: 12.9 // starting zoom
