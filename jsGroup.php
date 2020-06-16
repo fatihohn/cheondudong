@@ -88,6 +88,7 @@ function menuIntroClick() {
             introWrap.style.display = "none";
         }
     }
+            introWrap.style.display = "none";
     menuIntro.addEventListener("click", showIntro);
 }
 menuIntroClick();
@@ -104,6 +105,7 @@ function menuPlaceClick() {
             placeWrap.style.display = "none";
         }
     }
+            placeWrap.style.display = "none";
     menuPlace.addEventListener("click", showPlace);
 }
 menuPlaceClick();
