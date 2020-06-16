@@ -32,7 +32,7 @@
     border-image-slice: 30;
 }
 
-#header_wrap #header_box:before {
+/* #header_wrap #header_box:before {
     content: "";
     position: absolute;
     top: 70px;
@@ -43,7 +43,7 @@
     z-index: -1;
     pointer-events: none;
     transition: 0.2s opacity;
-}
+} */
 
 #header_wrap #header_box #header_box_area {
     width: 100%;

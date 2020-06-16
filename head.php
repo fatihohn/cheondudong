@@ -22,5 +22,4 @@
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
 <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
-<!-- <link href='https://api.mapbox.com/styles/v1/suricity/ckbg1kxyd3jjo1is4ro4nkpb5.html?fresh=true&title=view&access_token=pk.eyJ1Ijoic3VyaWNpdHkiLCJhIjoiY2tiZnpzaGtzMTB5NTJwcWVtOHF5anRmMCJ9.CI4QuMCsvVak3vrNtnJWcw' rel='stylesheet' /> -->
-<!-- mapbox://styles/suricity/ckbg1kxyd3jjo1is4ro4nkpb5 -->
+
