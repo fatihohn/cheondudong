@@ -24,6 +24,7 @@ $detailRef = "임시 참고자료 == 리스트 == 입력 시 리스트로 변환
                 </h3>
             </div>
             <div id="detail_point">
+                
                 <p class="detail_address">
                     <?php echo $detailAddress;?>
                 </p>
@@ -35,9 +36,15 @@ $detailRef = "임시 참고자료 == 리스트 == 입력 시 리스트로 변환
                 <?php echo $detailCont;?>
             </div>
             <div id="detail_work">
+                <p class="work_title tooling">
+                    관련 작품
+                </p>
                 <?php echo $detailWork;?>
             </div>
             <div id="detail_ref">
+                <p class="ref_title tooling">
+                    참고 자료
+                </p>
                 <?php echo $detailRef;?>
             </div>
         </div>

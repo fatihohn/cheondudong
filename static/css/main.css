@@ -52,7 +52,81 @@
     display: none;
 }
 
+#detail_wrap #detail_box {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    text-align: center;
+}
 
+#detail_wrap #detail_box #detail_marker{
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+#detail_wrap #detail_box #detail_marker img{
+    max-width: 340px;
+    height: auto;
+}
+#detail_wrap #detail_box #detail_title {
+    width: 100%;
+    max-width: 768px;
+    min-height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#detail_wrap #detail_box #detail_point {
+    width: 100%;
+    max-width: 768px;
+    min-height: 80px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+#detail_wrap #detail_box #detail_point p.detail_address {
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 10px;
+}
+#detail_wrap #detail_box #detail_point p.detail_coord {
+    font-size: 0.5rem;
+    font-weight: 300;
+    line-height: 10px;
+}
+
+#detail_wrap #detail_box #detail_cont {
+    white-space: pre-line;
+    word-break: keep-all;
+    max-width: 596px;
+    height: min-content;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    letter-spacing: 1.8px;
+    line-height: 1.9rem;
+    color: rgba(0, 0, 0, 0.75);
+    padding-bottom: 40px; 
+}
+
+#detail_wrap #detail_box #detail_work, 
+#detail_wrap #detail_box #detail_ref {
+    width: 100%;
+    max-width: 768px;
+    min-height: 80px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#detail_wrap #detail_box #detail_work p.work_title, 
+#detail_wrap #detail_box #detail_ref p.ref_title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 10px;
+}
 
 
 
