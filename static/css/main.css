@@ -56,7 +56,7 @@
     width: 100%;
     max-width: 768px;
     margin: 0 auto;
-    /* text-align: center; */
+    margin-top: 120px;
 }
 
 #detail_wrap #detail_box #detail_marker{
@@ -79,6 +79,9 @@
     text-align: center;
     padding-bottom: 40px;
 }
+#detail_wrap #detail_box #detail_title h3 {
+    font-size: 1.4rem;
+}
 
 #detail_wrap #detail_box #detail_point {
     width: 100%;
@@ -91,12 +94,11 @@
 #detail_wrap #detail_box #detail_point p.detail_address {
     font-size: 0.8rem;
     font-weight: 600;
-    line-height: 10px;
 }
 #detail_wrap #detail_box #detail_point p.detail_coord {
     font-size: 0.5rem;
     font-weight: 300;
-    line-height: 10px;
+    /* line-height: 15px; */
 }
 
 #detail_wrap #detail_box #detail_cont {
@@ -118,14 +120,12 @@
     max-width: 596px;
     min-height: 80px;
     margin: 0 auto;
-    /* text-align: center; */
     padding-bottom: 20px;
 }
 #detail_wrap #detail_box #detail_work p.work_title, 
 #detail_wrap #detail_box #detail_ref p.ref_title {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    line-height: 10px;
 }
 
 
