@@ -12,7 +12,7 @@
     style: 'mapbox://styles/suricity/ckbg1kxyd3jjo1is4ro4nkpb5', // stylesheet location
     // center: [192, 37], // starting position [lng, lat]
     center: [127.057193, 37.914048], // starting position [lng, lat]
-    zoom: 12 // starting zoom
+    zoom: 13 // starting zoom
     });
 
     // document.querySelector(".mapboxgl-canvas").style.width = "100%";
