@@ -48,7 +48,7 @@
     </div>
 </div>
 
-<script>
+<!-- <script>
  function menuIntroClick() {
 
 let menuIntro = document.getElementById("menu_intro_btn");
@@ -97,4 +97,4 @@ menuPlaceClick();
 // menuPeople.addEventListener("click", showPeople);
 // }
 // menuPeopleClick();
-</script>
+</script> -->
