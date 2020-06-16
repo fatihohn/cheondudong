@@ -20,6 +20,6 @@
     <link rel="stylesheet" href="static/css/header.css?after" type="text/css">
     <link rel="stylesheet" href="static/css/main.css?after" type="text/css">
 
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
 
