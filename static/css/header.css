@@ -25,9 +25,9 @@
     border-image-source: linear-gradient(180deg, rgba(240, 240, 240, 0) 0%, rgba(240, 240, 240, 0) 99%, rgba(0, 0, 0, 0.01) 98.5%, rgb(255,255,255) 99.3%, rgba(0,0,0, 0.08) 99.9%, rgba(0,0,0, 0) 100%);
     border-image-slice: 1; */
     
-    border-bottom: 20px solid;
+    border-bottom: 10px solid;
     border-image: url(../img/intaglio_line.png);
-    border-image-slice: 24;
+    border-image-slice: 30;
 }
 
 #header_wrap #header_box:before {
@@ -137,9 +137,12 @@
 #menu_wrap #menu_box #menu_list .menu_list_item{
     padding-bottom: 15px;
     margin-bottom: 15px;
-    border-bottom: 20px solid;
+    /* border-bottom: 20px solid;
     border-image-source: linear-gradient(180deg, rgba(240, 240, 240, 0) 0%, rgba(240, 240, 240, 0) 99%, rgba(0, 0, 0, 0.01) 98.5%, rgb(255,255,255) 99.3%, rgba(0,0,0, 0.08) 99.9%, rgba(0,0,0, 0) 100%);
-    border-image-slice: 1;
+    border-image-slice: 1; */
+    border-bottom: 10px solid;
+    border-image: url(../img/intaglio_line.png);
+    border-image-slice: 30;
 }
 
 /* #menu_wrap #menu_box #menu_list .menu_list_item:before {
