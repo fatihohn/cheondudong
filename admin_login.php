@@ -8,10 +8,8 @@
 
 <body>
     <header>
-        <?php 
-        include 'admin_header.php'; 
-        ?>
-</header>
+        <?php include 'admin_header.php'; ?>
+    </header>
         
    
     <section>
@@ -22,11 +20,7 @@
 
         <div class="adLogInProcess">
     
-            <div class='ad_logInLogo' onclick='location.href="./admin_login.php"'>
-            <img src='static/img/editor_logo.png' alt='변방둥둥'>      
-            </div>
-
-            <br>
+            
             
             <div align='center'>
         <span>로그인</span>
