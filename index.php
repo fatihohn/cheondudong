@@ -13,6 +13,11 @@
             <?php include "header.php"; ?>
         </header>
         
+        <nav>
+        <!-- menu: 메뉴 내비 바 -->
+            <?php include "menu.php"; ?>
+        </nav>
+
         <section>
 
         <!-- front page: 전체화면, <천두동 동두천> 제목, 클릭하면 map으로 넘어감 -->
@@ -23,11 +28,6 @@
             <?php include "map.php"; ?>
 
         </section>
-
-        <nav>
-        <!-- menu: 메뉴 내비 바 -->
-            <?php include "menu.php"; ?>
-        </nav>
 
         <footer>
         <!-- footer: detail, menu 화면 아래에서 저작권 정보 보여줌. -->
