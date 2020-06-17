@@ -14,9 +14,9 @@
            
                 <!-- <h1 class="gg-batang"> -->
                 <h1>
-                    동<br>
-                    두<br>
-                    천
+                    에<br>
+                    디<br>
+                    터
                 </h1>
 
             </div>
