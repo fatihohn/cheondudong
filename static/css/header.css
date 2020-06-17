@@ -122,6 +122,10 @@
 
 
 /****menu****/
+
+#menu_wrap * {
+    z-index: 99;
+}
 #menu_wrap {
     width: 100%;
     height: 100%;
