@@ -26,7 +26,7 @@
                 <!-- <div onclick="location.href='./admin_login.php'"><h4 class="tooling">[LogIn]</h4></div>
                 <div onclick="location.href='./admin_create_user.php'"><h4 class="tooling">[SignIn]</h4></div> -->
                 <div id="login_btn"><h4 class="tooling">[LogIn]</h4></div>
-                <div id="signin_btn"><h4 class="tooling">[SignIn]</h4></div>
+                <!-- <div id="signin_btn"><h4 class="tooling">[SignIn]</h4></div> -->
             
 <!-- <script>
     function loginClick() {
