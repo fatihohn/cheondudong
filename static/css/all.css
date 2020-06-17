@@ -76,7 +76,7 @@ a {
 .tooling {
     background-color: rgb(180, 180, 180);
     color: transparent;
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.6);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.4);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
