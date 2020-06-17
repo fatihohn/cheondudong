@@ -1,7 +1,32 @@
 <div id="header_wrap">
     <div id="header_box">
         <div id="header_box_area">
-
+            <div id="header_login">
+            <a>
+                               
+                                <?php
+        include 'cdd_db_conn.php';
+        $query = "select * from user_data order by id desc";
+        $result = $conn->query($query);
+        $total = mysqli_num_rows($result);
+        
+        session_start();
+        
+        if (isset($_SESSION['username'])) {
+            ?> <div onclick="location.href='./admin_logout.php'">
+            <?php
+            echo $_SESSION['username'];
+                        
+            ?>님 [LogOut]</div>
+            
+            <?php
+        } else {
+            ?> <div onclick="location.href='./admin_login.php'"><h4>[LogIn]</h4></div>
+    
+    <?php   }
+    ?>  
+                            </a>
+            </div>
             <div id="header_title">
                 <a>
                     <h1 class="gg-batang">
