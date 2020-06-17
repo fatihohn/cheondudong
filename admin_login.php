@@ -7,23 +7,18 @@
 </head>
 
 <body>
-    <!-- <header> -->
+    <header>
         <?php 
-        // include 'admin_header.php'; 
+        include 'admin_header.php'; 
         ?>
-<!-- </header> -->
+</header>
         
-    <!-- <article class="adArticle  adminMenu"> -->
-        <?php 
-        // include 'admin_article.php'; 
-        ?>
-
-    <!-- </article> -->
-    <section id="bbdd_sc">
-    <div id="bbdd_sc_wrap">
-        <div id="bbdd_sc_area">
-            <div class="sc_contain">
-                <div class="sc_list_area">
+   
+    <section>
+    <div id="login_wrap">
+        <div id="login_area">
+            <div class="login_contain">
+                <div class="login_list_area">
 
         <div class="adLogInProcess">
     
