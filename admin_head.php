@@ -29,5 +29,5 @@
     <link rel="stylesheet" href="static/css/all.css?after" type="text/css">
     <link rel="stylesheet" href="static/css/header.css?after" type="text/css">
     <link rel="stylesheet" href="static/css/main.css?after" type="text/css">
-    <link rel="stylesheet" href="static/css/admin_style.css?after" type="text/css">
+    <link rel="stylesheet" href="static/css/admin_style.css" type="text/css">
 
