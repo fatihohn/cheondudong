@@ -21,7 +21,9 @@
             
             <?php
         } else {
-            ?> <div onclick="location.href='./admin_login.php'"><h4>[LogIn]</h4></div>
+            ?> 
+            <div onclick="location.href='./admin_login.php'"><h4>[LogIn]</h4></div>
+            <div onclick="location.href='./admin_create_user.php'"><h4>[SignIn]</h4></div>
     
     <?php   }
     ?>  
