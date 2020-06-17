@@ -5,8 +5,6 @@ $detailMarker = "임시 마커 이미지 링크";
 $detailAddress = "임시 주소";
 $detailCoord = "임시 위치 == 입력 시 위도 경도 좌표 정보 획득";
 $detailCont = "임시 설명 및 이미지 == 스마트에디터";
-$detailImg = "이미지";
-$detailImg_dir = "이미지 경로";
 $detailWork = "임시 관련작품 == 리스트 == 입력 시 리스트로 변환";
 $detailRef = "임시 참고자료 == 리스트 == 입력 시 리스트로 변환";
 
@@ -36,9 +34,6 @@ $detailRef = "임시 참고자료 == 리스트 == 입력 시 리스트로 변환
             </div>
             <div id="detail_cont">
                 <?php echo $detailCont;?>
-            </div>
-            <div id="detail_img">
-                <?php echo $detailImg;?>
             </div>
             <div id="detail_work">
                 <p class="work_title tooling">
