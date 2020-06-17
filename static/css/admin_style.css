@@ -3,3 +3,11 @@
     width: 100%;
     max-width: 200px;
 }
+#menu_intro_btn {
+    position: relative;
+}
+#add_intro {
+    font-size: 2rem;
+    font-weight: bolder;
+    position: relative;
+}
