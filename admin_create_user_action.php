@@ -31,19 +31,6 @@ $password = base64_encode(hash('sha512', $pwSalt, true));
 $email = $_POST['email'];
 $email = mysqli_real_escape_string($conn, $email);
 
-// $author = $_POST['author'];
-// // $author = mysqli_real_escape_string($conn, $author);
-// // $author = mysql_real_escape_string($author);
-
-// $auth_detail = $_POST['auth_detail'];
-// // $auth_detail = mysqli_real_escape_string($conn, $auth_detail);
-
-// $cast = $_POST['cast'];
-// $cast = mysqli_real_escape_string($conn, $cast);
-
-// $active = $_POST['active'];
-// $active = mysqli_real_escape_string($conn, $active);
-
 $pw_one = $_POST['password'];
 $pw_one = mysqli_real_escape_string($conn, $pw_one);
 
@@ -58,12 +45,6 @@ $nameCheck = mysqli_query($conn, $nameSql);
 		echo "<script>alert('아이디가 중복됩니다.'); history.back();</script>";
 	}else{
 
-        $authNameSql = "SELECT * FROM user_data WHERE author='$author'";
-        $authNameCheck = mysqli_query($conn, $authNameSql);
-            $authNameCheck = $authNameCheck->fetch_array();
-        if($authNameCheck >= 1) {
-            echo "<script>alert('필명이 중복됩니다.'); history.back();</script>";
-        } else {
             if($pw_one !== $pw_two) {
                 echo "<script>alert('비밀번호가 일치하지 않습니다.'); history.back();</script>";
 
@@ -113,7 +94,7 @@ $nameCheck = mysqli_query($conn, $nameSql);
 
 
             }
-            }
+            
     }
     
 $result = mysqli_query($conn, $sql);
