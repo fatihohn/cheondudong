@@ -9,7 +9,7 @@
 	if($member==0 && preg_match("/^[a-zA-Z](?=.{0,28}[0-9])[0-9a-zA-Z]{6,29}$/", $uid) && strlen($uid)>=7)
 	{
 ?>
-		<div style='font-family:"malgun gothic";'><?php echo $uid; ?>는 사용가능한 아이디입니다.</div>
+		<div style='font-family:"malgun gothic"; color:green'><?php echo $uid; ?>는 사용가능한 아이디입니다.</div>
 		<?php 
 	}else{
 		?>
