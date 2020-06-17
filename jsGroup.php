@@ -70,7 +70,7 @@
             if(menuWrap.style.display == "none") {
                 headerWrap.style.display = "initial";
                 frontWrap.style.display = "none";
-                detailWrap.style.display = "none";
+                // detailWrap.style.display = "none";
                 
                 mapWrap.style.visibility = "hidden";
                 menuWrap.style.display = "initial";
@@ -80,7 +80,7 @@
             } else {
                 headerWrap.style.display = "initial";
                 frontWrap.style.display = "none";
-                detailWrap.style.display = "none";
+                // detailWrap.style.display = "none";
                
                 mapWrap.style.visibility = "visible";
                 menuWrap.style.display = "none";
