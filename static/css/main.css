@@ -47,6 +47,7 @@
     height: calc(100vh - 70px);
     position: absolute;
     top: 70px;
+    background-color: rgb(240, 240, 240);
     /* background-color: #777; */
     left: 0;
     /* z-index: -5; */
