@@ -1,12 +1,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">	
     
-    <title>천두동-동두천</title>
+    <title>천두동·동두천</title>
 
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="robots" content="noindex">
 
-	<meta property="og:url" content="https://천두동도메인.org">
+	<meta property="og:url" content="https://cdd-ddc.org">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="천두동-동두천">
 	<meta property="og:description" content="천두동의 장소들">

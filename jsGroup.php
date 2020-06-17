@@ -70,8 +70,8 @@
             if(menuWrap.style.display == "none") {
                 headerWrap.style.display = "initial";
                 frontWrap.style.display = "none";
-                detailWrap.style.display = "none";
-                // mapWrap.style.display = "none";
+                // detailWrap.style.display = "none";
+                
                 mapWrap.style.visibility = "hidden";
                 menuWrap.style.display = "initial";
                 footerWrap.style.display = "initial";
@@ -80,11 +80,11 @@
             } else {
                 headerWrap.style.display = "initial";
                 frontWrap.style.display = "none";
-                detailWrap.style.display = "none";
-                // mapWrap.style.display = "initial";
+                // detailWrap.style.display = "none";
+               
                 mapWrap.style.visibility = "visible";
                 menuWrap.style.display = "none";
-                footerWrap.style.display = "none";
+                // footerWrap.style.display = "none";
                 introWrap.style.display = "none";
                 placeWrap.style.display = "none";
             }

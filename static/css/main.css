@@ -2,6 +2,7 @@
 #front_wrap {
     width: 100%;
     height: 100%;
+    z-index: 999;
 }
 #front_wrap #front_box {
     width: 400px;
@@ -50,6 +51,7 @@
     left: 0;
     /* z-index: -5; */
     display: none;
+    z-index: 80;
 }
 
 #detail_wrap #detail_box {
