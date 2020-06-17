@@ -3,6 +3,11 @@
     width: 100%;
     max-width: 200px;
 }
+
+.menu_btn_wrap {
+    position: relative;
+}
+
 #menu_intro_btn {
     position: relative;
 }
