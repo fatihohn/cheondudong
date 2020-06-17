@@ -11,14 +11,14 @@ $placeTitle = "임시 장소 제목"
         <div id="menu_box_area">
             <ul id="menu_list">
                 <li id="menu_intro" class="menu_list_item">
-                    <a id="menu_intro_btn">
                         <h2 class="gg-batang tooling">
+                    <a id="menu_intro_btn">
                             천두동·동두천 소개
-                        </h2>
                     </a>
                     <a id="add_intro" class="tooling">
                         ＋
                     </a>
+                        </h2>
                     <div id="intro_cont_wrap">
                         <div id="intro_cont">
                             
