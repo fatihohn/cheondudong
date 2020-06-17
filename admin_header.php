@@ -54,7 +54,7 @@
             <div id="header_title">
                 <a>
                     <h1 class="gg-batang">
-                        천두동·동두천
+                        천두동·에디터
                     </h1>
                 </a>
             </div>
