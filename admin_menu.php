@@ -16,8 +16,8 @@ $placeTitle = "임시 장소 제목"
                             천두동·동두천 소개
                         </h2>
                     </a>
-                    
-                    <a id="add_intro" class=>
+
+                    <a id="add_intro" class="tooling">
                         ＋
                     </a>
                     <div id="intro_cont_wrap">
