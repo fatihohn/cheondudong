@@ -1,8 +1,8 @@
 <div id="header_wrap">
     <div id="header_box">
         <div id="header_box_area">
-            <div id="header_login" class="tooling">
-            <a>
+            <div id="header_login">
+            <a class="tooling">
                                
                                 <?php
         include 'cdd_db_conn.php';
@@ -13,7 +13,7 @@
         session_start();
         
         if (isset($_SESSION['username'])) {
-            ?> <div onclick="location.href='./admin_logout.php'">
+            ?> <div onclick="location.href='./admin_logout.php'" >
             <?php
             echo $_SESSION['username'];
                         
