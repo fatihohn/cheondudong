@@ -122,17 +122,11 @@
 
 
 /****menu****/
-/* nav {
-    height: calc(100vh - 70px);
-    width: 100vw;
-    
-} */
+
 #menu_wrap * {
     z-index: 99;
 }
 #menu_wrap {
-    /* width: 100vw;
-    height: calc(100vh - 70px); */
     width: 100%;
     height: 100%;
     z-index: 99;
