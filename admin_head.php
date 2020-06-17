@@ -1,7 +1,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">	
     
-    <title>천두동·동두천</title>
+    <title>관리자 | 천두동·동두천</title>
 
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="keywords" content="천두동, 동두천, 기지촌, 기지촌 역사, 미군기지, 성병관리소, 낙검자수용소, 상패동, 턱거리, 소요산, 천두동 동두천">
@@ -29,4 +29,5 @@
     <link rel="stylesheet" href="static/css/all.css?after" type="text/css">
     <link rel="stylesheet" href="static/css/header.css?after" type="text/css">
     <link rel="stylesheet" href="static/css/main.css?after" type="text/css">
+    <link rel="stylesheet" href="static/css/admin_style.css?after" type="text/css">
 
