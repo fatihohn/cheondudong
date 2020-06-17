@@ -122,8 +122,12 @@
 
 
 /****menu****/
+nav {
+    height: calc(100vh - 70px);
+    width: 100vw;
 
-#menu_wrap * {
+}
+nav * {
     z-index: 99;
 }
 #menu_wrap {
