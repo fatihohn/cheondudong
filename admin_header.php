@@ -28,12 +28,10 @@
                 <div id="login_btn"><h4 class="tooling">[LogIn]</h4></div>
                 <div id="signin_btn"><h4 class="tooling">[SignIn]</h4></div>
             
-<script>
+<!-- <script>
     function loginClick() {
         let loginBtn = document.getElementById("login_btn");
         function showLogin() {
-            let headerWrap = document.getElementById("header_wrap");
-            headerWrap.style.display = "initial";
             location.href="admin_login.php";
         }
         loginBtn.addEventListener("click", showLogin);
@@ -43,14 +41,12 @@
     function signinClick() {
         let signinBtn = document.getElementById("signin_btn");
         function showsignin() {
-            let headerWrap = document.getElementById("header_wrap");
-            headerWrap.style.display = "initial";
             location.href="admin_create_user.php";
         }
         signinBtn.addEventListener("click", showsignin);
     }
     signinClick();
-</script>
+</script> -->
     <?php   }
     ?>  
                             </a>
