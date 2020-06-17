@@ -1,5 +1,5 @@
-.header_login {
+#header_wrap #header_box #header_box_area .header_login {
     position: absolute;
     width: 100%;
-    max-width: 150px;
+    max-width: 200px;
 }
