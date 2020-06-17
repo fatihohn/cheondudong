@@ -131,7 +131,7 @@
     z-index: 99;
 }
 #menu_wrap {
-    width: 100%vw
+    width: 100vw;
     height: calc(100vh - 70px);
     z-index: 99;
     background-color: rgb(240, 240, 240);
