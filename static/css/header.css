@@ -175,14 +175,8 @@
 
 
 #menu_wrap #menu_box #menu_list .menu_list_item a h2 {
-    /* background-color: rgb(180, 180, 180);
-    color: transparent;
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.4);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text; */
-    /* padding-left: 20px; */
-    margin-bottom: 15px;
+ 
+    margin: 15px;
 }
 
 

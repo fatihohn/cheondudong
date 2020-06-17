@@ -6,12 +6,16 @@
 
 .menu_btn_wrap {
     position: relative;
+    display: grid;
+    grid-template-columns: max-content min-content;
 }
 
-#menu_intro_btn {
+#menu_intro_btn,
+#menu_place_btn {
     position: relative;
 }
-#add_intro {
+#add_intro,
+#add_place {
     font-size: 2rem;
     font-weight: bolder;
     position: relative;

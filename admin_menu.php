@@ -30,19 +30,26 @@ $placeTitle = "임시 장소 제목"
                         <div id="intro_cont">
                             
                             <?php echo $introCont;?>
-
+                            
                         </div>
                     </div>
                 </li>
                 <li id="menu_place" class="menu_list_item">
-                    <a id="menu_place_btn">
-                        <h2 class="gg-batang tooling">
-                            천두동 장소들
-                        </h2>
-                    </a>
-                    <a id="add_place" class=>
-                        ＋
-                    </a>
+                    <div class="menu_btn_wrap">
+                        <div id="menu_place_btn">
+                            <a>
+                                <h2 class="gg-batang tooling">
+                                    천두동 장소들
+                                </h2>
+                            </a>
+
+                        </div>
+                        <div id="add_place">
+                            <a class="tooling">
+                                ＋
+                            </a>
+                        </div>
+                    </div>
                     <div id="place_cont_wrap">
                         <div id="place_cont">
                             
