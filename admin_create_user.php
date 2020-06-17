@@ -101,13 +101,14 @@
 <?php include "admin_jsGroup.php";?>
 <?php include "jsGroup.php";?>
 
-<script>
+<!-- <script>
     function showHeader() {
         let headerWrap = document.getElementById("header_wrap");
         headerWrap.style.display = "initial";
     }
     showHeader();
-</script>
+</script> -->
+<script src="static/js/showHeader.js"></script>
 </body>
 
 </html>

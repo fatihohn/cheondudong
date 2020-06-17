@@ -62,6 +62,7 @@
     <?php include "admin_jsGroup.php";?>
     <?php include "jsGroup.php";?>
 
+<script src="static/js/showHeader.js"></script>
 </body>
 
 </html>
