@@ -1,7 +1,7 @@
 <div id="header_wrap">
     <div id="header_box">
         <div id="header_box_area">
-            <div id="header_login">
+            <div id="header_login" class="tooling">
             <a>
                                
                                 <?php
