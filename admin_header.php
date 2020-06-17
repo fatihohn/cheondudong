@@ -1,7 +1,7 @@
 <div id="header_wrap">
     <div id="header_box">
         <div id="header_box_area">
-            <div class="header_login">
+            <div id="header_login">
             <a>
                                
                                 <?php
@@ -22,11 +22,11 @@
             <?php
         } else {
             ?> 
-            <div class="header_login">
+            
                 <div onclick="location.href='./admin_login.php'"><h4 class="tooling">[LogIn]</h4></div>
                 <div onclick="location.href='./admin_create_user.php'"><h4 class="tooling">[SignIn]</h4></div>
-            </div>
-    
+            
+
     <?php   }
     ?>  
                             </a>

@@ -1,4 +1,4 @@
-#header_wrap #header_box #header_box_area .header_login {
+#header_wrap #header_box #header_box_area #header_login a {
     position: absolute;
     width: 100%;
     max-width: 200px;
