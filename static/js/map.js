@@ -60,6 +60,7 @@ var map;
         map.addControl(geocoder);
 
         
+        
 
 //****user location****//
 
