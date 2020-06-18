@@ -15,17 +15,17 @@
 
 		    ],
     zoom: 12.9, // starting zoom
-    // maxZoom: 18
+    maxZoom: 18
     });
-    // var language = new MapboxLanguage({
-	// 		  defaultLanguage: "ko"
-	// 	});
-		// map.addControl(language);
+    var language = new MapboxLanguage({
+			  defaultLanguage: "ko"
+		});
+		map.addControl(language);
 
-		// geocoder = new MapboxGeocoder({
-		// 	mapboxgl: mapboxgl,
-		//     accessToken: mapboxgl.accessToken,
-		// });
+		geocoder = new MapboxGeocoder({
+			mapboxgl: mapboxgl,
+		    accessToken: mapboxgl.accessToken,
+		});
 
-		// map.addControl(geocoder);
+		map.addControl(geocoder);
 
