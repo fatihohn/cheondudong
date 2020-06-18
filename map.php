@@ -23,10 +23,10 @@
     zoom: 12.9, // starting zoom
     maxZoom: 18
     });
-    var language = new MapboxLanguage({
-			  defaultLanguage: "ko"
-		});
-		map.addControl(language);
+    // var language = new MapboxLanguage({
+	// 		  defaultLanguage: "ko"
+	// 	});
+		// map.addControl(language);
 
 		// geocoder = new MapboxGeocoder({
 		// 	mapboxgl: mapboxgl,
