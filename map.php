@@ -21,7 +21,7 @@
 
 		    ],
     zoom: 12.9, // starting zoom
-    maxZoom: 18
+    // maxZoom: 18
     });
     // var language = new MapboxLanguage({
 	// 		  defaultLanguage: "ko"
