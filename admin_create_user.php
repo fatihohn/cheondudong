@@ -77,7 +77,12 @@
                 <input class="createGrid2" type="email" name="email" placeholder="이메일" required>
                 </div>
             </p>
-        
+            <p>
+                <div class="createInput">
+                <label class="createGrid1"></label>
+                <input class="createGrid2" type="hidden" name="cast" value="normal" />
+                </div>    
+            </p>
 
 
 

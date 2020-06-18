@@ -31,6 +31,9 @@ $password = base64_encode(hash('sha512', $pwSalt, true));
 $email = $_POST['email'];
 $email = mysqli_real_escape_string($conn, $email);
 
+$cast = $_POST['cast'];
+$cast = mysqli_real_escape_string($conn, $cast);
+
 $pw_one = $_POST['password'];
 $pw_one = mysqli_real_escape_string($conn, $pw_one);
 
@@ -49,47 +52,50 @@ $nameCheck = mysqli_query($conn, $nameSql);
                 echo "<script>alert('비밀번호가 일치하지 않습니다.'); history.back();</script>";
 
             } else {
-                $sql = "
-                    INSERT INTO user_data
-                        (realname, username, password, salt, email, created)
-                    VALUES(
-                        '{$realname}',
-                        '{$username}',
-                        '{$password}',
-                        '{$salt}',
-                        '{$email}',
+                // $sql = "
+                //     INSERT INTO user_data
+                //         (realname, username, password, salt, email, cast, created)
+                //     VALUES(
+                //         '{$realname}',
+                //         '{$username}',
+                //         '{$password}',
+                //         '{$salt}',
+                //         '{$cast}',
+                //         '{$email}',
                         
-                        NOW()
-                )";
-        // $sql = "
-        //     INSERT INTO `user_data`
-        //         (`realname`, `username`, `password`, `salt`, `email`, `created`)
-        //     VALUES(
-        //         ?,
-        //         ?,
-        //         ?,
-        //         ?,
-        //         ?,
-        //         NOW()
-        //     );";
+                //         NOW()
+                // )";
 
-        //     $stmt = mysqli_stmt_init($conn);
-        //     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        //             echo "sql error";
-        //     } else {
-        //             mysqli_stmt_bind_param($stmt, "sssss", $realname, $username, $password, $salt, $email);
-        //             // mysqli_stmt_execute($stmt);
-        //             // $result = mysqli_stmt_get_result($stmt);
-        //             if(!mysqli_stmt_execute($stmt)){
-        //             // if($result === false){
-        //                 echo '저장실패. 관리자에게 문의해주세요';
-        //                 error_log(mysqli_error($conn));
-        //             }
-        //             else{
-        //                 echo("<script>alert('회원가입이 완료되었습니다.');location.href='admin_index.php';</script>");
-        //             }
-        //             // mysqli_stmt_close();
-        //         }
+        $sql = "
+            INSERT INTO `user_data`
+                (`realname`, `username`, `password`, `salt`, `email`, `cast`, `created`)
+            VALUES(
+                ?,
+                ?,
+                ?,
+                ?,
+                ?,
+                ?,
+                NOW()
+            );";
+
+            $stmt = mysqli_stmt_init($conn);
+            if (!mysqli_stmt_prepare($stmt, $sql)) {
+                    echo "sql error";
+            } else {
+                    mysqli_stmt_bind_param($stmt, "ssssss", $realname, $username, $password, $salt, $email, $cast);
+                    // mysqli_stmt_execute($stmt);
+                    // $result = mysqli_stmt_get_result($stmt);
+                    if(!mysqli_stmt_execute($stmt)){
+                    // if($result === false){
+                        echo '저장실패. 관리자에게 문의해주세요';
+                        error_log(mysqli_error($conn));
+                    }
+                    else{
+                        echo("<script>alert('회원가입이 완료되었습니다.');location.href='admin_index.php';</script>");
+                    }
+                    // mysqli_stmt_close();
+                }
 
 
 
@@ -97,15 +103,15 @@ $nameCheck = mysqli_query($conn, $nameSql);
             
     }
     
-$result = mysqli_query($conn, $sql);
-if($result === false){
-    echo '저장실패. 관리자에게 문의해주세요';
-    error_log(mysqli_error($conn));
-}
-else{
-    echo("<script>alert('회원가입이 완료되었습니다.');location.href='admin_index.php';</script>");
-}
-echo $sql;
+// $result = mysqli_query($conn, $sql);
+// if($result === false){
+//     echo '저장실패. 관리자에게 문의해주세요';
+//     error_log(mysqli_error($conn));
+// }
+// else{
+//     echo("<script>alert('회원가입이 완료되었습니다.');location.href='admin_index.php';</script>");
+// }
+// echo $sql;
 
 
 ?>
