@@ -86,7 +86,7 @@
 'properties': {
 'file': 'monkeyhouse.png',
 'message': 'Foo',
-'iconSize': [270, 100]
+'iconSize': ['auto', 100]
 },
 'geometry': {
 'type': 'Point',
@@ -98,7 +98,7 @@
 'properties': {
 'file': 'gulsan_vil.png',
 'message': 'Bar',
-'iconSize': [270, 100]
+'iconSize': ['auto', 100]
 },
 'geometry': {
 'type': 'Point',
@@ -110,7 +110,7 @@
 'properties': {
 'file': 'yoongumee.png',
 'message': 'Baz',
-'iconSize': [270, 100]
+'iconSize': ['auto', 100]
 },
 'geometry': {
 'type': 'Point',
