@@ -108,7 +108,7 @@
 {
 'type': 'Feature',
 'properties': {
-'file': 'syungumee.png',
+'file': 'yoongumee.png',
 'message': 'Baz',
 'iconSize': [270, 100]
 },
