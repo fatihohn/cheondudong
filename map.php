@@ -153,7 +153,8 @@ marker.properties.file +
 ')';
 
 el.style.backgroundSize = 'cover';
-el.style.width = marker.properties.iconSize[0] + 'px';
+// el.style.width = marker.properties.iconSize[0] + 'px';
+el.style.width = marker.properties.iconSize[0];
 el.style.height = marker.properties.iconSize[1] + 'px';
  
 el.addEventListener('click', function() {
