@@ -68,6 +68,14 @@ $placeTitle = "임시 장소 제목"
                         </div>
                     </div>
                 </li>
+                <li id="menu_user" class="menu_list_item">
+                    <a id="menu_user_btn">
+                        <h2 class="gg-batang tooling">
+                            사용자 관리
+                        </h2>
+                    </a>
+                    
+                </li>
                 <li id="menu_detail" class="menu_list_item">
                     <a id="menu_detail_btn">
                         <h2 class="gg-batang tooling">
@@ -75,7 +83,6 @@ $placeTitle = "임시 장소 제목"
                         </h2>
                     </a>
                     
-                    </div>
                 </li>
                 <!-- <li id="menu_people" class="menu_list_item">
                     <a id="menu_people_btn">

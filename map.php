@@ -84,7 +84,8 @@
 {
 'type': 'Feature',
 'properties': {
-    'place_id': '1',
+    // 'place_id': '1',
+    'place_id': <?php echo "1";?>,
     'category': 'middleHori',
 'file': 'static/img/marker/monkeyhouse.png',
 'message': 'Foo',
