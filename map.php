@@ -84,6 +84,7 @@
 {
 'type': 'Feature',
 'properties': {
+    'file': 'soyo.png'
 'message': 'Foo',
 'iconSize': [865, 320]
 },
@@ -95,6 +96,7 @@
 {
 'type': 'Feature',
 'properties': {
+    'file': 'soyo.png'
 'message': 'Bar',
 'iconSize': [865, 320]
 },
@@ -106,6 +108,7 @@
 {
 'type': 'Feature',
 'properties': {
+    'file': 'soyo.png'
 'message': 'Baz',
 'iconSize': [865, 320]
 },
@@ -146,8 +149,9 @@ el.className = 'marker';
 // '/)';
 el.style.backgroundImage =
 'url(static/img/marker/' +
-soyo.png +
+marker.properties.file.join('') +
 '/)';
+
 el.style.width = marker.properties.iconSize[0] + 'px';
 el.style.height = marker.properties.iconSize[1] + 'px';
  
