@@ -260,6 +260,7 @@ function getUserLocation(method) {
         for(v; v < villageAll.length; v++) {
             villageAll.style.width = "200px";
             villageAll.style.height = "135px";
+        }
         let landmarkAll = document.querySelectorAll(".landmark");
         let l;
         for(l; l < landmarkAll.length; l++) {
