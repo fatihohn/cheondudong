@@ -270,7 +270,7 @@ function getUserLocation(method) {
     // }
     // markerPointer();
 
-    
+
         //****1:1****//
         let smallCubeAll = document.querySelectorAll(".smallCube");
         let sc;
@@ -278,6 +278,7 @@ function getUserLocation(method) {
             smallCubeAll[sc].style.width = "60px";
             smallCubeAll[sc].style.height = "60px";
             smallCubeAll[sc].style.backgroundSize = "cover";
+            smallCubeAll[sc].style.cursor = "pointer";
         }
         let middleCubeAll = document.querySelectorAll(".middleCube");
         let mc;
@@ -285,6 +286,7 @@ function getUserLocation(method) {
             middleCubeAll[mc].style.width = "80px";
             middleCubeAll[mc].style.height = "80px";
             middleCubeAll[mc].style.backgroundSize = "cover";
+            middleCubeAll[mc].style.cursor = "pointer";
         }
         //****1:1.6****//
         let smallHoriAll = document.querySelectorAll(".smallHori");
@@ -293,6 +295,7 @@ function getUserLocation(method) {
             smallHoriAll[sh].style.width = "80px";
             smallHoriAll[sh].style.height = "50px";
             smallHoriAll[sh].style.backgroundSize = "cover";
+            smallHoriAll[sh].style.cursor = "pointer";
         }
         let middleHoriAll = document.querySelectorAll(".middleHori");
         let mh;
@@ -300,6 +303,7 @@ function getUserLocation(method) {
             middleHoriAll[mh].style.width = "108px";
             middleHoriAll[mh].style.height = "60px";
             middleHoriAll[mh].style.backgroundSize = "cover";
+            middleHoriAll[mh].style.cursor = "pointer";
         }
         let bigHoriAll = document.querySelectorAll(".bigHori");
         let bh;
@@ -307,6 +311,7 @@ function getUserLocation(method) {
             bigHoriAll[bh].style.width = "160px";
             bigHoriAll[bh].style.height = "100px";
             bigHoriAll[bh].style.backgroundSize = "cover";
+            bigHoriAll[bh].style.cursor = "pointer";
         }
         //****1:2****//
         let middlePanoAll = document.querySelectorAll(".middlePano");
@@ -315,6 +320,7 @@ function getUserLocation(method) {
             middlePanoAll[mp].style.width = "120px";
             middlePanoAll[mp].style.height = "60px";
             middlePanoAll[mp].style.backgroundSize = "cover";
+            middlePanoAll[mp].style.cursor = "pointer";
         }
         //****1:2.7****//
         let longPanoAll = document.querySelectorAll(".longPano");
@@ -323,6 +329,7 @@ function getUserLocation(method) {
             longPanoAll[lp].style.width = "160px";
             longPanoAll[lp].style.height = "60px";
             longPanoAll[lp].style.backgroundSize = "cover";
+            longPanoAll[lp].style.cursor = "pointer";
         }
     }
     markerSize();
