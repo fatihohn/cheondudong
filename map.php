@@ -251,3 +251,22 @@ function getUserLocation(method) {
 
 
     </script>
+
+
+    <script>
+    function markerSize() {
+        let villageAll = document.querySelectorAll(".village");
+        let v;
+        for(v; v < villageAll.length; v++) {
+            villageAll.style.width = "200px";
+            villageAll.style.height = "135px";
+        let landmarkAll = document.querySelectorAll(".landmark");
+        let l;
+        for(l; l < landmarkAll.length; l++) {
+            landmarkAll.style.width = "135px";
+            landmarkAll.style.height = "50px";
+        }
+    }
+    markerSize();
+    
+    </script>
