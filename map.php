@@ -150,7 +150,7 @@ el.className = 'marker';
 el.style.backgroundImage =
 'url(static/img/marker/' +
 marker.properties.file +
-'/)';
+')';
 
 el.style.width = marker.properties.iconSize[0] + 'px';
 el.style.height = marker.properties.iconSize[1] + 'px';
