@@ -84,9 +84,9 @@
 {
 'type': 'Feature',
 'properties': {
-'file': 'soyo.png',
+'file': 'monkeyhouse.png',
 'message': 'Foo',
-'iconSize': [865, 320]
+'iconSize': [270, 100]
 },
 'geometry': {
 'type': 'Point',
@@ -96,9 +96,9 @@
 {
 'type': 'Feature',
 'properties': {
-'file': 'soyo.png',
+'file': 'gulsan_vil.png',
 'message': 'Bar',
-'iconSize': [865, 320]
+'iconSize': [270, 100]
 },
 'geometry': {
 'type': 'Point',
@@ -108,13 +108,13 @@
 {
 'type': 'Feature',
 'properties': {
-'file': 'soyo.png',
+'file': 'syungumee.png',
 'message': 'Baz',
-'iconSize': [865, 320]
+'iconSize': [270, 100]
 },
 'geometry': {
 'type': 'Point',
-'coordinates': [127.095351, 37.926185]
+'coordinates': [127.055933, 37.916710]
 }
 }
 ]
