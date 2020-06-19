@@ -258,14 +258,14 @@ function getUserLocation(method) {
         let villageAll = document.querySelectorAll(".village");
         let v;
         for(v; v < villageAll.length; v++) {
-            villageAll.style.width = "200px";
-            villageAll.style.height = "135px";
+            villageAll[v].style.width = "200px";
+            villageAll[v].style.height = "135px";
         }
         let landmarkAll = document.querySelectorAll(".landmark");
         let l;
         for(l; l < landmarkAll.length; l++) {
-            landmarkAll.style.width = "135px";
-            landmarkAll.style.height = "50px";
+            landmarkAll[l].style.width = "135px";
+            landmarkAll[l].style.height = "50px";
         }
     }
     markerSize();
