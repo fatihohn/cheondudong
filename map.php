@@ -140,9 +140,13 @@ geojson.features.forEach(function(marker) {
 // create a DOM element for the marker
 var el = document.createElement('div');
 el.className = 'marker';
+// el.style.backgroundImage =
+// 'url(http://13.209.210.87/static/img/marker/' +
+// marker.properties.iconSize.join('/') +
+// '/)';
 el.style.backgroundImage =
-'url(http://http://13.209.210.87/static/img/marker/' +
-marker.properties.iconSize.join('/') +
+'url(static/img/marker/' +
+soyo.png +
 '/)';
 el.style.width = marker.properties.iconSize[0] + 'px';
 el.style.height = marker.properties.iconSize[1] + 'px';
