@@ -274,8 +274,8 @@ function getUserLocation(method) {
         let smallHoriAll = document.querySelectorAll(".smallHori");
         let sh;
         for(sh=0; sh < smallHoriAll.length; sh++) {
-            smallHoriAll[sh].style.width = "64px";
-            smallHoriAll[sh].style.height = "40px";
+            smallHoriAll[sh].style.width = "80px";
+            smallHoriAll[sh].style.height = "50px";
             smallHoriAll[sh].style.backgroundSize = "cover";
         }
         let middleHoriAll = document.querySelectorAll(".middleHori");
