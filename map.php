@@ -85,6 +85,7 @@
 'type': 'Feature',
 'properties': {
     'place_id': '1',
+    'category': 'landmark',
 'file': 'static/img/marker/monkeyhouse.png',
 'message': 'Foo',
 'iconSize': [270, 100]
@@ -98,6 +99,7 @@
 'type': 'Feature',
 'properties': {
     'place_id': '2',
+    'category': 'village',
 'file': 'static/img/marker/gulsan_vil.png',
 'message': 'Bar',
 'iconSize': [270, 100]
@@ -111,6 +113,7 @@
 'type': 'Feature',
 'properties': {
     'place_id': '3',
+    'category': 'landmark',
 'file': 'static/img/marker/yoongumee.png',
 'message': 'Baz',
 'iconSize': [270, 100]
@@ -147,6 +150,7 @@ geojson.features.forEach(function(marker) {
 // create a DOM element for the marker
 var el = document.createElement('div');
 el.className = 'marker';
+el.className = marker.properties.category;
 el.id = marker.properties.place_id;
 // el.style.backgroundImage =
 // 'url(http://13.209.210.87/static/img/marker/' +
