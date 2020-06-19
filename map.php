@@ -288,8 +288,8 @@ function getUserLocation(method) {
         let bigHoriAll = document.querySelectorAll(".bigHori");
         let bh;
         for(bh=0; bh < bigHoriAll.length; bh++) {
-            bigHoriAll[bh].style.width = "108px";
-            bigHoriAll[bh].style.height = "60px";
+            bigHoriAll[bh].style.width = "160px";
+            bigHoriAll[bh].style.height = "100px";
             bigHoriAll[bh].style.backgroundSize = "cover";
         }
         //****1:2****//
