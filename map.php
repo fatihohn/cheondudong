@@ -256,6 +256,15 @@ function getUserLocation(method) {
 
 
     <script>
+    function markerPointer() {
+        let markerAll = document.querySelectorAll(".marker");
+        let mk;
+        for(mk=0; mk < markerAll.length; mk++) {
+            markerAll[mk].style.cursor = "pointer";
+    }
+    markerPointer();
+
+    
     function markerSize() {
         //****1:1****//
         let smallCubeAll = document.querySelectorAll(".smallCube");
@@ -313,11 +322,5 @@ function getUserLocation(method) {
     }
     markerSize();
 
-    function markerPointer() {
-        let markerAll = document.querySelectorAll(".marker");
-        let mk;
-        for(mk=0; mk < markerAll.length; mk++) {
-            markerAll[mk].style.cursor = "pointer";
-    }
-    markerPointer();
+    
     </script>
