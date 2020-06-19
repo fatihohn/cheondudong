@@ -4,9 +4,11 @@
 
             <div id="header_title">
                 <a>
-                    <h1 class="gg-batang">
+                    <!-- <h1 class="gg-batang">
                         천두동·동두천
-                    </h1>
+                    </h1> -->
+
+                    <img src="static/img/cdd.png" alt="천두동·동두천">
                 </a>
             </div>
             <div id="header_btn">
