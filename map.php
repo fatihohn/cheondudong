@@ -85,11 +85,11 @@
 'type': 'Feature',
 'properties': {
     // 'place_id': '1',
-    'place_id': <?php echo "100";?>,
+    'place_id': '<?php echo "100";?>',
     'category': 'middleHori',
 'file': 'static/img/marker/monkeyhouse.png',
 // 'message': 'Foo',
-'message': <?php echo "hello world";?>,
+'message': '<?php echo "hello world";?>',
 'iconSize': [270, 100]
 },
 'geometry': {
