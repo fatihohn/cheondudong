@@ -85,7 +85,7 @@
 'type': 'Feature',
 'properties': {
     'place_id': '1',
-    'category': 'landmark',
+    'category': 'middleHori',
 'file': 'static/img/marker/monkeyhouse.png',
 'message': 'Foo',
 'iconSize': [270, 100]
@@ -99,7 +99,7 @@
 'type': 'Feature',
 'properties': {
     'place_id': '2',
-    'category': 'village',
+    'category': 'bigHori',
 'file': 'static/img/marker/gulsan_vil.png',
 'message': 'Bar',
 'iconSize': [270, 100]
@@ -113,7 +113,7 @@
 'type': 'Feature',
 'properties': {
     'place_id': '3',
-    'category': 'landmark',
+    'category': 'middleHori',
 'file': 'static/img/marker/yoongumee.png',
 'message': 'Baz',
 'iconSize': [270, 100]
@@ -255,19 +255,58 @@ function getUserLocation(method) {
 
     <script>
     function markerSize() {
-        let villageAll = document.querySelectorAll(".village");
-        let v;
-        for(v=0; v < villageAll.length; v++) {
-            villageAll[v].style.width = "210px";
-            villageAll[v].style.height = "78px";
-            villageAll[v].style.backgroundSize = "cover";
+        //****1:1****//
+        let smallCubeAll = document.querySelectorAll(".smallCube");
+        let sc;
+        for(sc=0; sc < smallCubeAll.length; sc++) {
+            smallCubeAll[sc].style.width = "60px";
+            smallCubeAll[sc].style.height = "60px";
+            smallCubeAll[sc].style.backgroundSize = "cover";
         }
-        let landmarkAll = document.querySelectorAll(".landmark");
-        let l;
-        for(l=0; l < landmarkAll.length; l++) {
-            landmarkAll[l].style.width = "200px";
-            landmarkAll[l].style.height = "74px";
-            landmarkAll[l].style.backgroundSize = "cover";
+        let middleCubeAll = document.querySelectorAll(".middleCube");
+        let mc;
+        for(mc=0; mc < middleCubeAll.length; mc++) {
+            middleCubeAll[mc].style.width = "80px";
+            middleCubeAll[mc].style.height = "80px";
+            middleCubeAll[mc].style.backgroundSize = "cover";
+        }
+        //****1:1.6****//
+        let smallHoriAll = document.querySelectorAll(".smallHori");
+        let sh;
+        for(sh=0; sh < smallHoriAll.length; sh++) {
+            smallHoriAll[sh].style.width = "64px";
+            smallHoriAll[sh].style.height = "40px";
+            smallHoriAll[sh].style.backgroundSize = "cover";
+        }
+        let middleHoriAll = document.querySelectorAll(".middleHori");
+        let mh;
+        for(mh=0; mh < middleHoriAll.length; mh++) {
+            middleHoriAll[mh].style.width = "108px";
+            middleHoriAll[mh].style.height = "60px";
+            middleHoriAll[mh].style.backgroundSize = "cover";
+        }
+        let bigHoriAll = document.querySelectorAll(".bigHori");
+        let bh;
+        for(bh=0; bh < bigHoriAll.length; bh++) {
+            bigHoriAll[bh].style.width = "108px";
+            bigHoriAll[bh].style.height = "60px";
+            bigHoriAll[bh].style.backgroundSize = "cover";
+        }
+        //****1:2****//
+        let middlePanoAll = document.querySelectorAll(".middlePano");
+        let mp;
+        for(mp=0; mp < middlePanoAll.length; mp++) {
+            middlePanoAll[mp].style.width = "120px";
+            middlePanoAll[mp].style.height = "60px";
+            middlePanoAll[mp].style.backgroundSize = "cover";
+        }
+        //****1:2.7****//
+        let longPanoAll = document.querySelectorAll(".longPano");
+        let lp;
+        for(lp=0; lp < longPanoAll.length; lp++) {
+            longPanoAll[lp].style.width = "160px";
+            longPanoAll[lp].style.height = "60px";
+            longPanoAll[lp].style.backgroundSize = "cover";
         }
     }
     markerSize();
