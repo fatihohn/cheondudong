@@ -258,15 +258,15 @@ function getUserLocation(method) {
         let villageAll = document.querySelectorAll(".village");
         let v;
         for(v=0; v < villageAll.length; v++) {
-            villageAll[v].style.width = "200px";
-            villageAll[v].style.height = "135px";
+            villageAll[v].style.width = "210px";
+            villageAll[v].style.height = "78px";
             villageAll[v].style.backgroundSize = "cover";
         }
         let landmarkAll = document.querySelectorAll(".landmark");
         let l;
         for(l=0; l < landmarkAll.length; l++) {
-            landmarkAll[l].style.width = "135px";
-            landmarkAll[l].style.height = "50px";
+            landmarkAll[l].style.width = "200px";
+            landmarkAll[l].style.height = "74px";
             landmarkAll[l].style.backgroundSize = "cover";
         }
     }
