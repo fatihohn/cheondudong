@@ -84,7 +84,7 @@
 {
 'type': 'Feature',
 'properties': {
-    'file': 'soyo.png'
+'file': 'soyo.png',
 'message': 'Foo',
 'iconSize': [865, 320]
 },
@@ -96,7 +96,7 @@
 {
 'type': 'Feature',
 'properties': {
-    'file': 'soyo.png'
+'file': 'soyo.png',
 'message': 'Bar',
 'iconSize': [865, 320]
 },
@@ -108,7 +108,7 @@
 {
 'type': 'Feature',
 'properties': {
-    'file': 'soyo.png'
+'file': 'soyo.png',
 'message': 'Baz',
 'iconSize': [865, 320]
 },
