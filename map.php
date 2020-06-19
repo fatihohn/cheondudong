@@ -262,13 +262,15 @@ function getUserLocation(method) {
 
     
     function markerSize() {
-        function markerPointer() {
-        let markerAll = document.querySelectorAll(".marker");
-        let mk;
-        for(mk=0; mk < markerAll.length; mk++) {
-            markerAll[mk].style.cursor = "pointer";
-    }
-    markerPointer();
+    //     function markerPointer() {
+    //     let markerAll = document.querySelectorAll(".marker");
+    //     let mk;
+    //     for(mk=0; mk < markerAll.length; mk++) {
+    //         markerAll[mk].style.cursor = "pointer";
+    // }
+    // markerPointer();
+
+    
         //****1:1****//
         let smallCubeAll = document.querySelectorAll(".smallCube");
         let sc;
