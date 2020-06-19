@@ -146,7 +146,7 @@ geojson.features.forEach(function(marker) {
 // create a DOM element for the marker
 var el = document.createElement('div');
 el.className = 'marker';
-el.id = 'place_id';
+el.id = marker.properties.place_id;
 // el.style.backgroundImage =
 // 'url(http://13.209.210.87/static/img/marker/' +
 // marker.properties.iconSize.join('/') +
