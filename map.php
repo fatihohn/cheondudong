@@ -113,7 +113,7 @@
 'type': 'Feature',
 'properties': {
     'place_id': '3',
-    'category': 'middleHori',
+    'category': 'smallHori',
 'file': 'static/img/marker/yoongumee.png',
 'message': 'Baz',
 'iconSize': [270, 100]
