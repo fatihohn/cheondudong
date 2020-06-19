@@ -138,6 +138,7 @@
 	    	[127.196154, 38.014146] // Northeast limit coordinates
 		    ],
     zoom: 12.9, // starting zoom
+    minZoom: 12,
     maxZoom: 18
     });
 
