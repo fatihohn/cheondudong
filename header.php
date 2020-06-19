@@ -8,7 +8,7 @@
                         천두동·동두천
                     </h1> -->
 
-                    <img src="static/img/cdd.png" alt="천두동·동두천">
+                    <img class="header_logo" src="static/img/cdd.png" alt="천두동·동두천">
                 </a>
             </div>
             <div id="header_btn">
