@@ -103,7 +103,8 @@
     'place_id': '2',
     'category': 'bigHori',
 'file': 'static/img/marker/gulsan_vil.png',
-'message': 'Bar',
+// 'message': 'Bar',
+'message': '<?php echo "hello gulsan";?>',
 'iconSize': [270, 100]
 },
 'geometry': {
@@ -117,7 +118,8 @@
     'place_id': '3',
     'category': 'smallHori',
 'file': 'static/img/marker/yoongumee.png',
-'message': 'Baz',
+// 'message': 'Baz',
+'message': '<?php echo "yoongumee";?>',
 'iconSize': [270, 100]
 },
 'geometry': {
@@ -256,16 +258,17 @@ function getUserLocation(method) {
 
 
     <script>
-    function markerPointer() {
+    
+
+    
+    function markerSize() {
+        function markerPointer() {
         let markerAll = document.querySelectorAll(".marker");
         let mk;
         for(mk=0; mk < markerAll.length; mk++) {
             markerAll[mk].style.cursor = "pointer";
     }
     markerPointer();
-
-    
-    function markerSize() {
         //****1:1****//
         let smallCubeAll = document.querySelectorAll(".smallCube");
         let sc;
