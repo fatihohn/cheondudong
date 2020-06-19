@@ -84,7 +84,8 @@
 {
 'type': 'Feature',
 'properties': {
-'file': 'monkeyhouse.png',
+    'place_id': '1',
+'file': 'static/img/marker/monkeyhouse.png',
 'message': 'Foo',
 'iconSize': [270, 100]
 },
@@ -96,7 +97,8 @@
 {
 'type': 'Feature',
 'properties': {
-'file': 'gulsan_vil.png',
+    'place_id': '2',
+'file': 'static/img/marker/gulsan_vil.png',
 'message': 'Bar',
 'iconSize': [270, 100]
 },
@@ -108,7 +110,8 @@
 {
 'type': 'Feature',
 'properties': {
-'file': 'yoongumee.png',
+    'place_id': '3',
+'file': 'static/img/marker/yoongumee.png',
 'message': 'Baz',
 'iconSize': [270, 100]
 },
@@ -143,12 +146,19 @@ geojson.features.forEach(function(marker) {
 // create a DOM element for the marker
 var el = document.createElement('div');
 el.className = 'marker';
+el.id = 'place_id';
 // el.style.backgroundImage =
 // 'url(http://13.209.210.87/static/img/marker/' +
 // marker.properties.iconSize.join('/') +
 // '/)';
+
+// el.style.backgroundImage =
+// 'url(static/img/marker/' +
+// marker.properties.file +
+// ')';
+
 el.style.backgroundImage =
-'url(static/img/marker/' +
+'url(' +
 marker.properties.file +
 ')';
 
