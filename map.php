@@ -161,7 +161,7 @@ el.addEventListener('mouseover', function() {
     elName.innerHTML = marker.properties.message;
     elName.style.width = '100%';
     elName.style.height = '60px';
-    elName.style.paddingTop = '5px';
+    // elName.style.paddingTop = '5px';
     // elName.style.backgroundColor = 'rgb(255, 255, 255)';
     elName.style.textAlign = 'center';
     elName.style.fontSize = '1.5rem';
