@@ -48,52 +48,54 @@
 'type': 'FeatureCollection',
 'features': [
 
-{
-'type': 'Feature',
-'properties': {
-    // 'place_id': '1',
-    'place_id': '<?php echo "100";?>',
-    'category': 'middleHori',
-'file': 'static/img/marker/monkeyhouse.png',
-// 'message': 'Foo',
-'message': '<?php echo "낙검자수용소";?>',
-'iconSize': [270, 100]
-},
-'geometry': {
-'type': 'Point',
-'coordinates': [127.065257, 37.944896]
-}
-},
-{
-'type': 'Feature',
-'properties': {
-    'place_id': '2',
-    'category': 'bigHori',
-'file': 'static/img/marker/gulsan_vil.png',
-// 'message': 'Bar',
-'message': '<?php echo "걸산마을";?>',
-'iconSize': [270, 100]
-},
-'geometry': {
-'type': 'Point',
-'coordinates': [127.095351, 37.926185]
-}
-},
-{
-'type': 'Feature',
-'properties': {
-    'place_id': '3',
-    'category': 'smallHori',
-'file': 'static/img/marker/yoongumee.png',
-// 'message': 'Baz',
-'message': '<?php echo "윤금이 거주지";?>',
-'iconSize': [270, 100]
-},
-'geometry': {
-'type': 'Point',
-'coordinates': [127.055933, 37.916710]
-}
-}
+    {
+    'type': 'Feature',
+    'properties': {
+        // 'place_id': '1',
+        'place_id': '<?php echo "100";?>',
+        'category': 'middleHori',
+        'file': 'static/img/marker/monkeyhouse.png',
+        // 'message': 'Foo',
+        'message': '<?php echo "낙검자수용소";?>',
+        'iconSize': [270, 100]
+    },
+    'geometry': {
+        'type': 'Point',
+        'coordinates': [127.065257, 37.944896]
+    }
+    },
+
+    {
+    'type': 'Feature',
+    'properties': {
+        'place_id': '2',
+        'category': 'bigHori',
+        'file': 'static/img/marker/gulsan_vil.png',
+        // 'message': 'Bar',
+        'message': '<?php echo "걸산마을";?>',
+        'iconSize': [270, 100]
+    },
+    'geometry': {
+        'type': 'Point',
+        'coordinates': [127.095351, 37.926185]
+    }
+    },
+
+    {
+    'type': 'Feature',
+    'properties': {
+        'place_id': '3',
+        'category': 'smallHori',
+        'file': 'static/img/marker/yoongumee.png',
+        // 'message': 'Baz',
+        'message': '<?php echo "윤금이 거주지";?>',
+        'iconSize': [270, 100]
+    },
+    'geometry': {
+        'type': 'Point',
+        'coordinates': [127.055933, 37.916710]
+    }
+    }
 
 ]
 };
@@ -147,22 +149,26 @@ el.style.height = marker.properties.iconSize[1] + 'px';
  
 
 //****marker func****//
+
 // el.addEventListener('click', function() {
-// window.alert(marker.properties.message);
+// // window.alert(marker.properties.message);
 // });
 
 
+
+// el.addEventListener('click', function() {
+// // window.alert(marker.properties.message);
+// showMarkerPlace();
+// });
+
 // el.addEventListener('click', function() {
 el.addEventListener('mouseover', function() {
-// window.alert(marker.properties.message);
     var elName = document.createElement('div');
 
     elName.id = 'marker_name';
     elName.innerHTML = marker.properties.message;
     elName.style.width = '100%';
     elName.style.height = '20px';
-    // elName.style.paddingTop = '5px';
-    // elName.style.backgroundColor = 'rgb(255, 255, 255)';
     elName.style.textAlign = 'center';
     elName.style.fontSize = '2rem';
     elName.style.fontFamily = '또박또박';
@@ -178,7 +184,6 @@ el.addEventListener('mouseover', function() {
 });
 
 el.addEventListener('mouseout', function() {
-// window.alert(marker.properties.message);
     var elShown = document.getElementById('marker_name');
     elShown.remove();
 });
