@@ -148,7 +148,12 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 
 //****marker func****//
 // el.addEventListener('click', function() {
-el.addEventListener('mouseover', function() {
+// window.alert(marker.properties.message);
+// });
+
+
+el.addEventListener('click', function() {
+// el.addEventListener('mouseover', function() {
 // window.alert(marker.properties.message);
     var elName = document.createElement('div');
 
