@@ -34,7 +34,7 @@
 }
 
 
-/* .gg-bold {
+.gg-bold {
     font-family: "경기천년볼드", serif;
 }
 
@@ -44,8 +44,8 @@
 
 .gg-batang {
     font-family: "GyeonggiBatang", sans-serif;
-} */
-.gg-bold {
+}
+/* .gg-bold {
     font-family: "또박또박", serif;
 }
 
@@ -55,7 +55,7 @@
 
 .gg-batang {
     font-family: "또박또박", sans-serif;
-}
+} */
 
 
 body {
