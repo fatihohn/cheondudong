@@ -159,7 +159,7 @@ el.addEventListener('mouseover', function() {
 
     elName.id = 'marker_name';
     elName.innerHTML = marker.properties.message;
-    elName.style.width = '200px';
+    elName.style.width = '100%';
     elName.style.height = '60px';
     elName.style.padding = '5px';
     // elName.style.backgroundColor = 'rgb(255, 255, 255)';
@@ -167,7 +167,7 @@ el.addEventListener('mouseover', function() {
     elName.style.fontSize = '1.5rem';
     elName.style.fontFamily = '또박또박';
     elName.style.position = 'relative';
-    elName.style.top = '100px';
+    elName.style.top = '60px';
 
 
     document.getElementById(marker.properties.place_id).appendChild(elName);
