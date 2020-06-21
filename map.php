@@ -166,7 +166,8 @@ el.addEventListener('mouseover', function() {
     elName.style.textAlign = 'center';
     elName.style.fontSize = '2rem';
     elName.style.fontFamily = '또박또박';
-    elName.style.overflowX = 'visible';
+    elName.style.overflow = 'visible';
+    elName.style.wordBreak = 'keep-all';
     elName.style.position = 'relative';
     elName.style.top = '100%';
 
