@@ -155,7 +155,7 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 // el.addEventListener('click', function() {
 el.addEventListener('mouseover', function() {
 // window.alert(marker.properties.message);
-    var elName = document.createElement('span');
+    var elName = document.createElement('div');
 
     elName.id = 'marker_name';
     elName.innerHTML = marker.properties.message;
@@ -168,6 +168,7 @@ el.addEventListener('mouseover', function() {
     elName.style.fontFamily = '또박또박';
     elName.style.overflowX = 'visible';
     elName.style.overflowY = 'visible';
+    elName.style.whiteSpace = 'nowrap';
     elName.style.wordBreak = 'keep-all';
     elName.style.position = 'relative';
     elName.style.top = '100%';
