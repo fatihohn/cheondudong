@@ -158,7 +158,7 @@ el.addEventListener('click', function() {
     var elName = document.createElement('div');
 
     elName.id = 'marker_name';
-    elName.innrHTML = marker.properties.message;
+    elName.innerHTML = marker.properties.message;
     elName.style.width = '150px';
     elName.style.height = '60px';
     document.getElementById(marker.properties.place_id).appendChild(elName);
