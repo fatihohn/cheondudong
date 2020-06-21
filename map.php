@@ -159,8 +159,12 @@ el.addEventListener('mouseover', function() {
 
     elName.id = 'marker_name';
     elName.innerHTML = marker.properties.message;
-    elName.style.width = '150px';
+    elName.style.width = '100%';
     elName.style.height = '60px';
+    elName.style.backgroundColor = 'rgb(240, 240, 240)';
+    elName.style.textAlign = 'center';
+
+
     document.getElementById(marker.properties.place_id).appendChild(elName);
 });
 
