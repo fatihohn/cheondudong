@@ -145,10 +145,21 @@ el.style.backgroundSize = 'cover';
 el.style.width = marker.properties.iconSize[0] + 'px';
 el.style.height = marker.properties.iconSize[1] + 'px';
  
+
+//****marker func****//
 // el.addEventListener('click', function() {
 el.addEventListener('mouseover', function() {
-window.alert(marker.properties.message);
+// window.alert(marker.properties.message);
+    var elName = el.createElement('div');
+    elName.id = 'marker_name';
+    elName.innrHTML = marker.properties.message;
 });
+el.addEventListener('mouseout', function() {
+// window.alert(marker.properties.message);
+    var elShown = document.getElementById('marker_name');
+    elShown.remove();
+});
+//****marker func end****//
  
 // add marker to map
 new mapboxgl.Marker(el)
