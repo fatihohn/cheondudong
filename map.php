@@ -163,11 +163,13 @@ el.addEventListener('click', function() {
     elName.style.height = '60px';
     document.getElementById(marker.properties.place_id).appendChild(elName);
 });
-el.addEventListener('mouseout', function() {
-// window.alert(marker.properties.message);
-    var elShown = document.getElementById('marker_name');
-    elShown.remove();
-});
+
+// el.addEventListener('mouseout', function() {
+// // window.alert(marker.properties.message);
+//     var elShown = document.getElementById('marker_name');
+//     elShown.remove();
+// });
+
 //****marker func end****//
  
 // add marker to map
