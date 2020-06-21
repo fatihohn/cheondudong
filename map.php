@@ -155,7 +155,7 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 // el.addEventListener('click', function() {
 el.addEventListener('mouseover', function() {
 // window.alert(marker.properties.message);
-    var elName = document.createElement('div');
+    var elName = document.createElement('p');
 
     elName.id = 'marker_name';
     elName.innerHTML = marker.properties.message;
@@ -217,79 +217,6 @@ trackUserLocation: true
 
 
 
-
-
-
-
-
-
-
-    // var language = new MapboxLanguage({
-	// 		  defaultLanguage: "ko"
-	// 	});
-	// 	map.addControl(language);
-
-	// 	geocoder = new MapboxGeocoder({
-	// 		mapboxgl: mapboxgl,
-	// 	    accessToken: mapboxgl.accessToken,
-	// 	});
-
-    //     map.addControl(geocoder);
-
-        
-        
-
-// //****user location****//
-
-// function getUserLocation(method) {
-
-//     toggle_updatelocation(true);
-
-//     // request to allow user position 
-//     if (navigator.geolocation) {
-//         supports_location = true;
-
-//         toggle_updatelocation(false);
-
-//         console.log("L1, getUserLocation()")
-//         navigator.geolocation.getCurrentPosition(showPosition, show_location_error);
-
-
-//         function showPosition(position) {
-
-//             // get user current coordinates and center map on coordiates
-//             console.log("L2", position)
-//             //console.log(position.coords.latitude, position.coords.latitude)
-//             user_coordinates = {
-//               lat: position.coords.latitude,
-//               lng: position.coords.longitude
-//             };
-
-//             // convert users coordinates to place address
-//             getReverseGeocode(user_coordinates, method)
-
-//             distance_from_dongducheon = getDistanceFromLatLonInKm(user_coordinates.lat,user_coordinates.lng,37.916149,127.057049)
-
-//         }
-//     } else {
-//         // if device doesnt support location
-//         console.log("E1, device doesnt support location")
-//         show_location_error(error)
-//     }
-
-//     // if device supports camera, show camera buttons
-//     DetectRTC.load(function() {
-//         if (DetectRTC.hasWebcam == false && detectrtc_tested != true) {
-//             console.log("device has no cam" );
-//             $(".btn_opencam").hide();
-//             $(".ui_map_bottom").addClass("no_cam");
-//             detectrtc_tested = true;
-//         } 
-//     });
-// }; 
-
-
-
     </script>
 
 
@@ -298,14 +225,6 @@ trackUserLocation: true
 
     
     function markerSize() {
-    //     function markerPointer() {
-    //     let markerAll = document.querySelectorAll(".marker");
-    //     let mk;
-    //     for(mk=0; mk < markerAll.length; mk++) {
-    //         markerAll[mk].style.cursor = "pointer";
-    // }
-    // markerPointer();
-
 
         //****1:1****//
         let smallCubeAll = document.querySelectorAll(".smallCube");
