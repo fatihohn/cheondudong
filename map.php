@@ -164,7 +164,7 @@ el.addEventListener('mouseover', function() {
     // elName.style.paddingTop = '5px';
     // elName.style.backgroundColor = 'rgb(255, 255, 255)';
     elName.style.textAlign = 'center';
-    elName.style.fontSize = '1.5rem';
+    elName.style.fontSize = '2rem';
     elName.style.fontFamily = '또박또박';
     elName.style.position = 'relative';
     elName.style.top = '100%';
