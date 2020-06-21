@@ -47,6 +47,7 @@
     var geojson = {
 'type': 'FeatureCollection',
 'features': [
+
 {
 'type': 'Feature',
 'properties': {
@@ -55,7 +56,7 @@
     'category': 'middleHori',
 'file': 'static/img/marker/monkeyhouse.png',
 // 'message': 'Foo',
-'message': '<?php echo "hello world";?>',
+'message': '<?php echo "monkey house";?>',
 'iconSize': [270, 100]
 },
 'geometry': {
@@ -93,6 +94,7 @@
 'coordinates': [127.055933, 37.916710]
 }
 }
+
 ]
 };
 
@@ -143,7 +145,8 @@ el.style.backgroundSize = 'cover';
 el.style.width = marker.properties.iconSize[0] + 'px';
 el.style.height = marker.properties.iconSize[1] + 'px';
  
-el.addEventListener('click', function() {
+// el.addEventListener('click', function() {
+el.addEventListener('hover', function() {
 window.alert(marker.properties.message);
 });
  
