@@ -39,6 +39,11 @@
     
     mapboxgl.accessToken = 'pk.eyJ1Ijoic3VyaWNpdHkiLCJhIjoiY2tiZnpzaGtzMTB5NTJwcWVtOHF5anRmMCJ9.CI4QuMCsvVak3vrNtnJWcw';
     
+
+
+
+
+//****marker list****//
     var geojson = {
 'type': 'FeatureCollection',
 'features': [
@@ -90,6 +95,8 @@
 }
 ]
 };
+
+//****marker list end****//
     
     
     
@@ -146,8 +153,8 @@ new mapboxgl.Marker(el)
 .addTo(map);
 });
 
-// disable map rotation using right click + drag
-map.dragRotate.disable();
+// // disable map rotation using right click + drag
+// map.dragRotate.disable();
  
 // disable map rotation using touch rotation gesture
 map.touchZoomRotate.disableRotation();
@@ -180,17 +187,17 @@ trackUserLocation: true
 
 
 
-    var language = new MapboxLanguage({
-			  defaultLanguage: "ko"
-		});
-		map.addControl(language);
+    // var language = new MapboxLanguage({
+	// 		  defaultLanguage: "ko"
+	// 	});
+	// 	map.addControl(language);
 
-		geocoder = new MapboxGeocoder({
-			mapboxgl: mapboxgl,
-		    accessToken: mapboxgl.accessToken,
-		});
+	// 	geocoder = new MapboxGeocoder({
+	// 		mapboxgl: mapboxgl,
+	// 	    accessToken: mapboxgl.accessToken,
+	// 	});
 
-        map.addControl(geocoder);
+    //     map.addControl(geocoder);
 
         
         
