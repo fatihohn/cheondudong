@@ -56,7 +56,7 @@
     'category': 'middleHori',
 'file': 'static/img/marker/monkeyhouse.png',
 // 'message': 'Foo',
-'message': '<?php echo "monkey house";?>',
+'message': '<?php echo "낙검자수용소";?>',
 'iconSize': [270, 100]
 },
 'geometry': {
@@ -71,7 +71,7 @@
     'category': 'bigHori',
 'file': 'static/img/marker/gulsan_vil.png',
 // 'message': 'Bar',
-'message': '<?php echo "hello gulsan";?>',
+'message': '<?php echo "걸산마을";?>',
 'iconSize': [270, 100]
 },
 'geometry': {
@@ -86,7 +86,7 @@
     'category': 'smallHori',
 'file': 'static/img/marker/yoongumee.png',
 // 'message': 'Baz',
-'message': '<?php echo "yoongumee";?>',
+'message': '<?php echo "윤금이 거주지";?>',
 'iconSize': [270, 100]
 },
 'geometry': {
