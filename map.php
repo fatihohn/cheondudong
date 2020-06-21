@@ -150,9 +150,12 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 // el.addEventListener('click', function() {
 el.addEventListener('mouseover', function() {
 // window.alert(marker.properties.message);
-    var elName = el.createElement('div');
+    var elName = document.createElement('div');
+
     elName.id = 'marker_name';
     elName.innrHTML = marker.properties.message;
+
+    document.getElementById(marker.properties.place_id).appendChild(elName);
 });
 el.addEventListener('mouseout', function() {
 // window.alert(marker.properties.message);
