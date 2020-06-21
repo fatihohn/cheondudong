@@ -146,7 +146,7 @@ el.style.width = marker.properties.iconSize[0] + 'px';
 el.style.height = marker.properties.iconSize[1] + 'px';
  
 // el.addEventListener('click', function() {
-el.addEventListener('hover', function() {
+el.addEventListener('mouseover', function() {
 window.alert(marker.properties.message);
 });
  
