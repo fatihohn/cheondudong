@@ -146,6 +146,37 @@ new mapboxgl.Marker(el)
 .addTo(map);
 });
 
+// disable map rotation using right click + drag
+map.dragRotate.disable();
+ 
+// disable map rotation using touch rotation gesture
+map.touchZoomRotate.disableRotation();
+
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
+
+// Add geolocate control to the map.
+map.addControl(
+new mapboxgl.GeolocateControl({
+positionOptions: {
+enableHighAccuracy: true
+},
+trackUserLocation: true
+})
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -164,54 +195,54 @@ new mapboxgl.Marker(el)
         
         
 
-//****user location****//
+// //****user location****//
 
-function getUserLocation(method) {
+// function getUserLocation(method) {
 
-    toggle_updatelocation(true);
+//     toggle_updatelocation(true);
 
-    // request to allow user position 
-    if (navigator.geolocation) {
-        supports_location = true;
+//     // request to allow user position 
+//     if (navigator.geolocation) {
+//         supports_location = true;
 
-        toggle_updatelocation(false);
+//         toggle_updatelocation(false);
 
-        console.log("L1, getUserLocation()")
-        navigator.geolocation.getCurrentPosition(showPosition, show_location_error);
+//         console.log("L1, getUserLocation()")
+//         navigator.geolocation.getCurrentPosition(showPosition, show_location_error);
 
 
-        function showPosition(position) {
+//         function showPosition(position) {
 
-            // get user current coordinates and center map on coordiates
-            console.log("L2", position)
-            //console.log(position.coords.latitude, position.coords.latitude)
-            user_coordinates = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude
-            };
+//             // get user current coordinates and center map on coordiates
+//             console.log("L2", position)
+//             //console.log(position.coords.latitude, position.coords.latitude)
+//             user_coordinates = {
+//               lat: position.coords.latitude,
+//               lng: position.coords.longitude
+//             };
 
-            // convert users coordinates to place address
-            getReverseGeocode(user_coordinates, method)
+//             // convert users coordinates to place address
+//             getReverseGeocode(user_coordinates, method)
 
-            distance_from_dongducheon = getDistanceFromLatLonInKm(user_coordinates.lat,user_coordinates.lng,37.916149,127.057049)
+//             distance_from_dongducheon = getDistanceFromLatLonInKm(user_coordinates.lat,user_coordinates.lng,37.916149,127.057049)
 
-        }
-    } else {
-        // if device doesnt support location
-        console.log("E1, device doesnt support location")
-        show_location_error(error)
-    }
+//         }
+//     } else {
+//         // if device doesnt support location
+//         console.log("E1, device doesnt support location")
+//         show_location_error(error)
+//     }
 
-    // if device supports camera, show camera buttons
-    DetectRTC.load(function() {
-        if (DetectRTC.hasWebcam == false && detectrtc_tested != true) {
-            console.log("device has no cam" );
-            $(".btn_opencam").hide();
-            $(".ui_map_bottom").addClass("no_cam");
-            detectrtc_tested = true;
-        } 
-    });
-}; 
+//     // if device supports camera, show camera buttons
+//     DetectRTC.load(function() {
+//         if (DetectRTC.hasWebcam == false && detectrtc_tested != true) {
+//             console.log("device has no cam" );
+//             $(".btn_opencam").hide();
+//             $(".ui_map_bottom").addClass("no_cam");
+//             detectrtc_tested = true;
+//         } 
+//     });
+// }; 
 
 
 
