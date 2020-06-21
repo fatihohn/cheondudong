@@ -1,9 +1,10 @@
+/****header****/
 #header_wrap #header_box #header_box_area #header_login {
     position: absolute;
     width: 100%;
     max-width: 200px;
 }
-
+/****menu****/
 .menu_btn_wrap {
     position: relative;
     display: grid;
@@ -20,3 +21,7 @@
     font-weight: bolder;
     position: relative;
 }
+/****main****/
+/****footer****/
+
+

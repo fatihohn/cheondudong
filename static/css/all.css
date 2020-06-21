@@ -7,7 +7,7 @@
     -webkit-font-smoothing: antialiased;
 }
 
-@font-face {
+/* @font-face {
     font-family: "경기천년제목";
     src: url('../../fonts/Title_Light.otf'), url('../../fonts/경기천년바탕_Regular.ttf');
 }
@@ -27,21 +27,34 @@
 @font-face {
     font-family: "경기천년볼드";
     src: url('../../fonts/Batang_Bold.otf'), url('../../fonts/Batang_Bold.eot'), url('../../fonts/Batang_Bold.woff'), url('../../fonts/경기천년바탕_Bold.ttf');
+} */
+@font-face {
+    font-family: "또박또박";
+    src: url('../../fonts/NanumDdoBagDdoBag.woff'), url('../../fonts/NanumDdoBagDdoBag.eot'), url('../../fonts/NanumDdoBagDdoBag.ttf');
 }
 
-.gg-bold {
+
+/* .gg-bold {
     font-family: "경기천년볼드", serif;
-    /* font-size: 1rem; */
 }
 
 .gg-title {
-    font-family: "경기천년제목", sans-serif;
-    /* font-size: 1rem; */
+    font-family: "또박또박", sans-serif;
 }
 
 .gg-batang {
     font-family: "GyeonggiBatang", sans-serif;
-    /* font-size: 1rem; */
+} */
+.gg-bold {
+    font-family: "또박또박", serif;
+}
+
+.gg-title {
+    font-family: "또박또박", sans-serif;
+}
+
+.gg-batang {
+    font-family: "또박또박", sans-serif;
 }
 
 
