@@ -234,3 +234,10 @@
     float: left;
     padding: 10px 0;
 }
+
+#lang_select {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    cursor: pointer;
+}

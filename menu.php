@@ -78,6 +78,14 @@ $placeTitle = "임시 장소 제목"
                     </div>
                 </li> -->
             </ul>
+            <div id="lang_select">
+                <div class="ko">
+                    English
+                </div>
+                <div class="en">
+                    한국어
+                </div>
+            </div>
         </div>
     </div>
 </div>
