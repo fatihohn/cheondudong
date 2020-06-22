@@ -94,6 +94,15 @@ function menuUserClick() {
 }
 menuUserClick();
 
+function menuIntroAddClick() {
+    let menuIntroAdd = document.getElementById("add_intro");
+    function addIntro() {
+        location.href = "admin_create_intro.php";
+    }
+    menuIntroAdd.addEventListener("click", addIntro);
+}
+menuIntroAddClick();
+
 </script>
 
 <script src="static/js/admin_check.js"></script>
