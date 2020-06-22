@@ -152,6 +152,7 @@
     margin: 0 auto;
     position: relative;
     top: 140px;
+    padding: 5px;
 }
 
 #menu_wrap #menu_box #menu_list .menu_list_item {
