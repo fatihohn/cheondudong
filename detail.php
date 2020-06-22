@@ -1,14 +1,19 @@
 <?php
 
 $detailTitle = "임시 제목";
+$detailTitle_en = "Title";
 $detailMarker = "임시 마커 이미지 링크";
 $detailAddress = "임시 주소";
+$detailAddress_en = "Address";
 $detailCoord = "임시 위치 == 입력 시 위도 경도 좌표 정보 획득";
 $detailCont = "임시 설명 및 이미지 == 스마트에디터";
+$detailCont_en = "detail contents.";
 $detailImg = "이미지";
 $detailImg_dir = "이미지 경로";
 $detailWork = "임시 관련작품 == 리스트 == 입력 시 리스트로 변환";
+$detailWork_en = "works list";
 $detailRef = "임시 참고자료 == 리스트 == 입력 시 리스트로 변환";
+$detailRef_en = "reference list";
 
 ?>
 
@@ -25,7 +30,7 @@ $detailRef = "임시 참고자료 == 리스트 == 입력 시 리스트로 변환
                     <?php echo $detailTitle;?>
                 </h3>
                 <h3 class="tooling en">
-                    <?php echo $detailTitle;?>
+                    <?php echo $detailTitle_en;?>
                 </h3>
             </div>
             <div id="detail_point">
@@ -34,7 +39,7 @@ $detailRef = "임시 참고자료 == 리스트 == 입력 시 리스트로 변환
                     <?php echo $detailAddress;?>
                 </p>
                 <p class="detail_address en">
-                    <?php echo $detailAddress;?>
+                    <?php echo $detailAddress_en;?>
                 </p>
                 <p class="detail_coord ko">
                     <?php echo $detailCoord;?>
@@ -47,7 +52,7 @@ $detailRef = "임시 참고자료 == 리스트 == 입력 시 리스트로 변환
                 <?php echo $detailCont;?>
             </div>
             <div id="detail_cont en">
-                <?php echo $detailCont;?>
+                <?php echo $detailCont_en;?>
             </div>
             <div id="detail_img">
                 <?php echo $detailImg;?>
