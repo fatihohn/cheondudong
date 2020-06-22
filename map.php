@@ -163,10 +163,10 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 
 // el.addEventListener('click', function() {
 el.addEventListener('mouseover', function() {
-    // var languageKo = document.getElementById("language_ko").style.display;
+    var languageKo = document.getElementById("language_ko").style.display;
     var languageEn = document.getElementById("language_en").style.display;
 
-    if(languageEn !== "none") {
+    if(languageEn == "none") {
         var elNameKo = document.createElement('div');
 
         elNameKo.id = 'marker_name';
