@@ -1,10 +1,12 @@
 /****header****/
+
 #header_wrap {
     width: 100%;
     height: 80px;
     display: none;
     z-index: 100;
 }
+
 #header_wrap #header_box {
     background-color: rgb(240, 240, 240);
     display: flex;
@@ -19,19 +21,17 @@
     padding-bottom: 8px;
     border-image-source: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(240, 240, 240, 0)); */
     z-index: 100;
-
     /*형압 보더*/
     /* border-bottom: 20px solid;
     border-image-source: linear-gradient(180deg, rgba(240, 240, 240, 0) 0%, rgba(240, 240, 240, 0) 99%, rgba(0, 0, 0, 0.01) 98.5%, rgb(255,255,255) 99.3%, rgba(0,0,0, 0.08) 99.9%, rgba(0,0,0, 0) 100%);
     border-image-slice: 1; */
-    
     border-bottom: 10px solid;
     -webkit-border-image: url(../img/intaglio_line.png);
     -moz-border-image: url(../img/intaglio_line.png);
     border-image: url(../img/intaglio_line.png);
     border-image-slice: 30;
-
 }
+
 
 /* #header_wrap #header_box:before {
     content: "";
@@ -54,37 +54,41 @@
     padding-top: 15px;
     z-index: 100;
 }
+
 #header_wrap #header_box #header_box_area #header_title {
     margin: 0 auto;
-    width: 476px;
+    /* width: 476px; */
     /* padding-top: 7px; */
     font-size: 1.2rem;
     cursor: pointer;
     text-align: center;
 }
+
 #header_wrap #header_box #header_box_area #header_title a .header_logo {
-   height: 55px;
+    height: 55px;
 }
 
-#header_wrap #header_box #header_box_area #header_title h1{
+#header_wrap #header_box #header_box_area #header_title h1 {
     background-color: rgb(180, 180, 180);
     color: transparent;
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.4);
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
 }
 
-
-#header_wrap #header_box #header_box_area #header_btn{
+#header_wrap #header_box #header_box_area #header_btn {
     width: 60px;
     margin: auto 0;
     /* top: -55px; */
     top: -68px;
-    left: 700px;
+    /* left: 700px; */
+    left: 85%;
     position: relative;
     filter: opacity(0.7);
 }
+
+
 /* #header_wrap #header_box #header_box_area #header_btn a #menu_btn{
     width: 60px;
     margin: auto 0;
@@ -93,37 +97,35 @@
     position: relative;
 } */
 
-#header_wrap #header_box #header_box_area #header_btn a #menu_btn img{
-    width: 50px;
-    top: 10px;
+#header_wrap #header_box #header_box_area #header_btn a #menu_btn img {
+    width: 40px;
+    top: 15px;
     position: relative;
 }
-#header_wrap #header_box #header_box_area #header_btn a #menu_btn .menu_o{
+
+#header_wrap #header_box #header_box_area #header_btn a #menu_btn .menu_o {
     font-size: 4.5rem;
     position: absolute;
     background-color: rgb(180, 180, 180);
     color: transparent;
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.4);
-        -webkit-background-clip: text;
-            -moz-background-clip: text;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
     background-clip: text;
 }
-#header_wrap #header_box #header_box_area #header_btn a #menu_btn .menu_m{
+
+#header_wrap #header_box #header_box_area #header_btn a #menu_btn .menu_m {
     font-size: 3rem;
     position: relative;
     background-color: rgb(180, 180, 180);
     color: transparent;
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.4);
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4);
     -webkit-background-clip: text;
-        -moz-background-clip: text;
-            background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
     top: 13px;
     left: 11px;
 }
-
-
-
-
 
 
 /****menu****/
@@ -131,6 +133,7 @@
 #menu_wrap * {
     z-index: 99;
 }
+
 #menu_wrap {
     width: 100%;
     /* height: 100%; */
@@ -141,8 +144,8 @@
     top: 70px;
     left: 0;
     display: none;
-
 }
+
 #menu_wrap #menu_box {
     width: 100%;
     max-width: 768px;
@@ -151,7 +154,7 @@
     top: 140px;
 }
 
-#menu_wrap #menu_box #menu_list .menu_list_item{
+#menu_wrap #menu_box #menu_list .menu_list_item {
     padding-bottom: 15px;
     margin-bottom: 15px;
     /* border-bottom: 20px solid;
@@ -163,6 +166,7 @@
     border-image: url(../img/intaglio_line.png);
     border-image-slice: 30; */
 }
+
 
 /* #menu_wrap #menu_box #menu_list .menu_list_item:before {
     content: "";
@@ -178,22 +182,27 @@
     transition: .2s opacity;
 } */
 
-
 #menu_wrap #menu_box #menu_list .menu_list_item a h2 {
- 
     margin: 15px;
 }
 
 
 /*menu_intro*/
+
+
 /* #intro_cont_wrap {
     display: none;
 } */
+
 #intro_cont_wrap #intro_cont {
     text-indent: 1rem;
     color: #555;
 }
+
+
 /*menu_place*/
+
+
 /* #place_cont_wrap {
     display: none;
 } */
@@ -209,6 +218,7 @@
     overflow: hidden;
     position: relative;
 }
+
 #place_cont_wrap #place_cont #place_ul .place_li {
     margin-right: 5px;
     margin-left: 5px;
@@ -216,6 +226,3 @@
     float: left;
     padding: 10px 0;
 }
-
-
-
