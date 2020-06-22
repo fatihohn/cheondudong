@@ -25,10 +25,10 @@
             </center>
         
         <?php    
-           include 'bbdd_db_conn.php';   
+           include 'cdd_db_conn.php';   
 
            
-           $URL = "./admin_contList.php";
+           $URL = "./admin_index.php";
 
 
            
@@ -371,12 +371,13 @@
 
     </section>
     <footer>
-        <?php include 'admin_footer.php'; ?>
+        <?php include 'footer.php'; ?>
 
     </footer>
  
 
 <?php include "admin_jsGroup.php";?>
+<?php include "jsGroup.php";?>
 <!-- <script type="text/javascript" src="se2/js/service/HuskyEZCreator.js" charset="utf-8"></script> -->
 <script type="text/javascript">
     let oEditors = [];
