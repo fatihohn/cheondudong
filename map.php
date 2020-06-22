@@ -185,7 +185,7 @@ el.addEventListener('mouseover', function() {
         elNameKo.style.top = '100%';
 
         document.getElementById(marker.properties.place_id).appendChild(elNameKo);
-    } else {
+    } else if(languageKo == "none") {
         var elNameEn = document.createElement('div');
 
         elNameEn.id = 'marker_name';
