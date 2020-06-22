@@ -1,9 +1,8 @@
 <div id="front_wrap">
-    <div id="front_box">
+    <!-- <div id="front_box">
         <div id="front_title">
             <div id="title_cdd" class="gg-batang">
      
-                <!-- <h1 class="gg-batang"> -->
                 <h1 >
                     천<br>
                     두<br>
@@ -12,7 +11,6 @@
             </div>
             <div id="title_ddc" class="gg-batang">
            
-                <!-- <h1 class="gg-batang"> -->
                 <h1>
                     에<br>
                     디<br>
@@ -21,8 +19,12 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
+
+
+
+
 
 <!-- <script>
     function frontTitleClick() {

@@ -84,16 +84,6 @@ $placeTitle = "임시 장소 제목"
                     </a>
                     
                 </li>
-                <!-- <li id="menu_people" class="menu_list_item">
-                    <a id="menu_people_btn">
-                        <h2 class="gg-batang">
-                            천두동 사람들
-                        </h2>
-                    </a>
-                    <div id="people_cont_wrap">
-                        hello people
-                    </div>
-                </li> -->
             </ul>
         </div>
     </div>
