@@ -14,7 +14,7 @@ $placeTitle = "임시 장소 제목"
                     <div class="menu_btn_wrap">
                         <div id="menu_intro_btn">
                             <a>
-                                <h2 class="gg-batang tooling">
+                                <h2 class="ddobag tooling">
                                     천두동·동두천 소개
                                 </h2>
                             </a>
@@ -38,7 +38,7 @@ $placeTitle = "임시 장소 제목"
                     <div class="menu_btn_wrap">
                         <div id="menu_place_btn">
                             <a>
-                                <h2 class="gg-batang tooling">
+                                <h2 class="ddobag tooling">
                                     천두동 장소들
                                 </h2>
                             </a>
@@ -70,7 +70,7 @@ $placeTitle = "임시 장소 제목"
                 </li>
                 <li id="menu_user" class="menu_list_item">
                     <a id="menu_user_btn">
-                        <h2 class="gg-batang tooling">
+                        <h2 class="ddobag tooling">
                             사용자 관리
                         </h2>
                     </a>
@@ -78,7 +78,7 @@ $placeTitle = "임시 장소 제목"
                 </li>
                 <li id="menu_detail" class="menu_list_item">
                     <a id="menu_detail_btn">
-                        <h2 class="gg-batang tooling">
+                        <h2 class="ddobag tooling">
                             장소 세부 임시버튼
                         </h2>
                     </a>

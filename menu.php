@@ -12,8 +12,8 @@ $placeTitle = "임시 장소 제목"
             <ul id="menu_list">
                 <li id="menu_intro" class="menu_list_item">
                     <a id="menu_intro_btn">
-                        <!-- <h2 class="gg-batang tooling"> -->
-                        <h2 class="gg-batang">
+                        <!-- <h2 class="ddobag tooling"> -->
+                        <h2 class="ddobag">
                             천두동·동두천 소개
                         </h2>
                     </a>
@@ -27,8 +27,8 @@ $placeTitle = "임시 장소 제목"
                 </li>
                 <li id="menu_place" class="menu_list_item">
                     <a id="menu_place_btn">
-                        <!-- <h2 class="gg-batang tooling"> -->
-                        <h2 class="gg-batang">
+                        <!-- <h2 class="ddobag tooling"> -->
+                        <h2 class="ddobag">
                             천두동 장소들
                         </h2>
                     </a>
@@ -52,8 +52,8 @@ $placeTitle = "임시 장소 제목"
                 </li>
                 <li id="menu_detail" class="menu_list_item">
                     <a id="menu_detail_btn">
-                        <!-- <h2 class="gg-batang tooling"> -->
-                        <h2 class="gg-batang">
+                        <!-- <h2 class="ddobag tooling"> -->
+                        <h2 class="ddobag">
                             장소 세부 임시버튼
                         </h2>
                     </a>
@@ -62,7 +62,7 @@ $placeTitle = "임시 장소 제목"
                 </li>
                 <!-- <li id="menu_people" class="menu_list_item">
                     <a id="menu_people_btn">
-                        <h2 class="gg-batang">
+                        <h2 class="ddobag">
                             천두동 사람들
                         </h2>
                     </a>

@@ -153,6 +153,7 @@
     position: relative;
     top: 80px;
     padding: 5px;
+    font-size: 1.8rem;
 }
 
 #menu_wrap #menu_box #menu_list .menu_list_item {
@@ -171,7 +172,7 @@
 
 #menu_wrap #menu_box #menu_list .menu_list_item>a>h2 {
     font-size: 2.3rem;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 
