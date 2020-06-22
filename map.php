@@ -205,6 +205,11 @@ el.addEventListener('mouseover', function() {
 
         document.getElementById(marker.properties.place_id).appendChild(elNameEn);
         
+        let enAllMap = document.querySelectorAll(".en");
+        let elangMap;
+        for(elangMap=0; elangMap < enAllMap.length; elangMap++) {
+            enAllMap[elangMap].style.display = "initial";
+        }
     }
 });
 
