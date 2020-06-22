@@ -1,7 +1,14 @@
 <div id="header_wrap">
     <div id="header_box">
         <div id="header_box_area">
-
+        <div id="lang_select" class="header_lang">
+                <div class="ko">
+                    English
+                </div>
+                <div class="en">
+                    한국어
+                </div>
+            </div>
             <div id="header_title">
                 <a>
                     <!-- <h1 class="ddobag">
