@@ -96,3 +96,7 @@ a {
     -moz-background-clip: text;
     background-clip: text;
 }
+
+.en {
+    display: none;
+}

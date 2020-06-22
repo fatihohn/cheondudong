@@ -14,8 +14,11 @@ $placeTitle = "임시 장소 제목"
                     <div class="menu_btn_wrap">
                         <div id="menu_intro_btn">
                             <a>
-                                <h2 class="ddobag">
+                                <h2 class="ddobag ko">
                                     천두동·동두천 소개
+                                </h2>
+                                <h2 class="ddobag en">
+                                    Cheondudong Intro
                                 </h2>
                             </a>
                         </div>
@@ -29,7 +32,7 @@ $placeTitle = "임시 장소 제목"
                     <div id="intro_cont_wrap">
                         <div id="intro_cont" class="ddobag">
                             
-                            <?php echo $introCont;?>
+                            <?php include "intro_cont.php";?>
                             
                         </div>
                     </div>
@@ -38,8 +41,11 @@ $placeTitle = "임시 장소 제목"
                     <div class="menu_btn_wrap">
                         <div id="menu_place_btn">
                             <a>
-                                <h2 class="ddobag">
+                                <h2 class="ddobag ko">
                                     천두동 장소들
+                                </h2>
+                                <h2 class="ddobag en">
+                                    Places
                                 </h2>
                             </a>
 
@@ -54,7 +60,7 @@ $placeTitle = "임시 장소 제목"
                         <div id="place_cont">
                             
                             <ul id="place_ul" class="ddobag">
-                                <?php echo $placeTitle;?>
+                                <?php include "place_cont.php";?>
                                 <?php
                                 // if(isset($result blahblah)) {
                                 //     while(num_rows blahblah) {
@@ -70,8 +76,11 @@ $placeTitle = "임시 장소 제목"
                 </li>
                 <li id="menu_user" class="menu_list_item">
                     <a id="menu_user_btn">
-                        <h2 class="ddobag">
+                        <h2 class="ddobag ko">
                             사용자 관리
+                        </h2>
+                        <h2 class="ddobag en">
+                            User Manage
                         </h2>
                     </a>
                     

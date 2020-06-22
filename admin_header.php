@@ -56,7 +56,8 @@
                     <!-- <h1 class="ddobag">
                         천두동·에디터
                     </h1> -->
-                    <img class="header_logo" src="static/img/cdd_admin.png" alt="천두동·동두천">
+                    <img class="header_logo ko" src="static/img/cdd_admin.png" alt="천두동·동두천">
+                    <img class="header_logo en" src="static/img/cdd_en.png" alt="천두동·동두천">
                 </a>
             </div>
             <div id="header_btn">
