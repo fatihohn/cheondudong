@@ -1,4 +1,3 @@
-
 <script>
 //****대문****//
     function frontTitleClick() {
@@ -204,5 +203,27 @@
     }
     menuDetailClick();
 
+    function langClick() {
+        function langChange() {
+            let koAll = document.querySelectorAll(".ko");
+            let enAll = document.querySelectorAll(".en");
+            let klang;
+            for(klang=0; klang < koAll.length; klang++) {
+                let koStatus = koAll[klang].style.display;
+                let elang;
+                for(elang=0; elang < enAll.length; elang++) {
+                    if(koStatus == "none") {
+                        koAll[klang].style.display = "initial";
+                        enAll[elang].style.display = "none";
+                    } else {
+                        koAll[klang].style.display = "none";
+                        enAll[elang].style.display = "initial";
+                    }
+                }
+            }
+        }
+        document.getElementById("lang_select").addEventListener("click", langChange);
+    }
+    langClick();
 
 </script>
