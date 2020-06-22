@@ -57,7 +57,7 @@
                 $row=mysqli_fetch_assoc($result);
                 $cast = $row['cast'];
                 //비밀번호가 맞다면 세션 생성
-                if($row['password']==$password && $cast=="admin"){
+                if($row['password']==$password){
                         $_SESSION['username']=$username;
                         $_SESSION['cast']=$cast;
                         if(isset($_SESSION['username'])){
@@ -71,20 +71,26 @@
                         else{
                                 echo "session fail";
                         }
-                }
- 
-                else {
+                } else {
+                        if($cast=="admin") {
 ?>             
 <script>
                         alert("비밀번호가 잘못되었습니다.");
                         history.back();
 </script>
 <?php
+
+                        } else {
+                                ?>             
+                                <script>
+                                                        alert("로그인 권한이 없습니다. 관리자에게 문의하세요.");
+                                                        history.back();
+                                </script>
+                                <?php      
+                        }
                 }
  
-        }
- 
-                else{
+        } else {
 ?>              
 <script>
                         alert("아이디가 잘못되었습니다.");
