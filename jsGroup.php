@@ -222,7 +222,7 @@
                 }
             }
         }
-        document.getElementById("language_en")style.display = "none";
+        document.getElementById("language_en").style.display = "none";
         document.getElementById("lang_select").addEventListener("click", langChange);
     }
     langClick();
