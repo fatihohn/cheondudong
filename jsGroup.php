@@ -181,12 +181,23 @@
             let menuWrap = document.getElementById("menu_wrap");
             let footerWrap = document.getElementById("footer_wrap");
 
-            headerWrap.style.display = "initial";
-            frontWrap.style.display = "none";
-            detailWrap.style.display = "initial";
-            mapWrap.style.visibility = "hidden";
-            menuWrap.style.display = "none";
-            footerWrap.style.display = "initial";
+            if(frontWrap) {
+                headerWrap.style.display = "initial";
+                frontWrap.style.display = "none";
+                detailWrap.style.display = "initial";
+                mapWrap.style.visibility = "hidden";
+                menuWrap.style.display = "none";
+                footerWrap.style.display = "initial";
+
+            } else {
+                headerWrap.style.display = "initial";
+                // frontWrap.style.display = "none";
+                detailWrap.style.display = "initial";
+                mapWrap.style.visibility = "hidden";
+                menuWrap.style.display = "none";
+                footerWrap.style.display = "initial";
+
+            }
             
         }
                 detailWrap.style.display = "none";
