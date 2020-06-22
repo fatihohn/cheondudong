@@ -10,6 +10,18 @@
     </header>
         
 <section>
+<!-- //****기본구성****// -->
+    <!-- menu: 메뉴 내비 바 -->
+    <?php include "admin_menu.php"; ?>
+
+    <!-- detail: 랜드마크 세부 정보 보여줌 (이름, 위치, 설명, 사진, 참고자료, 관련 작업 등 -- 관리자페이지에서 스마트에디터로 편집 가능) -->
+    <?php include "admin_detail.php"; ?>
+
+    <!-- map: 지도와 랜드마크 보여줌. 클릭/터치/드래그 화면 이동, 사용자 위치 표시 버튼, 확대/축소 버튼, 랜드마크 아이콘 표시, 랜드마크 아이콘 클릭하면 detail로 넘어감 -->
+    <?php include "map.php"; ?>
+<!-- //****기본구성 끝****// -->
+
+
     <div class="userList_wrap">           
     <?php
     include 'cdd_db_conn.php';   
@@ -67,8 +79,8 @@
     <?php include "footer.php";?>
 </footer>
     
-    <?php include "jsGroup.php"; ?>
-    <?php include "admin_jsGroup.php"; ?>
+<?php include "jsGroup.php"; ?>
+<?php include "admin_jsGroup.php"; ?>
 
 </body>
 </html>

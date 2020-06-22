@@ -42,35 +42,40 @@ frontInit();
 
 
 
-
-
-
 //***메뉴***//
 
-function menuUserClick() {
+// function menuUserClick() {
 
-let menuUser = document.getElementById("menu_user_btn");
-let UserWrap = document.getElementById("user_wrap");
-function showUser() {
-    let headerWrap = document.getElementById("header_wrap");
-    let frontWrap = document.getElementById("front_wrap");
-    let detailWrap = document.getElementById("detail_wrap");
-    let mapWrap = document.getElementById("map_wrap");
-    let menuWrap = document.getElementById("menu_wrap");
-    let footerWrap = document.getElementById("footer_wrap");
+// let menuUser = document.getElementById("menu_user_btn");
+// let UserWrap = document.getElementById("user_wrap");
+// function showUser() {
+//     let headerWrap = document.getElementById("header_wrap");
+//     let frontWrap = document.getElementById("front_wrap");
+//     let detailWrap = document.getElementById("detail_wrap");
+//     let mapWrap = document.getElementById("map_wrap");
+//     let menuWrap = document.getElementById("menu_wrap");
+//     let footerWrap = document.getElementById("footer_wrap");
 
-    userWrap.style.display = "initial";
-    menuWrap.style.display = "none";
+//     userWrap.style.display = "initial";
+//     menuWrap.style.display = "none";
 
-    headerWrap.style.display = "initial";
-    frontWrap.style.display = "none";
-    detailWrap.style.display = "initial";
-    mapWrap.style.visibility = "hidden";
-    footerWrap.style.display = "initial";
+//     headerWrap.style.display = "initial";
+//     frontWrap.style.display = "none";
+//     detailWrap.style.display = "initial";
+//     mapWrap.style.visibility = "hidden";
+//     footerWrap.style.display = "initial";
     
-}
-detailWrap.style.display = "none";
-menuUser.addEventListener("click", showUser);
+// }
+// detailWrap.style.display = "none";
+// menuUser.addEventListener("click", showUser);
+// }
+// menuUserClick();
+function menuUserClick() {
+    let menuUser = document.getElementById("menu_user_btn");
+    showUserList() {
+        location.href = "admin_userList.php";
+    }
+    menuUser.addEventListener("click", showUserList);
 }
 menuUserClick();
 
