@@ -103,6 +103,15 @@ function menuIntroAddClick() {
 }
 menuIntroAddClick();
 
+function menuPlaceAddClick() {
+    let menuPlaceAdd = document.getElementById("add_place");
+    function addPlace() {
+        location.href = "admin_create_place.php";
+    }
+    menuPlaceAdd.addEventListener("click", addPlace);
+}
+menuPlaceAddClick();
+
 </script>
 
 <script src="static/js/admin_check.js"></script>
