@@ -70,12 +70,13 @@ frontInit();
 // menuUser.addEventListener("click", showUser);
 // }
 // menuUserClick();
+
 function menuUserClick() {
     let menuUser = document.getElementById("menu_user_btn");
     function showUserList() {
         location.href = "admin_userList.php";
     }
-    menuUser.addEventListener("click", showUserList);
+    menuUser.addEventListener("click", showUserList());
 }
 menuUserClick();
 
