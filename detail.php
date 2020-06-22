@@ -48,10 +48,10 @@ $detailRef_en = "reference list";
                     <?php echo $detailCoord;?>
                 </p>
             </div>
-            <div id="detail_cont ko">
+            <div id="detail_cont" class="ko">
                 <?php echo $detailCont;?>
             </div>
-            <div id="detail_cont en">
+            <div id="detail_cont" class="en">
                 <?php echo $detailCont_en;?>
             </div>
             <div id="detail_img">
