@@ -70,7 +70,7 @@ $placeTitle = "임시 장소 제목"
                 </li>
                 <li id="menu_user" class="menu_list_item">
                     <a id="menu_user_btn">
-                        <h2 class="ddobag tooling">
+                        <h2 class="ddobag">
                             사용자 관리
                         </h2>
                     </a>
@@ -78,7 +78,7 @@ $placeTitle = "임시 장소 제목"
                 </li>
                 <li id="menu_detail" class="menu_list_item">
                     <a id="menu_detail_btn">
-                        <h2 class="ddobag tooling">
+                        <h2 class="ddobag">
                             장소 세부 임시버튼
                         </h2>
                     </a>
