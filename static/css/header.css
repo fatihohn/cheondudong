@@ -151,7 +151,7 @@
     max-width: 768px;
     margin: 0 auto;
     position: relative;
-    top: 140px;
+    top: 80px;
     padding: 5px;
 }
 
@@ -170,7 +170,7 @@
 }
 
 #menu_wrap #menu_box #menu_list .menu_list_item>a>h2 {
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     color: rgba(0, 0, 0, 0.6);
 }
 
