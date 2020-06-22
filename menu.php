@@ -22,10 +22,7 @@ $placeTitle = "임시 장소 제목"
                     </a>
                     <div id="intro_cont_wrap">
                         <div id="intro_cont" class="ddobag">
-                            
-                            
                             <?php include "intro_cont.php";?>
-
                         </div>
                     </div>
                 </li>
@@ -43,16 +40,8 @@ $placeTitle = "임시 장소 제목"
                         <div id="place_cont">
                             
                             <ul id="place_ul" class="ddobag">
-                                <?php include "intro_cont.php";?>
-                                <?php
-                                // if(isset($result blahblah)) {
-                                //     while(num_rows blahblah) {
-                                //         echo "<li class='place_li'>";
-                                //         echo $placeTitle;
-                                //         echo "</li>";    
-                                //     }
-                                // }
-                                ?>
+                                <?php include "place_list.php";?>
+                             
                             </ul>
                         </div>
                     </div>

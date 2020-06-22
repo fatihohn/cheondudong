@@ -12,9 +12,11 @@ $en_cont =  $rowIntro['en_cont'];
 
 ?>
 
-<p class="ko">
-    <?php echo $ko_cont; ?>
-</p>
-<p class="en">
-    <?php echo $en_cont; ?>
-</p>
+<?php
+    echo "<p class='ko'>";
+    echo    $ko_cont; 
+    echo "</p>";
+    echo "<p class='en'>";
+    echo    $en_cont;
+    echo "</p>";
+     ?>
