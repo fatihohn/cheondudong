@@ -31,14 +31,14 @@ frontInit();
     }
     loginClick();
     
-    function signinClick() {
-        let signinBtn = document.getElementById("signin_btn");
-        function showsignin() {
-            location.href="admin_create_user.php";
-        }
-        signinBtn.addEventListener("click", showsignin);
-    }
-    signinClick();
+    // function signinClick() {
+    //     let signinBtn = document.getElementById("signin_btn");
+    //     function showsignin() {
+    //         location.href="admin_create_user.php";
+    //     }
+    //     signinBtn.addEventListener("click", showsignin);
+    // }
+    // signinClick();
 
 
 
