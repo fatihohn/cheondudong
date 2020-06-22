@@ -32,7 +32,7 @@ $en_cont = mysqli_real_escape_string($conn, $en_cont);
                                 error_log(mysqli_error($conn));
                             }
                             else{
-                                echo("<script>alert('천두동 소개가 작성되었습니다.');location.href='admin_contList.php';</script>");
+                                echo("<script>alert('천두동 소개가 작성되었습니다.');location.href='admin_index.php';</script>");
                             }
                     
                     
