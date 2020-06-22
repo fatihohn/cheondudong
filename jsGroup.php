@@ -67,6 +67,7 @@
         headerTitle.addEventListener("click", showMap);
     }
     headerTitleClick();
+    
 
     function headerMenuClick() {
 

@@ -51,7 +51,7 @@
     ?>  
                             </a>
             </div>
-            <div id="header_title">
+            <div id="header_ad_title">
                 <a>
                     <!-- <h1 class="ddobag">
                         천두동·에디터

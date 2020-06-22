@@ -33,6 +33,17 @@ frontInit();
     }
     loginClick();
     
+    function admin_headerTitleClick() {
+
+        let adHeaderTitle = document.getElementById("header_ad_title");
+        function showIndex() {
+            location.href = "admin_index.php"
+        }
+        adHeaderTitle.addEventListener("click", showIndex);
+    }
+    admin_headerTitleClick();
+
+
     // function signinClick() {
     //     let signinBtn = document.getElementById("signin_btn");
     //     function showsignin() {
