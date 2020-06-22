@@ -78,7 +78,22 @@
 <footer id="bbdd_ft">
     <?php include "footer.php";?>
 </footer>
-    
+    <script>
+        function userListInit() {
+            let headerWrap = document.getElementById("header_wrap");
+            let detailWrap = document.getElementById("detail_wrap");
+            let mapWrap = document.getElementById("map_wrap");
+            let menuWrap = document.getElementById("menu_wrap");
+            let footerWrap = document.getElementById("footer_wrap");
+
+            menuWrap.style.display = "none";
+            headerWrap.style.display = "initial";
+            detailWrap.style.display = "none";
+            mapWrap.style.visibility = "hidden";
+            footerWrap.style.display = "initial";
+        }
+        userListInit();
+    </script>
 <?php include "jsGroup.php"; ?>
 <?php include "admin_jsGroup.php"; ?>
 
