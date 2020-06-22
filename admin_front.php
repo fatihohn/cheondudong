@@ -1,5 +1,5 @@
-<div id="front_wrap">
-    <!-- <div id="front_box">
+<!-- <div id="front_wrap">
+    <div id="front_box">
         <div id="front_title">
             <div id="title_cdd" class="gg-batang">
      
@@ -19,8 +19,8 @@
 
             </div>
         </div>
-    </div> -->
-</div>
+    </div>
+</div> -->
 
 
 
