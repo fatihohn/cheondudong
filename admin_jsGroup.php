@@ -4,17 +4,18 @@
 function frontInit() {
     function initShow() {
         let headerWrap = document.getElementById("header_wrap");
-        // let frontWrap = document.getElementById("front_wrap");
         let detailWrap = document.getElementById("detail_wrap");
         let mapWrap = document.getElementById("map_wrap");
         let menuWrap = document.getElementById("menu_wrap");
         let footerWrap = document.getElementById("footer_wrap");
 
         headerWrap.style.display = "initial";
-        mapWrap.style.visibility = "visible";
         menuWrap.style.display = "none";
         footerWrap.style.display = "none";
-        detailWrap.style.display = "none";
+        if(mapWrap && detailWrap) {
+            mapWrap.style.visibility = "visible";
+            detailWrap.style.display = "none";
+        }
     }
     initShow();
 }
