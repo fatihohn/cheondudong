@@ -14,13 +14,13 @@ $placeTitle = "임시 장소 제목"
                     <div class="menu_btn_wrap">
                         <div id="menu_intro_btn">
                             <a>
-                                <h2 class="ddobag tooling">
+                                <h2 class="ddobag">
                                     천두동·동두천 소개
                                 </h2>
                             </a>
                         </div>
                         <div id="add_intro">
-                            <a class="tooling">
+                            <a>
                                 ＋
                             </a>
                         </div>
@@ -38,14 +38,14 @@ $placeTitle = "임시 장소 제목"
                     <div class="menu_btn_wrap">
                         <div id="menu_place_btn">
                             <a>
-                                <h2 class="ddobag tooling">
+                                <h2 class="ddobag">
                                     천두동 장소들
                                 </h2>
                             </a>
 
                         </div>
                         <div id="add_place">
-                            <a class="tooling">
+                            <a>
                                 ＋
                             </a>
                         </div>
