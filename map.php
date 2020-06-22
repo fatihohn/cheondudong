@@ -55,8 +55,8 @@
         'place_id': '<?php echo "100";?>',
         'category': 'middleHori',
         'file': 'static/img/marker/monkeyhouse.png',
-        // 'message': 'Foo',
-        'message': '<?php echo "낙검자수용소";?>',
+        'message_ko': '<?php echo "낙검자수용소";?>',
+        'message_en': '<?php echo "Monkey House";?>',
         'iconSize': [270, 100]
     },
     'geometry': {
@@ -71,8 +71,8 @@
         'place_id': '2',
         'category': 'bigHori',
         'file': 'static/img/marker/gulsan_vil.png',
-        // 'message': 'Bar',
-        'message': '<?php echo "걸산마을";?>',
+        'message_ko': '<?php echo "걸산마을";?>',
+        'message_en': '<?php echo "Gulsan Village";?>',
         'iconSize': [270, 100]
     },
     'geometry': {
@@ -87,8 +87,8 @@
         'place_id': '3',
         'category': 'smallHori',
         'file': 'static/img/marker/yoongumee.png',
-        // 'message': 'Baz',
-        'message': '<?php echo "윤금이 거주지";?>',
+        'message_ko': '<?php echo "윤금이 거주지";?>',
+        'message_en': '<?php echo "Yoon Gumee House";?>',
         'iconSize': [270, 100]
     },
     'geometry': {
@@ -163,24 +163,43 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 
 // el.addEventListener('click', function() {
 el.addEventListener('mouseover', function() {
-    var elName = document.createElement('div');
+    var elNameKo = document.createElement('div');
 
-    elName.id = 'marker_name';
-    elName.innerHTML = marker.properties.message;
-    elName.style.width = '100%';
-    elName.style.height = '20px';
-    elName.style.textAlign = 'center';
-    elName.style.fontSize = '2rem';
-    elName.style.fontFamily = '또박또박';
-    elName.style.overflowX = 'visible';
-    elName.style.overflowY = 'visible';
-    elName.style.whiteSpace = 'nowrap';
-    elName.style.wordBreak = 'keep-all';
-    elName.style.position = 'relative';
-    elName.style.top = '100%';
+    elNameKo.id = 'marker_name';
+    elNameKo.className = 'ko';
+    elNameKo.innerHTML = marker.properties.message_ko;
+    elNameKo.style.width = '100%';
+    elNameKo.style.height = '20px';
+    elNameKo.style.textAlign = 'center';
+    elNameKo.style.fontSize = '2rem';
+    elNameKo.style.fontFamily = '또박또박';
+    elNameKo.style.overflowX = 'visible';
+    elNameKo.style.overflowY = 'visible';
+    elNameKo.style.whiteSpace = 'nowrap';
+    elNameKo.style.wordBreak = 'keep-all';
+    elNameKo.style.position = 'relative';
+    elNameKo.style.top = '100%';
+
+    var elNameEn = document.createElement('div');
+
+    elNameEn.id = 'marker_name';
+    elNameEn.className = 'en';
+    elNameEn.innerHTML = marker.properties.message_en;
+    elNameEn.style.width = '100%';
+    elNameEn.style.height = '20px';
+    elNameEn.style.textAlign = 'center';
+    elNameEn.style.fontSize = '2rem';
+    elNameEn.style.fontFamily = '또박또박';
+    elNameEn.style.overflowX = 'visible';
+    elNameEn.style.overflowY = 'visible';
+    elNameEn.style.whiteSpace = 'nowrap';
+    elNameEn.style.wordBreak = 'keep-all';
+    elNameEn.style.position = 'relative';
+    elNameEn.style.top = '100%';
 
 
-    document.getElementById(marker.properties.place_id).appendChild(elName);
+    document.getElementById(marker.properties.place_id).appendChild(elNameKo);
+    document.getElementById(marker.properties.place_id).appendChild(elNameEn);
 });
 
 el.addEventListener('mouseout', function() {
