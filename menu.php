@@ -18,7 +18,7 @@ $placeTitle = "임시 장소 제목"
                         </h2>
                     </a>
                     <div id="intro_cont_wrap">
-                        <div id="intro_cont">
+                        <div id="intro_cont" class="ddobag">
                             
                             <?php echo $introCont;?>
 
@@ -35,7 +35,7 @@ $placeTitle = "임시 장소 제목"
                     <div id="place_cont_wrap">
                         <div id="place_cont">
                             
-                            <ul id="place_ul">
+                            <ul id="place_ul" class="ddobag">
                                 <?php echo $placeTitle;?>
                                 <?php
                                 // if(isset($result blahblah)) {
