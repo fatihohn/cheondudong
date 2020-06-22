@@ -2,10 +2,10 @@
     <div id="header_box">
         <div id="header_box_area">
         <div id="lang_select" class="header_lang">
-                <div id="language_ko" class="ko">
+                <div id="language_ko" class="ko tooling">
                     English
                 </div>
-                <div id="language_en" class="en">
+                <div id="language_en" class="en tooling">
                     한국어
                 </div>
             </div>
