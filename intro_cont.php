@@ -8,14 +8,12 @@ $resultIntro = $conn->query($sqlIntro) or die($conn->error);
 $rowIntro = $resultIntro->fetch_assoc();
 
 $ko_cont =  $rowIntro['ko_cont'];
-
 $en_cont =  $rowIntro['en_cont'];
 
 ?>
 
 <p class="ko">
     <?php echo $ko_cont; ?>
-    테스트
 </p>
 <p class="en">
     <?php echo $en_cont; ?>

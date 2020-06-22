@@ -12,11 +12,9 @@ $en_title =  $rowPlace['en_title'];
 
 ?>
 
-<p class="ko">
+<div class="ko">
     <?php echo $ko_title; ?>
-    테스트 장소
-</p>
-<p class="en">
+</div>
+<div class="en">
     <?php echo $en_title; ?>
-    TEST PLACE
-</p>
+</div>

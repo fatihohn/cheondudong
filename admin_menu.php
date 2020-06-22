@@ -61,15 +61,7 @@ $placeTitle = "임시 장소 제목"
                             
                             <ul id="place_ul" class="ddobag">
                                 <?php include "place_cont.php";?>
-                                <?php
-                                // if(isset($result blahblah)) {
-                                //     while(num_rows blahblah) {
-                                //         echo "<li class='place_li'>";
-                                //         echo $placeTitle;
-                                //         echo "</li>";    
-                                //     }
-                                // }
-                                ?>
+                                
                             </ul>
                         </div>
                     </div>
@@ -94,6 +86,14 @@ $placeTitle = "임시 장소 제목"
                     
                 </li>
             </ul>
+            <div id="lang_select">
+                <div class="ko">
+                    English
+                </div>
+                <div class="en">
+                    한국어
+                </div>
+            </div>
         </div>
     </div>
 </div>
