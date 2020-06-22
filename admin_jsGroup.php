@@ -41,6 +41,24 @@ frontInit();
     signinClick();
 
 
+    function adMenuClick() {
+    function showAdMenu() {
+        let headerWrap = document.getElementById("header_wrap");
+        let detailWrap = document.getElementById("detail_wrap");
+        let mapWrap = document.getElementById("map_wrap");
+        let menuWrap = document.getElementById("menu_wrap");
+        let footerWrap = document.getElementById("footer_wrap");
+
+        headerWrap.style.display = "initial";
+        mapWrap.style.visibility = "visible";
+        menuWrap.style.display = "none";
+        footerWrap.style.display = "none";
+        detailWrap.style.display = "none";
+    }
+    showAdMenu();
+}
+adMenuClick();
+
 
 
 //***메뉴***//

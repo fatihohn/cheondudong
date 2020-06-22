@@ -37,6 +37,9 @@
             let introWrap = document.getElementById("intro_cont_wrap");
             let placeWrap = document.getElementById("place_cont_wrap");
             
+
+            if(frontWrap) {
+
             headerWrap.style.display = "initial";
             frontWrap.style.display = "none";
             detailWrap.style.display = "none";
@@ -44,8 +47,19 @@
             menuWrap.style.display = "none";
             footerWrap.style.display = "none";
 
-            introWrap.style.display = "none";
             placeWrap.style.display = "none";
+            introWrap.style.display = "none";
+            } else {
+            headerWrap.style.display = "initial";
+            detailWrap.style.display = "none";
+            mapWrap.style.visibility = "visible";
+            menuWrap.style.display = "none";
+            footerWrap.style.display = "none";
+
+            placeWrap.style.display = "none";
+            introWrap.style.display = "none";
+
+            }
         }
         headerTitle.addEventListener("click", showMap);
     }
@@ -64,27 +78,50 @@
             
             let introWrap = document.getElementById("intro_cont_wrap");
             let placeWrap = document.getElementById("place_cont_wrap");
-
-            if(menuWrap.style.display == "none") {
-                headerWrap.style.display = "initial";
-                frontWrap.style.display = "none";
-                // detailWrap.style.display = "none";
+            if(frontWrap) {
+                if(menuWrap.style.display == "none") {
+                    headerWrap.style.display = "initial";
+                    frontWrap.style.display = "none";
+                    // detailWrap.style.display = "none";
+                    
+                    mapWrap.style.visibility = "hidden";
+                    menuWrap.style.display = "initial";
+                    footerWrap.style.display = "initial";
+                    introWrap.style.display = "none";
+                    placeWrap.style.display = "none";
+                } else {
+                    headerWrap.style.display = "initial";
+                    frontWrap.style.display = "none";
+                    // detailWrap.style.display = "none";
                 
-                mapWrap.style.visibility = "hidden";
-                menuWrap.style.display = "initial";
-                footerWrap.style.display = "initial";
-                introWrap.style.display = "none";
-                placeWrap.style.display = "none";
+                    mapWrap.style.visibility = "visible";
+                    menuWrap.style.display = "none";
+                    footerWrap.style.display = "none";
+                    introWrap.style.display = "none";
+                    placeWrap.style.display = "none";
+                }
+
             } else {
-                headerWrap.style.display = "initial";
-                frontWrap.style.display = "none";
-                // detailWrap.style.display = "none";
-               
-                mapWrap.style.visibility = "visible";
-                menuWrap.style.display = "none";
-                footerWrap.style.display = "none";
-                introWrap.style.display = "none";
-                placeWrap.style.display = "none";
+                if(menuWrap.style.display == "none") {
+                    headerWrap.style.display = "initial";
+                    
+                    
+                    mapWrap.style.visibility = "hidden";
+                    menuWrap.style.display = "initial";
+                    footerWrap.style.display = "initial";
+                    introWrap.style.display = "none";
+                    placeWrap.style.display = "none";
+                } else {
+                    headerWrap.style.display = "initial";
+                    
+                
+                    mapWrap.style.visibility = "visible";
+                    menuWrap.style.display = "none";
+                    footerWrap.style.display = "none";
+                    introWrap.style.display = "none";
+                    placeWrap.style.display = "none";
+                }
+
             }
         }
         headerMenu.addEventListener("click", showMenu);
