@@ -19,7 +19,7 @@ $placeTitle = "임시 장소 제목"
                                 </h2>
                             </a>
                         </div>
-                        <div id="add_intro">
+                        <div id="add_intro" class="menu_add">
                             <a>
                                 ＋
                             </a>
@@ -44,7 +44,7 @@ $placeTitle = "임시 장소 제목"
                             </a>
 
                         </div>
-                        <div id="add_place">
+                        <div id="add_place" class="menu_add">
                             <a>
                                 ＋
                             </a>
