@@ -56,12 +56,10 @@
  
                 $row=mysqli_fetch_assoc($result);
                 $cast = $row['cast'];
-                $author = $row['author'];
                 //비밀번호가 맞다면 세션 생성
-                if($row['password']==$password){
+                if($row['password']==$password && $cast=="admin"){
                         $_SESSION['username']=$username;
                         $_SESSION['cast']=$cast;
-                        $_SESSION['author']=$author;
                         if(isset($_SESSION['username'])){
 ?>      
 <script>
