@@ -13,10 +13,17 @@ $en_cont =  $rowIntro['en_cont'];
 ?>
 
 <?php
-    echo "<p class='ko'>";
-    echo    $ko_cont; 
-    echo "</p>";
-    echo "<p class='en'>";
-    echo    $en_cont;
-    echo "</p>";
+    // echo "<p class='ko'>";
+    // echo    $ko_cont; 
+    // echo "</p>";
+    // echo "<p class='en'>";
+    // echo    $en_cont;
+    // echo "</p>";
      ?>
+
+     <div class="ko">
+        <?=$ko_cont?>
+     </div>
+     <div class="en">
+        <?=$en_cont?>
+     </div>
