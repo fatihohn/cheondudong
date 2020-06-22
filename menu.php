@@ -13,7 +13,7 @@ $placeTitle = "임시 장소 제목"
                 <li id="menu_intro" class="menu_list_item">
                     <a id="menu_intro_btn">
                         <!-- <h2 class="ddobag tooling"> -->
-                        <h2 class="ddobag">
+                        <h2 class="ddobag ko">
                             천두동·동두천 소개
                         </h2>
                         <h2 class="ddobag en">
@@ -32,7 +32,7 @@ $placeTitle = "임시 장소 제목"
                 <li id="menu_place" class="menu_list_item">
                     <a id="menu_place_btn">
                         <!-- <h2 class="ddobag tooling"> -->
-                        <h2 class="ddobag">
+                        <h2 class="ddobag ko">
                             천두동 장소들
                         </h2>
                         <h2 class="ddobag en">
