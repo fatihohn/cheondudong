@@ -97,3 +97,4 @@ menuUserClick();
 </script>
 
 <script src="static/js/admin_check.js"></script>
+<script src="static/js/admin_delete.js"></script>
