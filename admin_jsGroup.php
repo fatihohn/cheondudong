@@ -24,10 +24,12 @@ frontInit();
 
     function loginClick() {
         let loginBtn = document.getElementById("login_btn");
-        function showLogin() {
-            location.href="admin_login.php";
+        if(loginBtn) {
+            function showLogin() {
+                location.href="admin_login.php";
+            }
+            loginBtn.addEventListener("click", showLogin);
         }
-        loginBtn.addEventListener("click", showLogin);
     }
     loginClick();
     
