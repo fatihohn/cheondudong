@@ -165,7 +165,7 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 el.addEventListener('mouseover', function() {
     var elNameKo = document.createElement('div');
 
-    elNameKo.id = 'marker_name';
+    elNameKo.id = 'marker_name_ko';
     elNameKo.className = 'ko';
     elNameKo.innerHTML = marker.properties.message_ko;
     elNameKo.style.width = '100%';
@@ -182,7 +182,7 @@ el.addEventListener('mouseover', function() {
 
     var elNameEn = document.createElement('div');
 
-    elNameEn.id = 'marker_name';
+    elNameEn.id = 'marker_name_en';
     elNameEn.className = 'en';
     elNameEn.innerHTML = marker.properties.message_en;
     elNameEn.style.width = '100%';
@@ -203,8 +203,10 @@ el.addEventListener('mouseover', function() {
 });
 
 el.addEventListener('mouseout', function() {
-    var elShown = document.getElementById('marker_name');
-    elShown.remove();
+    var elShownKo = document.getElementById('marker_name_ko');
+    var elShownEn = document.getElementById('marker_name_en');
+    elShownKo.remove();
+    elShownEn.remove();
 });
 
 //****marker func end****//
