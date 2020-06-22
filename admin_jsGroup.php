@@ -72,11 +72,11 @@ frontInit();
 // menuUserClick();
 
 function menuUserClick() {
-    let menuUser = document.getElementById("menu_user_btn");
+    let menuUser = document.getElementById("menu_user");
     function showUserList() {
         location.href = "admin_userList.php";
     }
-    menuUser.addEventListener("click", showUserList());
+    menuUser.addEventListener("click", showUserList);
 }
 menuUserClick();
 
