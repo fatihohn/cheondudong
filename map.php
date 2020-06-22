@@ -163,29 +163,10 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 
 // el.addEventListener('click', function() {
 el.addEventListener('mouseover', function() {
-    var languageKo = document.getElementById("language_ko").style.display;
-    // var languageEn = document.getElementById("language_en").style.display;
+    // var languageKo = document.getElementById("language_ko").style.display;
+    var languageEn = document.getElementById("language_en").style.display;
 
-    if(languageKo !== "none") {
-        var elNameEn = document.createElement('div');
-
-        elNameEn.id = 'marker_name';
-        elNameEn.className = 'en';
-        elNameEn.innerHTML = marker.properties.message_en;
-        elNameEn.style.width = '100%';
-        elNameEn.style.height = '20px';
-        elNameEn.style.textAlign = 'center';
-        elNameEn.style.fontSize = '2rem';
-        elNameEn.style.fontFamily = '또박또박';
-        elNameEn.style.overflowX = 'visible';
-        elNameEn.style.overflowY = 'visible';
-        elNameEn.style.whiteSpace = 'nowrap';
-        elNameEn.style.wordBreak = 'keep-all';
-        elNameEn.style.position = 'relative';
-        elNameEn.style.top = '100%';
-
-        document.getElementById(marker.properties.place_id).appendChild(elNameEn);
-    } else {
+    if(languageEn !== "none") {
         var elNameKo = document.createElement('div');
 
         elNameKo.id = 'marker_name';
@@ -204,6 +185,26 @@ el.addEventListener('mouseover', function() {
         elNameKo.style.top = '100%';
 
         document.getElementById(marker.properties.place_id).appendChild(elNameKo);
+    } else {
+        var elNameEn = document.createElement('div');
+
+        elNameEn.id = 'marker_name';
+        elNameEn.className = 'en';
+        elNameEn.innerHTML = marker.properties.message_en;
+        elNameEn.style.width = '100%';
+        elNameEn.style.height = '20px';
+        elNameEn.style.textAlign = 'center';
+        elNameEn.style.fontSize = '2rem';
+        elNameEn.style.fontFamily = '또박또박';
+        elNameEn.style.overflowX = 'visible';
+        elNameEn.style.overflowY = 'visible';
+        elNameEn.style.whiteSpace = 'nowrap';
+        elNameEn.style.wordBreak = 'keep-all';
+        elNameEn.style.position = 'relative';
+        elNameEn.style.top = '100%';
+
+        document.getElementById(marker.properties.place_id).appendChild(elNameEn);
+        
     }
 });
 
