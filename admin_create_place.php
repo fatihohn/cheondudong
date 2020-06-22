@@ -85,13 +85,13 @@
                                 <p>
                                     <div class="createInput">
                                     <label class="createGrid1">주소</label>
-                                    <input class="createGrid2" name="ko_address" placeholder="주소" required />
+                                    <input class="createGrid2" type="address" name="ko_address" placeholder="주소" required />
                                     </div>
                                 </p>
                                 <p>
                                     <div class="createInput">
                                     <label class="createGrid1">Address</label>
-                                    <input class="createGrid2" name="en_address" placeholder="Address" required />
+                                    <input class="createGrid2" type="address" name="en_address" placeholder="Address" required />
                                     </div>
                                 </p>
                                 <p>
