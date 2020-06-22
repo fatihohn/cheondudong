@@ -4,6 +4,7 @@
     function frontTitleClick() {
 
         let frontTitle = document.getElementById("front_title");
+        if(frontTitle) {
         function hideFront() {
             let headerWrap = document.getElementById("header_wrap");
             let frontWrap = document.getElementById("front_wrap");
@@ -19,6 +20,8 @@
             footerWrap.style.display = "initial";
         }
         frontTitle.addEventListener("click", hideFront);
+
+        }
     }
     frontTitleClick();
 
