@@ -117,3 +117,4 @@ menuPlaceAddClick();
 <script src="static/js/admin_check.js"></script>
 <script src="static/js/admin_delete.js"></script>
 <script src="static/js/admin_modify.js"></script>
+<script type="text/javascript" src="se2/js/service/HuskyEZCreator.js" charset="utf-8"></script>
