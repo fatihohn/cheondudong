@@ -15,6 +15,7 @@ $en_cont =  $rowIntro['en_cont'];
 
 <p class="ko">
     <?php echo $ko_cont; ?>
+    테스트
 </p>
 <p class="en">
     <?php echo $en_cont; ?>

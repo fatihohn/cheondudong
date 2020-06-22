@@ -16,11 +16,15 @@ $placeTitle = "임시 장소 제목"
                         <h2 class="ddobag">
                             천두동·동두천 소개
                         </h2>
+                        <h2 class="ddobag en">
+                            Cheondudong Intro
+                        </h2>
                     </a>
                     <div id="intro_cont_wrap">
                         <div id="intro_cont" class="ddobag">
                             
-                            <?php echo $introCont;?>
+                            
+                            <?php include "intro_cont.php";?>
 
                         </div>
                     </div>
@@ -31,12 +35,15 @@ $placeTitle = "임시 장소 제목"
                         <h2 class="ddobag">
                             천두동 장소들
                         </h2>
+                        <h2 class="ddobag en">
+                            Places
+                        </h2>
                     </a>
                     <div id="place_cont_wrap">
                         <div id="place_cont">
                             
                             <ul id="place_ul" class="ddobag">
-                                <?php echo $placeTitle;?>
+                                <?php include "intro_cont.php";?>
                                 <?php
                                 // if(isset($result blahblah)) {
                                 //     while(num_rows blahblah) {
