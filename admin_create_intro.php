@@ -12,16 +12,14 @@
 </header>
         
  
-<section id="bbdd_sc">
+<section>
     <div id="bbdd_sc_wrap">
         <div id="bbdd_sc_area">
-            <!-- <div class="sc_contain">
-                <div class="sc_list_area"> -->
                 <div class="view_wrap">
     <div class="view_wrap_line">
         <div class="contEditor">
             <center>
-                <h3>게시물 작성</h3>
+                <h3>천두동 소개</h3>
             </center>
         
         <?php    

@@ -21,34 +21,52 @@ $detailRef = "임시 참고자료 == 리스트 == 입력 시 리스트로 변환
                 <img src="<?php echo $detailMarker;?>" alt="<?php echo $detailTitle;?>">
             </div>
             <div id="detail_title">
-                <h3 class="tooling">
+                <h3 class="tooling ko">
+                    <?php echo $detailTitle;?>
+                </h3>
+                <h3 class="tooling en">
                     <?php echo $detailTitle;?>
                 </h3>
             </div>
             <div id="detail_point">
                 
-                <p class="detail_address">
+                <p class="detail_address ko">
                     <?php echo $detailAddress;?>
                 </p>
-                <p class="detail_coord">
+                <p class="detail_address en">
+                    <?php echo $detailAddress;?>
+                </p>
+                <p class="detail_coord ko">
+                    <?php echo $detailCoord;?>
+                </p>
+                <p class="detail_coord en">
                     <?php echo $detailCoord;?>
                 </p>
             </div>
-            <div id="detail_cont">
+            <div id="detail_cont ko">
+                <?php echo $detailCont;?>
+            </div>
+            <div id="detail_cont en">
                 <?php echo $detailCont;?>
             </div>
             <div id="detail_img">
                 <?php echo $detailImg;?>
             </div>
             <div id="detail_work">
-                <p class="work_title tooling">
+                <p class="work_title ko tooling">
                     관련 작품
+                </p>
+                <p class="work_title en tooling">
+                    Works
                 </p>
                 <?php echo $detailWork;?>
             </div>
             <div id="detail_ref">
-                <p class="ref_title tooling">
+                <p class="ref_title ko tooling">
                     참고 자료
+                </p>
+                <p class="ref_title en tooling">
+                    References
                 </p>
                 <?php echo $detailRef;?>
             </div>
