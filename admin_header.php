@@ -17,7 +17,7 @@
             <?php
             echo $_SESSION['username'];
                         
-            ?>님 [LogOut]</h4></div>
+            ?>님<br> [LogOut]</h4></div>
             
             <?php
         } else {
