@@ -54,7 +54,7 @@ include 'cdd_db_conn.php';
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$sqlPlaceMarker = "SELECT * FROM places ORDER BY lat ASC";
+$sqlPlaceMarker = "SELECT * FROM places ORDER BY lat DESC";
 $resultPlaceMarker = $conn->query($sqlPlaceMarker) or die($conn->error);
 
 
