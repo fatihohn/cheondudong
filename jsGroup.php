@@ -38,7 +38,7 @@
                 let footerWrap = document.getElementById("footer_wrap");
                 
                 let introWrap = document.getElementById("intro_cont_wrap");
-                let placeWrap = document.getElementById("place_cont_wrap");
+                let placeWrap = document.getElementById("place_list_wrap");
                 
                 if(frontWrap) {
 
@@ -81,7 +81,7 @@
             let footerWrap = document.getElementById("footer_wrap");
             
             let introWrap = document.getElementById("intro_cont_wrap");
-            let placeWrap = document.getElementById("place_cont_wrap");
+            let placeWrap = document.getElementById("place_list_wrap");
             if(frontWrap) {
                 if(menuWrap.style.display == "none") {
                     headerWrap.style.display = "initial";
