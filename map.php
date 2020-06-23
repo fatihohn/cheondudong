@@ -54,22 +54,22 @@ include 'cdd_db_conn.php';
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-// $sqlPlaceMarker = "SELECT * FROM places ORDER BY id DESC";
-// $resultPlaceMarker = $conn->query($sqlPlaceMarker) or die($conn->error);
-
-
-
 $sqlPlaceMarker = "SELECT * FROM places ORDER BY id DESC";
-// $resultPlaceMarker = $conn->query($sqlPlaceMarker) or die($conn->error);
+$resultPlaceMarker = $conn->query($sqlPlaceMarker) or die($conn->error);
 
-$stmt = mysqli_stmt_init($conn);
-        if (!mysqli_stmt_prepare($stmt, $sqlPlaceMarker)) {
-                // echo "sqlPlaceMarker error";
-        } else {
-                // mysqli_stmt_bind_param($stmt, "s", $author);
-                mysqli_stmt_execute($stmt);
-                $resultPlaceMarker = mysqli_stmt_get_result($stmt);
-        }
+
+
+// $sqlPlaceMarker = "SELECT * FROM places ORDER BY id DESC";
+// // $resultPlaceMarker = $conn->query($sqlPlaceMarker) or die($conn->error);
+
+// $stmt = mysqli_stmt_init($conn);
+//         if (!mysqli_stmt_prepare($stmt, $sqlPlaceMarker)) {
+//                 // echo "sqlPlaceMarker error";
+//         } else {
+//                 // mysqli_stmt_bind_param($stmt, "s", $author);
+//                 mysqli_stmt_execute($stmt);
+//                 $resultPlaceMarker = mysqli_stmt_get_result($stmt);
+//         }
 
 
 
