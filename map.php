@@ -201,9 +201,14 @@ el.id = marker.properties.place_id;
 // ')';
 
 el.style.backgroundImage =
-'url(' +
-<?php echo $mkImg_dir;?> +
-')';
+// 'url(' +
+<?php 
+echo "url('";
+echo $mkImg_dir;
+echo "')";
+?>
+//  +
+// ')';
 
 el.style.backgroundSize = 'cover';
 el.style.width = marker.properties.iconSize[0] + 'px';
