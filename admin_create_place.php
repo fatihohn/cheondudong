@@ -67,7 +67,21 @@
                                 <p>
                                     <div class="createInput">
                                     <label class="createGrid1">지도 표시 마커</label>
-                                    <input class="createGrid2" type="file" name="mkimg"  required />
+                                    <input class="createGrid2" type="file" name="img"  required />
+                                    </div>
+                                </p>
+                                <p>
+                                    <div class="createInput">
+                                    <label class="createGrid1">마커 사이즈 구분</label>
+                                    <select class="createGrid2" name="mkimg_size"  required>
+                                        <option value="smallCube">60*60px </option>
+                                        <option value="middleCube">80*80px</option>
+                                        <option value="smallHori">80*50px</option>
+                                        <option value="middleHori">108*60px</option>
+                                        <option value="bigHori">160*100px</option>
+                                        <option value="middlePano">120*60px</option>
+                                        <option value="middlePano">160*60px</option>
+                                    </select>
                                     </div>
                                 </p>
                                 <p>
