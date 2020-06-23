@@ -85,7 +85,7 @@ if ($resultPlaceMarker->num_rows > 0) {
         echo     "'properties': {";
         echo        "'place_id': '".$place_id."',";
         echo        "'category': '".$mkimg_size."',";
-        echo        "'file': '".$mkImg_dir."',";
+        echo        "'file': '" . $mkImg_dir . "',";
         echo        "'message_ko': '".$ko_title."',";
         echo        "'message_en': '".$en_title."',";
         echo        "'iconSize': [270, 100]";
@@ -195,9 +195,14 @@ el.id = marker.properties.place_id;
 // marker.properties.file +
 // ')';
 
+// el.style.backgroundImage =
+// 'url(' +
+// marker.properties.file +
+// ')';
+
 el.style.backgroundImage =
 'url(' +
-marker.properties.file +
+<?php echo $mkImg_dir;?> +
 ')';
 
 el.style.backgroundSize = 'cover';
