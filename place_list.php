@@ -13,14 +13,16 @@ $en_title =  mysqli_real_escape_string($conn, $rowPlace['en_title']);
 
 if($resultPlace->num_rows > 0) {
     while($rowPlace = $resultPlace->fetch_assoc()) {
-        ?>
-        <li class="ko">
-            <?php echo $ko_title; ?>
+        echo "
+        <li class='ko'>
+            $ko_title
         </li>
-        <li class="en">
-            <?php echo $en_title; ?>
+        <li class='en'>
+            $en_title
         </li>
-<?php
+        
+        ";
+
     }
 }
 
