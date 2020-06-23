@@ -61,7 +61,7 @@ if ($resultPlaceMarker->num_rows > 0) {
     // output data of each row
     while($row = $resultPlaceMarker->fetch_assoc()) {
         $place_id = $row['id'];
-        $mkimg_dir = $row['mkimg_dir'];
+        $mkimg_dir = mysqli_real_eacape_string($conn, $row['mkimg_dir']);
         $mkimg_size = $row['mkimg_size'];
         $ko_title = $row['ko_title'];
         $en_title = $row['en_title'];
