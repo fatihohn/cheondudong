@@ -5,16 +5,23 @@ if ($conn->connect_error) {
 }
 $sqlPlace = "SELECT * FROM places ORDER BY ko_title DESC";
 $resultPlace = $conn->query($sqlPlace) or die($conn->error);
-$rowPlace = $resultPlace->fetch_assoc();
+// $rowPlace = $resultPlace->fetch_assoc();
 
+$place_id =  $rowPlace['id'];
 $ko_title =  $rowPlace['ko_title'];
 $en_title =  $rowPlace['en_title'];
 
-?>
+if($resultPlace->num_rows > 0) {
+    while($rowPlace = $resultPlace->fetch_assoc()) {
+        ?>
+        <li id="<?=$place_id?>" name="<?=$place_id?>" class="ko">
+            <?php echo $ko_title; ?>
+        </li>
+        <li id="<?=$place_id?>" name="<?=$place_id?>" class="en">
+            <?php echo $en_title; ?>
+        </li>
+<?php
+    }
+}
 
-<div class="ko">
-    <?php echo $ko_title; ?>
-</div>
-<div class="en">
-    <?php echo $en_title; ?>
-</div>
+?>
