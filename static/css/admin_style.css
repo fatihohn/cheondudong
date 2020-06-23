@@ -79,5 +79,9 @@ section .view_wrap {
     margin-top: 80px;
 }
 
+section .view_wrap .contEditor center>h3 {
+    margin: 40px;
+}
+
 
 /****footer****/
