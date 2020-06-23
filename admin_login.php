@@ -29,6 +29,13 @@
         <!-- <form method='get' action='login_action.php'> -->
                 <p>ID: <input name="username" type="text" required></p>
                 <p>PW: <input name="password" type="password" required></p>
+                <p>
+                    Language 
+                    <select name="language" required>
+                        <option value="ko">한국어</option>
+                        <option value="en">English</option>
+                    </select>
+                </p>
                 <input type="submit" value="로그인">
         </form>
         <br />

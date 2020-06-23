@@ -34,7 +34,7 @@
         
         $pwSalt = $password.$salt;
         $password = base64_encode(hash('sha512', $pwSalt, true));
- 
+        
         //아이디가 있는지 검사
         // $query = "SELECT * FROM user_data WHERE username='$username'";
         $query = "SELECT * FROM user_data WHERE username=?";
@@ -47,7 +47,8 @@
                 $result = mysqli_stmt_get_result($stmt);
                 // mysqli_stmt_close();
         }
-
+        
+        $language=mysqli_real_escape_string($conn, $_POST['language']);
         // $result = $conn->query($query);
 
  
@@ -60,6 +61,7 @@
                 if($row['password']==$password && $cast=="admin"){
                         $_SESSION['username']=$username;
                         $_SESSION['cast']=$cast;
+                        $_SESSION['language']=$language;
                         if(isset($_SESSION['username'])){
 ?>      
 <script>

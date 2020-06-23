@@ -44,6 +44,36 @@ frontInit();
     }
     admin_headerTitleClick();
 
+    function adminLang() {
+        let sessLang = "<?php echo $_SESSION['language'];?>";
+        let koAll = document.querySelectorAll(".ko");
+        let enAll = document.querySelectorAll(".en");
+        let klang;
+        let elang;
+            for(klang=0; klang < koAll.length; klang++) {
+                // let koStatus = koAll[klang].style.display;
+                for(elang=0; elang < enAll.length; elang++) {
+                    if(sessLang == "ko") {
+                    // if(koStatus == "none") {
+                        koAll[klang].style.display = "initial";
+                        enAll[elang].style.display = "none";
+                    } else {
+                        koAll[klang].style.display = "none";
+                        enAll[elang].style.display = "initial";
+                    }
+                }
+            }
+        }
+    }
+    adminLang();
+
+
+
+
+
+
+
+
 
     // function signinClick() {
     //     let signinBtn = document.getElementById("signin_btn");

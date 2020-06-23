@@ -153,7 +153,7 @@
     function menuPlaceClick() {
 
         let menuPlace = document.getElementById("menu_place_btn");
-            let placeWrap = document.getElementById("place_cont_wrap");
+            let placeWrap = document.getElementById("place_list_wrap");
         function showPlace() {
 
             if(placeWrap.style.display == "none") {

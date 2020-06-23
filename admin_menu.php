@@ -56,11 +56,11 @@ $placeTitle = "임시 장소 제목"
                             </a>
                         </div>
                     </div>
-                    <div id="place_cont_wrap">
-                        <div id="place_cont">
+                    <div id="place_list_wrap">
+                        <div id="place_list">
                             
                             <ul id="place_ul" class="ddobag">
-                                <?php include "place_cont.php";?>
+                                <?php include "place_list.php";?>
                                 
                             </ul>
                         </div>
