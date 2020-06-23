@@ -66,6 +66,7 @@
     bottom: 80px;
     color: rgba(0, 0, 0, 0.5);
     margin: 0 auto;
+    visibility: hidden;
 }
 
 
