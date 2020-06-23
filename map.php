@@ -205,7 +205,7 @@ el.style.backgroundImage =
 <?php 
 echo "url('";
 echo $mkImg_dir;
-echo "')";
+echo "');";
 ?>
 //  +
 // ')';
