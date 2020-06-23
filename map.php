@@ -239,7 +239,7 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 el.addEventListener('mouseover', function() {
     var languageKo = document.getElementById("language_ko").style.display;
     var languageEn = document.getElementById("language_en").style.display;
-    el.style.zIndex = "999";
+    
     if(languageEn == "none") {
         var elNameKo = document.createElement('div');
 
