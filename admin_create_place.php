@@ -79,8 +79,9 @@
                                         <option value="smallHori">80*50px</option>
                                         <option value="middleHori">108*60px</option>
                                         <option value="bigHori">160*100px</option>
+                                        <option value="smallPano">80*40px</option>
                                         <option value="middlePano">120*60px</option>
-                                        <option value="middlePano">160*60px</option>
+                                        <option value="longPano">160*60px</option>
                                     </select>
                                     </div>
                                 </p>

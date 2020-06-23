@@ -61,7 +61,7 @@ if ($resultPlaceMarker->num_rows > 0) {
     // output data of each row
     while($row = $resultPlaceMarker->fetch_assoc()) {
         $place_id = $row['id'];
-        $mkimg_dir = strval($row['mkimg_dir']);
+        $mkimg_dir = $row['mkimg_dir'];
         $mkimg_size = $row['mkimg_size'];
         $ko_title = $row['ko_title'];
         $en_title = $row['en_title'];
@@ -367,11 +367,19 @@ trackUserLocation: true
             bigHoriAll[bh].style.cursor = "pointer";
         }
         //****1:2****//
+        let smallPanoAll = document.querySelectorAll(".smallPano");
+        let sp;
+        for(sp=0; sp < smallPanoAll.length; sp++) {
+            smallPanoAll[sp].style.width = "120px";
+            smallPanoAll[sp].style.height = "60px";
+            smallPanoAll[sp].style.backgroundSize = "cover";
+            smallPanoAll[sp].style.cursor = "pointer";
+        }
         let middlePanoAll = document.querySelectorAll(".middlePano");
         let mp;
         for(mp=0; mp < middlePanoAll.length; mp++) {
-            middlePanoAll[mp].style.width = "120px";
-            middlePanoAll[mp].style.height = "60px";
+            middlePanoAll[mp].style.width = "80px";
+            middlePanoAll[mp].style.height = "40px";
             middlePanoAll[mp].style.backgroundSize = "cover";
             middlePanoAll[mp].style.cursor = "pointer";
         }
