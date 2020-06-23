@@ -79,8 +79,8 @@ if ($resultPlaceMarker->num_rows > 0) {
         $place_id = $row['id'];
         $mkimg_dir = $row['mkimg_dir'];
         $mkimg_size = $row['mkimg_size'];
-        $ko_title = $row['ko_title'];
-        $en_title = $row['en_title'];
+        $en_title = mysqli_real_string_escape($conn, $row['en_title']);
+        $ko_title = mysqli_real_string_escape($conn, $row['ko_title']);
         // $ko_address = $row['ko_address'];
         // $en_address = $row['en_address'];
         $lat = $row['lat'];
