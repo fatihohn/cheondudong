@@ -48,111 +48,54 @@
 'type': 'FeatureCollection',
 'features': [
 
-<?php 
-
-include 'cdd_db_conn.php';
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-$sqlPlaceMarker = "SELECT * FROM places ORDER BY id DESC";
-$resultPlaceMarker = $conn->query($sqlPlaceMarker) or die($conn->error);
-
-if ($resultPlaceMarker->num_rows > 0) {
-    // output data of each row
-    while($row = $resultPlaceMarker->fetch_assoc()) {
-        $place_id = $row['id'];
-        $mkimg = $row['mkimg_dir'];
-        $mkimg_size = $row['mkimg_size'];
-        $ko_title = $row['ko_title'];
-        $en_title = $row['en_title'];
-        // $ko_address = $row['ko_address'];
-        // $en_address = $row['en_address'];
-        $lat = $row['lat'];
-        $lng = $row['lng'];
-        // $ko_cont = $row['ko_cont'];
-        // $en_cont = $row['en_cont'];
-
-        // $sqlPlaceImg = "SELECT * FROM images WHERE id = $place_id";
-        // $resultPlaceImg = $conn->query($sqlPlaceImg) or die($conn->error);
-        // $rowPlaceImg = $resultPlaceImg->fetch_assoc();
-
-
-
-
-
-        echo "{";
-        echo "'type': 'Feature',";
-        echo     "'properties': {";
-        echo        "'place_id': '".$place_id."',";
-        echo        "'category': '".$mkimg_size."',";
-        echo        "'file': '".$mkImg."',";
-        echo        "'message_ko': '".$ko_title."',";
-        echo        "'message_en': '".$en_title."',";
-        echo        "'iconSize': [270, 100]";
-        echo    "},";
-        echo    "'geometry': {";
-        echo        "'type': 'Point',";
-        echo        "'coordinates': [".$lng.", ".$lat."]";
-        echo     "}
-            },";
-
-
+    {
+    'type': 'Feature',
+    'properties': {
+        // 'place_id': '1',
+        'place_id': '<?php echo "100";?>',
+        'category': 'middleHori',
+        'file': 'static/img/marker/monkeyhouse.png',
+        'message_ko': '<?php echo "낙검자수용소";?>',
+        'message_en': '<?php echo "Monkey House";?>',
+        'iconSize': [270, 100]
+    },
+    'geometry': {
+        'type': 'Point',
+        'coordinates': [127.065257, 37.944896]
     }
-}
+    },
 
-    
-?>
+    {
+    'type': 'Feature',
+    'properties': {
+        'place_id': '2',
+        'category': 'bigHori',
+        'file': 'static/img/marker/gulsan_vil.png',
+        'message_ko': '<?php echo "걸산마을";?>',
+        'message_en': '<?php echo "Gulsan Village";?>',
+        'iconSize': [270, 100]
+    },
+    'geometry': {
+        'type': 'Point',
+        'coordinates': [127.095351, 37.926185]
+    }
+    },
 
-
-
-    // {
-    // 'type': 'Feature',
-    // 'properties': {
-    //     // 'place_id': '1',
-    //     'place_id': '<?php //echo "100";?>',
-    //     'category': 'middleHori',
-    //     'file': 'static/img/marker/monkeyhouse.png',
-    //     'message_ko': '<?php //echo "낙검자수용소";?>',
-    //     'message_en': '<?php //echo "Monkey House";?>',
-    //     'iconSize': [270, 100]
-    // },
-    // 'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [127.065257, 37.944896]
-    // }
-    // },
-
-    // {
-    // 'type': 'Feature',
-    // 'properties': {
-    //     'place_id': '2',
-    //     'category': 'bigHori',
-    //     'file': 'static/img/marker/gulsan_vil.png',
-    //     'message_ko': '<?php //echo "걸산마을";?>',
-    //     'message_en': '<?php //echo "Gulsan Village";?>',
-    //     'iconSize': [270, 100]
-    // },
-    // 'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [127.095351, 37.926185]
-    // }
-    // },
-
-    // {
-    // 'type': 'Feature',
-    // 'properties': {
-    //     'place_id': '3',
-    //     'category': 'smallHori',
-    //     'file': 'static/img/marker/yoongumee.png',
-    //     'message_ko': '<?php //echo "윤금이 거주지";?>',
-    //     'message_en': '<?php //echo "Yoon Gumee House";?>',
-    //     'iconSize': [270, 100]
-    // },
-    // 'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [127.055933, 37.916710]
-    // }
-    // }
+    {
+    'type': 'Feature',
+    'properties': {
+        'place_id': '3',
+        'category': 'smallHori',
+        'file': 'static/img/marker/yoongumee.png',
+        'message_ko': '<?php echo "윤금이 거주지";?>',
+        'message_en': '<?php echo "Yoon Gumee House";?>',
+        'iconSize': [270, 100]
+    },
+    'geometry': {
+        'type': 'Point',
+        'coordinates': [127.055933, 37.916710]
+    }
+    }
 
 ]
 };
