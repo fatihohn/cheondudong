@@ -239,7 +239,7 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 el.addEventListener('mouseover', function() {
     var languageKo = document.getElementById("language_ko").style.display;
     var languageEn = document.getElementById("language_en").style.display;
-
+    el.style.zIndex = "999";
     if(languageEn == "none") {
         var elNameKo = document.createElement('div');
 
@@ -257,7 +257,7 @@ el.addEventListener('mouseover', function() {
         elNameKo.style.wordBreak = 'keep-all';
         elNameKo.style.position = 'relative';
         elNameKo.style.top = '100%';
-        elNameKo.style.zIndex = '999';
+        // elNameKo.style.zIndex = '999';
 
         document.getElementById(marker.properties.place_id).appendChild(elNameKo);
     } else if(languageKo == "none") {
@@ -277,7 +277,7 @@ el.addEventListener('mouseover', function() {
         elNameEn.style.wordBreak = 'keep-all';
         elNameEn.style.position = 'relative';
         elNameEn.style.top = '100%';
-        elNameEn.style.zIndex = '999';
+        // elNameEn.style.zIndex = '999';
 
         document.getElementById(marker.properties.place_id).appendChild(elNameEn);
         
