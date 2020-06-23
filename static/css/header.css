@@ -238,7 +238,7 @@ header {
 #place_cont_wrap #place_cont #place_ul {
     width: 100%;
     height: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
 }
 
