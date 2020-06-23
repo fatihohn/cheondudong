@@ -86,8 +86,8 @@ if ($resultPlaceMarker->num_rows > 0) {
         echo        "'place_id': '".$place_id."',";
         echo        "'category': '".$mkimg_size."',";
         echo        "'file': '".$mkImg_dir."',";
-        echo        "'message_ko': '".$ko_title."',";
-        echo        "'message_en': '".$en_title."',";
+        echo        "'message_ko': '".$ko_title.$mkImg_dir."',";
+        echo        "'message_en': '".$en_title.$mkImg_dir."',";
         echo        "'iconSize': [270, 100]";
         echo    "},";
         echo    "'geometry': {";
