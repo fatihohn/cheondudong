@@ -8,8 +8,8 @@ $resultPlace = $conn->query($sqlPlace) or die($conn->error);
 // $rowPlace = $resultPlace->fetch_assoc();
 
 $place_id =  $rowPlace['id'];
-$ko_title =  $rowPlace['ko_title'];
-$en_title =  $rowPlace['en_title'];
+$ko_title =  mysqli_real_escape_string($conn, $rowPlace['ko_title']);
+$en_title =  mysqli_real_escape_string($conn, $rowPlace['en_title']);
 
 if($resultPlace->num_rows > 0) {
     while($rowPlace = $resultPlace->fetch_assoc()) {
