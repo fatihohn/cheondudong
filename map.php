@@ -61,7 +61,7 @@ if ($resultPlaceMarker->num_rows > 0) {
     // output data of each row
     while($row = $resultPlaceMarker->fetch_assoc()) {
         $place_id = $row['id'];
-        $mkimg = $row['mkimg_dir'];
+        $mkimg_dir = $row['mkimg_dir'];
         $mkimg_size = $row['mkimg_size'];
         $ko_title = $row['ko_title'];
         $en_title = $row['en_title'];
@@ -85,7 +85,7 @@ if ($resultPlaceMarker->num_rows > 0) {
         echo     "'properties': {";
         echo        "'place_id': '".$place_id."',";
         echo        "'category': '".$mkimg_size."',";
-        echo        "'file': './".$mkImg."',";
+        echo        "'file': '".$mkImg_dir."',";
         echo        "'message_ko': '".$ko_title."',";
         echo        "'message_en': '".$en_title."',";
         echo        "'iconSize': [270, 100]";
