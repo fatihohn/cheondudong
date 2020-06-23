@@ -257,6 +257,7 @@ el.addEventListener('mouseover', function() {
         elNameKo.style.wordBreak = 'keep-all';
         elNameKo.style.position = 'relative';
         elNameKo.style.top = '100%';
+        elNameKo.style.zIndex = '999';
 
         document.getElementById(marker.properties.place_id).appendChild(elNameKo);
     } else if(languageKo == "none") {
@@ -276,6 +277,7 @@ el.addEventListener('mouseover', function() {
         elNameEn.style.wordBreak = 'keep-all';
         elNameEn.style.position = 'relative';
         elNameEn.style.top = '100%';
+        elNameEn.style.zIndex = '999';
 
         document.getElementById(marker.properties.place_id).appendChild(elNameEn);
         

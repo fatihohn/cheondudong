@@ -226,5 +226,6 @@
         document.getElementById("lang_select").addEventListener("click", langChange);
     }
     langClick();
+    
 
 </script>
