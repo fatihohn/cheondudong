@@ -15,10 +15,14 @@ if($resultPlace->num_rows > 0) {
     while($rowPlace = $resultPlace->fetch_assoc()) {
         echo "
         <li class='ko'>
-            $ko_title
+            <div class='place_title'>";
+        echo    $ko_title;
+        echo "</div>
         </li>
         <li class='en'>
-            $en_title
+            <div class='place_title'>";
+        echo    $en_title;
+        echo "</div>
         </li>
         
         ";
