@@ -236,12 +236,12 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 // });
 
 
-if(document.getElementById("marker_name")) {
-    el.addEventListener('mouseout', function() {
-        var elShown = document.getElementById('marker_name');
-        elShown.remove();
-    });
-} else {
+// if(document.getElementById("marker_name")) {
+    // el.addEventListener('mouseout', function() {
+    //     var elShown = document.getElementById('marker_name');
+    //     elShown.remove();
+    // });
+// } else {
     el.addEventListener('click', function() {
     // el.addEventListener('mouseover', function() {
         var languageKo = document.getElementById("language_ko").style.display;
@@ -251,6 +251,7 @@ if(document.getElementById("marker_name")) {
             var elNameKo = document.createElement('div');
 
             elNameKo.id = 'marker_name';
+            elNameKo.name = marker.properties.place_id;
             elNameKo.className = 'ko';
             elNameKo.innerHTML = marker.properties.message_ko;
             elNameKo.style.width = '100%';
@@ -266,11 +267,14 @@ if(document.getElementById("marker_name")) {
             elNameKo.style.top = '100%';
             // elNameKo.style.zIndex = '999';
 
-            document.getElementById(marker.properties.place_id).appendChild(elNameKo);
+            if(!document.getElementById("marker_name")) {
+                document.getElementById(marker.properties.place_id).appendChild(elNameKo);
+            }
         } else if(languageKo == "none") {
             var elNameEn = document.createElement('div');
 
             elNameEn.id = 'marker_name';
+            elNameEn.name = marker.properties.place_id;
             elNameEn.className = 'en';
             elNameEn.innerHTML = marker.properties.message_en;
             elNameEn.style.width = '100%';
@@ -286,8 +290,10 @@ if(document.getElementById("marker_name")) {
             elNameEn.style.top = '100%';
             // elNameEn.style.zIndex = '999';
 
-            document.getElementById(marker.properties.place_id).appendChild(elNameEn);
-            
+            if(!document.getElementById("marker_name")) {
+                document.getElementById(marker.properties.place_id).appendChild(elNameEn);
+            }
+
             let enAllMap = document.querySelectorAll(".en");
             let elangMap;
             for(elangMap=0; elangMap < enAllMap.length; elangMap++) {
@@ -295,9 +301,12 @@ if(document.getElementById("marker_name")) {
             }
         }
     });
-}
+// }
 
-
+    el.addEventListener('mouseout', function() {
+        var elShown = document.getElementById('marker_name');
+        elShown.remove();
+    });
 
 
 //****marker func end****//
