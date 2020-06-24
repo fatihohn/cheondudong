@@ -33,7 +33,7 @@ $detailRef_en = "reference list";
 
         <header>
         <!-- header: 헤더, 메뉴바 역할. 메뉴 버튼 클릭하면 menu화면 보여줌. 제목 클릭하면 map으로 넘어감-->
-            <?php include "detail_header.php"; ?>
+            <?php include "header.php"; ?>
         </header>
         
         

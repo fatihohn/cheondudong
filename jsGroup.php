@@ -74,7 +74,7 @@
             function showMap() {
                 let headerWrap = document.getElementById("header_wrap");
                 let frontWrap = document.getElementById("front_wrap");
-                // let detailWrap = document.getElementById("detail_wrap");
+                let detailWrap = document.getElementById("detail_wrap");
                 let mapWrap = document.getElementById("map_wrap");
                 let menuWrap = document.getElementById("menu_wrap");
                 let footerWrap = document.getElementById("footer_wrap");
@@ -86,7 +86,9 @@
 
                 headerWrap.style.display = "initial";
                 frontWrap.style.display = "none";
-                // detailWrap.style.display = "none";
+                    if(detailWrap) {
+                        detailWrap.style.display = "none";
+                    }
                 mapWrap.style.visibility = "visible";
                 menuWrap.style.display = "none";
                 footerWrap.style.display = "none";
@@ -95,7 +97,9 @@
                 introWrap.style.display = "none";
                 } else {
                 headerWrap.style.display = "initial";
-                // detailWrap.style.display = "none";
+                    if(detailWrap) {
+                        detailWrap.style.display = "none";
+                    }
                 mapWrap.style.visibility = "visible";
                 menuWrap.style.display = "none";
                 footerWrap.style.display = "none";
