@@ -1,14 +1,14 @@
 <div id="front_wrap">
     <div id="front_box">
-        <div id="front_title">
-            <div id="lang_select" class="front_lang">
-                <div id="language_ko" class="tooling lang_selector">
-                    English
-                </div>
-                <div id="language_en" class="tooling lang_selector">
-                    한국어
-                </div>
+        <div id="lang_select" class="front_lang">
+            <div id="language_ko" class="tooling lang_selector">
+                English
             </div>
+            <div id="language_en" class="tooling lang_selector">
+                한국어
+            </div>
+        </div>
+        <div id="front_title">
             <div id="title_cdd" class="ddobag">
      
                 <!-- <h1 class="ddobag"> -->
