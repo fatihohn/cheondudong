@@ -8,7 +8,6 @@ $_SESSION['language'] = $language;
     ?>
     <script>
         location.replace("./index.php");
-        frontTitleClick();
     </script>
     <?php
 // }

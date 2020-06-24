@@ -5,14 +5,14 @@ session_start();
 <div id="header_wrap">
     <div id="header_box">
         <div id="header_box_area">
-        <!-- <div id="lang_select" class="header_lang">
-                <div id="language_ko" class="ko tooling lang_selector">
+            <div id="lang_select" class="front_lang">
+                <div id="language_en" class="tooling lang_selector">
                     English
                 </div>
-                <div id="language_en" class="en tooling lang_selector">
+                <div id="language_ko" class="tooling lang_selector">
                     한국어
                 </div>
-            </div> -->
+            </div>
             <div id="header_title">
                 <a>
                     <!-- <h1 class="ddobag">
