@@ -14,7 +14,6 @@ $_SESSION['language']=$language;
     <?php
 
 
-}
 ?>
 <!-- if(!isset($SESSION['language'])) {
     echo "session fail";
@@ -24,5 +23,6 @@ $_SESSION['language']=$language;
     ?>
     <script>
         location.replace("./home.php");
-    </script>
-    <?php -->
+    </script> 
+}
+-->
