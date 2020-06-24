@@ -171,7 +171,9 @@
         function showHome() {
             location.href = "home.php"
         }
-        headerTitle.addEventListener("click", showHome);
+        if(headerTitle) {
+            headerTitle.addEventListener("click", showHome);
+        }
     }
     headerTitleClick();
 
