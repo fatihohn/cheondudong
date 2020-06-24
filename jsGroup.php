@@ -283,16 +283,17 @@
             let enAll = document.querySelectorAll(".en");
             let elang;
             for(elang=0; elang < enAll.length; elang++) {
-                if(!sessLang) {
-                    koAll[klang].style.display = "initial";
-                    enAll[elang].style.display = "none";
-                } else if(sessLang == "language_en") {
+                if(sessLang == "language_en") {
                     koAll[klang].style.display = "none";
                     enAll[elang].style.display = "initial";
                 } else if(sessLang == "language_ko") {
                     koAll[klang].style.display = "initial";
                     enAll[elang].style.display = "none";
+                } else {
+                    koAll[klang].style.display = "initial";
+                    enAll[elang].style.display = "none";
                 }
+
             }
         }
     }
