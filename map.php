@@ -250,8 +250,8 @@ el.style.height = marker.properties.iconSize[1] + 'px';
         if(languageEn == "none") {
             var elNameKo = document.createElement('div');
 
-            elNameKo.id = 'marker_name';
-            elNameKo.className = 'ko' + ' ' + marker.properties.place_id;
+            elNameKo.id = marker.properties.place_id;
+            elNameKo.className = 'ko' + ' ' + 'marker_name';
             elNameKo.innerHTML = marker.properties.message_ko;
             elNameKo.style.width = '100%';
             elNameKo.style.height = '20px';
@@ -272,8 +272,8 @@ el.style.height = marker.properties.iconSize[1] + 'px';
         } else if(languageKo == "none") {
             var elNameEn = document.createElement('div');
 
-            elNameEn.id = 'marker_name';
-            elNameEn.className = 'en' + ' ' + marker.properties.place_id;
+            elNameEn.id = marker.properties.place_id;
+            elNameEn.className = 'en' + ' ' + 'marker_name';
             elNameEn.innerHTML = marker.properties.message_en;
             elNameEn.style.width = '100%';
             elNameEn.style.height = '20px';
@@ -299,16 +299,17 @@ el.style.height = marker.properties.iconSize[1] + 'px';
             }
         }
     });
-// }
 
-    // el.addEventListener('mouseout', function() {
-    // if (document.getElementById('marker_name')) {
         el.addEventListener('mouseout', function() {
-        // document.getElementById('marker_name').addEventListener('mouseout', function() {
-        var elShown = document.getElementById('marker_name');
-            elShown.remove();
+        // var elShown = document.getElementById('marker_name');
+        var elShownAll = document.querySelectorAll('.marker_name');
+        let mkn;
+        for (mkn = 0; mkn < elShownAll.length; mkn++) {
+            elShownAll[mkn].remove();
+        }
+            // elShown.remove();
         });
-    // }    
+    
 
 
 //****marker func end****//
