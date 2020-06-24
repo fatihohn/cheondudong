@@ -362,16 +362,16 @@ trackUserLocation: true
         let sc;
         for(sc=0; sc < smallCubeAll.length; sc++) {
             smallCubeAll[sc].style.width = "60px";
-            smallCubeAll[sc].style.height = "calc(60px + 30px)";
-            smallCubeAll[sc].style.backgroundSize = "cover";
+            smallCubeAll[sc].style.height = "calc(60px + 40px)";
+            smallCubeAll[sc].style.backgroundSize = "contain";
             smallCubeAll[sc].style.cursor = "pointer";
         }
         let middleCubeAll = document.querySelectorAll(".middleCube");
         let mc;
         for(mc=0; mc < middleCubeAll.length; mc++) {
             middleCubeAll[mc].style.width = "80px";
-            middleCubeAll[mc].style.height = "calc(80px + 30px)";
-            middleCubeAll[mc].style.backgroundSize = "cover";
+            middleCubeAll[mc].style.height = "calc(80px + 40px)";
+            middleCubeAll[mc].style.backgroundSize = "contain";
             middleCubeAll[mc].style.cursor = "pointer";
         }
         //****1:1.6****//
@@ -379,24 +379,24 @@ trackUserLocation: true
         let sh;
         for(sh=0; sh < smallHoriAll.length; sh++) {
             smallHoriAll[sh].style.width = "80px";
-            smallHoriAll[sh].style.height = "calc(50px + 30px)";
-            smallHoriAll[sh].style.backgroundSize = "cover";
+            smallHoriAll[sh].style.height = "calc(50px + 40px)";
+            smallHoriAll[sh].style.backgroundSize = "contain";
             smallHoriAll[sh].style.cursor = "pointer";
         }
         let middleHoriAll = document.querySelectorAll(".middleHori");
         let mh;
         for(mh=0; mh < middleHoriAll.length; mh++) {
             middleHoriAll[mh].style.width = "108px";
-            middleHoriAll[mh].style.height = "calc(60px + 30px)";
-            middleHoriAll[mh].style.backgroundSize = "cover";
+            middleHoriAll[mh].style.height = "calc(60px + 40px)";
+            middleHoriAll[mh].style.backgroundSize = "contain";
             middleHoriAll[mh].style.cursor = "pointer";
         }
         let bigHoriAll = document.querySelectorAll(".bigHori");
         let bh;
         for(bh=0; bh < bigHoriAll.length; bh++) {
             bigHoriAll[bh].style.width = "160px";
-            bigHoriAll[bh].style.height = "calc(100p + 30px)x";
-            bigHoriAll[bh].style.backgroundSize = "cover";
+            bigHoriAll[bh].style.height = "calc(100p + 40px)x";
+            bigHoriAll[bh].style.backgroundSize = "contain";
             bigHoriAll[bh].style.cursor = "pointer";
         }
         //****1:2****//
@@ -404,16 +404,16 @@ trackUserLocation: true
         let sp;
         for(sp=0; sp < smallPanoAll.length; sp++) {
             smallPanoAll[sp].style.width = "80px";
-            smallPanoAll[sp].style.height = "calc(40px + 30px)";
-            smallPanoAll[sp].style.backgroundSize = "cover";
+            smallPanoAll[sp].style.height = "calc(40px + 40px)";
+            smallPanoAll[sp].style.backgroundSize = "contain";
             smallPanoAll[sp].style.cursor = "pointer";
         }
         let middlePanoAll = document.querySelectorAll(".middlePano");
         let mp;
         for(mp=0; mp < middlePanoAll.length; mp++) {
             middlePanoAll[mp].style.width = "120px";
-            middlePanoAll[mp].style.height = "calc(60px + 30px)";
-            middlePanoAll[mp].style.backgroundSize = "cover";
+            middlePanoAll[mp].style.height = "calc(60px + 40px)";
+            middlePanoAll[mp].style.backgroundSize = "contain";
             middlePanoAll[mp].style.cursor = "pointer";
         }
         //****1:2.7****//
@@ -421,8 +421,8 @@ trackUserLocation: true
         let lp;
         for(lp=0; lp < longPanoAll.length; lp++) {
             longPanoAll[lp].style.width = "160px";
-            longPanoAll[lp].style.height = "calc(60px + 30px)";
-            longPanoAll[lp].style.backgroundSize = "cover";
+            longPanoAll[lp].style.height = "calc(60px + 40px)";
+            longPanoAll[lp].style.backgroundSize = "contain";
             longPanoAll[lp].style.cursor = "pointer";
         }
     }
