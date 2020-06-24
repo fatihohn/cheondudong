@@ -19,7 +19,7 @@
     // mapMarkerNameClick();
 
     function mapMarkerClick() {
-        let markerAll = document.querySelectorAll(".marker");
+        let markerAll = document.querySelectorAll(".marker_name");
         let mk;
         for(mk=0; mk < markerAll.length; mk++) {
             let markerId = markerAll[mk].id;
