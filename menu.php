@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $introCont = "임시 사이트 소개";
 $placeTitle = "임시 장소 제목"
 ?>

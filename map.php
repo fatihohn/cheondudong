@@ -45,6 +45,7 @@
         'features': [
 
             <?php 
+            session_start();
             include 'cdd_db_conn.php';
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
@@ -311,7 +312,7 @@ trackUserLocation: true
     }
     markerSize();
 
-    
+
 
     
     </script>
