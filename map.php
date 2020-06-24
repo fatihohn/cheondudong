@@ -235,21 +235,20 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 // showMarkerPlace();
 // });
 
+let elNameKo = null;
+let elNameEn = null;
 
-var elNameKo;
-var elNameEn;
+if(elNameKo == null || elNameEn = null) {
 
-if(!elNameKo || !emNameEn) {
     el.addEventListener('click', function() {
     // el.addEventListener('mouseover', function() {
         var languageKo = document.getElementById("language_ko").style.display;
         var languageEn = document.getElementById("language_en").style.display;
-        el.style.zIndex = "999";
+        
         if(languageEn == "none") {
             var elNameKo = document.createElement('div');
 
             elNameKo.id = 'marker_name';
-            elNameKo.name = marker.properties.place_id;
             elNameKo.className = 'ko';
             elNameKo.innerHTML = marker.properties.message_ko;
             elNameKo.style.width = '100%';
@@ -270,7 +269,6 @@ if(!elNameKo || !emNameEn) {
             var elNameEn = document.createElement('div');
 
             elNameEn.id = 'marker_name';
-            elNameEn.name = marker.properties.place_id;
             elNameEn.className = 'en';
             elNameEn.innerHTML = marker.properties.message_en;
             elNameEn.style.width = '100%';
@@ -295,7 +293,6 @@ if(!elNameKo || !emNameEn) {
             }
         }
     });
-
 } else {
     // el.addEventListener('mouseout', function() {
     el.addEventListener('click', function() {
