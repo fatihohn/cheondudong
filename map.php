@@ -251,8 +251,7 @@ el.style.height = marker.properties.iconSize[1] + 'px';
             var elNameKo = document.createElement('div');
 
             elNameKo.id = 'marker_name';
-            elNameKo.value = marker.properties.place_id;
-            elNameKo.className = 'ko';
+            elNameKo.className = 'ko' + ' ' + marker.properties.place_id;
             elNameKo.innerHTML = marker.properties.message_ko;
             elNameKo.style.width = '100%';
             elNameKo.style.height = '20px';
@@ -274,8 +273,7 @@ el.style.height = marker.properties.iconSize[1] + 'px';
             var elNameEn = document.createElement('div');
 
             elNameEn.id = 'marker_name';
-            elNameEn.value = marker.properties.place_id;
-            elNameEn.className = 'en';
+            elNameEn.className = 'en' + ' ' + marker.properties.place_id;
             elNameEn.innerHTML = marker.properties.message_en;
             elNameEn.style.width = '100%';
             elNameEn.style.height = '20px';
