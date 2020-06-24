@@ -251,8 +251,40 @@
     // }
     // menuDetailClick();
 
+
+//****original lang func****//
+    // function langClick() {
+    //     function langChange() {
+    //         let koAll = document.querySelectorAll(".ko");
+    //         let enAll = document.querySelectorAll(".en");
+    //         let klang;
+    //         for(klang=0; klang < koAll.length; klang++) {
+    //             let koStatus = koAll[klang].style.display;
+    //             let elang;
+    //             for(elang=0; elang < enAll.length; elang++) {
+    //                 if(koStatus == "none") {
+    //                     koAll[klang].style.display = "initial";
+    //                     enAll[elang].style.display = "none";
+    //                 } else {
+    //                     koAll[klang].style.display = "none";
+    //                     enAll[elang].style.display = "initial";
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     document.getElementById("language_en").style.display = "none";
+    //     document.getElementById("lang_select").addEventListener("click", langChange);
+    // }
+    // langClick();
+//****original lang func end****//
+
+
     function langClick() {
         function langChange() {
+            function sessLangChange(str) {
+                location.href = "language_session.php?q=" + str;
+            }
+            let sessLang = "<?php echo $_SESSION['language'];?>";
             let koAll = document.querySelectorAll(".ko");
             let enAll = document.querySelectorAll(".en");
             let klang;
@@ -260,7 +292,7 @@
                 let koStatus = koAll[klang].style.display;
                 let elang;
                 for(elang=0; elang < enAll.length; elang++) {
-                    if(koStatus == "none") {
+                    if(koStatus == "none" || sessLang == "language_ko") {
                         koAll[klang].style.display = "initial";
                         enAll[elang].style.display = "none";
                     } else {
@@ -271,7 +303,15 @@
             }
         }
         document.getElementById("language_en").style.display = "none";
-        document.getElementById("lang_select").addEventListener("click", langChange);
+        // document.getElementById("lang_select").addEventListener("click", langChange);
+        let langSelectorAll = document.querySelectorAll(".lang_selector");
+        let langs;
+        for(langs=0; langs < langSelectorAll.length; langs++) {
+            langSelectorAll[langs].addEventListener("click", function() {langChange(this.id)});
+        }
+    
+    
+    
     }
     langClick();
 
