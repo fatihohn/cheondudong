@@ -274,25 +274,7 @@
     //     document.getElementById("lang_select").addEventListener("click", langChange);
     // }
     // langClick();
-
-
-    function langClick() {
-        function langChange(str) {
-            location.href = "language_session.php?q=" + str;
-        }
-        document.getElementById("language_ko").style.display = "none";
-        // document.getElementById("lang_select").addEventListener("click", function() {langChange(this.id)});
-        let langSelectorAll = document.querySelectorAll(".lang_selector");
-        let langs;
-        for(langs=0; langs < langSelectorAll.length; langs++) {
-            langSelectorAll[langs].addEventListener("click", function() {langChange(this.id)});
-        }
-        
-        
-        // document.getElementById("lang_select").addEventListener("click", function() {langChange(this.id)});
-    }
-    langClick();
-
+    
     function frontLang() {
         let sessLang = "<?php echo $_SESSION['language'];?>";
         let koAll = document.querySelectorAll(".ko");
@@ -315,6 +297,25 @@
         }
     }
     frontLang();
+
+
+    function langClick() {
+        function langChange(str) {
+            location.href = "language_session.php?q=" + str;
+        }
+        document.getElementById("language_ko").style.display = "none";
+        // document.getElementById("lang_select").addEventListener("click", function() {langChange(this.id)});
+        let langSelectorAll = document.querySelectorAll(".lang_selector");
+        let langs;
+        for(langs=0; langs < langSelectorAll.length; langs++) {
+            langSelectorAll[langs].addEventListener("click", function() {langChange(this.id)});
+        }
+        
+        
+        // document.getElementById("lang_select").addEventListener("click", function() {langChange(this.id)});
+    }
+    langClick();
+
 
     // let sessInit = "<?php 
     //echo $_SESSION['language'];
