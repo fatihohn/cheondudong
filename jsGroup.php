@@ -8,6 +8,16 @@
         location.href = "detail.php?q=" + placeIdMenu;
     }
 
+    function mapMarkerNameClick() {
+        let markerNameAll = document.querySelectorAll(".marker_name");
+        let mkname;
+        for(mkname=0; mkname < markerNameAll.length; mkname++) {
+            let markerNameId = markerNameAll[mkname].id;
+            showDetailPlaceMap(markerNameId);
+        }
+    }
+    mapMarkerNameClick();
+
 
 //****대문****//
     function frontTitleClick() {
