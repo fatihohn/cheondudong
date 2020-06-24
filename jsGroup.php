@@ -302,6 +302,7 @@
     function frontLang() {
         let sessLang = "<?php echo $_SESSION['language'];?>";
         let koAll = document.querySelectorAll(".ko");
+        let enAll = document.querySelectorAll(".en");
         let klang;
         for(klang=0; klang < koAll.length; klang++) {
             let enAll = document.querySelectorAll(".en");
