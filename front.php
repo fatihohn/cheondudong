@@ -2,10 +2,10 @@
     <div id="front_box">
         <div id="front_title">
             <div id="lang_select" class="front_lang">
-                <div id="language_ko" class="ko tooling lang_selector">
+                <div id="language_ko" class="tooling lang_selector">
                     English
                 </div>
-                <div id="language_en" class="en tooling lang_selector">
+                <div id="language_en" class="tooling lang_selector">
                     한국어
                 </div>
             </div>
