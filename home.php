@@ -33,5 +33,19 @@
         
         
         <?php include "jsGroup.php"; ?>
+
+        <script>
+            function homeInit() {
+                let headerWrap = document.getElementById("header_wrap");
+                let menuWrap = document.getElementById("menu_wrap");
+                let mapWrap = document.getElementById("map_wrap");
+                let footerWrap = document.getElementById("footer_wrap");
+
+                headerWrap.style.display = "initial";
+                menuWrap.style.display = "none";
+                mapWrap.style.visibility = "visible";
+                footerWrap.style.display = "none";
+            }
+        </script>
     </body>
 </html>

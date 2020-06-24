@@ -4,8 +4,7 @@ include 'cdd_db_conn.php';
 // $language = $_GET['q'];
 $language = mysqli_real_escape_string($conn, $_POST['language']);
 
-
-$_SESSION['language'] = $language;
+$_SESSION['language']=$language;
 
 if(isset($SESSION['language'])) {
     ?>

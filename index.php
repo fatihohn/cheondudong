@@ -33,14 +33,14 @@
 
 
                     </div>
-                    <div id="lang_select" class="front_lang">
+                    <!-- <div id="lang_select" class="front_lang">
                         <div id="ko" class="tooling lang_selector">
                             한국어
                         </div>
                         <div id="en" class="tooling lang_selector">
                             English
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
