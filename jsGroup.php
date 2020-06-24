@@ -286,12 +286,18 @@
                 if(sessLang == "language_en") {
                     koAll[klang].style.display = "none";
                     enAll[elang].style.display = "initial";
+                    document.getElementById("language_en").style.display = "none";
+                    document.getElementById("language_ko").style.display = "initial";
                 } else if(sessLang == "language_ko") {
                     koAll[klang].style.display = "initial";
                     enAll[elang].style.display = "none";
+                    document.getElementById("language_en").style.display = "initial";
+                    document.getElementById("language_ko").style.display = "none";
                 } else {
                     koAll[klang].style.display = "initial";
                     enAll[elang].style.display = "none";
+                    document.getElementById("language_en").style.display = "initial";
+                    document.getElementById("language_ko").style.display = "none";
                 }
 
             }
