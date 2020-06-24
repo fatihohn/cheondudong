@@ -364,6 +364,7 @@ trackUserLocation: true
             smallCubeAll[sc].style.width = "60px";
             smallCubeAll[sc].style.height = "calc(60px + 40px)";
             smallCubeAll[sc].style.backgroundSize = "contain";
+            smallCubeAll[sc].style.backgroundRepeat = "no-repeat";
             smallCubeAll[sc].style.cursor = "pointer";
         }
         let middleCubeAll = document.querySelectorAll(".middleCube");
@@ -372,6 +373,7 @@ trackUserLocation: true
             middleCubeAll[mc].style.width = "80px";
             middleCubeAll[mc].style.height = "calc(80px + 40px)";
             middleCubeAll[mc].style.backgroundSize = "contain";
+            middleCubeAll[mc].style.backgroundRepeat = "no-repeat";
             middleCubeAll[mc].style.cursor = "pointer";
         }
         //****1:1.6****//
@@ -381,6 +383,7 @@ trackUserLocation: true
             smallHoriAll[sh].style.width = "80px";
             smallHoriAll[sh].style.height = "calc(50px + 40px)";
             smallHoriAll[sh].style.backgroundSize = "contain";
+            smallHoriAll[sh].style.backgroundRepeat = "no-repeat";
             smallHoriAll[sh].style.cursor = "pointer";
         }
         let middleHoriAll = document.querySelectorAll(".middleHori");
@@ -389,6 +392,7 @@ trackUserLocation: true
             middleHoriAll[mh].style.width = "108px";
             middleHoriAll[mh].style.height = "calc(60px + 40px)";
             middleHoriAll[mh].style.backgroundSize = "contain";
+            middleHoriAll[mh].style.backgroundRepeat = "no-repeat";
             middleHoriAll[mh].style.cursor = "pointer";
         }
         let bigHoriAll = document.querySelectorAll(".bigHori");
@@ -397,6 +401,7 @@ trackUserLocation: true
             bigHoriAll[bh].style.width = "160px";
             bigHoriAll[bh].style.height = "calc(100p + 40px)x";
             bigHoriAll[bh].style.backgroundSize = "contain";
+            bigHoriAll[bh].style.backgroundRepeat = "no-repeat";
             bigHoriAll[bh].style.cursor = "pointer";
         }
         //****1:2****//
@@ -406,6 +411,7 @@ trackUserLocation: true
             smallPanoAll[sp].style.width = "80px";
             smallPanoAll[sp].style.height = "calc(40px + 40px)";
             smallPanoAll[sp].style.backgroundSize = "contain";
+            smallPanoAll[sp].style.backgroundRepeat = "no-repeat";
             smallPanoAll[sp].style.cursor = "pointer";
         }
         let middlePanoAll = document.querySelectorAll(".middlePano");
@@ -414,6 +420,7 @@ trackUserLocation: true
             middlePanoAll[mp].style.width = "120px";
             middlePanoAll[mp].style.height = "calc(60px + 40px)";
             middlePanoAll[mp].style.backgroundSize = "contain";
+            middlePanoAll[mp].style.backgroundRepeat = "no-repeat";
             middlePanoAll[mp].style.cursor = "pointer";
         }
         //****1:2.7****//
@@ -423,6 +430,7 @@ trackUserLocation: true
             longPanoAll[lp].style.width = "160px";
             longPanoAll[lp].style.height = "calc(60px + 40px)";
             longPanoAll[lp].style.backgroundSize = "contain";
+            longPanoAll[lp].style.backgroundRepeat = "no-repeat";
             longPanoAll[lp].style.cursor = "pointer";
         }
     }
