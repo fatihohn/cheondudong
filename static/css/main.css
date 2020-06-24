@@ -156,7 +156,7 @@ z-index: 80;
     font-size: 0.9rem;
     /* font-weight: 600; */
 }
-#detail_wrap #detail_box #detail_work p.img_title, 
+#detail_wrap #detail_box #detail_img p.img_title, 
 #detail_wrap #detail_box #detail_work p.work_title, 
 #detail_wrap #detail_box #detail_ref p.ref_title {
     font-size: 1.2rem;
