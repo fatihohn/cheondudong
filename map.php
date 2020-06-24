@@ -235,8 +235,8 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 // showMarkerPlace();
 // });
 
-let elNameKo = null;
-let elNameEn = null;
+var elNameKo = null;
+var elNameEn = null;
 
 if(elNameKo == null || elNameEn = null) {
 
