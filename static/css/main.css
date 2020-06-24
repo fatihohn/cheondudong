@@ -131,11 +131,12 @@ z-index: 80;
     max-width: 596px;
     height: min-content;
     margin: 0 auto;
-    font-size: 1.05rem;
+    font-size: 1.8rem;
     letter-spacing: 1.8px;
     line-height: 1.9rem;
     color: rgba(0, 0, 0, 0.75);
     padding-bottom: 40px; 
+    font-family: "또박또박";
 }
 
 #detail_wrap #detail_box #detail_img, 
@@ -159,7 +160,7 @@ z-index: 80;
 #detail_wrap #detail_box #detail_img p.img_title, 
 #detail_wrap #detail_box #detail_work p.work_title, 
 #detail_wrap #detail_box #detail_ref p.ref_title {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
