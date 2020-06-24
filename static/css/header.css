@@ -245,8 +245,6 @@
 }
 
 #place_list_wrap #place_list #place_ul .place_li {
-    margin: 0 5px;
-    /* float: left; */
-    padding: 5px 0;
+    margin: 5px;
     cursor: pointer;
 }
