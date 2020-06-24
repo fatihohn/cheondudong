@@ -254,41 +254,8 @@
 
 
 //****original lang func****//
-    // function langClick() {
-    //     function langChange() {
-    //         let koAll = document.querySelectorAll(".ko");
-    //         let enAll = document.querySelectorAll(".en");
-    //         let klang;
-    //         for(klang=0; klang < koAll.length; klang++) {
-    //             let koStatus = koAll[klang].style.display;
-    //             let elang;
-    //             for(elang=0; elang < enAll.length; elang++) {
-    //                 if(koStatus == "none") {
-    //                     koAll[klang].style.display = "initial";
-    //                     enAll[elang].style.display = "none";
-    //                 } else {
-    //                     koAll[klang].style.display = "none";
-    //                     enAll[elang].style.display = "initial";
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     document.getElementById("language_en").style.display = "none";
-    //     document.getElementById("lang_select").addEventListener("click", langChange);
-    // }
-    // langClick();
-//****original lang func end****//
-
-
-
-
-//********//
     function langClick() {
         function langChange() {
-            function setSessLang(str) {
-                location.href = "language_session.php?q=" + str
-            }
-            let sessLang = "<?php echo $_SESSION['language'];?>";
             let koAll = document.querySelectorAll(".ko");
             let enAll = document.querySelectorAll(".en");
             let klang;
@@ -296,42 +263,25 @@
                 let koStatus = koAll[klang].style.display;
                 let elang;
                 for(elang=0; elang < enAll.length; elang++) {
-                    if(!sessLang) {
-                        if(koStatus == "none" ) {
-                            koAll[klang].style.display = "initial";
-                            enAll[elang].style.display = "none";
-                            let langStr = "language_ko";
-                            setSessLang(langStr);
-                        } else {
-                            koAll[klang].style.display = "none";
-                            enAll[elang].style.display = "initial";
-                            let langStr = "language_en";
-                            setSessLang(langStr);
-                        }
+                    if(koStatus == "none") {
+                        koAll[klang].style.display = "initial";
+                        enAll[elang].style.display = "none";
                     } else {
-                        if(sessLang == "language_ko") {
-                            koAll[klang].style.display = "initial";
-                            enAll[elang].style.display = "none";
-                        } else {
-                            koAll[klang].style.display = "none";
-                            enAll[elang].style.display = "initial";
-                        }
+                        koAll[klang].style.display = "none";
+                        enAll[elang].style.display = "initial";
                     }
                 }
             }
         }
-        // document.getElementById("language_ko").style.display = "none";
+        document.getElementById("language_en").style.display = "none";
         document.getElementById("lang_select").addEventListener("click", langChange);
-    // let langSelectorAll = document.querySelectorAll(".lang_selector");
-    //     let langs;
-    //     for(langs=0; langs < langSelectorAll.length; langs++) {
-    //         // langSelectorAll[langs].addEventListener("click", function() {langChange(this.id)});
-    //         langSelectorAll[langs].addEventListener("click", langChange);
-    //     }
-    
     }
     langClick();
-//**** end****//
+//****original lang func end****//
+
+
+
+
 
 
     
