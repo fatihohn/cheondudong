@@ -113,12 +113,13 @@ z-index: 80;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 40px;
+    display: grid;
 }
-#detail_wrap #detail_box #detail_point p.detail_address {
+#detail_wrap #detail_box #detail_point .detail_address {
     font-size: 0.8rem;
     font-weight: 600;
 }
-#detail_wrap #detail_box #detail_point p.detail_coord {
+#detail_wrap #detail_box #detail_point .detail_coord {
     font-size: 0.5rem;
     font-weight: 300;
     /* line-height: 15px; */
