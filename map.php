@@ -242,8 +242,8 @@ el.style.height = marker.properties.iconSize[1] + 'px';
     //     elShown.remove();
     // });
 // } else {
-    el.addEventListener('click', function() {
-    // el.addEventListener('mouseover', function() {
+    // el.addEventListener('click', function() {
+    el.addEventListener('mouseover', function() {
         var languageKo = document.getElementById("language_ko").style.display;
         var languageEn = document.getElementById("language_en").style.display;
         
@@ -305,7 +305,8 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 
     // el.addEventListener('mouseout', function() {
     // if (document.getElementById('marker_name')) {
-        el.addEventListener('mouseout', function() {
+        // el.addEventListener('mouseout', function() {
+        document.getElementById('marker_name').addEventListener('mouseout', function() {
         var elShown = document.getElementById('marker_name');
             elShown.remove();
         });
