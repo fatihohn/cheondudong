@@ -264,6 +264,7 @@ el.style.height = marker.properties.iconSize[1] + 'px';
             elNameKo.style.wordBreak = 'keep-all';
             elNameKo.style.position = 'relative';
             elNameKo.style.top = 'calc(100% - 30px)';
+            elNameKo.style.cursor = 'pointer';
             // elNameKo.style.zIndex = '999';
 
             if(!document.getElementById("marker_name")) {
@@ -286,6 +287,7 @@ el.style.height = marker.properties.iconSize[1] + 'px';
             elNameEn.style.wordBreak = 'keep-all';
             elNameEn.style.position = 'relative';
             elNameEn.style.top = 'calc(100% - 30px)';
+            elNameEn.style.cursor = 'pointer';
             // elNameEn.style.zIndex = '999';
 
             if(!document.getElementById("marker_name")) {
