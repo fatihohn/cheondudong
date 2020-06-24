@@ -28,8 +28,8 @@ $detailMarker = $rowPlaceDetail['mkimg_dir'];
 $detailAddress = $rowPlaceDetail['ko_address'];
 $detailAddress_en = $rowPlaceDetail['en_address'];
 $detailCoord = $rowPlaceDetail['lat'].", ".$rowPlaceDetail['lng'];
-$detailCont = $rowPlaceDetail['ko_cont']
-$detailCont_en = $rowPlaceDetail['en_cont']
+$detailCont = $rowPlaceDetail['ko_cont'];
+$detailCont_en = $rowPlaceDetail['en_cont'];
 
 
 $detailImg = "이미지";
