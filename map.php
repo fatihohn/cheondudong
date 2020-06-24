@@ -364,7 +364,7 @@ trackUserLocation: true
             smallCubeAll[sc].style.height = "calc(60px + 35px)";
             smallCubeAll[sc].style.backgroundSize = "contain";
             smallCubeAll[sc].style.backgroundRepeat = "no-repeat";
-            smallCubeAll[sc].style.cursor = "pointer";
+            // smallCubeAll[sc].style.cursor = "pointer";
         }
         let middleCubeAll = document.querySelectorAll(".middleCube");
         let mc;
@@ -373,7 +373,7 @@ trackUserLocation: true
             middleCubeAll[mc].style.height = "calc(80px + 35px)";
             middleCubeAll[mc].style.backgroundSize = "contain";
             middleCubeAll[mc].style.backgroundRepeat = "no-repeat";
-            middleCubeAll[mc].style.cursor = "pointer";
+            // middleCubeAll[mc].style.cursor = "pointer";
         }
         //****1:1.6****//
         let smallHoriAll = document.querySelectorAll(".smallHori");
@@ -383,7 +383,7 @@ trackUserLocation: true
             smallHoriAll[sh].style.height = "calc(50px + 35px)";
             smallHoriAll[sh].style.backgroundSize = "contain";
             smallHoriAll[sh].style.backgroundRepeat = "no-repeat";
-            smallHoriAll[sh].style.cursor = "pointer";
+            // smallHoriAll[sh].style.cursor = "pointer";
         }
         let middleHoriAll = document.querySelectorAll(".middleHori");
         let mh;
@@ -392,7 +392,7 @@ trackUserLocation: true
             middleHoriAll[mh].style.height = "calc(60px + 35px)";
             middleHoriAll[mh].style.backgroundSize = "contain";
             middleHoriAll[mh].style.backgroundRepeat = "no-repeat";
-            middleHoriAll[mh].style.cursor = "pointer";
+            // middleHoriAll[mh].style.cursor = "pointer";
         }
         let bigHoriAll = document.querySelectorAll(".bigHori");
         let bh;
@@ -401,7 +401,7 @@ trackUserLocation: true
             bigHoriAll[bh].style.height = "calc(100px + 35px)";
             bigHoriAll[bh].style.backgroundSize = "contain";
             bigHoriAll[bh].style.backgroundRepeat = "no-repeat";
-            bigHoriAll[bh].style.cursor = "pointer";
+            // bigHoriAll[bh].style.cursor = "pointer";
         }
         //****1:2****//
         let smallPanoAll = document.querySelectorAll(".smallPano");
@@ -411,7 +411,7 @@ trackUserLocation: true
             smallPanoAll[sp].style.height = "calc(40px + 35px)";
             smallPanoAll[sp].style.backgroundSize = "contain";
             smallPanoAll[sp].style.backgroundRepeat = "no-repeat";
-            smallPanoAll[sp].style.cursor = "pointer";
+            // smallPanoAll[sp].style.cursor = "pointer";
         }
         let middlePanoAll = document.querySelectorAll(".middlePano");
         let mp;
@@ -420,7 +420,7 @@ trackUserLocation: true
             middlePanoAll[mp].style.height = "calc(60px + 35px)";
             middlePanoAll[mp].style.backgroundSize = "contain";
             middlePanoAll[mp].style.backgroundRepeat = "no-repeat";
-            middlePanoAll[mp].style.cursor = "pointer";
+            // middlePanoAll[mp].style.cursor = "pointer";
         }
         //****1:2.7****//
         let longPanoAll = document.querySelectorAll(".longPano");
@@ -430,7 +430,7 @@ trackUserLocation: true
             longPanoAll[lp].style.height = "calc(60px + 35px)";
             longPanoAll[lp].style.backgroundSize = "contain";
             longPanoAll[lp].style.backgroundRepeat = "no-repeat";
-            longPanoAll[lp].style.cursor = "pointer";
+            // longPanoAll[lp].style.cursor = "pointer";
         }
     }
     markerSize();
