@@ -21,6 +21,7 @@
                     <div id="front_title">
                         <form method="post" action="language_session.php">
                             <!-- <img src="static/img/front.png" alt="천두동"> -->
+                            <input class="front_img" type="image" src="static/img/front.png" alt="Submit" />
                             <div>
                                  
                                 <!-- <select name="language" required>
@@ -32,7 +33,6 @@
                                 <input class='lang_btn' type='radio' id='en_btn'name='language' value='en'>
                                 <label for='ok_btn'>English</label>
                             </div>
-                            <input type="image" src="static/img/front.png" alt="Submit" />
                             <!-- <input type="submit" value="언어선택"> -->
                         </form>
 

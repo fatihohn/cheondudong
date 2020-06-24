@@ -14,18 +14,22 @@
     height: 600px;
     margin: 0 auto;
     text-align: center;
-    font-size: 4rem;
+    font-size: 2rem;
     line-height: 1.2;
     font-weight: bolder;
-    padding-top: 7%;
+    padding-top: 20%;
+    font-family: "또박또박"
 }
 #front_wrap #front_box #front_title div {
-    -ms-transform: rotate(-30deg); /* IE 9 */
-    transform: rotate(-30deg);
+    /* -ms-transform: rotate(-30deg); IE 9 */
+    /* transform: rotate(-30deg); */
     position: relative;
-    width: 100px;
+    /* width: 100px; */
     margin: 0 auto;
     cursor: pointer;
+}
+#front_wrap #front_box #front_title .front_img {
+    width: 100%;
 }
 #front_wrap #front_box #front_title #title_cdd {
     top: 0px;
