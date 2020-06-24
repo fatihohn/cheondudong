@@ -279,9 +279,15 @@
             location.href = "language_session.php?q=" + str;
         }
         document.getElementById("language_en").style.display = "none";
-        document.getElementById("lang_select").addEventListener("click", function() {
-            langChange(this.id)
-            });
+        // document.getElementById("lang_select").addEventListener("click", function() {langChange(this.id)});
+        let langSelectorAll = document.querySelectorAll(".lang_selector");
+        let langs;
+        for(langs=0; langs < langSelectorAll.length; langs++) {
+            langSelectorAll[langs].addEventListener("click", function() {langChange(this.id)});
+        }
+        
+        
+        // document.getElementById("lang_select").addEventListener("click", function() {langChange(this.id)});
     }
     langClick();
 
