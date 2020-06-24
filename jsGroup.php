@@ -60,13 +60,6 @@
             menuWrap.style.display = "none";
             footerWrap.style.display = "initial";
 
-            let sessInit = "<?php echo $_SESSION['language'];?>";
-            if(!sessInit) {
-                <?php 
-                session_start();
-                $_SESSION['language'] = "language_ko";
-                ?>
-            }
         }
         frontTitle.addEventListener("click", hideFront);
 
@@ -302,24 +295,35 @@
     function frontLang() {
         let sessLang = "<?php echo $_SESSION['language'];?>";
         let koAll = document.querySelectorAll(".ko");
-        let enAll = document.querySelectorAll(".en");
         let klang;
         for(klang=0; klang < koAll.length; klang++) {
             let enAll = document.querySelectorAll(".en");
             let elang;
             for(elang=0; elang < enAll.length; elang++) {
-                if(sessLang == "language_ko") {
+                if(!sessLang) {
                     koAll[klang].style.display = "initial";
                     enAll[elang].style.display = "none";
-                } else {
+                } else if(sessLang == "language_en") {
                     koAll[klang].style.display = "none";
                     enAll[elang].style.display = "initial";
+                } else {
+                    koAll[klang].style.display = "initial";
+                    enAll[elang].style.display = "none";
                 }
             }
         }
     }
     frontLang();
 
+    // let sessInit = "<?php 
+    //echo $_SESSION['language'];
+    //?>";
+    //         if(!sessInit) {
+    //             <?php 
+    //             session_start();
+    //             $_SESSION['language'] = "language_ko";
+    //             ?>
+    //         }
     
 
     // function menuPlaceLiClick() {
