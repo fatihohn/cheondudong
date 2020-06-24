@@ -12,9 +12,11 @@ function frontInit() {
         headerWrap.style.display = "initial";
         menuWrap.style.display = "none";
         footerWrap.style.display = "none";
-        if(mapWrap && detailWrap) {
+        if(mapWrap) {
             mapWrap.style.visibility = "visible";
-            detailWrap.style.display = "none";
+            if(detailWrap){
+                detailWrap.style.display = "none";
+            }
         }
     }
     initShow();
