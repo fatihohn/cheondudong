@@ -61,8 +61,7 @@
             footerWrap.style.display = "initial";
 
         }
-        let sessLangStatus = "<?php echo $_SESSION['language'];?>";
-        if
+        
         frontTitle.addEventListener("click", hideFront);
 
         }
