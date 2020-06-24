@@ -25,7 +25,7 @@ $detailRef_en = "reference list";
 <html lang="ko">
     <head>
 
-<?php include "head.php"; ?>
+<?php include "admin_head.php"; ?>
 
 
     </head>
@@ -42,7 +42,7 @@ $detailRef_en = "reference list";
                 
             
             <!-- menu: 메뉴 내비 바 -->
-            <?php include "menu.php"; ?>
+            <?php include "admin_menu.php"; ?>
 
 
             <div id="detail_wrap">
