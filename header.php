@@ -1,5 +1,6 @@
 <?php
 session_start();
+echo $_SESSION['language'];
 ?>
 
 <div id="header_wrap">
