@@ -315,9 +315,27 @@
                 location.href = "language_session.php?q=" + str;
             }
             sessLangChange(str);
-            
         }
-        document.getElementById("language_ko").style.display = "none";
+
+        let koAll = document.querySelectorAll(".ko");
+        let enAll = document.querySelectorAll(".en");
+        let klang;
+        for(klang=0; klang < koAll.length; klang++) {
+            let koStatus = koAll[klang].style.display;
+            let elang;
+            for(elang=0; elang < enAll.length; elang++) {
+                koAll[klang].style.display = "initial";
+                enAll[elang].style.display = "none";
+            }
+        }
+    
+
+
+
+
+
+        // document.getElementById("language_ko").style.display = "none";
+
         // document.getElementById("lang_select").addEventListener("click", langChange);
         let langSelectorAll = document.querySelectorAll(".lang_selector");
         let langs;
