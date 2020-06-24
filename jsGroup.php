@@ -22,7 +22,7 @@
         let mk;
         for(mk=0; mk < markerAll.length; mk++) {
             let markerId = markerAll[mk].id;
-            markerAll[mk].addEventListener("click", showDetailPlaceMap(markerId))
+            markerAll[mk].addEventListener("click", showDetailPlaceMap(markerId));
             // showDetailPlaceMap(markerId);
         }
     }
