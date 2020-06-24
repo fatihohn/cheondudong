@@ -118,6 +118,7 @@ $detailRef_en = "reference list";
         
         
         <?php include "jsGroup.php"; ?>
+        <?php include "admin_jsGroup.php"; ?>
 
         <script>
             function detailInit() {
