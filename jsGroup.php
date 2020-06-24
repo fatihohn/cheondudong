@@ -23,7 +23,9 @@
         let mk;
         for(mk=0; mk < markerAll.length; mk++) {
             let markerId = markerAll[mk].id;
-            markerAll[mk].addEventListener("click", showDetailPlaceMap(this.id));
+            markerAll[mk].addEventListener("click", function() {
+                showDetailPlaceMap(this.id)
+            });
         }
     }
     mapMarkerClick();
