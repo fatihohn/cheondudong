@@ -21,7 +21,6 @@
                     <div id="front_title">
                         <form method="post" action="language_session.php">
                             <!-- <img src="static/img/front.png" alt="천두동"> -->
-                            <input type="image" src="static/img/front.png" alt="Submit" />
                             <p>
                                 Language 
                                 <select name="language" required>
@@ -29,6 +28,7 @@
                                     <option value="en">English</option>
                                 </select>
                             </p>
+                            <input type="image" src="static/img/front.png" alt="Submit" />
                         </form>
 
 
