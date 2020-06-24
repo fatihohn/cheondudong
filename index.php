@@ -2,7 +2,10 @@
 <html lang="ko">
     <head>
 
-<?php include "head.php"; ?>
+<?php 
+session_start();
+include "head.php"; 
+?>
 
 
     </head>
