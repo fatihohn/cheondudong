@@ -293,12 +293,22 @@
                 let koStatus = koAll[klang].style.display;
                 let elang;
                 for(elang=0; elang < enAll.length; elang++) {
-                    if(koStatus == "none" || sessLang == "language_ko") {
-                        koAll[klang].style.display = "initial";
-                        enAll[elang].style.display = "none";
+                    if(koStatus == "none") {
+                        if (sessLang == "language_ko") {
+                            koAll[klang].style.display = "initial";
+                            enAll[elang].style.display = "none";
+                        } else {
+                            koAll[klang].style.display = "none";
+                            enAll[elang].style.display = "initial";
+                        }
                     } else {
-                        koAll[klang].style.display = "none";
-                        enAll[elang].style.display = "initial";
+                        if(sessLang == "language_ko") {
+                            koAll[klang].style.display = "initial";
+                            enAll[elang].style.display = "none";
+                        } else {
+                            koAll[klang].style.display = "none";
+                            enAll[elang].style.display = "initial";
+                        }
                     }
                 }
             }
