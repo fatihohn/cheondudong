@@ -100,18 +100,18 @@ $detailRef_en = "reference list";
                         </div>
                         <div id="detail_point">
                             
-                            <p class="detail_address ko">
+                            <div class="detail_address ko">
                                 <?php echo $detailAddress;?>
-                            </p>
-                            <p class="detail_address en">
+                            </div>
+                            <div class="detail_address en">
                                 <?php echo $detailAddress_en;?>
-                            </p>
-                            <p class="detail_coord ko">
+                            </div>
+                            <div class="detail_coord ko">
                                 <?php echo $detailCoord;?>
-                            </p>
-                            <p class="detail_coord en">
+                            </div>
+                            <div class="detail_coord en">
                                 <?php echo $detailCoord;?>
-                            </p>
+                            </div>
                         </div>
                         <div id="detail_cont">
                             <div class="ko">
