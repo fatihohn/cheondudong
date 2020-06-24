@@ -119,30 +119,30 @@ $detailRef_en = "reference list";
                             </div>
                         </div>
                         <div id="detail_img">
-                            <p class="img_title ko ddobag">
+                            <div class="img_title ko ddobag">
                                 이미지
-                            </p>
-                            <p class="img_title en ddobag">
+                            </div>
+                            <div class="img_title en ddobag">
                                 Images
-                            </p>
+                            </div>
                             <?php echo $detailImg;?>
                         </div>
                         <div id="detail_work">
-                            <p class="work_title ko ddobag">
+                            <div class="work_title ko ddobag">
                                 관련 작품
-                            </p>
-                            <p class="work_title en ddobag">
+                            </div>
+                            <div class="work_title en ddobag">
                                 Works
-                            </p>
+                            </div>
                             <?php echo $detailWork;?>
                         </div>
                         <div id="detail_ref">
-                            <p class="ref_title ko ddobag">
+                            <div class="ref_title ko ddobag">
                                 참고 자료
-                            </p>
-                            <p class="ref_title en ddobag">
+                            </div>
+                            <div class="ref_title en ddobag">
                                 References
-                            </p>
+                            </div>
                             <?php echo $detailRef;?>
                         </div>
                     </div>
