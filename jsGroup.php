@@ -313,7 +313,7 @@
                 }
             }
         }
-        document.getElementById("language_en").style.display = "none";
+        document.getElementById("language_ko").style.display = "none";
         // document.getElementById("lang_select").addEventListener("click", langChange);
         let langSelectorAll = document.querySelectorAll(".lang_selector");
         let langs;
