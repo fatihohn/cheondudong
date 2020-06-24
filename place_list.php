@@ -28,12 +28,16 @@ if($resultPlace->num_rows > 0) {
         $ko_title =  $rowPlace['ko_title'];
         $en_title =  $rowPlace['en_title'];
         echo "
-        <li class='ko'>
+        <li id = '";
+        echo $place_id;
+        echo "' class='ko'>
             <div class='place_title'>";
         echo    $ko_title;
         echo "</div>
         </li>
-        <li class='en'>
+        <li id = '";
+        echo $place_id;
+        echo "' class='en'>
             <div class='place_title'>";
         echo    $en_title;
         echo "</div>

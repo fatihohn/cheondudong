@@ -1,5 +1,8 @@
 <?php
 
+
+
+
 $detailTitle = "임시 제목";
 $detailTitle_en = "Title";
 $detailMarker = "임시 마커 이미지 링크";
@@ -26,10 +29,10 @@ $detailRef_en = "reference list";
                 <img src="<?php echo $detailMarker;?>" alt="<?php echo $detailTitle;?>">
             </div>
             <div id="detail_title">
-                <h3 class="tooling ko">
+                <h3 class="ddobag ko">
                     <?php echo $detailTitle;?>
                 </h3>
-                <h3 class="tooling en">
+                <h3 class="ddobag en">
                     <?php echo $detailTitle_en;?>
                 </h3>
             </div>
@@ -60,19 +63,19 @@ $detailRef_en = "reference list";
                 <?php echo $detailImg;?>
             </div>
             <div id="detail_work">
-                <p class="work_title ko tooling">
+                <p class="work_title ko ddobag">
                     관련 작품
                 </p>
-                <p class="work_title en tooling">
+                <p class="work_title en ddobag">
                     Works
                 </p>
                 <?php echo $detailWork;?>
             </div>
             <div id="detail_ref">
-                <p class="ref_title ko tooling">
+                <p class="ref_title ko ddobag">
                     참고 자료
                 </p>
-                <p class="ref_title en tooling">
+                <p class="ref_title en ddobag">
                     References
                 </p>
                 <?php echo $detailRef;?>
