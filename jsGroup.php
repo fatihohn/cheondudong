@@ -66,136 +66,180 @@
 
 
 //****대문****//
-    function frontTitleClick() {
+    // function frontTitleClick() {
 
-        let frontTitle = document.getElementById("front_title");
-        if(frontTitle) {
-        function hideFront() {
-            let headerWrap = document.getElementById("header_wrap");
-            let frontWrap = document.getElementById("front_wrap");
-            // let detailWrap = document.getElementById("detail_wrap");
-            let mapWrap = document.getElementById("map_wrap");
-            let menuWrap = document.getElementById("menu_wrap");
-            let footerWrap = document.getElementById("footer_wrap");
-            headerWrap.style.display = "initial";
-            frontWrap.style.display = "none";
-            // detailWrap.style.display = "none";
-            mapWrap.style.visibility = "visible";
-            menuWrap.style.display = "none";
-            footerWrap.style.display = "initial";
+    //     let frontTitle = document.getElementById("front_title");
+    //     if(frontTitle) {
+    //     function hideFront() {
+    //         let headerWrap = document.getElementById("header_wrap");
+    //         let frontWrap = document.getElementById("front_wrap");
+    //         // let detailWrap = document.getElementById("detail_wrap");
+    //         let mapWrap = document.getElementById("map_wrap");
+    //         let menuWrap = document.getElementById("menu_wrap");
+    //         let footerWrap = document.getElementById("footer_wrap");
+    //         headerWrap.style.display = "initial";
+    //         frontWrap.style.display = "none";
+    //         // detailWrap.style.display = "none";
+    //         mapWrap.style.visibility = "visible";
+    //         menuWrap.style.display = "none";
+    //         footerWrap.style.display = "initial";
 
-        }
+    //     }
         
-        frontTitle.addEventListener("click", hideFront);
+    //     frontTitle.addEventListener("click", hideFront);
 
-        }
-    }
-    frontTitleClick();
+    //     }
+    // }
+    // frontTitleClick();
 
 //***헤더***//
+    // function headerTitleClick() {
+
+    //     let headerTitle = document.getElementById("header_title");
+    //     if(headerTitle) {
+    //         function showMap() {
+    //             let headerWrap = document.getElementById("header_wrap");
+    //             let frontWrap = document.getElementById("front_wrap");
+    //             let detailWrap = document.getElementById("detail_wrap");
+    //             let mapWrap = document.getElementById("map_wrap");
+    //             let menuWrap = document.getElementById("menu_wrap");
+    //             let footerWrap = document.getElementById("footer_wrap");
+                
+    //             let introWrap = document.getElementById("intro_cont_wrap");
+    //             let placeWrap = document.getElementById("place_list_wrap");
+                
+    //             if(frontWrap) {
+
+    //             headerWrap.style.display = "initial";
+    //             frontWrap.style.display = "none";
+    //                 if(detailWrap) {
+    //                     detailWrap.style.display = "none";
+    //                 }
+    //             mapWrap.style.visibility = "visible";
+    //             menuWrap.style.display = "none";
+    //             footerWrap.style.display = "none";
+
+    //             placeWrap.style.display = "none";
+    //             introWrap.style.display = "none";
+    //             } else {
+    //             headerWrap.style.display = "initial";
+    //                 if(detailWrap) {
+    //                     detailWrap.style.display = "none";
+    //                 }
+    //             mapWrap.style.visibility = "visible";
+    //             menuWrap.style.display = "none";
+    //             footerWrap.style.display = "none";
+
+    //             placeWrap.style.display = "none";
+    //             introWrap.style.display = "none";
+
+    //             }
+    //         }
+    //         headerTitle.addEventListener("click", showMap);
+    //     }
+    // }
+    // headerTitleClick();
+    
     function headerTitleClick() {
 
         let headerTitle = document.getElementById("header_title");
-        if(headerTitle) {
-            function showMap() {
-                let headerWrap = document.getElementById("header_wrap");
-                let frontWrap = document.getElementById("front_wrap");
-                let detailWrap = document.getElementById("detail_wrap");
-                let mapWrap = document.getElementById("map_wrap");
-                let menuWrap = document.getElementById("menu_wrap");
-                let footerWrap = document.getElementById("footer_wrap");
-                
-                let introWrap = document.getElementById("intro_cont_wrap");
-                let placeWrap = document.getElementById("place_list_wrap");
-                
-                if(frontWrap) {
-
-                headerWrap.style.display = "initial";
-                frontWrap.style.display = "none";
-                    if(detailWrap) {
-                        detailWrap.style.display = "none";
-                    }
-                mapWrap.style.visibility = "visible";
-                menuWrap.style.display = "none";
-                footerWrap.style.display = "none";
-
-                placeWrap.style.display = "none";
-                introWrap.style.display = "none";
-                } else {
-                headerWrap.style.display = "initial";
-                    if(detailWrap) {
-                        detailWrap.style.display = "none";
-                    }
-                mapWrap.style.visibility = "visible";
-                menuWrap.style.display = "none";
-                footerWrap.style.display = "none";
-
-                placeWrap.style.display = "none";
-                introWrap.style.display = "none";
-
-                }
-            }
-            headerTitle.addEventListener("click", showMap);
+        function showHome() {
+            location.href = "home.php"
         }
+        headerTitle.addEventListener("click", showHome);
     }
     headerTitleClick();
-    
 
+    // function headerMenuClick() {
+
+    //     let headerMenu = document.getElementById("header_btn");
+    //     function showMenu() {
+    //         let headerWrap = document.getElementById("header_wrap");
+    //         // let frontWrap = document.getElementById("front_wrap");
+    //         // let detailWrap = document.getElementById("detail_wrap");
+    //         let mapWrap = document.getElementById("map_wrap");
+    //         let menuWrap = document.getElementById("menu_wrap");
+    //         let footerWrap = document.getElementById("footer_wrap");
+            
+    //         let introWrap = document.getElementById("intro_cont_wrap");
+    //         let placeWrap = document.getElementById("place_list_wrap");
+    //         if(frontWrap) {
+    //             if(menuWrap.style.display == "none") {
+    //                 headerWrap.style.display = "initial";
+    //                 menuWrap.style.display = "initial";
+    //                 frontWrap.style.display = "none";
+                    
+    //                 mapWrap.style.visibility = "hidden";
+    //                 footerWrap.style.display = "initial";
+    //                 introWrap.style.display = "none";
+    //                 placeWrap.style.display = "none";
+    //             } else {
+    //                 headerWrap.style.display = "initial";
+    //                 menuWrap.style.display = "none";
+    //                 frontWrap.style.display = "none";
+                
+    //                 mapWrap.style.visibility = "visible";
+    //                 footerWrap.style.display = "none";
+    //                 introWrap.style.display = "none";
+    //                 placeWrap.style.display = "none";
+    //             }
+
+    //         } else {
+    //             if(menuWrap.style.display == "none") {
+    //                 headerWrap.style.display = "initial";
+    //                 menuWrap.style.display = "initial";
+    //                 if(mapWrap) {
+    //                     mapWrap.style.visibility = "hidden";
+    //                     footerWrap.style.display = "initial";
+    //                     introWrap.style.display = "none";
+    //                     placeWrap.style.display = "none";
+    //                 }                    
+    //             } else {
+    //                 headerWrap.style.display = "initial";
+    //                 menuWrap.style.display = "none";
+    //                 if(mapWrap) {
+    //                     mapWrap.style.visibility = "visible";
+    //                     footerWrap.style.display = "none";
+    //                     introWrap.style.display = "none";
+    //                     placeWrap.style.display = "none";
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     headerMenu.addEventListener("click", showMenu);
+    // }
+    // headerMenuClick();
     function headerMenuClick() {
 
         let headerMenu = document.getElementById("header_btn");
         function showMenu() {
             let headerWrap = document.getElementById("header_wrap");
-            let frontWrap = document.getElementById("front_wrap");
-            // let detailWrap = document.getElementById("detail_wrap");
             let mapWrap = document.getElementById("map_wrap");
             let menuWrap = document.getElementById("menu_wrap");
             let footerWrap = document.getElementById("footer_wrap");
             
             let introWrap = document.getElementById("intro_cont_wrap");
             let placeWrap = document.getElementById("place_list_wrap");
-            if(frontWrap) {
-                if(menuWrap.style.display == "none") {
-                    headerWrap.style.display = "initial";
-                    menuWrap.style.display = "initial";
-                    frontWrap.style.display = "none";
-                    
+            
+            if(menuWrap.style.display == "none") {
+                headerWrap.style.display = "initial";
+                menuWrap.style.display = "initial";
+                if(mapWrap) {
                     mapWrap.style.visibility = "hidden";
                     footerWrap.style.display = "initial";
                     introWrap.style.display = "none";
                     placeWrap.style.display = "none";
-                } else {
-                    headerWrap.style.display = "initial";
-                    menuWrap.style.display = "none";
-                    frontWrap.style.display = "none";
-                
+                }                    
+            } else {
+                headerWrap.style.display = "initial";
+                menuWrap.style.display = "none";
+                if(mapWrap) {
                     mapWrap.style.visibility = "visible";
                     footerWrap.style.display = "none";
                     introWrap.style.display = "none";
                     placeWrap.style.display = "none";
                 }
-
-            } else {
-                if(menuWrap.style.display == "none") {
-                    headerWrap.style.display = "initial";
-                    menuWrap.style.display = "initial";
-                    if(mapWrap) {
-                        mapWrap.style.visibility = "hidden";
-                        footerWrap.style.display = "initial";
-                        introWrap.style.display = "none";
-                        placeWrap.style.display = "none";
-                    }                    
-                } else {
-                    headerWrap.style.display = "initial";
-                    menuWrap.style.display = "none";
-                    if(mapWrap) {
-                        mapWrap.style.visibility = "visible";
-                        footerWrap.style.display = "none";
-                        introWrap.style.display = "none";
-                        placeWrap.style.display = "none";
-                    }
-                }
-            }
+            } 
         }
         headerMenu.addEventListener("click", showMenu);
     }
@@ -277,30 +321,39 @@
 
 
 //****original lang func****//
+    // function langClick() {
+    //     function langChange() {
+    //         let koAll = document.querySelectorAll(".ko");
+    //         let enAll = document.querySelectorAll(".en");
+    //         let klang;
+    //         for(klang=0; klang < koAll.length; klang++) {
+    //             let koStatus = koAll[klang].style.display;
+    //             let elang;
+    //             for(elang=0; elang < enAll.length; elang++) {
+    //                 if(koStatus == "none") {
+    //                     koAll[klang].style.display = "initial";
+    //                     enAll[elang].style.display = "none";
+    //                 } else {
+    //                     koAll[klang].style.display = "none";
+    //                     enAll[elang].style.display = "initial";
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     document.getElementById("language_en").style.display = "none";
+    //     document.getElementById("lang_select").addEventListener("click", langChange);
+    // }
+    // langClick();
+//****original lang func end****//
+
     function langClick() {
-        function langChange() {
-            let koAll = document.querySelectorAll(".ko");
-            let enAll = document.querySelectorAll(".en");
-            let klang;
-            for(klang=0; klang < koAll.length; klang++) {
-                let koStatus = koAll[klang].style.display;
-                let elang;
-                for(elang=0; elang < enAll.length; elang++) {
-                    if(koStatus == "none") {
-                        koAll[klang].style.display = "initial";
-                        enAll[elang].style.display = "none";
-                    } else {
-                        koAll[klang].style.display = "none";
-                        enAll[elang].style.display = "initial";
-                    }
-                }
-            }
+        function showIndex() {
+            location.href = "index.php";
         }
-        document.getElementById("language_en").style.display = "none";
-        document.getElementById("lang_select").addEventListener("click", langChange);
+        // document.getElementById("language_en").style.display = "none";
+        document.getElementById("lang_select").addEventListener("click", showIndex);
     }
     langClick();
-//****original lang func end****//
 
 
 
