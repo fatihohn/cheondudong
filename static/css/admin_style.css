@@ -29,9 +29,11 @@
     background-clip: text;
 }
 
-/* #header_wrap #header_box #header_box_area .admin_header_lang {
-
-} */
+#header_wrap #header_box #header_box_area .admin_header_lang {
+position: relative;
+top: -40px;
+left: -50px;
+}
 
 
 /****menu****/
