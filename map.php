@@ -218,7 +218,7 @@ marker.properties.file +
 
 
 el.style.backgroundSize = 'cover';
-el.style.paddingBottom = '30px';
+el.style.borderBottom = '30px';
 el.style.width = marker.properties.iconSize[0] + 'px';
 el.style.height = marker.properties.iconSize[1] + 'px';
  
