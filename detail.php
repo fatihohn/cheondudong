@@ -40,8 +40,7 @@ $detailRef_en = "reference list";
             
         <section>
                 
-            <!-- front page: 전체화면, <천두동 동두천> 제목, 클릭하면 map으로 넘어감 -->
-            <?php include "front.php"; ?>
+            
             <!-- menu: 메뉴 내비 바 -->
             <?php include "menu.php"; ?>
 
@@ -119,5 +118,20 @@ $detailRef_en = "reference list";
         
         
         <?php include "jsGroup.php"; ?>
+
+        <script>
+            function detailInit() {
+                let headerWrap = document.getElementById("header_wrap");
+                let mapWrap = document.getElementById("map_wrap");
+                let menuWrap = document.getElementById("menu_wrap");
+                let footerWrap = document.getElementById("footer_wrap");
+
+                headerWrap.style.display = "initial";
+                mapWrap.style.visibility = "hidden";
+                menuWrap.style.display = "none";
+                footerWrap.style.display = "initial";
+            }
+            detailInit();
+        </script>
     </body>
 </html>
