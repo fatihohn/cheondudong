@@ -280,10 +280,11 @@
 
 
     function langClick() {
-        function langChange() {
+        function langChange(str) {
             function sessLangChange(str) {
                 location.href = "language_session.php?q=" + str;
             }
+            sessLangChange(str);
             let sessLang = "<?php echo $_SESSION['language'];?>";
             let koAll = document.querySelectorAll(".ko");
             let enAll = document.querySelectorAll(".en");
