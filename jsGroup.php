@@ -18,25 +18,26 @@
     // }
     // mapMarkerNameClick();
 
-    // function mapMarkerClick() {
-    //     let markerAll = document.querySelectorAll(".marker");
-    //     let mk;
-    //     for(mk=0; mk < markerAll.length; mk++) {
-    //         let markerId = markerAll[mk].id;
-    //         markerAll[mk].addEventListener("click", showDetailPlaceMap(markerId));
-    //         // showDetailPlaceMap(markerId);
-    //     }
-    // }
-    // mapMarkerClick();
-    function mapMarkerNameClick() {
-        let markerNameAll = document.querySelectorAll(".marker_name");
-        let mkname;
-        for(mkname=0; mkname < markerNameAll.length; mkname++) {
-            let markerNameId = markerNameAll[mkname].id;
-            markerNameAll[mkname].addEventListener("click", showDetailPlaceMap(markerNameId));
+    function mapMarkerClick() {
+        let markerAll = document.querySelectorAll(".marker");
+        let mk;
+        for(mk=0; mk < markerAll.length; mk++) {
+            let markerId = markerAll[mk].id;
+            markerAll[mk].addEventListener("click", showDetailPlaceMap(markerId));
+       
         }
     }
-    mapMarkerNameClick();
+    mapMarkerClick();
+
+    // function mapMarkerNameClick() {
+    //     let markerNameAll = document.querySelectorAll(".marker_name");
+    //     let mkname;
+    //     for(mkname=0; mkname < markerNameAll.length; mkname++) {
+    //         let markerNameId = markerNameAll[mkname].id;
+    //         markerNameAll[mkname].addEventListener("click", showDetailPlaceMap(markerNameId));
+    //     }
+    // }
+    // mapMarkerNameClick();
 
 
 //****대문****//
