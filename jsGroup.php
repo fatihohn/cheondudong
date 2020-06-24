@@ -283,6 +283,12 @@
             let enAll = document.querySelectorAll(".en");
             let elang;
             for(elang=0; elang < enAll.length; elang++) {
+                    koAll[klang].style.display = "initial";
+                    enAll[elang].style.display = "none";
+                    document.getElementById("language_en").style.display = "initial";
+                    document.getElementById("language_ko").style.display = "none";
+
+
                 if(sessLang == "language_en") {
                     koAll[klang].style.display = "none";
                     enAll[elang].style.display = "initial";
