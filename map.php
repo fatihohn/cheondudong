@@ -238,7 +238,7 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 var elNameKo = null;
 var elNameEn = null;
 
-if(elNameKo == null || elNameEn == null) {
+if(!elNameKo || !elNameEn) {
 
     el.addEventListener('click', function() {
     // el.addEventListener('mouseover', function() {
