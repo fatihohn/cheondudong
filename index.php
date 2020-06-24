@@ -21,15 +21,19 @@
                     <div id="front_title">
                         <form method="post" action="language_session.php">
                             <!-- <img src="static/img/front.png" alt="천두동"> -->
-                            <p>
-                                Language 
-                                <select name="language" required>
+                            <div>
+                                 
+                                <!-- <select name="language" required>
                                     <option value="ko">한국어</option>
                                     <option value="en">English</option>
-                                </select>
-                            </p>
-                            <!-- <input type="image" src="static/img/front.png" alt="Submit" /> -->
-                            <input type="submit" value="언어선택">
+                                </select> -->
+                                <input class='lang_btn' type='radio' id='ko_btn'name='language' value='ko' checked>
+                                <label for='on_btn'>한국어</label>
+                                <input class='lang_btn' type='radio' id='en_btn'name='language' value='en'>
+                                <label for='ok_btn'>English</label>
+                            </div>
+                            <input type="image" src="static/img/front.png" alt="Submit" />
+                            <!-- <input type="submit" value="언어선택"> -->
                         </form>
 
 
