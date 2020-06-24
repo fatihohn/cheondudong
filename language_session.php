@@ -15,6 +15,7 @@ if(isset($SESSION['language'])) {
     <?php
 } else {
     echo "session fail";
+    echo var_dump($_SESSION)
     echo error_log($conn);
 }
 ?>
