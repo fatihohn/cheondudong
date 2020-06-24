@@ -157,9 +157,9 @@
             elNameKo.style.position = 'relative';
             elNameKo.style.top = 'calc(100% - 30px)';
 
-            if(!document.querySelector(".marker_name")) {
+            // if(!document.querySelector(".marker_name")) {
+            // }
                 document.getElementById(marker.properties.place_id).appendChild(elNameKo);
-            }
         } else if(languageKo == "none") {
             var elNameEn = document.createElement('div');
 
@@ -178,9 +178,9 @@
             elNameEn.style.position = 'relative';
             elNameEn.style.top = 'calc(100% - 30px)';
 
-            if(!document.querySelector(".marker_name")) {
+            // if(!document.querySelector(".marker_name")) {
+            // }
                 document.getElementById(marker.properties.place_id).appendChild(elNameEn);
-            }
 
             let enAllMap = document.querySelectorAll(".en");
             let elangMap;
