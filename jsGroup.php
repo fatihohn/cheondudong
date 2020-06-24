@@ -59,6 +59,11 @@
             mapWrap.style.visibility = "visible";
             menuWrap.style.display = "none";
             footerWrap.style.display = "initial";
+
+            <?php 
+            session_start();
+            $_SESSION['language'] = "language_ko";
+            ?>
         }
         frontTitle.addEventListener("click", hideFront);
 
@@ -294,10 +299,10 @@
     function frontLang() {
         let sessLang = "<?php echo $_SESSION['language'];?>";
         let koAll = document.querySelectorAll(".ko");
-        let enAll = document.querySelectorAll(".en");
         let klang;
-        let elang;
         for(klang=0; klang < koAll.length; klang++) {
+            let enAll = document.querySelectorAll(".en");
+            let elang;
             for(elang=0; elang < enAll.length; elang++) {
                 if(sessLang == "language_ko") {
                     koAll[klang].style.display = "initial";
