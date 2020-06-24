@@ -5,7 +5,7 @@ session_start();
 <div id="header_wrap">
     <div id="header_box">
         <div id="header_box_area">
-            <div id="lang_select" class="front_lang">
+            <div id="lang_select" class="header_lang">
                 <div id="language_en" class="tooling lang_selector">
                     English
                 </div>
