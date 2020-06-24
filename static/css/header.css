@@ -232,19 +232,19 @@
     display: none;
 } */
 
-#place_cont_wrap #place_cont {
+#place_list_wrap #place_list {
     /* text-indent: 1rem; */
     color: #555;
 }
 
-#place_cont_wrap #place_cont #place_ul {
+#place_list_wrap #place_list #place_ul {
     width: 100%;
     height: auto;
     /* overflow: hidden; */
     position: relative;
 }
 
-#place_cont_wrap #place_cont #place_ul .place_li {
+#place_list_wrap #place_list #place_ul .place_li {
     margin-right: 5px;
     margin-left: 5px;
     margin-bottom: 20px;
