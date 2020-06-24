@@ -218,7 +218,6 @@ marker.properties.file +
 
 
 el.style.backgroundSize = 'cover';
-el.style.borderBottom = '30px';
 el.style.width = marker.properties.iconSize[0] + 'px';
 el.style.height = marker.properties.iconSize[1] + 'px';
  
@@ -265,7 +264,7 @@ el.style.height = marker.properties.iconSize[1] + 'px';
             elNameKo.style.whiteSpace = 'nowrap';
             elNameKo.style.wordBreak = 'keep-all';
             elNameKo.style.position = 'relative';
-            elNameKo.style.top = '100%';
+            elNameKo.style.top = 'calc(100% - 30px)';
             // elNameKo.style.zIndex = '999';
 
             if(!document.getElementById("marker_name")) {
@@ -288,7 +287,7 @@ el.style.height = marker.properties.iconSize[1] + 'px';
             elNameEn.style.whiteSpace = 'nowrap';
             elNameEn.style.wordBreak = 'keep-all';
             elNameEn.style.position = 'relative';
-            elNameEn.style.top = '100%';
+            elNameEn.style.top = 'calc(100% - 30px)';
             // elNameEn.style.zIndex = '999';
 
             if(!document.getElementById("marker_name")) {
@@ -363,7 +362,7 @@ trackUserLocation: true
         let sc;
         for(sc=0; sc < smallCubeAll.length; sc++) {
             smallCubeAll[sc].style.width = "60px";
-            smallCubeAll[sc].style.height = "60px";
+            smallCubeAll[sc].style.height = "calc(60px + 30px)";
             smallCubeAll[sc].style.backgroundSize = "cover";
             smallCubeAll[sc].style.cursor = "pointer";
         }
@@ -371,7 +370,7 @@ trackUserLocation: true
         let mc;
         for(mc=0; mc < middleCubeAll.length; mc++) {
             middleCubeAll[mc].style.width = "80px";
-            middleCubeAll[mc].style.height = "80px";
+            middleCubeAll[mc].style.height = "calc(80px + 30px)";
             middleCubeAll[mc].style.backgroundSize = "cover";
             middleCubeAll[mc].style.cursor = "pointer";
         }
@@ -380,7 +379,7 @@ trackUserLocation: true
         let sh;
         for(sh=0; sh < smallHoriAll.length; sh++) {
             smallHoriAll[sh].style.width = "80px";
-            smallHoriAll[sh].style.height = "50px";
+            smallHoriAll[sh].style.height = "calc(50px + 30px)";
             smallHoriAll[sh].style.backgroundSize = "cover";
             smallHoriAll[sh].style.cursor = "pointer";
         }
@@ -388,7 +387,7 @@ trackUserLocation: true
         let mh;
         for(mh=0; mh < middleHoriAll.length; mh++) {
             middleHoriAll[mh].style.width = "108px";
-            middleHoriAll[mh].style.height = "60px";
+            middleHoriAll[mh].style.height = "calc(60px + 30px)";
             middleHoriAll[mh].style.backgroundSize = "cover";
             middleHoriAll[mh].style.cursor = "pointer";
         }
@@ -396,7 +395,7 @@ trackUserLocation: true
         let bh;
         for(bh=0; bh < bigHoriAll.length; bh++) {
             bigHoriAll[bh].style.width = "160px";
-            bigHoriAll[bh].style.height = "100px";
+            bigHoriAll[bh].style.height = "calc(100p + 30px)x";
             bigHoriAll[bh].style.backgroundSize = "cover";
             bigHoriAll[bh].style.cursor = "pointer";
         }
@@ -405,7 +404,7 @@ trackUserLocation: true
         let sp;
         for(sp=0; sp < smallPanoAll.length; sp++) {
             smallPanoAll[sp].style.width = "80px";
-            smallPanoAll[sp].style.height = "40px";
+            smallPanoAll[sp].style.height = "calc(40px + 30px)";
             smallPanoAll[sp].style.backgroundSize = "cover";
             smallPanoAll[sp].style.cursor = "pointer";
         }
@@ -413,7 +412,7 @@ trackUserLocation: true
         let mp;
         for(mp=0; mp < middlePanoAll.length; mp++) {
             middlePanoAll[mp].style.width = "120px";
-            middlePanoAll[mp].style.height = "60px";
+            middlePanoAll[mp].style.height = "calc(60px + 30px)";
             middlePanoAll[mp].style.backgroundSize = "cover";
             middlePanoAll[mp].style.cursor = "pointer";
         }
@@ -422,7 +421,7 @@ trackUserLocation: true
         let lp;
         for(lp=0; lp < longPanoAll.length; lp++) {
             longPanoAll[lp].style.width = "160px";
-            longPanoAll[lp].style.height = "60px";
+            longPanoAll[lp].style.height = "calc(60px + 30px)";
             longPanoAll[lp].style.backgroundSize = "cover";
             longPanoAll[lp].style.cursor = "pointer";
         }
