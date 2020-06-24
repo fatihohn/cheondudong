@@ -247,14 +247,14 @@
     }
     menuPlaceLiClick();
     
-    function mapPlaceLiClick() {
-        let placeLiAll = document.querySelectorAll(".marker_name");
-        if(placeLiAll) {
-            let pl;
-            for(pl=0; pl < placeLiAll.length; pl++) {
-                placeLiAll[pl].showDetailPlace(this.id);
-            }
-        }
-    }
-    mapPlaceLiClick();
+    // function mapPlaceLiClick() {
+    //     let placeLiAll = document.querySelectorAll(".marker_name");
+    //     if(placeLiAll) {
+    //         let pl;
+    //         for(pl=0; pl < placeLiAll.length; pl++) {
+    //             placeLiAll[pl].showDetailPlace(this.id);
+    //         }
+    //     }
+    // }
+    // mapPlaceLiClick();
 </script>
