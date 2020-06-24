@@ -310,7 +310,7 @@
         function langChange(str) {
             location.href = "language_session.php?q=" + str;
         }
-        document.getElementById("language_ko").style.display = "none";
+        // document.getElementById("language_ko").style.display = "none";
         // document.getElementById("lang_select").addEventListener("click", function() {langChange(this.id)});
         let langSelectorAll = document.querySelectorAll(".lang_selector");
         let langs;
