@@ -305,8 +305,8 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 
     // el.addEventListener('mouseout', function() {
     if (document.getElementById('marker_name')) {
+        document.getElementById('marker_name').addEventListener('mouseout', function() {
         var elShown = document.getElementById('marker_name');
-        elShown.addEventListener('click', function() {
             elShown.remove();
         });
     }    
