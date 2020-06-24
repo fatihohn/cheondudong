@@ -122,6 +122,12 @@ $detailRef_en = "reference list";
                             </div>
                         </div>
                         <div id="detail_img">
+                            <p class="img_title ko ddobag">
+                                이미지
+                            </p>
+                            <p class="img_title en ddobag">
+                                Images
+                            </p>
                             <?php echo $detailImg;?>
                         </div>
                         <div id="detail_work">
