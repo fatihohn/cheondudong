@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <div id="header_wrap">
     <div id="header_box">
         <div id="header_box_area">
