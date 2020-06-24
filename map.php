@@ -293,7 +293,7 @@ if(elNameKo == null || elNameEn == null) {
             }
         }
     });
-} else {
+} else if(elNameKo || elNameEn) {
     // el.addEventListener('mouseout', function() {
     el.addEventListener('click', function() {
         // var elShownKo = document.getElementById('marker_name_ko');
@@ -301,7 +301,6 @@ if(elNameKo == null || elNameEn == null) {
         // elShownKo.remove();
         // elShownEn.remove();
 
-        
         var elShown = document.getElementById('marker_name');
         elShown.remove();
     });
