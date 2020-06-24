@@ -123,10 +123,12 @@ $detailRef_en = "reference list";
             function detailInit() {
                 let headerWrap = document.getElementById("header_wrap");
                 let mapWrap = document.getElementById("map_wrap");
+                let detailWrap = document.getElementById("detail_wrap");
                 let menuWrap = document.getElementById("menu_wrap");
                 let footerWrap = document.getElementById("footer_wrap");
 
                 headerWrap.style.display = "initial";
+                detailWrap.style.display = "initial";
                 mapWrap.style.visibility = "hidden";
                 menuWrap.style.display = "none";
                 footerWrap.style.display = "initial";
