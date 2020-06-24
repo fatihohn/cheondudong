@@ -18,14 +18,14 @@
             echo $_SESSION['username'];
                         
             ?>님<br> [LogOut]</h4> 
-            <div id="lang_select" class="header_lang">
+            <span id="lang_select" class="header_lang admin_header_lang">
                 <div id="language_en" class="tooling lang_selector">
                     English
                 </div>
                 <div id="language_ko" class="tooling lang_selector">
                     한국어
                 </div>
-            </div>
+            </span>
         </div>
             
             <?php
