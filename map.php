@@ -235,68 +235,83 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 // showMarkerPlace();
 // });
 
-// el.addEventListener('click', function() {
-el.addEventListener('mouseover', function() {
-    var languageKo = document.getElementById("language_ko").style.display;
-    var languageEn = document.getElementById("language_en").style.display;
 
-    if(languageEn == "none") {
-        var elNameKo = document.createElement('div');
+var elNameKo;
+var elNameEn;
 
-        elNameKo.id = 'marker_name';
-        elNameKo.className = 'ko';
-        elNameKo.innerHTML = marker.properties.message_ko;
-        elNameKo.style.width = '100%';
-        elNameKo.style.height = '20px';
-        elNameKo.style.textAlign = 'center';
-        elNameKo.style.fontSize = '2rem';
-        elNameKo.style.fontFamily = '또박또박';
-        elNameKo.style.overflowX = 'visible';
-        elNameKo.style.overflowY = 'visible';
-        elNameKo.style.whiteSpace = 'nowrap';
-        elNameKo.style.wordBreak = 'keep-all';
-        elNameKo.style.position = 'relative';
-        elNameKo.style.top = '100%';
-        elNameKo.style.zIndex = '999';
+if(!elNameKo || !emNameEn) {
+    el.addEventListener('click', function() {
+    // el.addEventListener('mouseover', function() {
+        var languageKo = document.getElementById("language_ko").style.display;
+        var languageEn = document.getElementById("language_en").style.display;
+        el.style.zIndex = "999";
+        if(languageEn == "none") {
+            var elNameKo = document.createElement('div');
 
-        document.getElementById(marker.properties.place_id).appendChild(elNameKo);
-    } else if(languageKo == "none") {
-        var elNameEn = document.createElement('div');
+            elNameKo.id = 'marker_name';
+            elNameKo.name = marker.properties.place_id;
+            elNameKo.className = 'ko';
+            elNameKo.innerHTML = marker.properties.message_ko;
+            elNameKo.style.width = '100%';
+            elNameKo.style.height = '20px';
+            elNameKo.style.textAlign = 'center';
+            elNameKo.style.fontSize = '2rem';
+            elNameKo.style.fontFamily = '또박또박';
+            elNameKo.style.overflowX = 'visible';
+            elNameKo.style.overflowY = 'visible';
+            elNameKo.style.whiteSpace = 'nowrap';
+            elNameKo.style.wordBreak = 'keep-all';
+            elNameKo.style.position = 'relative';
+            elNameKo.style.top = '100%';
+            // elNameKo.style.zIndex = '999';
 
-        elNameEn.id = 'marker_name';
-        elNameEn.className = 'en';
-        elNameEn.innerHTML = marker.properties.message_en;
-        elNameEn.style.width = '100%';
-        elNameEn.style.height = '20px';
-        elNameEn.style.textAlign = 'center';
-        elNameEn.style.fontSize = '2rem';
-        elNameEn.style.fontFamily = '또박또박';
-        elNameEn.style.overflowX = 'visible';
-        elNameEn.style.overflowY = 'visible';
-        elNameEn.style.whiteSpace = 'nowrap';
-        elNameEn.style.wordBreak = 'keep-all';
-        elNameEn.style.position = 'relative';
-        elNameEn.style.top = '100%';
-        elNameEn.style.zIndex = '999';
+            document.getElementById(marker.properties.place_id).appendChild(elNameKo);
+        } else if(languageKo == "none") {
+            var elNameEn = document.createElement('div');
 
-        document.getElementById(marker.properties.place_id).appendChild(elNameEn);
-        
-        let enAllMap = document.querySelectorAll(".en");
-        let elangMap;
-        for(elangMap=0; elangMap < enAllMap.length; elangMap++) {
-            enAllMap[elangMap].style.display = "initial";
+            elNameEn.id = 'marker_name';
+            elNameEn.name = marker.properties.place_id;
+            elNameEn.className = 'en';
+            elNameEn.innerHTML = marker.properties.message_en;
+            elNameEn.style.width = '100%';
+            elNameEn.style.height = '20px';
+            elNameEn.style.textAlign = 'center';
+            elNameEn.style.fontSize = '2rem';
+            elNameEn.style.fontFamily = '또박또박';
+            elNameEn.style.overflowX = 'visible';
+            elNameEn.style.overflowY = 'visible';
+            elNameEn.style.whiteSpace = 'nowrap';
+            elNameEn.style.wordBreak = 'keep-all';
+            elNameEn.style.position = 'relative';
+            elNameEn.style.top = '100%';
+            // elNameEn.style.zIndex = '999';
+
+            document.getElementById(marker.properties.place_id).appendChild(elNameEn);
+            
+            let enAllMap = document.querySelectorAll(".en");
+            let elangMap;
+            for(elangMap=0; elangMap < enAllMap.length; elangMap++) {
+                enAllMap[elangMap].style.display = "initial";
+            }
         }
-    }
-});
+    });
 
-el.addEventListener('mouseout', function() {
-    // var elShownKo = document.getElementById('marker_name_ko');
-    // var elShownEn = document.getElementById('marker_name_en');
-    // elShownKo.remove();
-    // elShownEn.remove();
-    var elShown = document.getElementById('marker_name');
-    elShown.remove();
-});
+} else {
+    // el.addEventListener('mouseout', function() {
+    el.addEventListener('click', function() {
+        // var elShownKo = document.getElementById('marker_name_ko');
+        // var elShownEn = document.getElementById('marker_name_en');
+        // elShownKo.remove();
+        // elShownEn.remove();
+
+        
+        var elShown = document.getElementById('marker_name');
+        elShown.remove();
+    });
+
+}
+
+
 
 //****marker func end****//
  
