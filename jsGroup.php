@@ -321,13 +321,13 @@
             }
         }
         // document.getElementById("language_ko").style.display = "none";
-    //     document.getElementById("lang_select").addEventListener("click", langChange);
-    let langSelectorAll = document.querySelectorAll(".lang_selector");
-        let langs;
-        for(langs=0; langs < langSelectorAll.length; langs++) {
-            // langSelectorAll[langs].addEventListener("click", function() {langChange(this.id)});
-            langSelectorAll[langs].addEventListener("click", langChange);
-        }
+        document.getElementById("lang_select").addEventListener("click", langChange);
+    // let langSelectorAll = document.querySelectorAll(".lang_selector");
+    //     let langs;
+    //     for(langs=0; langs < langSelectorAll.length; langs++) {
+    //         // langSelectorAll[langs].addEventListener("click", function() {langChange(this.id)});
+    //         langSelectorAll[langs].addEventListener("click", langChange);
+    //     }
     
     }
     langClick();
