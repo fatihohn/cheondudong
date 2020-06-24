@@ -60,10 +60,13 @@
             menuWrap.style.display = "none";
             footerWrap.style.display = "initial";
 
-            <?php 
-            session_start();
-            $_SESSION['language'] = "language_ko";
-            ?>
+            let sessInit = "<?php echo $_SESSION['language'];?>";
+            if(!sessInit) {
+                <?php 
+                session_start();
+                $_SESSION['language'] = "language_ko";
+                ?>
+            }
         }
         frontTitle.addEventListener("click", hideFront);
 
