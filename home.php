@@ -46,6 +46,7 @@
                 mapWrap.style.visibility = "visible";
                 footerWrap.style.display = "none";
             }
+            homeInit();
         </script>
     </body>
 </html>
