@@ -249,30 +249,61 @@
     // }
     // menuDetailClick();
 
+    // function langClick() {
+    //     function langChange() {
+    //         let koAll = document.querySelectorAll(".ko");
+    //         let enAll = document.querySelectorAll(".en");
+    //         let klang;
+    //         for(klang=0; klang < koAll.length; klang++) {
+    //             let koStatus = koAll[klang].style.display;
+    //             let elang;
+    //             for(elang=0; elang < enAll.length; elang++) {
+    //                 if(koStatus == "none") {
+    //                     koAll[klang].style.display = "initial";
+    //                     enAll[elang].style.display = "none";
+    //                 } else {
+    //                     koAll[klang].style.display = "none";
+    //                     enAll[elang].style.display = "initial";
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     document.getElementById("language_en").style.display = "none";
+    //     document.getElementById("lang_select").addEventListener("click", langChange);
+    // }
+    // langClick();
+
+
     function langClick() {
-        function langChange() {
-            let koAll = document.querySelectorAll(".ko");
-            let enAll = document.querySelectorAll(".en");
-            let klang;
-            for(klang=0; klang < koAll.length; klang++) {
-                let koStatus = koAll[klang].style.display;
-                let elang;
-                for(elang=0; elang < enAll.length; elang++) {
-                    if(koStatus == "none") {
-                        koAll[klang].style.display = "initial";
-                        enAll[elang].style.display = "none";
-                    } else {
-                        koAll[klang].style.display = "none";
-                        enAll[elang].style.display = "initial";
-                    }
+        function langChange(str) {
+            location.href = "language_session.php?q=" + str;
+        }
+        document.getElementById("language_en").style.display = "none";
+        document.getElementById("lang_select").addEventListener("click", function() {
+            langChange(this.id)
+            });
+    }
+    langClick();
+
+    function frontLang() {
+        let sessLang = "<?php echo $_SESSION['language'];?>";
+        let koAll = document.querySelectorAll(".ko");
+        let enAll = document.querySelectorAll(".en");
+        let klang;
+        let elang;
+        for(klang=0; klang < koAll.length; klang++) {
+            for(elang=0; elang < enAll.length; elang++) {
+                if(sessLang == "language_ko") {
+                    koAll[klang].style.display = "initial";
+                    enAll[elang].style.display = "none";
+                } else {
+                    koAll[klang].style.display = "none";
+                    enAll[elang].style.display = "initial";
                 }
             }
         }
-        document.getElementById("language_en").style.display = "none";
-        document.getElementById("lang_select").addEventListener("click", langChange);
     }
-    langClick();
-    
+    frontLang();
 
     
 
