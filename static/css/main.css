@@ -10,7 +10,8 @@
     z-index: 999;
 }
 #front_wrap #front_box {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 600px;
     margin: 0 auto;
     text-align: center;
@@ -203,4 +204,11 @@ z-index: 80;
 }
 #map .mapboxgl-ctrl.mapboxgl-ctrl-attrib {
     display: none;
+}
+
+
+@media all and (max-width: 801px) {
+}
+@media all and (max-width: 481px) {
+    
 }
