@@ -304,10 +304,12 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 // }
 
     // el.addEventListener('mouseout', function() {
-    document.getElementById("marker_name").addEventListener('mouseout', function() {
-        var elShown = document.getElementById('marker_name');
-        elShown.remove();
-    });
+    var elShown = document.getElementById('marker_name');
+    if (elShown) {
+        elShown.addEventListener('mouseout', function() {
+            elShown.remove();
+        });
+    }    
 
 
 //****marker func end****//
