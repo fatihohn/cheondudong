@@ -42,6 +42,18 @@
     }
     mapMarkerClick();
 
+    function menuPlaceLiClick() {
+        let menuPlaceLiAll = document.querySelectorAll(".place_li");
+        let mpl;
+        for(mpl=0; mpl < menuPlaceLiAll.length; mpl++) {
+            let markerId = menuPlaceLiAll[mpl].id;
+            menuPlaceLiAll[mpl].addEventListener("click", function() {
+                showDetailPlaceMenu(this.id)
+            });
+        }
+    }
+    menuPlaceLiClick();
+
     // function mapMarkerNameClick() {
     //     let markerNameAll = document.querySelectorAll(".marker_name");
     //     let mkname;
