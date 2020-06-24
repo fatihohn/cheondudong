@@ -8,15 +8,24 @@
         location.href = "detail.php?q=" + placeIdMenu;
     }
 
-    function mapMarkerNameClick() {
-        let markerNameAll = document.querySelectorAll(".marker_name");
-        let mkname;
-        for(mkname=0; mkname < markerNameAll.length; mkname++) {
-            let markerNameId = markerNameAll[mkname].id;
-            showDetailPlaceMap(markerNameId);
+    // function mapMarkerNameClick() {
+    //     let markerNameAll = document.querySelectorAll(".marker_name");
+    //     let mkname;
+    //     for(mkname=0; mkname < markerNameAll.length; mkname++) {
+    //         let markerNameId = markerNameAll[mkname].id;
+    //         showDetailPlaceMap(markerNameId);
+    //     }
+    // }
+    // mapMarkerNameClick();
+    function mapMarkerClick() {
+        let markerAll = document.querySelectorAll(".marker");
+        let mk;
+        for(mk=0; mk < markerAll.length; mk++) {
+            let markerId = markerAll[mk].id;
+            showDetailPlaceMap(markerId);
         }
     }
-    mapMarkerNameClick();
+    mapMarkerClick();
 
 
 //****대문****//
