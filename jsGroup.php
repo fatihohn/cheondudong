@@ -1,4 +1,29 @@
 <script>
+    function frontLang() {
+        let sessLang = "<?php echo $_SESSION['language'];?>";
+        let koAll = document.querySelectorAll(".ko");
+        let enAll = document.querySelectorAll(".en");
+        let klang;
+        let elang;
+        for(klang=0; klang < koAll.length; klang++) {
+            // let koStatus = koAll[klang].style.display;
+            for(elang=0; elang < enAll.length; elang++) {
+                if(sessLang == "ko") {
+                // if(koStatus == "none") {
+                    koAll[klang].style.display = "initial";
+                    enAll[elang].style.display = "none";
+                } else {
+                    koAll[klang].style.display = "none";
+                    enAll[elang].style.display = "initial";
+                }
+            }
+        }
+    }
+    frontLang();
+
+
+
+
 
 //****표시하기****//
     function showDetailPlaceMap(str) {
@@ -224,7 +249,7 @@
             if(menuWrap.style.display == "none") {
                 headerWrap.style.display = "initial";
                 menuWrap.style.display = "initial";
-                if(mapWrap) {
+                if(mapWrap && placeWrap) {
                     mapWrap.style.visibility = "hidden";
                     footerWrap.style.display = "initial";
                     introWrap.style.display = "none";
@@ -233,7 +258,7 @@
             } else {
                 headerWrap.style.display = "initial";
                 menuWrap.style.display = "none";
-                if(mapWrap) {
+                if(mapWrap && placeWrap) {
                     mapWrap.style.visibility = "visible";
                     footerWrap.style.display = "none";
                     introWrap.style.display = "none";
