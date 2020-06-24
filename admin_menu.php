@@ -77,14 +77,14 @@ $placeTitle = "임시 장소 제목"
                     </a>
                     
                 </li>
-                <li id="menu_detail" class="menu_list_item">
+                <!-- <li id="menu_detail" class="menu_list_item">
                     <a id="menu_detail_btn">
                         <h2 class="ddobag">
                             장소 세부 임시버튼
                         </h2>
                     </a>
                     
-                </li>
+                </li> -->
             </ul>
             <div id="lang_select" class="menu_lang">
                 <div id="language_ko" class="ko">
