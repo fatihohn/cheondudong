@@ -157,7 +157,7 @@
             elNameKo.style.position = 'relative';
             elNameKo.style.top = 'calc(100% - 30px)';
 
-            if(!document.getElementById("marker_name")) {
+            if(!document.querySelector(".marker_name")) {
                 document.getElementById(marker.properties.place_id).appendChild(elNameKo);
             }
         } else if(languageKo == "none") {
@@ -178,7 +178,7 @@
             elNameEn.style.position = 'relative';
             elNameEn.style.top = 'calc(100% - 30px)';
 
-            if(!document.getElementById("marker_name")) {
+            if(!document.querySelector(".marker_name")) {
                 document.getElementById(marker.properties.place_id).appendChild(elNameEn);
             }
 

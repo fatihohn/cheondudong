@@ -49,3 +49,19 @@ if($resultPlace->num_rows > 0) {
 }
 
 ?>
+
+<script>
+
+function showDetailPlace(str) {
+    location.href = "detail.php?q=" + str;
+}
+
+
+    let placeLiAll = document.querySelectorAll(".place_li");
+    if(placeLiAll) {
+        let pl;
+        for(pl=0; pl < placeLiAll.length; pl++) {
+            placeLiAll[pl].showDetailPlace(this.id);
+        }
+    }
+</script>

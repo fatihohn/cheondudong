@@ -1,4 +1,10 @@
 <script>
+//****표시하기****//
+    function showDetailPlace(str) {
+        location.href = "detail.php?q=" + str;
+    }
+
+
 //****대문****//
     function frontTitleClick() {
 
@@ -228,4 +234,27 @@
     langClick();
     
 
+    
+
+    function menuPlaceLiClick() {
+        let placeLiAll = document.querySelectorAll(".place_li");
+        if(placeLiAll) {
+            let pl;
+            for(pl=0; pl < placeLiAll.length; pl++) {
+                placeLiAll[pl].showDetailPlace(this.id);
+            }
+        }
+    }
+    menuPlaceLiClick();
+    
+    function mapPlaceLiClick() {
+        let placeLiAll = document.querySelectorAll(".marker_name");
+        if(placeLiAll) {
+            let pl;
+            for(pl=0; pl < placeLiAll.length; pl++) {
+                placeLiAll[pl].showDetailPlace(this.id);
+            }
+        }
+    }
+    mapPlaceLiClick();
 </script>
