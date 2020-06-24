@@ -2,12 +2,23 @@
 
 //****표시하기****//
     function showDetailPlaceMap(str) {
-        location.href = "detail.php?q=" + str;
+        let adminHeader = document.getElementById("header_ad_title");
+        if(!adminHeader) {
+            location.href = "detail.php?q=" + str;
+        } else {
+            location.href = "admin_detail.php?q=" + str;
+        }
     }
     function showDetailPlaceMenu(str) {
+        let adminHeader = document.getElementById("header_ad_title");
         let placeIdMenu = str.split("_");
-        location.href = "detail.php?q=" + placeIdMenu;
+        if(!adminHeader) {
+            location.href = "detail.php?q=" + placeIdMenu;
+        } else {
+            location.href = "admin_detail.php?q=" + placeIdMenu;
+        }
     }
+    
 
     // function mapMarkerNameClick() {
     //     let markerNameAll = document.querySelectorAll(".marker_name");
