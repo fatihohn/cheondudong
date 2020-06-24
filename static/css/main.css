@@ -85,6 +85,7 @@ z-index: 80;
     margin: 0 auto;
     margin-top: 120px;
     color: #555;
+    padding: 15px;
 }
 
 #detail_wrap #detail_box #detail_marker{
@@ -121,11 +122,13 @@ z-index: 80;
     display: grid;
 }
 #detail_wrap #detail_box #detail_point .detail_address {
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
     font-weight: 600;
+    font-family: "또박또박";
+    font-size: 1rem;
 }
 #detail_wrap #detail_box #detail_point .detail_coord {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     font-weight: 300;
     /* line-height: 15px; */
 }
