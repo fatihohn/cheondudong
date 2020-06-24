@@ -7,7 +7,7 @@ $_SESSION['language'] = $language;
 // if(isset($SESSION['language'])) {
     ?>
     <script>
-        location.replace("./index.php");
+        location.href = "./index.php";
     </script>
     <?php
 // }
