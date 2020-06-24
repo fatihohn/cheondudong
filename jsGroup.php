@@ -11,7 +11,7 @@
     }
     function showDetailPlaceMenu(str) {
         let adminHeader = document.getElementById("header_ad_title");
-        let placeIdMenu = str.split("_");
+        let placeIdMenu = str.split("_")[1];
         if(!adminHeader) {
             location.href = "detail.php?q=" + placeIdMenu;
         } else {
