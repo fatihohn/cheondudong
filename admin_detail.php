@@ -1,22 +1,61 @@
 <?php
 session_start();
 
+include "cdd_db_conn.php";
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+// $sqlPlace = "SELECT * FROM places ORDER BY ko_title DESC";
+// $resultPlace = $conn->query($sqlPlace) or die($conn->error);
+
+$q = intval($_GET['q']);
+$sqlPlaceDetail = "SELECT * FROM places WHERE id = $q";
+
+$stmt = mysqli_stmt_init($conn);
+    if (!mysqli_stmt_prepare($stmt, $sqlPlaceDetail)) {
+            // echo "sqlPlaceDetail error";
+    } else {
+            // mysqli_stmt_bind_param($stmt, "s", $author);
+            mysqli_stmt_execute($stmt);
+            $resultPlaceDetail = mysqli_stmt_get_result($stmt);
+    }
+
+$rowPlaceDetail = $resultPlaceDetail->fetch_assoc();
+
+$detailTitle = $rowPlaceDetail['ko_title'];
+$detailTitle_en = $rowPlaceDetail['en_title'];
+$detailMarker = $rowPlaceDetail['mkimg_dir'];
+$detailAddress = $rowPlaceDetail['ko_address'];
+$detailAddress_en = $rowPlaceDetail['en_address'];
+$detailCoord = $rowPlaceDetail['lat'].", ".$rowPlaceDetail['lng'];
+$detailCont = $rowPlaceDetail['ko_cont']
+$detailCont_en = $rowPlaceDetail['en_cont']
 
 
-$detailTitle = "임시 제목";
-$detailTitle_en = "Title";
-$detailMarker = "임시 마커 이미지 링크";
-$detailAddress = "임시 주소";
-$detailAddress_en = "Address";
-$detailCoord = "임시 위치 == 입력 시 위도 경도 좌표 정보 획득";
-$detailCont = "임시 설명 및 이미지 == 스마트에디터";
-$detailCont_en = "detail contents.";
 $detailImg = "이미지";
 $detailImg_dir = "이미지 경로";
 $detailWork = "임시 관련작품 == 리스트 == 입력 시 리스트로 변환";
 $detailWork_en = "works list";
 $detailRef = "임시 참고자료 == 리스트 == 입력 시 리스트로 변환";
 $detailRef_en = "reference list";
+
+
+
+
+// $detailTitle = "임시 제목";
+// $detailTitle_en = "Title";
+// $detailMarker = "임시 마커 이미지 링크";
+// $detailAddress = "임시 주소";
+// $detailAddress_en = "Address";
+// $detailCoord = "임시 위치 == 입력 시 위도 경도 좌표 정보 획득";
+// $detailCont = "임시 설명 및 이미지 == 스마트에디터";
+// $detailCont_en = "detail contents.";
+// $detailImg = "이미지";
+// $detailImg_dir = "이미지 경로";
+// $detailWork = "임시 관련작품 == 리스트 == 입력 시 리스트로 변환";
+// $detailWork_en = "works list";
+// $detailRef = "임시 참고자료 == 리스트 == 입력 시 리스트로 변환";
+// $detailRef_en = "reference list";
 
 ?>
 
