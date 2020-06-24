@@ -28,7 +28,8 @@
                                     <option value="en">English</option>
                                 </select>
                             </p>
-                            <input type="image" src="static/img/front.png" alt="Submit" />
+                            <!-- <input type="image" src="static/img/front.png" alt="Submit" /> -->
+                            <input type="submit" value="언어선택">
                         </form>
 
 

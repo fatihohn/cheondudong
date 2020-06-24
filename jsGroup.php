@@ -252,17 +252,18 @@
     function menuIntroClick() {
 
         let menuIntro = document.getElementById("menu_intro_btn");
-            let introWrap = document.getElementById("intro_cont_wrap");
-        function showIntro() {
-
-            if(introWrap.style.display == "none") {
-                introWrap.style.display = "initial";
-            } else {
-                introWrap.style.display = "none";
+        let introWrap = document.getElementById("intro_cont_wrap");
+        if(menuIntro && introWrap) {
+            function showIntro() {
+                if(introWrap.style.display == "none") {
+                    introWrap.style.display = "initial";
+                } else {
+                    introWrap.style.display = "none";
+                }
             }
+            introWrap.style.display = "none";
+            menuIntro.addEventListener("click", showIntro);
         }
-                introWrap.style.display = "none";
-        menuIntro.addEventListener("click", showIntro);
     }
     menuIntroClick();
 
