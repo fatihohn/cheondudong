@@ -1,7 +1,11 @@
 <script>
 //****표시하기****//
-    function showDetailPlace(str) {
+    function showDetailPlaceMap(str) {
         location.href = "detail.php?q=" + str;
+    }
+    function showDetailPlaceMenu(str) {
+        let placeIdMenu = str.split("_");
+        location.href = "detail.php?q=" + placeIdMenu;
     }
 
 
