@@ -274,7 +274,7 @@
     //     document.getElementById("lang_select").addEventListener("click", langChange);
     // }
     // langClick();
-    
+
     function frontLang() {
         let sessLang = "<?php echo $_SESSION['language'];?>";
         let koAll = document.querySelectorAll(".ko");
@@ -289,7 +289,7 @@
                 } else if(sessLang == "language_en") {
                     koAll[klang].style.display = "none";
                     enAll[elang].style.display = "initial";
-                } else {
+                } else if(sessLang == "language_ko") {
                     koAll[klang].style.display = "initial";
                     enAll[elang].style.display = "none";
                 }
