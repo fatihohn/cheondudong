@@ -399,7 +399,7 @@ trackUserLocation: true
         let bh;
         for(bh=0; bh < bigHoriAll.length; bh++) {
             bigHoriAll[bh].style.width = "160px";
-            bigHoriAll[bh].style.height = "calc(100p + 40px)x";
+            bigHoriAll[bh].style.height = "calc(100px + 40px)";
             bigHoriAll[bh].style.backgroundSize = "contain";
             bigHoriAll[bh].style.backgroundRepeat = "no-repeat";
             bigHoriAll[bh].style.cursor = "pointer";
