@@ -1,4 +1,34 @@
 <script>
+    function setLang() {
+        let sessLang = "<?php echo $_SESSION['language'];?>";
+            let koAll = document.querySelectorAll(".ko");
+            let enAll = document.querySelectorAll(".en");
+            let klang;
+            for(klang=0; klang < koAll.length; klang++) {
+                let koStatus = koAll[klang].style.display;
+                let elang;
+                for(elang=0; elang < enAll.length; elang++) {
+                    if(koStatus == "none") {
+                        if (sessLang == "language_ko") {
+                            koAll[klang].style.display = "initial";
+                            enAll[elang].style.display = "none";
+                        } else {
+                            koAll[klang].style.display = "none";
+                            enAll[elang].style.display = "initial";
+                        }
+                    } else {
+                        if(sessLang == "language_ko") {
+                            koAll[klang].style.display = "initial";
+                            enAll[elang].style.display = "none";
+                        } else {
+                            koAll[klang].style.display = "none";
+                            enAll[elang].style.display = "initial";
+                        }
+                    }
+                }
+            }
+    }
+    setLang();
 //****표시하기****//
     function showDetailPlaceMap(str) {
         location.href = "detail.php?q=" + str;
@@ -298,36 +328,7 @@
     langClick();
 
 
-    function setLang() {
-        let sessLang = "<?php echo $_SESSION['language'];?>";
-            let koAll = document.querySelectorAll(".ko");
-            let enAll = document.querySelectorAll(".en");
-            let klang;
-            for(klang=0; klang < koAll.length; klang++) {
-                let koStatus = koAll[klang].style.display;
-                let elang;
-                for(elang=0; elang < enAll.length; elang++) {
-                    if(koStatus == "none") {
-                        if (sessLang == "language_ko") {
-                            koAll[klang].style.display = "initial";
-                            enAll[elang].style.display = "none";
-                        } else {
-                            koAll[klang].style.display = "none";
-                            enAll[elang].style.display = "initial";
-                        }
-                    } else {
-                        if(sessLang == "language_ko") {
-                            koAll[klang].style.display = "initial";
-                            enAll[elang].style.display = "none";
-                        } else {
-                            koAll[klang].style.display = "none";
-                            enAll[elang].style.display = "initial";
-                        }
-                    }
-                }
-            }
-    }
-    setLang();
+    
 
     // function frontLang() {
     //     let sessLang = "<?php //echo $_SESSION['language'];?>";
