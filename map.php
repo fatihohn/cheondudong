@@ -218,6 +218,7 @@ marker.properties.file +
 
 
 el.style.backgroundSize = 'cover';
+el.style.paddingBottom = '30px';
 el.style.width = marker.properties.iconSize[0] + 'px';
 el.style.height = marker.properties.iconSize[1] + 'px';
  
@@ -269,13 +270,7 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 
             if(!document.getElementById("marker_name")) {
                 document.getElementById(marker.properties.place_id).appendChild(elNameKo);
-            } else {
-        // el.addEventListener('mouseout', function() {
-        document.getElementById('marker_name').addEventListener('mouseout', function() {
-        var elShown = document.getElementById('marker_name');
-            elShown.remove();
-        });
-    }
+            }
         } else if(languageKo == "none") {
             var elNameEn = document.createElement('div');
 
@@ -298,13 +293,7 @@ el.style.height = marker.properties.iconSize[1] + 'px';
 
             if(!document.getElementById("marker_name")) {
                 document.getElementById(marker.properties.place_id).appendChild(elNameEn);
-            } else {
-        // el.addEventListener('mouseout', function() {
-        document.getElementById('marker_name').addEventListener('mouseout', function() {
-        var elShown = document.getElementById('marker_name');
-            elShown.remove();
-        });
-    }
+            }
 
             let enAllMap = document.querySelectorAll(".en");
             let elangMap;
@@ -315,13 +304,13 @@ el.style.height = marker.properties.iconSize[1] + 'px';
     });
 // }
 
-    // // el.addEventListener('mouseout', function() {
+    // el.addEventListener('mouseout', function() {
     // if (document.getElementById('marker_name')) {
-    //     // el.addEventListener('mouseout', function() {
-    //     document.getElementById('marker_name').addEventListener('mouseout', function() {
-    //     var elShown = document.getElementById('marker_name');
-    //         elShown.remove();
-    //     });
+        el.addEventListener('mouseout', function() {
+        // document.getElementById('marker_name').addEventListener('mouseout', function() {
+        var elShown = document.getElementById('marker_name');
+            elShown.remove();
+        });
     // }    
 
 
