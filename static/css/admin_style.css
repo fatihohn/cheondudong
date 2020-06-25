@@ -95,7 +95,7 @@ section .userList_wrap {
     margin-top: 40px;
 }
 
-#create_img_wrap #create_image #img_attach {
+#create_img_wrap #img_attach {
     width: 100px;
     height: 30px;
     background-color: rgb(200, 200, 200);
