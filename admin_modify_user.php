@@ -232,7 +232,7 @@
     </div>
 </section>
 <footer>
-    <?php include 'admin_footer.php'; ?>
+    <?php include 'footer.php'; ?>
 </footer>
 
     <script>

@@ -13,8 +13,11 @@
         
  
 <section>
-    <div id="create_place_wrap">
-        <div id="create_place_area">
+     <!-- menu: 메뉴 내비 바 -->
+     <?php include "admin_menu.php"; ?>
+
+    <div id="create_wrap">
+        <div id="create_area">
             <div class="view_wrap">
                 <div class="view_wrap_line">
                     <div class="contEditor">
@@ -74,14 +77,14 @@
                                     <div class="createInput">
                                     <label class="createGrid1">마커 사이즈 구분</label>
                                     <select class="createGrid2" name="mkimg_size"  required>
-                                        <option value="smallCube">60*60px </option>
-                                        <option value="middleCube">80*80px</option>
-                                        <option value="smallHori">80*50px</option>
-                                        <option value="middleHori">108*60px</option>
-                                        <option value="bigHori">160*100px</option>
-                                        <option value="smallPano">80*40px</option>
-                                        <option value="middlePano">120*60px</option>
-                                        <option value="longPano">160*60px</option>
+                                        <option value="smallCube">1:1|60*60px </option>
+                                        <option value="middleCube">1:1|80*80px</option>
+                                        <option value="smallHori">1.6:1|80*50px</option>
+                                        <option value="middleHori">1.6:1|108*60px</option>
+                                        <option value="bigHori">1.6:1|160*100px</option>
+                                        <option value="smallPano">2:1|80*40px</option>
+                                        <option value="middlePano">2:1|120*60px</option>
+                                        <option value="longPano">2.7:1|160*60px</option>
                                     </select>
                                     </div>
                                 </p>

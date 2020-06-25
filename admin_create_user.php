@@ -15,9 +15,9 @@
 <section>
     <!-- menu: 메뉴 내비 바 -->
     <?php include "admin_menu.php"; ?>
-    
-    <div id="create_user_wrap">
-        <div id="create_user_area">
+
+    <div id="create_wrap">
+        <div id="create_area">
             <div class="view_wrap">
                 <div class="view_wrap_line">
         <div class="contEditor">
