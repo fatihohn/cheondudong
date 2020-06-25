@@ -88,17 +88,19 @@ $conn->close();
 
 
 
-<script>
+<!-- <script>
     function tableImgSize() {
         let tableImgAll = document.querySelectorAll(".table_img");
-        let ti;
-        for(ti=0; ti < tableImgAll.length; ti++) {
-            tableImgAll[ti].style.width = "100%";
-            tableImgAll[ti].style.maxWidth = "140px";
+        if(tableImgAll) {
+            let ti;
+            for(ti=0; ti < tableImgAll.length; ti++) {
+                tableImgAll[ti].style.width = "100%";
+                tableImgAll[ti].style.maxWidth = "140px";
+            }
         }
     }
     tableImgSize();
-</script>
+</script> -->
 <!-- <script src="imgList.js"></script> -->
 <!-- <script src="sortTable.js"></script> -->
 <!-- <td id='{$row["id"]}' class='{$row["id"]}' onclick = 'imgList(this.id)'>{$row['title']}</td> -->

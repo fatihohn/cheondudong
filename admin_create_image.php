@@ -38,7 +38,7 @@ $URL = "./admin_create_image.php";
 </div>
 
 <script src="static/js/admin_attach.js"></script>
-<script>
+<!-- <script>
     function tableImgSize() {
         let tableImgAll = document.querySelectorAll(".table_img");
         let ti;
@@ -48,4 +48,4 @@ $URL = "./admin_create_image.php";
         }
     }
     tableImgSize();
-</script>
+</script> -->
