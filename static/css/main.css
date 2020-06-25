@@ -186,7 +186,7 @@ z-index: 80;
     font-size: 1.7rem;
 } 
 #detail_wrap #detail_box #detail_img ul li .attached_img_tag .attached_img_title {
-    display: grid;
+    font-weight: 900;
 } 
 
 
