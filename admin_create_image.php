@@ -30,7 +30,7 @@ $URL = "./admin_create_image.php";
 <div id="create_image_wrap">
     <div id="attached_image_list"></div>
     <div id="create_image">
-        <iframe id="img_attach"class="attach_frame" src="admin_attach_image.php"></iframe>
+        <iframe id="img_attach" class="attach_frame" src="admin_attach_image.php"></iframe>
     </div>
 </div>
 
