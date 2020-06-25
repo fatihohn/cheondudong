@@ -29,9 +29,9 @@
                                     <option value="en">English</option>
                                 </select> -->
                                 <input class='lang_btn' type='radio' id='ko_btn'name='language' value='ko' checked>
-                                <label for='on_btn'>한국어</label>
+                                <label for='ko_btn'>한국어</label>
                                 <input class='lang_btn' type='radio' id='en_btn'name='language' value='en'>
-                                <label for='ok_btn'>English</label>
+                                <label for='en_btn'>English</label>
                             </div>
                             <!-- <input type="submit" value="언어선택"> -->
                         </form>
