@@ -95,5 +95,10 @@ section .userList_wrap {
     margin-top: 40px;
 }
 
+#create_img_wrap #attached_img_table img {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
 
 /****footer****/
