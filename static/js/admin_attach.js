@@ -23,6 +23,6 @@ if (document.getElementById("attached_image_list")) {
 
     }
     // setInterval(function() {showAttachedImg();}, 3000);
-    // showAttachedImg();
+    showAttachedImg();
     document.getElementById("img_attach").addEventListener("click", showAttachedImg);
 }
