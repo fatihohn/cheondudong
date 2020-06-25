@@ -33,3 +33,5 @@ $URL = "./admin_create_image.php";
         <iframe class="attach_frame" src="admin_attach_image.php"></iframe>
     </div>
 </div>
+
+<script src="static/js/admin_attach.js"></script>
