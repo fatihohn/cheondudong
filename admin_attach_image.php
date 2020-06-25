@@ -44,11 +44,7 @@
             //cast: admin인 경우
             ?>
             <form class="createForm" action="admin_attach_image_action.php" method="POST" enctype="multipart/form-data">
-                <p>
-                    <div class="createInput">
-                        <input class="createGrid2"  type="hidden" name="username" value="<?=$username?>" required />       
-                    </div>
-                </p>
+                
                 <p>
                     <div class="createInput">
                     <label class="createGrid1">이미지</label>
