@@ -18,7 +18,7 @@
         </center>
         <?php    
         include 'cdd_db_conn.php';   
-        $URL = "./admin_index.php";
+        $URL = "./admin_attach_image.php";
 
         $uname = $_SESSION['username'];
         $query = "SELECT * FROM user_data WHERE username= '$uname'";
@@ -28,15 +28,6 @@
         $username = $rows['username'];           
 
         $adminCast = "admin";
-
-        if($_SESSION['cast']!==$adminCast){
-            ?> 
-            <script>
-                alert("권한이 없습니다.");
-                location.replace("<?php echo $URL?>");
-            </script>
-            <?php   
-        }
 
         session_start();
 
