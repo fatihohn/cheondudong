@@ -108,7 +108,7 @@ section .userList_wrap {
 
 }
 
-#create_image_wrap #img_attach :hover {
+#create_image_wrap #img_attach:hover {
     width: 155px;
     height: 35px;
     padding-top: 6px;
