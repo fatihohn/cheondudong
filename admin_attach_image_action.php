@@ -4,8 +4,8 @@ include 'cdd_db_conn.php';
 
 
 
-// $username = $_POST['username'];
-// $username = mysqli_real_escape_string($conn, $username);
+$place_id = $_POST['place_id'];
+$place_id = mysqli_real_escape_string($conn, $place_id);
 
 $ko_title = $_POST['ko_title'];
 $ko_title = mysqli_real_escape_string($conn, $ko_title);
@@ -25,9 +25,9 @@ $img = $uploadimg['img'];
                 
 $sql = "
 INSERT INTO images
-    (username, img, img_dir, ko_title, en_title, ko_cont, en_cont, created)
+    (place_id, img, img_dir, ko_title, en_title, ko_cont, en_cont, created)
 VALUES(
-    '{$username}',
+    '{$place_id}',
     '{$img}$filename',
     '{$img}$target_file',
     '{$ko_title}',

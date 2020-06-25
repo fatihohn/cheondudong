@@ -29,6 +29,14 @@
 
         $adminCast = "admin";
 
+        //현재 작성중 장소 id = new_id
+        $sqlLatestPlace = "SELECT id FROM places ORDER BY id DESC LIMIT 1";
+        $resultLatestPlace = $conn->query($sqlLatestPlace);
+        $rowLatestPlace = mysqli_fetch_assoc($resultLatestPlace);
+        $latest_id = $rowLatestPlace['id'];
+        $new_id = intval(intval($latest_id) + 1);
+        $place_id = $new_id;
+
         session_start();
 
 
@@ -44,7 +52,11 @@
             //cast: admin인 경우
             ?>
             <form class="createForm" action="admin_attach_image_action.php" method="POST" enctype="multipart/form-data">
-                
+                <p>
+                    <div class="createInput">
+                        <input class="createGrid2"  type="hidden" name="place_id" value="<?=$place_id?>" required />       
+                    </div>
+                </p>
                 <p>
                     <div class="createInput">
                     <label class="createGrid1">이미지</label>
