@@ -38,3 +38,14 @@ $URL = "./admin_create_image.php";
 </div>
 
 <script src="static/js/admin_attach.js"></script>
+<script>
+    function tableImgSize() {
+        let tableImgAll = document.querySelectorAll(".table_img");
+        let ti;
+        for(ti=0; ti < tableImgAll.length; ti++) {
+            tableImgAll[ti].style.width = "100%";
+            tableImgAll[ti].style.maxWidth = "140px";
+        }
+    }
+    tableImgSize();
+</script>
