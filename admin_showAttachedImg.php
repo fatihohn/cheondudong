@@ -40,7 +40,7 @@ $resultImgList = $conn->query($sqlImgList) or die($conn->error);
 
 
 echo "
-<table id='attached_img_table'>
+<table id='attached_img_table' style='width:100%; max-width:596px;'>
 <tbody>
 <tr>
     <th>장소 번호</th>
