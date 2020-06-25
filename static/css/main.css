@@ -171,6 +171,12 @@ z-index: 80;
     font-size: 2rem;
     font-weight: 600;
 }
+#detail_wrap #detail_box #detail_img ul li img, 
+#detail_wrap #detail_box #detail_work ul li img, 
+#detail_wrap #detail_box #detail_ref ul li img {
+    width: 100%;
+    max-width: 596px;
+}
 
 
 
