@@ -236,7 +236,7 @@
     </div>
 </section>
 <footer>
-    <?php include 'admin_footer.php'; ?>\
+    <?php include 'admin_footer.php'; ?>
 </footer>
 
     <script>
