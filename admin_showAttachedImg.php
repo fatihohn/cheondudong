@@ -39,21 +39,21 @@ if(!isset($_SESSION['username'])) {
 $resultImgList = $conn->query($sqlImgList) or die($conn->error);
 
 
-echo "
-<table id='attached_img_table' style='width:100%; max-width:596px;'>
-<tbody>
-<tr>
-    <th>장소 번호</th>
-    <th>파일명</th> 
-    <th>이미지</th> 
-    <th>제목</th> 
-    <th>내용</th>
-    <th>삭제</th>
-
-</tr>";
 
 
 if ($resultImgList->num_rows > 0) {
+    echo "
+<table id='attached_img_table' style='width:100%; max-width:596px;'>
+    <tbody>
+        <tr>
+            <th>장소 번호</th>
+            <th>파일명</th> 
+            <th>이미지</th> 
+            <th>제목</th> 
+            <th>내용</th>
+            <th>삭제</th>
+        
+        </tr>";
     // output data of each row
     while($row = $resultImgList->fetch_assoc()) {
            $img_id = $row["id"];
@@ -82,11 +82,15 @@ echo
                     삭제
                 </button>
             </td>
-            </tbody>
-            </table>
-            ";
+        </tr>
+                ";
+                
+            }
+echo "
+    </tbody>
+</table>
         
-    }
+        ";
 } else {
     echo "0 results";
 }
