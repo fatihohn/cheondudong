@@ -121,7 +121,9 @@ function menuUserClick() {
     function showUserList() {
         location.href = "admin_userList.php";
     }
-    menuUser.addEventListener("click", showUserList);
+    if(menuUser) {
+        menuUser.addEventListener("click", showUserList);
+    }
 }
 menuUserClick();
 
@@ -130,7 +132,9 @@ function menuIntroAddClick() {
     function addIntro() {
         location.href = "admin_create_intro.php";
     }
-    menuIntroAdd.addEventListener("click", addIntro);
+    if(menuIntroAdd) {
+        menuIntroAdd.addEventListener("click", addIntro);
+    }
 }
 menuIntroAddClick();
 
@@ -139,7 +143,9 @@ function menuPlaceAddClick() {
     function addPlace() {
         location.href = "admin_create_place.php";
     }
-    menuPlaceAdd.addEventListener("click", addPlace);
+    if(menuPlaceAdd) {
+        menuPlaceAdd.addEventListener("click", addPlace);
+    }
 }
 menuPlaceAddClick();
 
