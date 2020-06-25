@@ -74,7 +74,7 @@ echo
         "<tr id='".$img_id."' >
             <td class='".$img_id."'>".$new_id."</td>    
             <td class='".$img_id."'>".$img_filename."</td>
-            <td class='".$img_id."'><img class='table_img' src='".$img_dir."' alt='".$img_ko_title."'></td>
+            <td class='".$img_id."'><img class='table_img' src='".$img_dir."' alt='".$img_ko_title."' style='width:100%; max-width:140px;'></td>
             <td class='".$img_id."'>".$img_ko_title."<br>".$img_en_title."</td>
             <td class='".$img_id."'>".$img_ko_cont."<br>".$img_en_cont."</td>
             <td class='".$img_id."'>
