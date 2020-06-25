@@ -20,7 +20,7 @@ if (document.getElementById("attached_image_list")) {
         xmlhttp.open("POST", "admin_showAttachedImg.php", true);
         xmlhttp.send();
 
-
+        tableImgSize();
     }
     // setInterval(function() {showAttachedImg();}, 3000);
     showAttachedImg();
