@@ -14,7 +14,7 @@
     
     <div id="create_img_wrap">
         <center>
-            <h3>장소 추가</h3>
+            <h3>이미지 추가</h3>
         </center>
         <?php    
         include 'cdd_db_conn.php';   
