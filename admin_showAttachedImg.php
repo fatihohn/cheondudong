@@ -48,6 +48,8 @@ echo "
     <th>이미지</th> 
     <th>제목</th> 
     <th>내용</th>
+    <th>삭제</th>
+
 </tr>";
 
 
@@ -75,6 +77,7 @@ echo
             <td class='".$img_id."'><img class='table_img' src='".$img_dir."' alt='".$img_ko_title."'></td>
             <td class='".$img_id."'>".$img_ko_title."<br>".$img_en_title."</td>
             <td class='".$img_id."'>".$img_ko_cont."<br>".$img_en_cont."</td>
+            <td class='".$img_id."' name='".$img_id."' onclick='imgDel(this.name)'>삭제</td>
             </tbody>
             </table>
             ";
@@ -88,7 +91,7 @@ $conn->close();
 
 
 
-<!-- <script>
+<script>
     function tableImgSize() {
         let tableImgAll = document.querySelectorAll(".table_img");
         if(tableImgAll) {
@@ -100,7 +103,17 @@ $conn->close();
         }
     }
     tableImgSize();
-</script> -->
+
+    function imgDel(str) {
+    let delConfirm = confirm('삭제 후 복원이 불가능합니다. 삭제하시겠습니까?');
+    if (delConfirm == true) {
+        location.href = './admin_delete_image.php?id=' + str;
+        alert('삭제중입니다')
+    } else {
+        alert('취소되었습니다');
+    }
+}
+</script>
 <!-- <script src="imgList.js"></script> -->
 <!-- <script src="sortTable.js"></script> -->
 <!-- <td id='{$row["id"]}' class='{$row["id"]}' onclick = 'imgList(this.id)'>{$row['title']}</td> -->
