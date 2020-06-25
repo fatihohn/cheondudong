@@ -32,7 +32,7 @@ $URL = "./admin_create_image.php";
         <iframe  class="attach_frame" src="admin_attach_image.php" style="width:100%; max-width:596px; height:240px;"></iframe>
     </div>
         <div id="img_attach">
-            이미지 확인
+            추가된 이미지 확인
         </div>
 
     <div id="attached_image_list"></div>
