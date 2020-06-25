@@ -95,9 +95,9 @@ section .userList_wrap {
     margin-top: 40px;
 }
 
-#create_img_wrap #attached_img_table .table_img {
+#create_img_wrap #create_image .attach_frame {
     width: 100%;
-    max-width: 140px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
