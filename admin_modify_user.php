@@ -99,9 +99,7 @@
                             <p>
                                 <div class="createInput">
                                 <label class="createGrid1">이메일</label>
-                                <textarea class="createGrid2" type="email" name="email" placeholder="이메일" value="<?=$email?>" >
-                                    <?=$email?>
-                                </textarea>
+                                <textarea class="createGrid2" type="email" name="email" placeholder="이메일" value="<?=$email?>" ><?=$email?></textarea>
                                 </div>
                             </p>
                             <p>
@@ -189,9 +187,7 @@
                                     <label class="createGrid1">
                                         이메일
                                     </label>
-                                    <textarea class="createGrid2" name="email" placeholder="이메일" value="<?=$email?>" >
-                                        <?=$email?>
-                                    </textarea>
+                                    <textarea class="createGrid2" name="email" placeholder="이메일" value="<?=$email?>" ><?=$email?></textarea>
                                 </div>
                             </p>
                             <p>
