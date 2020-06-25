@@ -22,7 +22,7 @@ if (document.getElementById("attached_image_list")) {
 
 
     }
-    setInterval(function() {showAttachedImg();}, 3000);
+    // setInterval(function() {showAttachedImg();}, 3000);
     // showAttachedImg();
-    // document.getElementById("attach_img").addEventListener("click", showAttachedImg);
+    document.getElementById("img_attach").addEventListener("click", showAttachedImg);
 }
