@@ -12,11 +12,16 @@
     </header>
 
     <section>
+        <!-- menu: 메뉴 내비 바 -->
+    <?php include "admin_menu.php"; ?>
     <div id="create_user_wrap">
         <div id="create_user_area">
             <div class="view_wrap">
                 <div class="view_wrap_line">
         <div class="contEditor">
+            <center>
+                <h3>사용자 수정</h3>
+            </center>
 <?php    
            include 'cdd_db_conn.php';   
                 
