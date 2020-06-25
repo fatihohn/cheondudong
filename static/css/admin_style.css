@@ -95,9 +95,15 @@ section .userList_wrap {
     margin-top: 40px;
 }
 
-#create_img_wrap #create_image .attach_frame {
-    width: 596px;
-    height: 240px;
+#create_img_wrap #create_image #img_attach {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(200, 200, 200);
+    text-align: center;
+    padding-top: 4px;
+    box-shadow: 3px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
 }
 
 /****footer****/
