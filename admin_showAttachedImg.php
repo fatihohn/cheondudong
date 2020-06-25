@@ -91,7 +91,7 @@ $conn->close();
 
 
 
-<script>
+<!-- <script>
     function tableImgSize() {
         let tableImgAll = document.querySelectorAll(".table_img");
         if(tableImgAll) {
@@ -113,7 +113,7 @@ $conn->close();
         alert('취소되었습니다');
     }
 }
-</script>
+</script> -->
 <!-- <script src="imgList.js"></script> -->
 <!-- <script src="sortTable.js"></script> -->
 <!-- <td id='{$row["id"]}' class='{$row["id"]}' onclick = 'imgList(this.id)'>{$row['title']}</td> -->
