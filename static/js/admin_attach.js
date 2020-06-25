@@ -29,9 +29,9 @@ if (document.getElementById("attached_image_list")) {
                 }
             }
         }
-        tableImgSize();
     }
     // setInterval(function() {showAttachedImg();}, 3000);
+    tableImgSize();
     showAttachedImg();
     document.getElementById("img_attach").addEventListener("click", showAttachedImg);
 }
