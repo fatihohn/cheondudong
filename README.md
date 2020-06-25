@@ -1,2 +1,2 @@
 # cheondudong
-A map of Dongducheon: a US camp town
+Cheondudong: A US camp town
