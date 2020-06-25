@@ -95,7 +95,7 @@ echo "
         
         ";
 } else {
-    echo "0 results";
+    echo "이미지가 없습니다.";
 }
 $conn->close();
 ?>

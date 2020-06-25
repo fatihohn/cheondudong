@@ -142,22 +142,6 @@
                                 </p>
                                 <p>
                                     <div class="createInput">
-                                        <!-- <div class="createGrid1">
-                                            <label>
-                                                이미지 목록
-                                            </label>
-                                            <div class="place_img_list">
-                                                <?php //include "admin_place_image_list.php"; ?>
-                                            </div>
-                                        </div>
-                                        <div class="createGrid2">
-                                            <label>
-                                                이미지 추가
-                                            </label>
-                                            <div class="place_img_list">
-                                                <?php //include "admin_place_image_list.php"; ?>
-                                            </div>
-                                        </div> -->
                                         <?php include "admin_create_image.php"; ?>
                                     </div>
                                 </p>
