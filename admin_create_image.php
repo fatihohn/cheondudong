@@ -38,8 +38,7 @@ $URL = "./admin_create_image.php";
 </div>
 
 <script src="static/js/admin_attach.js"></script>
-
-<!-- <?php //include "admin_jsGroup.php";?> -->
+<?php include "admin_jsGroup.php";?>
 <!-- <script>
     function tableImgSize() {
         let tableImgAll = document.querySelectorAll(".table_img");
