@@ -117,7 +117,8 @@
     ')';
 
 
-    el.style.backgroundSize = 'cover';
+    el.style.backgroundSize = 'contain';
+    el.style.backgroundRepeat = 'no-repeat';
     el.style.width = marker.properties.iconSize[0] + 'px';
     el.style.height = marker.properties.iconSize[1] + 'px';
  
