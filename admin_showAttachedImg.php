@@ -72,7 +72,7 @@ echo
         "<tr id='".$img_id."' >
             <td class='".$img_id."'>".$new_id."</td>    
             <td class='".$img_id."'>".$img_filename."</td>
-            <td class='".$img_id."'><img src='".$img_dir."' alt='".$img_ko_title."'></td>
+            <td class='".$img_id."'><img class='table_img' src='".$img_dir."' alt='".$img_ko_title."'></td>
             <td class='".$img_id."'>".$img_ko_title."<br>".$img_en_title."</td>
             <td class='".$img_id."'>".$img_ko_cont."<br>".$img_en_cont."</td>
             </tbody>
@@ -85,6 +85,20 @@ echo
 }
 $conn->close();
 ?>
+
+
+
+<script>
+    function tableImgSize() {
+        let tableImgAll = document.querySelectorAll(".table_img");
+        let ti;
+        for(ti=0; ti < tableImgAll.length; ti++) {
+            tableImgAll[ti].style.width = "100%";
+            tableImgAll[ti].style.maxWidth = "140px";
+        }
+    }
+    tableImgSize();
+</script>
 <!-- <script src="imgList.js"></script> -->
 <!-- <script src="sortTable.js"></script> -->
 <!-- <td id='{$row["id"]}' class='{$row["id"]}' onclick = 'imgList(this.id)'>{$row['title']}</td> -->
