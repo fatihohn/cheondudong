@@ -30,9 +30,9 @@
 }
 
 #header_wrap #header_box #header_box_area .admin_header_lang {
-position: relative;
-top: -40px;
-left: -50px;
+    position: relative;
+    top: -40px;
+    left: -50px;
 }
 
 
@@ -87,6 +87,12 @@ section .view_wrap {
 
 section .view_wrap .contEditor center>h3 {
     margin: 40px;
+}
+
+section .userList_wrap {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 
