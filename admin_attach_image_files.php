@@ -1,5 +1,5 @@
 <?php
-$target_dir = "uploads/images/";
+$target_dir = "uploads/img/";
 $temp = explode(".", $_FILES["img"]["name"]);
 $newfilename = round(microtime(true)) . '.' . end($temp);
 $target_file = $target_dir . $newfilename;
