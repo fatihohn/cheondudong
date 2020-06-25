@@ -22,6 +22,6 @@ if (document.getElementById("attached_image_list")) {
 
 
     }
-    showAttachedImg();
-    // document.getElementById("attach_img").addEventListener("click", showAttachedImg);
+    // showAttachedImg();
+    document.getElementById("attach_img").addEventListener("click", showAttachedImg);
 }
