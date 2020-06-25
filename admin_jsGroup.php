@@ -164,7 +164,7 @@ menuPlaceAddClick();
 
 //****이미지 삭제****//
     function imgDel(str) {
-        let delConfirm = confirm('삭제 후 복원이 불가능합니다. 삭제하시겠습니까?');
+        let delConfirm = confirm('삭제 후 상단 작성 내용이 저장되지 않습니다. 삭제하시겠습니까?');
         if (delConfirm == true) {
             location.href = './admin_delete_image.php?id=' + str;
             alert('삭제중입니다')

@@ -13,7 +13,7 @@
         session_start();
 
 
-        $URL = "./admin_showAttachedImg.php";
+        $URL = "./admin_create_place.php";
 
 
         $result = $conn->query($query1);
