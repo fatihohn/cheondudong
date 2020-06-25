@@ -97,7 +97,7 @@ section .userList_wrap {
 
 #create_img_wrap #attached_img_table img {
     width: 100%;
-    max-width: 200px;
+    max-width: 140px;
     margin: 0 auto;
 }
 
