@@ -42,12 +42,12 @@ $resultImgList = $conn->query($sqlImgList) or die($conn->error);
 
 
 if ($resultImgList->num_rows > 0) {
+    // <th>파일명</th> 
     echo "
 <table id='attached_img_table' style='width:100%; max-width:596px;'>
     <tbody>
         <tr>
             <th>장소 번호</th>
-            <th>파일명</th> 
             <th>이미지</th> 
             <th>제목</th> 
             <th>내용</th>
@@ -70,10 +70,13 @@ if ($resultImgList->num_rows > 0) {
 //             <td class='{$row["id"]}'>{$row['email']}</td>
 //             <td class='{$row["id"]}'>{$row['realname']}</td>
 //             <td class='{$row["id"]}'>{$row['cast']}</td>";
+
+
+
+// <td class='".$img_id."'>".$img_filename."</td>
 echo
         "<tr id='".$img_id."' >
             <td class='".$img_id."'>".$new_id."</td>    
-            <td class='".$img_id."'>".$img_filename."</td>
             <td class='".$img_id."'><img class='table_img' src='".$img_dir."' alt='".$img_ko_title."' style='width:100%; max-width:140px;'></td>
             <td class='".$img_id."'>".$img_ko_title."<br>".$img_en_title."</td>
             <td class='".$img_id."'>".$img_ko_cont."<br>".$img_en_cont."</td>
