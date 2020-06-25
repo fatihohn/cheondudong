@@ -41,7 +41,7 @@ if (document.getElementById("attached_image_list")) {
     //         }
     //     }
     // }
-    // tableImgSize();
+    tableImgSize();
     showAttachedImg();
     document.getElementById("img_attach").addEventListener("click", showAttachedImg);
 }
