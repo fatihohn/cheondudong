@@ -19,7 +19,16 @@ if (document.getElementById("attached_image_list")) {
         }
         xmlhttp.open("POST", "admin_showAttachedImg.php", true);
         xmlhttp.send();
-
+        function tableImgSize() {
+            let tableImgAll = document.querySelectorAll(".table_img");
+            if(tableImgAll) {
+                let ti;
+                for(ti=0; ti < tableImgAll.length; ti++) {
+                    tableImgAll[ti].style.width = "100%";
+                    tableImgAll[ti].style.maxWidth = "140px";
+                }
+            }
+        }
         tableImgSize();
     }
     // setInterval(function() {showAttachedImg();}, 3000);
