@@ -152,17 +152,17 @@ function menuPlaceAddClick() {
 menuPlaceAddClick();
 
 //****장소 추가****//
-    function tableImgSize() {
-        let tableImgAll = document.querySelectorAll(".table_img");
-        if(tableImgAll) {
-            let ti;
-            for(ti=0; ti < tableImgAll.length; ti++) {
-                tableImgAll[ti].style.width = "100%";
-                tableImgAll[ti].style.maxWidth = "140px";
-            }
-        }
-    }
-    tableImgSize();
+    // function tableImgSize() {
+    //     let tableImgAll = document.querySelectorAll(".table_img");
+    //     if(tableImgAll) {
+    //         let ti;
+    //         for(ti=0; ti < tableImgAll.length; ti++) {
+    //             tableImgAll[ti].style.width = "100%";
+    //             tableImgAll[ti].style.maxWidth = "140px";
+    //         }
+    //     }
+    // }
+    // tableImgSize();
 
 //****이미지 삭제****//
     function imgDel(str) {

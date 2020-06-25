@@ -29,17 +29,17 @@ if (document.getElementById("attached_image_list")) {
                 }
             }
         }
-        function tableImgSize() {
-                let tableImgAll = document.querySelectorAll(".table_img");
-                if(tableImgAll) {
-                    let ti;
-                    for(ti=0; ti < tableImgAll.length; ti++) {
-                            tableImgAll[ti].style.width = "100%";
-                            tableImgAll[ti].style.maxWidth = "140px";
-                    }
-                }
-        }
-        tableImgSize();
+        // function tableImgSize() {
+        //         let tableImgAll = document.querySelectorAll(".table_img");
+        //         if(tableImgAll) {
+        //             let ti;
+        //             for(ti=0; ti < tableImgAll.length; ti++) {
+        //                     tableImgAll[ti].style.width = "100%";
+        //                     tableImgAll[ti].style.maxWidth = "140px";
+        //             }
+        //         }
+        // }
+        // tableImgSize();
     }
                 // setInterval(function() {showAttachedImg();}, 3000);
     showAttachedImg();

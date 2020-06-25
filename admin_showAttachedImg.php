@@ -96,17 +96,17 @@ $conn->close();
 
 
 <script>
-    // function tableImgSize() {
-    //     let tableImgAll = document.querySelectorAll(".table_img");
-    //     if(tableImgAll) {
-    //         let ti;
-    //         for(ti=0; ti < tableImgAll.length; ti++) {
-    //             tableImgAll[ti].style.width = "100%";
-    //             tableImgAll[ti].style.maxWidth = "140px";
-    //         }
-    //     }
-    // }
-    // tableImgSize();
+    function tableImgSize() {
+        let tableImgAll = document.querySelectorAll(".table_img");
+        if(tableImgAll) {
+            let ti;
+            for(ti=0; ti < tableImgAll.length; ti++) {
+                tableImgAll[ti].style.width = "100%";
+                tableImgAll[ti].style.maxWidth = "140px";
+            }
+        }
+    }
+    tableImgSize();
 
 //     function imgDel(str) {
 //     let delConfirm = confirm('삭제 후 복원이 불가능합니다. 삭제하시겠습니까?');
