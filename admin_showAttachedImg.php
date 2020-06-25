@@ -48,10 +48,10 @@ if ($resultImgList->num_rows > 0) {
 <table id='attached_img_table' style='width:100%; max-width:596px;'>
     <tbody>
         <tr>
-            <th>이미지</th> 
+            <th style='width:140px;'>이미지</th> 
             <th>제목</th> 
             <th>내용</th>
-            <th>삭제</th>
+            <th style='width:35px' >삭제</th>
         
         </tr>";
     // output data of each row
@@ -77,10 +77,10 @@ if ($resultImgList->num_rows > 0) {
 // <td class='".$img_id."'>".$new_id."</td>    
 echo
         "<tr id='".$img_id."' >
-            <td class='".$img_id."'><img class='table_img' src='".$img_dir."' alt='".$img_ko_title."' style='width:100%; max-width:140px;'></td>
+            <td style='width:140px;' class='".$img_id."'><img class='table_img' src='".$img_dir."' alt='".$img_ko_title."' style='width:100%; max-width:140px;'></td>
             <td class='".$img_id."'>".$img_ko_title."<br>".$img_en_title."</td>
             <td class='".$img_id."'>".$img_ko_cont."<br>".$img_en_cont."</td>
-            <td class='".$img_id."'>
+            <td  style='width:35px' class='".$img_id."'>
                 <button class='del_btn' name='".$img_id."' onclick='imgDel(this.name)'>
                     삭제
                 </button>
