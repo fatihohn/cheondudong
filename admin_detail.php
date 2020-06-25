@@ -32,8 +32,18 @@ $detailCont = $rowPlaceDetail['ko_cont'];
 $detailCont_en = $rowPlaceDetail['en_cont'];
 
 
-$detailImg = "이미지";
-$detailImg_dir = "이미지 경로";
+$sqlPlaceImg = "SELECT * FROM images WHERE place_id = $q";
+$stmt = mysqli_stmt_init($conn);
+    if (!mysqli_stmt_prepare($stmt, $sqlPlaceImg)) {
+            // echo "sqlPlaceImg error";
+    } else {
+            // mysqli_stmt_bind_param($stmt, "s", $author);
+            mysqli_stmt_execute($stmt);
+            $resultPlaceImg = mysqli_stmt_get_result($stmt);
+    }
+
+
+
 $detailWork = "임시 관련작품 == 리스트 == 입력 시 리스트로 변환";
 $detailWork_en = "works list";
 $detailRef = "임시 참고자료 == 리스트 == 입력 시 리스트로 변환";
@@ -122,29 +132,66 @@ $detailRef_en = "reference list";
                             </div>
                         </div>
                         <div id="detail_img">
-                            <div class="img_title ko ddobag">
-                                이미지
+                            <div class="detail_attachment_title">
+                                <div class="img_title ko ddobag">
+                                    이미지
+                                </div>
+                                <div class="img_title en ddobag">
+                                    Images
+                                </div>
                             </div>
-                            <div class="img_title en ddobag">
-                                Images
-                            </div>
-                            <?php echo $detailImg;?>
+                            <ul class="detail_attachment_list">
+                                <?php
+                                    if($resultPlaceImg->num_rows > 0) {
+                                        while($rowPlaceImg = $resultPlaceImg->fetch_assoc()) {
+                                            $detailImg_title_ko = $rowPlaceImg['ko_title'];
+                                            $detailImg_title_en = $rowPlaceImg['en_title'];
+                                            $detailImg_cont_ko = $rowPlaceImg['ko_cont'];
+                                            $detailImg_cont_en = $rowPlaceImg['en_cont'];
+                                            $detailImg_dir = $rowPlaceImg['img_dir'];
+                                            
+                                            echo "<li class='attached_img'>";
+                                                echo "<img src='".$detailImg_dir."' alt='".$detailImg_title_ko."'>";
+                                                echo "<div class='attached_img_tag'>";
+                                                    echo "<div class='attached_img_title ko'>";
+                                                    echo $detailImg_title_ko;
+                                                    echo "</div>";
+                                                    echo "<div class='attached_img_title en'>";
+                                                    echo $detailImg_title_en;
+                                                    echo "</div>";
+                                                    echo "<div class='attached_img_cont ko'>";
+                                                    echo $detailImg_cont_ko;
+                                                    echo "</div>";
+                                                    echo "<div class='attached_img_cont en'>";
+                                                    echo $detailImg_cont_en;
+                                                    echo "</div>";
+                                                echo "</div>";
+                                            echo "</li>";
+
+                                        }
+                                    }
+                                ?>
+                            </ul>
                         </div>
                         <div id="detail_work">
-                            <div class="work_title ko ddobag">
-                                관련 작품
-                            </div>
-                            <div class="work_title en ddobag">
-                                Works
+                            <div class="detail_attachment_title">
+                                <div class="work_title ko ddobag">
+                                    관련 작품
+                                </div>
+                                <div class="work_title en ddobag">
+                                    Works
+                                </div>
                             </div>
                             <?php echo $detailWork;?>
                         </div>
                         <div id="detail_ref">
-                            <div class="ref_title ko ddobag">
-                                참고 자료
-                            </div>
-                            <div class="ref_title en ddobag">
-                                References
+                            <div class="detail_attachment_title">
+                                <div class="ref_title ko ddobag">
+                                    참고 자료
+                                </div>
+                                <div class="ref_title en ddobag">
+                                    References
+                                </div>
                             </div>
                             <?php echo $detailRef;?>
                         </div>
