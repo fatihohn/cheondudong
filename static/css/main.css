@@ -72,7 +72,7 @@
 
 #detail_wrap {
     width: 100%;
-    /* height: calc(100vh - 70px); */
+    height: calc(100vh - 70px);
     position: absolute;
     top: 70px;
     background-color: rgb(240, 240, 240);

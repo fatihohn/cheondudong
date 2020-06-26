@@ -258,9 +258,9 @@
                     introWrap.style.display = "none";
                     placeWrap.style.display = "none";
                 }
-                if(detailWrap) {
-                    detailWrap.style.display = "none";
-                }                    
+                // if(detailWrap) {
+                //     detailWrap.style.display = "none";
+                // }                    
             } else {
                 headerWrap.style.display = "initial";
                 menuWrap.style.display = "none";
@@ -270,9 +270,9 @@
                     introWrap.style.display = "none";
                     placeWrap.style.display = "none";
                 }
-                if(detailWrap) {
-                    detailWrap.style.display = "initial";
-                }
+                // if(detailWrap) {
+                //     detailWrap.style.display = "initial";
+                // }
             } 
         }
         headerMenu.addEventListener("click", showMenu);
