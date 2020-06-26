@@ -22,7 +22,7 @@
                 <div class="view_wrap_line">
                     <div class="contEditor">
                         <center>
-                            <h3>장소 추가</h3>
+                            <h3>장소 생성</h3>
                         </center>
         
                         <?php    
@@ -92,12 +92,12 @@
                                     <div class="createInput">
                                     <label class="createGrid1">제목</label>
                                     <input class="createGrid2" name="ko_title" placeholder="제목" required />
+                                        <input class="createGrid2" name="en_title" placeholder="Title" required />
                                     </div>
                                 </p>
                                 <p>
                                     <div class="createInput">
                                         <label class="createGrid1">Title</label>
-                                        <input class="createGrid2" name="en_title" placeholder="Title" required />
                                     </div>
                                 </p>
                                 <p>
