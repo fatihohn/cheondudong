@@ -106,16 +106,16 @@
                                
                                 <p>
                                     <div class="createInput">
-                                    <label class="createGrid1">위도</label>
+                                    <label class="createGrid1">좌표</label>
                                     <input class="createGrid2" name="lat" placeholder="위도" required />
-                                    </div>
-                                </p>
-                                <p>
-                                    <div class="createInput">
-                                    <label class="createGrid1">경도</label>
                                     <input class="createGrid2" name="lng" placeholder="경도" required />
                                     </div>
                                 </p>
+                                <!-- <p>
+                                    <div class="createInput">
+                                    <label class="createGrid1">경도</label>
+                                    </div>
+                                </p> -->
                                 <p>
                                     <div class="createInput">
                                         <label class="createGrid1">내용</label>
