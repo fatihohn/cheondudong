@@ -77,16 +77,16 @@
                         <div class="admin_editor">
                             <textarea name="ko_cont" id="ko_cont" placeholder="내용" ></textarea>
                         </div>
-                    </div>
-                </p>
-                <p>
-                    <div class="createInput">
-                        <label class="createGrid1">Content</label>
                         <div class="admin_editor">
                             <textarea name="en_cont" id="en_cont" placeholder="Content"></textarea>
                         </div>
                     </div>
                 </p>
+                <!-- <p>
+                    <div class="createInput">
+                        <label class="createGrid1">Content</label>
+                    </div>
+                </p> -->
                 <p>
                     <!-- <input type="submit" onclick="submitContents(this);"> -->
                     <input id="attach_img" type="submit">
