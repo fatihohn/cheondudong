@@ -6,17 +6,18 @@ $bSuccessUpload = is_uploaded_file($_FILES['Filedata']['tmp_name']);
 // SUCCESSFUL
 if($bSuccessUpload) {
 
-	include "../../../bbdd_db_conn.php";
-		$sqlNoBefore = "SELECT `no` FROM contents ORDER BY id DESC LIMIT 1";
-		$resultNoBefore = $conn->query($sqlNoBefore) or die($conn->error);
-		$rowNoBefore = mysqli_fetch_assoc($resultNoBefore);
-		$contNoBefore = $rowNoBefore['no'];
-		$contNoThis = $contNoBefore + 1;
+	// include "../../../bbdd_db_conn.php";
+	// 	$sqlNoBefore = "SELECT `no` FROM contents ORDER BY id DESC LIMIT 1";
+	// 	$resultNoBefore = $conn->query($sqlNoBefore) or die($conn->error);
+	// 	$rowNoBefore = mysqli_fetch_assoc($resultNoBefore);
+	// 	$contNoBefore = $rowNoBefore['no'];
+	// 	$contNoThis = $contNoBefore + 1;
 
 	$tmp_name = $_FILES['Filedata']['tmp_name'];
 	// $name = $_FILES['Filedata']['name'];
 	// $name = "c".$contNoThis."_".$_FILES['Filedata']['name'];
-	$name = "c".$contNoThis."_".date("YmdHis").mt_rand().$_FILES['Filedata']['name'];
+	// $name = "c".$contNoThis."_".date("YmdHis").mt_rand().$_FILES['Filedata']['name'];
+	$name = date("YmdHis").mt_rand().$_FILES['Filedata']['name'];
 	
 	$filename_ext = strtolower(array_pop(explode('.',$name)));
 	$allow_file = array("jpg", "png", "bmp", "gif");
