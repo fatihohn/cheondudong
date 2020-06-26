@@ -243,6 +243,7 @@
             let headerWrap = document.getElementById("header_wrap");
             let mapWrap = document.getElementById("map_wrap");
             let menuWrap = document.getElementById("menu_wrap");
+            let detailWrap = document.getElementById("detail_wrap");
             let footerWrap = document.getElementById("footer_wrap");
             
             let introWrap = document.getElementById("intro_cont_wrap");
@@ -256,6 +257,9 @@
                     footerWrap.style.display = "initial";
                     introWrap.style.display = "none";
                     placeWrap.style.display = "none";
+                }
+                if(detailWrap) {
+                    detailWrap.style.display = "none";
                 }                    
             } else {
                 headerWrap.style.display = "initial";
@@ -265,6 +269,9 @@
                     footerWrap.style.display = "none";
                     introWrap.style.display = "none";
                     placeWrap.style.display = "none";
+                }
+                if(detailWrap) {
+                    detailWrap.style.display = "initial";
                 }
             } 
         }
