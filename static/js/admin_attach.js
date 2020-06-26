@@ -45,3 +45,30 @@ if (document.getElementById("attached_image_list")) {
     showAttachedImg();
     document.getElementById("img_attach").addEventListener("click", showAttachedImg);
 }
+
+
+//장소에 추가된 관련작업 목록
+if (document.getElementById("attached_work_list")) {
+    function showAttachedWork() {
+        let createWork = document.getElementById("create_work");
+
+        if (createWork == "") {
+            document.getElementById("attached_work_list").innerHTML = "";
+            return;
+        }
+        if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else { // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("attached_work_list").innerHTML = xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("POST", "admin_showAttachedWork.php", true);
+        xmlhttp.send();
+        }
+    showAttachedWork();
+    document.getElementById("img_attach").addEventListener("click", showAttachedWork);
+}

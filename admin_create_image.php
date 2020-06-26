@@ -9,7 +9,7 @@
 
 <?php 
 include 'cdd_db_conn.php';   
-$URL = "./admin_create_image.php";
+// $URL = "./admin_create_image.php";
 
 // //현재 작성중 장소 id = new_id
 // $sqlLatestPlace = "SELECT id FROM places ORDER BY id DESC LIMIT 1";
