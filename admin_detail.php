@@ -279,7 +279,7 @@ $stmt = mysqli_stmt_init($conn);
                             }
                         ?>                                 
                         </div>
-                        <div id="detail_func_wrap">
+                        <div id="admin_detail_func_wrap">
                             <div id="back_btn" title="뒤로가기">
                                 <img src="static/img/back_btn.png" alt="back_btn">
                             </div>
