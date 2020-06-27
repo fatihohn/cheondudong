@@ -18,7 +18,7 @@ $ref_link = mysqli_real_escape_string($conn, $ref_link);
                 
                 
 $sql = "
-INSERT INTO works
+INSERT INTO refs
     (place_id, ko_title, en_title, link, created)
 VALUES(
     '{$place_id}',

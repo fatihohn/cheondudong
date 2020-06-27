@@ -46,7 +46,7 @@ include 'cdd_db_conn.php';
 
 <div id="create_ref_wrap">
     <div id="create_ref">
-        <iframe  class="attach_frame" src="admin_attach_ref.php" style="width:100%; max-width:596px; height:900px;"></iframe>
+        <iframe  class="attach_frame" src="admin_attach_ref.php" style="width:100%; max-width:596px; height:150px;"></iframe>
     </div>
     <div id="ref_attach">
         참고자료 새로고침
