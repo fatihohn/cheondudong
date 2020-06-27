@@ -96,7 +96,7 @@ section .userList_wrap {
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
-    margin-top: 140px;
+    padding-top: 140px;
 }
 
 section .userList_wrap .user_table {
