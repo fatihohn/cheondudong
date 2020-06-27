@@ -92,13 +92,21 @@ section .userList_wrap {
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 140px;
+}
+
+section .userList_wrap .user_table {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #create_image_wrap,
 #create_work_wrap {
     margin: 40px auto;
 }
+
 #create_image_wrap #img_attach,
 #create_work_wrap #work_attach,
 #create_ref_wrap #ref_attach {
@@ -111,7 +119,6 @@ section .userList_wrap {
     padding-top: 4px;
     box-shadow: 3px 4px 8px 0 rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    
 }
 
 #create_image_wrap #img_attach:hover,
@@ -121,7 +128,7 @@ section .userList_wrap {
     height: 35px;
     padding-top: 6px;
     margin-bottom: 5px;
-
 }
+
 
 /****footer****/

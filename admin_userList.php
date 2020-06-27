@@ -75,7 +75,7 @@
         ?>
     </div>
 </section>
-<footer id="bbdd_ft">
+<footer>
     <?php include "footer.php";?>
 </footer>
     <script>
