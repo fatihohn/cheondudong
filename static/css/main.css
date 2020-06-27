@@ -203,6 +203,25 @@
     margin: 0 10px;
 }
 
+#detail_func_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#detail_func_wrap #back_btn {
+    text-align: right;
+}
+#detail_func_wrap #share_btn {
+    text-align: left;
+}
+
+
+#detail_func_wrap #back_btn img,
+#detail_func_wrap #share_btn img {
+    width: 120px;
+}
+
+
 
 /****map****/
 
