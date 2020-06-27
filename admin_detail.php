@@ -42,12 +42,31 @@ $stmt = mysqli_stmt_init($conn);
             $resultPlaceImg = mysqli_stmt_get_result($stmt);
     }
 
+$sqlPlaceWork = "SELECT * FROM works WHERE place_id = $q";
+$stmt = mysqli_stmt_init($conn);
+    if (!mysqli_stmt_prepare($stmt, $sqlPlaceWork)) {
+            // echo "sqlPlaceWork error";
+    } else {
+            // mysqli_stmt_bind_param($stmt, "s", $author);
+            mysqli_stmt_execute($stmt);
+            $resultPlaceWork = mysqli_stmt_get_result($stmt);
+    }
+        
+$sqlPlaceRef = "SELECT * FROM refs WHERE place_id = $q";
+$stmt = mysqli_stmt_init($conn);
+    if (!mysqli_stmt_prepare($stmt, $sqlPlaceRef)) {
+            // echo "sqlPlaceRef error";
+    } else {
+            // mysqli_stmt_bind_param($stmt, "s", $author);
+            mysqli_stmt_execute($stmt);
+            $resultPlaceRef = mysqli_stmt_get_result($stmt);
+    }
 
 
-$detailWork = "임시 관련작품 == 리스트 == 입력 시 리스트로 변환";
-$detailWork_en = "works list";
-$detailRef = "임시 참고자료 == 리스트 == 입력 시 리스트로 변환";
-$detailRef_en = "reference list";
+// $detailWork = "임시 관련작품 == 리스트 == 입력 시 리스트로 변환";
+// $detailWork_en = "works list";
+// $detailRef = "임시 참고자료 == 리스트 == 입력 시 리스트로 변환";
+// $detailRef_en = "reference list";
 
 
 
@@ -174,26 +193,89 @@ $detailRef_en = "reference list";
                             </ul>
                         </div>
                         <div id="detail_work">
-                            <div class="detail_attachment_title">
-                                <div class="work_title ko ddobag">
-                                    관련 작품
+                        <?php
+                            if($resultPlaceWork->num_rows > 0) {
+                                echo "
+                                <div class='detail_attachment_title'>
+                                    <div class='work_title ko ddobag'>
+                                        관련 작품
+                                    </div>
+                                    <div class='work_title en ddobag'>
+                                        Works
+                                    </div>
                                 </div>
-                                <div class="work_title en ddobag">
-                                    Works
-                                </div>
-                            </div>
-                            <?php echo $detailWork;?>
+                                <ul class='detail_attachment_list'>
+                                ";
+                                while($rowPlaceWork = $resultPlaceWork->fetch_assoc()) {
+                                    $detailWork_title_ko = $rowPlaceWork['ko_title'];
+                                    $detailWork_title_en = $rowPlaceWork['en_title'];
+                                    $detailWork_cont_ko = $rowPlaceWork['ko_cont'];
+                                    $detailWork_cont_en = $rowPlaceWork['en_cont'];
+                                    
+                                    echo "<li class='attached_work'>";
+                                        // echo "<img src='".$detailImg_dir."' alt='".$detailImg_title_ko."'>";
+                                        echo "<div class='attached_work_tag'>";
+                                            echo "<div class='attached_work_title ko'>";
+                                            echo $detailWork_title_ko;
+                                            echo "</div>";
+                                            echo "<div class='attached_work_title en'>";
+                                            echo $detailWork_title_en;
+                                            echo "</div>";
+                                            echo "<div class='attached_work_cont ko'>";
+                                            echo $detailWork_cont_ko;
+                                            echo "</div>";
+                                            echo "<div class='attached_work_cont en'>";
+                                            echo $detailWork_cont_en;
+                                            echo "</div>";
+                                        echo "</div>";
+                                    echo "</li>";
+
+                                }
+                                echo "</ul>";
+                            }
+                        ?>
                         </div>
                         <div id="detail_ref">
-                            <div class="detail_attachment_title">
-                                <div class="ref_title ko ddobag">
-                                    참고 자료
+                        <?php
+                            if($resultPlaceWork->num_rows > 0) {
+                                echo "
+                                <div class='detail_attachment_title'>
+                                    <div class='ref_title ko ddobag'>
+                                        참고 자료
+                                    </div>
+                                    <div class='ref_title en ddobag'>
+                                        References
+                                    </div>
                                 </div>
-                                <div class="ref_title en ddobag">
-                                    References
-                                </div>
-                            </div>
-                            <?php echo $detailRef;?>
+                                <ul class='detail_attachment_list'>
+                                ";
+                                while($rowPlaceRef = $resultPlaceRef->fetch_assoc()) {
+                                    $detailRef_title_ko = $rowPlaceRef['ko_title'];
+                                    $detailRef_title_en = $rowPlaceRef['en_title'];
+                                    $detailRef_link = $rowPlaceRef['link'];
+                                    
+                                    echo "<li class='attached_ref'>";
+                                        // echo "<img src='".$detailImg_dir."' alt='".$detailImg_title_ko."'>";
+                                        echo "<div class='attached_ref_tag'>";
+                                            echo "<div class='attached_ref_link'>";
+                                                echo "<a href='";
+                                                echo $detailRef_link;
+                                                echo "'>";
+                                                    echo "<div class='attached_ref_title ko'>";
+                                                    echo $detailRef_title_ko;
+                                                    echo "</div>";
+                                                    echo "<div class='attached_ref_title en'>";
+                                                    echo $detailRef_title_en;
+                                                    echo "</div>";
+                                                echo "</a>";
+                                            echo "</div>";
+                                        echo "</div>";
+                                    echo "</li>";
+
+                                }
+                                echo "</ul>";
+                            }
+                        ?>                                 
                         </div>
                     </div>
                 </div>
