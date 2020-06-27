@@ -9,8 +9,6 @@ session_start();
 
 $adminCast = "admin";
 
-$uname = $_SESSION['username'];
-
 
 
 $URL = "./admin_index.php";
@@ -63,9 +61,11 @@ if ($resultRefList->num_rows > 0) {
         //    <td class='".$ref_id."'>".$ref_link."</td>
            echo
            "<tr id='".$ref_id."' >
-           <td class='".$ref_id."'>".$ref_ko_title."<br>".$ref_en_title."</td>
-          <td class='".$ref_id."'><a href='".$ref_link."'>".$ref_link."</a></td>
-        <td  style='width:35px' class='".$ref_id."'>
+            <td class='".$ref_id."'>".$ref_ko_title."<br>".$ref_en_title."</td>
+            <td class='".$ref_id."'>
+                <a href='".$ref_link."'>".$ref_link."</a>
+            </td>
+            <td  style='width:35px' class='".$ref_id."'>
                 <button class='del_btn' name='".$ref_id."' onclick='refDel(this.name)'>
                     삭제
                 </button>
