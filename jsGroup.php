@@ -284,7 +284,7 @@
 
                 }
                 if(userListWrap) {
-                    userListWrap.style.display = "initial";
+                    userListWrap.style.display = "block";
                 }
             } 
         }
