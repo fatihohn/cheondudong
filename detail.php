@@ -138,17 +138,28 @@ $detailRef_en = "reference list";
                             </div>
                         </div>
                         <div id="detail_img">
-                            <div class="detail_attachment_title">
+                            <!-- <div class="detail_attachment_title">
                                 <div class="img_title ko ddobag">
                                     이미지
                                 </div>
                                 <div class="img_title en ddobag">
                                     Images
                                 </div>
-                            </div>
-                            <ul class="detail_attachment_list">
+                            </div> -->
+                            <!-- <ul class="detail_attachment_list"> -->
                                 <?php
                                     if($resultPlaceImg->num_rows > 0) {
+                                        echo "
+                                        <div class='detail_attachment_title'>
+                                            <div class='img_title ko ddobag'>
+                                                이미지
+                                            </div>
+                                            <div class='img_title en ddobag'>
+                                                Images
+                                            </div>
+                                        </div>
+                                        <ul class='detail_attachment_list'>
+                                        ";
                                         while($rowPlaceImg = $resultPlaceImg->fetch_assoc()) {
                                             $detailWork_title_ko = $rowPlaceImg['ko_title'];
                                             $detailWork_title_en = $rowPlaceImg['en_title'];
@@ -175,12 +186,13 @@ $detailRef_en = "reference list";
                                             echo "</li>";
 
                                         }
+                                        echo "</ul>";
                                     }
                                 ?>
-                            </ul>
+                            <!-- </ul> -->
                         </div>
                         <div id="detail_work">
-                            <div class="detail_attachment_title">
+                            <!-- <div class="detail_attachment_title">
                                 <div class="work_title ko ddobag">
                                     관련 작품
                                 </div>
@@ -188,9 +200,20 @@ $detailRef_en = "reference list";
                                     Works
                                 </div>
                             </div>
-                            <ul class="detail_attachment_list">
+                            <ul class="detail_attachment_list"> -->
                                 <?php
                                     if($resultPlaceWork->num_rows > 0) {
+                                        echo "
+                                        <div class='detail_attachment_title'>
+                                            <div class='work_title ko ddobag'>
+                                                관련 작품
+                                            </div>
+                                            <div class='work_title en ddobag'>
+                                                Works
+                                            </div>
+                                        </div>
+                                        <ul class='detail_attachment_list'>
+                                        ";
                                         while($rowPlaceWork = $resultPlaceWork->fetch_assoc()) {
                                             $detailImg_title_ko = $rowPlaceWork['ko_title'];
                                             $detailImg_title_en = $rowPlaceWork['en_title'];
@@ -217,9 +240,10 @@ $detailRef_en = "reference list";
                                             echo "</li>";
 
                                         }
+                                        echo "</ul>";
                                     }
                                 ?>
-                            </ul>
+                            <!-- </ul> -->
                         </div>
                         <div id="detail_ref">
                             <div class="detail_attachment_title">
