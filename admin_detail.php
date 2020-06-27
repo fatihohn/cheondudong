@@ -151,17 +151,19 @@ $stmt = mysqli_stmt_init($conn);
                             </div>
                         </div>
                         <div id="detail_img">
-                            <div class="detail_attachment_title">
-                                <div class="img_title ko ddobag">
-                                    이미지
-                                </div>
-                                <div class="img_title en ddobag">
-                                    Images
-                                </div>
-                            </div>
-                            <ul class="detail_attachment_list">
-                                <?php
+                        <?php
                                     if($resultPlaceImg->num_rows > 0) {
+                                        echo "
+                                        <div class='detail_attachment_title'>
+                                            <div class='img_title ko ddobag'>
+                                                이미지
+                                            </div>
+                                            <div class='img_title en ddobag'>
+                                                Images
+                                            </div>
+                                        </div>
+                                        <ul class='detail_attachment_list'>
+                                        ";
                                         while($rowPlaceImg = $resultPlaceImg->fetch_assoc()) {
                                             $detailImg_title_ko = $rowPlaceImg['ko_title'];
                                             $detailImg_title_en = $rowPlaceImg['en_title'];
@@ -188,9 +190,9 @@ $stmt = mysqli_stmt_init($conn);
                                             echo "</li>";
 
                                         }
+                                        echo "</ul>";
                                     }
                                 ?>
-                            </ul>
                         </div>
                         <div id="detail_work">
                         <?php
