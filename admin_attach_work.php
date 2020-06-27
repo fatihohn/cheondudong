@@ -133,6 +133,7 @@
     }
 
 </script>
+<?php include "admin_jsGroup.php"; ?>
 </body>
 
 </html>
