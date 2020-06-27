@@ -70,7 +70,7 @@
                     <div class="createInput">
                         <label class="createGrid1">내용</label>
                         <div class="admin_editor">
-                            <textarea name="ko_cont" id="ir1_ko" ></textarea>
+                            <textarea name="ko_work_cont" id="work_cont_ko" ></textarea>
                         </div>
                     </div>
                 </p>
@@ -78,7 +78,7 @@
                     <div class="createInput">
                         <label class="createGrid1">Content</label>
                         <div class="admin_editor">
-                            <textarea name="en_cont" id="ir1_en" ></textarea>
+                            <textarea name="en_work_cont" id="work_cont_en" ></textarea>
                         </div>
                     </div>
                 </p>
@@ -107,13 +107,13 @@
     let oEditors2 = [];
     nhn.husky.EZCreator.createInIFrame({
      oAppRef: oEditors,
-     elPlaceHolder: "ir1_ko",
+     elPlaceHolder: "work_cont_ko",
      sSkinURI: "SmartEditor2Skin.html",
      fCreator: "createSEditor2"
     });
     nhn.husky.EZCreator.createInIFrame({
      oAppRef: oEditors2,
-     elPlaceHolder: "ir1_en",
+     elPlaceHolder: "work_cont_en",
      sSkinURI: "SmartEditor2Skin.html",
      fCreator: "createSEditor2"
     });
@@ -121,8 +121,8 @@
     // ‘저장’ 버튼을 누르는 등 저장을 위한 액션을 했을 때 submitContents가 호출된다고 가정한다.
     function submitContents(elClickedObj) {
      // 에디터의 내용이 textarea에 적용된다.
-     oEditors.getById["ir1_ko"].exec("UPDATE_CONTENTS_FIELD", []);
-     oEditors2.getById["ir1_en"].exec("UPDATE_CONTENTS_FIELD", []);
+     oEditors.getById["work_cont_ko"].exec("UPDATE_CONTENTS_FIELD", []);
+     oEditors2.getById["work_cont_en"].exec("UPDATE_CONTENTS_FIELD", []);
 
      // 에디터의 내용에 대한 값 검증은 이곳에서
      // document.getElementById("ir1").value를 이용해서 처리한다.

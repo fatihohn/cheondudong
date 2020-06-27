@@ -95,7 +95,12 @@ section .userList_wrap {
     margin-top: 40px;
 }
 
-#create_image_wrap #img_attach {
+#create_image_wrap,
+#create_work_wrap {
+    margin: 40px auto;
+}
+#create_image_wrap #img_attach,
+#create_work_wrap #work_attach {
     width: 150px;
     height: 30px;
     margin-top: 30px;
@@ -108,7 +113,8 @@ section .userList_wrap {
     
 }
 
-#create_image_wrap #img_attach:hover {
+#create_image_wrap #img_attach:hover,
+#create_work_wrap #work_attach:hover {
     width: 155px;
     height: 35px;
     padding-top: 6px;
