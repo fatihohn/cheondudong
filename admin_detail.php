@@ -283,6 +283,12 @@ $stmt = mysqli_stmt_init($conn);
                             <div id="back_btn" title="뒤로가기">
                                 <img src="static/img/back_btn.png" alt="back_btn">
                             </div>
+                            <div id="modify_btn" title="수정하기">
+                                <img src="static/img/modify_btn.png" alt="modify_btn">
+                            </div>
+                            <div id="delete_btn" title="삭제하기">
+                                <img src="static/img/delete_btn.png" alt="delete_btn">
+                            </div>
                            
                         </div>
                     </div>
