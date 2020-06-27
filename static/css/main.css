@@ -218,7 +218,9 @@
 
 #detail_func_wrap #back_btn img,
 #detail_func_wrap #share_btn img {
-    width: 120px;
+    width: 60px;
+    padding: 10px;
+    cursor: pointer;
 }
 
 
