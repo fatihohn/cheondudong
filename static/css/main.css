@@ -242,6 +242,18 @@
     display: none;
 }
 
+
+/****footer****/
+
+#footer_wrap {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-family: "또박또박";
+    padding: 15px;
+}
+
 @media all and (max-width: 801px) {}
 
 @media all and (max-width: 481px) {}
