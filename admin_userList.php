@@ -22,7 +22,7 @@
 <!-- //****기본구성 끝****// -->
 
 
-    <div class="userList_wrap">           
+    <div id="userList_wrap" class="userList_wrap">           
     <?php
     include 'cdd_db_conn.php';   
     session_start();

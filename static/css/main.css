@@ -14,12 +14,12 @@
     width: 100%;
     max-width: 400px;
     height: 600px;
-    margin: 0 auto;
+    margin: 10% auto;
     text-align: center;
     font-size: 2rem;
     line-height: 1.2;
     font-weight: bolder;
-    padding-top: 10%;
+    /* padding-top: 10%; */
     font-family: "또박또박"
 }
 

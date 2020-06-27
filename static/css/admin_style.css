@@ -100,14 +100,14 @@ section .view_wrap .contEditor center>h3 {
     margin: 40px;
 }
 
-section .userList_wrap {
+section #userList_wrap {
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
     padding-top: 140px;
 }
 
-section .userList_wrap .user_table {
+section #userList_wrap .user_table {
     width: 100%;
     max-width: 700px;
     margin: 0 auto;

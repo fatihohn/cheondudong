@@ -249,6 +249,8 @@
             let introWrap = document.getElementById("intro_cont_wrap");
             let placeWrap = document.getElementById("place_list_wrap");
             
+            let userListWrap = document.getElementById("userList_wrap");
+
             if(menuWrap.style.display == "none") {
                 headerWrap.style.display = "initial";
                 menuWrap.style.display = "initial";
@@ -260,7 +262,10 @@
                 }
                 if(detailWrap) {
                     detailWrap.style.visibility = "hidden";
-                }                    
+                }  
+                if(userListWrap) {
+                    userListWrap.style.display = "none";
+                }                
             } else {
                 headerWrap.style.display = "initial";
                 menuWrap.style.display = "none";
@@ -277,6 +282,9 @@
                     introWrap.style.display = "none";
                     placeWrap.style.display = "none";
 
+                }
+                if(userListWrap) {
+                    userListWrap.style.display = "initial";
                 }
             } 
         }
