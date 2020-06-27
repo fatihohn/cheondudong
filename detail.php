@@ -41,9 +41,19 @@ $stmt = mysqli_stmt_init($conn);
             $resultPlaceImg = mysqli_stmt_get_result($stmt);
     }
 
+$sqlPlaceWork = "SELECT * FROM works WHERE place_id = $q";
+$stmt = mysqli_stmt_init($conn);
+    if (!mysqli_stmt_prepare($stmt, $sqlPlaceWork)) {
+            // echo "sqlPlaceWork error";
+    } else {
+            // mysqli_stmt_bind_param($stmt, "s", $author);
+            mysqli_stmt_execute($stmt);
+            $resultPlaceWork = mysqli_stmt_get_result($stmt);
+    }
+
    
-$detailWork = "임시 관련작품 == 리스트 == 입력 시 리스트로 변환";
-$detailWork_en = "works list";
+// $detailWork = "임시 관련작품 == 리스트 == 입력 시 리스트로 변환";
+// $detailWork_en = "works list";
 $detailRef = "임시 참고자료 == 리스트 == 입력 시 리스트로 변환";
 $detailRef_en = "reference list";
 
@@ -140,11 +150,53 @@ $detailRef_en = "reference list";
                                 <?php
                                     if($resultPlaceImg->num_rows > 0) {
                                         while($rowPlaceImg = $resultPlaceImg->fetch_assoc()) {
-                                            $detailImg_title_ko = $rowPlaceImg['ko_title'];
-                                            $detailImg_title_en = $rowPlaceImg['en_title'];
-                                            $detailImg_cont_ko = $rowPlaceImg['ko_cont'];
-                                            $detailImg_cont_en = $rowPlaceImg['en_cont'];
-                                            $detailImg_dir = $rowPlaceImg['img_dir'];
+                                            $detailWork_title_ko = $rowPlaceImg['ko_title'];
+                                            $detailWork_title_en = $rowPlaceImg['en_title'];
+                                            $detailWork_cont_ko = $rowPlaceImg['ko_cont'];
+                                            $detailWork_cont_en = $rowPlaceImg['en_cont'];
+                                            $detailWork_dir = $rowPlaceImg['img_dir'];
+                                            
+                                            echo "<li class='attached_work'>";
+                                                // echo "<img src='".$detailWork_dir."' alt='".$detailWork_title_ko."'>";
+                                                echo "<div class='attached_work_tag'>";
+                                                    echo "<div class='attached_work_title ko'>";
+                                                    echo $detailWork_title_ko;
+                                                    echo "</div>";
+                                                    echo "<div class='attached_work_title en'>";
+                                                    echo $detailWork_title_en;
+                                                    echo "</div>";
+                                                    echo "<div class='attached_work_cont ko'>";
+                                                    echo $detailWork_cont_ko;
+                                                    echo "</div>";
+                                                    echo "<div class='attached_work_cont en'>";
+                                                    echo $detailWork_cont_en;
+                                                    echo "</div>";
+                                                echo "</div>";
+                                            echo "</li>";
+
+                                        }
+                                    }
+                                ?>
+                            </ul>
+                        </div>
+                        <div id="detail_work">
+                            <div class="detail_attachment_title">
+                                <div class="work_title ko ddobag">
+                                    관련 작품
+                                </div>
+                                <div class="work_title en ddobag">
+                                    Works
+                                </div>
+                            </div>
+                            <ul class="detail_attachment_list">
+                                <?php
+                                    if($resultPlaceWork->num_rows > 0) {
+                                        while($rowPlaceWork = $resultPlaceWork->fetch_assoc()) {
+                                            $detailImg_title_ko = $rowPlaceWork['ko_title'];
+                                            $detailImg_title_en = $rowPlaceWork['en_title'];
+                                            $detailImg_cont_ko = $rowPlaceWork['ko_cont'];
+                                            $detailImg_cont_en = $rowPlaceWork['en_cont'];
+                                            $detailImg_dir = $rowPlaceWork['img_dir'];
                                             
                                             echo "<li class='attached_img'>";
                                                 echo "<img src='".$detailImg_dir."' alt='".$detailImg_title_ko."'>";
@@ -168,17 +220,6 @@ $detailRef_en = "reference list";
                                     }
                                 ?>
                             </ul>
-                        </div>
-                        <div id="detail_work">
-                            <div class="detail_attachment_title">
-                                <div class="work_title ko ddobag">
-                                    관련 작품
-                                </div>
-                                <div class="work_title en ddobag">
-                                    Works
-                                </div>
-                            </div>
-                            <?php echo $detailWork;?>
                         </div>
                         <div id="detail_ref">
                             <div class="detail_attachment_title">
