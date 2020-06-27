@@ -264,14 +264,19 @@
             } else {
                 headerWrap.style.display = "initial";
                 menuWrap.style.display = "none";
-                if(mapWrap && placeWrap) {
+                if(mapWrap && placeWrap && detailWrap) {
+                    mapWrap.style.visibility = "hidden";
+                    footerWrap.style.display = "none";
+                    introWrap.style.display = "none";
+                    placeWrap.style.display = "none";
+                    detailWrap.style.visibility = "visible";
+                   
+                } else if(mapWrap && placeWrap && !detailWrap) {
                     mapWrap.style.visibility = "visible";
                     footerWrap.style.display = "none";
                     introWrap.style.display = "none";
                     placeWrap.style.display = "none";
-                }
-                if(detailWrap) {
-                    detailWrap.style.visibility = "visible";
+
                 }
             } 
         }
