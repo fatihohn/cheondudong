@@ -307,15 +307,11 @@ $stmt = mysqli_stmt_init($conn);
                             <div id="back_btn" class="ko" title="뒤로가기">
                                 <img src="static/img/back_btn.png" alt="back_btn">
                             </div>
-                            <div id="back_btn" class="en" title="go back">
-                                <img src="static/img/back_btn.png" alt="back_btn">
-                            </div>
+                        
                             <div id="share_btn" class="ko" title="공유하기">
                                 <img src="static/img/share_btn.png" alt="share_btn">
                             </div>
-                            <div id="share_btn" class="en" title="share">
-                                <img src="static/img/share_btn.png" alt="share_btn">
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
