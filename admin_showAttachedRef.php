@@ -60,11 +60,12 @@ if ($resultRefList->num_rows > 0) {
            $ref_en_title = $row["en_title"];
            $ref_link = $row["link"];
   
-echo
+        //    <td class='".$ref_id."'><a href='".$ref_link."'>".$ref_link."</a></td>
+        echo
         "<tr id='".$ref_id."' >
-            <td class='".$ref_id."'>".$ref_ko_title."<br>".$ref_en_title."</td>
-            <td class='".$ref_id."'><a href='".$ref_link."'>".$ref_link."</a></td>
-            <td  style='width:35px' class='".$ref_id."'>
+        <td class='".$ref_id."'>".$ref_ko_title."<br>".$ref_en_title."</td>
+        <td class='".$ref_id."'>".$ref_link."</td>
+        <td  style='width:35px' class='".$ref_id."'>
                 <button class='del_btn' name='".$ref_id."' onclick='workDel(this.name)'>
                     삭제
                 </button>
