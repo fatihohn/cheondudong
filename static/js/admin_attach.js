@@ -70,5 +70,5 @@ if (document.getElementById("attached_work_list")) {
         xmlhttp.send();
         }
     showAttachedWork();
-    document.getElementById("img_attach").addEventListener("click", showAttachedWork);
+    document.getElementById("work_attach").addEventListener("click", showAttachedWork);
 }
