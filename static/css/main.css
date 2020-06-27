@@ -252,6 +252,7 @@
     width: 100%;
     font-family: "또박또박";
     padding: 15px;
+    z-index: 999;
 }
 
 @media all and (max-width: 801px) {}
