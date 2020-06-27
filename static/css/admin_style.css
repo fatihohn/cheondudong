@@ -78,6 +78,10 @@
 
 /****main****/
 
+#login_wrap {
+    margin-top: 140px;
+}
+
 section .view_wrap {
     width: 100%;
     max-width: 596px;
