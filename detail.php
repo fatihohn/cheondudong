@@ -304,10 +304,10 @@ $stmt = mysqli_stmt_init($conn);
                                 ?>
                         </div>
                         <div id="detail_func_wrap">
-                            <div id="back_btn">
+                        <div id="back_btn" title="뒤로가기">
                                 <img src="static/img/back_btn.png" alt="back_btn">
                             </div>
-                            <div id="share_btn">
+                            <div id="share_btn" title="공유하기">
                                 <img src="static/img/share_btn.png" alt="share_btn">
                             </div>
                         </div>
