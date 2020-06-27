@@ -15,7 +15,8 @@ $placeTitle = "임시 장소 제목"
                         <div id="menu_intro_btn">
                             <a>
                                 <h2 class="ddobag ko">
-                                    천두동·동두천 소개
+                                    <!-- 천두동·동두천 소개 -->
+                                    천두동 소개
                                 </h2>
                                 <h2 class="ddobag en">
                                     Cheondudong Intro

@@ -303,6 +303,14 @@ $stmt = mysqli_stmt_init($conn);
                                     }
                                 ?>
                         </div>
+                        <div id="detail_func_wrap">
+                            <div id="back_btn">
+                                <img src="static/img/back_btn.png" alt="back_btn">
+                            </div>
+                            <div id="share_btn">
+                                <img src="static/img/share_btn.png" alt="share_btn">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

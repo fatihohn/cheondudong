@@ -431,4 +431,43 @@
     //     }
     // }
     // mapPlaceLiClick();
+
+
+
+
+
+
+
+
+    //****detail****//
+    function detailBackBtnClick() {
+        let backBtn = document.getElementById("back_btn");
+        function detailBack() {
+            history.back();
+        }
+        if(backBtn) {
+            backBtn.addEventListener("click", detailBack);
+        }
+    }
+    detailBackBtnClick();
+
+    function detailShareBtnClick() {
+        let shareBtn = document.getElementById("share_btn");
+        function detailShare() {
+            let urlBox = document.createElement('input');
+            let currentUrl = window.location.href;
+
+            document.body.appendChild(urlBox);
+            urlBox.value = currentUrl;
+            urlBox.select();
+            document.execCommand('copy');
+            document.body.removeChild(urlBox);
+            alert("링크가 복사되었습니다.")
+        }
+        if(shareBtn) {
+            shareBtn.addEventListener("click", detailShare);
+        }
+    }
+    detailShareBtnClick();
+
 </script>
