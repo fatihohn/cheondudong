@@ -19,7 +19,7 @@ if(!isset($_SESSION['username'])) {
                     </script>
     <?php   }
             //cast: admin인 경우
-            else if($_SESSION['cast']==$adminCast) {
+            // else if($_SESSION['cast']==$adminCast) {
                 //현재 작성중 장소 id = new_id
                 $sqlLatestPlace = "SELECT id FROM places ORDER BY id DESC LIMIT 1";
                 $resultLatestPlace = $conn->query($sqlLatestPlace);
@@ -28,9 +28,9 @@ if(!isset($_SESSION['username'])) {
                 $new_id = intval(intval($latest_id) + 1);
                 //추가한 이미지 목록
                 $sqlRefList = "SELECT * FROM refs WHERE place_id = $new_id";
-            } else {
-                $sqlRefList = null;
-            }
+            // } else {
+            //     $sqlRefList = null;
+            // }
 
 
 
