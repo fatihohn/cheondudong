@@ -68,7 +68,7 @@ if (document.getElementById("attached_work_list")) {
         }
         xmlhttp.open("POST", "admin_showAttachedWork.php", true);
         xmlhttp.send();
-        }
+    }
     showAttachedWork();
     document.getElementById("work_attach").addEventListener("click", showAttachedWork);
 }
@@ -94,7 +94,7 @@ if (document.getElementById("attached_ref_list")) {
         }
         xmlhttp.open("POST", "admin_showAttachedRef.php", true);
         xmlhttp.send();
-        }
+    }
     showAttachedRef();
     document.getElementById("ref_attach").addEventListener("click", showAttachedRef);
 }

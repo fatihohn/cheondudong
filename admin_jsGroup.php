@@ -185,6 +185,16 @@ menuPlaceAddClick();
         }
     }
 
+    function refDel(str) {
+        let delConfirm = confirm('삭제 후 상단 작성 내용이 저장되지 않습니다. 삭제하시겠습니까?');
+        if (delConfirm == true) {
+            location.href = './admin_delete_ref.php?id=' + str;
+            alert('삭제중입니다')
+        } else {
+            alert('취소되었습니다');
+        }
+    }
+
 
 
 
