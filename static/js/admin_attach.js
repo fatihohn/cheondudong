@@ -72,3 +72,29 @@ if (document.getElementById("attached_work_list")) {
     showAttachedWork();
     document.getElementById("work_attach").addEventListener("click", showAttachedWork);
 }
+
+//장소에 추가된 참고자료 목록
+if (document.getElementById("attached_ref_list")) {
+    function showAttachedRef() {
+        let createRef = document.getElementById("create_ref");
+
+        if (createRef == "") {
+            document.getElementById("attached_ref_list").innerHTML = "";
+            return;
+        }
+        if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else { // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("attached_ref_list").innerHTML = xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("POST", "admin_showAttachedRef.php", true);
+        xmlhttp.send();
+        }
+    showAttachedRef();
+    document.getElementById("ref_attach").addEventListener("click", showAttachedRef);
+}
