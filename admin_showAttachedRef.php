@@ -52,7 +52,7 @@ if ($resultRefList->num_rows > 0) {
         
         </tr>";
     // output data of each row
-    while($rowRef = $resultrefList->fetch_assoc()) {
+    while($rowRef = $resultRefList->fetch_assoc()) {
            $ref_id = $rowRef["id"];
            $ref_ko_title = $rowRef["ko_title"];
            $ref_en_title = $rowRef["en_title"];
@@ -61,17 +61,17 @@ if ($resultRefList->num_rows > 0) {
         //    <td class='".$ref_id."'>".$ref_link."</td>
            echo
            "<tr id='".$ref_id."' >
-            <td class='".$ref_id."'>".$ref_ko_title."<br>".$ref_en_title."</td>
-            <td class='".$ref_id."'>
-                <a href='".$ref_link."'>".$ref_link."</a>
-            </td>
-            <td  style='width:35px' class='".$ref_id."'>
-                <button class='del_btn' name='".$ref_id."' onclick='refDel(this.name)'>
-                    삭제
-                </button>
-            </td>
-        </tr>
-                ";
+                <td class='".$ref_id."'>".$ref_ko_title."<br>".$ref_en_title."</td>
+                <td class='".$ref_id."'>
+                    <a href='".$ref_link."'>".$ref_link."</a>
+                </td>
+                <td  style='width:35px' class='".$ref_id."'>
+                    <button class='del_btn' name='".$ref_id."' onclick='refDel(this.name)'>
+                        삭제
+                    </button>
+                </td>
+            </tr>
+            ";
                 
             }
 echo "
