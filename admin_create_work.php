@@ -38,7 +38,7 @@ include 'cdd_db_conn.php';
 
 <div id="create_work_wrap">
     <div id="create_work">
-        <iframe  class="attach_frame" src="admin_attach_work.php" style="width:100%; max-width:596px; height:240px;"></iframe>
+        <iframe  class="attach_frame" src="admin_attach_work.php" style="width:100%; max-width:596px; height:900px;"></iframe>
     </div>
     <div id="work_attach">
         관련작품 새로고침
