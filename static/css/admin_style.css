@@ -144,4 +144,25 @@ section #userList_wrap .user_table {
 }
 
 
+
+/****detail****/
+#admin_detail_func_wrap {
+    display: grid;
+    /* grid-template-columns: 45% 10% 45%; */
+    /* grid-template-columns: calc((100% - 100px)/2) 100px calc((100% - 100px)/2); */
+    grid-template-columns: 100px 100px 100px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+}
+#admin_detail_func_wrap #back_btn img,
+#admin_detail_func_wrap #modify_btn img,
+#admin_detail_func_wrap #delete_btn img {
+    width: 60px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
 /****footer****/
