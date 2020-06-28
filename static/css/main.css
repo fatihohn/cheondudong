@@ -205,17 +205,22 @@
 
 #detail_func_wrap {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: 100px 100px;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-#detail_func_wrap #back_btn {
+/* #detail_func_wrap #back_btn {
     text-align: right;
     margin-right: 20px;
 }
 #detail_func_wrap #share_btn {
     text-align: left;
     margin-left: 20px;
-}
+} */
 
 
 #detail_func_wrap #back_btn img,
