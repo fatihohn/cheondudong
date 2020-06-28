@@ -78,6 +78,8 @@
 <footer>
     <?php include "footer.php";?>
 </footer>
+<?php include "jsGroup.php"; ?>
+<?php include "admin_jsGroup.php"; ?>
     <script>
         function userListInit() {
             let headerWrap = document.getElementById("header_wrap");
@@ -94,8 +96,6 @@
         }
         userListInit();
     </script>
-<?php include "jsGroup.php"; ?>
-<?php include "admin_jsGroup.php"; ?>
 
 </body>
 </html>
