@@ -231,8 +231,8 @@
 }
 
 #intro_cont_wrap #intro_cont img {
-    /* max-width: 90% !important; */
-    max-width: calc(100% - 1rem) !important;
+    max-width: 90% !important;
+    /* max-width: calc(100% - 1rem) !important; */
 }
 
 
