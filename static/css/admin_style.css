@@ -105,6 +105,7 @@ section #userList_wrap {
     max-width: 700px;
     margin: 0 auto;
     padding-top: 140px;
+    display: block;
 }
 
 section #userList_wrap .user_table {

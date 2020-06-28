@@ -90,7 +90,7 @@
             headerWrap.style.display = "initial";
             // detailWrap.style.display = "none";
             // mapWrap.style.visibility = "hidden";
-            footerWrap.style.display = "initial";
+            footerWrap.style.display = "block";
         }
         userListInit();
     </script>

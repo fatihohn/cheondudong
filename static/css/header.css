@@ -230,6 +230,11 @@
     color: #555;
 }
 
+#intro_cont_wrap #intro_cont img {
+    max-width: 90%;
+}
+
+
 
 /*menu_place*/
 
