@@ -231,7 +231,7 @@
 }
 
 #intro_cont_wrap #intro_cont img {
-    max-width: 90%;
+    max-width: 90% !important;
 }
 
 
