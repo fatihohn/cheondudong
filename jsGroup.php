@@ -256,7 +256,7 @@
                 menuWrap.style.display = "block";
                 if(mapWrap && placeWrap) {
                     mapWrap.style.visibility = "hidden";
-                    footerWrap.style.display = "initial";
+                    footerWrap.style.display = "block";
                     introWrap.style.display = "none";
                     placeWrap.style.display = "none";
                 }
@@ -271,7 +271,7 @@
                 menuWrap.style.display = "none";
                 if(mapWrap && placeWrap && detailWrap) {
                     mapWrap.style.visibility = "hidden";
-                    footerWrap.style.display = "none";
+                    footerWrap.style.display = "block";
                     introWrap.style.display = "none";
                     placeWrap.style.display = "none";
                     detailWrap.style.visibility = "visible";
