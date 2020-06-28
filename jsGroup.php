@@ -441,18 +441,23 @@
 
     //****detail****//
     function detailBackBtnClick() {
-        let backBtn = document.getElementById("back_btn");
+        // let backBtn = document.getElementById("back_btn");
+        let backBtn = document.querySelectorAll(".back_btn");
         function detailBack() {
             history.back();
         }
-        if(backBtn) {
-            backBtn.addEventListener("click", detailBack);
+        let bb;
+        for(bb=0; bb < backBtn.length; bb++) {
+            if(backBtn) {
+                backBtn[bb].addEventListener("click", detailBack);
+            }
         }
     }
     detailBackBtnClick();
 
     function detailShareBtnClick() {
-        let shareBtn = document.getElementById("share_btn");
+        // let shareBtn = document.getElementById("share_btn");
+        let shareBtn = document.querySelectorAll(".share_btn");
         function detailShare() {
             let urlBox = document.createElement('input');
             let currentUrl = window.location.href;
@@ -464,8 +469,11 @@
             document.body.removeChild(urlBox);
             alert("링크가 복사되었습니다.")
         }
-        if(shareBtn) {
-            shareBtn.addEventListener("click", detailShare);
+        let sb;
+        for(sb=0; sb < shareBtn.length; sb++) {
+            if(shareBtn) {
+                shareBtn[sb].addEventListener("click", detailShare);
+            }
         }
     }
     detailShareBtnClick();

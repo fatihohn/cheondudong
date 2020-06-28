@@ -157,8 +157,8 @@ section #userList_wrap .user_table {
     text-align: center;
 }
 #admin_detail_func_wrap #back_btn img,
-#admin_detail_func_wrap #modify_btn img,
-#admin_detail_func_wrap #delete_btn img {
+#admin_detail_func_wrap .modify_btn img,
+#admin_detail_func_wrap .delete_btn img {
     width: 60px;
     padding: 10px;
     cursor: pointer;

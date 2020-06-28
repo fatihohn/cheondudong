@@ -280,13 +280,13 @@ $stmt = mysqli_stmt_init($conn);
                         ?>                                 
                         </div>
                         <div id="admin_detail_func_wrap">
-                            <div id="back_btn" title="뒤로가기">
+                            <div class="back_btn" title="뒤로가기">
                                 <img src="static/img/back_btn.png" alt="back_btn">
                             </div>
-                            <div id="modify_btn" title="수정하기">
+                            <div id="<?=$q?>" class="modify_btn" title="수정하기" onclick="placeModi(this.id)">
                                 <img src="static/img/modify_btn.png" alt="modify_btn">
                             </div>
-                            <div id="delete_btn" title="삭제하기">
+                            <div id="<?=$q?>" class="delete_btn" title="삭제하기" onclick="placeDel(this.id)">
                                 <img src="static/img/delete_btn.png" alt="delete_btn">
                             </div>
                            
@@ -320,7 +320,7 @@ $stmt = mysqli_stmt_init($conn);
                 detailWrap.style.display = "initial";
                 mapWrap.style.visibility = "hidden";
                 menuWrap.style.display = "none";
-                footerWrap.style.display = "initial";
+                footerWrap.style.display = "block";
             }
             detailInit();
         </script>
