@@ -207,7 +207,7 @@ menuPlaceAddClick();
 
 //****수정****//
     function placeModi(str) {
-
+        location.href = './admin_modify_place.php?id=' + str;
     }
 
 

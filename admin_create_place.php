@@ -9,7 +9,7 @@
 <body>
     <header>
         <?php include 'admin_header.php'; ?>
-</header>
+    </header>
         
  
 <section>
@@ -69,8 +69,8 @@
                                 </p>
                                 <p>
                                     <div class="createInput">
-                                    <label class="createGrid1">지도 표시 마커</label>
-                                    <input class="createGrid2" type="file" name="img"  required />
+                                        <label class="createGrid1">지도 표시 마커</label>
+                                        <input class="createGrid2" type="file" name="img"  required />
                                     </div>
                                 </p>
                                 <p>
@@ -147,15 +147,6 @@
                                         <?php include "admin_create_ref.php"; ?>
                                     </div>
                                 </p>
-
-
-
-
-
-
-
-
-
                                 <p>
                                     <input type="submit" onclick="submitContents(this);">
                                     <button name="cancel"><a href = "javascript:history.back()">취소</a></button>

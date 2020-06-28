@@ -9,7 +9,16 @@ if ($conn->connect_error) {
 // $resultPlace = $conn->query($sqlPlace) or die($conn->error);
 
 $q = intval($_GET['q']);
-$sqlPlaceDetail = "SELECT * FROM places WHERE id = $q";
+if($_SESSION['cast'] == "admin") {
+    $sqlPlaceDetail = "SELECT * FROM places WHERE id = $q";
+} else {
+    ?>
+    <script>
+        alert("권한이 없습니다.");
+        history.back();
+    </script>
+    <?php
+}
 
 $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sqlPlaceDetail)) {
