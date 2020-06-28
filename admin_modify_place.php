@@ -22,7 +22,7 @@
                 <div class="view_wrap_line">
                     <div class="contEditor">
                         <center>
-                            <h3>장소 생성</h3>
+                            <h3>장소 수정</h3>
                         </center>
 
 <?php    
@@ -68,9 +68,7 @@
                 //cast: admin||editor인 경우 || 작가 본인
                 else if($_SESSION['cast']==$adminCast) {
         ?>
-        <center>
-            <h3>장소 수정</h3>
-        </center>
+
         <form class="createForm" action="admin_create_place_action.php" method="POST" enctype="multipart/form-data">
                                 <p>
                                     <div class="createInput">
@@ -118,8 +116,8 @@
                                 <p>
                                     <div class="createInput">
                                     <label class="createGrid1">좌표</label>
-                                    <input class="createGrid2" name="lat" <?=$lat?> required />
-                                    <input class="createGrid2" name="lng" <?=$lng?> required />
+                                    <input class="createGrid2" name="lat" value="<?=$lat?>" required />
+                                    <input class="createGrid2" name="lng" value="<?=$lng?>" required />
                                     </div>
                                 </p>
                                 <p>
