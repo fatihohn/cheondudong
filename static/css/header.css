@@ -173,7 +173,7 @@
     max-width: 768px;
     min-height: calc(100vh - 100px);
     margin: 0 auto;
-    position: relative;
+    /* position: relative; */
     top: 140px;
     padding: 15px;
     font-size: 1.8rem;

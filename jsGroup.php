@@ -253,7 +253,7 @@
 
             if(menuWrap.style.display == "none") {
                 headerWrap.style.display = "initial";
-                menuWrap.style.display = "initial";
+                menuWrap.style.display = "block";
                 if(mapWrap && placeWrap) {
                     mapWrap.style.visibility = "hidden";
                     footerWrap.style.display = "initial";
