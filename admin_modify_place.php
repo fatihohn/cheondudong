@@ -238,7 +238,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VyaWNpdHkiLCJhIjoiY2tiZnpzaGtzMTB5NTJwcWVtO
                 [126.954480, 37.846739], // Southwest limit coordinates 
                 [127.196154, 38.014146] // Northeast limit coordinates
                 ],
-        zoom: 12.9, // starting zoom
+        zoom: 11, // starting zoom
         // minZoom: 12.5,
         maxZoom: 18
         });
