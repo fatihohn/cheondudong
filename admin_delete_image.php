@@ -23,7 +23,8 @@
         ?> 
         <script>        
                 // location.replace("<?php //echo $URL?>");
-                location.reload();
+                // location.reload();
+                history.back();
         </script>
         <?php          
 ?>
