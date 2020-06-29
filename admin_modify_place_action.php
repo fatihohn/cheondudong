@@ -100,11 +100,6 @@ if($_FILES['img']['size']!==0) {
         WHERE `id`='$q'";
         $sql = $sql1;
         echo "<br>sql1";
-        
-
-    }
-
-
 
 }
 
