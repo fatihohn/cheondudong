@@ -242,8 +242,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VyaWNpdHkiLCJhIjoiY2tiZnpzaGtzMTB5NTJwcWVtO
         var lngLat = marker.getLngLat();
         var placeLng = document.getElementById("place_lng");
         var placeLat = document.getElementById("place_lat");
-        placeLng.innerHTML = lngLat.lng;
-        placeLat.innerHTML = lngLat.lat;
+        placeLng.value = lngLat.lng;
+        placeLat.value = lngLat.lat;
         }
         
         marker.on('dragend', onDragEnd);
