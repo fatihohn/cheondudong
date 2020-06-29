@@ -248,7 +248,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VyaWNpdHkiLCJhIjoiY2tiZnpzaGtzMTB5NTJwcWVtO
             draggable: true
         })
             // .setLngLat([0, 0])
-            .setLngLat([127.060444, 37.91162])
+            // .setLngLat([127.060444, 37.91162])
+            .setLngLat([<?php echo $lng;?>, <?php echo $lat;?>])
             .addTo(map);
             
         // function onDragEnd() {
