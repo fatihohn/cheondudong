@@ -39,6 +39,7 @@ $en_cont = mysqli_real_escape_string($conn, $en_cont);
 
 
 
+$uploadimg = include "admin_modify_place_files.php";
 $mkimg = $uploadimg['img'];
 
 
@@ -64,7 +65,6 @@ $sql =
 
 
 if($_FILES['img']['size']!==0) {
-$uploadimg = include "admin_modify_place_files.php";
 
         $sql0 = 
         "UPDATE places SET 
