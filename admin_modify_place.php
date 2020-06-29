@@ -141,7 +141,7 @@
                                         <!-- <?php //include "admin_modify_image.php?q=".$q; ?> -->
                                         <div id="create_image_wrap">
                                             <div id="create_image">
-                                                <iframe  class="attach_frame" src="admin_attach_image.php" style="width:100%; max-width:596px; height:240px;"></iframe>
+                                                <iframe  class="attach_frame" src="admin_attach_modify_image.php?q=<?=$q?>" style="width:100%; max-width:596px; height:240px;"></iframe>
                                             </div>
                                             <div id="img_attach">
                                                 이미지 새로고침
@@ -156,7 +156,7 @@
                                         <?php //include "admin_modify_work.php"; ?>
                                         <div id="create_work_wrap">
                                             <div id="create_work">
-                                                <iframe  class="attach_frame" src="admin_attach_work.php" style="width:100%; max-width:596px; height:240px;"></iframe>
+                                                <iframe  class="attach_frame" src="admin_attach_modify_work.php" style="width:100%; max-width:596px; height:240px;"></iframe>
                                             </div>
                                             <div id="work_attach">
                                                 관련작업 새로고침
