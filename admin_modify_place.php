@@ -279,7 +279,7 @@ mkSizeSet();
             xmlhttp.send();
 
         }
-        showAttachedModiImg(<?=$q?>);
+        showAttachedModiImg(<?php echo $q; ?>);
         // document.getElementById("img_attach").addEventListener("click", showAttachedModiImg(<?=$q?>));
     }
 </script>
