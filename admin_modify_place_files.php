@@ -46,5 +46,5 @@ if ($uploadOk == 0) {
     }
 }
 $filename= $_FILES["img"]["name"];
-$sql = "INSERT INTO places (`mkimg`, `mkimg_dir`) VALUES ('$filename', '$target_file')";
+$sql = "UPDATE INTO places (`mkimg`, `mkimg_dir`) VALUES ('$filename', '$target_file')";
 ?>
