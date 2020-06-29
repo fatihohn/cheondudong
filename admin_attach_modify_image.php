@@ -17,7 +17,7 @@
             <h3>이미지 추가</h3>
         </center>
         <?php    
-        include 'cdd_db_conn.php';   z
+        include 'cdd_db_conn.php'; 
         $URL = "./admin_attach_image.php";
 
 
