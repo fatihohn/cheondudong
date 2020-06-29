@@ -206,6 +206,10 @@
 </script> -->
 
 <script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoic3VyaWNpdHkiLCJhIjoiY2tiZnpzaGtzMTB5NTJwcWVtOHF5anRmMCJ9.CI4QuMCsvVak3vrNtnJWcw';
+    
+
+
     var map = new mapboxgl.Map({
         container: 'create_map',
         style: 'mapbox://styles/suricity/ckbhx3huo0xb11ip5hywb59rx', // stylesheet location
