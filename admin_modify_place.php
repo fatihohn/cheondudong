@@ -149,44 +149,21 @@
 
                                             <div id="attached_modify_image_list"></div>
                                         </div>
-
-                                        <!-- <script src="static/js/admin_attach.js"></script> -->
-                                        <script>
-                                            //수정 중 장소에 추가된 이미지 목록
-                                            if (document.getElementById("attached_modify_image_list")) {
-                                                function showAttachedImg(str) {
-                                                    let createImg = document.getElementById("create_image");
-
-                                                    if (createImg == "") {
-                                                        document.getElementById("attached_modify_image_list").innerHTML = "";
-                                                        return;
-                                                    }
-                                                    if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
-                                                        xmlhttp = new XMLHttpRequest();
-                                                    } else { // code for IE6, IE5
-                                                        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-                                                    }
-                                                    xmlhttp.onreadystatechange = function() {
-                                                        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                                                            document.getElementById("attached_modify_image_list").innerHTML = xmlhttp.responseText;
-                                                        }
-                                                    }
-                                                    xmlhttp.open("POST", "admin_modify_showAttachedImg.php?q="+str, true);
-                                                    xmlhttp.send();
-
-                                                }
-                                                showAttachedImg();
-                                                document.getElementById("img_attach").addEventListener("click", showAttachedImg(<?=$q?>));
-                                            }
-                                        </script>
-
-
-
                                     </div>
                                 </p>
                                 <p>
                                     <div class="createInput">
                                         <?php //include "admin_modify_work.php"; ?>
+                                        <div id="create_work_wrap">
+                                            <div id="create_work">
+                                                <iframe  class="attach_frame" src="admin_attach_work.php" style="width:100%; max-width:596px; height:240px;"></iframe>
+                                            </div>
+                                            <div id="work_attach">
+                                                관련작업 새로고침
+                                            </div>
+
+                                            <div id="attached_modify_work_list"></div>
+                                        </div>
                                     </div>
                                 </p>
                                 <p>
@@ -276,6 +253,35 @@ function mkSizeSet() {
 mkSizeSet();
 </script>
 
+
+<script>
+    //수정 중 장소에 추가된 이미지 목록
+    if (document.getElementById("attached_modify_image_list")) {
+        function showAttachedImg(str) {
+            let createImg = document.getElementById("create_image");
+
+            if (createImg == "") {
+                document.getElementById("attached_modify_image_list").innerHTML = "";
+                return;
+            }
+            if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            } else { // code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("attached_modify_image_list").innerHTML = xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("POST", "admin_modify_showAttachedImg.php?q="+str, true);
+            xmlhttp.send();
+
+        }
+        showAttachedImg();
+        document.getElementById("img_attach").addEventListener("click", showAttachedImg(<?=$q?>));
+    }
+</script>
 
 </div>
 

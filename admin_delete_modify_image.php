@@ -22,7 +22,6 @@
         echo "삭제되었습니다"
         ?> 
         <script>        
-                // location.replace("<?php //echo $URL?>");
                 location.reload();
         </script>
         <?php          
