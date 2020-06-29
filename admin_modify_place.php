@@ -281,7 +281,7 @@ mkSizeSet();
 
         }
         showAttachedModiImg(<?php echo $q; ?>);
-        document.getElementById("img_attach").addEventListener("click", showAttachedModiImg(<?php echo $q; ?>));
+        document.getElementById("img_attach").addEventListener("click", function() {showAttachedModiImg(<?php echo $q; ?>);});
     }
 </script>
 
