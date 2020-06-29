@@ -268,8 +268,8 @@ function mkSizeSet() {
     let mkSizeVal = "<?=$mkimg_size?>";
     let ms;
     for(ms=0; ms < mkSize.length; ms++) {
-        if(mkSize[i].value == mkSizeVal) {
-            mkSize[i].selected = true;
+        if(mkSize[ms].value == mkSizeVal) {
+            mkSize[ms].selected = true;
         }
     }
 }
