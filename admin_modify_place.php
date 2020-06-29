@@ -158,7 +158,7 @@
                                                     let createImg = document.getElementById("create_image");
 
                                                     if (createImg == "") {
-                                                        document.getElementById("attached_image_list").innerHTML = "";
+                                                        document.getElementById("attached_modify_image_list").innerHTML = "";
                                                         return;
                                                     }
                                                     if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
@@ -168,7 +168,7 @@
                                                     }
                                                     xmlhttp.onreadystatechange = function() {
                                                         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                                                            document.getElementById("attached_image_list").innerHTML = xmlhttp.responseText;
+                                                            document.getElementById("attached_modify_image_list").innerHTML = xmlhttp.responseText;
                                                         }
                                                     }
                                                     xmlhttp.open("POST", "admin_modify_showAttachedImg.php?q="+str, true);
