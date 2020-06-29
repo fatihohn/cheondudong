@@ -12,7 +12,8 @@
  
 <section>
     
-    <div id="create_work_wrap">
+    <!-- <div id="create_work_wrap"> -->
+    <div>
         <center>
             <h3>관련작품 추가</h3>
         </center>

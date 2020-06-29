@@ -12,7 +12,8 @@
  
 <section>
     
-    <div id="create_ref_wrap">
+    <!-- <div id="create_ref_wrap"> -->
+    <div>
         <center>
             <h3>참고자료 추가</h3>
         </center>

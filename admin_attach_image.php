@@ -12,7 +12,8 @@
  
 <section>
     
-    <div id="create_img_wrap">
+    <!-- <div id="create_img_wrap"> -->
+    <div>
         <center>
             <h3>이미지 추가</h3>
         </center>
