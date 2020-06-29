@@ -21,7 +21,8 @@
         echo "삭제되었습니다"
         ?> 
         <script>        
-                location.replace("<?php echo $URL?>");
+                // location.replace("<?php echo $URL?>");
+                history.back();
         </script>
         <?php          
 ?>
