@@ -282,6 +282,35 @@ mkSizeSet();
         showAttachedModiImg(<?php echo $place_id; ?>);
         document.getElementById("img_attach").addEventListener("click", function() {showAttachedModiImg(<?php echo $place_id; ?>);});
     }
+
+
+
+    //수정 중 장소에 추가된 관련작품 목록
+    if (document.getElementById("attached_modify_work_list")) {
+        function showAttachedModiWork(str) {
+            let createWork = document.getElementById("create_work");
+
+            if (createWork == "") {
+                document.getElementById("attached_modify_work_list").innerHTML = "";
+                return;
+            }
+            if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            } else { // code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("attached_modify_work_list").innerHTML = xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("POST", "admin_modify_showAttachedWork.php?q="+str, true);
+            xmlhttp.send();
+
+        }
+        showAttachedModiWork(<?php echo $place_id; ?>);
+        document.getElementById("work_attach").addEventListener("click", function() {showAttachedModiWork(<?php echo $place_id; ?>);});
+    }
 </script>
 
 </div>
