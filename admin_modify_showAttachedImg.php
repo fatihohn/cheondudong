@@ -7,6 +7,10 @@ if ($conn->connect_error) {
 }
 session_start();
 
+
+
+$q = intval($_GET['q']);
+
 $adminCast = "admin";
 
 $uname = $_SESSION['username'];
@@ -22,14 +26,14 @@ if(!isset($_SESSION['username'])) {
     <?php   }
             //cast: admin인 경우
             else if($_SESSION['cast']==$adminCast) {
-                //현재 작성중 장소 id = new_id
-                $sqlLatestPlace = "SELECT id FROM places ORDER BY id DESC LIMIT 1";
-                $resultLatestPlace = $conn->query($sqlLatestPlace);
-                $rowLatestPlace = mysqli_fetch_assoc($resultLatestPlace);
-                $latest_id = $rowLatestPlace['id'];
-                $new_id = intval(intval($latest_id) + 1);
+                // //현재 작성중 장소 id = new_id
+                // $sqlLatestPlace = "SELECT id FROM places ORDER BY id DESC LIMIT 1";
+                // $resultLatestPlace = $conn->query($sqlLatestPlace);
+                // $rowLatestPlace = mysqli_fetch_assoc($resultLatestPlace);
+                // $latest_id = $rowLatestPlace['id'];
+                // $new_id = intval(intval($latest_id) + 1);
                 //추가한 이미지 목록
-                $sqlImgList = "SELECT * FROM images WHERE place_id = $new_id";
+                $sqlImgList = "SELECT * FROM images WHERE place_id = $q";
             } else {
                 $sqlImgList = null;
             }
