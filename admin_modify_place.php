@@ -117,8 +117,8 @@
                                 <p>
                                     <div class="createInput">
                                     <label class="createGrid1">좌표</label>
-                                    <input class="createGrid2" name="lat" value="<?=$lat?>" required />
-                                    <input class="createGrid2" name="lng" value="<?=$lng?>" required />
+                                    <input class="createGrid2" id="place_lat" name="lat" value="<?=$lat?>" required />
+                                    <input class="createGrid2" id="place_lng" name="lng" value="<?=$lng?>" required />
                                     </div>
                                     <div id="create_map_wrap">
                                         <div id='create_map' style='width: 596px; height: 450px;'></div>
