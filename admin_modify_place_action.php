@@ -57,7 +57,7 @@ $sql =
         `mkimg_dir`='{$mkimg}$target_file',
         `lng`='$lng', 
         `lat`='$lat', 
-        `ko_cont`='$ko_cont'
+        `ko_cont`='$ko_cont',
         `en_cont`='$en_cont'
         WHERE `id`='$q'";
 
@@ -78,7 +78,7 @@ if($_FILES['img']['size']!==0) {
         `mkimg_dir`='{$mkimg}$target_file',
         `lng`='$lng', 
         `lat`='$lat', 
-        `ko_cont`='$ko_cont'
+        `ko_cont`='$ko_cont',
         `en_cont`='$en_cont'
         WHERE `id`='$q'";
         $sql = $sql0;
@@ -95,7 +95,7 @@ if($_FILES['img']['size']!==0) {
         `en_address`='$en_address', 
         `lng`='$lng', 
         `lat`='$lat', 
-        `ko_cont`='$ko_cont'
+        `ko_cont`='$ko_cont',
         `en_cont`='$en_cont'
         WHERE `id`='$q'";
         $sql = $sql1;
