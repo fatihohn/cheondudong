@@ -112,7 +112,7 @@
                                     </div>
 
                                     <div id="create_map_wrap">
-                                        <div id='create_map' style='width: 100%; height: 100%;'></div>
+                                        <div id='create_map' style='width: 596px; height: 450px;'></div>
                                         <!-- <pre id="coordinates" class="coordinates"></pre> -->
                                     </div>
 
