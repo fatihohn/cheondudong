@@ -22,6 +22,7 @@
 
 
         $q = intval($_GET['q']);
+        $place_id = $q;
 
         $uname = $_SESSION['username'];
         $query = "SELECT * FROM user_data WHERE username= '$uname'";
@@ -38,7 +39,6 @@
         // $rowLatestPlace = mysqli_fetch_assoc($resultLatestPlace);
         // $latest_id = $rowLatestPlace['id'];
         // $new_id = intval(intval($latest_id) + 1);
-        $place_id = $q;
 
         session_start();
 

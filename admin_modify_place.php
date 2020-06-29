@@ -145,8 +145,6 @@
                                                 <iframe  class="attach_frame" src="admin_attach_modify_image.php?q=<?=$place_id?>" style="width:100%; max-width:596px; height:240px;"></iframe>
                                             </div>
                                             <div id="img_attach">
-                                            <!-- <div id="img_attach" class="<?=$q?>" onclick="showAttachedModiImg(this.className)"> -->
-                                            <!-- <div class="img_attach" id="<?=$q?>" onclick="showAttachedModiImg(this.id)"> -->
                                                 이미지 새로고침
                                             </div>
 
@@ -176,7 +174,6 @@
                                 </p>
             <p>
                 <input type="hidden" name="id" value="<?=$q?>">
-                <input type="hidden" name="place_id" value="<?=$place_id?>">
                 <input type="submit" onclick="submitContents(this);">
                 <button name="cancel"><a href = "javascript:history.back()">취소</a></button>
             </p>
