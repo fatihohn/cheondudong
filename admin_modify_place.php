@@ -143,7 +143,8 @@
                                             <div id="create_image">
                                                 <iframe  class="attach_frame" src="admin_attach_modify_image.php?q=<?=$q?>" style="width:100%; max-width:596px; height:240px;"></iframe>
                                             </div>
-                                            <div id="img_attach" class="<?=$q?>" onclick="showAttachedModiImg(this.class)">
+                                            <!-- <div id="img_attach" class="<?=$q?>" onclick="showAttachedModiImg(this.class)"> -->
+                                            <div class="img_attach" id="<?=$q?>" onclick="showAttachedModiImg(this.id)">
                                                 이미지 새로고침
                                             </div>
 
