@@ -175,7 +175,7 @@
                                                 <iframe  class="attach_frame" src="admin_attach_modify_ref.php" style="width:100%; max-width:596px; height:150px;"></iframe>
                                             </div>
                                             <div id="ref_attach">
-                                                관련작업 새로고침
+                                                참고자료 새로고침
                                             </div>
 
                                             <div id="attached_modify_ref_list"></div>
@@ -294,7 +294,6 @@ mkSizeSet();
     }
 
 
-
     //수정 중 장소에 추가된 관련작품 목록
     if (document.getElementById("attached_modify_work_list")) {
         function showAttachedModiWork(str) {
@@ -320,6 +319,36 @@ mkSizeSet();
         }
         showAttachedModiWork(<?php echo $place_id; ?>);
         document.getElementById("work_attach").addEventListener("click", function() {showAttachedModiWork(<?php echo $place_id; ?>);});
+    }
+    
+
+
+
+    //수정 중 장소에 추가된 참고자료 목록
+    if (document.getElementById("attached_modify_ref_list")) {
+        function showAttachedModiRef(str) {
+            let createRef = document.getElementById("create_ref");
+
+            if (createRef == "") {
+                document.getElementById("attached_modify_ref_list").innerHTML = "";
+                return;
+            }
+            if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            } else { // code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("attached_modify_ref_list").innerHTML = xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("POST", "admin_modify_showAttachedRef.php?q="+str, true);
+            xmlhttp.send();
+
+        }
+        showAttachedModiRef(<?php echo $place_id; ?>);
+        document.getElementById("ref_attach").addEventListener("click", function() {showAttachedModiRef(<?php echo $place_id; ?>);});
     }
 </script>
 
