@@ -107,9 +107,15 @@
                                 <p>
                                     <div class="createInput">
                                     <label class="createGrid1">좌표</label>
-                                    <input class="createGrid2" name="lat" placeholder="위도" required />
-                                    <input class="createGrid2" name="lng" placeholder="경도" required />
+                                    <input class="createGrid2" id="place_lat" name="lat" placeholder="위도" required />
+                                    <input class="createGrid2" id="place_lng" name="lng" placeholder="경도" required />
                                     </div>
+
+                                    <div id="create_map_wrap">
+                                        <div id='create_map' style='width: 100%; height: 100%;'></div>
+                                        <!-- <pre id="coordinates" class="coordinates"></pre> -->
+                                    </div>
+
                                 </p>
                                 <!-- <p>
                                     <div class="createInput">
@@ -198,6 +204,51 @@
     }
 
 </script> -->
+
+<script>
+    var map = new mapboxgl.Map({
+        container: 'create_map',
+        style: 'mapbox://styles/suricity/ckbhx3huo0xb11ip5hywb59rx', // stylesheet location
+        center: [127.060444, 37.911627], // starting position [lng, lat]
+        maxBounds: [
+                //limit dongducheon 
+                [126.954480, 37.846739], // Southwest limit coordinates 
+                [127.196154, 38.014146] // Northeast limit coordinates
+                ],
+        zoom: 12.9, // starting zoom
+        minZoom: 12.5,
+        maxZoom: 18
+        });
+
+
+        var marker = new mapboxgl.Marker({
+            draggable: true
+        })
+            // .setLngLat([0, 0])
+            .setLngLat([127.060444, 37.91162])
+            .addTo(map);
+            
+        // function onDragEnd() {
+        // var lngLat = marker.getLngLat();
+        // coordinates.style.display = 'block';
+        // coordinates.innerHTML =
+        // 'Longitude: ' + lngLat.lng + '<br />Latitude: ' + lngLat.lat;
+        // }
+        function onDragEnd() {
+        var lngLat = marker.getLngLat();
+        var placeLng = document.getElementById("place_lng");
+        var placeLat = document.getElementById("place_lat");
+        placeLng.innerHTML = lngLat.lng;
+        placeLat.innerHTML = lngLat.lat;
+        }
+        
+        marker.on('dragend', onDragEnd);
+</script>
+
+
+
+
+
 <script type="text/javascript">
     let oEditors = [];
     let oEditors2 = [];
