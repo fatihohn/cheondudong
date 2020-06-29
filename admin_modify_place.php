@@ -188,8 +188,10 @@
                                 </p>
             <p>
                 <input type="hidden" name="id" value="<?=$q?>">
-                <input type="submit" onclick="submitContents(this);">
-                <button name="cancel"><a href = "javascript:history.back()">취소</a></button>
+                <div class="submit_box">
+                    <input type="submit" onclick="submitContents(this);">
+                    <button name="cancel"><a href = "javascript:history.back()">취소</a></button>
+                </div>
             </p>
         </form>
         

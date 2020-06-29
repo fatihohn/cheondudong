@@ -13,7 +13,7 @@
 <section>
     
     <!-- <div id="create_work_wrap"> -->
-    <div>
+    <div class="attach_box">
         <center>
             <h3>관련작품 추가</h3>
         </center>

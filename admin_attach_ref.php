@@ -13,7 +13,7 @@
 <section>
     
     <!-- <div id="create_ref_wrap"> -->
-    <div>
+    <div class="attach_box">
         <center>
             <h3>참고자료 추가</h3>
         </center>
