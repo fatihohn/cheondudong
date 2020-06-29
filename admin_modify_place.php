@@ -138,17 +138,17 @@
                                 </p>
                                 <p>
                                     <div class="createInput">
-                                        <?php include "admin_create_image.php"; ?>
+                                        <?php include "admin_modify_image.php?q=".$q; ?>
                                     </div>
                                 </p>
                                 <p>
                                     <div class="createInput">
-                                        <?php include "admin_create_work.php"; ?>
+                                        <?php include "admin_modify_work.php"; ?>
                                     </div>
                                 </p>
                                 <p>
                                     <div class="createInput">
-                                        <?php include "admin_create_ref.php"; ?>
+                                        <?php include "admin_modify_ref.php"; ?>
                                     </div>
                                 </p>
             <p>
