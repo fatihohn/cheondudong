@@ -257,7 +257,7 @@ mkSizeSet();
 <script>
     //수정 중 장소에 추가된 이미지 목록
     if (document.getElementById("attached_modify_image_list")) {
-        function showAttachedImg(str) {
+        function showAttachedModiImg(str) {
             let createImg = document.getElementById("create_image");
 
             if (createImg == "") {
@@ -278,8 +278,8 @@ mkSizeSet();
             xmlhttp.send();
 
         }
-        showAttachedImg();
-        document.getElementById("img_attach").addEventListener("click", showAttachedImg(<?=$q?>));
+        showAttachedModiImg();
+        document.getElementById("img_attach").addEventListener("click", showAttachedModiImg(<?=$q?>));
     }
 </script>
 
