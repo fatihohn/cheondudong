@@ -31,6 +31,7 @@ $stmt = mysqli_stmt_init($conn);
 
 $rowPlaceDetail = $resultPlaceDetail->fetch_assoc();
 
+$place_id = $rowPlaceDetail['place_id'];
 $detailTitle = $rowPlaceDetail['ko_title'];
 $detailTitle_en = $rowPlaceDetail['en_title'];
 $detailMarker = $rowPlaceDetail['mkimg_dir'];
@@ -41,7 +42,7 @@ $detailCont = $rowPlaceDetail['ko_cont'];
 $detailCont_en = $rowPlaceDetail['en_cont'];
 
 
-$sqlPlaceImg = "SELECT * FROM images WHERE place_id = $q";
+$sqlPlaceImg = "SELECT * FROM images WHERE place_id = $place_id";
 $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sqlPlaceImg)) {
             // echo "sqlPlaceImg error";
@@ -51,7 +52,7 @@ $stmt = mysqli_stmt_init($conn);
             $resultPlaceImg = mysqli_stmt_get_result($stmt);
     }
 
-$sqlPlaceWork = "SELECT * FROM works WHERE place_id = $q";
+$sqlPlaceWork = "SELECT * FROM works WHERE place_id = $place_id";
 $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sqlPlaceWork)) {
             // echo "sqlPlaceWork error";
@@ -61,7 +62,7 @@ $stmt = mysqli_stmt_init($conn);
             $resultPlaceWork = mysqli_stmt_get_result($stmt);
     }
         
-$sqlPlaceRef = "SELECT * FROM refs WHERE place_id = $q";
+$sqlPlaceRef = "SELECT * FROM refs WHERE place_id = $place_id";
 $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sqlPlaceRef)) {
             // echo "sqlPlaceRef error";
