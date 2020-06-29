@@ -39,6 +39,7 @@
                 $result = $conn->query($query);
                 $rows = mysqli_fetch_assoc($result);
                 // $author = $rows['author'];
+                $place_id = $rows['place_id'];
                 $username = $rows['username'];
                 $mkimg = $rows['mkimg'];
                 $mkimg_dir = $rows['mkimg_dir'];
@@ -141,7 +142,7 @@
                                         <!-- <?php //include "admin_modify_image.php?q=".$q; ?> -->
                                         <div id="create_image_wrap">
                                             <div id="create_image">
-                                                <iframe  class="attach_frame" src="admin_attach_modify_image.php?q=<?=$q?>" style="width:100%; max-width:596px; height:240px;"></iframe>
+                                                <iframe  class="attach_frame" src="admin_attach_modify_image.php?q=<?=$place_id?>" style="width:100%; max-width:596px; height:240px;"></iframe>
                                             </div>
                                             <div id="img_attach">
                                             <!-- <div id="img_attach" class="<?=$q?>" onclick="showAttachedModiImg(this.className)"> -->
@@ -175,6 +176,7 @@
                                 </p>
             <p>
                 <input type="hidden" name="id" value="<?=$q?>">
+                <input type="hidden" name="place_id" value="<?=$place_id?>">
                 <input type="submit" onclick="submitContents(this);">
                 <button name="cancel"><a href = "javascript:history.back()">취소</a></button>
             </p>
@@ -280,8 +282,8 @@ mkSizeSet();
             xmlhttp.send();
 
         }
-        showAttachedModiImg(<?php echo $q; ?>);
-        document.getElementById("img_attach").addEventListener("click", function() {showAttachedModiImg(<?php echo $q; ?>);});
+        showAttachedModiImg(<?php echo $place_id; ?>);
+        document.getElementById("img_attach").addEventListener("click", function() {showAttachedModiImg(<?php echo $place_id; ?>);});
     }
 </script>
 

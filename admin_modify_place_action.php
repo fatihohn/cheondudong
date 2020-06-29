@@ -5,6 +5,7 @@ include 'cdd_db_conn.php';
 
 
 $q = intval($_POST['id']); 
+$place_id = intval($_POST['place_id']); 
 
 $username = $_POST['username'];
 $username = mysqli_real_escape_string($conn, $username);

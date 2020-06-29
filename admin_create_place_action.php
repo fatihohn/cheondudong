@@ -2,7 +2,13 @@
 
 include 'cdd_db_conn.php';
 
-
+ //현재 작성중 장소 id = new_id
+ $sqlLatestPlace = "SELECT id FROM places ORDER BY id DESC LIMIT 1";
+ $resultLatestPlace = $conn->query($sqlLatestPlace);
+ $rowLatestPlace = mysqli_fetch_assoc($resultLatestPlace);
+ $latest_id = $rowLatestPlace['id'];
+ $new_id = intval(intval($latest_id) + 1);
+ $place_id = $new_id;
 
 $username = $_POST['username'];
 $username = mysqli_real_escape_string($conn, $username);
@@ -41,8 +47,9 @@ $mkimg = $uploadimg['img'];
                 
 $sql = "
 INSERT INTO places
-        (username, mkimg, mkimg_dir, mkimg_size, ko_title, en_title, ko_address, en_address, lat, lng, ko_cont, en_cont, created)
+        (place_id, username, mkimg, mkimg_dir, mkimg_size, ko_title, en_title, ko_address, en_address, lat, lng, ko_cont, en_cont, created)
     VALUES(
+            '{$place_id}',
             '{$username}',
             '{$mkimg}$filename',
             '{$mkimg}$target_file',
