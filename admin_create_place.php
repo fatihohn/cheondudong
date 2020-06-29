@@ -220,7 +220,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VyaWNpdHkiLCJhIjoiY2tiZnpzaGtzMTB5NTJwcWVtO
                 [127.196154, 38.014146] // Northeast limit coordinates
                 ],
         zoom: 12.9, // starting zoom
-        minZoom: 12.5,
+        // minZoom: 12.5,
         maxZoom: 18
         });
 
