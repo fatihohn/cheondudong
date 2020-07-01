@@ -236,6 +236,14 @@
     //     headerMenu.addEventListener("click", showMenu);
     // }
     // headerMenuClick();
+
+
+
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
     function headerMenuClick() {
 
         let headerMenu = document.getElementById("header_btn");
@@ -265,7 +273,8 @@
                 }  
                 if(userListWrap) {
                     userListWrap.style.display = "none";
-                }                
+                }
+                topFunction();                
             } else {
                 headerWrap.style.display = "initial";
                 menuWrap.style.display = "none";
