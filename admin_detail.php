@@ -32,6 +32,7 @@ $stmt = mysqli_stmt_init($conn);
 $rowPlaceDetail = $resultPlaceDetail->fetch_assoc();
 
 $place_id = $rowPlaceDetail['place_id'];
+$place_id = intval($place_id);
 $detailTitle = $rowPlaceDetail['ko_title'];
 $detailTitle_en = $rowPlaceDetail['en_title'];
 $detailMarker = $rowPlaceDetail['mkimg_dir'];
@@ -283,7 +284,6 @@ $stmt = mysqli_stmt_init($conn);
                                             echo "</div>";
                                         echo "</div>";
                                     echo "</li>";
-
                                 }
                                 echo "</ul>";
                             }
