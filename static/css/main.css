@@ -203,6 +203,7 @@
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag,
 #detail_wrap #detail_box #detail_ref ul li .attached_ref_tag {
     display: grid;
+    margin-top: 20px;
 }
 
 #detail_wrap #detail_box #detail_img ul li .attached_img_tag .attached_img_title,
