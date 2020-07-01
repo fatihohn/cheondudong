@@ -23,10 +23,12 @@ if(!isset($_SESSION['username'])) {
             //cast: admin인 경우
             else if($_SESSION['cast']==$adminCast) {
                 //현재 작성중 장소 id = new_id
-                $sqlLatestPlace = "SELECT id FROM places ORDER BY id DESC LIMIT 1";
+                // $sqlLatestPlace = "SELECT id FROM places ORDER BY id DESC LIMIT 1";
+                $sqlLatestPlace = "SELECT place_id FROM places ORDER BY place_id DESC LIMIT 1";
                 $resultLatestPlace = $conn->query($sqlLatestPlace);
                 $rowLatestPlace = mysqli_fetch_assoc($resultLatestPlace);
-                $latest_id = $rowLatestPlace['id'];
+                // $latest_id = $rowLatestPlace['id'];
+                $latest_id = $rowLatestPlace['place_id'];
                 $new_id = intval(intval($latest_id) + 1);
                 //추가한 이미지 목록
                 $sqlWorkList = "SELECT * FROM works WHERE place_id = $new_id";
