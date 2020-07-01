@@ -264,7 +264,7 @@ $stmt = mysqli_stmt_init($conn);
                                 </div>
                             </div> -->
                             <?php
-                                    if($resultPlaceWork->num_rows > 0) {
+                                    if($resultPlaceRef->num_rows > 0) {
                                         echo "
                                         <div class='detail_attachment_title'>
                                             <div class='ref_title ko ddobag'>
