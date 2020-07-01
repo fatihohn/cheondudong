@@ -192,13 +192,22 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
-#detail_wrap #detail_box #detail_img ul li .attached_img_tag {
+#detail_wrap #detail_box #detail_img ul li .attached_img_tag,
+#detail_wrap #detail_box #detail_work ul li .attached_work_tag,
+#detail_wrap #detail_box #detail_ref ul li .attached_ref_tag {
     /* display: grid; */
     font-family: "또박또박";
     font-size: 1.7rem;
 }
 
-#detail_wrap #detail_box #detail_img ul li .attached_img_tag .attached_img_title {
+#detail_wrap #detail_box #detail_work ul li .attached_work_tag,
+#detail_wrap #detail_box #detail_ref ul li .attached_ref_tag {
+    display: grid;
+}
+
+#detail_wrap #detail_box #detail_img ul li .attached_img_tag .attached_img_title,
+#detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_title,
+#detail_wrap #detail_box #detail_ref ul li .attached_ref_tag .attached_ref_title {
     font-weight: 900;
     margin: 0 10px;
 }
@@ -213,6 +222,7 @@
     text-align: center;
 }
 
+
 /* #detail_func_wrap #back_btn {
     text-align: right;
     margin-right: 20px;
@@ -222,14 +232,12 @@
     margin-left: 20px;
 } */
 
-
 #detail_func_wrap .back_btn img,
 #detail_func_wrap .share_btn img {
     width: 60px;
     padding: 10px;
     cursor: pointer;
 }
-
 
 
 /****map****/
