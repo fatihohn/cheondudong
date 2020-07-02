@@ -315,7 +315,7 @@ $stmt = mysqli_stmt_init($conn);
                 </div>
             </div>
 
-            <?php include "map.php"; ?>
+            <?php //include "map.php"; ?>
 
         </section>
 
