@@ -192,14 +192,19 @@
         }
     });
 
-    el.addEventListener('mouseout', function() {
+    function removeMarkerName() {
         var elShownAll = document.querySelectorAll('.marker_name');
         let mkn;
         for (mkn = 0; mkn < elShownAll.length; mkn++) {
             elShownAll[mkn].remove();
         }
+    }
+    
+    el.addEventListener('mouseout', function() {
+        removeMarkerName();
     });
     
+
 
 
 //****marker func end****//
