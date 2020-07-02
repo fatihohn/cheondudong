@@ -239,8 +239,9 @@ trackUserLocation: true
 
     
     function markerSize() {
-        var zoomThreshold = 14.4;
-        if (map.getZoom() > zoomThreshold) {
+        var zoomLow = 14.4;
+        var zoomHigh = 17;
+        if (map.getZoom() > zoomLow && map.getZoom() < zoomHigh) {
             //****1:1****//
             let smallCubeAll = document.querySelectorAll(".smallCube");
             let sc;
@@ -317,7 +318,7 @@ trackUserLocation: true
                 longPanoAll[lp].style.backgroundRepeat = "no-repeat";
                 longPanoAll[lp].style.cursor = "pointer";
             }
-        } else {
+        } else if (map.getZoom() < zoomLow) {
             //****1:1****//
             let smallCubeAll = document.querySelectorAll(".smallCube");
             let sc;
@@ -395,6 +396,83 @@ trackUserLocation: true
                 longPanoAll[lp].style.cursor = "pointer";
             }
 
+        } else {
+            //****1:1****//
+            let smallCubeAll = document.querySelectorAll(".smallCube");
+            let sc;
+            for(sc=0; sc < smallCubeAll.length; sc++) {
+                smallCubeAll[sc].style.width = "90px";
+                smallCubeAll[sc].style.height = "calc(90px + 35px)";
+                smallCubeAll[sc].style.backgroundSize = "contain";
+                smallCubeAll[sc].style.backgroundRepeat = "no-repeat";
+                smallCubeAll[sc].style.cursor = "pointer";
+            }
+            let middleCubeAll = document.querySelectorAll(".middleCube");
+            let mc;
+            for(mc=0; mc < middleCubeAll.length; mc++) {
+                middleCubeAll[mc].style.width = "120px";
+                middleCubeAll[mc].style.height = "calc(120px + 35px)";
+                middleCubeAll[mc].style.backgroundSize = "contain";
+                middleCubeAll[mc].style.backgroundRepeat = "no-repeat";
+                middleCubeAll[mc].style.cursor = "pointer";
+            }
+            //****1:1.6****//
+            let smallHoriAll = document.querySelectorAll(".smallHori");
+            let sh;
+            for(sh=0; sh < smallHoriAll.length; sh++) {
+                smallHoriAll[sh].style.width = "120px";
+                smallHoriAll[sh].style.height = "calc(75px + 35px)";
+                smallHoriAll[sh].style.backgroundSize = "contain";
+                smallHoriAll[sh].style.backgroundRepeat = "no-repeat";
+                smallHoriAll[sh].style.cursor = "pointer";
+            }
+            let middleHoriAll = document.querySelectorAll(".middleHori");
+            let mh;
+            for(mh=0; mh < middleHoriAll.length; mh++) {
+                middleHoriAll[mh].style.width = "160px";
+                middleHoriAll[mh].style.height = "calc(100px + 35px)";
+                middleHoriAll[mh].style.backgroundSize = "contain";
+                middleHoriAll[mh].style.backgroundRepeat = "no-repeat";
+                middleHoriAll[mh].style.cursor = "pointer";
+            }
+            let bigHoriAll = document.querySelectorAll(".bigHori");
+            let bh;
+            for(bh=0; bh < bigHoriAll.length; bh++) {
+                bigHoriAll[bh].style.width = "200px";
+                bigHoriAll[bh].style.height = "calc(125px + 35px)";
+                bigHoriAll[bh].style.backgroundSize = "contain";
+                bigHoriAll[bh].style.backgroundRepeat = "no-repeat";
+                bigHoriAll[bh].style.cursor = "pointer";
+            }
+            //****1:2****//
+            let smallPanoAll = document.querySelectorAll(".smallPano");
+            let sp;
+            for(sp=0; sp < smallPanoAll.length; sp++) {
+                smallPanoAll[sp].style.width = "120px";
+                smallPanoAll[sp].style.height = "calc(60px + 35px)";
+                smallPanoAll[sp].style.backgroundSize = "contain";
+                smallPanoAll[sp].style.backgroundRepeat = "no-repeat";
+                smallPanoAll[sp].style.cursor = "pointer";
+            }
+            let middlePanoAll = document.querySelectorAll(".middlePano");
+            let mp;
+            for(mp=0; mp < middlePanoAll.length; mp++) {
+                middlePanoAll[mp].style.width = "160px";
+                middlePanoAll[mp].style.height = "calc(80px + 35px)";
+                middlePanoAll[mp].style.backgroundSize = "contain";
+                middlePanoAll[mp].style.backgroundRepeat = "no-repeat";
+                middlePanoAll[mp].style.cursor = "pointer";
+            }
+            //****1:2.7****//
+            let longPanoAll = document.querySelectorAll(".longPano");
+            let lp;
+            for(lp=0; lp < longPanoAll.length; lp++) {
+                longPanoAll[lp].style.width = "220px";
+                longPanoAll[lp].style.height = "calc(82px + 35px)";
+                longPanoAll[lp].style.backgroundSize = "contain";
+                longPanoAll[lp].style.backgroundRepeat = "no-repeat";
+                longPanoAll[lp].style.cursor = "pointer";
+            }
         }
     }
     markerSize();
