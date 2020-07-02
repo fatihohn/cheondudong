@@ -267,6 +267,21 @@
                     footerWrap.style.display = "block";
                     introWrap.style.display = "none";
                     placeWrap.style.display = "none";
+                } else if(mapWrap && !placeWrap) {
+                    mapWrap.style.visibility = "hidden";
+                    // placeWrap.style.display = "none";
+                    footerWrap.style.display = "block";
+                    introWrap.style.display = "none";
+                } else if(!mapWrap && placeWrap) {
+                    // mapWrap.style.visibility = "hidden";
+                    placeWrap.style.display = "none";
+                    footerWrap.style.display = "block";
+                    introWrap.style.display = "none";
+                } else {
+                    // mapWrap.style.visibility = "hidden";
+                    // placeWrap.style.display = "none";
+                    footerWrap.style.display = "block";
+                    introWrap.style.display = "none";
                 }
                 if(detailWrap) {
                     detailWrap.style.visibility = "hidden";
@@ -284,12 +299,47 @@
                     introWrap.style.display = "none";
                     placeWrap.style.display = "none";
                     detailWrap.style.visibility = "visible";
-                   
                 } else if(mapWrap && placeWrap && !detailWrap) {
                     mapWrap.style.visibility = "visible";
                     footerWrap.style.display = "none";
                     introWrap.style.display = "none";
                     placeWrap.style.display = "none";
+                } else if(!mapWrap && placeWrap && detailWrap) {
+                    // mapWrap.style.visibility = "hidden";
+                    footerWrap.style.display = "block";
+                    introWrap.style.display = "none";
+                    placeWrap.style.display = "none";
+                    detailWrap.style.visibility = "visible";
+                } else if(mapWrap && !placeWrap && detailWrap) {
+                    mapWrap.style.visibility = "hidden";
+                    footerWrap.style.display = "block";
+                    introWrap.style.display = "none";
+                    // placeWrap.style.display = "none";
+                    detailWrap.style.visibility = "visible";
+                } else if(!mapWrap && !placeWrap && detailWrap) {
+                    // mapWrap.style.visibility = "hidden";
+                    footerWrap.style.display = "block";
+                    introWrap.style.display = "none";
+                    // placeWrap.style.display = "none";
+                    detailWrap.style.visibility = "visible";
+                } else if(!mapWrap && placeWrap && !detailWrap) {
+                    // mapWrap.style.visibility = "hidden";
+                    footerWrap.style.display = "block";
+                    introWrap.style.display = "none";
+                    placeWrap.style.display = "none";
+                    // detailWrap.style.visibility = "visible";
+                } else if(mapWrap && !placeWrap && !detailWrap) {
+                    mapWrap.style.visibility = "hidden";
+                    footerWrap.style.display = "block";
+                    introWrap.style.display = "none";
+                    // placeWrap.style.display = "none";
+                    // detailWrap.style.visibility = "visible";
+                } else {
+                    // mapWrap.style.visibility = "hidden";
+                    footerWrap.style.display = "block";
+                    introWrap.style.display = "none";
+                    // placeWrap.style.display = "none";
+                    // detailWrap.style.visibility = "visible";
 
                 }
                 if(userListWrap) {
