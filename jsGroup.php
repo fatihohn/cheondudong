@@ -347,7 +347,9 @@
                 }
             } 
         }
-        headerMenu.addEventListener("click", showMenu);
+        if(headerMenu) {
+            headerMenu.addEventListener("click", showMenu);
+        }
     }
     headerMenuClick();
 
