@@ -478,7 +478,7 @@ trackUserLocation: true
     markerSize();
     map.on('zoomend', function() {
         markerSize();
-    })
+    });
 
 
 
