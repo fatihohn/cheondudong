@@ -89,10 +89,7 @@ $stmt = mysqli_stmt_init($conn);
 <!DOCTYPE html>
 <html lang="ko">
     <head>
-
-<?php include "head.php"; ?>
-
-
+        <?php include "head.php"; ?>
     </head>
     <body>
 

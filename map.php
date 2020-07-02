@@ -241,7 +241,8 @@ trackUserLocation: true
     function markerSize() {
         var zoomLow = 14.4;
         var zoomHigh = 16.7;
-        if (map.getZoom() > zoomLow && map.getZoom() < zoomHigh) {
+        var zoomStatus = map.getZoom();
+        if (zoomStatus > zoomLow && zoomStatus < zoomHigh) {
             //****1:1****//
             let smallCubeAll = document.querySelectorAll(".smallCube");
             let sc;
@@ -318,7 +319,7 @@ trackUserLocation: true
                 longPanoAll[lp].style.backgroundRepeat = "no-repeat";
                 longPanoAll[lp].style.cursor = "pointer";
             }
-        } else if (map.getZoom() < zoomLow) {
+        } else if (zoomStatus < zoomLow) {
             //****1:1****//
             let smallCubeAll = document.querySelectorAll(".smallCube");
             let sc;
