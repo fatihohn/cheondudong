@@ -33,7 +33,7 @@ $placeTitle = "임시 장소 제목"
                     <div id="intro_cont_wrap">
                         <div id="intro_cont" class="ddobag">
                             
-                            <?php include "intro_cont.php";?>
+                            <?php include "admin_intro_cont.php";?>
                             
                         </div>
                     </div>
