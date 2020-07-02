@@ -240,9 +240,9 @@ trackUserLocation: true
     
     function markerSize() {
         var zoomLow = 14.4;
-        var zoomHigh = 16.7;
+        var zoomHigh = 16.4;
         var zoomStatus = map.getZoom();
-        
+
         if (zoomStatus > zoomLow && zoomStatus < zoomHigh) {
             //****1:1****//
             let smallCubeAll = document.querySelectorAll(".smallCube");
