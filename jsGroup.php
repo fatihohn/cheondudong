@@ -453,6 +453,13 @@
         // let backBtn = document.getElementById("back_btn");
         let backBtn = document.querySelectorAll(".back_btn");
         function detailBack() {
+            let markerNameAll = document.querySelector(".marker_name");
+            let mkname;
+            if(markerNameAll){
+                for(mkname=0; mkname < markerNameAll.length; mkname++) {
+                    markerNameAll[mkname].remove();
+                }
+            }
             history.back();
         }
         let bb;
