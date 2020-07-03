@@ -1,12 +1,12 @@
 <script>
     function frontLang() {
-        var sessLang = "<?php echo $_SESSION['language'];?>";
-        var koAll = document.querySelectorAll(".ko");
-        var enAll = document.querySelectorAll(".en");
-        var klang;
-        var elang;
+        let sessLang = "<?php echo $_SESSION['language'];?>";
+        let koAll = document.querySelectorAll(".ko");
+        let enAll = document.querySelectorAll(".en");
+        let klang;
+        let elang;
         for(klang=0; klang < koAll.length; klang++) {
-            // var koStatus = koAll[klang].style.display;
+            // let koStatus = koAll[klang].style.display;
             for(elang=0; elang < enAll.length; elang++) {
                 if(sessLang == "ko") {
                 // if(koStatus == "none") {
@@ -27,7 +27,7 @@
 
 //****표시하기****//
     function showDetailPlaceMap(str) {
-        var adminHeader = document.getElementById("header_ad_title");
+        let adminHeader = document.getElementById("header_ad_title");
         if(!adminHeader) {
             location.href = "detail.php?q=" + str;
         } else {
@@ -35,8 +35,8 @@
         }
     }
     function showDetailPlaceMenu(str) {
-        var adminHeader = document.getElementById("header_ad_title");
-        var placeIdMenu = str.split("_")[1];
+        let adminHeader = document.getElementById("header_ad_title");
+        let placeIdMenu = str.split("_")[1];
         if(!adminHeader) {
             location.href = "detail.php?q=" + placeIdMenu;
         } else {
@@ -46,20 +46,20 @@
     
 
     // function mapMarkerNameClick() {
-    //     var markerNameAll = document.querySelectorAll(".marker_name");
-    //     var mkname;
+    //     let markerNameAll = document.querySelectorAll(".marker_name");
+    //     let mkname;
     //     for(mkname=0; mkname < markerNameAll.length; mkname++) {
-    //         var markerNameId = markerNameAll[mkname].id;
+    //         let markerNameId = markerNameAll[mkname].id;
     //         showDetailPlaceMap(markerNameId);
     //     }
     // }
     // mapMarkerNameClick();
 
     function mapMarkerClick() {
-        var markerAll = document.querySelectorAll(".marker");
-        var mk;
+        let markerAll = document.querySelectorAll(".marker");
+        let mk;
         for(mk=0; mk < markerAll.length; mk++) {
-            var markerId = markerAll[mk].id;
+            let markerId = markerAll[mk].id;
             markerAll[mk].addEventListener("click", function() {
                 showDetailPlaceMap(this.id)
             });
@@ -68,10 +68,10 @@
     mapMarkerClick();
 
     function menuPlaceLiClick() {
-        var menuPlaceLiAll = document.querySelectorAll(".place_li");
-        var mpl;
+        let menuPlaceLiAll = document.querySelectorAll(".place_li");
+        let mpl;
         for(mpl=0; mpl < menuPlaceLiAll.length; mpl++) {
-            var markerId = menuPlaceLiAll[mpl].id;
+            let markerId = menuPlaceLiAll[mpl].id;
             menuPlaceLiAll[mpl].addEventListener("click", function() {
                 showDetailPlaceMenu(this.id)
             });
@@ -80,10 +80,10 @@
     menuPlaceLiClick();
 
     // function mapMarkerNameClick() {
-    //     var markerNameAll = document.querySelectorAll(".marker_name");
-    //     var mkname;
+    //     let markerNameAll = document.querySelectorAll(".marker_name");
+    //     let mkname;
     //     for(mkname=0; mkname < markerNameAll.length; mkname++) {
-    //         var markerNameId = markerNameAll[mkname].id;
+    //         let markerNameId = markerNameAll[mkname].id;
     //         markerNameAll[mkname].addEventListener("click", showDetailPlaceMap(markerNameId));
     //     }
     // }
@@ -93,15 +93,15 @@
 //****대문****//
     // function frontTitleClick() {
 
-    //     var frontTitle = document.getElementById("front_title");
+    //     let frontTitle = document.getElementById("front_title");
     //     if(frontTitle) {
     //     function hideFront() {
-    //         var headerWrap = document.getElementById("header_wrap");
-    //         var frontWrap = document.getElementById("front_wrap");
-    //         // var detailWrap = document.getElementById("detail_wrap");
-    //         var mapWrap = document.getElementById("map_wrap");
-    //         var menuWrap = document.getElementById("menu_wrap");
-    //         var footerWrap = document.getElementById("footer_wrap");
+    //         let headerWrap = document.getElementById("header_wrap");
+    //         let frontWrap = document.getElementById("front_wrap");
+    //         // let detailWrap = document.getElementById("detail_wrap");
+    //         let mapWrap = document.getElementById("map_wrap");
+    //         let menuWrap = document.getElementById("menu_wrap");
+    //         let footerWrap = document.getElementById("footer_wrap");
     //         headerWrap.style.display = "initial";
     //         frontWrap.style.display = "none";
     //         // detailWrap.style.display = "none";
@@ -120,18 +120,18 @@
 //***헤더***//
     // function headerTitleClick() {
 
-    //     var headerTitle = document.getElementById("header_title");
+    //     let headerTitle = document.getElementById("header_title");
     //     if(headerTitle) {
     //         function showMap() {
-    //             var headerWrap = document.getElementById("header_wrap");
-    //             var frontWrap = document.getElementById("front_wrap");
-    //             var detailWrap = document.getElementById("detail_wrap");
-    //             var mapWrap = document.getElementById("map_wrap");
-    //             var menuWrap = document.getElementById("menu_wrap");
-    //             var footerWrap = document.getElementById("footer_wrap");
+    //             let headerWrap = document.getElementById("header_wrap");
+    //             let frontWrap = document.getElementById("front_wrap");
+    //             let detailWrap = document.getElementById("detail_wrap");
+    //             let mapWrap = document.getElementById("map_wrap");
+    //             let menuWrap = document.getElementById("menu_wrap");
+    //             let footerWrap = document.getElementById("footer_wrap");
                 
-    //             var introWrap = document.getElementById("intro_cont_wrap");
-    //             var placeWrap = document.getElementById("place_list_wrap");
+    //             let introWrap = document.getElementById("intro_cont_wrap");
+    //             let placeWrap = document.getElementById("place_list_wrap");
                 
     //             if(frontWrap) {
 
@@ -167,7 +167,7 @@
     
     function headerTitleClick() {
 
-        var headerTitle = document.getElementById("header_title");
+        let headerTitle = document.getElementById("header_title");
         function showHome() {
             location.href = "home.php"
         }
@@ -179,17 +179,17 @@
 
     // function headerMenuClick() {
 
-    //     var headerMenu = document.getElementById("header_btn");
+    //     let headerMenu = document.getElementById("header_btn");
     //     function showMenu() {
-    //         var headerWrap = document.getElementById("header_wrap");
-    //         // var frontWrap = document.getElementById("front_wrap");
-    //         // var detailWrap = document.getElementById("detail_wrap");
-    //         var mapWrap = document.getElementById("map_wrap");
-    //         var menuWrap = document.getElementById("menu_wrap");
-    //         var footerWrap = document.getElementById("footer_wrap");
+    //         let headerWrap = document.getElementById("header_wrap");
+    //         // let frontWrap = document.getElementById("front_wrap");
+    //         // let detailWrap = document.getElementById("detail_wrap");
+    //         let mapWrap = document.getElementById("map_wrap");
+    //         let menuWrap = document.getElementById("menu_wrap");
+    //         let footerWrap = document.getElementById("footer_wrap");
             
-    //         var introWrap = document.getElementById("intro_cont_wrap");
-    //         var placeWrap = document.getElementById("place_list_wrap");
+    //         let introWrap = document.getElementById("intro_cont_wrap");
+    //         let placeWrap = document.getElementById("place_list_wrap");
     //         if(frontWrap) {
     //             if(menuWrap.style.display == "none") {
     //                 headerWrap.style.display = "initial";
@@ -246,18 +246,18 @@
 
     function headerMenuClick() {
 
-        var headerMenu = document.getElementById("header_btn");
+        let headerMenu = document.getElementById("header_btn");
         function showMenu() {
-            var headerWrap = document.getElementById("header_wrap");
-            var mapWrap = document.getElementById("map_wrap");
-            var menuWrap = document.getElementById("menu_wrap");
-            var detailWrap = document.getElementById("detail_wrap");
-            var footerWrap = document.getElementById("footer_wrap");
+            let headerWrap = document.getElementById("header_wrap");
+            let mapWrap = document.getElementById("map_wrap");
+            let menuWrap = document.getElementById("menu_wrap");
+            let detailWrap = document.getElementById("detail_wrap");
+            let footerWrap = document.getElementById("footer_wrap");
             
-            var introWrap = document.getElementById("intro_cont_wrap");
-            var placeWrap = document.getElementById("place_list_wrap");
+            let introWrap = document.getElementById("intro_cont_wrap");
+            let placeWrap = document.getElementById("place_list_wrap");
             
-            var userListWrap = document.getElementById("userList_wrap");
+            let userListWrap = document.getElementById("userList_wrap");
 
             if(menuWrap.style.display == "none") {
                 headerWrap.style.display = "initial";
@@ -359,8 +359,8 @@
 //***메뉴***//
     function menuIntroClick() {
 
-        var menuIntro = document.getElementById("menu_intro_btn");
-        var introWrap = document.getElementById("intro_cont_wrap");
+        let menuIntro = document.getElementById("menu_intro_btn");
+        let introWrap = document.getElementById("intro_cont_wrap");
         if(menuIntro && introWrap) {
             function showIntro() {
                 if(introWrap.style.display == "none") {
@@ -377,8 +377,8 @@
 
     function menuPlaceClick() {
 
-        var menuPlace = document.getElementById("menu_place_btn");
-            var placeWrap = document.getElementById("place_list_wrap");
+        let menuPlace = document.getElementById("menu_place_btn");
+            let placeWrap = document.getElementById("place_list_wrap");
         function showPlace() {
 
             if(placeWrap.style.display == "none") {
@@ -394,15 +394,15 @@
 
     // function menuDetailClick() {
 
-    //     var menuDetail = document.getElementById("menu_detail_btn");
-    //         // var detailWrap = document.getElementById("detail_wrap");
+    //     let menuDetail = document.getElementById("menu_detail_btn");
+    //         // let detailWrap = document.getElementById("detail_wrap");
     //     function showDetail() {
-    //         var headerWrap = document.getElementById("header_wrap");
-    //         var frontWrap = document.getElementById("front_wrap");
-    //         // var detailWrap = document.getElementById("detail_wrap");
-    //         var mapWrap = document.getElementById("map_wrap");
-    //         var menuWrap = document.getElementById("menu_wrap");
-    //         var footerWrap = document.getElementById("footer_wrap");
+    //         let headerWrap = document.getElementById("header_wrap");
+    //         let frontWrap = document.getElementById("front_wrap");
+    //         // let detailWrap = document.getElementById("detail_wrap");
+    //         let mapWrap = document.getElementById("map_wrap");
+    //         let menuWrap = document.getElementById("menu_wrap");
+    //         let footerWrap = document.getElementById("footer_wrap");
 
     //         if(frontWrap) {
     //             headerWrap.style.display = "initial";
@@ -432,12 +432,12 @@
 //****original lang func****//
     // function langClick() {
     //     function langChange() {
-    //         var koAll = document.querySelectorAll(".ko");
-    //         var enAll = document.querySelectorAll(".en");
-    //         var klang;
+    //         let koAll = document.querySelectorAll(".ko");
+    //         let enAll = document.querySelectorAll(".en");
+    //         let klang;
     //         for(klang=0; klang < koAll.length; klang++) {
-    //             var koStatus = koAll[klang].style.display;
-    //             var elang;
+    //             let koStatus = koAll[klang].style.display;
+    //             let elang;
     //             for(elang=0; elang < enAll.length; elang++) {
     //                 if(koStatus == "none") {
     //                     koAll[klang].style.display = "initial";
@@ -472,9 +472,9 @@
     
 
     // function menuPlaceLiClick() {
-    //     var placeLiAll = document.querySelectorAll(".place_li");
+    //     let placeLiAll = document.querySelectorAll(".place_li");
     //     if(placeLiAll) {
-    //         var pl;
+    //         let pl;
     //         for(pl=0; pl < placeLiAll.length; pl++) {
     //             placeLiAll[pl].showDetailPlace(this.id);
     //         }
@@ -483,9 +483,9 @@
     // menuPlaceLiClick();
     
     // function mapPlaceLiClick() {
-    //     var placeLiAll = document.querySelectorAll(".marker_name");
+    //     let placeLiAll = document.querySelectorAll(".marker_name");
     //     if(placeLiAll) {
-    //         var pl;
+    //         let pl;
     //         for(pl=0; pl < placeLiAll.length; pl++) {
     //             placeLiAll[pl].showDetailPlace(this.id);
     //         }
@@ -502,10 +502,10 @@
 
     //****detail****//
     function detailBackBtnClick() {
-        // var backBtn = document.getElementById("back_btn");
-        var backBtn = document.querySelectorAll(".back_btn");
+        // let backBtn = document.getElementById("back_btn");
+        let backBtn = document.querySelectorAll(".back_btn");
         function detailBack() {
-            var adminHeader = document.getElementById("header_ad_title");
+            let adminHeader = document.getElementById("header_ad_title");
         if(!adminHeader) {
             location.replace("home.php");
         } else {
@@ -513,7 +513,7 @@
         }
             // location.replace("home.php");
         }
-        var bb;
+        let bb;
         for(bb=0; bb < backBtn.length; bb++) {
             if(backBtn) {
                 backBtn[bb].addEventListener("click", detailBack);
@@ -523,11 +523,11 @@
     detailBackBtnClick();
 
     function detailShareBtnClick() {
-        // var shareBtn = document.getElementById("share_btn");
-        var shareBtn = document.querySelectorAll(".share_btn");
+        // let shareBtn = document.getElementById("share_btn");
+        let shareBtn = document.querySelectorAll(".share_btn");
         function detailShare() {
-            var urlBox = document.createElement('input');
-            var currentUrl = window.location.href;
+            let urlBox = document.createElement('input');
+            let currentUrl = window.location.href;
 
             document.body.appendChild(urlBox);
             urlBox.value = currentUrl;
@@ -536,7 +536,7 @@
             document.body.removeChild(urlBox);
             alert("링크가 복사되었습니다.")
         }
-        var sb;
+        let sb;
         for(sb=0; sb < shareBtn.length; sb++) {
             if(shareBtn) {
                 shareBtn[sb].addEventListener("click", detailShare);

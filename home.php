@@ -36,10 +36,10 @@
 
         <script>
             function homeInit() {
-                var headerWrap = document.getElementById("header_wrap");
-                var menuWrap = document.getElementById("menu_wrap");
-                var mapWrap = document.getElementById("map_wrap");
-                var footerWrap = document.getElementById("footer_wrap");
+                let headerWrap = document.getElementById("header_wrap");
+                let menuWrap = document.getElementById("menu_wrap");
+                let mapWrap = document.getElementById("map_wrap");
+                let footerWrap = document.getElementById("footer_wrap");
 
                 headerWrap.style.display = "initial";
                 menuWrap.style.display = "none";
