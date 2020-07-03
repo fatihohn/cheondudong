@@ -56,7 +56,7 @@
             if ($resultPlaceMarker->num_rows > 0) {
                 // output data of each row
                 while($row = $resultPlaceMarker->fetch_assoc()) {
-                    $place_id = $row['id'];
+                    $id = $row['id'];
                     $mkimg_dir = $row['mkimg_dir'];
                     $mkimg_size = $row['mkimg_size'];
                     $en_title = mysqli_real_escape_string($conn, $row['en_title']);
@@ -67,7 +67,7 @@
                     echo "{";
                     echo "'type': 'Feature',";
                     echo     "'properties': {";
-                    echo        "'place_id': '".$place_id."',";
+                    echo        "'place_id': '".$id."',";
                     echo        "'category': '".$mkimg_size."',";
                     echo        "'file': '".$row['mkimg_dir']."',";
                     echo        "'message_ko': '".$ko_title."',";
@@ -77,7 +77,7 @@
                     echo    "'geometry': {";
                     echo        "'type': 'Point',";
                     // echo        "'coordinates': [".$lng.", ".$lat."]";
-                    echo        "'coordinates': {lng:".$lng.", lat:".$lat."}";
+                    echo        "'coordinates': \{lng:".$lng.", lat:".$lat."\}";
                     // echo        "'coordinates': [";
                     // echo $lng;
                     // echo ", ";
