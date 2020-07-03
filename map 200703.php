@@ -185,8 +185,8 @@
             // }
                 document.getElementById(marker.properties.place_id).appendChild(elNameEn);
 
-            var enAllMap = document.querySelectorAll(".en");
-            var elangMap;
+            let enAllMap = document.querySelectorAll(".en");
+            let elangMap;
             for(elangMap=0; elangMap < enAllMap.length; elangMap++) {
                 enAllMap[elangMap].style.display = "initial";
             }
@@ -195,7 +195,7 @@
 
     function removeMarkerName() {
         var elShownAll = document.querySelectorAll('.marker_name');
-        var mkn;
+        let mkn;
         for (mkn = 0; mkn < elShownAll.length; mkn++) {
             elShownAll[mkn].remove();
         }
@@ -245,8 +245,8 @@ trackUserLocation: true
 
         if (zoomStatus > zoomLow && zoomStatus < zoomHigh) {
             //****1:1****//
-            var smallCubeAll = document.querySelectorAll(".smallCube");
-            var sc;
+            let smallCubeAll = document.querySelectorAll(".smallCube");
+            let sc;
             for(sc=0; sc < smallCubeAll.length; sc++) {
                 smallCubeAll[sc].style.width = "60px";
                 smallCubeAll[sc].style.height = "calc(60px + 35px)";
@@ -254,8 +254,8 @@ trackUserLocation: true
                 smallCubeAll[sc].style.backgroundRepeat = "no-repeat";
                 smallCubeAll[sc].style.cursor = "pointer";
             }
-            var middleCubeAll = document.querySelectorAll(".middleCube");
-            var mc;
+            let middleCubeAll = document.querySelectorAll(".middleCube");
+            let mc;
             for(mc=0; mc < middleCubeAll.length; mc++) {
                 middleCubeAll[mc].style.width = "80px";
                 middleCubeAll[mc].style.height = "calc(80px + 35px)";
@@ -264,8 +264,8 @@ trackUserLocation: true
                 middleCubeAll[mc].style.cursor = "pointer";
             }
             //****1:1.6****//
-            var smallHoriAll = document.querySelectorAll(".smallHori");
-            var sh;
+            let smallHoriAll = document.querySelectorAll(".smallHori");
+            let sh;
             for(sh=0; sh < smallHoriAll.length; sh++) {
                 smallHoriAll[sh].style.width = "80px";
                 smallHoriAll[sh].style.height = "calc(50px + 35px)";
@@ -273,8 +273,8 @@ trackUserLocation: true
                 smallHoriAll[sh].style.backgroundRepeat = "no-repeat";
                 smallHoriAll[sh].style.cursor = "pointer";
             }
-            var middleHoriAll = document.querySelectorAll(".middleHori");
-            var mh;
+            let middleHoriAll = document.querySelectorAll(".middleHori");
+            let mh;
             for(mh=0; mh < middleHoriAll.length; mh++) {
                 middleHoriAll[mh].style.width = "108px";
                 middleHoriAll[mh].style.height = "calc(60px + 35px)";
@@ -282,8 +282,8 @@ trackUserLocation: true
                 middleHoriAll[mh].style.backgroundRepeat = "no-repeat";
                 middleHoriAll[mh].style.cursor = "pointer";
             }
-            var bigHoriAll = document.querySelectorAll(".bigHori");
-            var bh;
+            let bigHoriAll = document.querySelectorAll(".bigHori");
+            let bh;
             for(bh=0; bh < bigHoriAll.length; bh++) {
                 bigHoriAll[bh].style.width = "160px";
                 bigHoriAll[bh].style.height = "calc(100px + 35px)";
@@ -292,8 +292,8 @@ trackUserLocation: true
                 bigHoriAll[bh].style.cursor = "pointer";
             }
             //****1:2****//
-            var smallPanoAll = document.querySelectorAll(".smallPano");
-            var sp;
+            let smallPanoAll = document.querySelectorAll(".smallPano");
+            let sp;
             for(sp=0; sp < smallPanoAll.length; sp++) {
                 smallPanoAll[sp].style.width = "80px";
                 smallPanoAll[sp].style.height = "calc(40px + 35px)";
@@ -301,8 +301,8 @@ trackUserLocation: true
                 smallPanoAll[sp].style.backgroundRepeat = "no-repeat";
                 smallPanoAll[sp].style.cursor = "pointer";
             }
-            var middlePanoAll = document.querySelectorAll(".middlePano");
-            var mp;
+            let middlePanoAll = document.querySelectorAll(".middlePano");
+            let mp;
             for(mp=0; mp < middlePanoAll.length; mp++) {
                 middlePanoAll[mp].style.width = "120px";
                 middlePanoAll[mp].style.height = "calc(60px + 35px)";
@@ -311,8 +311,8 @@ trackUserLocation: true
                 middlePanoAll[mp].style.cursor = "pointer";
             }
             //****1:2.7****//
-            var longPanoAll = document.querySelectorAll(".longPano");
-            var lp;
+            let longPanoAll = document.querySelectorAll(".longPano");
+            let lp;
             for(lp=0; lp < longPanoAll.length; lp++) {
                 longPanoAll[lp].style.width = "160px";
                 longPanoAll[lp].style.height = "calc(60px + 35px)";
@@ -322,8 +322,8 @@ trackUserLocation: true
             }
         } else if (zoomStatus < zoomLow) {
             //****1:1****//
-            var smallCubeAll = document.querySelectorAll(".smallCube");
-            var sc;
+            let smallCubeAll = document.querySelectorAll(".smallCube");
+            let sc;
             for(sc=0; sc < smallCubeAll.length; sc++) {
                 smallCubeAll[sc].style.width = "30px";
                 smallCubeAll[sc].style.height = "calc(30px + 35px)";
@@ -331,8 +331,8 @@ trackUserLocation: true
                 smallCubeAll[sc].style.backgroundRepeat = "no-repeat";
                 smallCubeAll[sc].style.cursor = "pointer";
             }
-            var middleCubeAll = document.querySelectorAll(".middleCube");
-            var mc;
+            let middleCubeAll = document.querySelectorAll(".middleCube");
+            let mc;
             for(mc=0; mc < middleCubeAll.length; mc++) {
                 middleCubeAll[mc].style.width = "35px";
                 middleCubeAll[mc].style.height = "calc(35px + 35px)";
@@ -341,8 +341,8 @@ trackUserLocation: true
                 middleCubeAll[mc].style.cursor = "pointer";
             }
             //****1:1.6****//
-            var smallHoriAll = document.querySelectorAll(".smallHori");
-            var sh;
+            let smallHoriAll = document.querySelectorAll(".smallHori");
+            let sh;
             for(sh=0; sh < smallHoriAll.length; sh++) {
                 smallHoriAll[sh].style.width = "40px";
                 smallHoriAll[sh].style.height = "calc(25px + 35px)";
@@ -350,8 +350,8 @@ trackUserLocation: true
                 smallHoriAll[sh].style.backgroundRepeat = "no-repeat";
                 smallHoriAll[sh].style.cursor = "pointer";
             }
-            var middleHoriAll = document.querySelectorAll(".middleHori");
-            var mh;
+            let middleHoriAll = document.querySelectorAll(".middleHori");
+            let mh;
             for(mh=0; mh < middleHoriAll.length; mh++) {
                 middleHoriAll[mh].style.width = "48px";
                 middleHoriAll[mh].style.height = "calc(30px + 35px)";
@@ -359,8 +359,8 @@ trackUserLocation: true
                 middleHoriAll[mh].style.backgroundRepeat = "no-repeat";
                 middleHoriAll[mh].style.cursor = "pointer";
             }
-            var bigHoriAll = document.querySelectorAll(".bigHori");
-            var bh;
+            let bigHoriAll = document.querySelectorAll(".bigHori");
+            let bh;
             for(bh=0; bh < bigHoriAll.length; bh++) {
                 bigHoriAll[bh].style.width = "56px";
                 bigHoriAll[bh].style.height = "calc(35px + 35px)";
@@ -369,8 +369,8 @@ trackUserLocation: true
                 bigHoriAll[bh].style.cursor = "pointer";
             }
             //****1:2****//
-            var smallPanoAll = document.querySelectorAll(".smallPano");
-            var sp;
+            let smallPanoAll = document.querySelectorAll(".smallPano");
+            let sp;
             for(sp=0; sp < smallPanoAll.length; sp++) {
                 smallPanoAll[sp].style.width = "40px";
                 smallPanoAll[sp].style.height = "calc(20px + 35px)";
@@ -378,8 +378,8 @@ trackUserLocation: true
                 smallPanoAll[sp].style.backgroundRepeat = "no-repeat";
                 smallPanoAll[sp].style.cursor = "pointer";
             }
-            var middlePanoAll = document.querySelectorAll(".middlePano");
-            var mp;
+            let middlePanoAll = document.querySelectorAll(".middlePano");
+            let mp;
             for(mp=0; mp < middlePanoAll.length; mp++) {
                 middlePanoAll[mp].style.width = "50px";
                 middlePanoAll[mp].style.height = "calc(25px + 35px)";
@@ -388,8 +388,8 @@ trackUserLocation: true
                 middlePanoAll[mp].style.cursor = "pointer";
             }
             //****1:2.7****//
-            var longPanoAll = document.querySelectorAll(".longPano");
-            var lp;
+            let longPanoAll = document.querySelectorAll(".longPano");
+            let lp;
             for(lp=0; lp < longPanoAll.length; lp++) {
                 longPanoAll[lp].style.width = "54px";
                 longPanoAll[lp].style.height = "calc(20px + 35px)";
@@ -400,8 +400,8 @@ trackUserLocation: true
 
         } else {
             //****1:1****//
-            var smallCubeAll = document.querySelectorAll(".smallCube");
-            var sc;
+            let smallCubeAll = document.querySelectorAll(".smallCube");
+            let sc;
             for(sc=0; sc < smallCubeAll.length; sc++) {
                 smallCubeAll[sc].style.width = "90px";
                 smallCubeAll[sc].style.height = "calc(90px + 35px)";
@@ -409,8 +409,8 @@ trackUserLocation: true
                 smallCubeAll[sc].style.backgroundRepeat = "no-repeat";
                 smallCubeAll[sc].style.cursor = "pointer";
             }
-            var middleCubeAll = document.querySelectorAll(".middleCube");
-            var mc;
+            let middleCubeAll = document.querySelectorAll(".middleCube");
+            let mc;
             for(mc=0; mc < middleCubeAll.length; mc++) {
                 middleCubeAll[mc].style.width = "120px";
                 middleCubeAll[mc].style.height = "calc(120px + 35px)";
@@ -419,8 +419,8 @@ trackUserLocation: true
                 middleCubeAll[mc].style.cursor = "pointer";
             }
             //****1:1.6****//
-            var smallHoriAll = document.querySelectorAll(".smallHori");
-            var sh;
+            let smallHoriAll = document.querySelectorAll(".smallHori");
+            let sh;
             for(sh=0; sh < smallHoriAll.length; sh++) {
                 smallHoriAll[sh].style.width = "120px";
                 smallHoriAll[sh].style.height = "calc(75px + 35px)";
@@ -428,8 +428,8 @@ trackUserLocation: true
                 smallHoriAll[sh].style.backgroundRepeat = "no-repeat";
                 smallHoriAll[sh].style.cursor = "pointer";
             }
-            var middleHoriAll = document.querySelectorAll(".middleHori");
-            var mh;
+            let middleHoriAll = document.querySelectorAll(".middleHori");
+            let mh;
             for(mh=0; mh < middleHoriAll.length; mh++) {
                 middleHoriAll[mh].style.width = "160px";
                 middleHoriAll[mh].style.height = "calc(100px + 35px)";
@@ -437,8 +437,8 @@ trackUserLocation: true
                 middleHoriAll[mh].style.backgroundRepeat = "no-repeat";
                 middleHoriAll[mh].style.cursor = "pointer";
             }
-            var bigHoriAll = document.querySelectorAll(".bigHori");
-            var bh;
+            let bigHoriAll = document.querySelectorAll(".bigHori");
+            let bh;
             for(bh=0; bh < bigHoriAll.length; bh++) {
                 bigHoriAll[bh].style.width = "200px";
                 bigHoriAll[bh].style.height = "calc(125px + 35px)";
@@ -447,8 +447,8 @@ trackUserLocation: true
                 bigHoriAll[bh].style.cursor = "pointer";
             }
             //****1:2****//
-            var smallPanoAll = document.querySelectorAll(".smallPano");
-            var sp;
+            let smallPanoAll = document.querySelectorAll(".smallPano");
+            let sp;
             for(sp=0; sp < smallPanoAll.length; sp++) {
                 smallPanoAll[sp].style.width = "120px";
                 smallPanoAll[sp].style.height = "calc(60px + 35px)";
@@ -456,8 +456,8 @@ trackUserLocation: true
                 smallPanoAll[sp].style.backgroundRepeat = "no-repeat";
                 smallPanoAll[sp].style.cursor = "pointer";
             }
-            var middlePanoAll = document.querySelectorAll(".middlePano");
-            var mp;
+            let middlePanoAll = document.querySelectorAll(".middlePano");
+            let mp;
             for(mp=0; mp < middlePanoAll.length; mp++) {
                 middlePanoAll[mp].style.width = "160px";
                 middlePanoAll[mp].style.height = "calc(80px + 35px)";
@@ -466,8 +466,8 @@ trackUserLocation: true
                 middlePanoAll[mp].style.cursor = "pointer";
             }
             //****1:2.7****//
-            var longPanoAll = document.querySelectorAll(".longPano");
-            var lp;
+            let longPanoAll = document.querySelectorAll(".longPano");
+            let lp;
             for(lp=0; lp < longPanoAll.length; lp++) {
                 longPanoAll[lp].style.width = "220px";
                 longPanoAll[lp].style.height = "calc(82px + 35px)";
