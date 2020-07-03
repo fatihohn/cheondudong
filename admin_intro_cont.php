@@ -6,11 +6,18 @@ if ($conn->connect_error) {
 }
 $sqlIntro = "SELECT * FROM intro ORDER BY id DESC LIMIT 1";
 $resultIntro = $conn->query($sqlIntro) or die($conn->error);
-$rowIntro = $resultIntro->fetch_assoc();
 
-$ko_cont =  $rowIntro['ko_cont'];
-$en_cont =  $rowIntro['en_cont'];
-$intro_id =  $rowIntro['id'];
+if($resultIntro) {
+   $rowIntro = $resultIntro->fetch_assoc();
+   
+   $ko_cont =  $rowIntro['ko_cont'];
+   $en_cont =  $rowIntro['en_cont'];
+   $intro_id =  $rowIntro['id'];
+} else {
+   $ko_cont =  "소개가 없습니다.";
+   $en_cont =  "No Intro.";
+   
+}
 
 ?>
 
@@ -32,6 +39,6 @@ $intro_id =  $rowIntro['id'];
 
       <div id="del_intro" class="<?php echo $intro_id; ?>"  onclick="introDel(this.className)">
          <a>
-            <img src="static/img/del_btn.png" alt="삭제" title="삭제하기">
+            <img src="static/img/delete_btn.png" alt="delete_btn" title="삭제하기">
          </a>
       </div>

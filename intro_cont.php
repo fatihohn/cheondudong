@@ -6,10 +6,15 @@ if ($conn->connect_error) {
 }
 $sqlIntro = "SELECT * FROM intro ORDER BY id DESC LIMIT 1";
 $resultIntro = $conn->query($sqlIntro) or die($conn->error);
-$rowIntro = $resultIntro->fetch_assoc();
 
-$ko_cont =  $rowIntro['ko_cont'];
-$en_cont =  $rowIntro['en_cont'];
+if($resultIntro) {
+   $rowIntro = $resultIntro->fetch_assoc();
+   $ko_cont =  $rowIntro['ko_cont'];
+   $en_cont =  $rowIntro['en_cont'];
+} else {
+   $ko_cont =  "소개가 없습니다.";
+   $en_cont =  "No Intro.";
+}
 
 ?>
 
