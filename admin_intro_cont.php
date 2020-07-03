@@ -36,9 +36,14 @@ if($resultIntro->num_rows > 0) {
      <div class="en">
         <?=$en_cont?>
      </div>
-
-      <div id="<?php echo $intro_id; ?>" class="delete_btn" title="삭제하기" onclick="introDel(this.id)">
-         <a>
-            <img src="static/img/delete_btn.png" alt="delete_btn">
-         </a>
-      </div>
+<?php 
+if($resultIntro->num_rows > 0) {
+   ?>
+   <div id="<?php echo $intro_id; ?>" class="delete_btn" title="삭제하기" onclick="introDel(this.id)">
+      <a>
+         <img src="static/img/delete_btn.png" alt="delete_btn">
+      </a>
+   </div>
+   <?php
+}
+?>
