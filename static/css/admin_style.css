@@ -195,5 +195,9 @@ section #userList_wrap .user_table {
     cursor: pointer;
 }
 
+#intro_cont_wrap #intro_cont .delete_btn {
+    width: 80px;
+}
+
 
 /****footer****/
