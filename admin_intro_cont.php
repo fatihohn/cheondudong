@@ -7,7 +7,7 @@ if ($conn->connect_error) {
 $sqlIntro = "SELECT * FROM intro ORDER BY id DESC LIMIT 1";
 $resultIntro = $conn->query($sqlIntro) or die($conn->error);
 
-if($resultIntro) {
+if($resultIntro->num_rows > 0) {
    $rowIntro = $resultIntro->fetch_assoc();
    
    $ko_cont =  $rowIntro['ko_cont'];
