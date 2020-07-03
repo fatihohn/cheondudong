@@ -19,6 +19,12 @@ $ko_title = mysqli_real_escape_string($conn, $ko_title);
 $en_title = $_POST['en_title'];
 $en_title = mysqli_real_escape_string($conn, $en_title);
 
+$en_sub_title = $_POST['en_sub_title'];
+$en_sub_title = mysqli_real_escape_string($conn, $en_sub_title);
+
+$ko_memo = $_POST['ko_memo'];
+$ko_memo = mysqli_real_escape_string($conn, $ko_memo);
+
 $ko_address = $_POST['ko_address'];
 $ko_address = mysqli_real_escape_string($conn, $ko_address);
 
@@ -52,6 +58,10 @@ $sql =
         `mkimg_size`='$mkimg_size', 
         `ko_title`='$ko_title', 
         `en_title`='$en_title', 
+        `ko_sub_title`='$ko_sub_title', 
+        `en_sub_title`='$en_sub_title', 
+        `ko_memo`='$ko_memo', 
+        `en_memo`='$en_memo', 
         `ko_address`='$ko_address', 
         `en_address`='$en_address', 
         `mkimg`='{$mkimg}$filename',
@@ -73,6 +83,10 @@ if($_FILES['img']['size']!==0) {
         `mkimg_size`='$mkimg_size', 
         `ko_title`='$ko_title', 
         `en_title`='$en_title', 
+        `ko_sub_title`='$ko_sub_title', 
+        `en_sub_title`='$en_sub_title', 
+        `ko_memo`='$ko_memo', 
+        `en_memo`='$en_memo', 
         `ko_address`='$ko_address', 
         `en_address`='$en_address', 
         `mkimg`='{$mkimg}$filename',
@@ -92,6 +106,10 @@ if($_FILES['img']['size']!==0) {
         `mkimg_size`='$mkimg_size', 
         `ko_title`='$ko_title', 
         `en_title`='$en_title', 
+        `ko_sub_title`='$ko_sub_title', 
+        `en_sub_title`='$en_sub_title', 
+        `ko_memo`='$ko_memo', 
+        `en_memo`='$en_memo', 
         `ko_address`='$ko_address', 
         `en_address`='$en_address', 
         `lng`='$lng', 
