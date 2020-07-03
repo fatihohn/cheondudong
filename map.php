@@ -77,11 +77,11 @@
                     echo    "'geometry': {";
                     echo        "'type': 'Point',";
                     // echo        "'coordinates': [".$lng.", ".$lat."]";
-                    echo        "'coordinates': [<";
+                    echo        "'coordinates': [";
                     echo $lng;
-                    echo ">, <";
+                    echo ", ";
                     echo $lat;
-                    echo ">]";
+                    echo "]";
                     echo     "}
                         },";
 
