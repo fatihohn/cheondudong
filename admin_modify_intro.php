@@ -70,7 +70,7 @@
                 else if($_SESSION['cast']==$adminCast) {
         ?>
 
-        <form class="createForm" action="admin_modify_place_action.php" method="POST" enctype="multipart/form-data">
+        <form class="createForm" action="admin_modify_intro_action.php" method="POST" enctype="multipart/form-data">
             <p >
                 <div class="createInput">
                     <input class="createGrid2"  type="hidden" name="username" value="<?=$username?>" required />       
