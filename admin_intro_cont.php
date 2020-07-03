@@ -37,8 +37,8 @@ if($resultIntro) {
         <?=$en_cont?>
      </div>
 
-      <div id="del_intro" class="<?php echo $intro_id; ?>"  onclick="introDel(this.className)">
+      <div id="<?php echo $intro_id; ?>" class="delete_btn" title="삭제하기" onclick="introDel(this.id)">
          <a>
-            <img src="static/img/delete_btn.png" alt="delete_btn" title="삭제하기">
+            <img src="static/img/delete_btn.png" alt="delete_btn">
          </a>
       </div>
