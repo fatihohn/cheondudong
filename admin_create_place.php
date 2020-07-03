@@ -39,7 +39,7 @@
                         $adminCast = "admin";
                         $editorCast = "editor";
 
-                        if($_SESSION['cast']!==$adminCast || $_SESSION['cast']!==$editorCast){
+                        if($_SESSION['cast']!==$adminCast && $_SESSION['cast']!==$editorCast){
                             ?> 
                             <script>
                                 alert("권한이 없습니다.");
