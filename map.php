@@ -210,10 +210,10 @@
 
 //****marker func end****//
  
-// // add marker to map
-// new mapboxgl.Marker(el)
-// .setLngLat(marker.geometry.coordinates)
-// .addTo(map);
+// add marker to map
+new mapboxgl.Marker(el)
+.setLngLat(marker.geometry.coordinates)
+.addTo(map);
 });
 
 // // disable map rotation using right click + drag
