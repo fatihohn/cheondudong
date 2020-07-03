@@ -140,6 +140,7 @@ function menuIntroAddClick() {
 }
 menuIntroAddClick();
 
+
 function menuPlaceAddClick() {
     let menuPlaceAdd = document.getElementById("add_place");
     function addPlace() {
@@ -204,6 +205,31 @@ menuPlaceAddClick();
             alert('취소되었습니다');
         }
     }
+
+    function introDel(str) {
+        let delConfirm = confirm('삭제 후 복원할 수 없습니다. 삭제하시겠습니까?');
+        if (delConfirm == true) {
+            location.href = './admin_delete_intro.php?id=' + str;
+            alert('삭제중입니다')
+        } else {
+            alert('취소되었습니다');
+        }
+    }
+
+
+    // function menuIntroDelClick() {
+    //     let menuIntroDel = document.getElementById("del_intro");
+    //     function delIntro(str) {
+    //         location.href = "admin_delete_intro.php?q="+str;
+    //     }
+    //     if(menuIntroDel) {
+    //             menuIntroDel.addEventListener("click", function() {
+    //                 delIntro(this.className)
+    //             });
+    //         }
+    // }
+    // menuIntroDelClick();
+    
 
 //****수정****//
     function placeModi(str) {

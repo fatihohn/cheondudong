@@ -10,6 +10,7 @@ $rowIntro = $resultIntro->fetch_assoc();
 
 $ko_cont =  $rowIntro['ko_cont'];
 $en_cont =  $rowIntro['en_cont'];
+$intro_id =  $rowIntro['id'];
 
 ?>
 
@@ -28,3 +29,9 @@ $en_cont =  $rowIntro['en_cont'];
      <div class="en">
         <?=$en_cont?>
      </div>
+
+      <div id="del_intro" class="<?php echo $intro_id; ?>"  onclick="introDel(this.className)">
+         <a>
+            <img src="static/img/del_btn.png" alt="삭제" title="삭제하기">
+         </a>
+      </div>
