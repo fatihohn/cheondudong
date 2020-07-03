@@ -189,13 +189,15 @@ section #userList_wrap .user_table {
 #admin_detail_func_wrap .back_btn img,
 #admin_detail_func_wrap .modify_btn img,
 #admin_detail_func_wrap .delete_btn img,
-#intro_cont_wrap #intro_cont .delete_btn img {
+#intro_cont_wrap #intro_cont .delete_btn img,
+#intro_cont_wrap #intro_cont .modify_btn img {
     width: 60px;
     padding: 10px;
     cursor: pointer;
 }
 
-#intro_cont_wrap #intro_cont .delete_btn {
+#intro_cont_wrap #intro_cont .delete_btn,
+#intro_cont_wrap #intro_cont .modify_btn {
     width: 80px;
 }
 
