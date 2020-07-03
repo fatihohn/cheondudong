@@ -91,9 +91,27 @@
                                 </p>
                                 <p>
                                     <div class="createInput">
-                                    <label class="createGrid1">제목</label>
-                                    <input class="createGrid2" name="ko_title" placeholder="제목" required />
+                                        <label class="createGrid1">제목</label>
+                                        <input class="createGrid2" name="ko_title" placeholder="제목" required />
                                         <input class="createGrid2" name="en_title" placeholder="Title" required />
+                                    </div>
+                                </p>
+                                <p>
+                                    <div class="createInput">
+                                        <label class="createGrid1">부제</label>
+                                        <input class="createGrid2" name="ko_sub_title" placeholder="부제"  />
+                                        <input class="createGrid2" name="en_sub_title" placeholder="Subtitle"  />
+                                    </div>
+                                </p>
+                                <p>
+                                    <div class="createInput">
+                                        <label class="createGrid1">메모</label>
+                                        <div class="admin_editor">
+                                            <textarea name="ko_memo" placeholder="메모"></textarea>
+                                        </div>
+                                        <div class="admin_editor">
+                                            <textarea name="en_memo" placeholder="Memo"></textarea>
+                                        </div>
                                     </div>
                                 </p>
                                 

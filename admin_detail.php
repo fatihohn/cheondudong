@@ -35,6 +35,10 @@ $place_id = $rowPlaceDetail['place_id'];
 $place_id = intval($place_id);
 $detailTitle = $rowPlaceDetail['ko_title'];
 $detailTitle_en = $rowPlaceDetail['en_title'];
+$detailSubTitle = $rowPlaceDetail['ko_sub_title'];
+$detailSubTitle_en = $rowPlaceDetail['en_sub_title'];
+$detailMemo = $rowPlaceDetail['ko_memo'];
+$detailMemo_en = $rowPlaceDetail['en_memo'];
 $detailMarker = $rowPlaceDetail['mkimg_dir'];
 $detailAddress = $rowPlaceDetail['ko_address'];
 $detailAddress_en = $rowPlaceDetail['en_address'];
@@ -138,6 +142,14 @@ $stmt = mysqli_stmt_init($conn);
                                 <?php echo $detailTitle_en;?>
                             </h3>
                         </div>
+                        <div id="detail_sub_title">
+                            <h4 class="ddobag ko">
+                                <?php echo $detailSubTitle;?>
+                            </h4>
+                            <h4 class="ddobag en">
+                                <?php echo $detailSubTitle_en;?>
+                            </h4>
+                        </div>
                         <div id="detail_point">
                             
                             <div class="detail_address ko">
@@ -151,6 +163,14 @@ $stmt = mysqli_stmt_init($conn);
                             </div>
                             <div class="detail_coord en">
                                 <?php echo $detailCoord;?>
+                            </div>
+                        </div>
+                        <div id="detail_memo">
+                            <div class="ko">
+                                <?php echo $detailMemo;?>
+                            </div>
+                            <div class="en">
+                                <?php echo $detailMemo_en;?>
                             </div>
                         </div>
                         <div id="detail_cont">

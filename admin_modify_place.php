@@ -46,6 +46,10 @@
                 $mkimg_size = $rows['mkimg_size'];
                 $ko_title = $rows['ko_title'];
                 $en_title = $rows['en_title'];
+                $ko_sub_title = $rows['ko_sub_title'];
+                $en_sub_title = $rows['en_sub_title'];
+                $ko_memo = $rows['ko_memo'];
+                $en_memo = $rows['en_memo'];
                 $ko_address = $rows['ko_address'];
                 $en_address = $rows['en_address'];
                 $lat = $rows['lat'];
@@ -106,7 +110,24 @@
                                         <input class="createGrid2" name="en_title" value="<?=$en_title?>" required />
                                     </div>
                                 </p>
-                                
+                                <p>
+                                    <div class="createInput">
+                                        <label class="createGrid1">부제</label>
+                                        <input class="createGrid2" name="ko_sub_title" value="<?=$ko_sub_title?>" />
+                                        <input class="createGrid2" name="en_sub_title" value="<?=$en_sub_title?>" />
+                                    </div>
+                                </p>
+                                <p>
+                                    <div class="createInput">
+                                        <label class="createGrid1">메모</label>
+                                        <div class="admin_editor">
+                                            <textarea name="ko_memo" placeholder="메모"><?=$ko_memo?></textarea>
+                                        </div>
+                                        <div class="admin_editor">
+                                            <textarea name="en_memo" placeholder="Memo"><?=$en_memo?></textarea>
+                                        </div>
+                                    </div>
+                                </p>
                                 <p>
                                     <div class="createInput">
                                     <label class="createGrid1">주소</label>

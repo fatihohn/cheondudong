@@ -24,6 +24,18 @@ $ko_title = mysqli_real_escape_string($conn, $ko_title);
 $en_title = $_POST['en_title'];
 $en_title = mysqli_real_escape_string($conn, $en_title);
 
+$ko_sub_title = $_POST['ko_sub_title'];
+$ko_sub_title = mysqli_real_escape_string($conn, $ko_sub_title);
+
+$en_sub_title = $_POST['en_sub_title'];
+$en_sub_title = mysqli_real_escape_string($conn, $en_sub_title);
+
+$ko_memo = $_POST['ko_memo'];
+$ko_memo = mysqli_real_escape_string($conn, $ko_memo);
+
+$en_memo = $_POST['en_memo'];
+$en_memo = mysqli_real_escape_string($conn, $en_memo);
+
 $ko_address = $_POST['ko_address'];
 $ko_address = mysqli_real_escape_string($conn, $ko_address);
 
@@ -49,7 +61,7 @@ $mkimg = $uploadimg['img'];
                 
 $sql = "
 INSERT INTO places
-        (place_id, username, mkimg, mkimg_dir, mkimg_size, ko_title, en_title, ko_address, en_address, lat, lng, ko_cont, en_cont, created)
+        (place_id, username, mkimg, mkimg_dir, mkimg_size, ko_title, en_title, ko_sub_title, en_sub_title, ko_memo, en_memo, ko_address, en_address, lat, lng, ko_cont, en_cont, created)
     VALUES(
             '{$place_id}',
             '{$username}',
@@ -58,6 +70,10 @@ INSERT INTO places
             '{$mkimg_size}',
             '{$ko_title}',
             '{$en_title}',
+            '{$ko_sub_title}',
+            '{$en_sub_title}',
+            '{$ko_memo}',
+            '{$en_memo}',
             '{$ko_address}',
             '{$en_address}',
             '{$lat}',
