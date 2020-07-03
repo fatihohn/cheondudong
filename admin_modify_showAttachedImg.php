@@ -12,6 +12,7 @@ session_start();
 $q = intval($_GET['q']);
 
 $adminCast = "admin";
+$editorCast = "editor";
 
 $uname = $_SESSION['username'];
 
@@ -25,7 +26,7 @@ if(!isset($_SESSION['username'])) {
                     </script>
     <?php   }
             //cast: admin인 경우
-            else if($_SESSION['cast']==$adminCast) {
+            else if($_SESSION['cast']==$adminCast || $_SESSION['cast']==$editorCast) {
                 // //현재 작성중 장소 id = new_id
                 // $sqlLatestPlace = "SELECT id FROM places ORDER BY id DESC LIMIT 1";
                 // $resultLatestPlace = $conn->query($sqlLatestPlace);

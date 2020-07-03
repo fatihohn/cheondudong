@@ -58,7 +58,7 @@
                 $row=mysqli_fetch_assoc($result);
                 $cast = $row['cast'];
                 //비밀번호가 맞다면 세션 생성
-                if($row['password']==$password && $cast=="admin"){
+                if($row['password']==$password && $cast=="admin" || $row['password'] == $password && $cast == "editor"){
                         $_SESSION['username']=$username;
                         $_SESSION['cast']=$cast;
                         $_SESSION['language']=$language;

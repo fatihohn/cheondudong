@@ -29,6 +29,7 @@
         $username = $rows['username'];           
 
         $adminCast = "admin";
+        $editorCast = "editor";
 
         //현재 작성중 장소 id = new_id
         // $sqlLatestPlace = "SELECT id FROM places ORDER BY id DESC LIMIT 1";
@@ -51,7 +52,7 @@
                 location.replace("<?php echo $URL?>");
             </script>
             <?php   
-        } else if($_SESSION['cast']==$adminCast) {
+        } else if($_SESSION['cast']==$adminCast || $_SESSION['cast']==$editorCast) {
             //cast: admin인 경우
             ?>
             <form class="createForm" action="admin_attach_ref_action.php" method="POST" enctype="multipart/form-data">

@@ -34,8 +34,9 @@
                         $username = $rows['username'];           
 
                         $adminCast = "admin";
+                        $editorCast = "editor";
 
-                        if($_SESSION['cast']!==$adminCast){
+                        if($_SESSION['cast']!==$adminCast || $_SESSION['cast']!==$editorCast){
                             ?> 
                             <script>
                                 alert("권한이 없습니다.");
@@ -55,7 +56,7 @@
                                 location.replace("<?php echo $URL?>");
                             </script>
                             <?php   
-                        } else if($_SESSION['cast']==$adminCast) {
+                        } else if($_SESSION['cast']==$adminCast || $_SESSION['cast']==$editorCast) {
                             //cast: admin인 경우
                             ?>
                             <form class="createForm" action="admin_create_intro_action.php" method="POST" enctype="multipart/form-data">

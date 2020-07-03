@@ -36,6 +36,7 @@
                 $cast = $rows['cast'];
 
                 $adminCast = "admin";
+                $editorCast = "editor";
 
                 session_start();
  
@@ -109,6 +110,11 @@
                                         <input class="cast_btn" type="radio" id="admin_btn"name="cast" value="admin">
                                         <label for="admin_btn">
                                             Admin
+                                        </label>
+                                        <br>
+                                        <input class="cast_btn" type="radio" id="editor_btn"name="cast" value="editor">
+                                        <label for="editor_btn">
+                                            Editor
                                         </label>
                                         <br>
                                         <input class="cast_btn" type="radio" id="normal_btn"name="cast" value="normal">
@@ -215,6 +221,7 @@
                             </p>
                         </form>
         
+                        
         <?php   } else {
                 ?>
                     <script>

@@ -54,6 +54,7 @@
                 $en_cont = $rows['en_cont'];
 
                 $adminCast = "admin";
+                $editorCast = "editor";
 
 
                 session_start();
@@ -67,7 +68,7 @@
                         </script>
         <?php   }
                 //cast: admin||editor인 경우 || 작가 본인
-                else if($_SESSION['cast']==$adminCast) {
+                else if($_SESSION['cast']==$adminCast || $_SESSION['cast']==$editorCast) {
         ?>
 
         <form class="createForm" action="admin_modify_intro_action.php" method="POST" enctype="multipart/form-data">
