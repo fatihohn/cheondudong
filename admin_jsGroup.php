@@ -235,6 +235,9 @@ menuPlaceAddClick();
     function placeModi(str) {
         location.href = './admin_modify_place.php?id=' + str;
     }
+    function introModi(str) {
+        location.href = './admin_modify_intro.php?id=' + str;
+    }
 
 ////****수정_삭제****//
 // function imgModiDel(str) {

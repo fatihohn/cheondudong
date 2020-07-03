@@ -39,6 +39,11 @@ if($resultIntro->num_rows > 0) {
 <?php 
 if($resultIntro->num_rows > 0) {
    ?>
+   <div id="<?php echo $intro_id; ?>" class="modify_btn" onclick="introModi(this.id)">
+      <a>
+         <img src="static/img/modify_btn.png" alt="modify_btn" title="수정하기" >
+      </a>
+   </div>
    <div id="<?php echo $intro_id; ?>" class="delete_btn" onclick="introDel(this.id)">
       <a>
          <img src="static/img/delete_btn.png" alt="delete_btn" title="삭제하기" >
