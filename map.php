@@ -5,33 +5,33 @@
 
     <script>
     var map;
-	var location_data = {"country":"", "city":"", "sublocality_level_1" : "", "sublocality_level_2" : ""}
+	// var location_data = {"country":"", "city":"", "sublocality_level_1" : "", "sublocality_level_2" : ""}
 
-	var geocoder;
-	var built_address = "";
-	var is_dongducheon = false;
-	var user_coordinates;
-	var geocode_results;
-	var distance_from_dongducheon;
-	var map_markers;
-	var floaters_markers;
-	var link_lines_features_work;
+	// var geocoder;
+	// var built_address = "";
+	// var is_dongducheon = false;
+	// var user_coordinates;
+	// var geocode_results;
+	// var distance_from_dongducheon;
+	// var map_markers;
+	// var floaters_markers;
+	// var link_lines_features_work;
 
-	var supports_location = false;
-	var check_location_interval;
-	var location_interval_is_running = false;
-	var location_interval_is_first_check = true;
-	var is_checking_location = false;
+	// var supports_location = false;
+	// var check_location_interval;
+	// var location_interval_is_running = false;
+	// var location_interval_is_first_check = true;
+	// var is_checking_location = false;
 
-	var first_load = true;
-	var data_loaded = false;
-	var url_params;
+	// var first_load = true;
+	// var data_loaded = false;
+	// var url_params;
 
-	var hiddenHeight;
+	// var hiddenHeight;
 
-	var quotes_array = [];
-	var base64_export;
-	var detectrtc_tested = false;
+	// var quotes_array = [];
+	// var base64_export;
+	// var detectrtc_tested = false;
     
     mapboxgl.accessToken = 'pk.eyJ1Ijoic3VyaWNpdHkiLCJhIjoiY2tiZnpzaGtzMTB5NTJwcWVtOHF5anRmMCJ9.CI4QuMCsvVak3vrNtnJWcw';
     
