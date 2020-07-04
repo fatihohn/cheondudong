@@ -34,6 +34,17 @@
             location.href = "admin_detail.php?q=" + str;
         }
     }
+    // function showInfoPlaceMap(str) {
+    //     // let adminHeader = document.getElementById("header_ad_title");
+    //     // if(!adminHeader) {
+    //     //     location.href = "detail.php?q=" + str;
+    //     // } else {
+    //     //     location.href = "admin_detail.php?q=" + str;
+    //     // }
+
+    // }
+
+
     function showDetailPlaceMenu(str) {
         let adminHeader = document.getElementById("header_ad_title");
         let placeIdMenu = str.split("_")[1];
@@ -55,17 +66,30 @@
     // }
     // mapMarkerNameClick();
 
-    function mapMarkerClick() {
-        let markerAll = document.querySelectorAll(".marker");
-        let mk;
-        for(mk=0; mk < markerAll.length; mk++) {
-            let markerId = markerAll[mk].id;
-            markerAll[mk].addEventListener("click", function() {
+    // function mapMarkerClick() {
+    //     let markerAll = document.querySelectorAll(".marker");
+    //     let mk;
+    //     for(mk=0; mk < markerAll.length; mk++) {
+    //         let markerId = markerAll[mk].id;
+    //         markerAll[mk].addEventListener("click", function() {
+    //             // showDetailPlaceMap(this.id)
+    //             showInfoPlaceMap(this.id)
+    //         });
+    //     }
+    // }
+    // mapMarkerClick();
+
+    function mapMarkerInfoClick() {
+        let markerInfoAll = document.querySelectorAll(".marker_info");
+        let mkInfo;
+        for(mkInfo=0; mkInfo < markerInfoAll.length; mkInfo++) {
+            let markerId = markerInfoAll[mkInfo].id;
+            markerInfoAll[mkInfo].addEventListener("click", function() {
                 showDetailPlaceMap(this.id)
             });
         }
     }
-    mapMarkerClick();
+    mapMarkerInfoClick();
 
     function menuPlaceLiClick() {
         let menuPlaceLiAll = document.querySelectorAll(".place_li");

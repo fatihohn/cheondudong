@@ -61,6 +61,10 @@
                     $mkimg_size = $row['mkimg_size'];
                     $en_title = mysqli_real_escape_string($conn, $row['en_title']);
                     $ko_title = mysqli_real_escape_string($conn, $row['ko_title']);
+                    $en_sub_title = mysqli_real_escape_string($conn, $row['en_sub_title']);
+                    $ko_sub_title = mysqli_real_escape_string($conn, $row['ko_sub_title']);
+                    $en_memo = mysqli_real_escape_string($conn, $row['en_memo']);
+                    $ko_memo = mysqli_real_escape_string($conn, $row['ko_memo']);
                     $lat = $row['lat'];
                     $lng = $row['lng'];
 
@@ -72,6 +76,10 @@
                     echo        "'file': '".$row['mkimg_dir']."',";
                     echo        "'message_ko': '".$ko_title."',";
                     echo        "'message_en': '".$en_title."',";
+                    echo        "'sub_title_ko': '".$ko_sub_title."',";
+                    echo        "'sub_title_en': '".$en_sub_title."',";
+                    echo        "'memo_ko': '".$ko_memo."',";
+                    echo        "'memo_en': '".$en_memo."',";
                     echo        "'iconSize': [270, 100]";
                     echo    "},";
                     echo    "'geometry': {";
@@ -219,6 +227,8 @@
 // add marker to map
 new mapboxgl.Marker(el)
 .setLngLat(marker.geometry.coordinates)
+.setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+    .setHTML('<div class="'+marker.properties.place_id+'" onclick="showDetailPlaceMap(this.className)"><h3 class="ko">' + marker.properties.message_ko + '</h3><br>'+'<h3 class="en">' + marker.properties.message_en + '</h3><br>'+ '<h4 class="ko">' + marker.properties.sub_title_ko + '</h4>'+'<h4 class="en">' + marker.properties.sub_title_en + '</h4>'+'<p class="ko">' + marker.properties.memo_ko + '</p>'+'<p class="en">' + marker.properties.memo_en + '</p></div>'))
 .addTo(map);
 });
 
@@ -246,11 +256,20 @@ trackUserLocation: true
     
     function markerSize() {
         var zoomLow = 14.4;
-        var zoomHigh = 16.4;
+        var zoomHigh = 15.8;
         var zoomStatus = map.getZoom();
 
         if (zoomStatus > zoomLow && zoomStatus < zoomHigh) {
             //****1:1****//
+            let miniCubeAll = document.querySelectorAll(".miniCube");
+            let mnc;
+            for(mnc=0; mnc < miniCubeAll.length; mnc++) {
+                miniCubeAll[mnc].style.width = "30px";
+                miniCubeAll[mnc].style.height = "calc(30px + 35px)";
+                miniCubeAll[mnc].style.backgroundSize = "contain";
+                miniCubeAll[mnc].style.backgroundRepeat = "no-repeat";
+                miniCubeAll[mnc].style.cursor = "pointer";
+            }
             let smallCubeAll = document.querySelectorAll(".smallCube");
             let sc;
             for(sc=0; sc < smallCubeAll.length; sc++) {
@@ -328,6 +347,15 @@ trackUserLocation: true
             }
         } else if (zoomStatus < zoomLow) {
             //****1:1****//
+            let miniCubeAll = document.querySelectorAll(".miniCube");
+            let mnc;
+            for(mnc=0; mnc < miniCubeAll.length; mnc++) {
+                miniCubeAll[mnc].style.width = "30px";
+                miniCubeAll[mnc].style.height = "calc(30px + 35px)";
+                miniCubeAll[mnc].style.backgroundSize = "contain";
+                miniCubeAll[mnc].style.backgroundRepeat = "no-repeat";
+                miniCubeAll[mnc].style.cursor = "pointer";
+            }
             let smallCubeAll = document.querySelectorAll(".smallCube");
             let sc;
             for(sc=0; sc < smallCubeAll.length; sc++) {
@@ -406,6 +434,15 @@ trackUserLocation: true
 
         } else {
             //****1:1****//
+            let miniCubeAll = document.querySelectorAll(".miniCube");
+            let mnc;
+            for(mnc=0; mnc < miniCubeAll.length; mnc++) {
+                miniCubeAll[mnc].style.width = "30px";
+                miniCubeAll[mnc].style.height = "calc(30px + 35px)";
+                miniCubeAll[mnc].style.backgroundSize = "contain";
+                miniCubeAll[mnc].style.backgroundRepeat = "no-repeat";
+                miniCubeAll[mnc].style.cursor = "pointer";
+            }
             let smallCubeAll = document.querySelectorAll(".smallCube");
             let sc;
             for(sc=0; sc < smallCubeAll.length; sc++) {
