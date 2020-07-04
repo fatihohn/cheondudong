@@ -250,8 +250,9 @@
 //     '</div>'))
 // .addTo(map);
 // });
-    var koLangStatus = document.querySelector(".ko").style.display;
-    if(koLangStatus !== "none") {
+    // var koLangStatus = document.querySelector(".ko").style.display;
+    var sessLang = "<?php echo $_SESSION['language'];?>";
+    if(sessLang !== "en") {
         // add marker to map
         new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
