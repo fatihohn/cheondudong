@@ -214,10 +214,10 @@
         var info_cont = '<div class="'+ marker.properties.place_id + '" onclick="showDetailPlaceMap(this.className)">'+
                 '<h3>' +
                     marker.properties.message_ko +
-                '</h3><br>'+
+                '</h3>'+
                 '<h4>' + 
                     marker.properties.sub_title_ko + 
-                '</h4>'+
+                '</h4><br>'+
                 '<p>' + 
                     marker.properties.memo_ko + 
                 '</p>'+
@@ -226,10 +226,10 @@
         var info_cont = '<div class="'+ marker.properties.place_id + '" onclick="showDetailPlaceMap(this.className)">'+
                 '<h3>' +
                     marker.properties.message_en +
-                '</h3><br>'+
+                '</h3>'+
                 '<h4>' + 
                     marker.properties.sub_title_en + 
-                '</h4>'+
+                '</h4><br>'+
                 '<p>' + 
                     marker.properties.memo_en + 
                 '</p>'+
@@ -346,7 +346,8 @@ trackUserLocation: true
             let mnc;
             for(mnc=0; mnc < miniCubeAll.length; mnc++) {
                 miniCubeAll[mnc].style.width = "30px";
-                miniCubeAll[mnc].style.height = "calc(30px + 35px)";
+                // miniCubeAll[mnc].style.height = "calc(30px + 35px)";
+                miniCubeAll[mnc].style.height = "30px";
                 miniCubeAll[mnc].style.backgroundSize = "contain";
                 miniCubeAll[mnc].style.backgroundRepeat = "no-repeat";
                 miniCubeAll[mnc].style.cursor = "pointer";
@@ -355,7 +356,8 @@ trackUserLocation: true
             let sc;
             for(sc=0; sc < smallCubeAll.length; sc++) {
                 smallCubeAll[sc].style.width = "60px";
-                smallCubeAll[sc].style.height = "calc(60px + 35px)";
+                // smallCubeAll[sc].style.height = "calc(60px + 35px)";
+                smallCubeAll[sc].style.height = "60px";
                 smallCubeAll[sc].style.backgroundSize = "contain";
                 smallCubeAll[sc].style.backgroundRepeat = "no-repeat";
                 smallCubeAll[sc].style.cursor = "pointer";
@@ -364,7 +366,8 @@ trackUserLocation: true
             let mc;
             for(mc=0; mc < middleCubeAll.length; mc++) {
                 middleCubeAll[mc].style.width = "80px";
-                middleCubeAll[mc].style.height = "calc(80px + 35px)";
+                // middleCubeAll[mc].style.height = "calc(80px + 35px)";
+                middleCubeAll[mc].style.height = "80px";
                 middleCubeAll[mc].style.backgroundSize = "contain";
                 middleCubeAll[mc].style.backgroundRepeat = "no-repeat";
                 middleCubeAll[mc].style.cursor = "pointer";
@@ -374,7 +377,8 @@ trackUserLocation: true
             let sh;
             for(sh=0; sh < smallHoriAll.length; sh++) {
                 smallHoriAll[sh].style.width = "80px";
-                smallHoriAll[sh].style.height = "calc(50px + 35px)";
+                // smallHoriAll[sh].style.height = "calc(50px + 35px)";
+                smallHoriAll[sh].style.height = "50px";
                 smallHoriAll[sh].style.backgroundSize = "contain";
                 smallHoriAll[sh].style.backgroundRepeat = "no-repeat";
                 smallHoriAll[sh].style.cursor = "pointer";
@@ -383,7 +387,8 @@ trackUserLocation: true
             let mh;
             for(mh=0; mh < middleHoriAll.length; mh++) {
                 middleHoriAll[mh].style.width = "108px";
-                middleHoriAll[mh].style.height = "calc(60px + 35px)";
+                // middleHoriAll[mh].style.height = "calc(60px + 35px)";
+                middleHoriAll[mh].style.height = "60px";
                 middleHoriAll[mh].style.backgroundSize = "contain";
                 middleHoriAll[mh].style.backgroundRepeat = "no-repeat";
                 middleHoriAll[mh].style.cursor = "pointer";
@@ -392,7 +397,8 @@ trackUserLocation: true
             let bh;
             for(bh=0; bh < bigHoriAll.length; bh++) {
                 bigHoriAll[bh].style.width = "160px";
-                bigHoriAll[bh].style.height = "calc(100px + 35px)";
+                // bigHoriAll[bh].style.height = "calc(100px + 35px)";
+                bigHoriAll[bh].style.height = "100px";
                 bigHoriAll[bh].style.backgroundSize = "contain";
                 bigHoriAll[bh].style.backgroundRepeat = "no-repeat";
                 bigHoriAll[bh].style.cursor = "pointer";
@@ -402,7 +408,8 @@ trackUserLocation: true
             let sp;
             for(sp=0; sp < smallPanoAll.length; sp++) {
                 smallPanoAll[sp].style.width = "80px";
-                smallPanoAll[sp].style.height = "calc(40px + 35px)";
+                // smallPanoAll[sp].style.height = "calc(40px + 35px)";
+                smallPanoAll[sp].style.height = "40px";
                 smallPanoAll[sp].style.backgroundSize = "contain";
                 smallPanoAll[sp].style.backgroundRepeat = "no-repeat";
                 smallPanoAll[sp].style.cursor = "pointer";
@@ -411,7 +418,8 @@ trackUserLocation: true
             let mp;
             for(mp=0; mp < middlePanoAll.length; mp++) {
                 middlePanoAll[mp].style.width = "120px";
-                middlePanoAll[mp].style.height = "calc(60px + 35px)";
+                // middlePanoAll[mp].style.height = "calc(60px + 35px)";
+                middlePanoAll[mp].style.height = "60px";
                 middlePanoAll[mp].style.backgroundSize = "contain";
                 middlePanoAll[mp].style.backgroundRepeat = "no-repeat";
                 middlePanoAll[mp].style.cursor = "pointer";
@@ -421,7 +429,8 @@ trackUserLocation: true
             let lp;
             for(lp=0; lp < longPanoAll.length; lp++) {
                 longPanoAll[lp].style.width = "160px";
-                longPanoAll[lp].style.height = "calc(60px + 35px)";
+                // longPanoAll[lp].style.height = "calc(60px + 35px)";
+                longPanoAll[lp].style.height = "60px";
                 longPanoAll[lp].style.backgroundSize = "contain";
                 longPanoAll[lp].style.backgroundRepeat = "no-repeat";
                 longPanoAll[lp].style.cursor = "pointer";
@@ -432,7 +441,8 @@ trackUserLocation: true
             let mnc;
             for(mnc=0; mnc < miniCubeAll.length; mnc++) {
                 miniCubeAll[mnc].style.width = "30px";
-                miniCubeAll[mnc].style.height = "calc(30px + 35px)";
+                // miniCubeAll[mnc].style.height = "calc(30px + 35px)";
+                miniCubeAll[mnc].style.height = "30px";
                 miniCubeAll[mnc].style.backgroundSize = "contain";
                 miniCubeAll[mnc].style.backgroundRepeat = "no-repeat";
                 miniCubeAll[mnc].style.cursor = "pointer";
@@ -441,7 +451,8 @@ trackUserLocation: true
             let sc;
             for(sc=0; sc < smallCubeAll.length; sc++) {
                 smallCubeAll[sc].style.width = "30px";
-                smallCubeAll[sc].style.height = "calc(30px + 35px)";
+                // smallCubeAll[sc].style.height = "calc(30px + 35px)";
+                smallCubeAll[sc].style.height = "30px";
                 smallCubeAll[sc].style.backgroundSize = "contain";
                 smallCubeAll[sc].style.backgroundRepeat = "no-repeat";
                 smallCubeAll[sc].style.cursor = "pointer";
@@ -450,7 +461,8 @@ trackUserLocation: true
             let mc;
             for(mc=0; mc < middleCubeAll.length; mc++) {
                 middleCubeAll[mc].style.width = "35px";
-                middleCubeAll[mc].style.height = "calc(35px + 35px)";
+                // middleCubeAll[mc].style.height = "calc(35px + 35px)";
+                middleCubeAll[mc].style.height = "35px";
                 middleCubeAll[mc].style.backgroundSize = "contain";
                 middleCubeAll[mc].style.backgroundRepeat = "no-repeat";
                 middleCubeAll[mc].style.cursor = "pointer";
@@ -460,7 +472,8 @@ trackUserLocation: true
             let sh;
             for(sh=0; sh < smallHoriAll.length; sh++) {
                 smallHoriAll[sh].style.width = "40px";
-                smallHoriAll[sh].style.height = "calc(25px + 35px)";
+                // smallHoriAll[sh].style.height = "calc(25px + 35px)";
+                smallHoriAll[sh].style.height = "25px";
                 smallHoriAll[sh].style.backgroundSize = "contain";
                 smallHoriAll[sh].style.backgroundRepeat = "no-repeat";
                 smallHoriAll[sh].style.cursor = "pointer";
@@ -469,7 +482,8 @@ trackUserLocation: true
             let mh;
             for(mh=0; mh < middleHoriAll.length; mh++) {
                 middleHoriAll[mh].style.width = "48px";
-                middleHoriAll[mh].style.height = "calc(30px + 35px)";
+                // middleHoriAll[mh].style.height = "calc(30px + 35px)";
+                middleHoriAll[mh].style.height = "30px";
                 middleHoriAll[mh].style.backgroundSize = "contain";
                 middleHoriAll[mh].style.backgroundRepeat = "no-repeat";
                 middleHoriAll[mh].style.cursor = "pointer";
@@ -478,7 +492,8 @@ trackUserLocation: true
             let bh;
             for(bh=0; bh < bigHoriAll.length; bh++) {
                 bigHoriAll[bh].style.width = "56px";
-                bigHoriAll[bh].style.height = "calc(35px + 35px)";
+                // bigHoriAll[bh].style.height = "calc(35px + 35px)";
+                bigHoriAll[bh].style.height = "35px";
                 bigHoriAll[bh].style.backgroundSize = "contain";
                 bigHoriAll[bh].style.backgroundRepeat = "no-repeat";
                 bigHoriAll[bh].style.cursor = "pointer";
@@ -488,7 +503,8 @@ trackUserLocation: true
             let sp;
             for(sp=0; sp < smallPanoAll.length; sp++) {
                 smallPanoAll[sp].style.width = "40px";
-                smallPanoAll[sp].style.height = "calc(20px + 35px)";
+                // smallPanoAll[sp].style.height = "calc(20px + 35px)";
+                smallPanoAll[sp].style.height = "20px";
                 smallPanoAll[sp].style.backgroundSize = "contain";
                 smallPanoAll[sp].style.backgroundRepeat = "no-repeat";
                 smallPanoAll[sp].style.cursor = "pointer";
@@ -497,7 +513,8 @@ trackUserLocation: true
             let mp;
             for(mp=0; mp < middlePanoAll.length; mp++) {
                 middlePanoAll[mp].style.width = "50px";
-                middlePanoAll[mp].style.height = "calc(25px + 35px)";
+                // middlePanoAll[mp].style.height = "calc(25px + 35px)";
+                middlePanoAll[mp].style.height = "25px";
                 middlePanoAll[mp].style.backgroundSize = "contain";
                 middlePanoAll[mp].style.backgroundRepeat = "no-repeat";
                 middlePanoAll[mp].style.cursor = "pointer";
@@ -507,7 +524,8 @@ trackUserLocation: true
             let lp;
             for(lp=0; lp < longPanoAll.length; lp++) {
                 longPanoAll[lp].style.width = "54px";
-                longPanoAll[lp].style.height = "calc(20px + 35px)";
+                // longPanoAll[lp].style.height = "calc(20px + 35px)";
+                longPanoAll[lp].style.height = "20px";
                 longPanoAll[lp].style.backgroundSize = "contain";
                 longPanoAll[lp].style.backgroundRepeat = "no-repeat";
                 longPanoAll[lp].style.cursor = "pointer";
@@ -519,7 +537,8 @@ trackUserLocation: true
             let mnc;
             for(mnc=0; mnc < miniCubeAll.length; mnc++) {
                 miniCubeAll[mnc].style.width = "30px";
-                miniCubeAll[mnc].style.height = "calc(30px + 35px)";
+                // miniCubeAll[mnc].style.height = "calc(30px + 35px)";
+                miniCubeAll[mnc].style.height = "30px";
                 miniCubeAll[mnc].style.backgroundSize = "contain";
                 miniCubeAll[mnc].style.backgroundRepeat = "no-repeat";
                 miniCubeAll[mnc].style.cursor = "pointer";
@@ -528,7 +547,8 @@ trackUserLocation: true
             let sc;
             for(sc=0; sc < smallCubeAll.length; sc++) {
                 smallCubeAll[sc].style.width = "90px";
-                smallCubeAll[sc].style.height = "calc(90px + 35px)";
+                // smallCubeAll[sc].style.height = "calc(90px + 35px)";
+                smallCubeAll[sc].style.height = "90px";
                 smallCubeAll[sc].style.backgroundSize = "contain";
                 smallCubeAll[sc].style.backgroundRepeat = "no-repeat";
                 smallCubeAll[sc].style.cursor = "pointer";
@@ -537,7 +557,8 @@ trackUserLocation: true
             let mc;
             for(mc=0; mc < middleCubeAll.length; mc++) {
                 middleCubeAll[mc].style.width = "120px";
-                middleCubeAll[mc].style.height = "calc(120px + 35px)";
+                // middleCubeAll[mc].style.height = "calc(120px + 35px)";
+                middleCubeAll[mc].style.height = "120px";
                 middleCubeAll[mc].style.backgroundSize = "contain";
                 middleCubeAll[mc].style.backgroundRepeat = "no-repeat";
                 middleCubeAll[mc].style.cursor = "pointer";
@@ -547,7 +568,8 @@ trackUserLocation: true
             let sh;
             for(sh=0; sh < smallHoriAll.length; sh++) {
                 smallHoriAll[sh].style.width = "120px";
-                smallHoriAll[sh].style.height = "calc(75px + 35px)";
+                // smallHoriAll[sh].style.height = "calc(75px + 35px)";
+                smallHoriAll[sh].style.height = "75px";
                 smallHoriAll[sh].style.backgroundSize = "contain";
                 smallHoriAll[sh].style.backgroundRepeat = "no-repeat";
                 smallHoriAll[sh].style.cursor = "pointer";
@@ -556,7 +578,8 @@ trackUserLocation: true
             let mh;
             for(mh=0; mh < middleHoriAll.length; mh++) {
                 middleHoriAll[mh].style.width = "160px";
-                middleHoriAll[mh].style.height = "calc(100px + 35px)";
+                // middleHoriAll[mh].style.height = "calc(100px + 35px)";
+                middleHoriAll[mh].style.height = "100px";
                 middleHoriAll[mh].style.backgroundSize = "contain";
                 middleHoriAll[mh].style.backgroundRepeat = "no-repeat";
                 middleHoriAll[mh].style.cursor = "pointer";
@@ -565,7 +588,8 @@ trackUserLocation: true
             let bh;
             for(bh=0; bh < bigHoriAll.length; bh++) {
                 bigHoriAll[bh].style.width = "200px";
-                bigHoriAll[bh].style.height = "calc(125px + 35px)";
+                // bigHoriAll[bh].style.height = "calc(125px + 35px)";
+                bigHoriAll[bh].style.height = "125px";
                 bigHoriAll[bh].style.backgroundSize = "contain";
                 bigHoriAll[bh].style.backgroundRepeat = "no-repeat";
                 bigHoriAll[bh].style.cursor = "pointer";
@@ -575,7 +599,8 @@ trackUserLocation: true
             let sp;
             for(sp=0; sp < smallPanoAll.length; sp++) {
                 smallPanoAll[sp].style.width = "120px";
-                smallPanoAll[sp].style.height = "calc(60px + 35px)";
+                // smallPanoAll[sp].style.height = "calc(60px + 35px)";
+                smallPanoAll[sp].style.height = "60px";
                 smallPanoAll[sp].style.backgroundSize = "contain";
                 smallPanoAll[sp].style.backgroundRepeat = "no-repeat";
                 smallPanoAll[sp].style.cursor = "pointer";
@@ -584,7 +609,8 @@ trackUserLocation: true
             let mp;
             for(mp=0; mp < middlePanoAll.length; mp++) {
                 middlePanoAll[mp].style.width = "160px";
-                middlePanoAll[mp].style.height = "calc(80px + 35px)";
+                // middlePanoAll[mp].style.height = "calc(80px + 35px)";
+                middlePanoAll[mp].style.height = "80px";
                 middlePanoAll[mp].style.backgroundSize = "contain";
                 middlePanoAll[mp].style.backgroundRepeat = "no-repeat";
                 middlePanoAll[mp].style.cursor = "pointer";
@@ -594,7 +620,8 @@ trackUserLocation: true
             let lp;
             for(lp=0; lp < longPanoAll.length; lp++) {
                 longPanoAll[lp].style.width = "220px";
-                longPanoAll[lp].style.height = "calc(82px + 35px)";
+                // longPanoAll[lp].style.height = "calc(82px + 35px)";
+                longPanoAll[lp].style.height = "82px";
                 longPanoAll[lp].style.backgroundSize = "contain";
                 longPanoAll[lp].style.backgroundRepeat = "no-repeat";
                 longPanoAll[lp].style.cursor = "pointer";

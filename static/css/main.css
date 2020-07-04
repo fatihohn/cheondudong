@@ -281,6 +281,19 @@
 
 #map .mapboxgl-popup-content {
     background: rgba(255, 255, 255, 0.6);
+    font-family: "또박또박";
+}
+
+#map .mapboxgl-popup-content h3 {
+    font-size: 1.8rem;
+}
+
+#map .mapboxgl-popup-content h4 {
+    font-size: 1.4rem;
+}
+
+#map .mapboxgl-popup-content p {
+    font-size: 1.4rem;
 }
 
 #map .mapboxgl-popup-tip {
