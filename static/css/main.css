@@ -279,9 +279,12 @@
     display: none;
 }
 
-#map .mapboxgl-popup-content,
-#map .mapboxgl-popup-tip {
+#map .mapboxgl-popup-content {
     background: rgba(255, 255, 255, 0.6);
+}
+
+#map .mapboxgl-popup-tip {
+    border-top-color: rgba(255, 255, 255, 0.6);
 }
 
 
