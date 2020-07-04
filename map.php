@@ -138,6 +138,75 @@
     el.style.height = marker.properties.iconSize[1] + 'px';
  
 
+
+ 
+// // add marker to map
+// new mapboxgl.Marker(el)
+// .setLngLat(marker.geometry.coordinates)
+// .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+//     .setHTML('<div class="'+ marker.properties.place_id + '" onclick="showDetailPlaceMap(this.className)">'+
+//         '<h3 class="ko">' +
+//             marker.properties.message_ko +
+//         '</h3><br>'+
+//         '<h3 class="en">' + 
+//             marker.properties.message_en + 
+//         '</h3><br>'+ 
+//         '<h4 class="ko">' + 
+//             marker.properties.sub_title_ko + 
+//         '</h4>'+
+//         '<h4 class="en">' + 
+//             marker.properties.sub_title_en + 
+//         '</h4>'+
+//         '<p class="ko">' + 
+//             marker.properties.memo_ko + 
+//         '</p>'+
+//         '<p class="en">' + 
+//             marker.properties.memo_en + 
+//         '</p>'+
+//     '</div>'))
+// .addTo(map);
+// });
+    // var koLangStatus = document.querySelector(".ko").style.display;
+    var sessLang = "<?php echo $_SESSION['language'];?>";
+    if(sessLang !== "en") {
+        // add marker to map
+        new mapboxgl.Marker(el)
+        .setLngLat(marker.geometry.coordinates)
+        .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+            .setHTML('<div class="'+ marker.properties.place_id + '" onclick="showDetailPlaceMap(this.className)">'+
+                '<h3 class="ko">' +
+                    marker.properties.message_ko +
+                '</h3><br>'+
+                '<h4 class="ko">' + 
+                    marker.properties.sub_title_ko + 
+                '</h4>'+
+                '<p class="ko">' + 
+                    marker.properties.memo_ko + 
+                '</p>'+
+            '</div>'))
+        .addTo(map);
+    } else {
+        // add marker to map
+        new mapboxgl.Marker(el)
+        .setLngLat(marker.geometry.coordinates)
+        .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+            .setHTML('<div class="'+ marker.properties.place_id + '" onclick="showDetailPlaceMap(this.className)">'+
+                '<h3 class="en">' +
+                    marker.properties.message_en +
+                '</h3><br>'+
+                '<h4 class="en">' + 
+                    marker.properties.sub_title_en + 
+                '</h4>'+
+                '<p class="en">' + 
+                    marker.properties.memo_en + 
+                '</p>'+
+            '</div>'))
+        .addTo(map);
+
+    }
+});
+
+
 //****marker func****//
 
     // el.addEventListener('click', function() {
@@ -223,73 +292,6 @@
 
 
 //****marker func end****//
- 
-// // add marker to map
-// new mapboxgl.Marker(el)
-// .setLngLat(marker.geometry.coordinates)
-// .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-//     .setHTML('<div class="'+ marker.properties.place_id + '" onclick="showDetailPlaceMap(this.className)">'+
-//         '<h3 class="ko">' +
-//             marker.properties.message_ko +
-//         '</h3><br>'+
-//         '<h3 class="en">' + 
-//             marker.properties.message_en + 
-//         '</h3><br>'+ 
-//         '<h4 class="ko">' + 
-//             marker.properties.sub_title_ko + 
-//         '</h4>'+
-//         '<h4 class="en">' + 
-//             marker.properties.sub_title_en + 
-//         '</h4>'+
-//         '<p class="ko">' + 
-//             marker.properties.memo_ko + 
-//         '</p>'+
-//         '<p class="en">' + 
-//             marker.properties.memo_en + 
-//         '</p>'+
-//     '</div>'))
-// .addTo(map);
-// });
-    // var koLangStatus = document.querySelector(".ko").style.display;
-    var sessLang = "<?php echo $_SESSION['language'];?>";
-    if(sessLang !== "en") {
-        // add marker to map
-        new mapboxgl.Marker(el)
-        .setLngLat(marker.geometry.coordinates)
-        .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-            .setHTML('<div class="'+ marker.properties.place_id + '" onclick="showDetailPlaceMap(this.className)">'+
-                '<h3 class="ko">' +
-                    marker.properties.message_ko +
-                '</h3><br>'+
-                '<h4 class="ko">' + 
-                    marker.properties.sub_title_ko + 
-                '</h4>'+
-                '<p class="ko">' + 
-                    marker.properties.memo_ko + 
-                '</p>'+
-            '</div>'))
-        .addTo(map);
-    } else {
-        // add marker to map
-        new mapboxgl.Marker(el)
-        .setLngLat(marker.geometry.coordinates)
-        .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-            .setHTML('<div class="'+ marker.properties.place_id + '" onclick="showDetailPlaceMap(this.className)">'+
-                '<h3 class="en">' +
-                    marker.properties.message_en +
-                '</h3><br>'+
-                '<h4 class="en">' + 
-                    marker.properties.sub_title_en + 
-                '</h4>'+
-                '<p class="en">' + 
-                    marker.properties.memo_en + 
-                '</p>'+
-            '</div>'))
-        .addTo(map);
-
-    }
-});
-
 
 // // disable map rotation using right click + drag
 // map.dragRotate.disable();
