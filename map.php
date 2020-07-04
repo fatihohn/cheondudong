@@ -212,25 +212,25 @@
     var sessLang = "<?php echo $_SESSION['language'];?>";
     if(sessLang=="ko") {
         var info_cont = '<div class="'+ marker.properties.place_id + '" onclick="showDetailPlaceMap(this.className)">'+
-                '<h3 class="ko">' +
+                '<h3>' +
                     marker.properties.message_ko +
                 '</h3><br>'+
-                '<h4 class="ko">' + 
+                '<h4>' + 
                     marker.properties.sub_title_ko + 
                 '</h4>'+
-                '<p class="ko">' + 
+                '<p>' + 
                     marker.properties.memo_ko + 
                 '</p>'+
             '</div>';
     } else {
         var info_cont = '<div class="'+ marker.properties.place_id + '" onclick="showDetailPlaceMap(this.className)">'+
-                '<h3 class="en">' +
+                '<h3>' +
                     marker.properties.message_en +
                 '</h3><br>'+
-                '<h4 class="en">' + 
+                '<h4>' + 
                     marker.properties.sub_title_en + 
                 '</h4>'+
-                '<p class="en">' + 
+                '<p>' + 
                     marker.properties.memo_en + 
                 '</p>'+
             '</div>';
