@@ -140,84 +140,74 @@
 
 //****marker func****//
 
-    // el.addEventListener('click', function() {
-    // // window.alert(marker.properties.message);
-    // });
 
 
-
-    // el.addEventListener('click', function() {
-    // // window.alert(marker.properties.message);
-    // showMarkerPlace();
-    // });
-
-
-    el.addEventListener('mouseover', function() {
-        var languageKo = document.getElementById("language_ko").style.display;
-        var languageEn = document.getElementById("language_en").style.display;
+    // el.addEventListener('mouseover', function() {
+    //     var languageKo = document.getElementById("language_ko").style.display;
+    //     var languageEn = document.getElementById("language_en").style.display;
         
-        if(languageEn == "none") {
-            var elNameKo = document.createElement('div');
+    //     if(languageEn == "none") {
+    //         var elNameKo = document.createElement('div');
 
-            elNameKo.id = marker.properties.place_id;
-            elNameKo.className = 'ko' + ' ' + 'marker_name';
-            elNameKo.innerHTML = marker.properties.message_ko;
-            elNameKo.style.width = '100%';
-            elNameKo.style.height = '20px';
-            elNameKo.style.textAlign = 'center';
-            elNameKo.style.fontSize = '2rem';
-            elNameKo.style.fontFamily = '또박또박';
-            elNameKo.style.overflowX = 'visible';
-            elNameKo.style.overflowY = 'visible';
-            elNameKo.style.whiteSpace = 'nowrap';
-            elNameKo.style.wordBreak = 'keep-all';
-            elNameKo.style.position = 'relative';
-            elNameKo.style.top = 'calc(100% - 30px)';
+    //         elNameKo.id = marker.properties.place_id;
+    //         elNameKo.className = 'ko' + ' ' + 'marker_name';
+    //         elNameKo.innerHTML = marker.properties.message_ko;
+    //         elNameKo.style.width = '100%';
+    //         elNameKo.style.height = '20px';
+    //         elNameKo.style.textAlign = 'center';
+    //         elNameKo.style.fontSize = '2rem';
+    //         elNameKo.style.fontFamily = '또박또박';
+    //         elNameKo.style.overflowX = 'visible';
+    //         elNameKo.style.overflowY = 'visible';
+    //         elNameKo.style.whiteSpace = 'nowrap';
+    //         elNameKo.style.wordBreak = 'keep-all';
+    //         elNameKo.style.position = 'relative';
+    //         elNameKo.style.top = 'calc(100% - 30px)';
 
-            // if(!document.querySelector(".marker_name")) {
-            // }
-                document.getElementById(marker.properties.place_id).appendChild(elNameKo);
-        } else if(languageKo == "none") {
-            var elNameEn = document.createElement('div');
+    //         // if(!document.querySelector(".marker_name")) {
+    //         // }
+    //             document.getElementById(marker.properties.place_id).appendChild(elNameKo);
+    //     } else if(languageKo == "none") {
+    //         var elNameEn = document.createElement('div');
 
-            elNameEn.id = marker.properties.place_id;
-            elNameEn.className = 'en' + ' ' + 'marker_name';
-            elNameEn.innerHTML = marker.properties.message_en;
-            elNameEn.style.width = '100%';
-            elNameEn.style.height = '20px';
-            elNameEn.style.textAlign = 'center';
-            elNameEn.style.fontSize = '2rem';
-            elNameEn.style.fontFamily = '또박또박';
-            elNameEn.style.overflowX = 'visible';
-            elNameEn.style.overflowY = 'visible';
-            elNameEn.style.whiteSpace = 'nowrap';
-            elNameEn.style.wordBreak = 'keep-all';
-            elNameEn.style.position = 'relative';
-            elNameEn.style.top = 'calc(100% - 30px)';
+    //         elNameEn.id = marker.properties.place_id;
+    //         elNameEn.className = 'en' + ' ' + 'marker_name';
+    //         elNameEn.innerHTML = marker.properties.message_en;
+    //         elNameEn.style.width = '100%';
+    //         elNameEn.style.height = '20px';
+    //         elNameEn.style.textAlign = 'center';
+    //         elNameEn.style.fontSize = '2rem';
+    //         elNameEn.style.fontFamily = '또박또박';
+    //         elNameEn.style.overflowX = 'visible';
+    //         elNameEn.style.overflowY = 'visible';
+    //         elNameEn.style.whiteSpace = 'nowrap';
+    //         elNameEn.style.wordBreak = 'keep-all';
+    //         elNameEn.style.position = 'relative';
+    //         elNameEn.style.top = 'calc(100% - 30px)';
 
-            // if(!document.querySelector(".marker_name")) {
-            // }
-                document.getElementById(marker.properties.place_id).appendChild(elNameEn);
+    //         // if(!document.querySelector(".marker_name")) {
+    //         // }
+    //             document.getElementById(marker.properties.place_id).appendChild(elNameEn);
 
-            let enAllMap = document.querySelectorAll(".en");
-            let elangMap;
-            for(elangMap=0; elangMap < enAllMap.length; elangMap++) {
-                enAllMap[elangMap].style.display = "initial";
-            }
-        }
-    });
+    //         let enAllMap = document.querySelectorAll(".en");
+    //         let elangMap;
+    //         for(elangMap=0; elangMap < enAllMap.length; elangMap++) {
+    //             enAllMap[elangMap].style.display = "initial";
+    //         }
+    //     }
+    // });
 
-    function removeMarkerName() {
-        var elShownAll = document.querySelectorAll('.marker_name');
-        let mkn;
-        for (mkn = 0; mkn < elShownAll.length; mkn++) {
-            elShownAll[mkn].remove();
-        }
-    }
+    // function removeMarkerName() {
+    //     var elShownAll = document.querySelectorAll('.marker_name');
+    //     let mkn;
+    //     for (mkn = 0; mkn < elShownAll.length; mkn++) {
+    //         elShownAll[mkn].remove();
+    //     }
+    // }
     
-    el.addEventListener('mouseout', function() {
-        removeMarkerName();
-    });
+    // el.addEventListener('mouseout', function() {
+    //     removeMarkerName();
+    // });
     
 
 
