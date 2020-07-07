@@ -149,7 +149,7 @@ $stmt = mysqli_stmt_init($conn);
                             </div>
                         </div>
                         <?php
-                        if($detailMemo && !$detailMemo_en) {
+                        if(isset($detailMemo) && !isset($detailMemo_en)) {
                             ?>
                             <div id="detail_memo">
                                 <div class="ddobag ko">
@@ -158,7 +158,7 @@ $stmt = mysqli_stmt_init($conn);
                                 
                             </div>
                             <?php
-                        } else if(!$detailMemo && $detailMemo_en) {
+                        } else if(!isset($detailMemo) && isset($detailMemo_en)) {
                             ?>
                             <div id="detail_memo">
                             
@@ -167,7 +167,7 @@ $stmt = mysqli_stmt_init($conn);
                                 </div>
                             </div>
                             <?php
-                        } else if($detailMemo && $detailMemo_en) {
+                        } else if(isset($detailMemo) && isset($detailMemo_en)) {
                             ?>
                             <div id="detail_memo">
                                 <div class="ddobag ko">
