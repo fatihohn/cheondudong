@@ -13,10 +13,10 @@ $ko_title = mysqli_real_escape_string($conn, $ko_title);
 $en_title = $_POST['en_title'];
 $en_title = mysqli_real_escape_string($conn, $en_title);
 
-$ko_cont = $_POST['ir1_ko'];
+$ko_cont = $_POST['ko_cont'];
 $ko_cont = mysqli_real_escape_string($conn, $ko_cont);
 
-$en_cont = $_POST['ir1_en'];
+$en_cont = $_POST['en_cont'];
 $en_cont = mysqli_real_escape_string($conn, $en_cont);
 
 
