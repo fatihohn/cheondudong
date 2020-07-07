@@ -105,7 +105,8 @@
     height: auto;
 }
 
-#detail_wrap #detail_box #detail_title {
+#detail_wrap #detail_box #detail_title,
+#detail_wrap #detail_box #detail_sub_title {
     width: 100%;
     max-width: 768px;
     /* min-height: 100px; */
@@ -116,6 +117,9 @@
 
 #detail_wrap #detail_box #detail_title h3 {
     font-size: 2rem;
+}
+#detail_wrap #detail_box #detail_title h4 {
+    font-size: 1.8rem;
 }
 
 #detail_wrap #detail_box #detail_point {
@@ -141,6 +145,12 @@
     /* line-height: 15px; */
 }
 
+#detail_wrap #detail_box #detail_memo {
+    background-color: rgba(255, 200, 100, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 #detail_wrap #detail_box #detail_cont {
     white-space: pre-line;
     word-break: keep-all;
