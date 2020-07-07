@@ -256,7 +256,7 @@ $stmt = mysqli_stmt_init($conn);
                                                     echo "<div class='attached_img_cont en'>";
                                                     echo $detailImg_cont_en;
                                                     echo "</div>";
-                                                    echo "<div class='attached_func'>
+                                                    echo "<div id='attached_func_wrap'>
                                                             <div id='";
                                                     echo    $detailImg_id;
                                                     echo    "' class='modify_btn' title='수정하기' onclick='imgModi(this.id)'>
