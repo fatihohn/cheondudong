@@ -170,7 +170,7 @@ $stmt = mysqli_stmt_init($conn);
                         if(isset($detailMemo) && !isset($detailMemo_en)) {
                             if($sessLang == "ko") {
                                 ?>
-                                <div id="detail_memo" class = "<?php echo $sessLang; ?>">
+                                <div id="detail_memo">
                                     <div class="ddobag ko">
                                         <?php echo $detailMemo;?>
                                     </div>
@@ -181,7 +181,7 @@ $stmt = mysqli_stmt_init($conn);
                         } else if(!isset($detailMemo) && isset($detailMemo_en)) {
                             if($seseLang == "en") {
                                 ?>
-                                <div id="detail_memo" class = "<?php echo $sessLang; ?>">
+                                <div id="detail_memo">
                                     <div class="ddobag en">
                                         <?php echo $detailMemo_en;?>
                                     </div>
@@ -191,7 +191,7 @@ $stmt = mysqli_stmt_init($conn);
                         } else if(isset($detailMemo) && isset($detailMemo_en)) {
                             if($sessLang == "ko") {
                                 ?>
-                                <div id="detail_memo" class = "<?php echo $sessLang; ?>">
+                                <div id="detail_memo">
                                     <div class="ddobag ko">
                                         <?php echo $detailMemo;?>
                                     </div>
@@ -200,7 +200,7 @@ $stmt = mysqli_stmt_init($conn);
                                 <?php
                             } else {
                                 ?>
-                                <div id="detail_memo" class = "<?php echo $sessLang; ?>">
+                                <div id="detail_memo">
                                 
                                     <div class="ddobag en">
                                         <?php echo $detailMemo_en;?>
