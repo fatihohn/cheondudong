@@ -87,6 +87,7 @@
                     </div>
                 </p>
                 <p>
+                <input type="hidden" name="id" value="<?=$q?>">
                     <input id="attach_img" type="submit">
                     <button name="cancel"><a href = "javascript:history.back()">취소</a></button>
                 </p>
