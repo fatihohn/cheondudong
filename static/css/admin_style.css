@@ -90,6 +90,14 @@
     padding-top: 70px;
 }
 
+#create_wrap .admin_editor .memo_editor {
+    min-width: 80%;
+    max-width: 90%;
+    min-height: 150px;
+}
+
+
+
 section .view_wrap {
     width: 100%;
     max-width: 596px;

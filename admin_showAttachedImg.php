@@ -53,7 +53,7 @@ if ($resultImgList->num_rows > 0) {
             <th style='width:140px;'>이미지</th> 
             <th>제목</th> 
             <th>내용</th>
-            <th style='width:35px' >삭제</th>
+            <th style='width:35px' >관리</th>
         
         </tr>";
     // output data of each row
@@ -83,6 +83,10 @@ echo
             <td class='".$img_id."'>".$img_ko_title."<br>".$img_en_title."</td>
             <td class='".$img_id."'>".$img_ko_cont."<br>".$img_en_cont."</td>
             <td  style='width:35px' class='".$img_id."'>
+                <button class='modi_btn' name='".$img_id."' onclick='imgModi(this.name)'>
+                    수정
+                </button>
+                <br>
                 <button class='del_btn' name='".$img_id."' onclick='imgDel(this.name)'>
                     삭제
                 </button>

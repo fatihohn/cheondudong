@@ -108,10 +108,10 @@
                                     <div class="createInput">
                                         <label class="createGrid1">메모</label>
                                         <div class="admin_editor">
-                                            <textarea name="ko_memo" placeholder="메모"></textarea>
+                                            <textarea class="memo_editor" name="ko_memo" placeholder="메모"></textarea>
                                         </div>
                                         <div class="admin_editor">
-                                            <textarea name="en_memo" placeholder="Memo"></textarea>
+                                            <textarea class="memo_editor" name="en_memo" placeholder="Memo"></textarea>
                                         </div>
                                     </div>
                                 </p>

@@ -239,6 +239,23 @@ menuPlaceAddClick();
         location.href = './admin_modify_intro.php?id=' + str;
     }
 
+    function imgModi(str) {
+        window.open('./admin_modify_attached_image.php' + str, "imgModi", "width=600, height=800");
+    }
+    function workModi(str) {
+        window.open('./admin_modify_attached_work.php' + str, "workModi", "width=600, height=800");
+    }
+    function refModi(str) {
+        window.open('./admin_modify_attached_ref.php' + str, "refModi", "width=600, height=800");
+    }
+
+
+
+
+
+
+
+
 ////****수정_삭제****//
 // function imgModiDel(str) {
 //         let delConfirm = confirm('삭제 후 상단 작성 내용이 저장되지 않습니다. 삭제하시겠습니까?');
