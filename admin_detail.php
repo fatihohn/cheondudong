@@ -167,7 +167,7 @@ $stmt = mysqli_stmt_init($conn);
                         </div>
                         <?php
                         $sessLang = $_SESSION['language'];
-                        if(isset($detailMemo) && !isset($detailMemo_en)) {
+                        if($detailMemo && !$detailMemo_en) {
                             if($sessLang == "ko") {
                                 ?>
                                 <div id="detail_memo">
@@ -178,7 +178,7 @@ $stmt = mysqli_stmt_init($conn);
                                 </div>
                                 <?php
                             }
-                        } else if(!isset($detailMemo) && isset($detailMemo_en)) {
+                        } else if(!$detailMemo && $detailMemo_en){
                             if($seseLang == "en") {
                                 ?>
                                 <div id="detail_memo">
@@ -188,7 +188,7 @@ $stmt = mysqli_stmt_init($conn);
                                 </div>
                                 <?php
                             }
-                        } else if(isset($detailMemo) && isset($detailMemo_en)) {
+                        } else if($detailMemo && $detailMemo_en){
                             if($sessLang == "ko") {
                                 ?>
                                 <div id="detail_memo">
