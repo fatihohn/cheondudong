@@ -258,12 +258,12 @@ $stmt = mysqli_stmt_init($conn);
                                                     echo "</div>";
                                                     echo "<div class='attached_func'>
                                                             <div id='";
-                                                    echo    $detailimg_id;
+                                                    echo    $detailImg_id;
                                                     echo    "' class='modify_btn' title='수정하기' onclick='imgModi(this.id)'>
                                                                 <img src='static/img/modify_btn.png' alt='modify_btn'>
                                                             </div>
                                                             <div id='";
-                                                    echo    $detailimg_id;
+                                                    echo    $detailImg_id;
                                                     echo    "' class='delete_btn' title='삭제하기' onclick='imgDel(this.id)'>    
                                                                 <img src='static/img/delete_btn.png' alt='delete_btn'>
                                                             </div>
