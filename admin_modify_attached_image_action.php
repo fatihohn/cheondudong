@@ -80,7 +80,7 @@ $result = mysqli_query($conn, $sql);
 
 
 if($result){
-    echo("<script>alert('이미지가 수정되었습니다.'); setTimeout(function(){window.close();}, 3000);</script>");
+    echo("<script>alert('이미지가 수정되었습니다.'); setTimeout(function(){window.close();}, 1000);</script>");
 } else {
     echo '이미지 저장실패. 관리자에게 문의해주세요';
     error_log(mysqli_error($conn));
