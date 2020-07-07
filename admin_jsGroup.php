@@ -240,13 +240,13 @@ menuPlaceAddClick();
     }
 
     function imgModi(str) {
-        window.open('./admin_modify_attached_image.php' + str, "imgModi", "width=600, height=800");
+        window.open('./admin_modify_attached_image.php?id=' + str, "imgModi", "width=600, height=800");
     }
     function workModi(str) {
-        window.open('./admin_modify_attached_work.php' + str, "workModi", "width=600, height=800");
+        window.open('./admin_modify_attached_work.php?id=' + str, "workModi", "width=600, height=800");
     }
     function refModi(str) {
-        window.open('./admin_modify_attached_ref.php' + str, "refModi", "width=600, height=800");
+        window.open('./admin_modify_attached_ref.php?id=' + str, "refModi", "width=600, height=800");
     }
 
 

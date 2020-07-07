@@ -23,8 +23,8 @@
         // $URL = "./admin_attach_image.php";
 
 
-        $q = intval($_GET['q']);
-        $place_id = $q;
+        $q = intval($_GET['id']);
+        // $place_id = $q;
 
         // $uname = $_SESSION['username'];
         // $query = "SELECT * FROM user_data WHERE username= '$uname'";
