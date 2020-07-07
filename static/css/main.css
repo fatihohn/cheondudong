@@ -118,6 +118,9 @@
 #detail_wrap #detail_box #detail_title h3 {
     font-size: 2.6rem;
 }
+#detail_wrap #detail_box #detail_sub_title {
+    margin-bottom: 20px;
+}
 #detail_wrap #detail_box #detail_sub_title h4 {
     font-size: 1.4rem;
     letter-spacing: 0.1rem;

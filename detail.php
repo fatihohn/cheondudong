@@ -148,14 +148,38 @@ $stmt = mysqli_stmt_init($conn);
                                 <?php echo $detailCoord;?>
                             </div>
                         </div>
-                        <div id="detail_memo">
-                            <div class="ddobag ko">
-                                <?php echo $detailMemo;?>
+                        <?php
+                        if(isset($detailMemo) && !isset($detailMemo_en)) {
+                            ?>
+                            <div id="detail_memo">
+                                <div class="ddobag ko">
+                                    <?php echo $detailMemo;?>
+                                </div>
+                                
                             </div>
-                            <div class="ddobag en">
-                                <?php echo $detailMemo_en;?>
+                            <?php
+                        } else if(!isset($detailMemo) && isset($detailMemo_en)) {
+                            ?>
+                            <div id="detail_memo">
+                            
+                                <div class="ddobag en">
+                                    <?php echo $detailMemo_en;?>
+                                </div>
                             </div>
-                        </div>
+                            <?php
+                        } else if(isset($detailMemo) && isset($detailMemo_en)) {
+                            ?>
+                            <div id="detail_memo">
+                                <div class="ddobag ko">
+                                    <?php echo $detailMemo;?>
+                                </div>
+                                <div class="ddobag en">
+                                    <?php echo $detailMemo_en;?>
+                                </div>
+                            </div>
+                            <?php
+                        }
+                        ?>
                         <div id="detail_cont">
                             <div class="ko">
                                 <?php echo $detailCont;?>
