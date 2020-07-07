@@ -230,6 +230,7 @@
     /* display: grid; */
     font-family: "또박또박";
     font-size: 1.7rem;
+    margin-bottom: 20px;
 }
 
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag,
