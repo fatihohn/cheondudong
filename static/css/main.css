@@ -328,6 +328,10 @@
     padding-top: 10px;
 }
 
+#map .mapboxgl-popup-content p.right_p {
+    text-align: right;
+}
+
 #map .mapboxgl-popup-tip {
     border-top-color: rgba(255, 255, 255, 0.6);
 }

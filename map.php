@@ -220,7 +220,7 @@
                 '</h4>'+
                 '<p>' + 
                     marker.properties.memo_ko + 
-                '<br>...더보기</p>'+
+                '</p><p class="right_p">...더보기</p>'+
             '</div>';
     } else {
         var info_cont = '<div class="'+ marker.properties.place_id + '" onclick="showDetailPlaceMap(this.className)">'+
@@ -232,7 +232,7 @@
                 '</h4>'+
                 '<p>' + 
                     marker.properties.memo_en + 
-                '<br>...more</p>'+
+                '</p><p class="right_p">...more</p>'+
             '</div>';
 
     }
