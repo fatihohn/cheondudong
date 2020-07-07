@@ -78,6 +78,7 @@
                                     <div class="createInput">
                                     <label class="createGrid1">마커 사이즈 구분</label>
                                     <select class="createGrid2" name="mkimg_size"  required>
+                                        <option value="miniCube">1:1|30*30px </option>
                                         <option value="smallCube">1:1|60*60px </option>
                                         <option value="middleCube">1:1|80*80px</option>
                                         <option value="smallHori">1.6:1|80*50px</option>

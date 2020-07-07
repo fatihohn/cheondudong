@@ -183,6 +183,7 @@
     color: rgba(0, 0, 0, 0.75);
     padding-bottom: 40px;
     font-family: "또박또박";
+    text-indent: 1rem;
 }
 
 #detail_wrap #detail_box #detail_img,
