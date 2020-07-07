@@ -116,10 +116,11 @@
 }
 
 #detail_wrap #detail_box #detail_title h3 {
-    font-size: 2rem;
+    font-size: 2.6rem;
 }
 #detail_wrap #detail_box #detail_sub_title h4 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
 }
 
 #detail_wrap #detail_box #detail_point {
@@ -148,8 +149,13 @@
 #detail_wrap #detail_box #detail_memo {
     background-color: rgba(255, 200, 100, 0.05);
     border-radius: 10px;
-    padding: 20px;
+    padding: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-size: 1.4rem;
+    white-space: pre-line;
+    word-break: keep-all;
+    max-width: 600px;
+    margin: 0 auto;
 }
 #detail_wrap #detail_box #detail_cont {
     white-space: pre-line;
@@ -200,6 +206,7 @@
     margin-top: 15px;
     margin-bottom: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
 }
 
 #detail_wrap #detail_box #detail_img ul li .attached_img_tag,
