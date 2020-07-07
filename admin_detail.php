@@ -234,6 +234,7 @@ $stmt = mysqli_stmt_init($conn);
                                         <ul class='detail_attachment_list'>
                                         ";
                                         while($rowPlaceImg = $resultPlaceImg->fetch_assoc()) {
+                                            $detailImg_id = $rowPlaceImg['id'];
                                             $detailImg_title_ko = $rowPlaceImg['ko_title'];
                                             $detailImg_title_en = $rowPlaceImg['en_title'];
                                             $detailImg_cont_ko = $rowPlaceImg['ko_cont'];
@@ -255,6 +256,18 @@ $stmt = mysqli_stmt_init($conn);
                                                     echo "<div class='attached_img_cont en'>";
                                                     echo $detailImg_cont_en;
                                                     echo "</div>";
+                                                    echo "<div class='attached_func'>
+                                                            <div id='";
+                                                    echo    $detailimg_id;
+                                                    echo    "' class='modify_btn' title='수정하기' onclick='imgModi(this.id)'>
+                                                                <img src='static/img/modify_btn.png' alt='modify_btn'>
+                                                            </div>
+                                                            <div id='";
+                                                    echo    $detailimg_id;
+                                                    echo    "' class='delete_btn' title='삭제하기' onclick='imgDel(this.id)>    
+                                                                <img src='static/img/delete_btn.png' alt='delete_btn'>
+                                                            </div>
+                                                          </div>";
                                                 echo "</div>";
                                             echo "</li>";
 
