@@ -36,7 +36,7 @@ $detailCont = $rowPlaceDetail['ko_cont'];
 $detailCont_en = $rowPlaceDetail['en_cont'];
 
 
-$sqlPlaceImg = "SELECT * FROM images WHERE place_id = $place_id";
+$sqlPlaceImg = "SELECT * FROM images WHERE place_id = $place_id ORDER BY created DESC";
 $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sqlPlaceImg)) {
             // echo "sqlPlaceImg error";
@@ -46,7 +46,7 @@ $stmt = mysqli_stmt_init($conn);
             $resultPlaceImg = mysqli_stmt_get_result($stmt);
     }
 
-$sqlPlaceWork = "SELECT * FROM works WHERE place_id = $place_id";
+$sqlPlaceWork = "SELECT * FROM works WHERE place_id = $place_id ORDER BY created DESC";
 $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sqlPlaceWork)) {
             // echo "sqlPlaceWork error";
@@ -56,7 +56,7 @@ $stmt = mysqli_stmt_init($conn);
             $resultPlaceWork = mysqli_stmt_get_result($stmt);
     }
     
-    $sqlPlaceRef = "SELECT * FROM refs WHERE place_id = $place_id";
+    $sqlPlaceRef = "SELECT * FROM refs WHERE place_id = $place_id ORDER BY created DESC";
     $stmt = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt, $sqlPlaceRef)) {
                 // echo "sqlPlaceRef error";

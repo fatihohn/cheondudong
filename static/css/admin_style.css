@@ -220,6 +220,7 @@ section #userList_wrap .user_table {
 #attached_func_wrap .delete_btn,
 #attached_func_wrap .modify_btn {
     width: 60px;
+    margin: 0 auto;
 }
 
 
