@@ -149,9 +149,10 @@ $stmt = mysqli_stmt_init($conn);
                             </div>
                         </div>
                         <?php
+                        $sessLang = $_SESSION['language'];
                         if(isset($detailMemo) && !isset($detailMemo_en)) {
                             ?>
-                            <div id="detail_memo">
+                            <div id="detail_memo" class = "<?php echo $sessLang; ?>">
                                 <div class="ddobag ko">
                                     <?php echo $detailMemo;?>
                                 </div>
@@ -160,7 +161,7 @@ $stmt = mysqli_stmt_init($conn);
                             <?php
                         } else if(!isset($detailMemo) && isset($detailMemo_en)) {
                             ?>
-                            <div id="detail_memo">
+                            <div id="detail_memo" class = "<?php echo $sessLang; ?>">
                             
                                 <div class="ddobag en">
                                     <?php echo $detailMemo_en;?>
@@ -168,10 +169,9 @@ $stmt = mysqli_stmt_init($conn);
                             </div>
                             <?php
                         } else if(isset($detailMemo) && isset($detailMemo_en)) {
-                            $sessLang = $_SESSION['language'];
                             if($sessLang == "ko") {
                                 ?>
-                                <div id="detail_memo <?php echo $sessLang; ?>">
+                                <div id="detail_memo" class = "<?php echo $sessLang; ?>">
                                     <div class="ddobag ko">
                                         <?php echo $detailMemo;?>
                                     </div>
@@ -180,7 +180,7 @@ $stmt = mysqli_stmt_init($conn);
                                 <?php
                             } else {
                                 ?>
-                                <div id="detail_memo <?php echo $sessLang; ?>">
+                                <div id="detail_memo" class = "<?php echo $sessLang; ?>">
                                 
                                     <div class="ddobag en">
                                         <?php echo $detailMemo_en;?>
