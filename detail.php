@@ -149,10 +149,10 @@ $stmt = mysqli_stmt_init($conn);
                             </div>
                         </div>
                         <div id="detail_memo">
-                            <div class="ko">
+                            <div class="ddobag ko">
                                 <?php echo $detailMemo;?>
                             </div>
-                            <div class="en">
+                            <div class="ddobag en">
                                 <?php echo $detailMemo_en;?>
                             </div>
                         </div>
