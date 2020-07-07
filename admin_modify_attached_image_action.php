@@ -29,7 +29,7 @@ $img = $uploadimg['img'];
 
         
 $sql = 
-"UPDATE iamges SET 
+"UPDATE images SET 
         
         `ko_title`='$ko_title', 
         `en_title`='$en_title', 
