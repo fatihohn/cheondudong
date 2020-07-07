@@ -80,7 +80,7 @@ $result = mysqli_query($conn, $sql);
 
 
 if($result){
-    echo("<script>alert('이미지가 수정되었습니다.'); window.close();</script>");
+    echo("<script>alert('이미지가 수정되었습니다.'); location.replace('admin_modify_attached_image.php?id=".$q."');</script>");
 } else {
     echo '이미지 저장실패. 관리자에게 문의해주세요';
     error_log(mysqli_error($conn));
