@@ -118,9 +118,11 @@
 #detail_wrap #detail_box #detail_title h3 {
     font-size: 2.6rem;
 }
+
 #detail_wrap #detail_box #detail_sub_title {
     margin-bottom: 20px;
 }
+
 #detail_wrap #detail_box #detail_sub_title h4 {
     font-size: 1.4rem;
     letter-spacing: 0.1rem;
@@ -160,6 +162,7 @@
     max-width: 600px;
     margin: 0 auto;
 }
+
 #detail_wrap #detail_box #detail_cont {
     white-space: pre-line;
     word-break: keep-all;
@@ -304,16 +307,25 @@
     font-family: "또박또박";
 }
 
+#map .mapboxgl-popup-content>div {
+    padding: 10px;
+}
+
 #map .mapboxgl-popup-content h3 {
     font-size: 1.8rem;
 }
 
 #map .mapboxgl-popup-content h4 {
     font-size: 1.4rem;
+    padding-top: 5px;
+    letter-spacing: 0.1rem;
 }
 
 #map .mapboxgl-popup-content p {
     font-size: 1.4rem;
+    white-space: pre-line;
+    text-align: justify;
+    padding-top: 10px;
 }
 
 #map .mapboxgl-popup-tip {

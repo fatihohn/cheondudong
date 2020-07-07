@@ -217,10 +217,10 @@
                 '</h3>'+
                 '<h4>' + 
                     marker.properties.sub_title_ko + 
-                '</h4><br>'+
+                '</h4>'+
                 '<p>' + 
                     marker.properties.memo_ko + 
-                '</p>'+
+                '<br>...더보기</p>'+
             '</div>';
     } else {
         var info_cont = '<div class="'+ marker.properties.place_id + '" onclick="showDetailPlaceMap(this.className)">'+
@@ -229,10 +229,10 @@
                 '</h3>'+
                 '<h4>' + 
                     marker.properties.sub_title_en + 
-                '</h4><br>'+
+                '</h4>'+
                 '<p>' + 
                     marker.properties.memo_en + 
-                '</p>'+
+                '<br>...more</p>'+
             '</div>';
 
     }
