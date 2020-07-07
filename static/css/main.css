@@ -152,7 +152,7 @@
 #detail_wrap #detail_box #detail_memo {
     background-color: rgba(255, 200, 100, 0.05);
     border-radius: 10px;
-    padding: 25px;
+    padding: 0 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     font-size: 1.4rem;
     white-space: pre-line;
