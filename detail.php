@@ -168,16 +168,25 @@ $stmt = mysqli_stmt_init($conn);
                             </div>
                             <?php
                         } else if(isset($detailMemo) && isset($detailMemo_en)) {
-                            ?>
-                            <div id="detail_memo">
-                                <div class="ddobag ko">
-                                    <?php echo $detailMemo;?>
+                            if($_SESSION['language'] == "ko") {
+                                ?>
+                                <div id="detail_memo">
+                                    <div class="ddobag ko">
+                                        <?php echo $detailMemo;?>
+                                    </div>
+                                    
                                 </div>
-                                <div class="ddobag en">
-                                    <?php echo $detailMemo_en;?>
+                                <?php
+                            } else {
+                                ?>
+                                <div id="detail_memo">
+                                
+                                    <div class="ddobag en">
+                                        <?php echo $detailMemo_en;?>
+                                    </div>
                                 </div>
-                            </div>
-                            <?php
+                                <?php
+                            }
                         }
                         ?>
                         <div id="detail_cont">
