@@ -218,10 +218,10 @@
 #detail_wrap #detail_box #detail_ref ul li img {
     width: 100%;
     max-width: 596px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     margin-bottom: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
+    /* box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3); */
+    border-radius: 5px 5px 0 0;
 }
 
 #detail_wrap #detail_box #detail_img ul li .attached_img_tag,
@@ -231,6 +231,12 @@
     font-family: "또박또박";
     font-size: 1.7rem;
     margin-bottom: 20px;
+}
+#detail_wrap #detail_box #detail_img ul li,
+#detail_wrap #detail_box #detail_work ul li,
+#detail_wrap #detail_box #detail_ref ul li {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
 }
 
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag,
