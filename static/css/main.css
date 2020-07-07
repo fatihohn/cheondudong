@@ -162,6 +162,13 @@
     word-break: keep-all;
     max-width: 600px;
     margin: 0 auto;
+    display: flex;
+}
+
+#detail_wrap #detail_box #detail_memo>div {
+    white-space: pre-line;
+    word-break: break-all;
+    text-align: justify;
 }
 
 #detail_wrap #detail_box #detail_cont {
