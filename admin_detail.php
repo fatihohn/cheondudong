@@ -264,7 +264,7 @@ $stmt = mysqli_stmt_init($conn);
                                                             </div>
                                                             <div id='";
                                                     echo    $detailimg_id;
-                                                    echo    "' class='delete_btn' title='삭제하기' onclick='imgDel(this.id)>    
+                                                    echo    "' class='delete_btn' title='삭제하기' onclick='imgDel(this.id)'>    
                                                                 <img src='static/img/delete_btn.png' alt='delete_btn'>
                                                             </div>
                                                           </div>";
