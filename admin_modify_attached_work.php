@@ -79,7 +79,7 @@
                 </p>
                 <p>
                 <input type="hidden" name="id" value="<?=$q?>">
-                    <input id="attach_img" type="submit">
+                    <input id="attach_work" type="submit" onclick="submitContents(this);">
                     <button name="cancel"><a href = "javascript:history.back()">취소</a></button>
                 </p>
             </form>
