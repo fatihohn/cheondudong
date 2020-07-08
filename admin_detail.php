@@ -222,6 +222,7 @@ $stmt = mysqli_stmt_init($conn);
                         <div id="detail_img">
                         <?php
                                     if($resultPlaceImg->num_rows > 0) {
+                                        $place_id = intval($rowPlaceDetail['place_id']);
                                         echo "
                                         <div class='detail_attachment_title'>
                                             <div class='img_title ko ddobag'>
