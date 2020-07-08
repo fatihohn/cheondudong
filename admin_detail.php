@@ -280,7 +280,7 @@ $stmt = mysqli_stmt_init($conn);
                                                     echo    "' class='delete_btn' title='삭제하기' onclick='imgDel(this.id)'>    
                                                                 <img src='static/img/delete_btn.png' alt='delete_btn'>
                                                             </div>
-                                                          </div>";
+                                                        </div>";
                                                 echo "</div>";
                                             echo "</li>";
 
@@ -312,6 +312,7 @@ $stmt = mysqli_stmt_init($conn);
                                 <ul class='detail_attachment_list'>
                                 ";
                                 while($rowPlaceWork = $resultPlaceWork->fetch_assoc()) {
+                                    $detailWork_id = $rowPlaceWork['id'];
                                     $detailWork_title_ko = $rowPlaceWork['ko_title'];
                                     $detailWork_title_en = $rowPlaceWork['en_title'];
                                     $detailWork_cont_ko = $rowPlaceWork['ko_cont'];
@@ -332,6 +333,23 @@ $stmt = mysqli_stmt_init($conn);
                                             echo "<div class='attached_work_cont en'>";
                                             echo $detailWork_cont_en;
                                             echo "</div>";
+                                            echo "<div id='attached_func_wrap'>
+                                                    <div id='";
+                                            echo    $detailWork_id;
+                                            echo    "' class='top_btn' title='맨 위로' onclick='workTop(this.id)'>
+                                                        <img src='static/img/top_btn.png' alt='top_btn'>
+                                                    </div>
+                                                    <div id='";
+                                            echo    $detailWork_id;
+                                            echo    "' class='modify_btn' title='수정하기' onclick='workModi(this.id)'>
+                                                        <img src='static/img/modify_btn.png' alt='modify_btn'>
+                                                    </div>
+                                                    <div id='";
+                                            echo    $detailWork_id;
+                                            echo    "' class='delete_btn' title='삭제하기' onclick='workDel(this.id)'>    
+                                                        <img src='static/img/delete_btn.png' alt='delete_btn'>
+                                                    </div>
+                                                </div>";
                                         echo "</div>";
                                     echo "</li>";
 
@@ -361,6 +379,7 @@ $stmt = mysqli_stmt_init($conn);
                                 <ul class='detail_attachment_list'>
                                 ";
                                 while($rowPlaceRef = $resultPlaceRef->fetch_assoc()) {
+                                    $detailRef_id = $rowPlaceRef['id'];
                                     $detailRef_title_ko = $rowPlaceRef['ko_title'];
                                     $detailRef_title_en = $rowPlaceRef['en_title'];
                                     $detailRef_link = $rowPlaceRef['link'];
@@ -380,6 +399,23 @@ $stmt = mysqli_stmt_init($conn);
                                                     echo "</div>";
                                                 echo "</a>";
                                             echo "</div>";
+                                            echo "<div id='attached_func_wrap'>
+                                                    <div id='";
+                                            echo    $detailRef_id;
+                                            echo    "' class='top_btn' title='맨 위로' onclick='refTop(this.id)'>
+                                                        <img src='static/img/top_btn.png' alt='top_btn'>
+                                                    </div>
+                                                    <div id='";
+                                            echo    $detailRef_id;
+                                            echo    "' class='modify_btn' title='수정하기' onclick='refModi(this.id)'>
+                                                        <img src='static/img/modify_btn.png' alt='modify_btn'>
+                                                    </div>
+                                                    <div id='";
+                                            echo    $detailRef_id;
+                                            echo    "' class='delete_btn' title='삭제하기' onclick='refDel(this.id)'>    
+                                                        <img src='static/img/delete_btn.png' alt='delete_btn'>
+                                                    </div>
+                                                </div>";
                                         echo "</div>";
                                     echo "</li>";
                                 }

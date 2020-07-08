@@ -334,6 +334,7 @@
 
 #map .mapboxgl-popup-content h3 {
     font-size: 1.8rem;
+    line-height: 1.7rem;
 }
 
 #map .mapboxgl-popup-content h4 {

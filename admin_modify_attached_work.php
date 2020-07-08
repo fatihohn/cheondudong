@@ -15,7 +15,7 @@
     <!-- <div id="create_img_wrap"> -->
     <div class="attach_box">
         <center>
-            <h3>이미지 수정</h3>
+            <h3>관련작품 수정</h3>
         </center>
         <?php    
         include 'cdd_db_conn.php'; 
@@ -36,7 +36,7 @@
         // $adminCast = "admin";
         // $editorCast = "editor";
 
-        $query = "SELECT * FROM images WHERE id=$q";
+        $query = "SELECT * FROM works WHERE id=$q";
         $result = $conn->query($query);
         $rows = mysqli_fetch_assoc($result);
 
@@ -48,9 +48,6 @@
         $ko_cont = $rows['ko_cont'];
         $en_cont = $rows['en_cont'];
 
-        $img = $rows['img'];
-        $img_dir = $rows['img_dir'];
-
 
 
 ?>
@@ -60,13 +57,7 @@
                         <input class="createGrid2"  type="hidden" name="place_id" value="<?=$place_id?>" required />       
                     </div>
                 </p>
-                <p>
-                    <div class="createInput">
-                    <label class="createGrid1">이미지</label>
-                    <input class="createGrid2" type="file" name="img" />
-                    <?=$img?>
-                    </div>
-                </p>
+                
                 <p>
                     <div class="createInput">
                         <label class="createGrid1">제목</label>
@@ -81,8 +72,8 @@
                     <div class="createInput">
                         <label class="createGrid1">내용</label>
                         <div class="admin_editor">
-                            <textarea name="ko_cont" id="ko_cont" ><?=$ko_cont?></textarea>
-                            <textarea name="en_cont" id="en_cont"><?=$en_cont?></textarea>
+                            <textarea name="ko_work_cont" id="work_cont_ko" ><?=$ko_cont?></textarea>
+                            <textarea name="en_work_cont" id="work_cont_en"><?=$en_cont?></textarea>
                         </div>
                     </div>
                 </p>
@@ -98,7 +89,38 @@
     </div>
         
 </section>
+<script type="text/javascript" src="se2/js/service/HuskyEZCreator.js" charset="utf-8"></script>
+<script type="text/javascript">
+    let oEditors = [];
+    let oEditors2 = [];
+    nhn.husky.EZCreator.createInIFrame({
+     oAppRef: oEditors,
+     elPlaceHolder: "work_cont_ko",
+     sSkinURI: "SmartEditor2Skin.html",
+     fCreator: "createSEditor2"
+    });
+    nhn.husky.EZCreator.createInIFrame({
+     oAppRef: oEditors2,
+     elPlaceHolder: "work_cont_en",
+     sSkinURI: "SmartEditor2Skin.html",
+     fCreator: "createSEditor2"
+    });
 
+    // ‘저장’ 버튼을 누르는 등 저장을 위한 액션을 했을 때 submitContents가 호출된다고 가정한다.
+    function submitContents(elClickedObj) {
+     // 에디터의 내용이 textarea에 적용된다.
+     oEditors.getById["work_cont_ko"].exec("UPDATE_CONTENTS_FIELD", []);
+     oEditors2.getById["work_cont_en"].exec("UPDATE_CONTENTS_FIELD", []);
+
+     // 에디터의 내용에 대한 값 검증은 이곳에서
+     // document.getElementById("ir1").value를 이용해서 처리한다.
+
+     try {
+         elClickedObj.form.submit();
+     } catch(e) {}
+    }
+
+</script>
 </body>
 
 </html>
