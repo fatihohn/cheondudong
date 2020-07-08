@@ -249,7 +249,15 @@ menuPlaceAddClick();
         window.open('./admin_modify_attached_ref.php?id=' + str, "refModi", "width=600, height=800");
     }
 
-
+    function imgTop(str) {
+        location.href = './admin_modify_attached_image_top.php?id=' + str;
+    }
+    function workTop(str) {
+        location.href = './admin_modify_attached_work_top.php?id=' + str;
+    }
+    function refTop(str) {
+        location.href = './admin_modify_attached_ref_top.php?id=' + str;
+    }
 
 
 
