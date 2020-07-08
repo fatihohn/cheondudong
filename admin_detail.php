@@ -292,6 +292,7 @@ $stmt = mysqli_stmt_init($conn);
                         <div id="detail_work">
                         <?php
                             if($resultPlaceWork->num_rows > 0) {
+                                $place_id = intval($rowPlaceDetail['place_id']);
                                 echo "
                                 <div class='detail_attachment_title'>
                                     <div class='work_title ko ddobag'>
@@ -342,6 +343,7 @@ $stmt = mysqli_stmt_init($conn);
                         <div id="detail_ref">
                         <?php
                             if($resultPlaceRef->num_rows > 0) {
+                                $place_id = intval($rowPlaceDetail['place_id']);
                                 echo "
                                 <div class='detail_attachment_title'>
                                     <div class='ref_title ko ddobag'>
