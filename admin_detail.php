@@ -298,7 +298,7 @@ $stmt = mysqli_stmt_init($conn);
                                         Works
                                     </div>
                                     <div id='add_work' class='menu_add'>
-                                        <a id='".$q."' onclick='workAdd(this.id);'>
+                                        <a id='".$place_id."' onclick='workAdd(this.id);'>
                                             ＋
                                         </a>
                                     </div>
@@ -346,7 +346,7 @@ $stmt = mysqli_stmt_init($conn);
                                         References
                                     </div>
                                     <div id='add_ref' class='menu_add'>
-                                        <a id='".$q."' onclick='refAdd(this.id);'>
+                                        <a id='".$place_id."' onclick='refAdd(this.id);'>
                                             ＋
                                         </a>
                                     </div>
