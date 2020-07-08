@@ -298,7 +298,9 @@ $stmt = mysqli_stmt_init($conn);
                                         Works
                                     </div>
                                     <div id='add_work' class='menu_add'>
-                                        <a id='".$place_id."' onclick='workAdd(this.id);'>
+                                        <a id='";
+                                echo $place_id;
+                                echo "' onclick='workAdd(this.id);'>
                                             ＋
                                         </a>
                                     </div>
