@@ -262,14 +262,14 @@ menuPlaceAddClick();
 
 
 //****추가****//
-    function imgAdd() {
-        window.open('./admin_attach_image.php', "imgAdd", "width=600, height=800");
+    function imgAdd(str) {
+        window.open('./admin_attach_modify_image.php?q='+str, "imgAdd", "width=600, height=800");
     }
-    function workAdd() {
-        window.open('./admin_attach_work.php', "workAdd", "width=600, height=800");
+    function workAdd(str) {
+        window.open('./admin_attach_modify_work.php?q='+str, "workAdd", "width=600, height=800");
     }
-    function refAdd() {
-        window.open('./admin_attach_ref.php', "refAdd", "width=600, height=800");
+    function refAdd(str) {
+        window.open('./admin_attach_modify_ref.php?q='+str, "refAdd", "width=600, height=800");
     }
 
 

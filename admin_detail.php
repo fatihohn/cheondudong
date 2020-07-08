@@ -230,8 +230,8 @@ $stmt = mysqli_stmt_init($conn);
                                             <div class='img_title en ddobag'>
                                                 Images
                                             </div>
-                                            <div id='add_image' class='menu_add' onclick='imgAdd();'>
-                                                <a>
+                                            <div id='add_image' class='menu_add'>
+                                                <a id='".$q."' onclick='imgAdd(this.id);'>
                                                     ＋
                                                 </a>
                                             </div>
@@ -297,8 +297,8 @@ $stmt = mysqli_stmt_init($conn);
                                     <div class='work_title en ddobag'>
                                         Works
                                     </div>
-                                    <div id='add_work' class='menu_add' onclick='workAdd();'>
-                                        <a>
+                                    <div id='add_work' class='menu_add'>
+                                        <a id='".$q."' onclick='workAdd(this.id);'>
                                             ＋
                                         </a>
                                     </div>
@@ -345,8 +345,8 @@ $stmt = mysqli_stmt_init($conn);
                                     <div class='ref_title en ddobag'>
                                         References
                                     </div>
-                                    <div id='add_ref' class='menu_add' onclick='refAdd();'>
-                                        <a>
+                                    <div id='add_ref' class='menu_add'>
+                                        <a id='".$q."' onclick='refAdd(this.id);'>
                                             ＋
                                         </a>
                                     </div>
