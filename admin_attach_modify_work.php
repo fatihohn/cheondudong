@@ -19,7 +19,7 @@
         </center>
         <?php    
         include 'cdd_db_conn.php';   
-        $URL = "./admin_attach_work.php";
+        $URL = "./admin_attach_modify_work.php";
 
         $q = intval($_GET['q']);
         $place_id = $q;

@@ -38,7 +38,8 @@ VALUES(
                 error_log(mysqli_error($conn));
             }
             else{
-                echo("<script>alert('관련작품이 추가되었습니다.');location.href='admin_attach_work.php';</script>");
+                // echo("<script>alert('관련작품이 추가되었습니다.');location.href='admin_attach_work.php';</script>");
+                echo("<script>alert('관련작품이 추가되었습니다.');history.back();</script>");
             }
                     
                     
