@@ -169,6 +169,9 @@
     white-space: pre-line;
     word-break: break-all;
     text-align: justify;
+    font-family: "경기천년바탕";
+    font-size: 1rem;
+    line-height: 1.3rem;
 }
 
 #detail_wrap #detail_box #detail_cont {
@@ -348,10 +351,15 @@
     white-space: pre-line;
     text-align: justify;
     padding-top: 10px;
+    font-family: "경기천년바탕";
+    font-size: 1rem;
+    line-height: 1.3rem;
 }
 
 #map .mapboxgl-popup-content p.right_p {
     text-align: right;
+    font-family: "또박또박";
+    font-size: 1.5rem;
 }
 
 #map .mapboxgl-popup-tip {
