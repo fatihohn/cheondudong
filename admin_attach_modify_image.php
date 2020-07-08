@@ -19,7 +19,7 @@
         </center>
         <?php    
         include 'cdd_db_conn.php'; 
-        $URL = "./admin_attach_image.php";
+        $URL = "./admin_attach_modify_image.php";
 
 
         $q = intval($_GET['q']);
