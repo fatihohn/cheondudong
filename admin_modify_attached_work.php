@@ -51,7 +51,7 @@
 
 
 ?>
-            <form class="createForm" action="admin_modify_attached_image_action.php" method="POST" enctype="multipart/form-data">
+            <form class="createForm" action="admin_modify_attached_work_action.php" method="POST" enctype="multipart/form-data">
                 <p>
                     <div class="createInput">
                         <input class="createGrid2"  type="hidden" name="place_id" value="<?=$place_id?>" required />       
