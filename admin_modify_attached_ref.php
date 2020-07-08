@@ -45,7 +45,7 @@
         $ko_title = $rows['ko_title'];
         $en_title = $rows['en_title'];
 
-        $ref_link = $rows['ref_link'];
+        $ref_link = $rows['link'];
 
 
 

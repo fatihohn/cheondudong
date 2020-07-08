@@ -25,7 +25,7 @@ $sql =
 "UPDATE refs SET 
         `ko_title`='$ko_title', 
         `en_title`='$en_title', 
-        `ref_link`='$ref_link'
+        `link`='$ref_link'
         WHERE `id`='$q'";
 
 
