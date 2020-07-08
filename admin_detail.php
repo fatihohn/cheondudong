@@ -231,7 +231,9 @@ $stmt = mysqli_stmt_init($conn);
                                                 Images
                                             </div>
                                             <div id='add_image' class='menu_add'>
-                                                <a id='".$place_id."' onclick='imgAdd(this.id);'>
+                                                <a id='";
+                                        echo $place_id;
+                                        echo "' onclick='imgAdd(this.id);'>
                                                     ＋
                                                 </a>
                                             </div>
