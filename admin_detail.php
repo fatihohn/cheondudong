@@ -230,6 +230,11 @@ $stmt = mysqli_stmt_init($conn);
                                             <div class='img_title en ddobag'>
                                                 Images
                                             </div>
+                                            <div id='add_image' class='menu_add' onclick='imgAdd();'>
+                                                <a>
+                                                    ＋
+                                                </a>
+                                            </div>
                                         </div>
                                         <ul class='detail_attachment_list'>
                                         ";
@@ -292,6 +297,11 @@ $stmt = mysqli_stmt_init($conn);
                                     <div class='work_title en ddobag'>
                                         Works
                                     </div>
+                                    <div id='add_work' class='menu_add' onclick='workAdd();'>
+                                        <a>
+                                            ＋
+                                        </a>
+                                    </div>
                                 </div>
                                 <ul class='detail_attachment_list'>
                                 ";
@@ -334,6 +344,11 @@ $stmt = mysqli_stmt_init($conn);
                                     </div>
                                     <div class='ref_title en ddobag'>
                                         References
+                                    </div>
+                                    <div id='add_ref' class='menu_add' onclick='refAdd();'>
+                                        <a>
+                                            ＋
+                                        </a>
                                     </div>
                                 </div>
                                 <ul class='detail_attachment_list'>
