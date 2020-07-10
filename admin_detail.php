@@ -237,9 +237,9 @@ $stmt = mysqli_stmt_init($conn);
                                                     ＋
                                                 </a>
                                             </div>
-                                        </div>
+                                        </div>";
                                     if($resultPlaceImg->num_rows > 0) {
-                                        <ul class='detail_attachment_list'>
+                                        echo "<ul class='detail_attachment_list'>
                                         ";
                                         while($rowPlaceImg = $resultPlaceImg->fetch_assoc()) {
                                             $detailImg_id = $rowPlaceImg['id'];
@@ -307,9 +307,9 @@ $stmt = mysqli_stmt_init($conn);
                                             ＋
                                         </a>
                                     </div>
-                                </div>
+                                </div>";
                             if($resultPlaceWork->num_rows > 0) {
-                                <ul class='detail_attachment_list'>
+                                echo "<ul class='detail_attachment_list'>
                                 ";
                                 while($rowPlaceWork = $resultPlaceWork->fetch_assoc()) {
                                     $detailWork_id = $rowPlaceWork['id'];
@@ -374,9 +374,9 @@ $stmt = mysqli_stmt_init($conn);
                                             ＋
                                         </a>
                                     </div>
-                                </div>
+                                </div>";
                             if($resultPlaceRef->num_rows > 0) {
-                                <ul class='detail_attachment_list'>
+                                echo "<ul class='detail_attachment_list'>
                                 ";
                                 while($rowPlaceRef = $resultPlaceRef->fetch_assoc()) {
                                     $detailRef_id = $rowPlaceRef['id'];
