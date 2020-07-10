@@ -107,7 +107,8 @@
     
     var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/suricity/ckbhx3huo0xb11ip5hywb59rx', // stylesheet location
+    // style: 'mapbox://styles/suricity/ckbhx3huo0xb11ip5hywb59rx', // stylesheet location
+    style: 'mapbox://styles/suricity/ckcfmm6dg0a1w1iki1dbo6dx3', // stylesheet location
     center: [127.060444, 37.911627], // starting position [lng, lat]
     maxBounds: [
 	    	//limit dongducheon 
