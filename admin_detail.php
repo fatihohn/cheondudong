@@ -42,7 +42,10 @@ $detailMemo_en = $rowPlaceDetail['en_memo'];
 $detailMarker = $rowPlaceDetail['mkimg_dir'];
 $detailAddress = $rowPlaceDetail['ko_address'];
 $detailAddress_en = $rowPlaceDetail['en_address'];
+$detailAddressArr = explode(" ", $rowPlaceDetail['ko_address']);
 $detailCoord = $rowPlaceDetail['lat'].", ".$rowPlaceDetail['lng'];
+$detailCoordLat = $rowPlaceDetail['lat'];
+$detailCoordLng = $rowPlaceDetail['lng'];
 $detailCont = $rowPlaceDetail['ko_cont'];
 $detailCont_en = $rowPlaceDetail['en_cont'];
 
@@ -150,7 +153,7 @@ $stmt = mysqli_stmt_init($conn);
                                 <?php echo $detailSubTitle_en;?>
                             </h4>
                         </div>
-                        <div id="detail_point">
+                        <div id="detail_point" title="길찾기" onclick="showExMap('<?=$detailAddressArr[0].$detailAddressArr[1].$detailAddressArr[2].$detailAddressArr[3].'_'.$detailCoordLat.'_'.$detailCoordLng?>')">
                             
                             <div class="detail_address ko">
                                 <?php echo $detailAddress;?>
