@@ -133,7 +133,7 @@ $stmt = mysqli_stmt_init($conn);
                                 <?php echo $detailSubTitle_en;?>
                             </h4>
                         </div>
-                        <div id="detail_point">
+                        <div id="detail_point" onclick="showExMap(<?php echo $detailAddress; ?>, <?php echo $detailCoord; ?>)">
                             
                             <div class="detail_address ko">
                                 <?php echo $detailAddress;?>
@@ -141,12 +141,12 @@ $stmt = mysqli_stmt_init($conn);
                             <div class="detail_address en">
                                 <?php echo $detailAddress_en;?>
                             </div>
-                            <div class="detail_coord ko">
+                            <div class="detail_coord">
                                 <?php echo $detailCoord;?>
                             </div>
-                            <div class="detail_coord en">
-                                <?php echo $detailCoord;?>
-                            </div>
+                            <!-- <div class="detail_coord en">
+                                <?php //echo $detailCoord;?>
+                            </div> -->
                         </div>
                         <?php
                         $sessLang = $_SESSION['language'];

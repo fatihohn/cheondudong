@@ -569,4 +569,25 @@
     }
     detailShareBtnClick();
 
+    function showExMap(address, coord) {
+        var addressArr = address.split(" ");
+        var province = addressArr[0];
+        var city = addressArr[1];
+        var dongOrRoad = addressArr[2];
+        var addressNumber = addressArr[3];
+
+        var placeCoordArr = coord.split(",");
+        var placeLat = placeCoordArr[0];
+        var placeLng = placeCoordArr[1];
+
+        var naverMapURL = "https://map.naver.com/v5/search/" + province + "%20" + city + "%20" + dongOrRoad + "%20" + addressNumber + "/";
+        var googleMapURL = "https://www.google.com/maps/place/" + placeLat + "," + placeLng;
+        
+        window.open(naverMapURL, "exMap", "width=600, height=800");
+        window.open(googleMapURL, "exMap", "width=600, height=800");
+
+
+
+    }
+
 </script>
