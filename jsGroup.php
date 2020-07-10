@@ -590,7 +590,7 @@
 
         // var naverMapURL = "https://map.naver.com/v5/search/" + province + "%20" + city + "%20" + dongOrRoad + "%20" + addressNumber + "/";
         var naverMapURL = "https://map.naver.com/v5/search/" + addressKo;
-        var kakaoMapURL = "https://map.kakao.com/link/map/" + addressLat + "," + addressLng;
+        var kakaoMapURL = "https://map.kakao.com/link/to/" + addressLat + "," + addressLng;
         // var googleMapURL = "https://www.google.com/maps/place/" + placeLat + "," + placeLng;
         
         // window.open(naverMapURL, "exNaverMap", "width=1200, height=800");
