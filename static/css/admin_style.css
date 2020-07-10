@@ -231,5 +231,10 @@ section #userList_wrap .user_table {
     margin: 0 auto;
 }
 
+.menu_add {
+    font-size: 2rem;
+    font-weight: 900;
+    display: inline;
+}
 
 /****footer****/
