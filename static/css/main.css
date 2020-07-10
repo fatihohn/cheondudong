@@ -243,6 +243,10 @@
     padding: 10px 25px 25px 25px;
 }
 
+#detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_cont img{
+    border-radius: 5px;
+}
+
 #detail_wrap #detail_box #detail_img ul li,
 #detail_wrap #detail_box #detail_work ul li {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
