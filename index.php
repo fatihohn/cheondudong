@@ -22,7 +22,7 @@
                         <form method="post" action="language_session.php">
                             <!-- <img src="static/img/front.png" alt="천두동"> -->
                             <input class="front_img" type="image" src="static/img/front.png" alt="Submit" />
-                            <div>
+                            <div class="gg-batang">
                                  
                                 <!-- <select name="language" required>
                                     <option value="ko">한국어</option>
