@@ -121,6 +121,13 @@ section #userList_wrap .user_table {
     text-align: center;
 }
 
+#create_map_wrap #create_map {
+    width: 100%;
+    max-width: 596px;
+    height: 80vh;
+    max-height: 450px;
+}
+
 #create_image_wrap,
 #create_work_wrap,
 #create_ref_wrap {

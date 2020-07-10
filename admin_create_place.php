@@ -141,7 +141,8 @@ type="text/css"
                                     </div>
 
                                     <div id="create_map_wrap">
-                                        <div id='create_map' style='width: 596px; height: 450px;'></div>
+                                        <!-- <div id='create_map' style='width: 596px; height: 450px;'></div> -->
+                                        <div id='create_map' ></div>
                                         <!-- <pre id="coordinates" class="coordinates"></pre> -->
                                     </div>
 
