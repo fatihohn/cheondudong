@@ -588,8 +588,8 @@
         var naverMapURL = "https://map.naver.com/v5/search/" + province + "%20" + city + "%20" + dongOrRoad + "%20" + addressNumber + "/";
         // var googleMapURL = "https://www.google.com/maps/place/" + placeLat + "," + placeLng;
         
-        window.open(naverMapURL, "exNaverMap", "width=600, height=800");
-        window.open(googleMapURL, "exGoogleMap", "width=600, height=800");
+        window.open(naverMapURL, "exNaverMap", "width=1200, height=800");
+        // window.open(googleMapURL, "exGoogleMap", "width=600, height=800");
 
 
 
