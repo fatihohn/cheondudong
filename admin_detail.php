@@ -221,7 +221,6 @@ $stmt = mysqli_stmt_init($conn);
                         </div>
                         <div id="detail_img">
                         <?php
-                                    if($resultPlaceImg->num_rows > 0) {
                                         $place_id = intval($rowPlaceDetail['place_id']);
                                         echo "
                                         <div class='detail_attachment_title'>
@@ -239,6 +238,7 @@ $stmt = mysqli_stmt_init($conn);
                                                 </a>
                                             </div>
                                         </div>
+                                    if($resultPlaceImg->num_rows > 0) {
                                         <ul class='detail_attachment_list'>
                                         ";
                                         while($rowPlaceImg = $resultPlaceImg->fetch_assoc()) {
@@ -291,7 +291,6 @@ $stmt = mysqli_stmt_init($conn);
                         </div>
                         <div id="detail_work">
                         <?php
-                            if($resultPlaceWork->num_rows > 0) {
                                 $place_id = intval($rowPlaceDetail['place_id']);
                                 echo "
                                 <div class='detail_attachment_title'>
@@ -309,6 +308,7 @@ $stmt = mysqli_stmt_init($conn);
                                         </a>
                                     </div>
                                 </div>
+                            if($resultPlaceWork->num_rows > 0) {
                                 <ul class='detail_attachment_list'>
                                 ";
                                 while($rowPlaceWork = $resultPlaceWork->fetch_assoc()) {
@@ -360,7 +360,6 @@ $stmt = mysqli_stmt_init($conn);
                         </div>
                         <div id="detail_ref">
                         <?php
-                            if($resultPlaceRef->num_rows > 0) {
                                 $place_id = intval($rowPlaceDetail['place_id']);
                                 echo "
                                 <div class='detail_attachment_title'>
@@ -376,6 +375,7 @@ $stmt = mysqli_stmt_init($conn);
                                         </a>
                                     </div>
                                 </div>
+                            if($resultPlaceRef->num_rows > 0) {
                                 <ul class='detail_attachment_list'>
                                 ";
                                 while($rowPlaceRef = $resultPlaceRef->fetch_assoc()) {

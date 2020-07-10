@@ -164,9 +164,8 @@
                                         </div>
                                     </div>
                                 </p>
-                                <p>
+                                <!-- <p>
                                     <div class="createInput">
-                                        <!-- <?php //include "admin_modify_image.php?q=".$q; ?> -->
                                         <div id="create_image_wrap">
                                             <div id="create_image">
                                                 <iframe  class="attach_frame" src="admin_attach_modify_image.php?q=<?=$place_id?>" style="width:100%; max-width:596px; height:240px;"></iframe>
@@ -181,7 +180,6 @@
                                 </p>
                                 <p>
                                     <div class="createInput">
-                                        <?php //include "admin_modify_work.php"; ?>
                                         <div id="create_work_wrap">
                                             <div id="create_work">
                                                 <iframe  class="attach_frame" src="admin_attach_modify_work.php?q=<?=$place_id?>" style="width:100%; max-width:596px; height:900px;"></iframe>
@@ -196,7 +194,6 @@
                                 </p>
                                 <p>
                                     <div class="createInput">
-                                        <?php //include "admin_modify_ref.php"; ?>
                                         <div id="create_ref_wrap">
                                             <div id="create_ref">
                                                 <iframe  class="attach_frame" src="admin_attach_modify_ref.php?q=<?=$place_id?>" style="width:100%; max-width:596px; height:150px;"></iframe>
@@ -208,7 +205,7 @@
                                             <div id="attached_modify_ref_list"></div>
                                         </div>
                                     </div>
-                                </p>
+                                </p> -->
             <p>
                 <input type="hidden" name="id" value="<?=$q?>">
                 <div class="submit_box">
