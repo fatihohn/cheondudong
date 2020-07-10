@@ -230,7 +230,7 @@ $stmt = mysqli_stmt_init($conn);
                                             <div class='img_title en ddobag'>
                                                 Images
                                             </div>
-                                            <div id='add_image' class='menu_add'>
+                                            <div id='add_image' class='menu_add' title='이미지 추가'>
                                                 <a id='";
                                         echo $place_id;
                                         echo "' onclick='imgAdd(this.id);'>
@@ -300,7 +300,7 @@ $stmt = mysqli_stmt_init($conn);
                                     <div class='work_title en ddobag'>
                                         Works
                                     </div>
-                                    <div id='add_work' class='menu_add'>
+                                    <div id='add_work' class='menu_add' title='관련작품 추가'>
                                         <a id='";
                                 echo $place_id;
                                 echo "' onclick='workAdd(this.id);'>
@@ -369,7 +369,7 @@ $stmt = mysqli_stmt_init($conn);
                                     <div class='ref_title en ddobag'>
                                         References
                                     </div>
-                                    <div id='add_ref' class='menu_add'>
+                                    <div id='add_ref' class='menu_add' title='참고자료 추가'>
                                         <a id='".$place_id."' onclick='refAdd(this.id);'>
                                             ＋
                                         </a>
