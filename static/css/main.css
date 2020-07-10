@@ -30,6 +30,7 @@
     /* width: 100px; */
     margin: 0 auto;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 #front_wrap #front_box #front_title .front_img {
