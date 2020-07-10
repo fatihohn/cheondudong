@@ -35,7 +35,8 @@ VALUES(
             }
             else{
                 // echo("<script>alert('참고자료가 추가되었습니다.');location.href='admin_attach_ref.php';</script>");
-                echo("<script>alert('참고자료가 추가되었습니다.');history.back();</script>");
+                // echo("<script>alert('참고자료가 추가되었습니다.');history.back();</script>");
+                echo("<script>alert('참고자료가 추가되었습니다.');window.close();</script>");
             }
                     
                     

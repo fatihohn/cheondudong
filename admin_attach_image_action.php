@@ -44,7 +44,8 @@ VALUES(
             }
             else{
                 // echo("<script>alert('이미지가 추가되었습니다.');location.href='admin_attach_image.php';</script>");
-                echo("<script>alert('이미지가 추가되었습니다.');history.back();</script>");
+                // echo("<script>alert('이미지가 추가되었습니다.');history.back();</script>");
+                echo("<script>alert('이미지가 추가되었습니다.');window.close();</script>");
             }
                     
                     
