@@ -12,7 +12,7 @@
     font-family: "경기천년제목";
     src: url('../../fonts/Title_Light.otf'), url('../../fonts/경기천년바탕_Regular.ttf');
 }
-
+*/
 @font-face {
     font-family: "경기천년바탕";
     src: url('../../fonts/Batang_Regular.otf'), url('../../fonts/Batang_Regular.eot'), url('../../fonts/Batang_Regular.woff'), url('../../fonts/경기천년바탕_Regular.ttf');
@@ -24,7 +24,7 @@
     font-weight: normal;
     font-style: normal;
 }
-
+/*
 @font-face {
     font-family: "경기천년볼드";
     src: url('../../fonts/Batang_Bold.otf'), url('../../fonts/Batang_Bold.eot'), url('../../fonts/Batang_Bold.woff'), url('../../fonts/경기천년바탕_Bold.ttf');
@@ -53,7 +53,7 @@
 }
 
 .gg-batang {
-    font-family: "경기천년바탕", sans-serif;
+    font-family: "GyeonggiBatang", "경기천년바탕", sans-serif;
 }
 
 .ddobag {
