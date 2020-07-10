@@ -32,6 +32,8 @@ $detailMarker = $rowPlaceDetail['mkimg_dir'];
 $detailAddress = $rowPlaceDetail['ko_address'];
 $detailAddress_en = $rowPlaceDetail['en_address'];
 $detailCoord = $rowPlaceDetail['lat'].", ".$rowPlaceDetail['lng'];
+$detailCoordLat = $rowPlaceDetail['lat'];
+$detailCoordLng = $rowPlaceDetail['lng'];
 $detailCont = $rowPlaceDetail['ko_cont'];
 $detailCont_en = $rowPlaceDetail['en_cont'];
 
@@ -133,7 +135,7 @@ $stmt = mysqli_stmt_init($conn);
                                 <?php echo $detailSubTitle_en;?>
                             </h4>
                         </div>
-                        <div id="detail_point" onclick="showExMap(<?php echo $detailAddress; ?>, <?php echo strval(explode(', ', $detailCoord)); ?>)">
+                        <div id="detail_point" onclick="showExMap(<?php echo $detailAddress; ?>, <?php echo $detailCoordLat; ?>, <?php echo $detailCoordLat; ?>)">
                             
                             <div class="detail_address ko">
                                 <?php echo $detailAddress;?>
