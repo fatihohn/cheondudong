@@ -135,7 +135,6 @@ $stmt = mysqli_stmt_init($conn);
                                 <?php echo $detailSubTitle_en;?>
                             </h4>
                         </div>
-                        <!-- <div id="detail_point" onclick="showExMap(<?php echo $detailAddress; ?>, <?php echo //strval($detailCoordLat); ?>, <?php echo //strval($detailCoordLng); ?>)"> -->
                         <div id="detail_point" onclick="showExMap(<?php echo $detailAddress; ?>)">
                             
                             <div class="detail_address ko">
