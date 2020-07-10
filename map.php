@@ -219,7 +219,7 @@
                 '<h4>' + 
                     marker.properties.sub_title_ko + 
                 '</h4>'+
-                '<p>' + 
+                '<p class="gg-batang">' + 
                     marker.properties.memo_ko + 
                 '</p><p class="right_p">...더보기</p>'+
             '</div>';
@@ -231,7 +231,7 @@
                 '<h4>' + 
                     marker.properties.sub_title_en + 
                 '</h4>'+
-                '<p>' + 
+                '<p class="gg-batang">' + 
                     marker.properties.memo_en + 
                 '</p><p class="right_p">...more</p>'+
             '</div>';

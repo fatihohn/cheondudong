@@ -171,7 +171,7 @@ $stmt = mysqli_stmt_init($conn);
                             if($sessLang == "ko") {
                                 ?>
                                 <div id="detail_memo">
-                                    <div class="ddobag ko">
+                                    <div class="gg-batang ko">
                                         <?php echo $detailMemo;?>
                                     </div>
                                     
@@ -182,7 +182,7 @@ $stmt = mysqli_stmt_init($conn);
                             if($seseLang == "en") {
                                 ?>
                                 <div id="detail_memo">
-                                    <div class="ddobag en">
+                                    <div class="gg-batang en">
                                         <?php echo $detailMemo_en;?>
                                     </div>
                                 </div>
@@ -192,7 +192,7 @@ $stmt = mysqli_stmt_init($conn);
                             if($sessLang == "ko") {
                                 ?>
                                 <div id="detail_memo">
-                                    <div class="ddobag ko">
+                                    <div class="gg-batang ko">
                                         <?php echo $detailMemo;?>
                                     </div>
                                     
@@ -202,7 +202,7 @@ $stmt = mysqli_stmt_init($conn);
                                 ?>
                                 <div id="detail_memo">
                                 
-                                    <div class="ddobag en">
+                                    <div class="gg-batang en">
                                         <?php echo $detailMemo_en;?>
                                     </div>
                                 </div>
