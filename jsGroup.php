@@ -571,7 +571,7 @@
 
     // function showExMap(address, coordLat, coordLng) {
     function showExMap(address) {
-        var addressArr = address.split(" ");
+        var addressArr = address.split("_");
         var province = addressArr[0];
         var city = addressArr[1];
         var dongOrRoad = addressArr[2];
