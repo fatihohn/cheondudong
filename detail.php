@@ -137,7 +137,7 @@ $stmt = mysqli_stmt_init($conn);
                             </h4>
                         </div>
                         <!-- <div id="detail_point" onclick="showExMap('<?=$detailAddressArr[0]?>'+'_'+'<?=$detailAddressArr[1]?>'+'_'+'<?=$detailAddressArr[2]?>'+'_'+'<?=$detailAddressArr[3]?>')"> -->
-                        <div id="detail_point" title="길찾기" onclick="showExMap('<?=$detailAddressArr[0].$detailAddressArr[1].$detailAddressArr[2].$detailAddressArr[3]?>')">
+                        <div id="detail_point" title="길찾기" onclick="showExMap('<?=$detailAddressArr[0].$detailAddressArr[1].$detailAddressArr[2].$detailAddressArr[3].'_'.$detailCoordLat.'_'.$detailCoordLng?>')">
                             
                             <div class="detail_address ko">
                                 <?php echo $detailAddress;?>

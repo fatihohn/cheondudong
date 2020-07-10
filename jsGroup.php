@@ -571,7 +571,10 @@
 
     // function showExMap(address, coordLat, coordLng) {
     function showExMap(address) {
-        // var addressArr = address.split("_");
+        var addressArr = address.split("_");
+        var addressKo = addressArr[0];
+        var addressLat = addressArr[1];
+        var addressLng = addressArr[2];
         // var province = addressArr[0];
         // var city = addressArr[1];
         // var dongOrRoad = addressArr[2];
@@ -586,8 +589,8 @@
         // var placeLng = coordLng;
 
         // var naverMapURL = "https://map.naver.com/v5/search/" + province + "%20" + city + "%20" + dongOrRoad + "%20" + addressNumber + "/";
-        var naverMapURL = "https://map.naver.com/v5/search/" + address;
-        var kakaoMapURL = "https://map.kakao.com/link/map/" + address;
+        var naverMapURL = "https://map.naver.com/v5/search/" + addressKo;
+        var kakaoMapURL = "https://map.kakao.com/link/map/" + addressLat + "," + addressLng;
         // var googleMapURL = "https://www.google.com/maps/place/" + placeLat + "," + placeLng;
         
         // window.open(naverMapURL, "exNaverMap", "width=1200, height=800");
