@@ -104,6 +104,7 @@
 #detail_wrap #detail_box #detail_marker img {
     max-width: 340px;
     height: auto;
+    max-height: 340px;
 }
 
 #detail_wrap #detail_box #detail_title,
