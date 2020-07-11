@@ -87,15 +87,16 @@ type="text/css"
                                     <div class="createInput">
                                     <label class="createGrid1">마커 사이즈 구분</label>
                                     <select class="createGrid2" name="mkimg_size"  required>
-                                        <option value="miniCube">1:1|30*30px </option>
-                                        <option value="smallCube">1:1|60*60px </option>
-                                        <option value="middleCube">1:1|80*80px</option>
-                                        <option value="smallHori">1.6:1|80*50px</option>
-                                        <option value="middleHori">1.6:1|108*60px</option>
-                                        <option value="bigHori">1.6:1|160*100px</option>
-                                        <option value="smallPano">2:1|80*40px</option>
-                                        <option value="middlePano">2:1|120*60px</option>
-                                        <option value="longPano">2.7:1|160*60px</option>
+                                        <option class="mkimg_size_slct" value="miniCube">1:1|30*30px </option>
+                                        <option class="mkimg_size_slct" value="smallCube">1:1|60*60px </option>
+                                        <option class="mkimg_size_slct" value="middleCube">1:1|80*80px</option>
+                                        <option class="mkimg_size_slct" value="smallHori">1.6:1|80*50px</option>
+                                        <option class="mkimg_size_slct" value="middleHori">1.6:1|108*60px</option>
+                                        <option class="mkimg_size_slct" value="bigHori">1.6:1|160*100px</option>
+                                        <option class="mkimg_size_slct" value="smallPano">2:1|80*40px</option>
+                                        <option class="mkimg_size_slct" value="middlePano">2:1|120*60px</option>
+                                        <option class="mkimg_size_slct" value="longPano">2.7:1|160*60px</option>
+                                        <option class="mkimg_size_slct" value="longVerti">1:3|60*180px</option>
                                     </select>
                                     </div>
                                 </p>

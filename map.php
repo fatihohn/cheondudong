@@ -436,6 +436,17 @@ trackUserLocation: true
                 longPanoAll[lp].style.backgroundRepeat = "no-repeat";
                 longPanoAll[lp].style.cursor = "pointer";
             }
+            //****3:1****//
+            let longVertiAll = document.querySelectorAll(".longVerti");
+            let lv;
+            for(lv=0; lv < longVertiAll.length; lv++) {
+                longVertiAll[lv].style.width = "60px";
+                // longVertiAll[lv].style.height = "calc(60px + 35px)";
+                longVertiAll[lv].style.height = "180px";
+                longVertiAll[lv].style.backgroundSize = "contain";
+                longVertiAll[lv].style.backgroundRepeat = "no-repeat";
+                longVertiAll[lv].style.cursor = "pointer";
+            }
         } else if (zoomStatus < zoomLow) {
             //****1:1****//
             let miniCubeAll = document.querySelectorAll(".miniCube");
@@ -531,7 +542,17 @@ trackUserLocation: true
                 longPanoAll[lp].style.backgroundRepeat = "no-repeat";
                 longPanoAll[lp].style.cursor = "pointer";
             }
-
+            //****3:1****//
+            let longVertiAll = document.querySelectorAll(".longVerti");
+            let lv;
+            for(lv=0; lv < longVertiAll.length; lv++) {
+                longVertiAll[lv].style.width = "25px";
+                // longVertiAll[lv].style.height = "calc(60px + 35px)";
+                longVertiAll[lv].style.height = "75px";
+                longVertiAll[lv].style.backgroundSize = "contain";
+                longVertiAll[lv].style.backgroundRepeat = "no-repeat";
+                longVertiAll[lv].style.cursor = "pointer";
+            }
         } else {
             //****1:1****//
             let miniCubeAll = document.querySelectorAll(".miniCube");
@@ -626,6 +647,17 @@ trackUserLocation: true
                 longPanoAll[lp].style.backgroundSize = "contain";
                 longPanoAll[lp].style.backgroundRepeat = "no-repeat";
                 longPanoAll[lp].style.cursor = "pointer";
+            }
+            //****3:1****//
+            let longVertiAll = document.querySelectorAll(".longVerti");
+            let lv;
+            for(lv=0; lv < longVertiAll.length; lv++) {
+                longVertiAll[lv].style.width = "80px";
+                // longVertiAll[lv].style.height = "calc(60px + 35px)";
+                longVertiAll[lv].style.height = "240px";
+                longVertiAll[lv].style.backgroundSize = "contain";
+                longVertiAll[lv].style.backgroundRepeat = "no-repeat";
+                longVertiAll[lv].style.cursor = "pointer";
             }
         }
     }

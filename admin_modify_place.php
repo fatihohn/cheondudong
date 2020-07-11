@@ -110,6 +110,7 @@ type="text/css"
                                         <option class="mkimg_size_slct" value="smallPano">2:1|80*40px</option>
                                         <option class="mkimg_size_slct" value="middlePano">2:1|120*60px</option>
                                         <option class="mkimg_size_slct" value="longPano">2.7:1|160*60px</option>
+                                        <option class="mkimg_size_slct" value="longVerti">1:3|60*180px</option>
                                     </select>
                                     </div>
                                 </p>
