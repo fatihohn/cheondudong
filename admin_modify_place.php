@@ -50,6 +50,7 @@ type="text/css"
                 // $author = $rows['author'];
                 $place_id = $rows['place_id'];
                 $username = $rows['username'];
+                $category = $rows['category'];
                 $mkimg = $rows['mkimg'];
                 $mkimg_dir = $rows['mkimg_dir'];
                 $mkimg_size = $rows['mkimg_size'];
@@ -381,6 +382,17 @@ function mkSizeSet() {
     }
 }
 mkSizeSet();
+function categorySet() {
+    let category = document.querySelectorAll(".category_slct");
+    let categoryVal = "<?=$category?>";
+    let ct;
+    for(ct=0; ct < category.length; ct++) {
+        if(category[ct].value == categoryVal) {
+            category[ct].selected = true;
+        }
+    }
+}
+categorySet();
 </script>
 
 
