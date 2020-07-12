@@ -136,7 +136,6 @@ $stmt = mysqli_stmt_init($conn);
                                 <?php echo $detailSubTitle_en;?>
                             </h4>
                         </div>
-                        <!-- <div id="detail_point" onclick="showExMap('<?=$detailAddressArr[0]?>'+'_'+'<?=$detailAddressArr[1]?>'+'_'+'<?=$detailAddressArr[2]?>'+'_'+'<?=$detailAddressArr[3]?>')"> -->
                         <div id="detail_point" title="길찾기" onclick="showExMap('<?=$detailAddressArr[0].$detailAddressArr[1].$detailAddressArr[2].$detailAddressArr[3].'_'.$detailCoordLat.'_'.$detailCoordLng?>')">
                             
                             <div class="detail_address ko">
@@ -148,9 +147,7 @@ $stmt = mysqli_stmt_init($conn);
                             <div class="detail_coord">
                                 <?php echo $detailCoord;?>
                             </div>
-                            <!-- <div class="detail_coord en">
-                                <?php //echo $detailCoord;?>
-                            </div> -->
+                            
                         </div>
                         <?php
                         $sessLang = $_SESSION['language'];

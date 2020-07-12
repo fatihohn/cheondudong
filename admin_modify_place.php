@@ -92,6 +92,21 @@ type="text/css"
                                 </p>
                                 <p>
                                     <div class="createInput">
+                                    <label class="createGrid1">카테고리</label>
+                                    <select class="createGrid2" name="category"  required>
+                                        <option class="category_slct" value="history">역사적 장소</option>
+                                        <option class="category_slct" value="village">마을</option>
+                                        <option class="category_slct" value="camp">군부대</option>
+                                        <option class="category_slct" value="market">시장</option>
+                                        <option class="category_slct" value="theater">극장</option>
+                                        <option class="category_slct" value="museum">박물관</option>
+                                        <option class="category_slct" value="infra">시설물</option>
+                                        <option class="category_slct" value="nature">자연물</option>
+                                    </select>
+                                    </div>
+                                </p>
+                                <p>
+                                    <div class="createInput">
                                         <label class="createGrid1">지도 표시 마커</label>
                                         <input class="createGrid2" type="file" name="img" required />
                                         <?=$mkimg?>

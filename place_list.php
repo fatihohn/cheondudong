@@ -8,7 +8,8 @@ if ($conn->connect_error) {
 // $resultPlace = $conn->query($sqlPlace) or die($conn->error);
 
 
-$sqlPlace = "SELECT * FROM places ORDER BY ko_title ASC";
+// $sqlPlace = "SELECT * FROM places ORDER BY ko_title ASC";
+$sqlPlace = "SELECT * FROM places ORDER BY category ASC";
 // $resultPlace = $conn->query($sqlPlace) or die($conn->error);
 
 $stmt = mysqli_stmt_init($conn);

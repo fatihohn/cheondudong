@@ -10,6 +10,9 @@ $place_id = intval($_POST['place_id']);
 $username = $_POST['username'];
 $username = mysqli_real_escape_string($conn, $username);
 
+$category = $_POST['category'];
+$category = mysqli_real_escape_string($conn, $category);
+
 $mkimg_size = $_POST['mkimg_size'];
 $mkimg_size = mysqli_real_escape_string($conn, $mkimg_size);
 
@@ -62,6 +65,7 @@ $sql =
 "UPDATE places SET 
         `username`='$username', 
         `mkimg_size`='$mkimg_size', 
+        `category`='$category', 
         `ko_title`='$ko_title', 
         `en_title`='$en_title', 
         `ko_sub_title`='$ko_sub_title', 
@@ -86,6 +90,7 @@ if($_FILES['img']['size']!==0) {
         $sql0 = 
         "UPDATE places SET 
         `username`='$username', 
+        `category`='$category', 
         `mkimg_size`='$mkimg_size', 
         `ko_title`='$ko_title', 
         `en_title`='$en_title', 
@@ -109,6 +114,7 @@ if($_FILES['img']['size']!==0) {
         $sql1 = 
         "UPDATE places SET 
         `username`='$username', 
+        `category`='$category', 
         `mkimg_size`='$mkimg_size', 
         `ko_title`='$ko_title', 
         `en_title`='$en_title', 

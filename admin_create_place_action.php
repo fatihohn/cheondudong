@@ -15,6 +15,9 @@ include 'cdd_db_conn.php';
 $username = $_POST['username'];
 $username = mysqli_real_escape_string($conn, $username);
 
+$category = $_POST['category'];
+$category = mysqli_real_escape_string($conn, $category);
+
 $mkimg_size = $_POST['mkimg_size'];
 $mkimg_size = mysqli_real_escape_string($conn, $mkimg_size);
 
@@ -61,10 +64,11 @@ $mkimg = $uploadimg['img'];
                 
 $sql = "
 INSERT INTO places
-        (place_id, username, mkimg, mkimg_dir, mkimg_size, ko_title, en_title, ko_sub_title, en_sub_title, ko_memo, en_memo, ko_address, en_address, lat, lng, ko_cont, en_cont, created)
+        (place_id, username, category, mkimg, mkimg_dir, mkimg_size, ko_title, en_title, ko_sub_title, en_sub_title, ko_memo, en_memo, ko_address, en_address, lat, lng, ko_cont, en_cont, created)
     VALUES(
             '{$place_id}',
             '{$username}',
+            '{$category}',
             '{$mkimg}$filename',
             '{$mkimg}$target_file',
             '{$mkimg_size}',
