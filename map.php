@@ -138,6 +138,9 @@
     el.style.backgroundRepeat = 'no-repeat';
     el.style.width = marker.properties.iconSize[0] + 'px';
     el.style.height = marker.properties.iconSize[1] + 'px';
+    // el.style.filter = 'greyscale(1.0)';
+    el.style.backgroundColor = 'red';
+    el.style.mixBlendMode = 'multiply';
 
     // el.onmouseover = function() {
     //     el.style.width = marker.properties.iconSize[0] * 1.2 + 'px';
