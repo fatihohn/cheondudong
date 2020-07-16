@@ -363,7 +363,7 @@ trackUserLocation: true
                 miniCubeAll[mnc].style.backgroundSize = "contain";
                 miniCubeAll[mnc].style.backgroundRepeat = "no-repeat";
                 miniCubeAll[mnc].style.cursor = "pointer";
-                miniCubeAll[mnc].style.transition = "0.1s";
+                miniCubeAll[mnc].style.transition = "0.05s";
                 miniCubeAll[mnc].onmouseover = function() {
                     this.style.width = 30*1.2 + "px";
                     this.style.height = 30*1.2 + "px";
@@ -382,7 +382,7 @@ trackUserLocation: true
                 smallCubeAll[sc].style.backgroundSize = "contain";
                 smallCubeAll[sc].style.backgroundRepeat = "no-repeat";
                 smallCubeAll[sc].style.cursor = "pointer";
-                smallCubeAll[sc].style.transition = "0.1s";
+                smallCubeAll[sc].style.transition = "0.05s";
                 smallCubeAll[sc].onmouseover = function() {
                     this.style.width = 60*1.2 + "px";
                     this.style.height = 60*1.2 + "px";
@@ -401,7 +401,7 @@ trackUserLocation: true
                 middleCubeAll[mc].style.backgroundSize = "contain";
                 middleCubeAll[mc].style.backgroundRepeat = "no-repeat";
                 middleCubeAll[mc].style.cursor = "pointer";
-                middleCubeAll[mc].style.transition = "0.1s";
+                middleCubeAll[mc].style.transition = "0.05s";
                 middleCubeAll[mc].onmouseover = function() {
                     this.style.width = 80*1.2 + "px";
                     this.style.height = 80*1.2 + "px";
@@ -421,7 +421,7 @@ trackUserLocation: true
                 smallHoriAll[sh].style.backgroundSize = "contain";
                 smallHoriAll[sh].style.backgroundRepeat = "no-repeat";
                 smallHoriAll[sh].style.cursor = "pointer";
-                smallHoriAll[sh].style.transition = "0.1s";
+                smallHoriAll[sh].style.transition = "0.05s";
                 smallHoriAll[sh].onmouseover = function() {
                     this.style.width = 80*1.2 + "px";
                     this.style.height = 50*1.2 + "px";
@@ -440,7 +440,7 @@ trackUserLocation: true
                 middleHoriAll[mh].style.backgroundSize = "contain";
                 middleHoriAll[mh].style.backgroundRepeat = "no-repeat";
                 middleHoriAll[mh].style.cursor = "pointer";
-                middleHoriAll[mh].style.transition = "0.1s";
+                middleHoriAll[mh].style.transition = "0.05s";
                 middleHoriAll[mh].onmouseover = function() {
                     this.style.width = 108*1.2 + "px";
                     this.style.height = 60*1.2 + "px";
@@ -459,7 +459,7 @@ trackUserLocation: true
                 bigHoriAll[bh].style.backgroundSize = "contain";
                 bigHoriAll[bh].style.backgroundRepeat = "no-repeat";
                 bigHoriAll[bh].style.cursor = "pointer";
-                bigHoriAll[bh].style.transition = "0.1s";
+                bigHoriAll[bh].style.transition = "0.05s";
                 bigHoriAll[bh].onmouseover = function() {
                     this.style.width = 160*1.2 + "px";
                     this.style.height = 100*1.2 + "px";
@@ -479,7 +479,7 @@ trackUserLocation: true
                 smallPanoAll[sp].style.backgroundSize = "contain";
                 smallPanoAll[sp].style.backgroundRepeat = "no-repeat";
                 smallPanoAll[sp].style.cursor = "pointer";
-                smallPanoAll[sp].style.transition = "0.1s";
+                smallPanoAll[sp].style.transition = "0.05s";
                 smallPanoAll[sp].onmouseover = function() {
                     this.style.width = 80*1.2 + "px";
                     this.style.height = 40*1.2 + "px";
@@ -498,7 +498,7 @@ trackUserLocation: true
                 middlePanoAll[mp].style.backgroundSize = "contain";
                 middlePanoAll[mp].style.backgroundRepeat = "no-repeat";
                 middlePanoAll[mp].style.cursor = "pointer";
-                middlePanoAll[mp].style.transition = "0.1s";
+                middlePanoAll[mp].style.transition = "0.05s";
                 middlePanoAll[mp].onmouseover = function() {
                     this.style.width = 120*1.2 + "px";
                     this.style.height = 60*1.2 + "px";
@@ -518,7 +518,7 @@ trackUserLocation: true
                 longPanoAll[lp].style.backgroundSize = "contain";
                 longPanoAll[lp].style.backgroundRepeat = "no-repeat";
                 longPanoAll[lp].style.cursor = "pointer";
-                longPanoAll[lp].style.transition = "0.1s";
+                longPanoAll[lp].style.transition = "0.05s";
                 longPanoAll[lp].onmouseover = function() {
                     this.style.width = 160*1.2 + "px";
                     this.style.height = 60*1.2 + "px";
@@ -538,7 +538,7 @@ trackUserLocation: true
                 longVertiAll[lv].style.backgroundSize = "contain";
                 longVertiAll[lv].style.backgroundRepeat = "no-repeat";
                 longVertiAll[lv].style.cursor = "pointer";
-                longVertiAll[lv].style.transition = "0.1s";
+                longVertiAll[lv].style.transition = "0.05s";
                 longVertiAll[lv].onmouseover = function() {
                     this.style.width = 60*1.2 + "px";
                     this.style.height = 180*1.2 + "px";
@@ -559,7 +559,7 @@ trackUserLocation: true
                 miniCubeAll[mnc].style.backgroundSize = "contain";
                 miniCubeAll[mnc].style.backgroundRepeat = "no-repeat";
                 miniCubeAll[mnc].style.cursor = "pointer";
-                miniCubeAll[mnc].style.transition = "0.1s";
+                miniCubeAll[mnc].style.transition = "0.05s";
                 miniCubeAll[mnc].onmouseover = function() {
                     this.style.width = 30*1.2 + "px";
                     this.style.height = 30*1.2 + "px";
@@ -578,7 +578,7 @@ trackUserLocation: true
                 smallCubeAll[sc].style.backgroundSize = "contain";
                 smallCubeAll[sc].style.backgroundRepeat = "no-repeat";
                 smallCubeAll[sc].style.cursor = "pointer";
-                smallCubeAll[sc].style.transition = "0.1s";
+                smallCubeAll[sc].style.transition = "0.05s";
                 smallCubeAll[sc].onmouseover = function() {
                     this.style.width = 30*1.2 + "px";
                     this.style.height = 30*1.2 + "px";
@@ -597,7 +597,7 @@ trackUserLocation: true
                 middleCubeAll[mc].style.backgroundSize = "contain";
                 middleCubeAll[mc].style.backgroundRepeat = "no-repeat";
                 middleCubeAll[mc].style.cursor = "pointer";
-                middleCubeAll[mc].style.transition = "0.1s";
+                middleCubeAll[mc].style.transition = "0.05s";
                 middleCubeAll[mc].onmouseover = function() {
                     this.style.width = 35*1.2 + "px";
                     this.style.height = 35*1.2 + "px";
@@ -617,7 +617,7 @@ trackUserLocation: true
                 smallHoriAll[sh].style.backgroundSize = "contain";
                 smallHoriAll[sh].style.backgroundRepeat = "no-repeat";
                 smallHoriAll[sh].style.cursor = "pointer";
-                smallHoriAll[sh].style.transition = "0.1s";
+                smallHoriAll[sh].style.transition = "0.05s";
                 smallHoriAll[sh].onmouseover = function() {
                     this.style.width = 40*1.2 + "px";
                     this.style.height = 25*1.2 + "px";
@@ -636,7 +636,7 @@ trackUserLocation: true
                 middleHoriAll[mh].style.backgroundSize = "contain";
                 middleHoriAll[mh].style.backgroundRepeat = "no-repeat";
                 middleHoriAll[mh].style.cursor = "pointer";
-                middleHoriAll[mh].style.transition = "0.1s";
+                middleHoriAll[mh].style.transition = "0.05s";
                 middleHoriAll[mh].onmouseover = function() {
                     this.style.width = 48*1.2 + "px";
                     this.style.height = 30*1.2 + "px";
@@ -655,7 +655,7 @@ trackUserLocation: true
                 bigHoriAll[bh].style.backgroundSize = "contain";
                 bigHoriAll[bh].style.backgroundRepeat = "no-repeat";
                 bigHoriAll[bh].style.cursor = "pointer";
-                bigHoriAll[bh].style.transition = "0.1s";
+                bigHoriAll[bh].style.transition = "0.05s";
                 bigHoriAll[bh].onmouseover = function() {
                     this.style.width = 56*1.2 + "px";
                     this.style.height = 35*1.2 + "px";
@@ -675,7 +675,7 @@ trackUserLocation: true
                 smallPanoAll[sp].style.backgroundSize = "contain";
                 smallPanoAll[sp].style.backgroundRepeat = "no-repeat";
                 smallPanoAll[sp].style.cursor = "pointer";
-                smallPanoAll[sp].style.transition = "0.1s";
+                smallPanoAll[sp].style.transition = "0.05s";
                 smallPanoAll[sp].onmouseover = function() {
                     this.style.width = 40*1.2 + "px";
                     this.style.height = 20*1.2 + "px";
@@ -694,7 +694,7 @@ trackUserLocation: true
                 middlePanoAll[mp].style.backgroundSize = "contain";
                 middlePanoAll[mp].style.backgroundRepeat = "no-repeat";
                 middlePanoAll[mp].style.cursor = "pointer";
-                middlePanoAll[mp].style.transition = "0.1s";
+                middlePanoAll[mp].style.transition = "0.05s";
                 middlePanoAll[mp].onmouseover = function() {
                     this.style.width = 50*1.2 + "px";
                     this.style.height = 25*1.2 + "px";
@@ -714,7 +714,7 @@ trackUserLocation: true
                 longPanoAll[lp].style.backgroundSize = "contain";
                 longPanoAll[lp].style.backgroundRepeat = "no-repeat";
                 longPanoAll[lp].style.cursor = "pointer";
-                longPanoAll[lp].style.transition = "0.1s";
+                longPanoAll[lp].style.transition = "0.05s";
                 longPanoAll[lp].onmouseover = function() {
                     this.style.width = 54*1.2 + "px";
                     this.style.height = 20*1.2 + "px";
@@ -734,7 +734,7 @@ trackUserLocation: true
                 longVertiAll[lv].style.backgroundSize = "contain";
                 longVertiAll[lv].style.backgroundRepeat = "no-repeat";
                 longVertiAll[lv].style.cursor = "pointer";
-                longVertiAll[lv].style.transition = "0.1s";
+                longVertiAll[lv].style.transition = "0.05s";
                 longVertiAll[lv].onmouseover = function() {
                     this.style.width = 25*1.2 + "px";
                     this.style.height = 75*1.2 + "px";
@@ -755,7 +755,7 @@ trackUserLocation: true
                 miniCubeAll[mnc].style.backgroundSize = "contain";
                 miniCubeAll[mnc].style.backgroundRepeat = "no-repeat";
                 miniCubeAll[mnc].style.cursor = "pointer";
-                miniCubeAll[mnc].style.transition = "0.1s";
+                miniCubeAll[mnc].style.transition = "0.05s";
                 miniCubeAll[mnc].onmouseover = function() {
                     this.style.width = 30*1.2 + "px";
                     this.style.height = 30*1.2 + "px";
@@ -774,7 +774,7 @@ trackUserLocation: true
                 smallCubeAll[sc].style.backgroundSize = "contain";
                 smallCubeAll[sc].style.backgroundRepeat = "no-repeat";
                 smallCubeAll[sc].style.cursor = "pointer";
-                smallCubeAll[sc].style.transition = "0.1s";
+                smallCubeAll[sc].style.transition = "0.05s";
                 smallCubeAll[sc].onmouseover = function() {
                     this.style.width = 90*1.2 + "px";
                     this.style.height = 90*1.2 + "px";
@@ -793,7 +793,7 @@ trackUserLocation: true
                 middleCubeAll[mc].style.backgroundSize = "contain";
                 middleCubeAll[mc].style.backgroundRepeat = "no-repeat";
                 middleCubeAll[mc].style.cursor = "pointer";
-                middleCubeAll[mc].style.transition = "0.1s";
+                middleCubeAll[mc].style.transition = "0.05s";
                 middleCubeAll[mc].onmouseover = function() {
                     this.style.width = 120*1.2 + "px";
                     this.style.height = 120*1.2 + "px";
@@ -813,7 +813,7 @@ trackUserLocation: true
                 smallHoriAll[sh].style.backgroundSize = "contain";
                 smallHoriAll[sh].style.backgroundRepeat = "no-repeat";
                 smallHoriAll[sh].style.cursor = "pointer";
-                smallHoriAll[sh].style.transition = "0.1s";
+                smallHoriAll[sh].style.transition = "0.05s";
                 smallHoriAll[sh].onmouseover = function() {
                     this.style.width = 120*1.2 + "px";
                     this.style.height = 75*1.2 + "px";
@@ -832,7 +832,7 @@ trackUserLocation: true
                 middleHoriAll[mh].style.backgroundSize = "contain";
                 middleHoriAll[mh].style.backgroundRepeat = "no-repeat";
                 middleHoriAll[mh].style.cursor = "pointer";
-                middleHoriAll[mh].style.transition = "0.1s";
+                middleHoriAll[mh].style.transition = "0.05s";
                 middleHoriAll[mh].onmouseover = function() {
                     this.style.width = 160*1.2 + "px";
                     this.style.height = 100*1.2 + "px";
@@ -851,7 +851,7 @@ trackUserLocation: true
                 bigHoriAll[bh].style.backgroundSize = "contain";
                 bigHoriAll[bh].style.backgroundRepeat = "no-repeat";
                 bigHoriAll[bh].style.cursor = "pointer";
-                bigHoriAll[bh].style.transition = "0.1s";
+                bigHoriAll[bh].style.transition = "0.05s";
                 bigHoriAll[bh].onmouseover = function() {
                     this.style.width = 200*1.2 + "px";
                     this.style.height = 125*1.2 + "px";
@@ -871,7 +871,7 @@ trackUserLocation: true
                 smallPanoAll[sp].style.backgroundSize = "contain";
                 smallPanoAll[sp].style.backgroundRepeat = "no-repeat";
                 smallPanoAll[sp].style.cursor = "pointer";
-                smallPanoAll[sp].style.transition = "0.1s";
+                smallPanoAll[sp].style.transition = "0.05s";
                 smallPanoAll[sp].onmouseover = function() {
                     this.style.width = 120*1.2 + "px";
                     this.style.height = 60*1.2 + "px";
@@ -890,7 +890,7 @@ trackUserLocation: true
                 middlePanoAll[mp].style.backgroundSize = "contain";
                 middlePanoAll[mp].style.backgroundRepeat = "no-repeat";
                 middlePanoAll[mp].style.cursor = "pointer";
-                middlePanoAll[mp].style.transition = "0.1s";
+                middlePanoAll[mp].style.transition = "0.05s";
                 middlePanoAll[mp].onmouseover = function() {
                     this.style.width = 160*1.2 + "px";
                     this.style.height = 80*1.2 + "px";
@@ -910,7 +910,7 @@ trackUserLocation: true
                 longPanoAll[lp].style.backgroundSize = "contain";
                 longPanoAll[lp].style.backgroundRepeat = "no-repeat";
                 longPanoAll[lp].style.cursor = "pointer";
-                longPanoAll[lp].style.transition = "0.1s";
+                longPanoAll[lp].style.transition = "0.05s";
                 longPanoAll[lp].onmouseover = function() {
                     this.style.width = 220*1.2 + "px";
                     this.style.height = 82*1.2 + "px";
@@ -930,7 +930,7 @@ trackUserLocation: true
                 longVertiAll[lv].style.backgroundSize = "contain";
                 longVertiAll[lv].style.backgroundRepeat = "no-repeat";
                 longVertiAll[lv].style.cursor = "pointer";
-                longVertiAll[lv].style.transition = "0.1s";
+                longVertiAll[lv].style.transition = "0.05s";
                 longVertiAll[lv].onmouseover = function() {
                     this.style.width = 80*1.2 + "px";
                     this.style.height = 240*1.2 + "px";
