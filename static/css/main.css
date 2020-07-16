@@ -373,7 +373,15 @@
     border-top-color: rgba(255, 255, 255, 0.6);
 }
 
-#map .marker:hover {
+.marker {
+    transition: transform .1s;
+}
+
+.marker:hover {
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
     transform: scale(1.2);
 }
 
