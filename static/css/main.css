@@ -244,7 +244,7 @@
     padding: 10px 25px 25px 25px;
 }
 
-#detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_cont img{
+#detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_cont img {
     border-radius: 5px;
 }
 
@@ -371,6 +371,10 @@
 
 #map .mapboxgl-popup-tip {
     border-top-color: rgba(255, 255, 255, 0.6);
+}
+
+#map .marker:hover {
+    transform: scale(1.2);
 }
 
 
