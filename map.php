@@ -138,7 +138,9 @@
     el.style.backgroundRepeat = 'no-repeat';
     el.style.width = marker.properties.iconSize[0] + 'px';
     el.style.height = marker.properties.iconSize[1] + 'px';
-    el.style.filter = 'grayscale(1) drop-shadow(0px, 0px, 0px, red)';
+    // el.style.filter = 'grayscale(1) drop-shadow(0px, 0px, 0px, red)';
+    
+    
     // el.style.backgroundColor = 'red';
     // el.style.backgroundBlendMode = 'overlay';
 

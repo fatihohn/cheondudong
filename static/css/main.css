@@ -373,6 +373,10 @@
     border-top-color: rgba(255, 255, 255, 0.6);
 }
 
+.marker {
+    filter: grayscale(1) drop-shadow(0px 0px 0px red) contrast(1.0) brightness(1.2);
+}
+
 
 /****footer****/
 
