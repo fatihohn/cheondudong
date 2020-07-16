@@ -98,6 +98,7 @@ function mapMarkerHover() {
 
     }
 }
+mapMarkerHover();
 
 
 
