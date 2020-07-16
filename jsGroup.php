@@ -80,25 +80,25 @@
     // mapMarkerClick();
 
 
-function mapMarkerHover() {
-    let markerAll = document.querySelectorAll(".marker");
-    let mka;
-    for(mka=0; mka < markerAll.length; mka++) {
-        markerAll[mka].style.transition = '0.1s';
-        markerAll[mka].onmouseover = function() {
-            markerAll[mka].style.transform = "scale(1.2)";
-            markerAll[mka].style.msTransform = "scale(1.2)";
-            markerAll[mka].style.webkitTransform = "scale(1.2)";
-        };
-        markerAll[mka].onmouseleave = function() {
-            markerAll[mka].style.transform = "scale(1.0)";
-            markerAll[mka].style.msTransform = "scale(1.0)";
-            markerAll[mka].style.webkitTransform = "scale(1.0)";
-        };
+// function mapMarkerHover() {
+//     let markerAll = document.querySelectorAll(".marker");
+//     let mka;
+//     for(mka=0; mka < markerAll.length; mka++) {
+//         markerAll[mka].style.transition = '0.1s';
+//         markerAll[mka].onmouseover = function() {
+//             markerAll[mka].style.transform = "scale(1.2)";
+//             markerAll[mka].style.msTransform = "scale(1.2)";
+//             markerAll[mka].style.webkitTransform = "scale(1.2)";
+//         };
+//         markerAll[mka].onmouseleave = function() {
+//             markerAll[mka].style.transform = "scale(1.0)";
+//             markerAll[mka].style.msTransform = "scale(1.0)";
+//             markerAll[mka].style.webkitTransform = "scale(1.0)";
+//         };
 
-    }
-}
-mapMarkerHover();
+//     }
+// }
+// mapMarkerHover();
 
 
 
