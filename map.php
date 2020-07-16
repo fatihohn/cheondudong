@@ -138,6 +138,17 @@
     el.style.backgroundRepeat = 'no-repeat';
     el.style.width = marker.properties.iconSize[0] + 'px';
     el.style.height = marker.properties.iconSize[1] + 'px';
+    el.style.transition = '0.1s';
+    el.onmouseover = function() {
+        el.style.transform = "scale(1.2)";
+        el.style.msTransform = "scale(1.2)";
+        el.style.webkitTransform = "scale(1.2)";
+    };
+    el.onmouseleave = function() {
+        el.style.transform = "scale(1.0)";
+        el.style.msTransform = "scale(1.0)";
+        el.style.webkitTransform = "scale(1.0)";
+    };
  
 
 //****marker func****//
