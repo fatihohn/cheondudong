@@ -11,18 +11,3 @@ $_SESSION['language']=$language;
     <script>
         location.replace("./home.php");
     </script>
-    <?php
-
-
-?>
-<!-- if(!isset($SESSION['language'])) {
-    echo "session fail";
-    echo var_dump($_SESSION);
-    echo error_log($conn);
-} else {
-    ?>
-    <script>
-        location.replace("./home.php");
-    </script> 
-}
--->

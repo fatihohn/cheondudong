@@ -66,13 +66,13 @@
                 // let mapWrap = document.getElementById("map_wrap");
                 // let footerWrap = document.getElementById("footer_wrap");
                 var headerWrap = document.getElementById("header_wrap");
-                var menuWrap = document.getElementById("menu_wrap");
-                var mapWrap = document.getElementById("map_wrap");
+                // var menuWrap = document.getElementById("menu_wrap");
+                // var mapWrap = document.getElementById("map_wrap");
                 var footerWrap = document.getElementById("footer_wrap");
 
                 headerWrap.style.display = "none";
-                menuWrap.style.display = "none";
-                mapWrap.style.visibility = "hidden";
+                // menuWrap.style.display = "none";
+                // mapWrap.style.visibility = "hidden";
                 footerWrap.style.display = "initial";
             }
             indexInit();
