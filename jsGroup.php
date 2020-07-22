@@ -511,8 +511,8 @@
             location.href = "index.php";
         }
         // document.getElementById("language_en").style.display = "none";
-        // document.getElementById("lang_select").addEventListener("click", showIndex);
-        document.getElementById("lang_select").onclick = showIndex();
+        document.getElementById("lang_select").addEventListener("click", showIndex);
+        // document.getElementById("lang_select").onclick = showIndex();
     }
     langClick();
 
