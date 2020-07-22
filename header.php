@@ -9,12 +9,12 @@ session_start();
         <div id="header_box_area">
             <div id="lang_select" class="header_lang gg-batang">
                 <div id="language_ko" class="ko tooling lang_selector">
-                    <a>
+                    <a href="index.php">
                         English
                     </a>
                 </div>
                 <div id="language_en" class="en tooling lang_selector">
-                    <a>
+                    <a href="index.php">
                         한국어
                     </a>
                 </div>
