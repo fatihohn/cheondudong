@@ -9,10 +9,14 @@ session_start();
         <div id="header_box_area">
             <div id="lang_select" class="header_lang gg-batang">
                 <div id="language_ko" class="ko tooling lang_selector">
-                    English
+                    <a>
+                        English
+                    </a>
                 </div>
                 <div id="language_en" class="en tooling lang_selector">
-                    한국어
+                    <a>
+                        한국어
+                    </a>
                 </div>
             </div>
             <div id="header_title">
