@@ -423,21 +423,39 @@
     }
     menuIntroClick();
 
+    // function menuPlaceClick() {
+
+    //     let menuPlace = document.getElementById("menu_place_btn");
+    //     let placeWrap = document.getElementById("place_list_wrap");
+    //     function showPlace() {
+    //         if(placeWrap) {
+    //             if(placeWrap.style.display == "none") {
+    //                 placeWrap.style.display = "initial";
+    //             } else {
+    //                 placeWrap.style.display = "none";
+    //             }
+    //         }
+    //         placeWrap.style.display = "none";
+    //     }
+    //     if(menuPlace) {
+    //         menuPlace.addEventListener("click", showPlace);
+    //     }
+    // }
+    // menuPlaceClick();
     function menuPlaceClick() {
 
         let menuPlace = document.getElementById("menu_place_btn");
         let placeWrap = document.getElementById("place_list_wrap");
         function showPlace() {
-            if(placeWrap) {
                 if(placeWrap.style.display == "none") {
                     placeWrap.style.display = "initial";
                 } else {
                     placeWrap.style.display = "none";
                 }
-            }
-            placeWrap.style.display = "none";
+            // placeWrap.style.display = "none";
         }
         if(menuPlace) {
+            placeWrap.style.display = "none";
             menuPlace.addEventListener("click", showPlace);
         }
     }
