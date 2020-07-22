@@ -386,12 +386,12 @@ $stmt = mysqli_stmt_init($conn);
         <?php include "jsGroup.php"; ?>
 
         <script>
+                let headerWrap = document.getElementById("header_wrap");
+                // let mapWrap = document.getElementById("map_wrap");
+                let detailWrap = document.getElementById("detail_wrap");
+                let menuWrap = document.getElementById("menu_wrap");
+                let footerWrap = document.getElementById("footer_wrap");
             function detailInit() {
-                var headerWrap = document.getElementById("header_wrap");
-                // var mapWrap = document.getElementById("map_wrap");
-                var detailWrap = document.getElementById("detail_wrap");
-                var menuWrap = document.getElementById("menu_wrap");
-                var footerWrap = document.getElementById("footer_wrap");
 
                 headerWrap.style.display = "initial";
                 detailWrap.style.display = "initial";
