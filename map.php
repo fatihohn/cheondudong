@@ -566,8 +566,8 @@ trackUserLocation: true
                 miniCubeAll[mnc].style.cursor = "pointer";
                 // miniCubeAll[mnc].style.transition = "0.03s";
                 miniCubeAll[mnc].onmouseover = function() {
-                    this.style.width = 30*1.3 + "px";
-                    this.style.height = 30*1.3 + "px";
+                    this.style.width = 30*1.5 + "px";
+                    this.style.height = 30*1.5 + "px";
                 };
                 miniCubeAll[mnc].onmouseleave = function() {
                     this.style.width = 30*1.0 + "px";
@@ -585,8 +585,8 @@ trackUserLocation: true
                 smallCubeAll[sc].style.cursor = "pointer";
                 // smallCubeAll[sc].style.transition = "0.03s";
                 smallCubeAll[sc].onmouseover = function() {
-                    this.style.width = 30*1.3 + "px";
-                    this.style.height = 30*1.3 + "px";
+                    this.style.width = 30*1.5 + "px";
+                    this.style.height = 30*1.5 + "px";
                 };
                 smallCubeAll[sc].onmouseleave = function() {
                     this.style.width = 30*1.0 + "px";
@@ -604,8 +604,8 @@ trackUserLocation: true
                 middleCubeAll[mc].style.cursor = "pointer";
                 // middleCubeAll[mc].style.transition = "0.03s";
                 middleCubeAll[mc].onmouseover = function() {
-                    this.style.width = 35*1.3 + "px";
-                    this.style.height = 35*1.3 + "px";
+                    this.style.width = 35*1.5 + "px";
+                    this.style.height = 35*1.5 + "px";
                 };
                 middleCubeAll[mc].onmouseleave = function() {
                     this.style.width = 35*1.0 + "px";
@@ -624,8 +624,8 @@ trackUserLocation: true
                 smallHoriAll[sh].style.cursor = "pointer";
                 // smallHoriAll[sh].style.transition = "0.03s";
                 smallHoriAll[sh].onmouseover = function() {
-                    this.style.width = 40*1.3 + "px";
-                    this.style.height = 25*1.3 + "px";
+                    this.style.width = 40*1.5 + "px";
+                    this.style.height = 25*1.5 + "px";
                 };
                 smallHoriAll[sh].onmouseleave = function() {
                     this.style.width = 40*1.0 + "px";
@@ -643,8 +643,8 @@ trackUserLocation: true
                 middleHoriAll[mh].style.cursor = "pointer";
                 // middleHoriAll[mh].style.transition = "0.03s";
                 middleHoriAll[mh].onmouseover = function() {
-                    this.style.width = 48*1.3 + "px";
-                    this.style.height = 30*1.3 + "px";
+                    this.style.width = 48*1.5 + "px";
+                    this.style.height = 30*1.5 + "px";
                 };
                 middleHoriAll[mh].onmouseleave = function() {
                     this.style.width = 48*1.0 + "px";
@@ -662,8 +662,8 @@ trackUserLocation: true
                 bigHoriAll[bh].style.cursor = "pointer";
                 // bigHoriAll[bh].style.transition = "0.03s";
                 bigHoriAll[bh].onmouseover = function() {
-                    this.style.width = 56*1.3 + "px";
-                    this.style.height = 35*1.3 + "px";
+                    this.style.width = 56*1.5 + "px";
+                    this.style.height = 35*1.5 + "px";
                 };
                 bigHoriAll[bh].onmouseleave = function() {
                     this.style.width = 56*1.0 + "px";
@@ -682,8 +682,8 @@ trackUserLocation: true
                 smallPanoAll[sp].style.cursor = "pointer";
                 // smallPanoAll[sp].style.transition = "0.03s";
                 smallPanoAll[sp].onmouseover = function() {
-                    this.style.width = 40*1.3 + "px";
-                    this.style.height = 20*1.3 + "px";
+                    this.style.width = 40*1.5 + "px";
+                    this.style.height = 20*1.5 + "px";
                 };
                 smallPanoAll[sp].onmouseleave = function() {
                     this.style.width = 40*1.0 + "px";
@@ -701,8 +701,8 @@ trackUserLocation: true
                 middlePanoAll[mp].style.cursor = "pointer";
                 // middlePanoAll[mp].style.transition = "0.03s";
                 middlePanoAll[mp].onmouseover = function() {
-                    this.style.width = 50*1.3 + "px";
-                    this.style.height = 25*1.3 + "px";
+                    this.style.width = 50*1.5 + "px";
+                    this.style.height = 25*1.5 + "px";
                 };
                 middlePanoAll[mp].onmouseleave = function() {
                     this.style.width = 50*1.0 + "px";
@@ -721,8 +721,8 @@ trackUserLocation: true
                 longPanoAll[lp].style.cursor = "pointer";
                 // longPanoAll[lp].style.transition = "0.03s";
                 longPanoAll[lp].onmouseover = function() {
-                    this.style.width = 54*1.3 + "px";
-                    this.style.height = 20*1.3 + "px";
+                    this.style.width = 54*1.5 + "px";
+                    this.style.height = 20*1.5 + "px";
                 };
                 longPanoAll[lp].onmouseleave = function() {
                     this.style.width = 54*1.0 + "px";
@@ -741,8 +741,8 @@ trackUserLocation: true
                 longVertiAll[lv].style.cursor = "pointer";
                 // longVertiAll[lv].style.transition = "0.03s";
                 longVertiAll[lv].onmouseover = function() {
-                    this.style.width = 25*1.3 + "px";
-                    this.style.height = 75*1.3 + "px";
+                    this.style.width = 25*1.5 + "px";
+                    this.style.height = 75*1.5 + "px";
                 };
                 longVertiAll[lv].onmouseleave = function() {
                     this.style.width = 25*1.0 + "px";
