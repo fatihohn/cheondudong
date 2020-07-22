@@ -13,6 +13,7 @@
     src: url('../../fonts/Title_Light.otf'), url('../../fonts/경기천년바탕_Regular.ttf');
 }
 */
+
 @font-face {
     font-family: "경기천년바탕";
     src: url('../../fonts/Batang_Regular.otf'), url('../../fonts/Batang_Regular.eot'), url('../../fonts/Batang_Regular.woff'), url('../../fonts/경기천년바탕_Regular.ttf');
@@ -24,6 +25,8 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
 /*
 @font-face {
     font-family: "경기천년볼드";
@@ -89,14 +92,15 @@ a {
     cursor: pointer;
 }
 
-.tooling {
+
+/* .tooling {
     background-color: rgb(180, 180, 180);
     color: transparent;
     text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-}
+} */
 
 .en {
     display: none;
