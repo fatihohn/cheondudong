@@ -56,6 +56,26 @@
         </footer>
         
         
+    
         <?php include "jsGroup.php"; ?>
+
+        <script>
+            function indexInit() {
+                // let headerWrap = document.getElementById("header_wrap");
+                // let menuWrap = document.getElementById("menu_wrap");
+                // let mapWrap = document.getElementById("map_wrap");
+                // let footerWrap = document.getElementById("footer_wrap");
+                var headerWrap = document.getElementById("header_wrap");
+                var menuWrap = document.getElementById("menu_wrap");
+                var mapWrap = document.getElementById("map_wrap");
+                var footerWrap = document.getElementById("footer_wrap");
+
+                headerWrap.style.display = "none";
+                menuWrap.style.display = "none";
+                mapWrap.style.visibility = "hidden";
+                footerWrap.style.display = "initial";
+            }
+            indexInit();
+        </script>
     </body>
 </html>
