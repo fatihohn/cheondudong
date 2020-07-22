@@ -60,7 +60,7 @@
         <?php include "jsGroup.php"; ?>
 
         <script>
-            function indexInit() {
+            // function indexInit() {
                 // let headerWrap = document.getElementById("header_wrap");
                 // let menuWrap = document.getElementById("menu_wrap");
                 // let mapWrap = document.getElementById("map_wrap");
@@ -74,8 +74,8 @@
                 // menuWrap.style.display = "none";
                 // mapWrap.style.visibility = "hidden";
                 footerWrap.style.display = "initial";
-            }
-            indexInit();
+            // }
+            // indexInit();
         </script>
     </body>
 </html>
