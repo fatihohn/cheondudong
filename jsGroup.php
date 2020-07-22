@@ -436,6 +436,8 @@
                 }
             }
             placeWrap.style.display = "none";
+        }
+        if(menuPlace) {
             menuPlace.addEventListener("click", showPlace);
         }
     }
