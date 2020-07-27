@@ -149,11 +149,13 @@
     /* font-weight: 600; */
     /* font-family: "또박또박"; */
     font-family: "Yeon Sung";
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
+    font-size: 1rem;
 }
 
 #detail_wrap #detail_box #detail_point .detail_coord {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    font-size: 1rem;
     font-weight: 300;
     /* line-height: 15px; */
 }
@@ -233,8 +235,9 @@
     max-width: 596px;
     /* margin-top: 15px; */
     /* margin-bottom: 10px; */
-    /* box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3); */
-    border-radius: 5px 5px 0 0;
+    /* border-radius: 5px 5px 0 0; */
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 #detail_wrap #detail_box #detail_img ul li .attached_img_tag,
@@ -243,7 +246,8 @@
     /* display: grid; */
     /* font-family: "또박또박"; */
     font-family: "Yeon Sung";
-    font-size: 1.7rem;
+    /* font-size: 1.7rem; */
+    font-size: 1.3rem;
     margin-bottom: 30px;
 }
 
@@ -263,7 +267,8 @@
     border-top: 2px solid rgba(200, 0, 20, 0.5);
     border-bottom: 2px solid rgba(200, 0, 20, 0.5);
     position: relative;
-    padding: 24px;
+    /* padding: 24px; */
+    padding: 14px 24px;
     margin: 24px;
 }
 #detail_wrap #detail_box #detail_img ul li::before,
@@ -294,7 +299,7 @@
 #detail_wrap #detail_box #detail_img ul li .attached_img_tag .attached_img_title,
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_title,
 #detail_wrap #detail_box #detail_ref ul li .attached_ref_tag .attached_ref_title {
-    /* font-weight: 900; */
+    font-weight: 900;
     margin: 0 10px;
 }
 
@@ -378,7 +383,8 @@
 #map .mapboxgl-popup-content h3 {
     /* font-size: 1.8rem; */
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 600;
+    opacity: 0.7;
     line-height: 1.7rem;
 }
 
@@ -387,6 +393,7 @@
     font-size: 1.2rem;
     padding-top: 5px;
     letter-spacing: 0.1rem;
+    font-weight: 100;
 }
 
 #map .mapboxgl-popup-content p {
