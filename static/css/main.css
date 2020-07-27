@@ -263,6 +263,8 @@
     border-top: 2px solid rgba(200, 0, 20, 0.5);
     border-bottom: 2px solid rgba(200, 0, 20, 0.5);
     position: relative;
+    padding: 24px;
+    margin: 24px;
 }
 #detail_wrap #detail_box #detail_img ul li::before,
 #detail_wrap #detail_box #detail_work ul li::before,
