@@ -20,7 +20,8 @@
     line-height: 1.2;
     font-weight: bolder;
     /* padding-top: 10%; */
-    font-family: "또박또박"
+    /* font-family: "또박또박" */
+    font-family: "Yeon Sung"
 }
 
 #front_wrap #front_box #front_title div {
@@ -143,7 +144,8 @@
 #detail_wrap #detail_box #detail_point .detail_address {
     /* font-size: 0.8rem; */
     font-weight: 600;
-    font-family: "또박또박";
+    /* font-family: "또박또박"; */
+    font-family: "Yeon Sung";
     font-size: 1.4rem;
 }
 
@@ -234,7 +236,8 @@
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag,
 #detail_wrap #detail_box #detail_ref ul li .attached_ref_tag {
     /* display: grid; */
-    font-family: "또박또박";
+    /* font-family: "또박또박"; */
+    font-family: "Yeon Sung";
     font-size: 1.7rem;
     margin-bottom: 30px;
 }
@@ -336,7 +339,8 @@
 
 #map .mapboxgl-popup-content {
     background: rgba(255, 255, 255, 0.6);
-    font-family: "또박또박";
+    /* font-family: "또박또박"; */
+    font-family: "Yeon Sung";
 }
 
 #map .mapboxgl-popup-content>div {
@@ -366,7 +370,8 @@
 
 #map .mapboxgl-popup-content p.right_p {
     text-align: right;
-    font-family: "또박또박";
+    /* font-family: "또박또박"; */
+    font-family: "Yeon Sung";
     font-size: 1.5rem;
 }
 
@@ -392,7 +397,8 @@
     bottom: 0;
     text-align: center;
     width: 100%;
-    font-family: "또박또박";
+    /* font-family: "또박또박"; */
+    font-family: "Yeon Sung";
     padding: 15px;
     margin-top: 40px;
     /* z-index: 999; */
