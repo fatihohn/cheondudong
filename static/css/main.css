@@ -136,7 +136,8 @@
 
 #detail_wrap #detail_box #detail_point {
     width: 100%;
-    max-width: 768px;
+    /* max-width: 768px; */
+    max-width: 500px;
     min-height: 80px;
     margin: 0 auto;
     text-align: center;
@@ -387,6 +388,7 @@
     font-weight: 600;
     opacity: 0.7;
     line-height: 1.7rem;
+    color: rgb(160, 30, 50);
 }
 
 #map .mapboxgl-popup-content h4 {
@@ -406,6 +408,7 @@
     font-family: "Yeon Sung";
     font-size: 1rem;
     line-height: 1.3rem;
+    opacity: 0.9;
 }
 
 #map .mapboxgl-popup-content p.right_p {
@@ -414,6 +417,7 @@
     /* font-family: "Yeon Sung";
     font-size: 1.5rem; */
     opacity: 0.6;
+    color: rgb(160, 30, 50);
 }
 
 #map .mapboxgl-popup-tip {
