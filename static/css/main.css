@@ -373,7 +373,8 @@
 }
 
 #map .mapboxgl-popup-content {
-    background: rgba(255, 255, 255, 0.6);
+    /* background: rgba(255, 255, 255, 0.6); */
+    background: rgba(255, 255, 255, 0.9);
     /* font-family: "또박또박"; */
     font-family: "Yeon Sung";
 }
