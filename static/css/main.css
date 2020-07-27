@@ -175,7 +175,8 @@
     white-space: pre-line;
     word-break: break-all;
     text-align: justify;
-    font-family: "경기천년바탕";
+    /* font-family: "경기천년바탕"; */
+    font-family: "Yeon Sung";
     font-size: 1rem;
     line-height: 1.7rem;
     font-weight: 600;
@@ -365,7 +366,8 @@
     white-space: pre-line;
     text-align: justify;
     padding-top: 10px;
-    font-family: "경기천년바탕";
+    /* font-family: "경기천년바탕"; */
+    font-family: "Yeon Sung";
     font-size: 1rem;
     line-height: 1.3rem;
 }
