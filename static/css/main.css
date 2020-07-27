@@ -196,9 +196,10 @@
     letter-spacing: 1.8px;
     line-height: 1.9rem;
     color: rgba(0, 0, 0, 0.75);
-    padding-bottom: 40px;
     /* font-family: "또박또박"; */
     text-indent: 1rem;
+    font-size: 1.2rem;
+    padding: 0 15px 40px;
 }
 
 #detail_wrap #detail_box #detail_img,
