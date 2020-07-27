@@ -122,6 +122,7 @@
 
 #detail_wrap #detail_box #detail_title h3 {
     font-size: 2.6rem;
+    font-weight: 100;
 }
 
 #detail_wrap #detail_box #detail_sub_title {
@@ -145,7 +146,7 @@
 
 #detail_wrap #detail_box #detail_point .detail_address {
     /* font-size: 0.8rem; */
-    font-weight: 600;
+    /* font-weight: 600; */
     /* font-family: "또박또박"; */
     font-family: "Yeon Sung";
     font-size: 1.4rem;
@@ -177,9 +178,10 @@
     text-align: justify;
     /* font-family: "경기천년바탕"; */
     font-family: "Yeon Sung";
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: 1.2rem;
     line-height: 1.7rem;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 #detail_wrap #detail_box #detail_cont {
@@ -188,7 +190,7 @@
     max-width: 596px;
     height: min-content;
     margin: 0 auto;
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
     letter-spacing: 1.8px;
     line-height: 1.9rem;
     color: rgba(0, 0, 0, 0.75);
@@ -221,7 +223,7 @@
 #detail_wrap #detail_box #detail_work .work_title,
 #detail_wrap #detail_box #detail_ref .ref_title {
     font-size: 2rem;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 #detail_wrap #detail_box #detail_img ul li img,
@@ -256,8 +258,29 @@
 
 #detail_wrap #detail_box #detail_img ul li,
 #detail_wrap #detail_box #detail_work ul li {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px; */
+    border-top: 2px solid rgba(200, 0, 20, 0.5);
+    border-bottom: 2px solid rgba(200, 0, 20, 0.5);
+    position: relative;
+}
+#detail_wrap #detail_box #detail_img ul li::before,
+#detail_wrap #detail_box #detail_work ul li::before,
+#detail_wrap #detail_box #detail_img ul li::after,
+#detail_wrap #detail_box #detail_work ul li::after {
+    content: '';
+    background-color: rgba(200, 0, 20, 0.5);
+    top: -14px;
+    bottom: -14px;
+    left: 12px;
+    position: absolute;
+    width: 2px;
+}
+
+#detail_wrap #detail_box #detail_img ul li::after,
+#detail_wrap #detail_box #detail_work ul li::after {
+    left: auto;
+    right: 12px;
 }
 
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag,
@@ -269,7 +292,7 @@
 #detail_wrap #detail_box #detail_img ul li .attached_img_tag .attached_img_title,
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_title,
 #detail_wrap #detail_box #detail_ref ul li .attached_ref_tag .attached_ref_title {
-    font-weight: 900;
+    /* font-weight: 900; */
     margin: 0 10px;
 }
 
@@ -351,12 +374,15 @@
 }
 
 #map .mapboxgl-popup-content h3 {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
+    font-size: 1.5rem;
+    font-weight: 100;
     line-height: 1.7rem;
 }
 
 #map .mapboxgl-popup-content h4 {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
+    font-size: 1.2rem;
     padding-top: 5px;
     letter-spacing: 0.1rem;
 }
@@ -375,8 +401,9 @@
 #map .mapboxgl-popup-content p.right_p {
     text-align: right;
     /* font-family: "또박또박"; */
-    font-family: "Yeon Sung";
-    font-size: 1.5rem;
+    /* font-family: "Yeon Sung";
+    font-size: 1.5rem; */
+    opacity: 0.6;
 }
 
 #map .mapboxgl-popup-tip {
