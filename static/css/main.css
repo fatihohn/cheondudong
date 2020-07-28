@@ -8,7 +8,7 @@
       background: black;
     }
   }
-  
+
 /****front****/
 
 #front_wrap * {
@@ -137,6 +137,7 @@
 
 #detail_wrap #detail_box #detail_sub_title {
     margin-bottom: 20px;
+    color: rgba(160, 30, 50, 0.8);
 }
 
 #detail_wrap #detail_box #detail_sub_title h4 {
