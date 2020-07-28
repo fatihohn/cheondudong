@@ -165,6 +165,7 @@ if(contImgs) {
                 imgSlideBtnNext.style.zIndex = "9999";
                 imgSlideBtnNext.style.cursor = "pointer";
                 imgSlideBtnNext.style.textAlign = "center";
+                imgSlideBtnNext.style.fontFamily = "sans-serif";
     
     
     
@@ -193,6 +194,7 @@ if(contImgs) {
                 imgSlideBtnPrev.style.zIndex = "9999";
                 imgSlideBtnPrev.style.cursor = "pointer";
                 imgSlideBtnPrev.style.textAlign = "center";
+                imgSlideBtnPrev.style.fontFamily = "sans-serif";
     
     
     
