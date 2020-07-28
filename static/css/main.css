@@ -204,6 +204,10 @@
     padding: 0 15px 40px;
 }
 
+.detail_attachment_title {
+    text-align: center;
+}
+
 #detail_wrap #detail_box #detail_img,
 #detail_wrap #detail_box #detail_work,
 #detail_wrap #detail_box #detail_ref {
