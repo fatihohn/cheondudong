@@ -172,6 +172,11 @@
     /* line-height: 15px; */
 }
 
+#detail_wrap #detail_box #detail_point:hover {
+    color: rgba(160, 30, 50, 0.5);
+    font-weight: 900;
+}
+
 #detail_wrap #detail_box #detail_memo {
     background-color: rgba(255, 200, 100, 0.05);
     border-radius: 10px;
