@@ -109,7 +109,7 @@ if(contImgs) {
         function viewImgClick() {
             let introTitle = document.getElementById("intro_title");
     
-            function showImgWindow(imgUrl, imgClassName) {
+            function showImgWindow(imgUrl, imgClassName, imgAlt) {
                 let imgSrc = imgUrl;
                 let imgSlide = document.createElement("div");
                 imgSlide.className = imgClassName;
@@ -275,14 +275,14 @@ if(contImgs) {
     
             }
     
-            if (contImgs[cia].title) {
+            if (contImgs[cia].src) {
                 if (introTitle) {
     
                 } else {
                     // if(window.innerWidth > 801) {
                     if (window.innerWidth > 1) {
                         contImgs[cia].addEventListener("click", function() {
-                            showImgWindow(this.src, this.className);
+                            showImgWindow(this.src, this.className, this.alt);
                         });
                         contImgs[cia].style.cursor = "pointer";
                         contImgs[cia].className = cia;
