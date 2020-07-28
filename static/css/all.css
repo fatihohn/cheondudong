@@ -83,7 +83,13 @@ body {
     background-color: rgb(255, 245, 245);
     margin: 0;
     overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 ul {
     list-style: none;
