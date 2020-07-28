@@ -952,6 +952,16 @@ trackUserLocation: true
         markerSize();
     });
 
+    let ctrlIcon = document.querySelectorAll(".mapboxgl-ctrl-icon");
+    let cti;
+    for(cti=0; cti < ctrlIcon.length; cti++) {
+        ctrlIcon[cti].style.webkitFilter = "grayscale(0.3) opacity(0.5) drop-shadow(0px 0px 0px rgb(255, 30, 0))";
+        ctrlIcon[cti].style.mozFilter = "grayscale(0.3) opacity(0.5) drop-shadow(0px 0px 0px rgb(255, 30, 0))";
+        ctrlIcon[cti].style.oFilter = "grayscale(0.3) opacity(0.5) drop-shadow(0px 0px 0px rgb(255, 30, 0))";
+        ctrlIcon[cti].style.msFilter = "grayscale(0.3) opacity(0.5) drop-shadow(0px 0px 0px rgb(255, 30, 0))";
+        ctrlIcon[cti].style.filter = "grayscale(0.3) opacity(0.5) drop-shadow(0px 0px 0px rgb(255, 30, 0))";
+
+    }
 
 
 
