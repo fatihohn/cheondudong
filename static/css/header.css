@@ -278,3 +278,8 @@
     margin: 5px;
     cursor: pointer;
 }
+
+#place_list_wrap #place_list #place_ul .place_li .place_title:hover {
+    color: rgba(160, 30, 50, 0.6);
+    font-weight: 900;
+}
