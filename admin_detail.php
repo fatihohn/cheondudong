@@ -285,18 +285,18 @@ $stmt = mysqli_stmt_init($conn);
                                                     //         </div>
                                                     //     </div>";
                                                     
-                                                    // <img src='static/img/top_btn.png' alt='top_btn'>
                                                     echo    "' class='top_btn' title='맨 위로' onclick='imgTop(this.id)'>
+                                                    <img src='static/img/top_btn.png' alt='top_btn'>
                                                             </div>
                                                             <div id='";
                                                     echo    $detailImg_id;
-                                                    // <img src='static/img/modify_btn.png' alt='modify_btn'>
                                                     echo    "' class='modify_btn' title='수정하기' onclick='imgModi(this.id)'>
+                                                    <img src='static/img/modify_btn.png' alt='modify_btn'>
                                                             </div>
                                                             <div id='";
                                                     echo    $detailImg_id;
-                                                    // <img src='static/img/delete_btn.png' alt='delete_btn'>
                                                     echo    "' class='delete_btn' title='삭제하기' onclick='imgDel(this.id)'>    
+                                                    <img src='static/img/delete_btn.png' alt='delete_btn'>
                                                             </div>
                                                         </div>";
                                                 echo "</div>";
