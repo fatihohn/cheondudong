@@ -231,10 +231,23 @@ section #userList_wrap .user_table {
     margin: 0 auto;
 }
 
+#attached_func_wrap .delete_btn {
+    background-image: url("../img/delete_btn.png");
+}
+
+#attached_func_wrap .top_btn {
+    background-image: url("../img/top_btn.png");
+}
+
+#attached_func_wrap .modify_btn {
+    background-image: url("../img/modify_btn.png");
+}
+
 .menu_add {
     font-size: 2rem;
     font-weight: 900;
     display: inline;
 }
+
 
 /****footer****/
