@@ -61,7 +61,7 @@
 
 // let contImgs = document.querySelectorAll(".view_cont_content img");
 let contImgs = document.querySelectorAll("#detail_img ul li img");
-if(contImgs) {
+// if(contImgs) {
     let cia;
     for (cia = 0; cia < contImgs.length; cia++) {
         contImgs[cia].parentElement.style.textIndent = "0";
@@ -282,8 +282,8 @@ if(contImgs) {
     
                 // } else {
                 // }
-                    if(window.innerWidth > 801) {
-                    // if (window.innerWidth > 1) {
+                    // if(window.innerWidth > 801) {
+                    if (window.innerWidth > 1) {
                         contImgs[cia].addEventListener("click", function() {
                             showImgWindow(this.src, this.className);
                         });
@@ -299,7 +299,7 @@ if(contImgs) {
     
     
     }
-}
+// }
 
 
 
