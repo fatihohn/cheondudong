@@ -107,7 +107,7 @@ if(contImgs) {
     
     
         function viewImgClick() {
-            let introTitle = document.getElementById("intro_title");
+            // let introTitle = document.getElementById("intro_title");
     
             function showImgWindow(imgUrl, imgClassName) {
                 let imgSrc = imgUrl;
@@ -278,11 +278,12 @@ if(contImgs) {
             }
     
             if (contImgs[cia].src) {
-                if (introTitle) {
+                // if (introTitle) {
     
-                } else {
-                    // if(window.innerWidth > 801) {
-                    if (window.innerWidth > 1) {
+                // } else {
+                // }
+                    if(window.innerWidth > 801) {
+                    // if (window.innerWidth > 1) {
                         contImgs[cia].addEventListener("click", function() {
                             showImgWindow(this.src, this.className);
                         });
@@ -290,7 +291,6 @@ if(contImgs) {
                         contImgs[cia].className = cia;
     
                     }
-                }
             }
     
     
