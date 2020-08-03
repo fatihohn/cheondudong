@@ -291,8 +291,10 @@
 #detail_wrap #detail_box #detail_work ul li {
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     border-radius: 5px; */
-    border-top: 2px solid rgba(160, 30, 50, 0.5);
-    border-bottom: 2px solid rgba(160, 30, 50, 0.5);
+
+
+    /* border-top: 2px solid rgba(160, 30, 50, 0.5);
+    border-bottom: 2px solid rgba(160, 30, 50, 0.5); */
     position: relative;
     /* padding: 24px; */
     padding: 14px 40px;
@@ -303,13 +305,19 @@
 #detail_wrap #detail_box #detail_work ul li::before,
 #detail_wrap #detail_box #detail_img ul li::after,
 #detail_wrap #detail_box #detail_work ul li::after {
-    content: '';
+    /* content: '';
     background-color: rgba(160, 30, 50, 0.5);
     top: -14px;
     bottom: -14px;
     left: 12px;
     position: absolute;
-    width: 2px;
+    width: 2px; */
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 24%;
+    border-bottom: 1px solid rgba(160, 30, 50, 0.5);
 }
 
 #detail_wrap #detail_box #detail_img ul li::after,
