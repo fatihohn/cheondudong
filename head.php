@@ -4,6 +4,8 @@
     <title>천두동·동두천</title>
     <link rel="canonical" href="https://cdd-ddc.org" />
 
+    <meta name="description" content="천두동 장소들">
+
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="keywords" content="동두천 지도, 동두천지도, 천두동지도, 천두동 지도, 지도, 천두동, 동두천, 기지촌, 기지촌 역사, 미군기지, 성병관리소, 낙검자수용소, 상패동, 턱거리, 소요산, 천두동 동두천">
     
