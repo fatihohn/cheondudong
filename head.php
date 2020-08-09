@@ -2,17 +2,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">	
     
     <title>천두동·동두천</title>
+    <link rel="canonical" href="https://cdd-ddc.org" />
 
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta name="keywords" content="천두동, 동두천, 기지촌, 기지촌 역사, 미군기지, 성병관리소, 낙검자수용소, 상패동, 턱거리, 소요산, 천두동 동두천">
+    <meta name="keywords" content="동두천 지도, 동두천지도, 천두동지도, 천두동 지도, 지도, 천두동, 동두천, 기지촌, 기지촌 역사, 미군기지, 성병관리소, 낙검자수용소, 상패동, 턱거리, 소요산, 천두동 동두천">
     
-    <meta name="robots" content="noindex">
+    <!-- <meta name="robots" content="noindex"> -->
 
 
-	<meta property="og:url" content="https://cdd-ddc.org">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="천두동-동두천">
 	<meta property="og:description" content="천두동의 장소들">
+	<meta property="og:url" content="https://cdd-ddc.org">
 	<meta property="og:image" content="대표 이미지 제작 후 입력">
 
   	<link rel="apple-touch-icon" sizes="180x180" href="아이콘 제작 후 입력">
