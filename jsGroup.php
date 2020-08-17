@@ -589,9 +589,10 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
             
             let userListWrap = document.getElementById("userList_wrap");
 
-            if(menuWrap.style.display == "none") {
+            if(menuWrap.style.visibility == "hidden") {
                 headerWrap.style.display = "initial";
-                menuWrap.style.display = "block";
+                menuWrap.style.visibility = "visible";
+                menuWrap.style.position = "static";
                 menuWrap.style.height = "100%";
                 if(mapWrap && placeWrap) {
                     mapWrap.style.visibility = "hidden";
@@ -623,7 +624,8 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
                 topFunction();                
             } else {
                 headerWrap.style.display = "initial";
-                menuWrap.style.display = "none";
+                menuWrap.style.visibility = "hidden";
+                menuWrap.style.position = "absolute";
                 menuWrap.style.height = "0px";
                 if(mapWrap && placeWrap && detailWrap) {
                     mapWrap.style.visibility = "hidden";
