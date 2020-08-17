@@ -594,7 +594,7 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
                 // menuWrap.style.visibility = "visible";
                 menuWrap.style.visibility = "visible";
                 menuWrap.style.position = "relative";
-                menuWrap.style.height = "100%";
+                // menuWrap.style.height = "100%";
                 if(mapWrap && placeWrap) {
                     mapWrap.style.visibility = "hidden";
                     footerWrap.style.display = "block";
@@ -628,7 +628,7 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
                 // menuWrap.style.visibility = "hidden";
                 menuWrap.style.visibility = "hidden";
                 menuWrap.style.position = "absolute";
-                menuWrap.style.height = "0px";
+                // menuWrap.style.height = "0px";
                 if(mapWrap && placeWrap && detailWrap) {
                     mapWrap.style.visibility = "hidden";
                     footerWrap.style.display = "block";
