@@ -46,7 +46,8 @@
                 var footerWrap = document.getElementById("footer_wrap");
 
                 headerWrap.style.display = "initial";
-                menuWrap.style.display = "none";
+                // menuWrap.style.display = "none";
+                menuWrap.style.visibility = "hidden";
                 mapWrap.style.visibility = "visible";
                 footerWrap.style.display = "none";
             }
