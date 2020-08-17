@@ -217,7 +217,8 @@
     /* display: none; */
 
     transition: all 0.5s ease 0s;
-    animation: 0.5s ease-in-out 0s 1 normal none running slide_down;
+    /* animation: 0.5s ease-in-out 0s 1 normal none running slide_down; */
+    animation: slide_down 300ms;
 }
 
 #menu_wrap #menu_box {
