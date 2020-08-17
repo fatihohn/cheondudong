@@ -427,6 +427,10 @@
     display: none;
 }
 
+#map .mapboxgl-popup {
+    transition: 300ms;
+    animation: expand 300ms;
+}
 #map .mapboxgl-popup-content {
     /* background: rgba(255, 255, 255, 0.6); */
     background: rgba(255, 255, 255, 0.9);
