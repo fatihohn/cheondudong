@@ -172,13 +172,13 @@ header {
     z-index: 99;
 }
 
-/* @keyframes slide_down {
+@keyframes expand {
     from {
       transform: scale(0);
       opacity: 0;
-      background: black;
+      /* background: black; */
     }
-  } */
+  }
 
   @keyframes slide_down {
     /* 0% {
@@ -219,8 +219,8 @@ header {
 
     /* display: none; */
 
-    /* transition: all 0.5s ease 0s; */
-    /* animation: 0.5s ease-in-out 0s 1 normal none running slide_down; */
+    transition: all 0.5s ease 0s;
+    animation: 0.5s ease-in-out 0s 1 normal none running expand;
     /* animation: slide_down 300ms ease; */
 
     /* -webkit-transition: 300ms;
