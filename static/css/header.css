@@ -46,6 +46,7 @@
     border-image-slice: 30; */
 
     border-bottom: 2px solid rgba(160, 30, 50, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(160, 30, 50, 0.2);
 }
 
 
@@ -123,6 +124,7 @@
     border-radius: 15px;
     /* background-color: white; */
     padding: 5px;
+    transition: 300ms;
 }
 #header_wrap #header_box #header_box_area #header_btn a #menu_btn img:hover {
     background-color: rgba(160, 30, 50, 0.2);
