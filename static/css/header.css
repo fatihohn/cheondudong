@@ -181,15 +181,15 @@ header {
   }
 
   @keyframes slide_down {
-    /* 0% {
+    0% {
         top: -100%;
     }
     100% {
         top: 0px;
-    } */
-    from {
-        top: -100%;
     }
+    /* from {
+        top: -100%;
+    } */
 }
 
 @keyframes slide_up {
@@ -313,6 +313,9 @@ header {
 #place_list_wrap #place_list {
     /* text-indent: 1rem; */
     color: #555;
+
+    transition: all 0.5s ease 0s;
+    animation: 0.5s ease-in-out 0s 1 normal none running slide_down;
 }
 
 #place_list_wrap #place_list #place_ul {
