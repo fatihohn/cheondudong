@@ -172,13 +172,31 @@
     z-index: 99;
 }
 
-@keyframes slide_down {
+/* @keyframes slide_down {
     from {
       transform: scale(0);
       opacity: 0;
       background: black;
     }
-  }
+  } */
+
+  @keyframes slide_down {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes slide_up {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: -100%;
+    }
+}
 
 #menu_wrap {
     width: 100%;
