@@ -589,9 +589,9 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
             
             let userListWrap = document.getElementById("userList_wrap");
 
-            if(menuWrap.style.visibility == "hidden") {
+            if(menuWrap.style.display == "none") {
                 headerWrap.style.display = "initial";
-                menuWrap.style.visibility = "visible";
+                menuWrap.style.display = "block";
                 if(mapWrap && placeWrap) {
                     mapWrap.style.visibility = "hidden";
                     footerWrap.style.display = "block";
@@ -622,7 +622,7 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
                 topFunction();                
             } else {
                 headerWrap.style.display = "initial";
-                menuWrap.style.visibility = "hidden";
+                menuWrap.style.display = "none";
                 if(mapWrap && placeWrap && detailWrap) {
                     mapWrap.style.visibility = "hidden";
                     footerWrap.style.display = "block";
