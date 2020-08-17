@@ -194,10 +194,10 @@ header {
 
 @keyframes slide_up {
     0% {
-        top: 0px;
+        bottom: 0px;
     }
     100% {
-        top: -100%;
+        top: 0;
     }
 }
 
@@ -315,7 +315,7 @@ header {
     color: #555;
     position: absolute;
     transition: all 0.5s ease 0s;
-    animation: 0.5s ease-in-out 0s 1 normal none running slide_down;
+    animation: 0.5s ease-in-out 0s 1 normal none running slide_up;
 }
 
 #place_list_wrap #place_list #place_ul {
