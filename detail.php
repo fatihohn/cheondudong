@@ -400,7 +400,7 @@ $stmt = mysqli_stmt_init($conn);
                 // menuWrap.style.visibility = "hidden";
                 menuWrap.style.visibility = "hidden";
                 // menuWrap.style.height = "0px";
-                menuWrap.style.position = "absolute";
+                // menuWrap.style.position = "absolute";
                 footerWrap.style.display = "initial";
             }
             detailInit();
