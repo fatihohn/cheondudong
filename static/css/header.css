@@ -221,11 +221,12 @@
     /* animation: 0.5s ease-in-out 0s 1 normal none running slide_down; */
     /* animation: slide_down 300ms ease; */
 
-    -webkit-transition: height 0.5s linear;
-       -moz-transition: height 0.5s linear;
-        -ms-transition: height 0.5s linear;
-         -o-transition: height 0.5s linear;
-            transition: height 0.5s linear;
+    -webkit-transition: 300ms;
+       -moz-transition: 300ms;
+        -ms-transition: 300ms;
+         -o-transition: 300ms;
+            transition: 300ms;
+    animation: slide_up 300ms;
 
 
 }
