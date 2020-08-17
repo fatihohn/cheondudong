@@ -353,7 +353,8 @@ trackUserLocation: true
 
     
     function markerSize() {
-        var zoomLow = 14.4;
+        // var zoomLow = 14.4;
+        var zoomLow = 13.4;
         var zoomHigh = 15.8;
         var zoomStatus = map.getZoom();
 
