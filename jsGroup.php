@@ -592,6 +592,7 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
             if(menuWrap.style.display == "none") {
                 headerWrap.style.display = "initial";
                 menuWrap.style.display = "block";
+                menuWrap.style.height = "100%";
                 if(mapWrap && placeWrap) {
                     mapWrap.style.visibility = "hidden";
                     footerWrap.style.display = "block";
@@ -623,6 +624,7 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
             } else {
                 headerWrap.style.display = "initial";
                 menuWrap.style.display = "none";
+                menuWrap.style.height = "0px";
                 if(mapWrap && placeWrap && detailWrap) {
                     mapWrap.style.visibility = "hidden";
                     footerWrap.style.display = "block";
