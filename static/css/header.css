@@ -181,11 +181,14 @@
   } */
 
   @keyframes slide_down {
-    0% {
+    /* 0% {
         top: -100%;
     }
     100% {
         top: 0px;
+    } */
+    from {
+        top: -100%;
     }
 }
 
