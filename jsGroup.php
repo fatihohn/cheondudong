@@ -593,7 +593,7 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
                 headerWrap.style.display = "initial";
                 // menuWrap.style.visibility = "visible";
                 menuWrap.style.visibility = "visible";
-                menuWrap.style.position = "static";
+                menuWrap.style.position = "relative";
                 menuWrap.style.height = "100%";
                 if(mapWrap && placeWrap) {
                     mapWrap.style.visibility = "hidden";
