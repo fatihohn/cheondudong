@@ -194,10 +194,10 @@ header {
 
 @keyframes slide_up {
     0% {
-        bottom: 0px;
+        top: 100%;
     }
     100% {
-        top: 0;
+        top: 0px;
     }
 }
 
