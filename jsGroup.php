@@ -589,9 +589,9 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
             
             let userListWrap = document.getElementById("userList_wrap");
 
-            if(menuWrap.style.display == "none") {
+            if(menuWrap.style.visibility == "hidden") {
                 headerWrap.style.display = "initial";
-                menuWrap.style.display = "block";
+                menuWrap.style.visibility = "visible";
                 if(mapWrap && placeWrap) {
                     mapWrap.style.visibility = "hidden";
                     footerWrap.style.display = "block";
@@ -622,7 +622,7 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
                 topFunction();                
             } else {
                 headerWrap.style.display = "initial";
-                menuWrap.style.display = "none";
+                menuWrap.style.visibility = "hidden";
                 if(mapWrap && placeWrap && detailWrap) {
                     mapWrap.style.visibility = "hidden";
                     footerWrap.style.display = "block";
@@ -677,14 +677,14 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
                 }
             } 
         }
-        // if(headerMenu) {
-        //     headerMenu.addEventListener("click", showMenu);
-        // }
         if(headerMenu) {
-            setTimeout(() => {
-                headerMenu.addEventListener("click", showMenu);
-            }, 300);
+            headerMenu.addEventListener("click", showMenu);
         }
+        // if(headerMenu) {
+        //     setTimeout(() => {
+        //         headerMenu.addEventListener("click", showMenu);
+        //     }, 300);
+        // }
     }
     headerMenuClick();
 
