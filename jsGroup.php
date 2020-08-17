@@ -679,14 +679,23 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
                 }
             } 
         }
+        // if(headerMenu) {
+        //     headerMenu.addEventListener("click", showMenu);
+        // }
         if(headerMenu) {
-            headerMenu.addEventListener("click", showMenu);
+            setTimeout(
+                headerMenu.addEventListener("click", showMenu), 500
+            );
         }
+
+
+
         // if(headerMenu) {
         //     setTimeout(() => {
         //         headerMenu.addEventListener("click", showMenu);
         //     }, 300);
         // }
+        
     }
     headerMenuClick();
 
