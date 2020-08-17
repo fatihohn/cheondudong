@@ -398,6 +398,7 @@ $stmt = mysqli_stmt_init($conn);
                 // mapWrap.style.visibility = "hidden";
                 // menuWrap.style.display = "none";
                 // menuWrap.style.visibility = "hidden";
+                menuWrap.children.style.visibility = "hidden";
                 menuWrap.style.height = "0px";
                 menuWrap.style.position = "absolute";
                 footerWrap.style.display = "initial";
