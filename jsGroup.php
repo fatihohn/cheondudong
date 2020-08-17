@@ -681,14 +681,14 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
                 }
             } 
         }
-        // if(headerMenu) {
-        //     headerMenu.addEventListener("click", showMenu);
-        // }
         if(headerMenu) {
-            setTimeout(
-                headerMenu.addEventListener("click", showMenu), 500
-            );
+            headerMenu.addEventListener("click", showMenu);
         }
+        // if(headerMenu) {
+        //     setTimeout(
+        //         headerMenu.addEventListener("click", showMenu), 500
+        //     );
+        // }
 
 
 
