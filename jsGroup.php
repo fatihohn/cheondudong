@@ -589,10 +589,10 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
             
             let userListWrap = document.getElementById("userList_wrap");
 
-            if(menuWrap.style.visibility == "hidden") {
+            if(menuWrap.style.display == "none") {
                 headerWrap.style.display = "initial";
                 // menuWrap.style.visibility = "visible";
-                menuWrap.style.visibility = "visible";
+                menuWrap.style.display = "initial";
                 // menuWrap.style.position = "relative";
                 // menuWrap.style.height = "100%";
                 if(mapWrap && placeWrap) {
@@ -626,7 +626,7 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
             } else {
                 headerWrap.style.display = "initial";
                 // menuWrap.style.visibility = "hidden";
-                menuWrap.style.visibility = "hidden";
+                menuWrap.style.display = "none";
                 // menuWrap.style.position = "absolute";
                 // menuWrap.style.height = "0px";
                 if(mapWrap && placeWrap && detailWrap) {
