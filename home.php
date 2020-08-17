@@ -48,6 +48,7 @@
                 headerWrap.style.display = "initial";
                 // menuWrap.style.display = "none";
                 menuWrap.style.visibility = "hidden";
+                menuWrap.style.position = "absolute";
                 mapWrap.style.visibility = "visible";
                 footerWrap.style.display = "none";
             }
