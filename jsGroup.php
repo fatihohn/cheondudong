@@ -589,7 +589,7 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
             
             let userListWrap = document.getElementById("userList_wrap");
 
-            if(menuWrap.style.height == "0px") {
+            if(menuWrap.style.visibility == "hidden") {
                 headerWrap.style.display = "initial";
                 // menuWrap.style.visibility = "visible";
                 menuWrap.style.visibility = "visible";
