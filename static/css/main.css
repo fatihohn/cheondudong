@@ -43,16 +43,22 @@
     position: absolute;
     top: 0;
 }
-.cheon {
+.front_msg_letter.left {
     right: 100%;
+}
+.front_msg_letter.center {
+    right: 50%;
+}
+.front_msg_letter.right {
+    right: 0;
+}
+.cheon {
     background: url('https://cdd-ddc.org/static/img/index_bg_cheon.svg') no-repeat center center / cover;
 }
 .du {
-    right: 50%;
     background: url('https://cdd-ddc.org/static/img/index_bg_du.svg') no-repeat center center / cover;
 }
 .dong {
-    right: 0;
     background: url('https://cdd-ddc.org/static/img/index_bg_dong.svg') no-repeat center center / cover;
 }
 
