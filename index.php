@@ -68,9 +68,12 @@
                 setTimeout(() => {
                     letterMix();
                 }, 300);
-                setInterval(() => {
+                setTimeout(() => {
                     letterMix();
-                }, 10000);
+                    setInterval(() => {
+                        letterMix();
+                    }, 10000);
+                }, 3300);
             }
 
 
