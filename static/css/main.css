@@ -12,7 +12,8 @@
 /****front****/
 #index_body {
     /* background: url('https://cdd-ddc.org/static/img/index_bg_space.svg') no-repeat center center / cover; */
-    background: url('https://cdd-ddc.org/static/img/index_bg_space.svg') repeat;
+    /* background: url('https://cdd-ddc.org/static/img/index_bg_space.svg') repeat; */
+    background: url('https://cdd-ddc.org/static/img/D5096E54.jpg') repeat;
 }
 #index_bg_line {
     background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat center center / cover;
