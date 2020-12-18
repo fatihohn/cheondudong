@@ -60,9 +60,16 @@
                 langSelectForm.submit();
             }
 
-            setInterval(() => {
-                letterMix();
-            }, 10000);
+            window.onload = function() {
+                setTimeout(() => {
+                    letterMix();
+                    setInterval(() => {
+                        letterMix();
+                    }, 10000);
+                }, 300);
+            }
+
+
 
 
             function letterMix() {
