@@ -10,7 +10,9 @@
   }
 
 /****front****/
-
+#index_body {
+    background: url('https://cdd-ddc.org/static/img/index_bg_line.svg');
+}
 #front_wrap * {
     z-index: 999;
 }

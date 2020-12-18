@@ -6,7 +6,7 @@
 
 
     </head>
-    <body id="index_body">
+    <body>
 
         <header>
         <!-- header: 헤더, 메뉴바 역할. 메뉴 버튼 클릭하면 menu화면 보여줌. 제목 클릭하면 map으로 넘어감-->
