@@ -30,27 +30,29 @@
 }
 .front_msg {
     position: absolute;
-    top: 40%;
-    right: 45%;
-    width: 600px;
+    top: 35%;
+    left: 50%;
+    width: 40vw;
+    height: 40px;
+    cursor: pointer;
 }
 
 .front_msg .front_msg_letter {
     width: 40px;
     height: 40px;
-    position: relative;
+    position: absolute;
     top: 0;
 }
 .cheon {
-    left: 0;
+    right: 100%;
     background: url('https://cdd-ddc.org/static/img/index_bg_cheon.svg') no-repeat center center / cover;
 }
 .du {
-    left: 50%;
+    right: 50%;
     background: url('https://cdd-ddc.org/static/img/index_bg_du.svg') no-repeat center center / cover;
 }
 .dong {
-    left: 100%;
+    right: 0;
     background: url('https://cdd-ddc.org/static/img/index_bg_dong.svg') no-repeat center center / cover;
 }
 
