@@ -54,12 +54,15 @@
             var letterDong = document.querySelector(".front_msg_letter.dong");
 
             frontMsg.onclick = function() {
-                langSelectForm.submit();
+                letterMix();
+                setTimeout(() => {
+                    langSelectForm.submit();
+                }, 3000);
             }
             
-            frontMsg.onmouseover = function() {
-                letterMix();
-            }
+            // frontMsg.onmouseover = function() {
+            //     letterMix();
+            // }
 
             window.onload = function() {
                 setTimeout(() => {
