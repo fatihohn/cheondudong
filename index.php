@@ -53,20 +53,21 @@
             var letterDu = document.querySelector(".front_msg_letter.du");
             var letterDong = document.querySelector(".front_msg_letter.dong");
 
-            frontMsg.onmouseover = function() {
-                letterMix();
-            }
             frontMsg.onclick = function() {
                 langSelectForm.submit();
+            }
+            
+            frontMsg.onmouseover = function() {
+                letterMix();
             }
 
             window.onload = function() {
                 setTimeout(() => {
                     letterMix();
-                    setInterval(() => {
-                        letterMix();
-                    }, 10000);
                 }, 300);
+                setInterval(() => {
+                    letterMix();
+                }, 10000);
             }
 
 
