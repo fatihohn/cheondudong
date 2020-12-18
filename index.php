@@ -58,7 +58,7 @@
 
             setInterval(() => {
                 letterMix();
-            }, 1000);
+            }, 10000);
 
 
             function letterMix() {

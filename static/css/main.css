@@ -42,6 +42,7 @@
     height: 40px;
     position: absolute;
     top: 0;
+    transition: all 3000ms ease;
 }
 .front_msg_letter.left {
     right: 100%;
