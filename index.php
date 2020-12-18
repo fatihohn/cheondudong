@@ -16,7 +16,7 @@
                 <div id="front_wrap">
                     <div id="front_box">
                         <div id="front_title">
-                            <form method="post" action="language_session.php">
+                            <form id="lang_select_form" method="post" action="language_session.php">
                                 <!-- <input class="front_img" type="image" src="static/img/front.png" alt="Submit" /> -->
                                 <div class="lang_select">
                                     <input class='lang_btn' type='radio' id='ko_btn'name='language' value='ko' checked>
@@ -47,6 +47,7 @@
         <?php include "jsGroup.php"; ?>
 
         <script>
+            var langSelectForm = document.querySelector("#lang_select_form");
             var frontMsg = document.querySelector(".front_msg");
             var letterCheon = document.querySelector(".front_msg_letter.cheon");
             var letterDu = document.querySelector(".front_msg_letter.du");
@@ -54,6 +55,9 @@
 
             frontMsg.onmouseover = function() {
                 letterMix();
+            }
+            frontMsg.onclick = function() {
+                langSelectForm.submit();
             }
 
             setInterval(() => {
