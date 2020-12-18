@@ -51,7 +51,7 @@
             var letterCheon = document.querySelector(".front_msg_letter.cheon");
             var letterDu = document.querySelector(".front_msg_letter.du");
             var letterDong = document.querySelector(".front_msg_letter.dong");
-            
+
             frontMsg.onmouseover = function() {
                 letterMix();
             }
@@ -62,7 +62,7 @@
 
 
             function letterMix() {
-                if(letterCheon.classlist.contains("left")) {
+                if(letterCheon.classList.contains("left")) {
                     letterCheon.classList.remove("left");
                     letterCheon.classList.add("right");
                 } else {
@@ -70,7 +70,7 @@
                     letterCheon.classList.add("left");
 
                 }
-                if(letterDong.classlist.contains("right")) {
+                if(letterDong.classList.contains("right")) {
                     letterDong.classList.remove("right");
                     letterDong.classList.add("left");
                 } else {
