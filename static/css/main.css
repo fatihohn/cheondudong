@@ -19,6 +19,15 @@
     background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat center center / cover;
     /* background: url('https://cdd-ddc.org/static/img/index_bg_space.svg') repeat; */
 }
+
+.lang_select {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    float: right;
+}
+
+
 #front_wrap * {
     z-index: 999;
 }
