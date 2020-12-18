@@ -18,15 +18,16 @@
                         <div id="front_title">
                             <form method="post" action="language_session.php">
                                 <!-- <input class="front_img" type="image" src="static/img/front.png" alt="Submit" /> -->
+                                <div class="lang_select">
+                                    <input class='lang_btn' type='radio' id='ko_btn'name='language' value='ko' checked>
+                                    <label for='ko_btn'>한국어</label>
+                                    <input class='lang_btn' type='radio' id='en_btn'name='language' value='en'>
+                                    <label for='en_btn'>English</label>
+                                </div>
                                 <div class="front_msg">
-                                    <div class="gg-batang">
-                                        <div class="lang_select">
-                                            <input class='lang_btn' type='radio' id='ko_btn'name='language' value='ko' checked>
-                                            <label for='ko_btn'>한국어</label>
-                                            <input class='lang_btn' type='radio' id='en_btn'name='language' value='en'>
-                                            <label for='en_btn'>English</label>
-                                        </div>
-                                    </div>
+                                    <div class="front_msg_letter cheon"></div>
+                                    <div class="front_msg_letter du"></div>
+                                    <div class="front_msg_letter dong"></div>
                                 </div>
 
                             </form>

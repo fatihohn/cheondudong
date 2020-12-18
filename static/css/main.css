@@ -25,8 +25,34 @@
     top: 20px;
     right: 20px;
     float: right;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.front_msg {
+    position: absolute;
+    top: 40%;
+    right: 45%;
+    width: 600px;
 }
 
+.front_msg.front_msg_letter {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 0;
+}
+.cheon {
+    left: 0;
+    background: url('https://cdd-ddc.org/static/img/index_bg_cheon.svg') no-repeat center center / cover;
+}
+.du {
+    left: 50%;
+    background: url('https://cdd-ddc.org/static/img/index_bg_du.svg') no-repeat center center / cover;
+}
+.dong {
+    left: 100%;
+    background: url('https://cdd-ddc.org/static/img/index_bg_dong.svg') no-repeat center center / cover;
+}
 
 #front_wrap * {
     z-index: 999;
@@ -55,11 +81,11 @@
 #front_wrap #front_box #front_title div {
     /* -ms-transform: rotate(-30deg); IE 9 */
     /* transform: rotate(-30deg); */
-    position: relative;
+    /* position: relative; */
     /* width: 100px; */
-    margin: 0 auto;
-    cursor: pointer;
-    font-size: 1rem;
+    /* margin: 0 auto; */
+    /* cursor: pointer;
+    font-size: 1rem; */
 }
 
 #front_wrap #front_box #front_title .front_img {
