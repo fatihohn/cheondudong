@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="2400px"
+	 height="2400px" viewBox="0 0 2400 2400" enable-background="new 0 0 2400 2400" xml:space="preserve">
+<g id="Layer_2">
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="-83.025" y="-519.176" width="2617.182" height="3716"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_2_)">
+			<defs>
+				<rect id="SVGID_3_" x="-90.514" y="-519.183" width="2632.167" height="3716.007"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  overflow="visible"/>
+			</clipPath>
+			<g clip-path="url(#SVGID_4_)">
+				
+					<image overflow="visible" width="2125" height="3000" xlink:href="F1B106A8.jpg"  transform="matrix(1.2387 0 0 1.2387 -90.5142 -519.1826)">
+				</image>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Layer_1" display="none">
+	<line display="inline" fill="none" stroke="#E50012" stroke-width="0.5" x1="1559.722" y1="2.929" x2="1373.771" y2="2393.672"/>
+	<line display="inline" fill="none" stroke="#E50012" stroke-width="0.5" x1="2395.888" y1="1091.635" x2="7.243" y2="1302.824"/>
+	<path display="inline" fill="#E50012" d="M1444.687,1175.407c0,0,25.247-3.454,21.146,45.32l3.38-47.596L1444.687,1175.407z"/>
+</g>
+</svg>
