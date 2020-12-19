@@ -107,19 +107,21 @@ header {
 }
 
 
-/* #header_wrap #header_box #header_box_area #header_btn a #menu_btn{
+#header_wrap #header_box #header_box_area #header_btn a #menu_btn{
     width: 60px;
-    margin: auto 0;
-    top: -50px;
-    left: 700px;
-    position: relative;
-} */
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgba(255,255,255,1);
+    padding: 5px;
+    margin-top: 4px;
+    transition: 300ms;
+}
 
 #header_wrap #header_box #header_box_area #header_btn a #menu_btn img {
-    width: 30px;
+    width: 100%;
     /* width: 20px; */
     /* top: 15px; */
-    top: 15px;
+    /* top: 15px; */
     position: relative;
     /* border-radius: 15px; */
     padding: 5px;
