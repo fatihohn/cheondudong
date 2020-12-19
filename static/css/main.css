@@ -12,6 +12,8 @@
 /****front****/
 #index_body {
     max-width: 600px;
+    height: 80vh;
+    max-height: 800px;
     width: 100%;
     margin: 100px auto;
     /* background: url('https://cdd-ddc.org/static/img/index_bg_space.svg') no-repeat center center / cover; */
@@ -19,6 +21,8 @@
     background: url('https://cdd-ddc.org/static/img/index_bg_space_900.png') repeat;
 }
 #index_bg_line {
+    height: 80vh;
+    max-height: 800px;
     /* background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat center center / cover; */
     background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat -245px -145px / cover;
     /* background: url('https://cdd-ddc.org/static/img/index_bg_space.svg') repeat; */
@@ -616,8 +620,10 @@
 } */
 #footer_wrap {
     /* position: fixed; */
+    position: absolute;
     bottom: 0;
     text-align: center;
+    max-width: 600px;
     width: 100%;
     /* font-family: "또박또박"; */
     /* font-family: "Yeon Sung"; */
@@ -643,7 +649,6 @@
         top: 10px;
     }
     .front_msg {
-        top: 15%;
         width: 180px;
     }
     .cheon {
