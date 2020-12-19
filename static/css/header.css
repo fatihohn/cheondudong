@@ -255,6 +255,7 @@ header {
 #menu_wrap #menu_box #menu_list .menu_list_item {
     padding-bottom: 15px;
     margin-bottom: 15px;
+    color: rgb(230,30,40);
     /* color: rgba(0, 0, 0, 0.6); */
     /* border-bottom: 20px solid;
     border-image-source: linear-gradient(180deg, rgba(240, 240, 240, 0) 0%, rgba(240, 240, 240, 0) 99%, rgba(0, 0, 0, 0.01) 98.5%, rgb(255,255,255) 99.3%, rgba(0,0,0, 0.08) 99.9%, rgba(0,0,0, 0) 100%);
