@@ -674,7 +674,7 @@
     }
     .header_logo_letter .en {
         font-size: 1.8rem;
-        position: absolute;
+        /* position: absolute; */
         top: 8px;
     }
     /* .header_logo_letter.center {
@@ -697,13 +697,16 @@
     }
 
     .cheon {
-        background: url('https://cdd-ddc.org/static/img/index_bg_cheon.svg') no-repeat center center / 70%;
+        position: relative;
+        background: url('https://cdd-ddc.org/static/img/index_bg_cheon.svg') no-repeat center center / 30px auto;
     }
     .du {
-        background: url('https://cdd-ddc.org/static/img/index_bg_du.svg') no-repeat center center / 70%;
+        position: relative;
+        background: url('https://cdd-ddc.org/static/img/index_bg_du.svg') no-repeat center center / 30px auto;
     }
     .dong {
-        background: url('https://cdd-ddc.org/static/img/index_bg_dong.svg') no-repeat center center / 70%;
+        position: relative;
+        background: url('https://cdd-ddc.org/static/img/index_bg_dong.svg') no-repeat center center / 30px auto;
     }
 }
 
