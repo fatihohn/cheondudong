@@ -51,9 +51,12 @@
             var langLabel = document.querySelectorAll(".lang_btn_label");
             langLabel.forEach(function(label) {
                 label.onclick = function() {
-                    if(label.classList.contains("selected")) {
-                        label.classList.remove("selected");
-                    } else {
+                    if(!label.classList.contains("selected")) {
+                        langLabel.forEach(function(labelAll) {
+                            if(labelAll.classList.contains("selected")) {
+                                labelAll.classList.remove("selected");
+                            }
+                        });
                         label.classList.add("selected");
                     }
                 }
