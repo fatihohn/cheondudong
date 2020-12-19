@@ -348,8 +348,9 @@
     font-size: 1.2rem;
     padding: 0 15px 40px;
 }
-#detail_wrap #detail_box #detail_cont p {
-    font-family: "경기천년바탕" !important;
+#detail_wrap #detail_box #detail_cont p,
+#detail_wrap #detail_box #detail_cont span {
+    font-family: "Yeon Sung" !important;
 }
 
 .detail_attachment_title {
