@@ -716,7 +716,9 @@
     .header_logo_letter.right_mobile {
         right: 42%;
     }
-
+    .header_logo_letter.center .en {
+        left: 1.2rem;
+    }
     
 }
 
