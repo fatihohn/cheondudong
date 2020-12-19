@@ -668,7 +668,10 @@
         width: 50%;
         margin: 0 25%;
     }
-
+    .header_logo_letter {
+        display: inline;
+        position: relative;
+    }
     .header_logo_letter .en {
         font-size: 1.8rem;
         position: absolute;
