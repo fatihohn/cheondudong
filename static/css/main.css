@@ -49,6 +49,7 @@
 .lang_btn_label {
     color: rgb(230, 130, 140);
     font-weight: 100;
+    cursor: pointer;
 }
 .lang_btn_label.selected {
     color: rgb(230,30,40);
