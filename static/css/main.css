@@ -23,7 +23,7 @@
     background: url('https://cdd-ddc.org/static/img/index_bg_space_900.png') repeat;
 }
 #index_bg_line {
-    height: 80vh;
+    /* height: 80vh; */
     max-height: 800px;
     /* background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat center center / cover; */
     /* background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat -200px -130px / cover; */
