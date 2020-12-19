@@ -20,9 +20,9 @@
                                 <!-- <input class="front_img" type="image" src="static/img/front.png" alt="Submit" /> -->
                                 <div class="lang_select">
                                     <input class='lang_btn' type='radio' id='ko_btn'name='language' value='ko' checked>
-                                    <label for='ko_btn'>한국어</label>
+                                    <label class='lang_btn_label selected' for='ko_btn'>한국어</label>
                                     <input class='lang_btn' type='radio' id='en_btn'name='language' value='en'>
-                                    <label for='en_btn'>English</label>
+                                    <label class='lang_btn_label' for='en_btn'>English</label>
                                 </div>
                                 <div class="front_msg">
                                     <div class="front_msg_letter cheon left"></div>
@@ -46,6 +46,19 @@
     
         <?php include "jsGroup.php"; ?>
 
+
+        <script>
+            var langLabel = document.querySelectorAll(".lang_btn_label");
+            langLabel.forEach(function(label) {
+                label.onclick = function() {
+                    if(label.classList.contains("selected")) {
+                        label.classList.remove("selected");
+                    } else {
+                        label.classList.add("selected");
+                    }
+                }
+            })
+        </script>
         <script>
             var langSelectForm = document.querySelector("#lang_select_form");
             var frontMsg = document.querySelector(".front_msg");

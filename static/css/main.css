@@ -28,6 +28,19 @@
     cursor: pointer;
     font-size: 1rem;
 }
+
+.lang_btn {
+    display: none;
+}
+.lang_btn_label {
+    color: rgb(230, 130, 140);
+    font-weight: 100;
+}
+.lang_btn_label.selected {
+    color: rgb(230,30,40);
+    font-weight: 900;
+}
+
 .front_msg {
     position: absolute;
     top: 35%;
