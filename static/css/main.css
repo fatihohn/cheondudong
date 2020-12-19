@@ -579,7 +579,8 @@
     padding-top: 5px;
     letter-spacing: 0.1rem;
     font-weight: 100;
-    color: rgb(160, 30, 50);
+    /* color: rgb(160, 30, 50); */
+    color: rgb(230,30,40);
 }
 
 #map .mapboxgl-popup-content p {
@@ -601,7 +602,8 @@
     /* font-family: "Yeon Sung";
     font-size: 1.5rem; */
     opacity: 0.6;
-    color: rgb(160, 30, 50);
+    /* color: rgb(160, 30, 50); */
+    color: rgb(230,30,40);
 }
 
 #map .mapboxgl-popup-tip {
