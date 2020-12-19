@@ -651,6 +651,9 @@
     .header_logo_letter .en {
         font-size: 1.8rem;
     }
+    .header_logo_letter.center .en {
+        right: -30%;
+    }
 
     .cheon {
         background: url('https://cdd-ddc.org/static/img/index_bg_cheon.svg') no-repeat center center / 70%;
