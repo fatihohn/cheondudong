@@ -79,6 +79,7 @@
 .front_msg_letter.center {
     right: 50%;
 }
+
 .header_logo_letter.right,
 .front_msg_letter.right {
     right: 0;
@@ -87,6 +88,10 @@
     color: rgb(230,30,40);
     font-size: 2.5rem;
     font-family: "제주명조" !important;
+}
+.header_logo_letter.center .en {
+    position: absolute;
+    right: -50%;
 }
 .cheon {
     position: absolute;
