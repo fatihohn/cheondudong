@@ -264,7 +264,8 @@
 
 #detail_wrap #detail_box #detail_sub_title {
     margin-bottom: 20px;
-    color: rgba(160, 30, 50, 0.8);
+    /* color: rgba(160, 30, 50, 0.8); */
+    color: rgba(230,30,40);
 }
 
 #detail_wrap #detail_box #detail_sub_title h4 {
@@ -323,7 +324,7 @@
     word-break: break-all;
     text-align: justify;
     /* font-family: "경기천년바탕"; */
-    /* font-family: "Yeon Sung"; */
+    font-family: "Yeon Sung";
     /* font-size: 1rem; */
     font-size: 1.2rem;
     line-height: 1.7rem;
@@ -341,6 +342,7 @@
     line-height: 1.9rem;
     color: rgba(0, 0, 0, 0.75);
     /* font-family: "또박또박"; */
+    font-family: "경기천년바탕";
     text-indent: 1rem;
     font-size: 1.2rem;
     padding: 0 15px 40px;
@@ -585,7 +587,7 @@
     white-space: pre-line;
     text-align: justify;
     padding-top: 10px;
-    /* font-family: "경기천년바탕"; */
+    font-family: "경기천년바탕";
     /* font-family: "Yeon Sung"; */
     font-size: 1rem;
     line-height: 1.3rem;
