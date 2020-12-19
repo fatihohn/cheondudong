@@ -29,7 +29,7 @@
     /* background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat center -12vh / cover; */
     /* background: url('https://cdd-ddc.org/static/img/index_bg_space.svg') repeat; */
     /* background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat -5vw -3vh / 100% auto; */
-    background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat -5vw -3vh / 820px auto;
+    background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat -12vw -12vh / 820px auto;
 }
 
 .lang_select {
@@ -646,7 +646,9 @@
     }
     #index_bg_line {
         max-height: 80vh;
-        background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat center center / auto 820px;
+        /* background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat center center / auto 820px; */
+        background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat -50vh -60vw / 820px auto;
+        
     }
     .lang_select {
         top: 10px;
