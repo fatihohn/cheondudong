@@ -100,26 +100,27 @@
     width: 40px;
     transition: all 3000ms ease;
 }
-.header_logo_letter.left,
+
 .front_msg_letter.left {
+    right: 100%;
+}
+.header_logo_letter.left {
     /* right: 100%; */
     /* right: calc(100% + 20px); */
     right: 60%;
 }
 .header_logo_letter.center,
 .front_msg_letter.center {
-    /* right: 50%; */
-    /* right: calc(50% + 20px); */
     right: 50%;
 }
 .header_logo_letter.center .en {
     left: 2.5rem;
 }
 
-.header_logo_letter.right,
 .front_msg_letter.right {
-    /* right: 0; */
-    /* right: 20px; */
+    right: 0;
+}
+.header_logo_letter.right {
     right: 40%;
 }
 .header_logo_letter .en {
