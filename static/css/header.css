@@ -46,7 +46,7 @@ header {
     border-image: url(../img/intaglio_line.png);
     border-image-slice: 30; */
 
-    border-bottom: 2px solid rgba(160, 30, 50, 0.5);
+    /* border-bottom: 2px solid rgba(160, 30, 50, 0.5); */
     box-shadow: 0 4px 8px 0 rgba(160, 30, 50, 0.2);
 }
 
