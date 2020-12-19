@@ -634,11 +634,23 @@
         max-width: 90%;
         margin-top: 40px;
     }
+    #index_bg_line {
+        background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat -330px -210px / auto 820px;
+    }
     .lang_select {
         top: 10px;
     }
     .front_msg {
         width: 180px;
+    }
+    .cheon {
+        background: url('https://cdd-ddc.org/static/img/index_bg_cheon.svg') no-repeat center center / 80%;
+    }
+    .du {
+        background: url('https://cdd-ddc.org/static/img/index_bg_du.svg') no-repeat center center / 80%;
+    }
+    .dong {
+        background: url('https://cdd-ddc.org/static/img/index_bg_dong.svg') no-repeat center center / 80%;
     }
 }
 
