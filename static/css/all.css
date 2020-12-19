@@ -58,17 +58,20 @@
 } */
 
 .gg-bold {
-    font-family: "또박또박", serif;
+    /* font-family: "또박또박", serif; */
+    font-family: '제주명조', '경기천년바탕', 'Noto Serif SC', 'Noto Serif TC', sans-serif;
 }
 
 .gg-batang {
     /* font-family: "GyeonggiBatang", "경기천년바탕", sans-serif; */
-    font-family: 'Yeon Sung', cursive;
+    /* font-family: 'Yeon Sung', cursive; */
+    font-family: '제주명조', '경기천년바탕', 'Noto Serif SC', 'Noto Serif TC', sans-serif;
 }
 
 .ddobag {
     /* font-family: "또박또박", "경기천년바탕", sans-serif; */
-    font-family: 'Yeon Sung', sans-serif;
+    /* font-family: 'Yeon Sung', sans-serif; */
+    font-family: '제주명조', '경기천년바탕', 'Noto Serif SC', 'Noto Serif TC', sans-serif;
 }
 
 
