@@ -25,8 +25,10 @@
     height: 80vh;
     max-height: 800px;
     /* background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat center center / cover; */
-    background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat -200px -130px / cover;
+    /* background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat -200px -130px / cover; */
+    /* background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat center -12vh / cover; */
     /* background: url('https://cdd-ddc.org/static/img/index_bg_space.svg') repeat; */
+    background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat -4vw -3vh / 100% auto;
 }
 
 .lang_select {
@@ -667,6 +669,12 @@
     .header_logo_letter.right .en {
         right: -30%;
     } */
+    .header_logo_letter.left {
+        right: 100%;
+    }
+    .header_logo_letter.right {
+        right: 0;
+    }
     .header_logo_letter.right_mobile {
         right: 25%;
     }
