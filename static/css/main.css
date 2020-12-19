@@ -83,6 +83,10 @@
 .front_msg_letter.right {
     right: 0;
 }
+.header_logo_letter .en {
+    color: rgb(230,30,40);
+    font-family: "제주명조" !important;
+}
 .cheon {
     width: 100%;
     height: 100%;
