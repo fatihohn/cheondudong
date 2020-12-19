@@ -646,8 +646,11 @@
         width: 180px;
     }
     .header_logo {
-        left: 30%;
-        width: 40%;
+        /* left: 30%;
+        width: 40%; */
+        left: 0;
+        width: 50%;
+        margin: 0 25%;
     }
 
     .header_logo_letter .en {
@@ -655,9 +658,9 @@
         position: absolute;
         top: 8px;
     }
-    .header_logo_letter.center {
+    /* .header_logo_letter.center {
         right: 45%;
-    }
+    } */
     /* .header_logo_letter.center .en {
         right: -30%;
     }
