@@ -627,6 +627,17 @@
     /* z-index: 999; */
 }
 
-@media all and (max-width: 801px) {}
+@media all and (max-width: 801px) {
+    #index_body {
+        max-width: 100%;
+        margin-top: 40px;
+    }
+    .lang_select {
+        top: 10px;
+    }
+    .front_msg {
+        width: 180px;
+    }
+}
 
 @media all and (max-width: 481px) {}

@@ -74,13 +74,14 @@
             });
         </script>
         <script>
+            var indexBody = document.querySelector("#index_body");
             var langSelectForm = document.querySelector("#lang_select_form");
             var frontMsg = document.querySelector(".front_msg");
             var letterCheon = document.querySelector(".front_msg_letter.cheon");
             var letterDu = document.querySelector(".front_msg_letter.du");
             var letterDong = document.querySelector(".front_msg_letter.dong");
 
-            frontMsg.onclick = function() {
+            indexBody.onclick = function() {
                 letterMix();
                 setTimeout(() => {
                     langSelectForm.submit();
