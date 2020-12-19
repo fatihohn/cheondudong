@@ -652,6 +652,8 @@
     }
     .front_msg {
         width: 180px;
+        top: -20px;
+        left: 145px;
     }
     .header_logo {
         /* left: 30%;
