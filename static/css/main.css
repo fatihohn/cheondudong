@@ -691,7 +691,7 @@
         position: fixed;
     }
     .header_logo_letter>div {
-        display: inline-block !important;
+        /* display: inline-block !important; */
         /* position: relative; */
     }
     .header_logo_letter .en {
@@ -700,20 +700,17 @@
         top: 8px;
     }
     .header_logo_letter.left {
-        /* right: calc(70% - 15px); */
         right: 70%;
     }
     .header_logo_letter.center {
-        /* right: calc(50% - 15px); */
         right: 50%;
     }
     .header_logo_letter.right {
-        /* right: calc(30% - 15px); */
         right: 30%;
     }
 
     .header_logo_letter.right_mobile {
-        right: 47.5%;
+        right: 30%;
     }
 
     
