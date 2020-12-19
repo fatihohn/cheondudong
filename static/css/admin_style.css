@@ -8,10 +8,8 @@
     left: 3%;
 }
 
-#header_wrap #header_box #header_box_area #header_ad_title {
+/* #header_wrap #header_box #header_box_area #header_ad_title {
     margin: 0 auto;
-    /* width: 476px; */
-    /* padding-top: 7px; */
     font-size: 1.2rem;
     cursor: pointer;
     text-align: center;
@@ -28,7 +26,7 @@
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-}
+} */
 
 #header_wrap #header_box #header_box_area .admin_header_lang {
     position: relative;
