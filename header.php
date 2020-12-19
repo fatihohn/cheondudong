@@ -13,13 +13,13 @@ session_start();
             <div id="lang_select" class="header_lang gg-batang">
                 <div id="language_ko" class="ko tooling lang_selector">
                     <!-- <a href="language_session.php?language=en&url="> -->
-                    <a href="#" onclick = "javascript:location.href='language_session.php?language=en&url='+urlToGo">
+                    <a class="header_lang_btn" href="#" onclick = "javascript:location.href='language_session.php?language=en&url='+urlToGo">
                         English
                     </a>
                 </div>
                 <div id="language_en" class="en tooling lang_selector">
                     <!-- <a href="language_session.php?language=ko&url="> -->
-                    <a href="#" onclick = "javascript:location.href='language_session.php?language=ko&url='+urlToGo">
+                    <a class="header_lang_btn" href="#" onclick = "javascript:location.href='language_session.php?language=ko&url='+urlToGo">
                         한국어
                     </a>
                 </div>
