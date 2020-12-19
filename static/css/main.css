@@ -100,10 +100,10 @@
     position: absolute;
     top: 5px;
 }
-.header_logo_letter.center .en {
+/* .header_logo_letter.center .en {
     position: absolute;
     right: -60%;
-}
+} */
 .cheon {
     position: absolute;
     width: 100%;
@@ -655,12 +655,12 @@
         position: absolute;
         top: 8px;
     }
-    .header_logo_letter.center .en {
+    /* .header_logo_letter.center .en {
         right: -30%;
     }
     .header_logo_letter.right .en {
         right: -30%;
-    }
+    } */
 
     .cheon {
         background: url('https://cdd-ddc.org/static/img/index_bg_cheon.svg') no-repeat center center / 70%;
