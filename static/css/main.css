@@ -692,12 +692,14 @@
     } */
     .header_logo_letter.left {
         /* right: 100%; */
+        right: 0;
         left: 47.5%;
     }
     .header_logo_letter.center {
         right: 0;
     }
     .header_logo_letter.right {
+        left: 0;
         right: 47.5%;
     }
     .header_logo_letter.right_mobile {
