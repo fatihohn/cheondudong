@@ -51,12 +51,6 @@
 }
 
 .front_msg {
-    /* position: absolute;
-    top: 35%;
-    left: 50%;
-    width: 40vw;
-    height: 40px;
-    cursor: pointer; */
     position: absolute;
     top: 22%;
     left: 45%;
@@ -101,7 +95,7 @@
 }
 .header_logo_letter .en {
     color: rgb(230,30,40);
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: "제주명조" !important;
 }
 .header_logo_letter.center .en {
@@ -649,14 +643,19 @@
     .front_msg {
         width: 180px;
     }
+
+    .header_logo_letter .en {
+        font-size: 1.8rem;
+    }
+
     .cheon {
-        background: url('https://cdd-ddc.org/static/img/index_bg_cheon.svg') no-repeat center center / 80%;
+        background: url('https://cdd-ddc.org/static/img/index_bg_cheon.svg') no-repeat center center / 70%;
     }
     .du {
-        background: url('https://cdd-ddc.org/static/img/index_bg_du.svg') no-repeat center center / 80%;
+        background: url('https://cdd-ddc.org/static/img/index_bg_du.svg') no-repeat center center / 70%;
     }
     .dong {
-        background: url('https://cdd-ddc.org/static/img/index_bg_dong.svg') no-repeat center center / 80%;
+        background: url('https://cdd-ddc.org/static/img/index_bg_dong.svg') no-repeat center center / 70%;
     }
 }
 
