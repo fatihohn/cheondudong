@@ -694,8 +694,11 @@
         /* right: 100%; */
         left: 47.5%;
     }
-    .header_logo_letter.right {
+    .header_logo_letter.center {
         right: 0;
+    }
+    .header_logo_letter.right {
+        right: 47.5%;
     }
     .header_logo_letter.right_mobile {
         /* right: 25%; */
