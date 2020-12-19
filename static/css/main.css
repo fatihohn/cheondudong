@@ -620,18 +620,15 @@
     left: calc(50% - 100px);
 } */
 #footer_wrap {
-    /* position: fixed; */
     position: absolute;
-    bottom: 0;
+    bottom: -50px;
     text-align: center;
     max-width: 600px;
     width: 100%;
-    /* font-family: "또박또박"; */
-    /* font-family: "Yeon Sung"; */
     padding: 15px;
     margin-top: 40px;
-    font-size: 1rem;
-    /* z-index: 999; */
+    font-size: 0.7rem;
+    color: rgb(230,30,40);
 }
 
 @media all and (max-width: 801px) {}
