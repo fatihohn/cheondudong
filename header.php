@@ -57,7 +57,7 @@ session_start();
             // letterMix();
             setInterval(() => {
                 letterMix();
-            }, 6300);
+            }, 12300);
         }, 3300);
     }
 
