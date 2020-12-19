@@ -54,7 +54,7 @@ session_start();
             letterMix();
         }, 300);
         setTimeout(() => {
-            letterMix();
+            // letterMix();
             setInterval(() => {
                 letterMix();
             }, 6300);
@@ -76,8 +76,25 @@ session_start();
         } else {
             headerDong.classList.remove("left");
             headerDong.classList.add("right");
-
         }
+        setTimeout(() => {
+            if(headerCheon.classList.contains("left")) {
+                headerCheon.classList.remove("left");
+                headerCheon.classList.add("right");
+            } else {
+                headerCheon.classList.remove("right");
+                headerCheon.classList.add("left");
+    
+            }
+            if(headerDong.classList.contains("right")) {
+                headerDong.classList.remove("right");
+                headerDong.classList.add("left");
+            } else {
+                headerDong.classList.remove("left");
+                headerDong.classList.add("right");
+            }
+            
+        }, 3000);
     }
 </script>
 <!-- 
