@@ -108,12 +108,12 @@ session_start();
                 headerCheon.classList.add("left");
     
             }
-            if(headerDong.classList.contains("right")) {
-                headerDong.classList.remove("right");
+            if(headerDong.classList.contains(rightClass)) {
+                headerDong.classList.remove(rightClass);
                 headerDong.classList.add("left");
             } else {
                 headerDong.classList.remove("left");
-                headerDong.classList.add("right");
+                headerDong.classList.add(rightClass);
             }
             
         }, 3000);
