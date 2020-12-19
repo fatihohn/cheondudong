@@ -301,7 +301,8 @@
 }
 
 #detail_wrap #detail_box #detail_point:hover {
-    color: rgba(160, 30, 50, 0.5);
+    /* color: rgba(160, 30, 50, 0.5); */
+    color: rgba(230,30,40, 0.5);
     font-weight: 900;
 }
 
