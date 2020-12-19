@@ -19,10 +19,14 @@
                             <form id="lang_select_form" method="post" action="language_session.php">
                                 <!-- <input class="front_img" type="image" src="static/img/front.png" alt="Submit" /> -->
                                 <div class="lang_select">
-                                    <input class='lang_btn' type='radio' id='ko_btn'name='language' value='ko' checked>
-                                    <label class='lang_btn_label selected' for='ko_btn'>한국어</label>
-                                    <input class='lang_btn' type='radio' id='en_btn'name='language' value='en'>
-                                    <label class='lang_btn_label' for='en_btn'>English</label>
+                                    <label class='lang_btn_label selected' for='ko_btn'>
+                                        한국어
+                                        <input class='lang_btn' type='radio' id='ko_btn' name='language' value='ko' checked>
+                                    </label>
+                                    <label class='lang_btn_label' for='en_btn'>
+                                        English
+                                        <input class='lang_btn' type='radio' id='en_btn' name='language' value='en'>
+                                    </label>
                                 </div>
                                 <div class="front_msg">
                                     <div class="front_msg_letter cheon left"></div>
@@ -48,16 +52,20 @@
 
 
         <script>
+            var langBtn;
             var langLabel = document.querySelectorAll(".lang_btn_label");
             langLabel.forEach(function(label) {
                 label.onclick = function() {
+                    langBtn = label.querySelector(".lang_btn");
                     if(!label.classList.contains("selected")) {
                         langLabel.forEach(function(labelAll) {
                             if(labelAll.classList.contains("selected")) {
                                 labelAll.classList.remove("selected");
+                                labelAll.querySelector(".lang_btn").removeAttribute("checked");
                             }
                         });
                         label.classList.add("selected");
+                        langBtn.setAttribute("checked", true)
                     }
                 }
             })
