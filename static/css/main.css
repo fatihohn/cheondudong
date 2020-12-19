@@ -11,17 +11,21 @@
 
 /****front****/
 #index_body {
+    max-width: 600px;
+    width: 100%;
+    margin: 100px auto;
     /* background: url('https://cdd-ddc.org/static/img/index_bg_space.svg') no-repeat center center / cover; */
     /* background: url('https://cdd-ddc.org/static/img/index_bg_space.svg') repeat; */
     background: url('https://cdd-ddc.org/static/img/index_bg_space_900.png') repeat;
 }
 #index_bg_line {
-    background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat center center / cover;
+    /* background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat center center / cover; */
+    background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat -245px -145px / cover;
     /* background: url('https://cdd-ddc.org/static/img/index_bg_space.svg') repeat; */
 }
 
 .lang_select {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     float: right;
@@ -42,10 +46,16 @@
 }
 
 .front_msg {
-    position: absolute;
+    /* position: absolute;
     top: 35%;
     left: 50%;
     width: 40vw;
+    height: 40px;
+    cursor: pointer; */
+    position: absolute;
+    top: 22%;
+    left: 45%;
+    width: 320px;
     height: 40px;
     cursor: pointer;
 }
