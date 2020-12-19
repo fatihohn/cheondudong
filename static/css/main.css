@@ -557,6 +557,7 @@
 
 #map .mapboxgl-popup-content p.right_p {
     text-align: right;
+    font-family: "제주명조";
     /* font-family: "또박또박"; */
     /* font-family: "Yeon Sung";
     font-size: 1.5rem; */
