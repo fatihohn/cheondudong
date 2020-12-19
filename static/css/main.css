@@ -11,6 +11,7 @@
 
 /****front****/
 #index_body {
+    cursor: pointer;
     max-width: 600px;
     height: 80vh;
     max-height: 800px;
