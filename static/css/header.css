@@ -303,6 +303,7 @@ header {
 #intro_cont_wrap #intro_cont {
     text-indent: 1rem;
     color: #555;
+    padding: 10px;
 }
 
 #intro_cont_wrap #intro_cont img {
