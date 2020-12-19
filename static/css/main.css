@@ -85,13 +85,15 @@
     right: 0;
 }
 .header_logo_letter .en {
+    position: absolute;
+    top: 10px;
     color: rgb(230,30,40);
     font-size: 2.5rem;
     font-family: "제주명조" !important;
 }
 .header_logo_letter.center .en {
-    position: absolute;
-    right: -50%;
+    
+    right: -60%;
 }
 .cheon {
     position: absolute;
