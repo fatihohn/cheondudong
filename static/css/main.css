@@ -519,9 +519,14 @@
     position: relative;
     float: right;
 }
-#detail_func_wrap .back_btn img,
-#detail_func_wrap .share_btn img {
+#detail_func_wrap .back_btn img {
     width: 70px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#detail_func_wrap .share_btn img {
+    width: 55px;
     padding: 10px;
     cursor: pointer;
 }
