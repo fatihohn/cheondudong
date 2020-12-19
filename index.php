@@ -52,23 +52,23 @@
 
 
         <script>
-            var langBtn;
-            var langLabel = document.querySelectorAll(".lang_btn_label");
-            langLabel.forEach(function(label) {
-                label.onclick = function() {
-                    langBtn = label.querySelector(".lang_btn");
-                    if(!label.classList.contains("selected")) {
-                        langLabel.forEach(function(labelAll) {
-                            if(labelAll.classList.contains("selected")) {
-                                labelAll.classList.remove("selected");
-                                labelAll.querySelector(".lang_btn").removeAttribute("checked");
-                            }
-                        });
-                        label.classList.add("selected");
-                        langBtn.setAttribute("checked", true)
-                    }
-                }
-            })
+            // var langBtn;
+            // var langLabel = document.querySelectorAll(".lang_btn_label");
+            // langLabel.forEach(function(label) {
+            //     label.onclick = function() {
+            //         langBtn = label.querySelector(".lang_btn");
+            //         if(!label.classList.contains("selected")) {
+            //             langLabel.forEach(function(labelAll) {
+            //                 if(labelAll.classList.contains("selected")) {
+            //                     labelAll.classList.remove("selected");
+            //                     labelAll.querySelector(".lang_btn").removeAttribute("checked");
+            //                 }
+            //             });
+            //             label.classList.add("selected");
+            //             langBtn.setAttribute("checked", true)
+            //         }
+            //     }
+            // });
         </script>
         <script>
             var langSelectForm = document.querySelector("#lang_select_form");
