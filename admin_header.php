@@ -54,20 +54,13 @@
                             </a>
             </div>
             <div id="header_ad_title">
-                <a>
+                <a href="./admin_index.php">
                     <!-- <h1 class="ddobag">
                         천두동·에디터
                     </h1> -->
-                    <img class="header_logo ko" src="static/img/cdd_admin.png" alt="천두동·동두천">
-                    <img class="header_logo en" src="static/img/cdd_en.png" alt="천두동·동두천">
-                </a>
-            </div>
-            <div id="header_btn">
-                <a href="./admin_index.php">
-                    <!-- <div id="menu_btn">
-                        <img src="/static/img/menu_btn.png" alt="메뉴">
-                        
-                    </div> -->
+                    <!-- <img class="header_logo ko" src="static/img/cdd_admin.png" alt="천두동·동두천">
+                    <img class="header_logo en" src="static/img/cdd_en.png" alt="천두동·동두천"> -->
+
                     <div class="header_logo">
                         <div class="header_logo_letter cheon_ko left">
                             <div class="cheon ko"></div>
@@ -82,6 +75,15 @@
                             <span class="en">dong</span>
                         </div>
                     </div>
+                </a>
+            </div>
+            <div id="header_btn">
+                <a>
+                    <div id="menu_btn">
+                        <img src="/static/img/menu_btn.png" alt="메뉴">
+                        
+                    </div>
+                    
                 </a>
             </div>
 
