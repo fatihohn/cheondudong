@@ -483,11 +483,14 @@
 }
 
 #detail_func_wrap {
-    display: grid;
-    /* grid-template-columns: 1fr 1fr; */
+    /* display: grid;
     grid-template-columns: 100px 100px;
     width: 100%;
     max-width: 200px;
+    margin: 0 auto;
+    text-align: center; */
+    width: 100%;
+    max-width: 768px;
     margin: 0 auto;
     text-align: center;
 }
@@ -502,9 +505,17 @@
     margin-left: 20px;
 } */
 
+#detail_func_wrap .back_btn {
+    position: relative;
+    float: left;
+}
+#detail_func_wrap .share_btn {
+    position: relative;
+    float: right;
+}
 #detail_func_wrap .back_btn img,
 #detail_func_wrap .share_btn img {
-    width: 60px;
+    width: 70px;
     padding: 10px;
     cursor: pointer;
 }
