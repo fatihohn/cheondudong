@@ -69,9 +69,16 @@ session_start();
     window.onload = function() {
         if(window.innerWidth < 601 && document.querySelector(".en").style.display !== "none") {
             rightClass = "right_mobile";
+            leftClass = "left_mobile";
+            centerClass = "center_mobile";
             headerDong.classList.remove("right");
             headerDong.classList.add(rightClass);
+            headerCheon.classList.remove("left");
+            headerCheon.classList.add(leftClass);
+            headerDu.classList.remove("center");
+            headerDu.classList.add(centerClass);
         } else {
+            leftClass = "left";
             rightClass = "right";
         }
         setTimeout(() => {
@@ -86,35 +93,35 @@ session_start();
     }
 
     function letterMix() {
-        if(headerCheon.classList.contains("left")) {
-            headerCheon.classList.remove("left");
+        if(headerCheon.classList.contains(leftClass)) {
+            headerCheon.classList.remove(leftClass);
             headerCheon.classList.add(rightClass);
         } else {
             headerCheon.classList.remove(rightClass);
-            headerCheon.classList.add("left");
+            headerCheon.classList.add(leftClass);
 
         }
         if(headerDong.classList.contains(rightClass)) {
             headerDong.classList.remove(rightClass);
-            headerDong.classList.add("left");
+            headerDong.classList.add(leftClass);
         } else {
-            headerDong.classList.remove("left");
+            headerDong.classList.remove(leftClass);
             headerDong.classList.add(rightClass);
         }
         setTimeout(() => {
-            if(headerCheon.classList.contains("left")) {
-                headerCheon.classList.remove("left");
+            if(headerCheon.classList.contains(leftClass)) {
+                headerCheon.classList.remove(leftClass);
                 headerCheon.classList.add(rightClass);
             } else {
                 headerCheon.classList.remove(rightClass);
-                headerCheon.classList.add("left");
+                headerCheon.classList.add(leftClass);
     
             }
             if(headerDong.classList.contains(rightClass)) {
                 headerDong.classList.remove(rightClass);
-                headerDong.classList.add("left");
+                headerDong.classList.add(leftClass);
             } else {
-                headerDong.classList.remove("left");
+                headerDong.classList.remove(leftClass);
                 headerDong.classList.add(rightClass);
             }
             

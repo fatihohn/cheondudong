@@ -712,9 +712,15 @@
     .header_logo_letter.right {
         right: 30%;
     }
-
+    
+    .header_logo_letter.left_mobile {
+        right: 68%;
+    }
+    .header_logo_letter.center_mobile {
+        right: 48%;
+    }
     .header_logo_letter.right_mobile {
-        right: 42%;
+        right: 40%;
     }
     .header_logo_letter.center .en {
         left: 1.2rem;
