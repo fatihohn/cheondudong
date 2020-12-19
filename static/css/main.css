@@ -627,9 +627,11 @@
     /* z-index: 999; */
 }
 
-@media all and (max-width: 801px) {
+@media all and (max-width: 801px) {}
+
+@media all and (max-width: 601px) {
     #index_body {
-        max-width: 100%;
+        max-width: 90%;
         margin-top: 40px;
     }
     .lang_select {
