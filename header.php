@@ -62,8 +62,16 @@ session_start();
     var headerCheon = document.querySelector(".header_logo_letter.cheon_ko");
     var headerDu = document.querySelector(".header_logo_letter.du_ko");
     var headerDong = document.querySelector(".header_logo_letter.dong_ko");
+    var rightClass;
+
+
 
     window.onload = function() {
+        if(window.innerWidth > 600) {
+            rightClass = "right";
+        } else {
+            rightClass = "right_mobile";
+        }
         setTimeout(() => {
             letterMix();
         }, 300);
@@ -78,25 +86,25 @@ session_start();
     function letterMix() {
         if(headerCheon.classList.contains("left")) {
             headerCheon.classList.remove("left");
-            headerCheon.classList.add("right");
+            headerCheon.classList.add(rightClass);
         } else {
-            headerCheon.classList.remove("right");
+            headerCheon.classList.remove(rightClass);
             headerCheon.classList.add("left");
 
         }
-        if(headerDong.classList.contains("right")) {
-            headerDong.classList.remove("right");
+        if(headerDong.classList.contains(rightClass)) {
+            headerDong.classList.remove(rightClass);
             headerDong.classList.add("left");
         } else {
             headerDong.classList.remove("left");
-            headerDong.classList.add("right");
+            headerDong.classList.add(rightClass);
         }
         setTimeout(() => {
             if(headerCheon.classList.contains("left")) {
                 headerCheon.classList.remove("left");
-                headerCheon.classList.add("right");
+                headerCheon.classList.add(rightClass);
             } else {
-                headerCheon.classList.remove("right");
+                headerCheon.classList.remove(rightClass);
                 headerCheon.classList.add("left");
     
             }
