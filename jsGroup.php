@@ -826,15 +826,15 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
     // langClick();
 //****original lang func end****//
 
-    function langClick() {
-        function showIndex() {
-            location.href = "index.php";
-        }
-        // document.getElementById("language_en").style.display = "none";
-        document.getElementById("lang_select").addEventListener("click", showIndex);
-        // document.getElementById("lang_select").onclick = showIndex();
-    }
-    langClick();
+    // function langClick() {
+    //     function showIndex() {
+    //         location.href = "index.php";
+    //     }
+    //     // document.getElementById("language_en").style.display = "none";
+    //     document.getElementById("lang_select").addEventListener("click", showIndex);
+    //     // document.getElementById("lang_select").onclick = showIndex();
+    // }
+    // langClick();
 
 
 
