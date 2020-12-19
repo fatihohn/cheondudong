@@ -80,8 +80,7 @@
             <div id="header_btn">
                 <a>
                     <div id="menu_btn">
-                        <img src="/static/img/menu_btn.png" alt="메뉴">
-                        
+                        <img src="/static/img/menu_btn.svg" alt="메뉴">
                     </div>
                     
                 </a>
