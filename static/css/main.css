@@ -53,9 +53,15 @@
 }
 
 .front_msg {
-    position: absolute;
+    /* position: absolute;
     top: 22%;
     left: 45%;
+    width: 320px;
+    height: 40px;
+    cursor: pointer; */
+    position: relative;
+    top: 50px;
+    left: 120px;
     width: 320px;
     height: 40px;
     cursor: pointer;
