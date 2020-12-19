@@ -754,7 +754,11 @@
     .header_logo_letter.center .en {
         left: 1.2rem;
     }
-    
+    #detail_func_wrap {
+        padding-top: 0;
+    }
 }
 
-@media all and (max-width: 481px) {}
+@media all and (max-width: 481px) {
+    
+}
