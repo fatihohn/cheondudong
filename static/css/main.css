@@ -103,8 +103,7 @@
     right: calc(50% + 20px);
 }
 .header_logo_letter.center .en {
-    /* left: 2.5rem; */
-    left: calc(2.5rem + 20px);
+    left: 2.5rem;
 }
 
 .header_logo_letter.right,
