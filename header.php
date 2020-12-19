@@ -23,10 +23,10 @@ session_start();
                 <a href="./home.php">
                     <!-- <img class="header_logo ko" src="static/img/cdd.png" alt="천두동·동두천">
                     <img class="header_logo en" src="static/img/cdd_en.png" alt="천두동·동두천"> -->
-                    <div class="front_msg">
-                        <div class="front_msg_letter cheon left"></div>
-                        <div class="front_msg_letter du center"></div>
-                        <div class="front_msg_letter dong right"></div>
+                    <div class="header_logo">
+                        <div class="header_logo_letter cheon left"></div>
+                        <div class="header_logo_letter du center"></div>
+                        <div class="header_logo_letter dong right"></div>
                     </div>
                 </a>
             </div>
@@ -46,21 +46,9 @@ session_start();
 </div>
 
 <script>
-    var frontMsg = document.querySelector(".front_msg");
-    var letterCheon = document.querySelector(".front_msg_letter.cheon");
-    var letterDu = document.querySelector(".front_msg_letter.du");
-    var letterDong = document.querySelector(".front_msg_letter.dong");
-
-    // frontMsg.onclick = function() {
-    //     letterMix();
-    //     setTimeout(() => {
-    //         langSelectForm.submit();
-    //     }, 3000);
-    // }
-    
-    // frontMsg.onmouseover = function() {
-    //     letterMix();
-    // }
+    var headerCheon = document.querySelector(".header_logo_letter.cheon");
+    var letterDu = document.querySelector(".header_logo_letter.du");
+    var headerDong = document.querySelector(".header_logo_letter.dong");
 
     window.onload = function() {
         setTimeout(() => {
@@ -75,20 +63,20 @@ session_start();
     }
 
     function letterMix() {
-        if(letterCheon.classList.contains("left")) {
-            letterCheon.classList.remove("left");
-            letterCheon.classList.add("right");
+        if(headerCheon.classList.contains("left")) {
+            headerCheon.classList.remove("left");
+            headerCheon.classList.add("right");
         } else {
-            letterCheon.classList.remove("right");
-            letterCheon.classList.add("left");
+            headerCheon.classList.remove("right");
+            headerCheon.classList.add("left");
 
         }
-        if(letterDong.classList.contains("right")) {
-            letterDong.classList.remove("right");
-            letterDong.classList.add("left");
+        if(headerDong.classList.contains("right")) {
+            headerDong.classList.remove("right");
+            headerDong.classList.add("left");
         } else {
-            letterDong.classList.remove("left");
-            letterDong.classList.add("right");
+            headerDong.classList.remove("left");
+            headerDong.classList.add("right");
 
         }
     }
