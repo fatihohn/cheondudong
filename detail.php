@@ -121,7 +121,7 @@ $stmt = mysqli_stmt_init($conn);
                     </div>
                 
                     <div class="share_btn" title="공유하기">
-                        <img src="static/img/share_btn.png" alt="share_btn">
+                        <img src="static/img/share_btn.svg" alt="share_btn">
                     </div>
                 </div>
                 <div id="detail_box">
