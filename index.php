@@ -56,7 +56,11 @@
 
         <script>
             var langBtn;
+            var langSelectDiv = document.querySelector(".lang_select");
             var langLabel = document.querySelectorAll(".lang_btn_label");
+            langSelectDiv.onclick = function(e) {
+                e.preventDefault();
+            }
             langLabel.forEach(function(label) {
                 label.onclick = function(e) {
                     e.preventDefault();
