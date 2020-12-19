@@ -347,11 +347,12 @@
     line-height: 1.9rem;
     color: rgba(0, 0, 0, 0.75);
     /* font-family: "또박또박"; */
-    font-family: "경기천년바탕";
+    /* font-family: "경기천년바탕"; */
     text-indent: 1rem;
     font-size: 1.2rem;
     padding: 0 15px 40px;
 }
+#detail_wrap #detail_box #detail_cont,
 #detail_wrap #detail_box #detail_cont p,
 #detail_wrap #detail_box #detail_cont span {
     font-family: "Yeon Sung" !important;
