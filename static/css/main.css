@@ -641,7 +641,11 @@
         top: 10px;
     }
     .front_msg {
-        width: 300px;
+        width: 180px;
+    }
+    .header_logo {
+        left: 30%;
+        width: 40%;
     }
 
     .header_logo_letter .en {
