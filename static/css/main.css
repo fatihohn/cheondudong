@@ -697,14 +697,17 @@
     }
 
     .cheon {
+        display: inline-block !important;
         position: relative;
         background: url('https://cdd-ddc.org/static/img/index_bg_cheon.svg') no-repeat center center / 30px auto;
     }
     .du {
+        display: inline-block !important;
         position: relative;
         background: url('https://cdd-ddc.org/static/img/index_bg_du.svg') no-repeat center center / 30px auto;
     }
     .dong {
+        display: inline-block !important;
         position: relative;
         background: url('https://cdd-ddc.org/static/img/index_bg_dong.svg') no-repeat center center / 30px auto;
     }
