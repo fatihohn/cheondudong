@@ -63,16 +63,24 @@
                 </a>
             </div>
             <div id="header_btn">
-                <a>
-                    
-                    <div id="menu_btn">
+                <a href="./admin_index.php">
+                    <!-- <div id="menu_btn">
                         <img src="/static/img/menu_btn.png" alt="메뉴">
-                        <!-- <h2 class="menu_o">
-                            ○
-                        </h2>
-                        <h2 class="menu_m">
-                            ≡
-                        </h2> -->
+                        
+                    </div> -->
+                    <div class="header_logo">
+                        <div class="header_logo_letter cheon_ko left">
+                            <div class="cheon ko"></div>
+                            <span class="en">cheon</span>
+                        </div>
+                        <div class="header_logo_letter du_ko center">
+                            <div class="du ko"></div>
+                            <span class="en">du</span>
+                        </div>
+                        <div class="header_logo_letter dong_ko right">
+                            <div class="dong ko"></div>
+                            <span class="en">dong</span>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -81,6 +89,77 @@
         </div>
     </div>
 </div>
+
+<script>
+    var headerCheon = document.querySelector(".header_logo_letter.cheon_ko");
+    var headerDu = document.querySelector(".header_logo_letter.du_ko");
+    var headerDong = document.querySelector(".header_logo_letter.dong_ko");
+    var rightClass;
+
+
+
+    window.onload = function() {
+        if(window.innerWidth < 601 && document.querySelector(".en").style.display !== "none") {
+            rightClass = "right_mobile";
+            leftClass = "left_mobile";
+            centerClass = "center_mobile";
+            headerDong.classList.remove("right");
+            headerDong.classList.add(rightClass);
+            headerCheon.classList.remove("left");
+            headerCheon.classList.add(leftClass);
+            headerDu.classList.remove("center");
+            headerDu.classList.add(centerClass);
+        } else {
+            leftClass = "left";
+            rightClass = "right";
+        }
+        setTimeout(() => {
+            letterMix();
+        }, 300);
+        setTimeout(() => {
+            // letterMix();
+            setInterval(() => {
+                letterMix();
+            }, 12300);
+        }, 3300);
+    }
+
+    function letterMix() {
+        if(headerCheon.classList.contains(leftClass)) {
+            headerCheon.classList.remove(leftClass);
+            headerCheon.classList.add(rightClass);
+        } else {
+            headerCheon.classList.remove(rightClass);
+            headerCheon.classList.add(leftClass);
+
+        }
+        if(headerDong.classList.contains(rightClass)) {
+            headerDong.classList.remove(rightClass);
+            headerDong.classList.add(leftClass);
+        } else {
+            headerDong.classList.remove(leftClass);
+            headerDong.classList.add(rightClass);
+        }
+        setTimeout(() => {
+            if(headerCheon.classList.contains(leftClass)) {
+                headerCheon.classList.remove(leftClass);
+                headerCheon.classList.add(rightClass);
+            } else {
+                headerCheon.classList.remove(rightClass);
+                headerCheon.classList.add(leftClass);
+    
+            }
+            if(headerDong.classList.contains(rightClass)) {
+                headerDong.classList.remove(rightClass);
+                headerDong.classList.add(leftClass);
+            } else {
+                headerDong.classList.remove(leftClass);
+                headerDong.classList.add(rightClass);
+            }
+            
+        }, 3000);
+    }
+</script>
 <!-- 
 <script>
     function headerTitleClick() {
