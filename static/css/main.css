@@ -701,7 +701,7 @@
     .header_logo_letter .en {
         font-size: 1.8rem;
         /* position: absolute; */
-        top: 8px;
+        top: 5px;
     }
     .header_logo_letter.left {
         right: 70%;
