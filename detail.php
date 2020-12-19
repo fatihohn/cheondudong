@@ -361,7 +361,7 @@ $stmt = mysqli_stmt_init($conn);
                         </div>
                         <div id="detail_func_wrap">
                             <div class="back_btn" title="뒤로가기">
-                                <img src="static/img/back_btn.png" alt="back_btn">
+                                <img src="static/img/back_btn.svg" alt="back_btn">
                             </div>
                         
                             <div class="share_btn" title="공유하기">
