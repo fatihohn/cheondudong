@@ -72,7 +72,7 @@
                     letterMix();
                     setInterval(() => {
                         letterMix();
-                    }, 10000);
+                    }, 6300);
                 }, 3300);
             }
 

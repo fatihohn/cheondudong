@@ -84,7 +84,7 @@
     font-weight: bolder;
     /* padding-top: 10%; */
     /* font-family: "또박또박" */
-    font-family: "Yeon Sung"
+    /* font-family: "Yeon Sung" */
 }
 
 #front_wrap #front_box #front_title div {
@@ -212,7 +212,7 @@
     /* font-size: 0.8rem; */
     /* font-weight: 600; */
     /* font-family: "또박또박"; */
-    font-family: "Yeon Sung";
+    /* font-family: "Yeon Sung"; */
     /* font-size: 1.4rem; */
     font-size: 1rem;
 }
@@ -248,7 +248,7 @@
     word-break: break-all;
     text-align: justify;
     /* font-family: "경기천년바탕"; */
-    font-family: "Yeon Sung";
+    /* font-family: "Yeon Sung"; */
     /* font-size: 1rem; */
     font-size: 1.2rem;
     line-height: 1.7rem;
@@ -322,7 +322,7 @@
 #detail_wrap #detail_box #detail_ref ul li .attached_ref_tag {
     /* display: grid; */
     /* font-family: "또박또박"; */
-    font-family: "Yeon Sung";
+    /* font-family: "Yeon Sung"; */
     /* font-size: 1.7rem; */
     font-size: 1.2rem;
     /* margin-bottom: 30px; */
@@ -486,7 +486,7 @@
     /* background: rgba(255, 255, 255, 0.6); */
     background: rgba(255, 255, 255, 0.9);
     /* font-family: "또박또박"; */
-    font-family: "Yeon Sung";
+    /* font-family: "Yeon Sung"; */
 }
 
 #map .mapboxgl-popup-content>div {
@@ -517,7 +517,7 @@
     text-align: justify;
     padding-top: 10px;
     /* font-family: "경기천년바탕"; */
-    font-family: "Yeon Sung";
+    /* font-family: "Yeon Sung"; */
     font-size: 1rem;
     line-height: 1.3rem;
     opacity: 0.9;
@@ -566,7 +566,7 @@
     text-align: center;
     width: 100%;
     /* font-family: "또박또박"; */
-    font-family: "Yeon Sung";
+    /* font-family: "Yeon Sung"; */
     padding: 15px;
     margin-top: 40px;
     font-size: 1rem;
