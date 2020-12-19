@@ -67,12 +67,12 @@ session_start();
 
 
     window.onload = function() {
-        if(window.innerWidth > 600) {
-            rightClass = "right";
-        } else {
+        if(window.innerWidth < 601 && document.querySelector(".en").style.display !== "none") {
             rightClass = "right_mobile";
             headerDong.classList.remove("right");
             headerDong.classList.add(rightClass);
+        } else {
+            rightClass = "right";
         }
         setTimeout(() => {
             letterMix();
