@@ -2,7 +2,7 @@
 session_start();
 include 'cdd_db_conn.php';
 // $language = $_GET['q'];
-if($_POST['language'] !== "") {
+if(isset($_POST['language']) && $_POST['language'] !== "") {
     $language = mysqli_real_escape_string($conn, $_POST['language']);
 } else {
     $language = mysqli_real_escape_string($conn, $_GET['language']);
