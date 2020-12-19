@@ -242,7 +242,8 @@ header {
     /* top: 140px; */
     padding: 15px 20%;
     /* font-size: 1.8rem; */
-    background-color: rgb(255, 245, 245);
+    /* background-color: rgb(255, 245, 245); */
+    background: url('https://cdd-ddc.org/static/img/index_bg_space_900.png') repeat;
     font-size: 1.3rem;
 }
 
