@@ -104,7 +104,7 @@
 .front_msg_letter.left {
     /* right: 100%; */
     /* right: calc(100% + 20px); */
-    right: 70%;
+    right: 60%;
 }
 .header_logo_letter.center,
 .front_msg_letter.center {
@@ -120,7 +120,7 @@
 .front_msg_letter.right {
     /* right: 0; */
     /* right: 20px; */
-    right: 30%;
+    right: 40%;
 }
 .header_logo_letter .en {
     color: rgb(230,30,40);
