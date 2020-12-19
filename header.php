@@ -50,9 +50,9 @@ session_start();
 </div>
 
 <script>
-    var headerCheon = document.querySelector(".header_logo_letter.cheon_ko");
-    var letterDu = document.querySelector(".header_logo_letter.du_ko");
-    var headerDong = document.querySelector(".header_logo_letter.dong_ko");
+    var headerCheon = document.querySelector(".header_logo_letter.cheon_ko").parentElement;
+    var letterDu = document.querySelector(".header_logo_letter.du_ko").parentElement;
+    var headerDong = document.querySelector(".header_logo_letter.dong_ko").parentElement;
 
     window.onload = function() {
         setTimeout(() => {
