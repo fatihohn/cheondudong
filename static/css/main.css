@@ -391,15 +391,8 @@
 #detail_wrap #detail_box #detail_img ul li::after,
 #detail_wrap #detail_box #detail_work ul li::after  */
 
-#detail_wrap #detail_box #detail_img ul li::before,
+/* #detail_wrap #detail_box #detail_img ul li::before,
 #detail_wrap #detail_box #detail_work ul li::before {
-    /* content: '';
-    background-color: rgba(160, 30, 50, 0.5);
-    top: -14px;
-    bottom: -14px;
-    left: 12px;
-    position: absolute;
-    width: 2px; */
     content: "";
     position: absolute;
     bottom: 0;
@@ -417,11 +410,10 @@
     position: absolute;
     bottom: 0;
     height: 0;
-    /* left: calc(50% - 50px); */
     box-shadow: none;
     width: 0;
     border-bottom: none;
-}
+} */
 
 /* #detail_wrap #detail_box #detail_img ul li::after,
 #detail_wrap #detail_box #detail_work ul li::after {

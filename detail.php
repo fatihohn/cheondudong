@@ -214,15 +214,15 @@ $stmt = mysqli_stmt_init($conn);
                             <!-- <ul class="detail_attachment_list"> -->
                                 <?php
                                     if($resultPlaceImg->num_rows > 0) {
+                                        // <div class='detail_attachment_title'>
+                                        //     <div class='img_title ko ddobag'>
+                                        //         이미지
+                                        //     </div>
+                                        //     <div class='img_title en ddobag'>
+                                        //         Images
+                                        //     </div>
+                                        // </div>
                                         echo "
-                                        <div class='detail_attachment_title'>
-                                            <div class='img_title ko ddobag'>
-                                                이미지
-                                            </div>
-                                            <div class='img_title en ddobag'>
-                                                Images
-                                            </div>
-                                        </div>
                                         <ul class='detail_attachment_list'>
                                         ";
                                         while($rowPlaceImg = $resultPlaceImg->fetch_assoc()) {
@@ -268,15 +268,15 @@ $stmt = mysqli_stmt_init($conn);
                             <ul class="detail_attachment_list"> -->
                                 <?php
                                     if($resultPlaceWork->num_rows > 0) {
+                                        // <div class='detail_attachment_title'>
+                                        //     <div class='work_title ko ddobag'>
+                                        //         관련 작품
+                                        //     </div>
+                                        //     <div class='work_title en ddobag'>
+                                        //         Works
+                                        //     </div>
+                                        // </div>
                                         echo "
-                                        <div class='detail_attachment_title'>
-                                            <div class='work_title ko ddobag'>
-                                                관련 작품
-                                            </div>
-                                            <div class='work_title en ddobag'>
-                                                Works
-                                            </div>
-                                        </div>
                                         <ul class='detail_attachment_list'>
                                         ";
                                         while($rowPlaceWork = $resultPlaceWork->fetch_assoc()) {
@@ -320,15 +320,15 @@ $stmt = mysqli_stmt_init($conn);
                             </div> -->
                             <?php
                                     if($resultPlaceRef->num_rows > 0) {
+                                        // <div class='detail_attachment_title'>
+                                        //     <div class='ref_title ko ddobag'>
+                                        //         참고 자료
+                                        //     </div>
+                                        //     <div class='ref_title en ddobag'>
+                                        //         References
+                                        //     </div>
+                                        // </div>
                                         echo "
-                                        <div class='detail_attachment_title'>
-                                            <div class='ref_title ko ddobag'>
-                                                참고 자료
-                                            </div>
-                                            <div class='ref_title en ddobag'>
-                                                References
-                                            </div>
-                                        </div>
                                         <ul class='detail_attachment_list'>
                                         ";
                                         while($rowPlaceRef = $resultPlaceRef->fetch_assoc()) {
