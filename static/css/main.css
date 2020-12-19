@@ -493,6 +493,8 @@
     max-width: 768px;
     margin: 0 auto;
     text-align: center;
+    height: 10px;
+    padding-top: 20px;
 }
 
 
@@ -647,10 +649,9 @@
     left: calc(50% - 100px);
 } */
 #footer_wrap {
-    position: absolute;
-    bottom: -50px;
+    position: relative;
     text-align: center;
-    max-width: 600px;
+    max-width: 100%;
     width: 100%;
     padding: 15px;
     margin-top: 40px;
