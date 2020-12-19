@@ -71,6 +71,8 @@ session_start();
             rightClass = "right";
         } else {
             rightClass = "right_mobile";
+            headerDong.classList.remove("right");
+            headerDong.classList.add(rightClass);
         }
         setTimeout(() => {
             letterMix();
