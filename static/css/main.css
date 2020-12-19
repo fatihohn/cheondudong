@@ -81,6 +81,7 @@
 .header_logo {
     position: absolute;
     left: 42.5%;
+    top: 15px;
     width: 20%;
     height: 40px;
     cursor: pointer;
