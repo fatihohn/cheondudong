@@ -38,15 +38,15 @@ frontInit();
     }
     loginClick();
     
-    function admin_headerTitleClick() {
+    // function admin_headerTitleClick() {
 
-        let adHeaderTitle = document.getElementById("header_ad_title");
-        function showIndex() {
-            location.href = "admin_index.php"
-        }
-        adHeaderTitle.addEventListener("click", showIndex);
-    }
-    admin_headerTitleClick();
+    //     let adHeaderTitle = document.getElementById("header_ad_title");
+    //     function showIndex() {
+    //         location.href = "admin_index.php"
+    //     }
+    //     adHeaderTitle.addEventListener("click", showIndex);
+    // }
+    // admin_headerTitleClick();
 
     function adminLang() {
         let sessLang = "<?php echo $_SESSION['language'];?>";
