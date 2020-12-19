@@ -703,13 +703,13 @@
     .header_logo_letter.left {
         /* right: 100%; */
         /* left: 47.5%; */
-        right: -30%;
+        /* right: -30%; */
     }
     .header_logo_letter.center {
         right: 0;
     }
     .header_logo_letter.right {
-        right: 30%;
+        /* right: 30%; */
     }
     .header_logo_letter.right_mobile {
         /* right: 25%; */
