@@ -97,6 +97,8 @@
     color: rgb(230,30,40);
     font-size: 2rem;
     font-family: "제주명조" !important;
+    position: absolute;
+    top: 5px;
 }
 .header_logo_letter.center .en {
     position: absolute;
