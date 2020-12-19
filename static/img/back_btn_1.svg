@@ -10,11 +10,8 @@
 		<line display="inline" fill="none" stroke="#E50012" stroke-width="0.5" x1="2847.939" y1="-235.333" x2="-4212.604" y2="388.914"/>
 	<path display="inline" fill="#E50012" d="M34.558,13.289c0,0,74.624-10.213,62.503,133.954l9.991-140.685L34.558,13.289z"/>
 </g>
-<g id="Layer_2" display="none">
-	<line display="inline" fill="none" stroke="#E50012" stroke-width="0.5" x1="2831.523" y1="-197.881" x2="-4229.02" y2="426.366"/>
-	<path display="inline" fill="#E50012" d="M0,52.421c0,0,58.442-5.556,50.545,20.001l6.264-24.846L0,52.421z"/>
-</g>
-<g id="Layer_3">
-	<text transform="matrix(1.792 0 0 1 -12.665 96.5264)" fill="#E61E28" font-family="'ahn2006-L'" font-size="83.3335">←</text>
+<g id="Layer_2">
+	<line fill="none" stroke="#E50012" stroke-width="0.5" x1="2831.523" y1="-197.881" x2="-4229.02" y2="426.366"/>
+	<path fill="#E50012" d="M0,52.421c0,0,58.442-5.556,50.545,20.001l6.264-24.846L0,52.421z"/>
 </g>
 </svg>
