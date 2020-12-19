@@ -93,10 +93,10 @@
                     letterMix();
                 }, 300);
                 setTimeout(() => {
-                    letterMix();
+                    // letterMix();
                     setInterval(() => {
                         letterMix();
-                    }, 9000);
+                    }, 6300);
                 }, 3300);
             }
 
@@ -118,8 +118,25 @@
                 } else {
                     letterDong.classList.remove("left");
                     letterDong.classList.add("right");
-
                 }
+                setTimeout(() => {
+                    if(letterCheon.classList.contains("left")) {
+                        letterCheon.classList.remove("left");
+                        letterCheon.classList.add("right");
+                    } else {
+                        letterCheon.classList.remove("right");
+                        letterCheon.classList.add("left");
+    
+                    }
+                    if(letterDong.classList.contains("right")) {
+                        letterDong.classList.remove("right");
+                        letterDong.classList.add("left");
+                    } else {
+                        letterDong.classList.remove("left");
+                        letterDong.classList.add("right");
+                    }
+                    
+                }, 3000);
             }
         </script>
         <script>
