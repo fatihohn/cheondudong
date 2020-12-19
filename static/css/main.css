@@ -632,15 +632,18 @@
 @media all and (max-width: 601px) {
     #index_body {
         max-width: 90%;
+        max-height: 80vh;
         margin-top: 40px;
     }
     #index_bg_line {
+        max-height: 80vh;
         background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat -330px -210px / auto 820px;
     }
     .lang_select {
         top: 10px;
     }
     .front_msg {
+        top: 15%;
         width: 180px;
     }
     .cheon {
