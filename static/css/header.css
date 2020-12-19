@@ -207,7 +207,7 @@ header {
     /* min-height: calc(100vh - 70px); */
     z-index: 99;
     /* background-color: rgb(240, 240, 240); */
-    background-color: rgb(255, 245, 245);
+    /* background-color: rgb(255, 245, 245); */
     position: absolute;
     /* position: relative; */
     /* top: 70px; */
@@ -235,13 +235,14 @@ header {
 
 #menu_wrap #menu_box {
     width: 100%;
-    max-width: 768px;
+    /* max-width: 768px; */
     min-height: calc(100vh - 100px);
     margin: 0 auto;
     /* position: relative; */
     /* top: 140px; */
-    padding: 15px;
+    padding: 15px 20%;
     /* font-size: 1.8rem; */
+    background-color: rgb(255, 245, 245);
     font-size: 1.3rem;
 }
 
