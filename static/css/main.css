@@ -705,11 +705,11 @@
     }
     .header_logo_letter.center {
         /* right: calc(50% - 15px); */
-        right: 70%;
+        right: 50%;
     }
     .header_logo_letter.right {
         /* right: calc(30% - 15px); */
-        right: 70%;
+        right: 30%;
     }
 
     .header_logo_letter.right_mobile {
