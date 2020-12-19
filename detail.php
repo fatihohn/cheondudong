@@ -115,6 +115,15 @@ $stmt = mysqli_stmt_init($conn);
 
 
             <div id="detail_wrap">
+                <div id="detail_func_wrap">
+                    <div class="back_btn" title="뒤로가기">
+                        <img src="static/img/back_btn.svg" alt="back_btn">
+                    </div>
+                
+                    <div class="share_btn" title="공유하기">
+                        <img src="static/img/share_btn.png" alt="share_btn">
+                    </div>
+                </div>
                 <div id="detail_box">
                     <div id="detail_box_area">
                         <div id="detail_marker">
@@ -359,16 +368,7 @@ $stmt = mysqli_stmt_init($conn);
                                     }
                                 ?>
                         </div>
-                        <div id="detail_func_wrap">
-                            <div class="back_btn" title="뒤로가기">
-                                <img src="static/img/back_btn.svg" alt="back_btn">
-                            </div>
                         
-                            <div class="share_btn" title="공유하기">
-                                <img src="static/img/share_btn.png" alt="share_btn">
-                            </div>
-                            
-                        </div>
                     </div>
                 </div>
             </div>

@@ -29,9 +29,9 @@ session_start();
                     <!-- <img class="header_logo ko" src="static/img/cdd.png" alt="천두동·동두천">
                     <img class="header_logo en" src="static/img/cdd_en.png" alt="천두동·동두천"> -->
                     <div class="header_logo">
-                        <div class="header_logo_letter cheon left"></div>
-                        <div class="header_logo_letter du center"></div>
-                        <div class="header_logo_letter dong right"></div>
+                        <div class="header_logo_letter left"><div class="cheon ko"></div><span class="en">cheon</span></div>
+                        <div class="header_logo_letter center"><div class="du ko"></div><span class="en">du</span></div>
+                        <div class="header_logo_letter right"><div class="dong ko"></div><span class="en">dong</span></div>
                     </div>
                 </a>
             </div>
