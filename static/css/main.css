@@ -655,6 +655,9 @@
         position: absolute;
         top: 8px;
     }
+    .header_logo_letter.center {
+        right: 45%;
+    }
     /* .header_logo_letter.center .en {
         right: -30%;
     }
