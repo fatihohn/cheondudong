@@ -677,7 +677,7 @@
         /* position: relative; */
         background: url('https://cdd-ddc.org/static/img/index_bg_dong.svg') no-repeat center center / 30px auto;
     }
-    
+
     .header_logo {
         /* left: 30%;
         width: 40%; */
@@ -700,13 +700,16 @@
         top: 8px;
     }
     .header_logo_letter.left {
-        right: calc(70% - 15px);
+        /* right: calc(70% - 15px); */
+        right: 70%;
     }
     .header_logo_letter.center {
-        right: calc(50% - 15px);
+        /* right: calc(50% - 15px); */
+        right: 70%;
     }
     .header_logo_letter.right {
-        right: calc(30% - 15px);
+        /* right: calc(30% - 15px); */
+        right: 70%;
     }
 
     .header_logo_letter.right_mobile {
