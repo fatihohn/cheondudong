@@ -524,6 +524,7 @@
 }
 
 #map .mapboxgl-popup-content h3 {
+    font-family: '제주명조', '경기천년바탕', 'Noto Serif SC', 'Noto Serif TC', sans-serif;
     /* font-size: 1.8rem; */
     font-size: 1.5rem;
     font-weight: 600;
@@ -533,6 +534,7 @@
 }
 
 #map .mapboxgl-popup-content h4 {
+    font-family: '제주명조', '경기천년바탕', 'Noto Serif SC', 'Noto Serif TC', sans-serif;
     /* font-size: 1.4rem; */
     font-size: 1.2rem;
     padding-top: 5px;
