@@ -672,6 +672,10 @@
         display: inline-block !important;
         position: relative;
     }
+    .header_logo_letter>div {
+        display: inline-block !important;
+        position: relative;
+    }
     .header_logo_letter .en {
         font-size: 1.8rem;
         /* position: absolute; */
