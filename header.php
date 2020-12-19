@@ -29,9 +29,18 @@ session_start();
                     <!-- <img class="header_logo ko" src="static/img/cdd.png" alt="천두동·동두천">
                     <img class="header_logo en" src="static/img/cdd_en.png" alt="천두동·동두천"> -->
                     <div class="header_logo">
-                        <div class="header_logo_letter cheon_ko left"><div class="cheon ko"></div><span class="en">cheon</span></div>
-                        <div class="header_logo_letter du_ko center"><div class="du ko"></div><span class="en">du</span></div>
-                        <div class="header_logo_letter dong_ko right"><div class="dong ko"></div><span class="en">dong</span></div>
+                        <div class="header_logo_letter cheon_ko left">
+                            <div class="cheon ko"></div>
+                            <span class="en">cheon</span>
+                        </div>
+                        <div class="header_logo_letter du_ko center">
+                            <div class="du ko"></div>
+                            <span class="en">du</span>
+                        </div>
+                        <div class="header_logo_letter dong_ko right">
+                            <div class="dong ko"></div>
+                            <span class="en">dong</span>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -50,9 +59,9 @@ session_start();
 </div>
 
 <script>
-    var headerCheon = document.querySelector(".header_logo_letter.cheon_ko").parentElement;
-    var letterDu = document.querySelector(".header_logo_letter.du_ko").parentElement;
-    var headerDong = document.querySelector(".header_logo_letter.dong_ko").parentElement;
+    var headerCheon = document.querySelector(".header_logo_letter.cheon_ko");
+    var headerDu = document.querySelector(".header_logo_letter.du_ko");
+    var headerDong = document.querySelector(".header_logo_letter.dong_ko");
 
     window.onload = function() {
         setTimeout(() => {
