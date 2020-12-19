@@ -650,6 +650,8 @@
 
     .header_logo_letter .en {
         font-size: 1.8rem;
+        position: absolute;
+        top: 8px;
     }
     .header_logo_letter.center .en {
         right: -30%;
