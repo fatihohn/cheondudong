@@ -165,7 +165,7 @@ header {
     font-size: 1rem;
 }
 #header_wrap .header_lang:hover {
-    color: rgba(230,30,40, 0.5);
+    color: rgba(230,30,40, 0.5) !important;
 }
 
 
