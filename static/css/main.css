@@ -85,19 +85,23 @@
 }
 .header_logo_letter .en {
     color: rgb(230,30,40);
+    font-size: 2.5rem;
     font-family: "제주명조" !important;
 }
 .cheon {
+    position: absolute;
     width: 100%;
     height: 100%;
     background: url('https://cdd-ddc.org/static/img/index_bg_cheon.svg') no-repeat center center / cover;
 }
 .du {
+    position: absolute;
     width: 100%;
     height: 100%;
     background: url('https://cdd-ddc.org/static/img/index_bg_du.svg') no-repeat center center / cover;
 }
 .dong {
+    position: absolute;
     width: 100%;
     height: 100%;
     background: url('https://cdd-ddc.org/static/img/index_bg_dong.svg') no-repeat center center / cover;
