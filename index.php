@@ -6,43 +6,46 @@
 
 
     </head>
-    <body id="index_body">
-        <div id="index_bg_line">
-            <header>
-            <!-- header: 헤더, 메뉴바 역할. 메뉴 버튼 클릭하면 menu화면 보여줌. 제목 클릭하면 map으로 넘어감-->
-                <?php include "header.php"; ?>
-            </header>    
-            <section>
-                <div id="front_wrap">
-                    <div id="front_box">
-                        <div id="front_title">
-                            <form id="lang_select_form" method="post" action="language_session.php">
-                                <!-- <input class="front_img" type="image" src="static/img/front.png" alt="Submit" /> -->
-                                <div class="lang_select">
-                                    <label class='lang_btn_label selected' for='ko_btn'>
-                                        한국어
-                                        <input class='lang_btn' type='radio' id='ko_btn' name='language' value='ko' checked>
-                                    </label>
-                                    <label class='lang_btn_label' for='en_btn'>
-                                        English
-                                        <input class='lang_btn' type='radio' id='en_btn' name='language' value='en'>
-                                    </label>
-                                </div>
-                                <div class="front_msg">
-                                    <div class="front_msg_letter cheon left"></div>
-                                    <div class="front_msg_letter du center"></div>
-                                    <div class="front_msg_letter dong right"></div>
-                                </div>
-                            </form>
+    <body >
+        <div id="index_body">
+            <div id="index_bg_line">
+                <header>
+                <!-- header: 헤더, 메뉴바 역할. 메뉴 버튼 클릭하면 menu화면 보여줌. 제목 클릭하면 map으로 넘어감-->
+                    <?php include "header.php"; ?>
+                </header>    
+                <section>
+                    <div id="front_wrap">
+                        <div id="front_box">
+                            <div id="front_title">
+                                <form id="lang_select_form" method="post" action="language_session.php">
+                                    <!-- <input class="front_img" type="image" src="static/img/front.png" alt="Submit" /> -->
+                                    <div class="lang_select">
+                                        <label class='lang_btn_label selected' for='ko_btn'>
+                                            한국어
+                                            <input class='lang_btn' type='radio' id='ko_btn' name='language' value='ko' checked>
+                                        </label>
+                                        <label class='lang_btn_label' for='en_btn'>
+                                            English
+                                            <input class='lang_btn' type='radio' id='en_btn' name='language' value='en'>
+                                        </label>
+                                    </div>
+                                    <div class="front_msg">
+                                        <div class="front_msg_letter cheon left"></div>
+                                        <div class="front_msg_letter du center"></div>
+                                        <div class="front_msg_letter dong right"></div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+        
+                <footer>
+                <!-- footer: detail, menu 화면 아래에서 저작권 정보 보여줌. -->
+                    <?php include "footer.php"; ?>
+                </footer>
     
-            <footer>
-            <!-- footer: detail, menu 화면 아래에서 저작권 정보 보여줌. -->
-                <?php include "footer.php"; ?>
-            </footer>
+            </div>
 
         </div>
         
