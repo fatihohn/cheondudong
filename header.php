@@ -3,18 +3,23 @@ include 'cdd_db_conn.php';
 session_start();
 // echo $_SESSION['language'];
 ?>
-
+<script>
+    var currentURL = window.location.href;
+    var urlToGo = currentURL.split("/")[currentURL.split("/").length - 1].toString();
+</script>
 <div id="header_wrap">
     <div id="header_box">
         <div id="header_box_area">
             <div id="lang_select" class="header_lang gg-batang">
                 <div id="language_ko" class="ko tooling lang_selector">
-                    <a href="language_session.php?language=en">
+                    <!-- <a href="language_session.php?language=en&url="> -->
+                    <a href="#" onclick = "javascript:location.href='language_session.php?language=en&url='+urlToGo">
                         English
                     </a>
                 </div>
                 <div id="language_en" class="en tooling lang_selector">
-                    <a href="language_session.php?language=ko">
+                    <!-- <a href="language_session.php?language=ko&url="> -->
+                    <a href="#" onclick = "javascript:location.href='language_session.php?language=ko&url='+urlToGo">
                         한국어
                     </a>
                 </div>
