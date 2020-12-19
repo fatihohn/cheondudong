@@ -31,7 +31,7 @@ session_start();
                     <div class="header_logo">
                         <div class="header_logo_letter cheon_ko left">
                             <div class="cheon ko"></div>
-                            <span class="en" style="left:1rem;">cheon</span>
+                            <span class="en">cheon</span>
                         </div>
                         <div class="header_logo_letter du_ko center">
                             <div class="du ko"></div>
