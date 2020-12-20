@@ -67,7 +67,7 @@ session_start();
 <script>
     function manageNav() {
     let menuBtn = document.querySelector(".menu");
-    let navigation = document.getElementById("menu_wrap");
+    let navigation = document.getElementById("#menu_wrap");
     // let overlay = document.getElementById("overlay");
 
     function showNav() {
