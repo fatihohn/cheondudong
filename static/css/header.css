@@ -213,16 +213,17 @@ header {
     text-decoration: none;
     color: rgba(230, 30, 40, 1) !important;
     font-size: 1rem;
-    background: rgb(255,230,230);
+    /* background: rgb(255,230,230); */
     padding: 10px;
     margin: 10px;
-    border: 1px solid rgb(230,30,40);
+    /* border: 1px solid rgb(230,30,40); */
 }
 #header_wrap .header_lang .header_lang_btn {
-    color: rgba(230,30,40, 0.5) !important;
+    font-weight: 900;
+    color: rgba(230,30,40, 1) !important;
 }
 #header_wrap .header_lang .header_lang_btn:hover {
-    color: rgba(230,30,40, 1) !important;
+    color: rgba(230,30,40, 0.7) !important;
 }
 
 
