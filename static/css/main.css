@@ -554,7 +554,9 @@
 #detail_func_wrap .back_btn {
     width: 50px;
     height: 30px;
-    position: relative;
+    /* position: relative; */
+    position: absolute;
+    bottom: 50px;
     float: left;
     margin-left: 40px;
     cursor: pointer;
