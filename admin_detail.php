@@ -132,6 +132,18 @@ $stmt = mysqli_stmt_init($conn);
 
 
             <div id="detail_wrap">
+                <div id="admin_detail_func_wrap">
+                    <div class="back_btn" title="뒤로가기">
+                        <img src="static/img/back_btn.png" alt="back_btn">
+                    </div>
+                    <div id="<?=$q?>" class="modify_btn" title="수정하기" onclick="placeModi(this.id)">
+                        <img src="static/img/modify_btn.png" alt="modify_btn">
+                    </div>
+                    <div id="<?=$q?>" class="delete_btn" title="삭제하기" onclick="placeDel(this.id)">
+                        <img src="static/img/delete_btn.png" alt="delete_btn">
+                    </div>
+                    
+                </div>
                 <div id="detail_box">
                     <div id="detail_box_area">
                         <div id="detail_marker">
@@ -441,18 +453,7 @@ $stmt = mysqli_stmt_init($conn);
                             }
                         ?>                                 
                         </div>
-                        <div id="admin_detail_func_wrap">
-                            <div class="back_btn" title="뒤로가기">
-                                <img src="static/img/back_btn.png" alt="back_btn">
-                            </div>
-                            <div id="<?=$q?>" class="modify_btn" title="수정하기" onclick="placeModi(this.id)">
-                                <img src="static/img/modify_btn.png" alt="modify_btn">
-                            </div>
-                            <div id="<?=$q?>" class="delete_btn" title="삭제하기" onclick="placeDel(this.id)">
-                                <img src="static/img/delete_btn.png" alt="delete_btn">
-                            </div>
-                           
-                        </div>
+                        
                     </div>
                 </div>
             </div>
