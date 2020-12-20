@@ -1,6 +1,20 @@
 <div id="header_wrap">
     <div id="header_box">
         <div id="header_box_area">
+            <div id="lang_select" class="header_lang gg-batang">
+                <div id="language_ko" class="ko tooling lang_selector">
+                    <!-- <a href="language_session.php?language=en&url="> -->
+                    <a class="header_lang_btn" href="#" onclick = "javascript:location.href='language_session.php?language=en&url='+urlToGo">
+                        English
+                    </a>
+                </div>
+                <div id="language_en" class="en tooling lang_selector">
+                    <!-- <a href="language_session.php?language=ko&url="> -->
+                    <a class="header_lang_btn" href="#" onclick = "javascript:location.href='language_session.php?language=ko&url='+urlToGo">
+                        한국어
+                    </a>
+                </div>
+            </div>
             <div id="header_login">
             <a>
                                
