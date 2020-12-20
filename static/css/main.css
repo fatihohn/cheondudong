@@ -530,7 +530,7 @@
 .attached_ref_link span {
     margin-left: 10px;
 }
-.attached_ref_link:hover {
+.attached_ref_link a:hover {
     border-bottom: 1px solid #777;
 }
 
