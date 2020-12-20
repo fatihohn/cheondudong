@@ -48,7 +48,14 @@ session_start();
                 <a>
                     <div id="menu_btn">
                         <!-- <img src="static/img/menu_btn.png" alt="메뉴"> -->
-                        <img src="static/img/menu_btn.svg" alt="메뉴">
+                        <!-- <img src="static/img/menu_btn.svg" alt="메뉴"> -->
+                        <div class="box actions">
+                            <a class="menu x">
+                                <span class="line top"></span>
+                                <span class="line middle"></span>
+                                <span class="line bottom"></span>
+                            </a>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -57,7 +64,33 @@ session_start();
         </div>
     </div>
 </div>
+<script>
+    function manageNav() {
+    let menuBtn = document.querySelector(".menu");
+    let navigation = document.getElementById("menu_wrap");
+    // let overlay = document.getElementById("overlay");
 
+    function showNav() {
+        navigation.classList.add("active");
+        // overlay.classList.add("active");
+        menuBtn.classList.add("active");
+    }
+
+    function hideNav() {
+        navigation.classList.remove("active");
+        // overlay.classList.remove("active");
+        menuBtn.classList.remove("active");
+    }
+    menuBtn.addEventListener("click", function() {
+        if (navigation.classList.contains("active")) {
+            hideNav();
+        } else {
+            showNav();
+        }
+    });
+}
+manageNav();
+</script>
 <script>
     var headerCheon = document.querySelector(".header_logo_letter.cheon_ko");
     var headerDu = document.querySelector(".header_logo_letter.du_ko");

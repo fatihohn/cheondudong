@@ -611,7 +611,10 @@
 #map .mapboxgl-ctrl.mapboxgl-ctrl-attrib {
     display: none;
 }
-
+.mapboxgl-ctrl-top-right {
+    top: 70px !important;
+    right: 15px !important;
+}
 .mapboxgl-ctrl-group:not(:empty) {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
