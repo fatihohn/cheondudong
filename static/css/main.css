@@ -646,7 +646,7 @@
     box-shadow: none !important;
     border-radius: 0;
     border: 1px solid rgb(230,30,40);
-    background: url('https://cdd-ddc.org/static/img/index_bg_space_900.png') repeat;
+    /* background: url('https://cdd-ddc.org/static/img/index_bg_space_900.png') repeat; */
 
 }
 
