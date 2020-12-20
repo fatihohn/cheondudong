@@ -26,6 +26,33 @@
 
 
 //****표시하기****//
+
+    function manageNav() {
+        let menuBtn = document.querySelector(".menu");
+        let navigation = document.getElementById("#menu_wrap");
+        // let overlay = document.getElementById("overlay");
+
+        function showNav() {
+            navigation.classList.add("active");
+            // overlay.classList.add("active");
+            menuBtn.classList.add("active");
+        }
+
+        function hideNav() {
+            navigation.classList.remove("active");
+            // overlay.classList.remove("active");
+            menuBtn.classList.remove("active");
+        }
+        menuBtn.addEventListener("click", function() {
+            if (navigation.classList.contains("active")) {
+                hideNav();
+            } else {
+                showNav();
+            }
+        });
+    }
+    manageNav();
+    
     function showDetailPlaceMap(str) {
         let adminHeader = document.getElementById("header_ad_title");
         if(!adminHeader) {
