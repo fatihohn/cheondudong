@@ -817,8 +817,8 @@
         max-height: 80vh;
         /* background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat center center / auto 820px; */
         /* background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat -50vh -60vw / 820px auto; */
-        background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat -340px -240px / 820px auto;
-        
+        /* background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat -340px -240px / 820px auto; */
+        background: url('https://cdd-ddc.org/static/img/index_bg_line.svg') no-repeat 75% -200px / 180% 100%;
     }
     .lang_select {
         top: 10px;
