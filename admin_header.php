@@ -96,19 +96,18 @@
                 </a>
             </div>
             <div id="header_btn">
-                <a>
-                    <div id="menu_btn">
-                        <!-- <img src="/static/img/menu_btn.svg" alt="메뉴"> -->
-                        <div class="box actions">
+                <div class="box actions">
+                    <a>
+                        <div id="menu_btn">
+                            <!-- <img src="/static/img/menu_btn.svg" alt="메뉴"> -->
                             <a class="menu x">
                                 <span class="line top"></span>
                                 <span class="line middle"></span>
                                 <span class="line bottom"></span>
                             </a>
                         </div>
-                    </div>
-                    
-                </a>
+                    </a>
+                </div>
             </div>
 
 
