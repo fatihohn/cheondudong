@@ -520,8 +520,8 @@
     width: 100%;
     position: fixed;
     top: 80px;
-    max-width: 768px;
-    margin: 0 calc((100% - 768px)/2);
+    /* max-width: 768px;
+    margin: 0 calc((100% - 768px)/2); */
     text-align: center;
     height: 10px;
     padding-top: 20px;
