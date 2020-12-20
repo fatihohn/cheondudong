@@ -15,7 +15,8 @@ if($_SESSION['cast'] == "admin") {
     ?>
     <script>
         alert("권한이 없습니다.");
-        history.back();
+        // history.back();
+        location.href = "./admin_index.php";
     </script>
     <?php
 }
