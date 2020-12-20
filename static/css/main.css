@@ -885,7 +885,7 @@
 @media all and (max-width: 481px) {
     .mapboxgl-ctrl-top-right {
         right: 0 !important;
-        top: calc(100% - 200px) !important;
+        top: calc(100% - 220px) !important;
     }
     
 }
