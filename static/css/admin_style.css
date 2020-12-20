@@ -204,6 +204,11 @@ section #userList_wrap .user_table {
 }
 #admin_detail_func_wrap {
     height: 40px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    grid-template-columns: 50px 50px;
+    width: 100px;
 }
 #admin_detail_func_wrap .back_btn img,
 #admin_detail_func_wrap .modify_btn img,
