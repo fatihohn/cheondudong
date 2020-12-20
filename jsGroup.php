@@ -56,10 +56,8 @@
             }
         });
     }
-    window.onload = function() {
-        manageNav();
-    }
-
+    manageNav();
+    
     function showDetailPlaceMap(str) {
         let adminHeader = document.getElementById("header_ad_title");
         if(!adminHeader) {
