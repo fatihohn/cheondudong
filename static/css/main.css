@@ -442,7 +442,9 @@
     /* padding: 10px 25px 25px 25px; */
     padding: 10px 15px 25px 15px;
 }
-
+#detail_wrap #detail_box #detail_img ul li .attached_img_tag {
+    font-family: "경기천년바탕";
+}
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_cont p,
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_cont span {
     font-size: 1rem !important;
@@ -501,6 +503,10 @@
     left: auto;
     right: 12px;
 } */
+
+#detail_wrap #detail_box #detail_ref {
+    border-top: 1px solid rgb(230,30,40);
+}
 
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag,
 #detail_wrap #detail_box #detail_ref ul li .attached_ref_tag {
@@ -637,8 +643,10 @@
     display: none;
 }
 .mapboxgl-ctrl-top-right {
-    top: 50px !important;
+    top: calc(100% - 180px) !important;
     right: 15px !important;
+    position: absolute;
+    height: 180px;
 }
 .mapboxgl-ctrl-group:not(:empty) {
     -moz-box-shadow: none !important;
