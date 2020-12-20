@@ -21,11 +21,27 @@
 	</g>
 </g>
 <g id="Layer_2_1_">
-	
-		<text transform="matrix(1 0 0 1 -12.5947 125.9395)" fill="#E61E28" font-family="'AdobeMyungjoStd-Medium-KSCpc-EUC-H'" font-size="174.4746">+</text>
+	<g>
+		<path fill="#E61E28" d="M55.274,10.267h9.595v46.932h45.886v8.898H64.869v47.63h-9.595v-47.63H9.04v-8.898h46.234V10.267z"/>
+	</g>
 </g>
 <g id="Layer_3_1_" display="none">
+	<g display="inline">
+		<path fill="#E61E28" d="M9.04,57.199h101.715v8.898H9.04V57.199z"/>
+	</g>
+</g>
+<g id="Layer_4" display="none">
+	<g display="inline">
+		<path fill="#E61E28" d="M59.528,3.736l23.285,53.146h-47.41L59.528,3.736z"/>
+	</g>
+	<g display="inline">
+		<path fill="#E61E28" d="M59.5,116.672L35.206,63.375h47.43L59.5,116.672z M59.5,111.403l19.953-46.008H38.508L59.5,111.403z"/>
+	</g>
+</g>
+<g id="Layer_5" display="none">
 	
-		<text transform="matrix(1 0 0 1 -11.5947 123.9395)" display="inline" fill="#E61E28" font-family="'AdobeMyungjoStd-Medium-KSCpc-EUC-H'" font-size="174.4746">-</text>
+		<text transform="matrix(1 0 0 1 0 106.375)" display="inline" font-family="'AdobeMyungjoStd-Medium-KSCpc-EUC-H'" font-size="120">•</text>
+	
+		<text transform="matrix(1 0 0 1 9.625 98.042)" display="inline" font-family="'AdobeMyungjoStd-Medium-KSCpc-EUC-H'" font-size="98.5993">○</text>
 </g>
 </svg>
