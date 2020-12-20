@@ -445,7 +445,7 @@
 
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_cont p
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_cont span {
-    font-size: 1rem;
+    font-size: 1rem !important;
 }
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_cont img {
     border-radius: 5px;
