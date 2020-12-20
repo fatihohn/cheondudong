@@ -124,6 +124,22 @@
             }, 12300);
         }, 3300);
     }
+    window.onresize = function() {
+        if(window.innerWidth < 601 && document.querySelector(".en").style.display !== "none") {
+            rightClass = "right_mobile";
+            leftClass = "left_mobile";
+            centerClass = "center_mobile";
+            headerDong.classList.remove("right");
+            headerDong.classList.add(rightClass);
+            headerCheon.classList.remove("left");
+            headerCheon.classList.add(leftClass);
+            headerDu.classList.remove("center");
+            headerDu.classList.add(centerClass);
+        } else {
+            leftClass = "left";
+            rightClass = "right";
+        }
+    }
 
     function letterMix() {
         if(headerCheon.classList.contains(leftClass)) {
