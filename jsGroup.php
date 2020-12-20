@@ -55,7 +55,9 @@
             }
         });
     }
-    manageNav();
+    window.onload = function() {
+        manageNav();
+    }
 
     function showDetailPlaceMap(str) {
         let adminHeader = document.getElementById("header_ad_title");
