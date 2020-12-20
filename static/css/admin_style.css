@@ -239,10 +239,17 @@ section #userList_wrap .user_table {
 }
 
 #admin_detail_func_wrap .back_btn {
-    width: 40px;
+    /* width: 40px;
     height: 40px;
+    cursor: pointer; */
+    width: 50px;
+    height: 30px;
+    position: fixed;
+    bottom: 50px;
+    float: left;
+    margin-left: 40px;
     cursor: pointer;
-    background: url("../img/back_btn.png") no-repeat center center / cover;
+    background: url("../img/back_btn_sun_1.png") no-repeat center center / cover;
 }
 #admin_detail_func_wrap .delete_btn,
 #attached_func_wrap .delete_btn {
