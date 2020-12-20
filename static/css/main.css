@@ -648,7 +648,9 @@
 .mapboxgl-ctrl button.mapboxgl-ctrl-compass .mapboxgl-ctrl-icon {
     background: url('https://cdd-ddc.org/static/img/compass.svg') no-repeat center center / 21px auto;
 }
-
+.mapboxgl-ctrl button.mapboxgl-ctrl-geolocate .mapboxgl-ctrl-icon {
+    background: url('https://cdd-ddc.org/static/img/geo_btn.svg') no-repeat center center / 21px auto;
+}
 #map .mapboxgl-popup {
     transition: 300ms;
 }
