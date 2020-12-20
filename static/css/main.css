@@ -751,6 +751,13 @@
         padding-top: 0;
         max-width: 100%;
         margin: 0;
+        top: 60px;
+    }
+    #detail_func_wrap .back_btn {
+        margin-left: 5px;
+    }
+    #detail_func_wrap .share_btn {
+        margin-left: 10px;
     }
 }
 
