@@ -29,7 +29,7 @@
 
     function manageNav() {
         let menuBtn = document.querySelector(".menu");
-        let navigation = document.querySelector("#menu_wrap");
+        var navigation = document.querySelector("#menu_wrap");
         // if(document.querySelector("#menu_wrap")) {
         //     let navigation = document.querySelector("#menu_wrap");
         // } else {
@@ -49,7 +49,7 @@
             menuBtn.classList.remove("active");
         }
         menuBtn.addEventListener("click", function() {
-            if (navigation.classList.contains("active")) {
+            if (document.querySelector("#menu_wrap").classList.contains("active")) {
                 hideNav();
             } else {
                 showNav();
