@@ -787,7 +787,8 @@
     }
     .front_msg {
         width: 180px;
-        top: -20px;
+        /* top: -20px; */
+        top: 65px;
         left: 145px;
     }
 
