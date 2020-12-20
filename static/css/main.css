@@ -276,7 +276,7 @@
 }
 
 #detail_wrap #detail_box #detail_title h3 {
-    font-size: 2.6rem;
+    font-size: 1.6rem;
     font-weight: 100;
 }
 
@@ -313,7 +313,8 @@
 
 #detail_wrap #detail_box #detail_point .detail_coord {
     /* font-size: 1.2rem; */
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: 0.8rem;
     font-weight: 300;
     /* line-height: 15px; */
 }
@@ -363,13 +364,16 @@
     /* font-family: "또박또박"; */
     /* font-family: "경기천년바탕"; */
     text-indent: 1rem;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    font-size: 1rem;
     padding: 0 15px 40px;
 }
 #detail_wrap #detail_box #detail_cont,
 #detail_wrap #detail_box #detail_cont p,
 #detail_wrap #detail_box #detail_cont span {
-    font-family: "Yeon Sung" !important;
+    /* font-family: "Yeon Sung" !important; */
+    font-family: "경기천년바탕" !important;
+
 }
 
 .detail_attachment_title {
@@ -425,7 +429,9 @@
     /* font-family: "또박또박"; */
     /* font-family: "Yeon Sung"; */
     /* font-size: 1.7rem; */
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    /* font-size: 1rem; */
+    font-size: 0.8rem;
     /* margin-bottom: 30px; */
     margin-bottom: 10px;
     text-align: left !important;
@@ -502,7 +508,8 @@
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_title,
 #detail_wrap #detail_box #detail_ref ul li .attached_ref_tag .attached_ref_title {
     font-weight: 900;
-    margin: 0 10px;
+    /* margin: 0 10px; */
+    margin: 10px;
 }
 
 #detail_func_wrap {
