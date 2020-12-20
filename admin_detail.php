@@ -125,7 +125,7 @@ $stmt = mysqli_stmt_init($conn);
         
         
             
-        <section>
+        <section id="detail_sc">
                 
             
             <!-- menu: 메뉴 내비 바 -->
