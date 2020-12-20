@@ -534,7 +534,7 @@
     float: left;
     margin-left: 20px;
     cursor: pointer;
-    background: url('https://cdd-ddc.org/static/img/back_btn.svg') no-repeat center center / cover;
+    background: url('https://cdd-ddc.org/static/img/back_btn.svg') no-repeat center center / 45px auto;
 }
 #detail_func_wrap .share_btn {
     width: 35px;
