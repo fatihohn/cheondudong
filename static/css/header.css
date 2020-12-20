@@ -132,7 +132,7 @@ header {
 }
 
 .actions .x .line {
-    background: #777;
+    background: rgb(230,30,40);
     display: block;
     height: 3px;
     margin: 4px 0;
@@ -206,16 +206,17 @@ header {
 }
 
 #header_wrap .header_lang {
-    padding-top: 10px;
-    padding-left: 5px;
     cursor: pointer;
     position: absolute;
     top: 0;
-    /* left: 3%; */
-    right: 3%;
-    color: rgba(0, 0, 0, 0.5);
-    /* font-size: 1.5rem; */
+    right: 15px;
+    text-decoration: none;
+    color: rgba(230, 30, 40, 1) !important;
     font-size: 1rem;
+    background: rgb(255,230,230);
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(230,30,40);
 }
 #header_wrap .header_lang .header_lang_btn:hover {
     color: rgba(230,30,40, 0.5) !important;
