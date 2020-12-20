@@ -19,7 +19,7 @@ $placeTitle = "임시 장소 제목"
                                     천두동 소개
                                 </h2>
                                 <h2 class="ddobag en">
-                                    Cheondudong Intro
+                                    About Cheondudong
                                 </h2>
                             </a>
                         </div>

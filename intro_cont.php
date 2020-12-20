@@ -13,7 +13,7 @@ if($resultIntro->num_rows > 0) {
    $en_cont =  $rowIntro['en_cont'];
 } else {
    $ko_cont =  "소개가 없습니다.";
-   $en_cont =  "No Intro.";
+   $en_cont =  "No About.";
 }
 
 ?>
