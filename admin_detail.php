@@ -426,7 +426,7 @@ $stmt = mysqli_stmt_init($conn);
                                                     echo "<div class='attached_ref_title en'>";
                                                     echo $detailRef_title_en;
                                                     echo "</div>";
-                                                echo "</a>";
+                                                echo "<span>".$detailRef_link."</span></a></a>";
                                             echo "</div>";
                                             echo "<div id='attached_func_wrap'>
                                                     <div id='";
