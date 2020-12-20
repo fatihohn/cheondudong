@@ -209,7 +209,7 @@ header {
     cursor: pointer;
     position: absolute;
     top: 0;
-    right: 15px;
+    right: 5px;
     text-decoration: none;
     color: rgba(230, 30, 40, 1) !important;
     font-size: 1rem;
