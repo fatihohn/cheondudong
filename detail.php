@@ -329,15 +329,15 @@ $stmt = mysqli_stmt_init($conn);
                             </div> -->
                             <?php
                                     if($resultPlaceRef->num_rows > 0) {
+                                        // <div class='detail_attachment_title'>
+                                        //     <div class='ref_title ko ddobag'>
+                                        //         참고 자료
+                                        //     </div>
+                                        //     <div class='ref_title en ddobag'>
+                                        //         References
+                                        //     </div>
+                                        // </div>
                                         echo "
-                                        <div class='detail_attachment_title'>
-                                            <div class='ref_title ko ddobag'>
-                                                참고 자료
-                                            </div>
-                                            <div class='ref_title en ddobag'>
-                                                References
-                                            </div>
-                                        </div>
                                         <ul class='detail_attachment_list'>
                                         ";
                                         while($rowPlaceRef = $resultPlaceRef->fetch_assoc()) {
@@ -352,10 +352,10 @@ $stmt = mysqli_stmt_init($conn);
                                                         echo "<a href='";
                                                         echo $detailRef_link;
                                                         echo "'>";
-                                                            echo "<div class='attached_ref_title ko'>";
+                                                            echo "<div class='attached_ref_title ko'>[참고자료]";
                                                             echo $detailRef_title_ko;
                                                             echo "</div>";
-                                                            echo "<div class='attached_ref_title en'>";
+                                                            echo "<div class='attached_ref_title en'>[Reference]";
                                                             echo $detailRef_title_en;
                                                             echo "</div>";
                                                         echo "<span>".$detailRef_link."</span></a>";
