@@ -528,23 +528,35 @@
 } */
 
 #detail_func_wrap .back_btn {
+    width: 50px;
+    height: 30px;
     position: relative;
     float: left;
+    margin-left: 10px;
+    cursor: pointer;
+    background: url('https://cdd-ddc.org/static/img/index_bg_cheon.svg') no-repeat center center / cover;
 }
 #detail_func_wrap .share_btn {
+    width: 50px;
+    height: 50px;
     position: relative;
     float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    background: url('https://cdd-ddc.org/static/img/index_bg_cheon.svg') no-repeat center center / cover;
 }
 #detail_func_wrap .back_btn img {
     width: 70px;
     padding: 10px;
     cursor: pointer;
+    display: none;
 }
 
 #detail_func_wrap .share_btn img {
     width: 55px;
     padding: 10px;
     cursor: pointer;
+    display: none;
 }
 
 
