@@ -524,6 +524,7 @@
     text-align: center;
     height: 10px;
     padding-top: 20px;
+    z-index: 100;
 }
 
 
