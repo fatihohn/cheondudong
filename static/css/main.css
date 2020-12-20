@@ -90,6 +90,7 @@
     margin: 0 25%;
     height: 40px;
     cursor: pointer;
+    display: none;
 }
 .header_logo_letter {
     /* position: absolute; */
@@ -575,14 +576,16 @@
 #map_wrap {
     /* width: 100%; */
     width: 100vw;
-    height: calc(100vh - 70px);
+    /* height: calc(100vh - 70px); */
     position: absolute;
-    top: 70px;
-    background-color: #999;
+    /* top: 70px; */
+    /* background-color: #999; */
     left: 0;
     z-index: -5;
     /* display: none; */
     visibility: hidden;
+    height: 100vh;
+    top: 0;
 }
 
 #map {
