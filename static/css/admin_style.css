@@ -246,6 +246,7 @@ section #userList_wrap .user_table {
     height: 30px;
     position: fixed;
     bottom: 50px;
+    left: 10px;
     float: left;
     margin-left: 40px;
     cursor: pointer;
