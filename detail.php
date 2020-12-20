@@ -358,7 +358,7 @@ $stmt = mysqli_stmt_init($conn);
                                                             echo "<div class='attached_ref_title en'>";
                                                             echo $detailRef_title_en;
                                                             echo "</div>";
-                                                        echo "</a>";
+                                                        echo "</a><span>".$detailRef_link."</span>";
                                                     echo "</div>";
                                                 echo "</div>";
                                             echo "</li>";
