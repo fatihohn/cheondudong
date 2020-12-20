@@ -218,8 +218,11 @@ header {
     margin: 10px;
     border: 1px solid rgb(230,30,40);
 }
-#header_wrap .header_lang .header_lang_btn:hover {
+#header_wrap .header_lang .header_lang_btn {
     color: rgba(230,30,40, 0.5) !important;
+}
+#header_wrap .header_lang .header_lang_btn:hover {
+    color: rgba(230,30,40, 1) !important;
 }
 
 
