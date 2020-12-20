@@ -443,7 +443,7 @@
     padding: 10px 15px 25px 15px;
 }
 
-#detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_cont p
+#detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_cont p,
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_cont span {
     font-size: 1rem !important;
 }
