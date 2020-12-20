@@ -410,4 +410,18 @@ header {
     #menu_wrap #menu_box {
         padding: 15px 5%;
     }
+    #header_wrap .header_lang {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-decoration: none;
+        color: rgba(230, 30, 40, 1) !important;
+        font-size: 1rem;
+        background: rgb(255,230,230);
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid rgb(230,30,40);
+    }
+    
 }

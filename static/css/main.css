@@ -844,5 +844,8 @@
 }
 
 @media all and (max-width: 481px) {
-    
+    .mapboxgl-ctrl-top-right {
+        top: 50px !important;
+        right: 0 !important;
+    }
 }
