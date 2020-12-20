@@ -201,7 +201,9 @@ section #userList_wrap .user_table {
     max-width: 300px;
     text-align: center;
 }
-
+#admin_detail_func_wrap {
+    height: 40px;
+}
 #admin_detail_func_wrap .back_btn img,
 #admin_detail_func_wrap .modify_btn img,
 #admin_detail_func_wrap .delete_btn img,
@@ -236,22 +238,30 @@ section #userList_wrap .user_table {
 }
 
 #admin_detail_func_wrap .back_btn {
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     background: url("../img/back_btn.png") no-repeat center center / cover;
 }
 #admin_detail_func_wrap .delete_btn,
 #attached_func_wrap .delete_btn {
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     background: url("../img/delete_btn.png") no-repeat center center / cover;
 }
 
 #attached_func_wrap .top_btn {
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     background: url("../img/top_btn.png") no-repeat center center / cover;
 }
 
 #admin_detail_func_wrap .modify_btn,
 #attached_func_wrap .modify_btn {
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     background: url("../img/modify_btn.png") no-repeat center center / cover;
 }
