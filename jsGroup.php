@@ -29,11 +29,12 @@
 
     function manageNav() {
         let menuBtn = document.querySelector(".menu");
-        if(document.querySelector("#menu_wrap")) {
-            let navigation = document.querySelector("#menu_wrap");
-        } else {
-            let navigation = document.querySelector("#menu_wrap");
-        }
+        let navigation = document.querySelector("#menu_wrap");
+        // if(document.querySelector("#menu_wrap")) {
+        //     let navigation = document.querySelector("#menu_wrap");
+        // } else {
+        //     let navigation = document.querySelector("#menu_wrap");
+        // }
         // let overlay = document.getElementById("overlay");
 
         function showNav() {
