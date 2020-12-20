@@ -447,7 +447,7 @@
 }
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_cont p,
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_cont span {
-    font-size: 1.1rem !important;
+    font-size: 0.9rem !important;
 }
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_cont img {
     border-radius: 5px;
@@ -520,7 +520,7 @@
     font-weight: 900;
     /* margin: 0 10px; */
     margin: 10px;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-family: "Yeon Sung";
 }
 
