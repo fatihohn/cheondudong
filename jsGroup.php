@@ -49,7 +49,7 @@
             menuBtn.classList.remove("active");
         }
         menuBtn.addEventListener("click", function() {
-            if (document.querySelector("#menu_wrap").classList.contains("active")) {
+            if (document.querySelector("#menu_wrap").style.display !== "none") {
                 hideNav();
             } else {
                 showNav();
