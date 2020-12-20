@@ -45,10 +45,8 @@ session_start();
                 </a>
             </div>
             <div id="header_btn">
-                <a href="#">
+                <!-- <a href="#">
                     <div id="menu_btn">
-                        <!-- <img src="static/img/menu_btn.png" alt="메뉴"> -->
-                        <!-- <img src="static/img/menu_btn.svg" alt="메뉴"> -->
                         <div class="box actions">
                             <a class="menu x">
                                 <span class="line top"></span>
@@ -57,7 +55,16 @@ session_start();
                             </a>
                         </div>
                     </div>
-                </a>
+                </a> -->
+                    <div id="menu_btn">
+                        <div class="box actions">
+                            <a class="menu x">
+                                <span class="line top"></span>
+                                <span class="line middle"></span>
+                                <span class="line bottom"></span>
+                            </a>
+                        </div>
+                    </div>
             </div>
 
 

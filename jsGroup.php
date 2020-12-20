@@ -29,12 +29,12 @@
 
     function manageNav() {
         let menuBtn = document.querySelector(".menu");
-        var navigation = document.querySelector("#menu_wrap");
-        // if(document.querySelector("#menu_wrap")) {
-        //     let navigation = document.querySelector("#menu_wrap");
-        // } else {
-        //     let navigation = document.querySelector("#menu_wrap");
-        // }
+        let navigation = document.querySelector("#menu_wrap");
+        if(document.querySelector("#menu_wrap")) {
+            let navigation = document.querySelector("#menu_wrap");
+        } else {
+            let navigation = document.querySelector("#menu_wrap");
+        }
         // let overlay = document.getElementById("overlay");
 
         function showNav() {
@@ -49,7 +49,7 @@
             menuBtn.classList.remove("active");
         }
         menuBtn.addEventListener("click", function() {
-            if (document.querySelector("#menu_wrap").style.display !== "none") {
+            if (navigation.classList.contains("active")) {
                 hideNav();
             } else {
                 showNav();

@@ -96,7 +96,7 @@
                 </a>
             </div>
             <div id="header_btn">
-                <a href="#">
+                <!-- <a>
                     <div id="menu_btn">
                         <div class="box actions">
                             <a class="menu x">
@@ -106,7 +106,18 @@
                             </a>
                         </div>
                     </div>
-                </a>
+                </a> -->
+              
+                    <div id="menu_btn">
+                        <div class="box actions">
+                            <a class="menu x">
+                                <span class="line top"></span>
+                                <span class="line middle"></span>
+                                <span class="line bottom"></span>
+                            </a>
+                        </div>
+                    </div>
+                
             </div>
 
 
