@@ -49,8 +49,7 @@
 	</g>
 </g>
 <g id="Layer_6">
-	
-		<image overflow="visible" width="216" height="126" xlink:href="back_btn_sun_1.png"  transform="matrix(0.5456 0 0 0.5456 1.0713 25.625)">
+	<image overflow="visible" width="216" height="126" xlink:href="back_btn_sun_1.png"  transform="matrix(0.5556 0 0 0.5556 0 25)">
 	</image>
 </g>
 </svg>

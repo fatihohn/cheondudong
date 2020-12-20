@@ -427,7 +427,7 @@
 #detail_wrap #detail_box #detail_ref ul li .attached_ref_tag {
     /* display: grid; */
     /* font-family: "또박또박"; */
-    /* font-family: "Yeon Sung"; */
+    font-family: "Yeon Sung";
     /* font-size: 1.7rem; */
     /* font-size: 1.2rem; */
     /* font-size: 1rem; */
@@ -566,11 +566,13 @@
 #detail_func_wrap .share_btn {
     width: 35px;
     height: 35px;
-    position: relative;
+    position: fixed;
     float: right;
+    bottom: 50px;
+    right: 20px;
     margin-right: 25px;
     cursor: pointer;
-    background: url('https://cdd-ddc.org/static/img/share_btn.svg') no-repeat center center / cover;
+    background: url(https://cdd-ddc.org/static/img/share_btn.svg) no-repeat center center / cover;
 }
 #detail_func_wrap .back_btn img {
     width: 70px;
