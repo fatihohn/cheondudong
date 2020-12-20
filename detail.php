@@ -329,15 +329,15 @@ $stmt = mysqli_stmt_init($conn);
                             </div> -->
                             <?php
                                     if($resultPlaceRef->num_rows > 0) {
-                                        // <div class='detail_attachment_title'>
-                                        //     <div class='ref_title ko ddobag'>
-                                        //         참고 자료
-                                        //     </div>
-                                        //     <div class='ref_title en ddobag'>
-                                        //         References
-                                        //     </div>
-                                        // </div>
                                         echo "
+                                        <div class='detail_attachment_title'>
+                                            <div class='ref_title ko ddobag'>
+                                                참고 자료
+                                            </div>
+                                            <div class='ref_title en ddobag'>
+                                                References
+                                            </div>
+                                        </div>
                                         <ul class='detail_attachment_list'>
                                         ";
                                         while($rowPlaceRef = $resultPlaceRef->fetch_assoc()) {

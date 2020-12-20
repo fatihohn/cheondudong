@@ -447,7 +447,7 @@
 }
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_cont p,
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_cont span {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
 }
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag .attached_work_cont img {
     border-radius: 5px;
@@ -504,9 +504,9 @@
     right: 12px;
 } */
 
-#detail_wrap #detail_box #detail_ref {
+/* #detail_wrap #detail_box #detail_ref {
     border-top: 1px solid rgb(230,30,40);
-}
+} */
 
 #detail_wrap #detail_box #detail_work ul li .attached_work_tag,
 #detail_wrap #detail_box #detail_ref ul li .attached_ref_tag {
