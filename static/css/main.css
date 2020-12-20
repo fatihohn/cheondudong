@@ -622,7 +622,7 @@
     display: none;
 }
 .mapboxgl-ctrl-top-right {
-    top: 60px !important;
+    top: 50px !important;
     right: 15px !important;
 }
 .mapboxgl-ctrl-group:not(:empty) {
@@ -845,7 +845,6 @@
 
 @media all and (max-width: 481px) {
     .mapboxgl-ctrl-top-right {
-        top: 50px !important;
         right: 0 !important;
     }
 }
