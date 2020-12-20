@@ -525,6 +525,7 @@
 }
 
 #detail_wrap #detail_box #detail_img ul li .attached_img_tag .attached_img_title {
+    font-size: 0.9rem;
     font-family: "경기천년바탕";
 }
 .attached_ref_link span {
