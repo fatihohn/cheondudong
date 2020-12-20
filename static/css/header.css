@@ -414,6 +414,7 @@ header {
     #header_wrap .header_lang {
         padding: 10px;
         margin: 10px;
+        margin-right: 0;
     }
     
 }
