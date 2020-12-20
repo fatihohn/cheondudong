@@ -3,21 +3,21 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="120px"
 	 height="120px" viewBox="0 0 120 120" enable-background="new 0 0 120 120" xml:space="preserve">
-<g id="Layer_1" display="none">
-	<g id="Layer_1_1_">
+<g id="Layer_1">
+	<g id="Layer_1_1_" display="none">
 		
 			<line display="inline" fill="none" stroke="#E50012" stroke-width="0.5" x1="376.335" y1="-3453.415" x2="-173.313" y2="3613.326"/>
 		
 			<line display="inline" fill="none" stroke="#E50012" stroke-width="0.5" x1="2847.939" y1="-235.333" x2="-4212.604" y2="388.914"/>
 		<path display="inline" fill="#E50012" d="M34.558,13.289c0,0,74.624-10.213,62.502,133.954l9.991-140.685L34.558,13.289z"/>
 	</g>
-	<g id="Layer_2">
+	<g id="Layer_2" display="none">
 		
 			<line display="inline" fill="none" stroke="#E50012" stroke-width="0.5" x1="2831.523" y1="-197.881" x2="-4229.02" y2="426.366"/>
 		<path display="inline" fill="#E50012" d="M0,52.421c0,0,58.442-5.556,50.545,20.001l6.264-24.846L0,52.421z"/>
 	</g>
 	<g enable-background="new    ">
-		<path display="inline" fill="#E61E28" d="M114.064,58.115v3.092H38.669v6.918L5.273,59.824l33.25-9.115v7.406H114.064z"/>
+		<path fill="#E61E28" d="M114.064,58.115v3.092H38.669v6.918L5.273,59.824l33.25-9.115v7.406H114.064z"/>
 	</g>
 </g>
 <g id="Layer_2_1_" display="none">
@@ -39,18 +39,9 @@
 	</g>
 </g>
 <g id="Layer_5" display="none">
-	<path fill="#E61E28" d="M59.005,10C25.938,10,9.002,35.204,9.002,60.407C9.002,85.202,25.938,110,59.005,110
-		c33.466,0,49.997-24.798,49.997-49.593C109.002,35.204,92.471,10,59.005,10z M59.004,100.672
-		c-26.454,0-40.002-19.838-40.002-39.674c0-20.163,13.548-40.326,40.002-40.326c26.773,0,39.998,20.163,39.998,40.326
-		C99.002,80.834,85.777,100.672,59.004,100.672z"/>
-	<g>
-		<path display="inline" fill="#E61E28" d="M77.254,60.817c0,8.895-5.979,17.79-18.081,17.79c-11.958,0-18.082-8.896-18.082-17.79
-			c0-9.041,6.125-18.082,18.082-18.082C71.275,42.735,77.254,51.776,77.254,60.817z"/>
-	</g>
-</g>
-<g id="Layer_6">
 	
-		<image overflow="visible" width="216" height="126" xlink:href="back_btn_sun_1.png"  transform="matrix(0.5456 0 0 0.5456 1.0713 25.625)">
-	</image>
+		<text transform="matrix(1 0 0 1 0 106.375)" display="inline" font-family="'AdobeMyungjoStd-Medium-KSCpc-EUC-H'" font-size="120">•</text>
+	
+		<text transform="matrix(1 0 0 1 9.625 98.042)" display="inline" font-family="'AdobeMyungjoStd-Medium-KSCpc-EUC-H'" font-size="98.5993">○</text>
 </g>
 </svg>
