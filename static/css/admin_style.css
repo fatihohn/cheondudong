@@ -210,6 +210,7 @@ section #userList_wrap .user_table {
     width: 60px;
     padding: 10px;
     cursor: pointer;
+    display: none;
 }
 
 #attached_func_wrap .delete_btn img,
@@ -218,6 +219,7 @@ section #userList_wrap .user_table {
     width: 40px;
     padding: 10px;
     cursor: pointer;
+    display: none;
 }
 
 #intro_cont_wrap #intro_cont .delete_btn,
@@ -233,15 +235,18 @@ section #userList_wrap .user_table {
 }
 
 #attached_func_wrap .delete_btn {
-    background-image: url("../img/delete_btn.png");
+    cursor: pointer;
+    background: url("../img/delete_btn.png") no-repeat center center / cover;
 }
 
 #attached_func_wrap .top_btn {
-    background-image: url("../img/top_btn.png");
+    cursor: pointer;
+    background: url("../img/top_btn.png") no-repeat center center / cover;
 }
 
 #attached_func_wrap .modify_btn {
-    background-image: url("../img/modify_btn.png");
+    cursor: pointer;
+    background: url("../img/modify_btn.png") no-repeat center center / cover;
 }
 
 .menu_add {
