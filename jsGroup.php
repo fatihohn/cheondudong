@@ -607,7 +607,8 @@ let contImgs = document.querySelectorAll("#detail_img ul li img");
 
     function headerMenuClick() {
 
-        let headerMenu = document.getElementById("header_btn");
+        // let headerMenu = document.getElementById("header_btn");
+        let headerMenu = document.querySelector("#menu_btn .box");
         function showMenu() {
             let headerWrap = document.getElementById("header_wrap");
             let mapWrap = document.getElementById("map_wrap");
